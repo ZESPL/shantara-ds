@@ -1,0 +1,13 @@
+{
+  "name": "shantara-og-images",
+  "private": true,
+  "type": "module",
+  "description": "Reference renderer for Shantara share images. Regenerates samples/ from the design-system fonts, logo, pattern and photos.",
+  "scripts": {
+    "samples": "node render-samples.mjs"
+  },
+  "dependencies": {
+    "satori": "^0.33.5",
+    "sharp": "^0.35.4"
+  }
+}

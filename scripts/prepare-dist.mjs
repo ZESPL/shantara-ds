@@ -44,7 +44,7 @@ for (const file of files) {
 for (const dir of dirs) {
   const src = join(root, dir);
   if (!existsSync(src)) continue;
-  cpSync(src, join(dist, dir), { recursive: true });
+  cpSync(src, join(dist, dir), { recursive: true, filter: (p) => !/[\\/]node_modules([\\/]|$)/.test(p) });
 }
 
 writeFileSync(

@@ -9,6 +9,7 @@ Builder notes and thin samples for the public marketing website. **Not a product
 | [`SKILL.md`](SKILL.md) | Agent skill — how to build and review the marketing website |
 | [`skill-stack.md`](skill-stack.md) | Production stack for shantara.life (Astro, Keystatic, Netlify, …) |
 | [`skill-images.md`](skill-images.md) | Image storage, compression, widths and checks for shantara.life |
+| [`skill-og-images.md`](skill-og-images.md) | Share images (Open Graph): templates, metadata, build-time generation, checks |
 | [`skill-premium.md`](skill-premium.md) | Premium design, deck-derived design-system rules, responsive rules, motion |
 | [`skill-ia.md`](skill-ia.md) | Nav, URL families, page inventory |
 | [`skill-sections.md`](skill-sections.md) | Heroes, semantic sections → components, tiles |

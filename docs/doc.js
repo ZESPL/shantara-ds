@@ -34,6 +34,7 @@
     out = out.replace(/`([^`]+)`/g, "<code>$1</code>");
     out = out.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
     out = out.replace(/(^|[\s(])\*([^*\n]+)\*(?=[\s).,;:!?]|$)/g, "$1<em>$2</em>");
+    out = out.replace(/!\[([^\]]*)\]\(([^)\s]+)\)/g, '<img src="$2" alt="$1" loading="lazy">');
     out = out.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
     out = out.replace(STATUS_RE, (_, label) => `<span class="ds-status" data-status="${statusSlug(label)}">${label}</span>`);
     return out;
@@ -198,6 +199,7 @@
     "skill-images.md": "website-images.html",
     "skill-structure.md": "website-structure.html",
     "skill-premium.md": "website-premium.html",
+    "skill-og-images.md": "website-og-images.html",
     "voice-and-tone.md": "website-copy-voice.html",
     "naming-and-nap.md": "website-copy-naming.html",
     "health-claims-and-compliance.md": "website-copy-claims.html",
@@ -255,7 +257,6 @@
   }
 
   function rewriteKitLinks(el, sourcePath) {
-    const fromWebsite = /ui_kits\/website\//.test(String(sourcePath || ""));
     el.querySelectorAll("a[href]").forEach((a) => {
       const href = a.getAttribute("href") || "";
       if (/^[a-z][a-z0-9+.-]*:/i.test(href) || href.startsWith("#") || href.startsWith("/")) return;
@@ -269,12 +270,28 @@
       }
       const next = KIT_MD_HREF[file];
       const kitOnly = file === "SKILL.md" || file === "README.md";
-      if (next && !(kitOnly && !fromWebsite && !/ui_kits\/website\//.test(pathPart))) {
+      if (next && (!kitOnly || inWebsiteKit(pathPart, sourcePath))) {
         a.setAttribute("href", next + suffix);
         return;
       }
       if (sourcePath && !/\.html$/.test(pathPart)) a.setAttribute("href", resolveAgainstSource(href, sourcePath));
     });
+    if (!sourcePath) return;
+    el.querySelectorAll("img[src]").forEach((img) => {
+      const src = img.getAttribute("src") || "";
+      if (/^[a-z][a-z0-9+.-]*:/i.test(src) || src.startsWith("/")) return;
+      img.setAttribute("src", new URL(src, new URL(sourcePath, location.href)).href);
+    });
+  }
+
+  /* SKILL.md and README.md exist in several folders; only the website kit's own copies map to kit pages. */
+  function inWebsiteKit(pathPart, sourcePath) {
+    try {
+      const target = new URL(pathPart, new URL(sourcePath || "", location.href));
+      return /\/ui_kits\/website\/[^/]+$/.test(target.pathname);
+    } catch (err) {
+      return false;
+    }
   }
 
   const TOC_GROUPS = {

@@ -133,6 +133,7 @@ Frozen public Organization / NAP name: **Shantara Naturopathy Retreat**.
 - Use that string for `og:site_name`, default title brand segment, and Organization schema `name`.
 - Do **not** use **Shantara Life Naturopathy** (or “Shantara Life”) in titles, `og:site_name`, schema `name`, or other global metadata.
 - Page titles may read `{Page} | Shantara Naturopathy Retreat` (or an approved short equivalent that still says Naturopathy Retreat). Do not invent a parallel brand line for SEO.
+- Open Graph images, the metadata that feeds them and the full tag list are in [skill-og-images.md](skill-og-images.md).
 
 ### URL principles
 
