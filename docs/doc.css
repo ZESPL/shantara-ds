@@ -59,6 +59,14 @@
   max-width:68ch;
 }
 
+.ds-doc p > img{
+  display:block;
+  width:100%;
+  max-width:600px;
+  height:auto;
+  border:1px solid var(--border-subtle);
+}
+
 .ds-doc hr{
   border:0;
   border-top:1px solid var(--border-subtle);

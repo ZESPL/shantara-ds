@@ -29,6 +29,7 @@ This design-system Website Kit (`ui_kits/website/`) remains a composition previe
 | **Technical SEO** | **Native Astro implementation** | Metadata, canonical URLs, hreflang, robots, internal linking, redirects, etc. remain in code |
 | **Structured data** | **Custom JSON-LD components** | Schema.org markup appropriate to Shantara's actual content |
 | **Sitemap** | **`@astrojs/sitemap`** | Generate sitemap(s), including multilingual URLs |
+| **Share images** | **`satori` + `sharp` at build** | Open Graph JPEGs from three templates in a static endpoint; no runtime function — see [skill-og-images.md](skill-og-images.md) |
 | **Testing** | **Playwright** | Only ~4–5 critical smoke tests |
 | **Static/type checking** | **Astro Check + TypeScript** | Required before merging |
 | **Source control** | **GitHub** | Repository and pull-request workflow |

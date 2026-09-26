@@ -78,7 +78,7 @@ Before publishing a new or rebuilt page:
 - [ ] `html` `lang` and `dir` match the locale.
 - [ ] Language selector always renders (unavailable locales disabled, "Coming soon"); header from 1000px, menu sheet below; accessible; omits missing translations.
 - [ ] Header fits at 390px with text size xl (lays out at 312px); every page has no horizontal overflow at 390 / 390 xl / 1440.
-- [ ] OG image is appropriate.
+- [ ] Share image comes from the page's template (or an allowed override) and passes the checks in [skill-og-images.md](skill-og-images.md#9-checks).
 - [ ] Schema matches visible content.
 - [ ] Page is keyboard accessible.
 - [ ] Images have correct alt behavior.

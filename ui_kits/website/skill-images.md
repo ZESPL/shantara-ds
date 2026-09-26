@@ -12,7 +12,7 @@ It gathers rules that already exist elsewhere and adds the missing storage and c
 | AVIF or WebP, `srcset`, width and height (IMG-01) | [search-visibility/images.md](search-visibility/images.md) |
 | Hero is eager with `fetchpriority="high"`, everything else lazy (IMG-02, IMG-03) | [search-visibility/images.md](search-visibility/images.md) |
 | Alt text, descriptive filenames, real photography, AI image metadata (IMG-04 to IMG-06) | [search-visibility/images.md](search-visibility/images.md) |
-| Share image is 1200 × 630, about 300 KB or less (SOCIAL-02, SOCIAL-04) | [search-visibility/social.md](search-visibility/social.md) |
+| Share images: templates, generation, overrides, 1200 × 630 JPEG, 300 KB or less (SOCIAL-01 to SOCIAL-04) | [skill-og-images.md](skill-og-images.md) |
 | Ratio tokens, mobile crops, square corners | [`components/editorial/Media.prompt.md`](../../components/editorial/Media.prompt.md), [skill-premium.md](skill-premium.md) |
 | No identifiable guests, no treatment in progress | Root [`SKILL.md`](../../SKILL.md) |
 
@@ -35,6 +35,7 @@ src/assets/images/
 public/
   favicon.svg, favicon.ico, apple-touch-icon.png
   og-default.jpg    ← the one approved default share image (SOCIAL-04)
+  og/               ← manual share-image overrides only (skill-og-images.md §8)
   logo.png          ← the logo URL used in Organization JSON-LD
 ```
 
@@ -84,7 +85,7 @@ export function image(path: string): ImageMetadata {
 | Photographs, portraits, posters | JPEG | Astro produces AVIF and WebP from it. Do not commit WebP or AVIF masters. |
 | Graphics that need transparency | PNG | Rare on this site. Never use PNG for a photograph. |
 | Logo, rosette, icons | SVG | Not passed through Astro Image. Run through SVGO. The rosette's inline size counts towards the 2 MB HTML budget (REN-04). |
-| Share images | JPEG | Generated at build (section 5). Only `og-default.jpg` is committed. |
+| Share images | JPEG | Generated at build (section 5). Only `og-default.jpg` and approved overrides in `public/og/` are committed. |
 
 ## 3. Preparing a file before commit
 
@@ -151,9 +152,7 @@ If a layout is not in this table, add a row here rather than inventing widths on
 
 ## 5. Share images
 
-- Each page's `og:image` is a 1200 × 630 crop of its hero, made at build with `getImage({ src, width: 1200, height: 630, format: 'jpg', quality: 80 })` from `astro:assets`. It must come out at about 300 KB or less (SOCIAL-02).
-- Use the absolute URL (`https://shantara.life/_astro/…`) in the meta tag.
-- Pages without their own photograph use `public/og-default.jpg` (SOCIAL-04), prepared to the same size and weight.
+Share images are generated at build from three templates that use the page's hero photograph and title. The design, the page metadata, the Astro endpoint, manual overrides and the checks are all in [skill-og-images.md](skill-og-images.md). Do not make a plain crop of the hero with `getImage` instead.
 
 ## 6. Where images are processed
 
@@ -177,7 +176,7 @@ A starting point for the CI script, using the `sharp` that Astro already install
 ```js
 // scripts/check-images.mjs
 import { readdir, stat } from 'node:fs/promises';
-import { join, extname } from 'node:path';
+import { join, extname, dirname } from 'node:path';
 import sharp from 'sharp';
 
 const MAX_BYTES = 1024 * 1024;
@@ -203,7 +202,8 @@ for await (const f of walk('src/assets/images')) {
 }
 for await (const f of walk('public')) {
   const name = f.split('/').pop();
-  if (PHOTO.has(extname(f).toLowerCase()) && !PUBLIC_ALLOWED.has(name)) {
+  const override = dirname(f) === join('public', 'og');
+  if (PHOTO.has(extname(f).toLowerCase()) && !PUBLIC_ALLOWED.has(name) && !override) {
     errors.push(`${f}: photographs belong in src/assets/images/`);
   }
 }

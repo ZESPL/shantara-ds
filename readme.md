@@ -55,6 +55,7 @@ uploads/                → original boards, handbook .docx, raw shoot (local; n
 ui_kits/website/        → marketing site kit + website skill (`SKILL.md`) and copy skill (`skill-copy.md`); locales.js
 ui_kits/app/            → in-stay guest companion kit
 templates/brand-deck/   → presentation template
+templates/og-images/    → share-image (Open Graph) renderer and samples
 thumbnail.html          → homepage tile
 SKILL.md                → Agent-Skills wrapper — drop this folder into another repo
 ```
@@ -80,6 +81,7 @@ Each directory holds `<Name>.jsx`, `<Name>.d.ts` (props contract) and `<Name>.pr
 ### Templates
 
 - `templates/brand-deck/` — presentation template in the guideline-deck style. Deck design rules: `.cursor/skills/shantara-premium-presentations/SKILL.md`.
+- `templates/og-images/` — reference renderer and samples for the three website share-image templates. Standard: `ui_kits/website/skill-og-images.md`.
 
 ## Caveats
 
