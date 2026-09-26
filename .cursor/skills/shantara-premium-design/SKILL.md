@@ -7,7 +7,7 @@ description: >
   hover state, transition or "premium feel". Also use it when anyone asks to make
   the site feel more premium, luxurious, polished or high-end, or suggests adding
   an animation library, UI component library, scroll effect, parallax, carousel
-  or preloader. Apply it even if the request only mentions one small component.
+  or preloader.
 ---
 
 # Shantara Premium Design
@@ -22,4 +22,4 @@ Motion comes last in the build order. Stack locks (no animation libraries, no UI
 
 Typography uses the design-system face (**Diodrum**; **IBM Plex Sans Arabic** for RTL). Do not invent a separate display serif. Every heading at 24px or larger is Light. Design-system rules from the brand deck (grounds, square shape, buttons, tiles, component map, responsive rules) are in the same file.
 
-Also read `ui_kits/website/SKILL.md` for information architecture and page composition, and the root `SKILL.md` for brand tokens, rosette rules, and accessibility.
+For information architecture or page composition, see `ui_kits/website/SKILL.md`.

@@ -8,7 +8,7 @@ When adding or rebuilding a page, follow this sequence.
 
 ### Step 1 — Define the page job
 
-Write down: audience (ICP ID from [`docs/icp.md`](../../docs/icp.md) when the page serves a health need); search/user intent; one primary action; page type; main proof needed.
+Write down: audience (the health need, using the IDs in [SKILL.md §5](SKILL.md#section-5) — planning labels, not stored on records); search/user intent; one primary action; page type; main proof needed.
 
 Do not treat a programme name as the audience.
 
@@ -50,9 +50,13 @@ Only meaningful interactions should fire custom events.
 
 Complete the checklists below.
 
+## Scope
+
+Match the checks to the change. A new or rebuilt page runs every checklist below that applies to it. A smaller change — a copy edit, one component, a style fix — runs only the items that change could affect: a copy edit checks copy, claims, naming and rates, not viewport layout or schema. Viewport checks (390 / 390 xl / 1440) apply when layout, chrome or type changed.
+
 ## QA Checklist — Every page
 
-Before publishing:
+Before publishing a new or rebuilt page:
 
 - [ ] Page has a clear purpose.
 - [ ] Exactly one dominant next action is obvious.
@@ -113,7 +117,7 @@ Verify:
 
 - [ ] What the program is is immediately clear.
 - [ ] Intended audience is clear.
-- [ ] Audience maps to an ICP need where relevant, not only to a programme name (`docs/icp.md`).
+- [ ] Audience is a health need where relevant, not only a programme name.
 - [ ] Duration/options are clear.
 - [ ] Inclusions are clear.
 - [ ] Pricing is clear if the business has chosen to publish it — **via the tariff card, not copied onto the program page**.
@@ -220,7 +224,7 @@ Because Welnez is the former name:
 
 ## Definition of done
 
-A website change is complete only when it is:
+A website change is complete only when, for everything it touches, it is:
 
 - visually integrated with the design system;
 - mobile-responsive;
@@ -236,29 +240,6 @@ A website change is complete only when it is:
 - tested;
 - not unnecessarily complex.
 
-“Code compiles” is not the definition of done.
+“Code compiles” is not the definition of done. Verify only what the change could affect; see [Scope](#scope).
 
-## Agent behavior
-
-When asked to modify Shantara’s website:
-
-1. Inspect the existing implementation before changing architecture.
-2. Preserve working patterns unless there is a clear reason to replace them.
-3. Make the least invasive change that solves the task.
-4. Reuse existing sections/components.
-5. Do not invent content, credentials, prices, medical facts, or program details. Prefer `content/`; empty folders and `draft` records mean do not fabricate.
-6. Flag missing information explicitly.
-7. Do not introduce dependencies casually.
-8. Do not redesign unrelated pages.
-9. Do not create a new abstraction for a one-off case unless it is clearly reusable.
-10. Preserve accessibility, SEO, analytics, and schema behavior during changes.
-11. Test responsive behavior.
-12. Verify no health/PII data is sent to analytics.
-13. Prefer clear implementation over clever implementation.
-14. If requirements conflict, prioritize:
-    - factual/clinical safety;
-    - user clarity;
-    - conversion simplicity;
-    - maintainability;
-    - design consistency;
-    - implementation elegance.
+Agent behaviour rules live in [SKILL.md §13](SKILL.md#section-13).

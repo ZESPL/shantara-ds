@@ -73,7 +73,7 @@ Do not make fixed condition/program/experience/story/contact templates.
 
 Determine:
 
-1. **Audience:** Who is this page for? When it serves a health need, cite an ICP ID from [`docs/icp.md`](../../docs/icp.md). Do not use a programme name as the audience.
+1. **Audience:** Who is this page for? When it serves a health need, name the need using the IDs in [SKILL.md §5](SKILL.md#section-5) — planning labels, not stored on records. Do not use a programme name as the audience.
 2. **Intent:** What are they trying to understand or decide?
 3. **Primary action:** What should they do next?
 4. **Proof:** What must they see before trusting the page?

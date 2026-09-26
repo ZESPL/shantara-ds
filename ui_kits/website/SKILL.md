@@ -29,7 +29,7 @@ Read this file first. Open a sibling reference only when the task needs that inv
 
 Internal audience strategy (need-led ICPs, CRM IDs, agency requirements) lives in [`docs/icp.md`](../../docs/icp.md). Do not duplicate those definitions here. Do not use internal ICP names as website headings or keywords unless search research supports that language.
 
-Also read the design-system skill at the repo root (`SKILL.md`) and `readme.md` before inventing visual or clinical language.
+The brand rules in the root `SKILL.md` apply here too. Check them before inventing visual or clinical language.
 
 **Multilingual is architectural for the public website.** Central config: `locales.js`. Planned languages: English (`en`, source, currently published), Arabic (`ar`, first future localisation, RTL ready now), then German, French, Russian, Hindi, Malayalam. Malayalam is conditional — see [`docs/icp.md`](../../docs/icp.md). Do not translate the site in this kit. The design-system catalog, guidelines, and component docs stay English — do not localise them. Read [§15 Multilingual Architecture](#section-15) before adding a route, string, or content type.
 
@@ -127,7 +127,7 @@ Every flexible content page conceptually contains title, slug, `page_type`, navi
 
 Before composing:
 
-1. Audience — cite an ICP ID from [`docs/icp.md`](../../docs/icp.md) when the page is for a health need (`weight_metabolic`, `pain_mobility`, `stress_sleep_burnout`, `digestive_inflammatory`, `hormonal_vitality`, `healthy_ageing_longevity`, or secondary `short_reset`). Audience is the need, not the programme name.
+1. Audience — when the page is for a health need, name the need: `weight_metabolic`, `pain_mobility`, `stress_sleep_burnout`, `digestive_inflammatory`, `hormonal_vitality`, `healthy_ageing_longevity`, or secondary `short_reset`. Audience is the need, not the programme name. These IDs are planning labels only — never stored on content records or shown on the page. Open [`docs/icp.md`](../../docs/icp.md) only for audience-strategy work.
 2. Intent
 3. Primary action
 4. Proof required
@@ -236,7 +236,7 @@ This kit follows the design-system accessibility contract in `guidelines/accessi
 
 ## 11. Page workflow
 
-1. Define the page job (audience, intent, one primary action, page type, proof). Map audience to an ICP ID from `docs/icp.md` when the page serves a health need. Do not organise the sitemap as one URL per ICP.
+1. Define the page job (audience, intent, one primary action, page type, proof). When the page serves a health need, name the need (IDs in §5). Do not organise the sitemap as one URL per ICP.
 2. Reuse existing semantic sections.
 3. Order content from the visitor’s decision backward.
 4. Use real, verified Shantara information; flag gaps.
@@ -260,18 +260,18 @@ When asked to modify Shantara’s website:
 2. Preserve working patterns unless there is a clear reason to replace them.
 3. Make the least invasive change that solves the task.
 4. Reuse existing sections/components.
-5. Do not invent content, credentials, prices, medical facts, or program details.
+5. Do not invent content, credentials, prices, medical facts, or program details. Prefer `content/`; empty folders and `draft` records mean do not fabricate.
 6. Flag missing information explicitly.
 7. Do not introduce dependencies casually.
 8. Do not redesign unrelated pages.
 9. Do not create a new abstraction for a one-off case unless it is clearly reusable.
 10. Preserve accessibility, SEO, analytics, and schema behavior during changes.
-11. Test responsive behavior.
+11. Test responsive behavior when layout, chrome or type changed.
 12. Verify no health/PII data is sent to analytics.
 13. Prefer clear implementation over clever implementation.
 14. If requirements conflict, prioritize: factual/clinical safety → user clarity → conversion simplicity → maintainability → design consistency → implementation elegance.
 
-A change is done only when it is visually integrated, mobile-responsive, accessible, performant, content-complete, SEO-complete, schema-correct, analytics-aware, privacy-safe, medically governed where relevant, locale-correct, tested, and not unnecessarily complex. “Code compiles” is not done.
+Definition of done and how far to verify: [skill-qa.md](skill-qa.md#definition-of-done). Scale the checks to the change — a copy edit is not a full page audit. “Code compiles” is not done.
 
 ## 14. Sample kit map
 

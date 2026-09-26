@@ -83,7 +83,7 @@ Shantara ships **one typeface for Latin/Cyrillic: Diodrum** (weights via design-
 
 ## Design system rules (from the brand deck)
 
-The website is the brand deck carried to a scrolling page. The deck rules are in [`.cursor/skills/shantara-premium-presentations/SKILL.md`](../../.cursor/skills/shantara-premium-presentations/SKILL.md) and [`templates/brand-deck/`](../../templates/brand-deck/). Tokens live in `tokens/`; components in `components/editorial/` and `components/sections/`. Read the comment at the top of each `.jsx` before using it.
+The website is the brand deck carried to a scrolling page. The deck rules that apply to the website are restated in this section; the presentations skill is for decks only. Tokens live in `tokens/`; components in `components/editorial/` and `components/sections/`. Read the `.prompt.md` beside each component before using it.
 
 ### Type: five voices, one weight rule
 
@@ -268,7 +268,7 @@ Primary visitor-facing CTA remains **Book a Consultation**. When choosing betwee
 
 ## Review checklist
 
-Before marking any page or component done, check:
+Before marking any page or component done, check the items the change could affect. The viewport widths apply when layout, type or chrome changed; a new or rebuilt page runs the whole list.
 
 - [ ] The build order was followed. Motion was not added before layout and typography were settled.
 - [ ] No new animation or UI component library was added.

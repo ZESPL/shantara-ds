@@ -52,7 +52,7 @@ You can also keep the folder at the repo root (as it is here) and treat `SKILL.m
 | `styles.css`, `tokens/` (including `tokens/layout.css` — grounds, container, grid), `assets/` | `uploads/` (raw boards and shoot) |
 | `components/` — including `components/editorial/` and `components/sections/` for website pages | `catalog.js`, `index.html` (browse-only chrome) |
 | `content/` (entity facts; generate `kit.js` via `scripts/write-content-kit.mjs`) | `_ds_bundle.js` for copy, programmes, or rates (components only) |
-| `AGENTS.md`, `SKILL.md`, `readme.md`, `*.prompt.md`, `ui_kits/website/SKILL.md`, `ui_kits/website/skill-copy.md`, `.cursor/skills/shantara-premium-presentations/SKILL.md` | `.agents/skills/` (generic motion / Swift / Sonner) |
+| `AGENTS.md`, `SKILL.md`, `readme.md`, `*.prompt.md`, `ui_kits/website/SKILL.md`, `ui_kits/website/skill-copy.md`, `.cursor/skills/shantara-premium-presentations/SKILL.md` | |
 | `ui_kits/` if you are shipping those surfaces | `scraps/`, `dist/`, `.netlify/` |
 | `templates/brand-deck/` if you are building decks | |
 | `scripts/build-bundle.mjs` if you edit components and need `_ds_bundle.js` rebuilt | |

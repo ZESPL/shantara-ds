@@ -5,7 +5,7 @@ description: Design rules for every Shantara presentation, in any format (PowerP
 
 # Shantara Premium Presentation Rules
 
-Shantara is a 52-room naturopathy and wellness retreat in Kozhikode, Kerala. Its decks are read by investors, shareholders, travel agents, medical tourism professionals, guests and staff. Every deck must feel calm, confident and trustworthy, because the audience is judging a health-related business, not just a beautiful property.
+Shantara is a 52-room, doctor-led naturopathy retreat in Kozhikode, Kerala. Its decks are read by investors, shareholders, travel agents, medical tourism professionals, guests and staff. Every deck must feel calm, confident and trustworthy, because the audience is judging a health-related business, not just a beautiful property.
 
 ## Core principle
 
