@@ -23,8 +23,8 @@ Full-screen photographic hero with the statement bottom-left inside a scrim and 
 
 | Hero | Purpose | Use on |
 | --- | --- | --- |
-| `HeroFullBleed` | Immersive — the place carries the message | Home (`height="full"`), Experience, one flagship inner page (`tall`) |
-| `HeroSplit` | Offer — a photograph beside the title, facts and the action | Programme and condition detail pages, Tariffs, Book a Consultation |
+| `HeroFullBleed` | Immersive — the place carries the message | Home (`height="full"`), the Experience pages (Therapies, Rooms, Amenities & Activities, Farm & Dining, A Day at Shantara), one flagship inner page (`tall`) |
+| `HeroSplit` | Offer — a photograph beside the title, facts and the action | Programme and condition detail pages, doctor profiles, Tariffs, Book a Consultation |
 | `HeroStatement` | Editorial — words lead, no photograph needed | Conditions and Programmes indexes, About, Journal index, Contact, legal pages (`ArticleHeader` for single articles) |
 
 One hero per page, always first. None of them takes a label above the title: place, category or duration go in `meta`, below it.

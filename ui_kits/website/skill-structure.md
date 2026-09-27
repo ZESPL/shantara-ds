@@ -57,7 +57,7 @@ src/
                  IndexList, RelatedArticles
     chrome/      Header, Footer, Breadcrumbs, LanguageSelector
     forms/       ConsultationForm.astro       ← the single Web3Forms form
-    seo/         Head.astro
+    seo/         Head.astro                   ← every head tag, from PageMeta
                  jsonld/Graph.astro           ← one @graph per page
                  jsonld/{MedicalClinic,WebSite,WebPage,BreadcrumbList,Person,
                          Service,MedicalCondition,Article,ItemList}.astro
@@ -66,6 +66,7 @@ src/
   pages/
     index.astro                  ← redirects to /en/ (root is never an indexable duplicate)
     [locale]/                    ← see the route table; nothing else may sit beside it
+    open-graph/[...route].ts     ← share images, built from lib/seo/pages.ts (skill-og-images.md)
 
   lib/
     content.ts        createReader(); typed queries, English fallback for non-text fields, reverse links
@@ -75,11 +76,15 @@ src/
     schema.ts         @id builders (#doctor-{id}, #program-{id}, …)
     track.ts          the one analytics abstraction (OpenPanel + Google Tag)
     lead-context.ts   locale, page type, content ID, UTMs → hidden form fields
+    seo/meta.ts       PageMeta → title, canonical, robots, Open Graph (one resolver)
+    seo/pages.ts      one PageMeta generator per page type; feeds getStaticPaths and share images
+    seo/og/           og-image.mjs (copied from the design system), its fonts and marks
   markdoc/       config.ts (tags and nodes) + Renderer.astro (maps them to editorial/*.astro)
   styles/        global.css: design-system tokens/*.css + Tailwind @theme
 scripts/
   check-routes.mjs    fails on pages outside [locale]/ and on forbidden route folders
   check-content.ts    reads every entry with the Keystatic reader, then cross-entry rules
+  check-og.mjs        after the build: every indexable page has its share image and tags
 tests/                Playwright: 4–5 smoke tests only
 ```
 
@@ -191,7 +196,8 @@ Set these in Netlify. `.env.example` lists the names with no values.
 
 `scripts/check-routes.mjs` and `scripts/check-content.ts` run in GitHub Actions next to Astro Check. `check-content.ts` imports `keystatic.config.ts`, so it runs on Node 24, which runs TypeScript files directly.
 
-- **Locale route invariant.** No public page may sit directly under `src/pages/` except `index.astro`, the root redirect. Every public route lives beneath `src/pages/[locale]/`. Any other `.astro`, `.md` or `.mdx` file, or any other route directory, directly beneath `src/pages/` fails the build.
+- **Locale route invariant.** No public page may sit directly under `src/pages/` except `index.astro`, the root redirect. Every public route lives beneath `src/pages/[locale]/`. Any other `.astro`, `.md` or `.mdx` file, or any other route directory, directly beneath `src/pages/` fails the build. The one exception is `src/pages/open-graph/`, which may hold only `[...route].ts`: it builds share images, not pages.
+- **Share images.** `scripts/check-og.mjs` runs after `astro build` ([skill-og-images.md § 10](skill-og-images.md#10-checks)).
 - **Route guard.** The build fails if `src/pages/[locale]/` contains a `therapies/`, `rooms/`, `our-doctors/` or `insights/` folder, or if `doctors/` holds anything other than `[slug].astro`. It also fails if `src/content/pages/` or `src/content.config.ts` exists.
 - **Doctor profiles.** `DOCTOR_PROFILES` is exactly `pa-kareem` and `bahja-janu`, and both entries are published.
 - **Slugs.** Slugs are lowercase with hyphens. They are unique across articles and doctor answers (they share `/en/journal/`), and they are never purely numeric, which keeps them clear of pagination.
