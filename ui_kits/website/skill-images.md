@@ -34,8 +34,9 @@ src/assets/images/
   testimonials/
 public/
   favicon.svg, favicon.ico, apple-touch-icon.png
-  og-default.jpg    ← the one approved default share image (SOCIAL-04)
-  og/               ← manual share-image overrides only (skill-og-images.md §8)
+  og-default.jpg    ← the approved default share image (SOCIAL-04); a locale's og-default-{locale}.jpg
+                      is added, and listed in PUBLIC_ALLOWED, only when that locale is enabled
+  og/               ← manual share-image overrides only (skill-og-images.md §9)
   logo.png          ← the logo URL used in Organization JSON-LD
 ```
 
