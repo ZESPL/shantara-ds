@@ -39,19 +39,29 @@ function readStoredTextSize() {
   return "md";
 }
 
-/* One public number for calls and WhatsApp, one email (copy/naming-and-nap.md). */
+/* Call number (`phone[0]`) and WhatsApp number (`whatsapp`), one email (copy/naming-and-nap.md). */
 function siteContact() {
   const site = (window.ShantaraContent && window.ShantaraContent.site) || {};
-  const phone = (site.phone && site.phone[0]) || "+91 9553 700 100";
+  const phone = (site.phone && site.phone[0]) || "+91 9553 600 100";
   const digits = String(site.whatsapp || phone).replace(/[^\d]/g, "");
   return {
     name: site.business_name || "Shantara Naturopathy Retreat",
+    legalName: site.legal_name || "Metropolis Forward LLP",
     email: site.email || "heal@shantara.life",
     phone,
     tel: "tel:" + String(phone).replace(/[^\d+]/g, ""),
     whatsapp: "https://wa.me/" + digits,
+    social: Array.isArray(site.social_links) ? site.social_links.filter((s) => s && s.platform && s.url) : [],
   };
 }
+
+/* Footer social profiles: platform → icon slug and visible platform name. */
+const SOCIAL_PLATFORMS = {
+  facebook: { icon: "facebook", label: "Facebook" },
+  instagram: { icon: "instagram", label: "Instagram" },
+  linkedin: { icon: "linkedin", label: "LinkedIn" },
+  youtube: { icon: "youtube", label: "YouTube" },
+};
 
 /* ClosingCTA `contact` items: call, WhatsApp, email. */
 function siteContactItems(t) {
@@ -145,6 +155,8 @@ const CHROME_CSS = `
 .sh-foot-blurb{margin:0;font:var(--type-body-sm);line-height:var(--leading-relaxed);color:var(--text-secondary);max-width:34ch}
 .sh-foot-nap{display:flex;flex-direction:column;font:var(--type-body-sm);font-style:normal;color:var(--text-secondary)}
 .sh-foot-nap strong{font-weight:var(--weight-medium);color:var(--text-primary);margin-bottom:var(--space-2)}
+.sh-foot-social{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:var(--space-2)}
+.sh-foot-social a{justify-content:center;min-width:var(--tap-min);min-height:var(--tap-min)}
 .sh-foot-col{min-width:0}
 .sh-foot-h{margin:0 0 var(--space-4);font-family:var(--font-body);font-size:var(--text-base);font-weight:var(--weight-medium);line-height:1.3;letter-spacing:0;text-transform:none;color:var(--color-gold-crayola)}
 .sh-foot-links{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:var(--space-1)}
@@ -490,11 +502,24 @@ function SiteFooter({ onNavigate, locale = "en" }) {
             <p className="sh-foot-blurb">{t("A naturopathy retreat on a hilltop above the Chennamangallur valley, Kozhikode. An evolution of Hygiene Nature Cure Hospital, caring for guests since 2000.")}</p>
             <address className="sh-foot-nap">
               <strong>{t(c.name)}</strong>
-              <span>{t("Chennamangallur, Kozhikode, Kerala, India")}</span>
+              <span>{t("Chennamangallur, Kozhikode, Keralam, India - 673602")}</span>
               <a className="shantara-dir-ltr" href={c.tel} style={{ fontVariantNumeric: "tabular-nums" }}><Icon name="phone" size={16} />{c.phone}</a>
               <a href={c.whatsapp} target="_blank" rel="noopener"><Icon name="message-circle" size={16} />{t("WhatsApp")}</a>
               <a className="shantara-dir-ltr" href={"mailto:" + c.email}><Icon name="mail" size={16} />{c.email}</a>
             </address>
+            {c.social.length > 0 && (
+              <ul className="sh-foot-social" aria-label={t("Shantara on social media")}>
+                {c.social.map((s) => {
+                  const p = SOCIAL_PLATFORMS[s.platform] || { icon: "external-link", label: s.platform };
+                  const label = t(p.label) + " " + t("(opens in a new tab)");
+                  return (
+                    <li key={s.platform}>
+                      <a href={s.url} target="_blank" rel="noopener" aria-label={label} title={label}><Icon name={p.icon} size={20} /></a>
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
           </div>
           <div className="sh-foot-cols">
             {FOOTER_COLS.map((col) => <FooterColumn key={col.title} col={col} narrow={narrow} locale={locale} onNavigate={onNavigate} />)}
@@ -503,10 +528,10 @@ function SiteFooter({ onNavigate, locale = "en" }) {
       </div>
       <div className="sh-container">
         <div className="sh-foot-bar">
-          <span>{"© 2026 " + t(c.name)}</span>
+          <span>{"© 2026 " + c.legalName}</span>
           <span>{t("Privacy")}</span>
           <span>{t("Terms")}</span>
-          <span>{t("Kozhikode · Kerala · India")}</span>
+          <span>{t("Kozhikode · Keralam · India")}</span>
           <div className="sh-foot-size" role="group" aria-label={t("Text size")}>
             <span>{t("Text size")}</span>
             {TEXT_SIZES.map((s) => (

@@ -36,11 +36,21 @@ In UAE, UK, and US discovery, people often type Ayurveda, wellness retreat, or y
 
 ## Business name (NAP)
 
-The registered business name is **Shantara Naturopathy Retreat**. Use it in full in NAP fields, schema `name` / `og:site_name`, footer legal line, and anywhere a formal business name is expected.
+The business (trading) name is **Shantara Naturopathy Retreat**. Use it in full in NAP fields, schema `name` / `og:site_name`, and anywhere a formal business name is expected.
 
 * **Shantara** alone is fine standalone, in running copy, headings, and casual references.
 * Never use **“Shantara Naturopathy”** on its own as the name — either say **Shantara**, or say the full **Shantara Naturopathy Retreat**. “Shantara Naturopathy” without “Retreat” is not a valid form of the name.
-* Do not invent other short forms (no “Shantara Retreat”, no “Shantara Clinic” as the registered name).
+* Do not invent other short forms (no “Shantara Retreat”, no “Shantara Clinic” as the business name).
+
+**Legal entity.** **Metropolis Forward LLP** is the registered legal entity (`legal_name` in `content/site.json`, schema `legalName`). Use it only for the copyright line (“© {year} Metropolis Forward LLP”) and legal notices such as the privacy policy and terms. Never use it as the trading name.
+
+## Address
+
+Write the full address exactly as:
+
+> Chennamangallur, Kozhikode, Keralam, India - 673602
+
+The fields in `content/site.json` `place` are `street` (Chennamangallur), `locality` (Kozhikode), `region` (Keralam), `postal_code` (673602) and `country` (IN). Never add “Calicut” in brackets after Kozhikode. The short location line, for the footer bar and deck covers, is **Kozhikode · Keralam · India**. “Calicut” appears only inside proper names such as Calicut International Airport.
 
 ## Site (hilltop, not acreage)
 
@@ -52,7 +62,7 @@ Shantara has 52 rooms across five accommodation categories. **“52 rooms” may
 
 ## One contact number
 
-There is exactly one public phone number, used for both calls and WhatsApp: **+91 9553 700 100**. Do not publish any other number (including old or regional variants) on the website, in schema, or in the footer. The public email is **heal@shantara.life**.
+The site stores the call number and the WhatsApp number as separate fields: `phone` (an array whose first item is the public number) and `whatsapp`. Both are currently **+91 9553 600 100** (E.164 `+919553600100`). Do not publish any other number (including old or regional variants) on the website, in schema, or in the footer. The public email is **heal@shantara.life**.
 
 ## Organisation and ownership
 

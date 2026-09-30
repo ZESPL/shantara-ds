@@ -108,6 +108,6 @@ These are hard bans, distinct from the caution words above. They are wrong regar
 
 * **“Four acres” / “4 acres” / “four hilltop acres”.** “Hilltop” alone is fine. See [naming and NAP](naming-and-nap.md#site-hilltop-not-acreage).
 * **“Shantara Naturopathy”** as the business name, without “Retreat”. See [naming and NAP](naming-and-nap.md#business-name-nap).
-* Any phone number other than **+91 9553 700 100**. See [naming and NAP](naming-and-nap.md#one-contact-number).
+* Any phone number other than **+91 9553 600 100**. See [naming and NAP](naming-and-nap.md#one-contact-number).
 * **Patients** or **wellness retreat** as public product language (see [AGENTS.md](../../../AGENTS.md)).
 * An eyebrow or overline above a section or title, anywhere. See [voice and tone](voice-and-tone.md#punctuation).

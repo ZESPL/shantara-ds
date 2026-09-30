@@ -19,14 +19,14 @@ This handbook is evergreen. It does not carry rates, currencies or validity date
 | Property name | Shantara Naturopathy |
 | Parent institution | Hygiene Nature Cure Hospital |
 | Parent institution credentials | 66-bed hospital certified under the Kerala Clinical Establishment Act, with more than 25,000 patients treated to date |
-| Location | Kozhikode (Calicut), Kerala, overlooking the Chennamangallur valley |
+| Location | Kozhikode, Kerala, overlooking the Chennamangallur valley |
 | Land area | 4 acres, hilltop setting |
 | Built-up wellness infrastructure | 60,000 sq. ft. |
 | Number of rooms | 52 |
 | Founder | Dr. P.A. Kareem, Government of India-certified Naturopathy Practitioner |
 | Typical stay length | Most programmes are designed around a week or longer so protocols have time to take effect. This is typical, not a mandatory floor for every stay. |
 | Monthly booking cap | 100 bookings per month, to preserve personalised care and attention |
-| Phone | +91 9553 600 100 / +91 9553 700 100 |
+| Phone | +91 9553 600 100 |
 | Email | heal@shantara.life |
 | Website | www.shantara.life |
 
@@ -393,7 +393,7 @@ Every guest in a medical programme is under a doctor's direct care. Staff should
 
 | Item | Detail |
 | --- | --- |
-| Location | Kozhikode (Calicut), Kerala, overlooking the Chennamangallur valley |
+| Location | Kozhikode, Kerala, overlooking the Chennamangallur valley |
 | Land area | 4 acres, hilltop setting |
 | Wellness infrastructure | 60,000 sq. ft. |
 | Number of rooms | 52, across 5 categories |
@@ -644,6 +644,6 @@ Guests who complete a program remain part of the Shantara family, and doctors re
 | Ambulance / Emergency Services | [TO CONFIRM] |
 | Maintenance | [TO CONFIRM] |
 | Security | [TO CONFIRM] |
-| General enquiries | +91 9553 600 100 / +91 9553 700 100, heal@shantara.life |
+| General enquiries | +91 9553 600 100, heal@shantara.life |
 
 PS Ravindran is included here only as the operations point of contact for day-to-day and emergency coordination, and not as part of the clinical or leadership team profiled in [sections 3](#section-3) and [4](#section-4).

@@ -515,7 +515,7 @@
   }
 
   /* MedicalClinic (a LocalBusiness subtype) organisation node. NAP name is always "Shantara Naturopathy Retreat"
-     (copy/naming-and-nap.md); one telephone for calls and WhatsApp. */
+     (copy/naming-and-nap.md); telephone is the public call number. legalName is omitted when empty (SCHEMA-14). */
   function organizationSchema(options) {
     const opts = options || {};
     const site = opts.site || {};
@@ -526,14 +526,17 @@
       "@type": (site.schema_defaults && site.schema_defaults.type) || "MedicalClinic",
       "@id": organizationId(origin),
       name: site.business_name || "Shantara Naturopathy Retreat",
+      legalName: site.legal_name || undefined,
       url: origin + "/",
-      telephone: (site.phone && site.phone[0]) || "+91 9553 700 100",
+      telephone: (site.phone && site.phone[0]) || "+91 9553 600 100",
       email: site.email || "heal@shantara.life",
       parentOrganization: site.parent_institution ? { "@type": "Organization", name: site.parent_institution } : undefined,
       address: {
         "@type": "PostalAddress",
+        streetAddress: place.street || "Chennamangallur",
         addressLocality: place.locality || "Kozhikode",
-        addressRegion: place.region || "Kerala",
+        addressRegion: place.region || "Keralam",
+        postalCode: place.postal_code || "673602",
         addressCountry: place.country || "IN",
       },
     };
