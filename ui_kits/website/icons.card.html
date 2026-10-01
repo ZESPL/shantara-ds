@@ -45,7 +45,7 @@ pre{margin:0;background:var(--color-pine-tree);color:var(--color-merino);border-
 <div class="tab" style="background:#35363A;color:#E8EAED"><img src="../../assets/icon-cream.svg" alt="Shantara favicon in a dark browser tab" style="width:auto"><span>Shantara</span><span class="x">×</span></div>
 <div class="tab ghost" style="color:#E8EAED"><span style="width:16px;height:16px;border-radius:50%;background:#5F6368"></span><span>Another site</span></div>
 </div>
-<p class="use" style="margin-top:8px">Dark browser window: the same file switches to a Merino mark, because Himalaya is almost invisible on a dark tab</p>
+<p class="use" style="margin-top:8px">Dark browser window (Chrome, Edge): the same file switches to a Merino mark. Safari keeps the Himalaya mark, a known limit</p>
 </div>
 </div>
 <div class="box" style="margin-top:12px">
@@ -60,13 +60,13 @@ pre{margin:0;background:var(--color-pine-tree);color:var(--color-merino);border-
 </div>
 
 <div>
-<h3>Phone home screen and install</h3>
+<h3>Phone home screen</h3>
 <p class="cap">Gold Crayola mark on solid Himalaya — the phone rounds the corners</p>
 <div class="box phones">
 <div class="phone"><img src="../../templates/icons/public/apple-touch-icon.png" alt="iPhone home-screen icon" style="border-radius:22%"><span class="lbl">iPhone</span><p class="use">apple-touch-icon.png · 180px</p></div>
 <div class="phone"><img src="../../templates/icons/public/icon-mask.png" alt="Android icon in a circle mask" style="border-radius:50%"><span class="lbl">Android · circle</span><p class="use">icon-mask.png · 512px</p></div>
 <div class="phone"><img src="../../templates/icons/public/icon-mask.png" alt="Android icon in a rounded-square mask" style="border-radius:30%"><span class="lbl">Android · squircle</span><p class="use">icon-mask.png · 512px</p></div>
-<div class="phone"><img src="../../templates/icons/public/icon-512.png" alt="Android install icon" style="border-radius:12%"><span class="lbl">Install prompt</span><p class="use">icon-192.png and icon-512.png</p></div>
+<div class="phone"><img src="../../templates/icons/public/icon-512.png" alt="Android home-screen icon" style="border-radius:12%"><span class="lbl">Android · square</span><p class="use">icon-192.png and icon-512.png</p></div>
 </div>
 </div>
 
@@ -77,11 +77,11 @@ pre{margin:0;background:var(--color-pine-tree);color:var(--color-merino);border-
 <table class="files">
 <thead><tr><th></th><th>File</th><th>Size</th><th>Used by</th></tr></thead>
 <tbody>
-<tr><td><img src="../../assets/icon-olive.svg" alt="" style="width:auto"></td><td><a href="../../templates/icons/public/favicon.svg" download><code>favicon.svg</code></a></td><td>Vector</td><td>Browser tabs in all current browsers; Himalaya on light tabs, Merino on dark tabs</td></tr>
-<tr><td><img src="../../templates/icons/public/favicon.ico" alt=""></td><td><a href="../../templates/icons/public/favicon.ico" download><code>favicon.ico</code></a></td><td>32 × 32</td><td>Older browsers and tools that request <code>/favicon.ico</code> directly; always Himalaya</td></tr>
+<tr><td><img src="../../assets/icon-olive.svg" alt="" style="width:auto"></td><td><a href="../../templates/icons/public/favicon.svg" download><code>favicon.svg</code></a></td><td>Vector</td><td>Browser tabs; Himalaya on light tabs, Merino on dark tabs in Chrome and Edge. Safari always shows Himalaya</td></tr>
+<tr><td><img src="../../templates/icons/public/favicon.ico" alt=""></td><td><a href="../../templates/icons/public/favicon.ico" download><code>favicon.ico</code></a></td><td>32 × 32</td><td>Safari 18 and earlier, older browsers, and tools that request <code>/favicon.ico</code> directly; always Himalaya</td></tr>
 <tr><td><img src="../../templates/icons/public/apple-touch-icon.png" alt=""></td><td><a href="../../templates/icons/public/apple-touch-icon.png" download><code>apple-touch-icon.png</code></a></td><td>180 × 180</td><td>iPhone and iPad home screen</td></tr>
-<tr><td><img src="../../templates/icons/public/icon-192.png" alt=""></td><td><a href="../../templates/icons/public/icon-192.png" download><code>icon-192.png</code></a></td><td>192 × 192</td><td>Android home screen</td></tr>
-<tr><td><img src="../../templates/icons/public/icon-512.png" alt=""></td><td><a href="../../templates/icons/public/icon-512.png" download><code>icon-512.png</code></a></td><td>512 × 512</td><td>Android splash screen and install prompt</td></tr>
+<tr><td><img src="../../templates/icons/public/icon-192.png" alt=""></td><td><a href="../../templates/icons/public/icon-192.png" download><code>icon-192.png</code></a></td><td>192 × 192</td><td>Android home-screen shortcut</td></tr>
+<tr><td><img src="../../templates/icons/public/icon-512.png" alt=""></td><td><a href="../../templates/icons/public/icon-512.png" download><code>icon-512.png</code></a></td><td>512 × 512</td><td>Large Android icon; kept so the manifest is complete</td></tr>
 <tr><td><img src="../../templates/icons/public/icon-mask.png" alt=""></td><td><a href="../../templates/icons/public/icon-mask.png" download><code>icon-mask.png</code></a></td><td>512 × 512</td><td>Android launchers that crop icons to a shape</td></tr>
 <tr><td></td><td><a href="../../templates/icons/public/manifest.webmanifest" download><code>manifest.webmanifest</code></a></td><td>—</td><td>Lists the Android icons, the site name and the colours</td></tr>
 </tbody>
@@ -101,7 +101,7 @@ pre{margin:0;background:var(--color-pine-tree);color:var(--color-merino);border-
 <div class="links">
 <a href="../../docs/website-icons.html">Read the full implementation guide</a>
 <a href="../../templates/icons/samples/preview.png">Open the 16, 24 and 32px review sheet</a>
-<span class="use">To rebuild after a logo or colour change: <code>cd templates/icons &amp;&amp; npm install &amp;&amp; npm run build &amp;&amp; npm run check</code></span>
+<span class="use">To rebuild after a logo or colour change: <code>cd templates/icons &amp;&amp; npm install &amp;&amp; npm run build &amp;&amp; npm run check</code>. In the website's CI, after <code>astro build</code>: <code>node scripts/check-icons.mjs public dist</code></span>
 </div>
 </div>
 
