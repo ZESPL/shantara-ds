@@ -56,7 +56,7 @@ Recorded on 25 September 2026. The rules below already follow them.
 | [Structured data (SCHEMA)](schema.md) | SCHEMA-01 to SCHEMA-15 | JSON-LD graph, `@id` values, MedicalClinic, page nodes, doctors, programmes, articles, FAQ, schema map |
 | [Link previews (SOCIAL)](social.md) | SOCIAL-01 to SOCIAL-04 | Open Graph tags, share images, Twitter card |
 | [Images (IMG)](images.md) | IMG-01 to IMG-06 | Astro Image, hero loading, lazy loading, alt text, filenames, real photography |
-| [Files (FILE)](files.md) | FILE-01 | PDFs |
+| [Files (FILE)](files.md) | FILE-01 to FILE-02 | PDFs, favicon and web manifest |
 | [Accessibility (ACC)](accessibility.md) | ACC-01 to ACC-17 | Native HTML, landmarks, keyboard, dialogs, forms, tables, contrast, zoom, motion, axe tests |
 | [Performance (PERF)](performance.md) | PERF-01 to PERF-06 | Core Web Vitals, CDN, fonts, pop-ups, back/forward cache, prefetch |
 | [Security and hosts (SEC)](security.md) | SEC-01 to SEC-04 | HTTPS, HSTS, exposed files, Content-Security-Policy |

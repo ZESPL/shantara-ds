@@ -199,7 +199,7 @@
           "docs/website-search-visibility-performance.html", "docs/website-search-visibility-security.html", "docs/website-search-visibility-ai.html",
           "docs/website-search-visibility-measurement.html", "docs/website-search-visibility-do-not.html",
         ] },
-        "docs/website-stack.html", "docs/website-structure.html", "docs/website-images.html", "docs/website-og-images.html", "docs/website-premium.html", "docs/website-qa.html",
+        "docs/website-stack.html", "docs/website-structure.html", "docs/website-images.html", "docs/website-og-images.html", "ui_kits/website/icons.card.html", "docs/website-icons.html", "docs/website-premium.html", "docs/website-qa.html",
       ] },
     { key: "App", label: "App kit", blurb: "In-stay guest companion — schedule, protocol, notes",
       order: ["ui_kits/app/index.html", "docs/app-kit.html"] },

@@ -56,6 +56,7 @@ You can also keep the folder at the repo root (as it is here) and treat `SKILL.m
 | `ui_kits/` if you are shipping those surfaces | `scraps/`, `dist/`, `.netlify/` |
 | `templates/brand-deck/` if you are building decks | |
 | `templates/og-images/og-image.mjs` and `samples/og-default.jpg` if you are building the website's share images | `templates/og-images/node_modules/` |
+| `templates/icons/public/` and `check-icons.mjs` if you are building the website's favicon and web manifest | `templates/icons/node_modules/` |
 | `scripts/build-bundle.mjs` if you edit components and need `_ds_bundle.js` rebuilt | |
 | `docs/handbook.txt` for policies and `[TO CONFIRM]` | Handbook §15 as public copy; inventing clinical bodies |
 
@@ -71,6 +72,7 @@ You can also keep the folder at the repo root (as it is here) and treat `SKILL.m
 | How to consume | `docs/use.md` | |
 | Website IA / CMS / QA | `ui_kits/website/skill-*.md` | overlapping `README.md` chapters |
 | Share images (Open Graph) | [`ui_kits/website/skill-og-images.md`](../ui_kits/website/skill-og-images.md) | `skill-images.md`, `search-visibility/social.md` (they point to it) |
+| Favicon, touch icon, web manifest | [`ui_kits/website/skill-icons.md`](../ui_kits/website/skill-icons.md) | `skill-images.md`, `search-visibility/files.md` (they point to it) |
 | Audience | `docs/icp.md` (internal) | public page copy |
 | Policies / `[TO CONFIRM]` | `docs/handbook.txt` | hero copy; never quote §15 publicly |
 

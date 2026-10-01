@@ -19,6 +19,7 @@ Read this file first. Open a sibling reference only when the task needs that inv
 - [Folder structure](skill-structure.md) — folder layout, route table, data sources, Keystatic scope and build checks for the shantara.life Astro repo
 - [Images](skill-images.md) — where image files go in the Astro repo, preparing files before commit, widths and formats, build checks
 - [Share images](skill-og-images.md) — Open Graph and Twitter card images: three templates, page metadata and fallbacks, Astro build-time generation, manual overrides, checks
+- [Icons](skill-icons.md) — favicon, iOS touch icon, Android install icons, web manifest and browser theme colour: the seven files, `<head>` tags, rebuild and checks
 - [Premium design](skill-premium.md) — build order, design-system rules from the brand deck (type voices, grounds, shape, buttons, tiles, component map, responsive rules), motion vocabulary
 - [Information architecture](skill-ia.md) — nav, URLs, page inventory, publishing families
 - [Sections and composition](skill-sections.md) — heroes, section library → components, tiles, example pages

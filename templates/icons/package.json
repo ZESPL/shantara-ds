@@ -1,0 +1,13 @@
+{
+  "name": "shantara-icons",
+  "private": true,
+  "type": "module",
+  "description": "Builds the website's favicon, touch icon, install icons and web manifest from the design-system frangipani mark.",
+  "scripts": {
+    "build": "node build-icons.mjs",
+    "check": "node check-icons.mjs"
+  },
+  "dependencies": {
+    "sharp": "^0.35.4"
+  }
+}

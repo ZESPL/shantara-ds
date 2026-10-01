@@ -1,0 +1,109 @@
+<!-- @dsCard group="Website" viewport="960x1360" name="Icons" subtitle="Favicon, phone home-screen icons and web manifest — how they look, the files, and the code to add them" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css"><style>
+body{margin:0;padding:24px;background:var(--surface-page);font-family:var(--font-body);color:var(--text-primary)}
+h3{margin:0 0 4px;font:var(--weight-medium) var(--text-sm)/1.2 var(--font-body);letter-spacing:.02em}
+.cap{font-family:var(--font-mono);font-size:var(--text-3xs);letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);margin:0 0 12px}
+.box{background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:20px}
+.lbl{font-family:var(--font-mono);font-size:var(--text-3xs);letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted)}
+.use{font-size:var(--text-3xs);color:var(--text-secondary);margin:0}
+.tabs{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.chrome{border-radius:var(--radius-md);padding:10px 12px 0;display:flex;gap:6px;align-items:flex-end}
+.tab{display:flex;align-items:center;gap:8px;padding:9px 14px;border-radius:8px 8px 0 0;font-size:13px;width:200px}
+.tab img{width:16px;height:16px;display:block}
+.tab .x{margin-left:auto;opacity:.5}
+.ghost{opacity:.55}
+.sizes{display:flex;gap:28px;align-items:flex-end;padding:16px 4px 4px}
+.sizes figure{margin:0;display:grid;justify-items:center;gap:8px}
+.phones{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.phone{display:grid;justify-items:center;gap:10px;text-align:center}
+.phone img{width:76px;height:76px;display:block}
+.files{width:100%;border-collapse:collapse;font-size:var(--text-xs)}
+.files th,.files td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--border-subtle);vertical-align:middle}
+.files th{font-family:var(--font-mono);font-size:var(--text-3xs);letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);font-weight:400}
+.files td:first-child img{width:28px;height:28px;display:block}
+.files code,pre{font-family:var(--font-mono)}
+.files a{color:var(--text-primary)}
+pre{margin:0;background:var(--color-pine-tree);color:var(--color-merino);border-radius:var(--radius-md);padding:16px;font-size:12px;line-height:1.6;overflow-x:auto;white-space:pre}
+.links{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:var(--text-xs);margin-top:12px}
+.links a{color:var(--text-primary)}
+</style></head><body>
+<div style="display:grid;gap:var(--space-8)">
+
+<div>
+<h3>Browser tab</h3>
+<p class="cap">favicon.svg — the bare mark on a transparent background, shown at real size (16px)</p>
+<div class="tabs">
+<div>
+<div class="chrome" style="background:#DEE1E6">
+<div class="tab" style="background:#FFFFFF;color:#202124"><img src="../../assets/icon-olive.svg" alt="Shantara favicon in a light browser tab" style="width:auto"><span>Shantara</span><span class="x">×</span></div>
+<div class="tab ghost" style="color:#202124"><span style="width:16px;height:16px;border-radius:50%;background:#9AA0A6"></span><span>Another site</span></div>
+</div>
+<p class="use" style="margin-top:8px">Light browser window: Himalaya mark</p>
+</div>
+<div>
+<div class="chrome" style="background:#202124">
+<div class="tab" style="background:#35363A;color:#E8EAED"><img src="../../assets/icon-cream.svg" alt="Shantara favicon in a dark browser tab" style="width:auto"><span>Shantara</span><span class="x">×</span></div>
+<div class="tab ghost" style="color:#E8EAED"><span style="width:16px;height:16px;border-radius:50%;background:#5F6368"></span><span>Another site</span></div>
+</div>
+<p class="use" style="margin-top:8px">Dark browser window: the same file switches to a Merino mark, because Himalaya is almost invisible on a dark tab</p>
+</div>
+</div>
+<div class="box" style="margin-top:12px">
+<div class="sizes">
+<figure><img src="../../assets/icon-olive.svg" alt="" style="height:16px;width:auto"><figcaption class="lbl">16px tab</figcaption></figure>
+<figure><img src="../../assets/icon-olive.svg" alt="" style="height:24px;width:auto"><figcaption class="lbl">24px</figcaption></figure>
+<figure><img src="../../assets/icon-olive.svg" alt="" style="height:32px;width:auto"><figcaption class="lbl">32px · favicon.ico</figcaption></figure>
+<figure><img src="../../assets/icon-olive.svg" alt="" style="height:48px;width:auto"><figcaption class="lbl">48px · Google results</figcaption></figure>
+<p class="use" style="max-width:34ch;margin-left:auto">16px is allowed only for browser icons built by <code>templates/icons/</code>. Everywhere else the mark's minimum is 24px.</p>
+</div>
+</div>
+</div>
+
+<div>
+<h3>Phone home screen and install</h3>
+<p class="cap">Gold Crayola mark on solid Himalaya — the phone rounds the corners</p>
+<div class="box phones">
+<div class="phone"><img src="../../templates/icons/public/apple-touch-icon.png" alt="iPhone home-screen icon" style="border-radius:22%"><span class="lbl">iPhone</span><p class="use">apple-touch-icon.png · 180px</p></div>
+<div class="phone"><img src="../../templates/icons/public/icon-mask.png" alt="Android icon in a circle mask" style="border-radius:50%"><span class="lbl">Android · circle</span><p class="use">icon-mask.png · 512px</p></div>
+<div class="phone"><img src="../../templates/icons/public/icon-mask.png" alt="Android icon in a rounded-square mask" style="border-radius:30%"><span class="lbl">Android · squircle</span><p class="use">icon-mask.png · 512px</p></div>
+<div class="phone"><img src="../../templates/icons/public/icon-512.png" alt="Android install icon" style="border-radius:12%"><span class="lbl">Install prompt</span><p class="use">icon-192.png and icon-512.png</p></div>
+</div>
+</div>
+
+<div>
+<h3>Files</h3>
+<p class="cap">Copy all seven into the website's public/ folder, unchanged</p>
+<div class="box" style="padding:4px 10px">
+<table class="files">
+<thead><tr><th></th><th>File</th><th>Size</th><th>Used by</th></tr></thead>
+<tbody>
+<tr><td><img src="../../assets/icon-olive.svg" alt="" style="width:auto"></td><td><a href="../../templates/icons/public/favicon.svg" download><code>favicon.svg</code></a></td><td>Vector</td><td>Browser tabs in all current browsers; Himalaya on light tabs, Merino on dark tabs</td></tr>
+<tr><td><img src="../../templates/icons/public/favicon.ico" alt=""></td><td><a href="../../templates/icons/public/favicon.ico" download><code>favicon.ico</code></a></td><td>32 × 32</td><td>Older browsers and tools that request <code>/favicon.ico</code> directly; always Himalaya</td></tr>
+<tr><td><img src="../../templates/icons/public/apple-touch-icon.png" alt=""></td><td><a href="../../templates/icons/public/apple-touch-icon.png" download><code>apple-touch-icon.png</code></a></td><td>180 × 180</td><td>iPhone and iPad home screen</td></tr>
+<tr><td><img src="../../templates/icons/public/icon-192.png" alt=""></td><td><a href="../../templates/icons/public/icon-192.png" download><code>icon-192.png</code></a></td><td>192 × 192</td><td>Android home screen</td></tr>
+<tr><td><img src="../../templates/icons/public/icon-512.png" alt=""></td><td><a href="../../templates/icons/public/icon-512.png" download><code>icon-512.png</code></a></td><td>512 × 512</td><td>Android splash screen and install prompt</td></tr>
+<tr><td><img src="../../templates/icons/public/icon-mask.png" alt=""></td><td><a href="../../templates/icons/public/icon-mask.png" download><code>icon-mask.png</code></a></td><td>512 × 512</td><td>Android launchers that crop icons to a shape</td></tr>
+<tr><td></td><td><a href="../../templates/icons/public/manifest.webmanifest" download><code>manifest.webmanifest</code></a></td><td>—</td><td>Lists the Android icons, the site name and the colours</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div>
+<h3>Code for developers</h3>
+<p class="cap">Add once, in src/components/seo/Head.astro, after the charset and viewport tags</p>
+<pre>&lt;link rel="icon" href="/favicon.ico" sizes="32x32" /&gt;
+&lt;link rel="icon" href="/favicon.svg" type="image/svg+xml" /&gt;
+&lt;link rel="apple-touch-icon" href="/apple-touch-icon.png" /&gt;
+&lt;link rel="manifest" href="/manifest.webmanifest" /&gt;
+&lt;meta name="theme-color" media="(prefers-color-scheme: light)" content="#F4F0E6" /&gt;
+&lt;meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2D2926" /&gt;</pre>
+<div class="links">
+<a href="../../docs/website-icons.html">Read the full implementation guide</a>
+<a href="../../templates/icons/samples/preview.png">Open the 16, 24 and 32px review sheet</a>
+<span class="use">To rebuild after a logo or colour change: <code>cd templates/icons &amp;&amp; npm install &amp;&amp; npm run build &amp;&amp; npm run check</code></span>
+</div>
+</div>
+
+</div>
+</body></html>
