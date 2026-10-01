@@ -54,7 +54,7 @@ writeFileSync(
 
 writeFileSync(
   join(dist, "netlify.toml"),
-  `[build]\n  publish = "."\n\n[[headers]]\n  for = "/assets/fonts/*"\n  [headers.values]\n    Cache-Control = "public, max-age=31536000, immutable"\n\n[[headers]]\n  for = "/*"\n  [headers.values]\n    X-Content-Type-Options = "nosniff"\n    Referrer-Policy = "strict-origin-when-cross-origin"\n`,
+  `[build]\n  publish = "."\n\n[[headers]]\n  for = "/assets/fonts/*"\n  [headers.values]\n    Cache-Control = "public, max-age=31536000, immutable"\n\n[[headers]]\n  for = "/*.md"\n  [headers.values]\n    Content-Type = "text/plain; charset=utf-8"\n\n[[headers]]\n  for = "/*"\n  [headers.values]\n    X-Content-Type-Options = "nosniff"\n    Referrer-Policy = "strict-origin-when-cross-origin"\n`,
 );
 
 console.log("Prepared dist/ for Netlify (notes included; scraps and raw uploads left out).");

@@ -814,6 +814,42 @@
     el.dispatchEvent(new CustomEvent("ds:rendered", { bubbles: true }));
   }
 
+  /* "View markdown" opens the source file in a new tab; "Copy markdown" puts it on the clipboard
+     for a prompt, a ticket or another repo. Both sit in the page head's meta row. */
+  async function copyMarkdown(text) {
+    if (window.DSPortal && window.DSPortal.copyText) return window.DSPortal.copyText(text);
+    try {
+      await navigator.clipboard.writeText(text);
+      return true;
+    } catch {
+      return false;
+    }
+  }
+
+  function addSourceActions(path, text) {
+    const head = document.querySelector(".ds-handbook-mast-inner, .ds-page-head-inner");
+    if (!head || head.querySelector("[data-md-actions]")) return;
+    let meta = head.querySelector(".ds-handbook-meta");
+    if (!meta) {
+      meta = document.createElement("p");
+      meta.className = "ds-handbook-meta";
+      head.appendChild(meta);
+    }
+    const href = new URL(path, location.href).href;
+    meta.insertAdjacentHTML("beforeend", `<span class="ds-md-actions" data-md-actions><a href="${escapeHtml(href)}" target="_blank" rel="noopener">View markdown</a><button type="button" class="dsp-id" data-copy-md>Copy markdown</button></span>`);
+    const btn = meta.querySelector("[data-copy-md]");
+    btn.addEventListener("click", async () => {
+      const ok = await copyMarkdown(text);
+      btn.textContent = ok ? "Copied" : "Copy failed — use View markdown";
+      btn.classList.toggle("is-copied", ok);
+      clearTimeout(btn._mdTimer);
+      btn._mdTimer = setTimeout(() => {
+        btn.textContent = "Copy markdown";
+        btn.classList.remove("is-copied");
+      }, 1600);
+    });
+  }
+
   /* Component list comes from _ds_manifest.json (scripts/write-manifest.mjs scans components/). */
   async function componentEntry(name) {
     let cards = null;
@@ -878,10 +914,12 @@
 
     const res = await fetch(`../${promptPath}`);
     if (!res.ok) throw new Error("Could not read " + promptPath);
-    const { lead, body } = splitPromptLead(await res.text());
+    const text = await res.text();
+    const { lead, body } = splitPromptLead(text);
     if (leadEl && lead) leadEl.innerHTML = inline(lead);
     host.innerHTML = renderMarkdown(body);
     decorate(host);
+    addSourceActions(`../${promptPath}`, text);
     return true;
   }
 
@@ -918,9 +956,11 @@
     if (md) {
       const res = await fetch(md);
       if (!res.ok) throw new Error("Could not read " + md);
-      el.innerHTML = renderMarkdown(await res.text());
+      const text = await res.text();
+      el.innerHTML = renderMarkdown(text);
       rewriteKitLinks(el, md);
       decorate(el);
+      addSourceActions(md, text);
       return;
     }
 
@@ -933,13 +973,15 @@
     if (sources) {
       const res = await fetch("sources.md");
       if (!res.ok) throw new Error("Could not read sources.md");
-      el.innerHTML = renderMarkdown(await res.text());
+      const text = await res.text();
+      el.innerHTML = renderMarkdown(text);
       const rows = await Promise.all(SOURCE_PROBES.map(async (path) => {
         const ok = await probe(path);
         return `<tr><td><code>${escapeHtml(path)}</code></td><td class="status" data-ok="${ok ? "1" : "0"}">${ok ? "On disk" : "Not in this copy"}</td>${ok ? `<td><a href="../${encodeURI(path)}">Open</a></td>` : "<td></td>"}</tr>`;
       }));
       el.insertAdjacentHTML("beforeend", `<h2 id="local-probe">Local probe</h2><p>Checked from this page. A public Netlify copy will show “Not in this copy” because <code>uploads/</code> is not published.</p><table><thead><tr><th>Path</th><th>Status</th><th></th></tr></thead><tbody>${rows.join("")}</tbody></table>`);
       decorate(el);
+      addSourceActions("sources.md", text);
     }
   }
 
