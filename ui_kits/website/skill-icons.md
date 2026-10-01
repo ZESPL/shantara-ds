@@ -4,6 +4,8 @@ Back to the [website skill](SKILL.md).
 
 This file is the one standard for the icons a browser or phone shows for shantara.life: the browser-tab icon, the iOS home-screen icon, the Android install icons, the web manifest and the browser theme colour. It covers which files ship, what they look like, the tags in `<head>`, the manifest, how to rebuild the files and how to check them.
 
+To see every icon as browsers and phones show it, with download links, open the **Icons** card in the catalog (Brand → Icons, [`guidelines/icons.html`](../../guidelines/icons.html)).
+
 The checkable rule is FILE-02 in [search-visibility/files.md](search-visibility/files.md). It points here for the detail. The reference build is [`templates/icons/`](../../templates/icons/README.md); it implements this file, and when the two disagree this file wins and the build is corrected.
 
 | Rule already recorded | Where |

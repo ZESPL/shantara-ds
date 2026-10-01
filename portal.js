@@ -169,8 +169,8 @@
   const GROUPS = [
     { key: "Start", label: "Start", blurb: "How to browse this folder, how to drop it into another repo, the agent skill and the ID scheme",
       order: ["docs/use.html", "docs/skill.html", "docs/readme.html", "docs/copy-ids.html"] },
-    { key: "Brand", label: "Brand", blurb: "Colour, type, logo, pattern, imagery and print",
-      order: ["guidelines/colors.html", "guidelines/type.html", "guidelines/logo.html", "guidelines/brand-pattern.html", "guidelines/brand-imagery.html", "guidelines/brand-protection.html", "guidelines/brand-applications.html"] },
+    { key: "Brand", label: "Brand", blurb: "Colour, type, logo, icons, pattern, imagery and print",
+      order: ["guidelines/colors.html", "guidelines/type.html", "guidelines/logo.html", "guidelines/icons.html", "guidelines/brand-pattern.html", "guidelines/brand-imagery.html", "guidelines/brand-protection.html", "guidelines/brand-applications.html"] },
     { key: "Foundations", label: "Foundations", blurb: "Scale, rhythm, radius, borders, elevation, motion and accessibility",
       order: ["guidelines/spacing-scale.html", "guidelines/spacing-inuse.html", "guidelines/radius.html", "guidelines/borders.html", "guidelines/elevation.html", "guidelines/motion.html", "guidelines/accessibility.html"] },
     { key: "Components", label: "Components", blurb: "Core, forms, navigation, feedback, editorial and sections — family overviews and one page per component", families: true },
