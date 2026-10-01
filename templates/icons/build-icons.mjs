@@ -20,11 +20,11 @@ const token = (name) => {
   if (!m) throw new Error(`Missing --color-${name} in tokens/colors.css`);
   return m[1].toUpperCase();
 };
-// Browser tab: a transparent Himalaya mark, switching to Merino on dark tabs, where Himalaya has too little contrast.
+// Browser tab: a transparent Himalaya mark, switching to Gold Crayola on dark tabs, where Himalaya has too little contrast.
 // Home-screen and install icons: a Gold Crayola mark on solid Himalaya.
 const GROUND = token("himalaya");
 const MARK = token("gold-crayola");
-// Merino is the site's page colour and the tab mark's dark-mode colour.
+// Merino is the site's page colour, used for the manifest theme_color.
 const PAGE = token("merino");
 
 // The mark: path data only. The C2PA metadata and editor ids in the source file are dropped.
@@ -38,10 +38,10 @@ const side = Math.max(vw, vh);
 const box = [vx - (side - vw) / 2, vy - (side - vh) / 2, side, side].map((n) => +n.toFixed(2)).join(" ");
 const pathTags = paths.map((d) => `<path d="${d}"/>`).join("");
 
-// Tab icon: the bare mark on a transparent background, Himalaya on light tabs and Merino on dark tabs.
+// Tab icon: the bare mark on a transparent background, Himalaya on light tabs and Gold Crayola on dark tabs.
 const faviconSvg =
   `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${box}">` +
-  `<style>path{fill:${GROUND}}@media (prefers-color-scheme:dark){path{fill:${PAGE}}}</style>` +
+  `<style>path{fill:${GROUND}}@media (prefers-color-scheme:dark){path{fill:${MARK}}}</style>` +
   `${pathTags}</svg>\n`;
 writeFileSync(join(out, "favicon.svg"), faviconSvg);
 
@@ -53,7 +53,7 @@ const markSvg = (fill) =>
 const mark = (size, fill) => sharp(markSvg(fill), { density: 72 * Math.ceil((size * 4) / side) }).resize(size, size).png().toBuffer();
 
 // Raster of the tab icon for a light or a dark tab, for favicon.ico and the review sheet.
-const tab = (size, dark = false) => mark(size, dark ? PAGE : GROUND);
+const tab = (size, dark = false) => mark(size, dark ? MARK : GROUND);
 
 // Gold mark on a solid Himalaya square. `scale` is the mark's share of the canvas width.
 async function tile(size, scale) {

@@ -21,7 +21,7 @@ Seven files, all in the website's `public/` folder, all built from `assets/icon-
 
 | File | Size | Who uses it |
 | --- | --- | --- |
-| `favicon.svg` | Vector, square | Browser tabs, bookmarks and history in browsers that read SVG favicons: Chrome, Edge, Firefox, and Safari 26 or later. Himalaya on light tabs, Merino on dark tabs where the browser supports it (section 2). |
+| `favicon.svg` | Vector, square | Browser tabs, bookmarks and history in browsers that read SVG favicons: Chrome, Edge, Firefox, and Safari 26 or later. Himalaya on light tabs, Gold Crayola on dark tabs where the browser supports it (section 2). |
 | `favicon.ico` | 32 × 32 | Safari 18 and earlier, older browsers, feed readers, and any tool that asks for `/favicon.ico` without reading the page. It must exist at the root. |
 | `apple-touch-icon.png` | 180 × 180 | The iOS and iPadOS home-screen icon when someone adds the site. |
 | `icon-192.png` | 192 × 192 | The Android home-screen shortcut when a visitor adds the site from the browser menu, through the manifest. |
@@ -35,14 +35,14 @@ Google Search shows a site icon next to results. Google chooses which declared i
 
 - **The mark only, never the wordmark or the full lockup.** Text is unreadable at tab size.
 - **Browser tab: the bare mark in Himalaya on a transparent background, with no tile or background shape.** Himalaya on a white tab has a contrast ratio of about 8 : 1.
-- **Dark tabs: the same `favicon.svg` switches to a Merino mark** through a `prefers-color-scheme: dark` style inside the file. Himalaya on a dark tab is about 1.5 : 1 and almost disappears; Merino is about 10 : 1. Chrome and Edge follow the switch.
-- **Known limit: Safari in dark mode shows the faint Himalaya mark.** Safari 26 and later read `favicon.svg` but ignore the dark-mode style inside it. Safari 18 and earlier do not read SVG favicons and use `favicon.ico`, which cannot switch. Either way, a Safari user with a dark tab bar sees Himalaya at about 1.5 : 1. This is accepted to keep the approved transparent Himalaya mark. If the post-launch check (section 8) shows the icon is unreadable there, the fix is a design decision, such as a thin Merino outline around the mark, approved by a designer. No mid-tone colour reads on both light and dark tabs.
+- **Dark tabs: the same `favicon.svg` switches to a Gold Crayola mark** through a `prefers-color-scheme: dark` style inside the file. Himalaya on a dark tab is about 1.5 : 1 and almost disappears; Gold Crayola is about 7.5 : 1, and matches the `gold` colourway the logo guideline sets for dark grounds. Chrome and Edge follow the switch.
+- **Known limit: Safari in dark mode shows the faint Himalaya mark.** Safari 26 and later read `favicon.svg` but ignore the dark-mode style inside it. Safari 18 and earlier do not read SVG favicons and use `favicon.ico`, which cannot switch. Either way, a Safari user with a dark tab bar sees Himalaya at about 1.5 : 1. This is accepted to keep the approved transparent Himalaya mark. If the post-launch check (section 8) shows the icon is unreadable there, the fix is a design decision, such as a thin Gold Crayola outline around the mark, approved by a designer. No mid-tone colour reads on both light and dark tabs.
 - **Home-screen icons: a Gold Crayola mark on solid Himalaya**, the `gold` colourway on Himalaya in [`guidelines/logo.html`](../../guidelines/logo.html). These files must be fully opaque, because iOS fills transparency with black and Android with white, so the transparent tab icon cannot be reused.
 - **Mark size inside the square:** 64% of the width for the touch icon and the two Android icons, and 54% for the maskable icon. At 54% the whole mark stays inside the central circle (80% of the width) that every Android mask keeps.
 - **No rounded corners in the home-screen files.** iOS and Android round the corners themselves, and a file with its own corners gets a second, mismatched curve.
 - **Minimum size exception.** The logo guideline sets 24px as the smallest mark. Browser tabs show icons at 16px, so the mark may appear at 16px **only as a browser icon built by `templates/icons/`**. The 16, 24 and 32px renders are in [`templates/icons/samples/preview.png`](../../templates/icons/samples/preview.png). Everywhere else the 24px minimum still applies.
-- **No other colours and no rosette pattern.** No Pine Tree, accent colours, or gold in the browser tab. At these sizes the pattern turns to noise.
-- **Previewing the tab icon:** `favicon.svg` follows the viewer's operating-system setting, not the colour of the page it sits on. On a computer in dark mode it draws a Merino mark even on a white mock-up. Previews and mock-ups use `assets/icon-olive.svg` (light) and `assets/icon-cream.svg` (dark) instead.
+- **No other colours and no rosette pattern.** No Pine Tree, Merino or accent colours in the browser tab; gold only as its dark-mode colour. At these sizes the pattern turns to noise.
+- **Previewing the tab icon:** `favicon.svg` follows the viewer's operating-system setting, not the colour of the page it sits on. On a computer in dark mode it draws a gold mark even on a white mock-up. Previews and mock-ups use `assets/icon-olive.svg` (light) and `assets/icon-gold.svg` (dark) instead.
 
 ## 3. Tags in `<head>`
 
@@ -131,7 +131,7 @@ After deploy, check by hand:
 
 1. `curl -I https://shantara.life/favicon.ico` and the same for the other six files return `200` with the content types above.
 2. Chrome DevTools → Application → Manifest shows the name, the icons and the maskable preview. An installability warning about `display` is expected, because the site is deliberately not installable; any other warning is a fault.
-3. The tab icon is Himalaya in a light Chrome window and Merino in a dark one.
+3. The tab icon is Himalaya in a light Chrome window and Gold Crayola in a dark one.
 4. Safari on a Mac in dark mode: note whether the Himalaya tab icon is still recognisable (section 2, known limit). Report it to design if it is not.
 5. On an iPhone, Share → Add to Home Screen shows the gold mark on Himalaya.
 6. A few weeks after launch, search for Shantara on Google and confirm the result shows the frangipani mark, not a generic globe.
