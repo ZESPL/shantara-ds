@@ -20,8 +20,11 @@ const token = (name) => {
   if (!m) throw new Error(`Missing --color-${name} in tokens/colors.css`);
   return m[1].toUpperCase();
 };
-const DARK = token("pine-tree");
-const LIGHT = token("merino");
+// Every icon is a Gold Crayola mark on Himalaya: one pairing that reads on light and dark browser chrome.
+const GROUND = token("himalaya");
+const MARK = token("gold-crayola");
+// Merino is the site's page colour; the manifest and theme-color use it, not the icons.
+const PAGE = token("merino");
 
 // The mark: path data only. The C2PA metadata and editor ids in the source file are dropped.
 const source = readFileSync(join(root, "assets/icon-current.svg"), "utf8");
@@ -34,12 +37,18 @@ const side = Math.max(vw, vh);
 const box = [vx - (side - vw) / 2, vy - (side - vh) / 2, side, side].map((n) => +n.toFixed(2)).join(" ");
 const pathTags = paths.map((d) => `<path d="${d}"/>`).join("");
 
-// Tab icon: Pine Tree on light browser chrome, Merino on dark.
+// Tab icon: a Himalaya tile with rounded corners and the gold mark at 78% of its width.
+// The solid tile keeps the mark visible on any tab colour, so no dark-mode switch is needed.
+const TAB_MARK = 0.78, TAB_RADIUS = 0.2;
+const [bx, by] = box.split(" ").map(Number);
+const s = (100 * TAB_MARK) / side, inset = (100 * (1 - TAB_MARK)) / 2;
 const faviconSvg =
-  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${box}">` +
-  `<style>path{fill:${DARK}}@media (prefers-color-scheme:dark){path{fill:${LIGHT}}}</style>` +
-  `${pathTags}</svg>\n`;
+  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">` +
+  `<rect width="100" height="100" rx="${100 * TAB_RADIUS}" fill="${GROUND}"/>` +
+  `<g fill="${MARK}" transform="translate(${+(inset - bx * s).toFixed(3)} ${+(inset - by * s).toFixed(3)}) scale(${+s.toFixed(5)})">${pathTags}</g></svg>\n`;
 writeFileSync(join(out, "favicon.svg"), faviconSvg);
+// Raster of the tab icon at any size, for favicon.ico and the review sheet.
+const tab = (size) => sharp(Buffer.from(faviconSvg), { density: 72 * Math.ceil((size * 4) / 100) }).resize(size, size).png().toBuffer();
 
 const markSvg = (fill) =>
   Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="${box}"><g fill="${fill}">${pathTags}</g></svg>`);
@@ -47,12 +56,12 @@ const markSvg = (fill) =>
 // Transparent mark, rendered at its final size so small sizes are sampled from vectors.
 const mark = (size, fill) => sharp(markSvg(fill), { density: 72 * Math.ceil((size * 4) / side) }).resize(size, size).png().toBuffer();
 
-// Merino mark on a solid Pine Tree square. `scale` is the mark's share of the canvas width.
+// Gold mark on a solid Himalaya square. `scale` is the mark's share of the canvas width.
 async function tile(size, scale) {
   const m = Math.round(size * scale);
   const offset = Math.round((size - m) / 2);
-  return sharp({ create: { width: size, height: size, channels: 4, background: DARK } })
-    .composite([{ input: await mark(m, LIGHT), left: offset, top: offset }])
+  return sharp({ create: { width: size, height: size, channels: 4, background: GROUND } })
+    .composite([{ input: await mark(m, MARK), left: offset, top: offset }])
     .png({ compressionLevel: 9 })
     .toBuffer();
 }
@@ -65,7 +74,7 @@ writeFileSync(join(out, "icon-512.png"), await tile(512, 0.64));
 writeFileSync(join(out, "icon-mask.png"), await tile(512, 0.54));
 
 // favicon.ico: one 32 × 32 PNG inside an ICO container (supported by every browser that reads ICO).
-const png32 = await mark(32, DARK);
+const png32 = await tab(32);
 const ico = Buffer.alloc(22);
 ico.writeUInt16LE(0, 0); // reserved
 ico.writeUInt16LE(1, 2); // type: icon
@@ -86,8 +95,8 @@ const manifest = {
   start_url: "/en/",
   scope: "/",
   display: "browser",
-  background_color: LIGHT,
-  theme_color: LIGHT,
+  background_color: GROUND,
+  theme_color: PAGE,
   icons: [
     { src: "/icon-192.png", sizes: "192x192", type: "image/png" },
     { src: "/icon-512.png", sizes: "512x512", type: "image/png" },
@@ -96,18 +105,18 @@ const manifest = {
 };
 writeFileSync(join(out, "manifest.webmanifest"), JSON.stringify(manifest, null, 2) + "\n");
 
-// Review sheet: the tab icon at 16, 24 and 32 px on light and dark chrome, shown at 1× and enlarged 4×,
+// Review sheet: the tab icon at 16, 24 and 32 px on light and dark browser chrome, shown at 1× and enlarged 4×,
 // then the touch icon and the maskable icon under a circle mask.
 const W = 800, H = 300, pad = 24;
 const layers = [];
 const swatch = (left, top, w, h, color) => ({
   input: { create: { width: w, height: h, channels: 4, background: color } }, left, top,
 });
-layers.push(swatch(0, 0, W - 300, 150, LIGHT), swatch(0, 150, W - 300, 150, DARK));
+layers.push(swatch(0, 0, W - 300, 150, "#FFFFFF"), swatch(0, 150, W - 300, 150, "#202124"));
 let x = pad;
 for (const size of [16, 24, 32]) {
-  for (const [row, fill] of [[0, DARK], [150, LIGHT]]) {
-    const one = await mark(size, fill);
+  for (const row of [0, 150]) {
+    const one = await tab(size);
     const big = await sharp(one).resize(size * 4, size * 4, { kernel: "nearest" }).png().toBuffer();
     layers.push({ input: one, left: x, top: row + pad });
     layers.push({ input: big, left: x + size + 12, top: row + pad });
@@ -119,7 +128,7 @@ const circle = Buffer.from(`<svg width="120" height="120"><circle cx="60" cy="60
 const masked = await sharp(await sharp(await tile(512, 0.54)).resize(120, 120).png().toBuffer())
   .composite([{ input: circle, blend: "dest-in" }]).png().toBuffer();
 layers.push({ input: touch, left: W - 280, top: 90 }, { input: masked, left: W - 140, top: 90 });
-await sharp({ create: { width: W, height: H, channels: 4, background: "#FFFFFF" } })
+await sharp({ create: { width: W, height: H, channels: 4, background: "#F4F4F4" } })
   .composite(layers).png().toFile(join(samples, "preview.png"));
 
 console.log(`Built 7 files in templates/icons/public/ and samples/preview.png`);

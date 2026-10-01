@@ -20,7 +20,7 @@ if (existsSync(file("favicon.svg"))) {
   const svg = readFileSync(file("favicon.svg"), "utf8");
   if (statSync(file("favicon.svg")).size > 3 * 1024) fail("favicon.svg: over 3 KB — strip metadata and editor markup");
   if (/<metadata|c2pa|<\?xml|id="Layer/.test(svg)) fail("favicon.svg: contains metadata or editor markup");
-  if (!/prefers-color-scheme:\s*dark/.test(svg)) fail("favicon.svg: no dark-mode colour");
+  if (!/<rect\b[^>]*fill=/.test(svg)) fail("favicon.svg: no solid background tile — a bare mark disappears on some tab colours");
   const vb = /viewBox="([^"]+)"/.exec(svg)?.[1].split(/\s+/).map(Number);
   if (!vb || vb[2] !== vb[3]) fail("favicon.svg: viewBox is not square");
 }

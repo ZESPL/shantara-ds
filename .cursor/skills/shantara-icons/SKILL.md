@@ -14,7 +14,7 @@ Canonical standard: **`ui_kits/website/skill-icons.md`**. Read it before any cha
 
 1. The site ships exactly seven files: `favicon.ico`, `favicon.svg`, `apple-touch-icon.png`, `icon-192.png`, `icon-512.png`, `icon-mask.png`, `manifest.webmanifest`. Never add browserconfig, mask-icon, msapplication tags or extra PNG sizes.
 2. Never draw or export icons by hand, and never use a favicon generator website. Run `npm run build` in `templates/icons/`. It reads the mark from `assets/icon-current.svg` and the colours from `tokens/colors.css`.
-3. Mark only, never the wordmark. Tab icon: Pine Tree, switching to Merino in dark mode. Home-screen and install icons: Merino mark on solid Pine Tree, no transparency, no rounded corners.
+3. Mark only, never the wordmark. Every icon is a Gold Crayola mark on Himalaya. Tab icon: the mark on a rounded Himalaya tile (no dark-mode switch). Home-screen and install icons: the mark on a solid Himalaya square, no transparency, no rounded corners.
 4. The 16px mark is allowed only as a browser icon from this build. The 24px minimum in `guidelines/logo.html` applies everywhere else.
 5. Icon tags live only in `src/components/seo/Head.astro`, as listed in section 3 of the canonical doc.
 6. The manifest keeps `display: "browser"` and `start_url: "/en/"`, with one manifest for every language and the maskable icon as its own entry.
