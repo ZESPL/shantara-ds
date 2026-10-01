@@ -20,10 +20,11 @@ const token = (name) => {
   if (!m) throw new Error(`Missing --color-${name} in tokens/colors.css`);
   return m[1].toUpperCase();
 };
-// Every icon is a Gold Crayola mark on Himalaya: one pairing that reads on light and dark browser chrome.
+// Browser tab: a transparent Himalaya mark, switching to Merino on dark tabs, where Himalaya has too little contrast.
+// Home-screen and install icons: a Gold Crayola mark on solid Himalaya.
 const GROUND = token("himalaya");
 const MARK = token("gold-crayola");
-// Merino is the site's page colour; the manifest and theme-color use it, not the icons.
+// Merino is the site's page colour and the tab mark's dark-mode colour.
 const PAGE = token("merino");
 
 // The mark: path data only. The C2PA metadata and editor ids in the source file are dropped.
@@ -37,24 +38,22 @@ const side = Math.max(vw, vh);
 const box = [vx - (side - vw) / 2, vy - (side - vh) / 2, side, side].map((n) => +n.toFixed(2)).join(" ");
 const pathTags = paths.map((d) => `<path d="${d}"/>`).join("");
 
-// Tab icon: a Himalaya tile with rounded corners and the gold mark at 78% of its width.
-// The solid tile keeps the mark visible on any tab colour, so no dark-mode switch is needed.
-const TAB_MARK = 0.78, TAB_RADIUS = 0.2;
-const [bx, by] = box.split(" ").map(Number);
-const s = (100 * TAB_MARK) / side, inset = (100 * (1 - TAB_MARK)) / 2;
+// Tab icon: the bare mark on a transparent background, Himalaya on light tabs and Merino on dark tabs.
 const faviconSvg =
-  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">` +
-  `<rect width="100" height="100" rx="${100 * TAB_RADIUS}" fill="${GROUND}"/>` +
-  `<g fill="${MARK}" transform="translate(${+(inset - bx * s).toFixed(3)} ${+(inset - by * s).toFixed(3)}) scale(${+s.toFixed(5)})">${pathTags}</g></svg>\n`;
+  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${box}">` +
+  `<style>path{fill:${GROUND}}@media (prefers-color-scheme:dark){path{fill:${PAGE}}}</style>` +
+  `${pathTags}</svg>\n`;
 writeFileSync(join(out, "favicon.svg"), faviconSvg);
-// Raster of the tab icon at any size, for favicon.ico and the review sheet.
-const tab = (size) => sharp(Buffer.from(faviconSvg), { density: 72 * Math.ceil((size * 4) / 100) }).resize(size, size).png().toBuffer();
+
 
 const markSvg = (fill) =>
   Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="${box}"><g fill="${fill}">${pathTags}</g></svg>`);
 
 // Transparent mark, rendered at its final size so small sizes are sampled from vectors.
 const mark = (size, fill) => sharp(markSvg(fill), { density: 72 * Math.ceil((size * 4) / side) }).resize(size, size).png().toBuffer();
+
+// Raster of the tab icon for a light or a dark tab, for favicon.ico and the review sheet.
+const tab = (size, dark = false) => mark(size, dark ? PAGE : GROUND);
 
 // Gold mark on a solid Himalaya square. `scale` is the mark's share of the canvas width.
 async function tile(size, scale) {
@@ -116,7 +115,7 @@ layers.push(swatch(0, 0, W - 300, 150, "#FFFFFF"), swatch(0, 150, W - 300, 150, 
 let x = pad;
 for (const size of [16, 24, 32]) {
   for (const row of [0, 150]) {
-    const one = await tab(size);
+    const one = await tab(size, row === 150);
     const big = await sharp(one).resize(size * 4, size * 4, { kernel: "nearest" }).png().toBuffer();
     layers.push({ input: one, left: x, top: row + pad });
     layers.push({ input: big, left: x + size + 12, top: row + pad });

@@ -1,4 +1,4 @@
-<!-- @dsCard group="Website" viewport="960x1340" name="Icons" subtitle="Favicon, phone home-screen icons and web manifest — how they look, the files, and the code to add them" -->
+<!-- @dsCard group="Website" viewport="960x1360" name="Icons" subtitle="Favicon, phone home-screen icons and web manifest — how they look, the files, and the code to add them" -->
 <!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css"><style>
 body{margin:0;padding:24px;background:var(--surface-page);font-family:var(--font-body);color:var(--text-primary)}
 h3{margin:0 0 4px;font:var(--weight-medium) var(--text-sm)/1.2 var(--font-body);letter-spacing:.02em}
@@ -31,29 +31,29 @@ pre{margin:0;background:var(--color-pine-tree);color:var(--color-merino);border-
 
 <div>
 <h3>Browser tab</h3>
-<p class="cap">favicon.svg — Gold Crayola mark on a Himalaya tile, shown at real size (16px)</p>
+<p class="cap">favicon.svg — the bare mark on a transparent background, shown at real size (16px)</p>
 <div class="tabs">
 <div>
 <div class="chrome" style="background:#DEE1E6">
-<div class="tab" style="background:#FFFFFF;color:#202124"><img src="../../templates/icons/public/favicon.svg" alt="Shantara favicon in a light browser tab"><span>Shantara</span><span class="x">×</span></div>
+<div class="tab" style="background:#FFFFFF;color:#202124"><img src="../../assets/icon-olive.svg" alt="Shantara favicon in a light browser tab" style="width:auto"><span>Shantara</span><span class="x">×</span></div>
 <div class="tab ghost" style="color:#202124"><span style="width:16px;height:16px;border-radius:50%;background:#9AA0A6"></span><span>Another site</span></div>
 </div>
-<p class="use" style="margin-top:8px">Light browser window</p>
+<p class="use" style="margin-top:8px">Light browser window: Himalaya mark</p>
 </div>
 <div>
 <div class="chrome" style="background:#202124">
-<div class="tab" style="background:#35363A;color:#E8EAED"><img src="../../templates/icons/public/favicon.svg" alt="Shantara favicon in a dark browser tab"><span>Shantara</span><span class="x">×</span></div>
+<div class="tab" style="background:#35363A;color:#E8EAED"><img src="../../assets/icon-cream.svg" alt="Shantara favicon in a dark browser tab" style="width:auto"><span>Shantara</span><span class="x">×</span></div>
 <div class="tab ghost" style="color:#E8EAED"><span style="width:16px;height:16px;border-radius:50%;background:#5F6368"></span><span>Another site</span></div>
 </div>
-<p class="use" style="margin-top:8px">Dark browser window — the same file, no dark-mode switch needed</p>
+<p class="use" style="margin-top:8px">Dark browser window: the same file switches to a Merino mark, because Himalaya is almost invisible on a dark tab</p>
 </div>
 </div>
 <div class="box" style="margin-top:12px">
 <div class="sizes">
-<figure><img src="../../templates/icons/public/favicon.svg" alt="" style="width:16px;height:16px"><figcaption class="lbl">16px tab</figcaption></figure>
-<figure><img src="../../templates/icons/public/favicon.svg" alt="" style="width:24px;height:24px"><figcaption class="lbl">24px</figcaption></figure>
-<figure><img src="../../templates/icons/public/favicon.svg" alt="" style="width:32px;height:32px"><figcaption class="lbl">32px · favicon.ico</figcaption></figure>
-<figure><img src="../../templates/icons/public/favicon.svg" alt="" style="width:48px;height:48px"><figcaption class="lbl">48px · Google results</figcaption></figure>
+<figure><img src="../../assets/icon-olive.svg" alt="" style="height:16px;width:auto"><figcaption class="lbl">16px tab</figcaption></figure>
+<figure><img src="../../assets/icon-olive.svg" alt="" style="height:24px;width:auto"><figcaption class="lbl">24px</figcaption></figure>
+<figure><img src="../../assets/icon-olive.svg" alt="" style="height:32px;width:auto"><figcaption class="lbl">32px · favicon.ico</figcaption></figure>
+<figure><img src="../../assets/icon-olive.svg" alt="" style="height:48px;width:auto"><figcaption class="lbl">48px · Google results</figcaption></figure>
 <p class="use" style="max-width:34ch;margin-left:auto">16px is allowed only for browser icons built by <code>templates/icons/</code>. Everywhere else the mark's minimum is 24px.</p>
 </div>
 </div>
@@ -77,8 +77,8 @@ pre{margin:0;background:var(--color-pine-tree);color:var(--color-merino);border-
 <table class="files">
 <thead><tr><th></th><th>File</th><th>Size</th><th>Used by</th></tr></thead>
 <tbody>
-<tr><td><img src="../../templates/icons/public/favicon.svg" alt=""></td><td><a href="../../templates/icons/public/favicon.svg" download><code>favicon.svg</code></a></td><td>Vector</td><td>Browser tabs in all current browsers</td></tr>
-<tr><td><img src="../../templates/icons/public/favicon.ico" alt=""></td><td><a href="../../templates/icons/public/favicon.ico" download><code>favicon.ico</code></a></td><td>32 × 32</td><td>Older browsers and tools that request <code>/favicon.ico</code> directly</td></tr>
+<tr><td><img src="../../assets/icon-olive.svg" alt="" style="width:auto"></td><td><a href="../../templates/icons/public/favicon.svg" download><code>favicon.svg</code></a></td><td>Vector</td><td>Browser tabs in all current browsers; Himalaya on light tabs, Merino on dark tabs</td></tr>
+<tr><td><img src="../../templates/icons/public/favicon.ico" alt=""></td><td><a href="../../templates/icons/public/favicon.ico" download><code>favicon.ico</code></a></td><td>32 × 32</td><td>Older browsers and tools that request <code>/favicon.ico</code> directly; always Himalaya</td></tr>
 <tr><td><img src="../../templates/icons/public/apple-touch-icon.png" alt=""></td><td><a href="../../templates/icons/public/apple-touch-icon.png" download><code>apple-touch-icon.png</code></a></td><td>180 × 180</td><td>iPhone and iPad home screen</td></tr>
 <tr><td><img src="../../templates/icons/public/icon-192.png" alt=""></td><td><a href="../../templates/icons/public/icon-192.png" download><code>icon-192.png</code></a></td><td>192 × 192</td><td>Android home screen</td></tr>
 <tr><td><img src="../../templates/icons/public/icon-512.png" alt=""></td><td><a href="../../templates/icons/public/icon-512.png" download><code>icon-512.png</code></a></td><td>512 × 512</td><td>Android splash screen and install prompt</td></tr>

@@ -21,7 +21,7 @@ Seven files, all in the website's `public/` folder, all built from `assets/icon-
 
 | File | Size | Who uses it |
 | --- | --- | --- |
-| `favicon.svg` | Vector, square | Browser tabs, bookmarks and history in every current browser. |
+| `favicon.svg` | Vector, square | Browser tabs, bookmarks and history in every current browser. Himalaya on light tabs, Merino on dark tabs. |
 | `favicon.ico` | 32 × 32 | Older browsers, feed readers, and any tool that asks for `/favicon.ico` without reading the page. It must exist at the root. |
 | `apple-touch-icon.png` | 180 × 180 | The iOS and iPadOS home-screen icon when someone adds the site. |
 | `icon-192.png` | 192 × 192 | Android home screen and install prompts, through the manifest. |
@@ -34,13 +34,14 @@ Google Search shows the browser-tab icon next to results. It reads `favicon.svg`
 ## 2. How the icons look
 
 - **The mark only, never the wordmark or the full lockup.** Text is unreadable at tab size.
-- **One colour pairing for every icon: a Gold Crayola mark on Himalaya**, the same pairing as the `gold` colourway on Himalaya in [`guidelines/logo.html`](../../guidelines/logo.html). Gold on Himalaya has a contrast ratio of about 5 : 1.
-- **Browser tab:** the mark sits on a solid Himalaya tile with rounded corners (20% radius), at 78% of the tile's width. A bare mark with no tile disappears on some tab colours: a dark mark vanishes on dark tabs and a light one on light tabs. The tile reads on both, so the icon does not switch for dark mode. `favicon.ico` is the same tile at 32px.
-- **Home-screen and install icons:** the gold mark on a solid Himalaya square. These files are fully opaque, because iOS fills transparency with black and Android with white.
+- **Browser tab: the bare mark in Himalaya on a transparent background, with no tile or background shape.** Himalaya on a white tab has a contrast ratio of about 8 : 1.
+- **Dark tabs: the same `favicon.svg` switches to a Merino mark** through a `prefers-color-scheme: dark` style inside the file. Himalaya on a dark tab is about 1.5 : 1 and almost disappears; Merino is about 10 : 1. `favicon.ico` cannot switch, so it stays Himalaya; only older browsers use it.
+- **Home-screen and install icons: a Gold Crayola mark on solid Himalaya**, the `gold` colourway on Himalaya in [`guidelines/logo.html`](../../guidelines/logo.html). These files must be fully opaque, because iOS fills transparency with black and Android with white, so the transparent tab icon cannot be reused.
 - **Mark size inside the square:** 64% of the width for the touch icon and the two install icons, and 54% for the maskable icon. At 54% the whole mark stays inside the central circle (80% of the width) that every Android mask keeps.
-- **No rounded corners in the home-screen and install files.** iOS and Android round the corners themselves, and a file with its own corners gets a second, mismatched curve. Only the browser-tab icon has corners, because browsers do not round favicons.
+- **No rounded corners in the home-screen and install files.** iOS and Android round the corners themselves, and a file with its own corners gets a second, mismatched curve.
 - **Minimum size exception.** The logo guideline sets 24px as the smallest mark. Browser tabs show icons at 16px, so the mark may appear at 16px **only as a browser icon built by `templates/icons/`**. The 16, 24 and 32px renders are in [`templates/icons/samples/preview.png`](../../templates/icons/samples/preview.png). Everywhere else the 24px minimum still applies.
-- **No other colours and no rosette pattern.** No Pine Tree, Merino, accent colours or a bare gold mark: gold on its own disappears on light browser chrome. At these sizes the pattern turns to noise.
+- **No other colours and no rosette pattern.** No Pine Tree, accent colours, or gold in the browser tab. At these sizes the pattern turns to noise.
+- **Previewing the tab icon:** `favicon.svg` follows the viewer's operating-system setting, not the colour of the page it sits on. On a computer in dark mode it draws a Merino mark even on a white mock-up. Previews and mock-ups use `assets/icon-olive.svg` (light) and `assets/icon-cream.svg` (dark) instead.
 
 ## 3. Tags in `<head>`
 
@@ -118,7 +119,7 @@ Only when the mark or the Himalaya, Gold Crayola or Merino tokens change.
 `check-icons.mjs` fails the build when:
 
 - a file from section 1 is missing;
-- `favicon.svg` is over 3 KB, has metadata or editor markup, has no solid background tile, or has a viewBox that is not square;
+- `favicon.svg` is over 3 KB, has metadata or editor markup, has a background shape, has no dark-mode colour, or has a viewBox that is not square;
 - `favicon.ico` has no 32 × 32 image;
 - a PNG has the wrong size or any transparent pixel;
 - any part of the mark in `icon-mask.png` falls outside the safe zone;
@@ -128,9 +129,9 @@ After deploy, check by hand:
 
 1. `curl -I https://shantara.life/favicon.ico` and the same for the other six files return `200` with the content types above.
 2. Chrome DevTools → Application → Manifest shows the name, both icons and the maskable preview with no warnings.
-3. The tab icon is clearly visible in both a light and a dark browser window.
+3. The tab icon is Himalaya in a light browser window and Merino in a dark one.
 4. On an iPhone, Share → Add to Home Screen shows the gold mark on Himalaya.
 
 ## 9. Still open
 
-- **Designer sign-off at 16px.** Inside the tile the mark is about 12px wide in a 16px tab. It reads as a flower in `samples/preview.png`, but a designer should confirm it. If they prefer, draw a heavier small-size version of the mark and point the build at it; nothing else changes.
+- **Designer sign-off at 16px.** The mark reads as a flower at 16px in `samples/preview.png`, but its thin outlines are faint at that size. A designer should confirm it. If they prefer, draw a heavier small-size version of the mark and point the build at it; nothing else changes.
