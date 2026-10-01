@@ -200,6 +200,7 @@
     "skill-structure.md": "website-structure.html",
     "skill-premium.md": "website-premium.html",
     "skill-og-images.md": "website-og-images.html",
+    "skill-icons.md": "website-icons.html",
     "voice-and-tone.md": "website-copy-voice.html",
     "naming-and-nap.md": "website-copy-naming.html",
     "health-claims-and-compliance.md": "website-copy-claims.html",

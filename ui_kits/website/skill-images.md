@@ -33,7 +33,8 @@ src/assets/images/
   authors/
   testimonials/
 public/
-  favicon.svg, favicon.ico, apple-touch-icon.png
+  favicon.svg, favicon.ico, apple-touch-icon.png, icon-192.png, icon-512.png, icon-mask.png,
+  manifest.webmanifest   ← the icon set, copied from templates/icons/public/ (skill-icons.md)
   og-default.jpg    ← the approved default share image (SOCIAL-04); a locale's og-default-{locale}.jpg
                       is added, and listed in PUBLIC_ALLOWED, only when that locale is enabled
   og/               ← manual share-image overrides only (skill-og-images.md §9)
@@ -183,7 +184,7 @@ import sharp from 'sharp';
 const MAX_BYTES = 1024 * 1024;
 const MAX_EDGE = 2560;
 const PHOTO = new Set(['.jpg', '.jpeg', '.png', '.webp', '.avif']);
-const PUBLIC_ALLOWED = new Set(['og-default.jpg', 'logo.png', 'apple-touch-icon.png']);
+const PUBLIC_ALLOWED = new Set(['og-default.jpg', 'logo.png', 'apple-touch-icon.png', 'icon-192.png', 'icon-512.png', 'icon-mask.png']);
 
 async function* walk(dir) {
   for (const e of await readdir(dir, { withFileTypes: true })) {

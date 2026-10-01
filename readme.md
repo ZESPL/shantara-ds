@@ -56,6 +56,7 @@ ui_kits/website/        → marketing site kit + website skill (`SKILL.md`) and 
 ui_kits/app/            → in-stay guest companion kit
 templates/brand-deck/   → presentation template
 templates/og-images/    → share-image (Open Graph) renderer and samples
+templates/icons/        → favicon, touch icon, install icons and web manifest build
 thumbnail.html          → homepage tile
 SKILL.md                → Agent-Skills wrapper — drop this folder into another repo
 ```
@@ -82,6 +83,7 @@ Each directory holds `<Name>.jsx`, `<Name>.d.ts` (props contract) and `<Name>.pr
 
 - `templates/brand-deck/` — presentation template in the guideline-deck style. Deck design rules: `.cursor/skills/shantara-premium-presentations/SKILL.md`.
 - `templates/og-images/` — reference renderer and samples for the three website share-image templates. Standard: `ui_kits/website/skill-og-images.md`.
+- `templates/icons/` — builds the website's favicon, touch icon, Android install icons and web manifest from the frangipani mark. Standard: `ui_kits/website/skill-icons.md`.
 
 ## Caveats
 
