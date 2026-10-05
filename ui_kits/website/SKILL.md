@@ -96,7 +96,7 @@ Top-level navigation — **five items, no more**, centred between the logo and t
 - About
 - Journal
 
-Header actions: `LanguageSelector` (desktop; inside the menu sheet under 1000px), a **phone button** that opens a dropdown (Call +91 9553 700 100 · WhatsApp · Email heal@shantara.life), and **Book a Consultation** (primary CTA). Contact is reached from the phone dropdown and the footer, not the main nav. There is one public number for calls and WhatsApp: **+91 9553 700 100**.
+Header actions: `LanguageSelector` (desktop; inside the menu sheet under 1000px), a **phone button** that opens a dropdown (Call +91 9553 600 100 · WhatsApp · Email heal@shantara.life), and **Book a Consultation** (primary CTA). Contact is reached from the phone dropdown and the footer, not the main nav. The call number (`phone`) and the WhatsApp number (`whatsapp`) are separate fields in `content/site.json`; both are currently **+91 9553 600 100**.
 
 Do not create a mega-menu unless live page count genuinely requires it.
 
@@ -291,7 +291,7 @@ These files are **previews** of the skill, not the live site:
 | `screens/ContactScreen.js` | contact | `HeroStatement` + NAP (Shantara Naturopathy Retreat), distances, call / WhatsApp / email |
 | `screens/ConsultationScreen.js` | consultation | One short form |
 | `screens/TariffScreen.js` | pricing surface | Structure only: currency selector, room × occupancy table, supplements, payment terms and cancellation, with “—” in place of every rate |
-| `chrome/SiteChrome.js` | chrome | Header overlays every page: logo, five centred nav items, LanguageSelector, phone dropdown, Book a Consultation; menu sheet (with the LanguageSelector) under 1000px; compact wordmark / frangipani mark at narrow or zoomed widths. Footer: Pine Tree ground, rosette strip on top, brand column (NAP) + three link columns (accordions under 760px), bottom bar with text size. Also `PageSlot` (`data-ds-id="page/<view>/<slot>"` on every section) |
+| `chrome/SiteChrome.js` | chrome | Header overlays every page: logo, five centred nav items, LanguageSelector, phone dropdown, Book a Consultation; menu sheet (with the LanguageSelector) under 1000px; compact wordmark / frangipani mark at narrow or zoomed widths. Footer: Pine Tree ground, rosette strip on top, brand column (NAP and social profile links) + three link columns (accordions under 760px); the bottom bar carries the copyright (legal entity, Metropolis Forward LLP), the Privacy and Terms links and the short location line. The text-size control is optional; the kit shows one, the production footer does not include it. Also `PageSlot` (`data-ds-id="page/<view>/<slot>"` on every section) |
 | `chrome/Photo.js` | chrome | Adapter over `Media` for `assets/photos/*` |
 
 Kit notes for humans: [README.md](README.md).

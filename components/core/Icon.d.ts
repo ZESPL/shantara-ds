@@ -3,10 +3,10 @@ import * as React from "react";
 /** The curated Shantara icon registry, grouped by job. */
 export declare const ICON_GROUPS: {
   contact: string[]; stay: string[]; care: string[]; nature: string[];
-  content: string[]; status: string[]; direction: string[];
+  content: string[]; status: string[]; direction: string[]; social: string[];
 };
 
-/** Every registered Lucide slug, flat (see ICON_GROUPS). */
+/** Every registered slug, flat (see ICON_GROUPS). Lucide, except the Simple Icons `social` group. */
 export declare const ICON_NAMES: readonly string[];
 
 export type ShantaraIconName =
@@ -17,7 +17,8 @@ export type ShantaraIconName =
   | "book-open" | "file-text" | "quote" | "bookmark" | "download" | "filter" | "sliders-horizontal" | "search"
   | "info" | "alert-circle" | "check-circle-2" | "check" | "x"
   | "arrow-right" | "arrow-left" | "arrow-up" | "arrow-down"
-  | "chevron-right" | "chevron-left" | "chevron-up" | "chevron-down" | "plus" | "minus" | "menu";
+  | "chevron-right" | "chevron-left" | "chevron-up" | "chevron-down" | "plus" | "minus" | "menu"
+  | "instagram" | "facebook" | "linkedin" | "youtube" | "x-social";
 
 /**
  * Lucide glyph wrapper — intentional addition (the brand package ships no icon set).

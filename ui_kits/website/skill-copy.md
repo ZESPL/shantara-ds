@@ -29,7 +29,7 @@ These are enforced everywhere; the linked part has the full rule.
 * **Business name.** "Shantara Naturopathy Retreat" in NAP. "Shantara" alone is fine standalone. Never "Shantara Naturopathy" without "Retreat". See [naming and NAP](copy/naming-and-nap.md#business-name-nap).
 * **Never "four acres" / "4 acres" / "four hilltop acres".** "Hilltop" alone is fine. See [naming and NAP](copy/naming-and-nap.md#site-hilltop-not-acreage).
 * **"52 rooms"** at most once per site, never prominently (no stat tile, heading, or hero). See [naming and NAP](copy/naming-and-nap.md#rooms).
-* **One phone number**, for calls and WhatsApp: **+91 9553 700 100**. Email **heal@shantara.life**. See [naming and NAP](copy/naming-and-nap.md#one-contact-number).
+* **Phone and WhatsApp**: stored as separate fields, both currently **+91 9553 600 100**. Email **heal@shantara.life**. See [naming and NAP](copy/naming-and-nap.md#one-contact-number).
 * **Guest**, not "patient" or "client", on public pages. See [voice and tone](copy/voice-and-tone.md#voice).
 * **No isolated prices** outside the tariff surface. See [health claims and compliance](copy/health-claims-and-compliance.md#pricing-must-remain-controlled).
 * **No outcome guarantees** (cure, reverse, heal, medication-free, guaranteed weight loss). See [health claims and compliance](copy/health-claims-and-compliance.md#clinical-claims).

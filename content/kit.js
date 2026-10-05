@@ -7,16 +7,36 @@ window.ShantaraContent = {
     "locale": "en",
     "source": "handbook",
     "business_name": "Shantara Naturopathy Retreat",
+    "legal_name": "Metropolis Forward LLP",
     "parent_institution": "Hygiene Nature Cure Hospital",
     "phone": [
-      "+91 9553 700 100"
+      "+91 9553 600 100"
     ],
     "email": "heal@shantara.life",
     "website": "https://shantara.life",
+    "social_links": [
+      {
+        "platform": "facebook",
+        "url": "https://www.facebook.com/shantaranaturopathy"
+      },
+      {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/shantaranaturopathyretreat"
+      },
+      {
+        "platform": "linkedin",
+        "url": "https://www.linkedin.com/company/shantaranaturopathy/"
+      },
+      {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/@shantaranaturopathy"
+      }
+    ],
     "place": {
-      "locality": "Kozhikode (Calicut)",
-      "region": "Kerala",
-      "landmark": "overlooking the Chennamangallur valley",
+      "street": "Chennamangallur",
+      "locality": "Kozhikode",
+      "region": "Keralam",
+      "postal_code": "673602",
       "country": "IN"
     },
     "land_acres": 4,
@@ -37,8 +57,7 @@ window.ShantaraContent = {
       "notes"
     ],
     "schema_defaults": {
-      "type": "MedicalClinic",
-      "name": "Shantara Naturopathy Retreat"
+      "type": "MedicalClinic"
     },
     "stats": [
       {
@@ -51,10 +70,9 @@ window.ShantaraContent = {
       }
     ],
     "short_name": "Shantara",
-    "whatsapp": "+91 9553 700 100",
+    "whatsapp": "+91 9553 600 100",
     "land_acres_note": "Internal only. Never publish the acreage; say 'hilltop'.",
-    "rooms_count_note": "Mention at most once on the website, never as a stat or heading.",
-    "status": "published"
+    "rooms_count_note": "Mention at most once on the website, never as a stat or heading."
   },
   "tariff": {
     "id": "tariff",
