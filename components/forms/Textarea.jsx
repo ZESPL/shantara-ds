@@ -1,4 +1,5 @@
 import React from "react";
+import { ENGLISH_HINT, keepEnglish, rejectForeignInsert, stripForeignInput } from "./englishText.mjs";
 
 /* Shared field chrome — identical in Input, Textarea and Select (one <style id="sh-field-css">). */
 const FIELD_CSS = `
@@ -45,9 +46,9 @@ function FieldLabel({ htmlFor, label, required, optional }) {
   );
 }
 
-function FieldMessage({ id, error, hint }) {
+function FieldMessage({ id, error, hint, live }) {
   if (error) return <span className="sh-field-msg" data-kind="error" id={id}>{ALERT}<span>{error}</span></span>;
-  if (hint) return <span className="sh-field-msg" id={id}>{hint}</span>;
+  if (hint) return <span className="sh-field-msg" id={id} aria-live={live ? "polite" : undefined}>{hint}</span>;
   return null;
 }
 
@@ -65,20 +66,60 @@ function ensure() {
   document.head.appendChild(el);
 }
 
-export function Textarea({ label, hint, error, required, optional, maxLength, value, rows = 4, id, className, style, ...rest }) {
+export function Textarea({ label, hint, error, required, optional, maxLength, value, defaultValue, rows = 4, id, className, style, lang, onChange, onBeforeInput, ...rest }) {
   ensure();
+  const [englishNote, setEnglishNote] = React.useState(false);
   const auto = React.useId();
   const fid = id || "sh-ta" + auto.replace(/:/g, "");
   const mid = fid + "-msg";
-  const count = typeof value === "string" ? value.length : null;
+  const shown = typeof value === "string" ? keepEnglish(value) : value;
+  const shownDefault = typeof defaultValue === "string" ? keepEnglish(defaultValue) : defaultValue;
+  const count = typeof shown === "string" ? shown.length : null;
   const showCount = maxLength && count != null;
+  const note = englishNote && !error;
+  const shownHint = note ? ENGLISH_HINT : hint;
+
+  function handleBeforeInput(event) {
+    if (onBeforeInput) onBeforeInput(event);
+    if (event.defaultPrevented) return;
+    if (rejectForeignInsert(event)) setEnglishNote(true);
+  }
+
+  function handleChange(event) {
+    setEnglishNote(stripForeignInput(event));
+    if (onChange) onChange(event);
+  }
+
+  React.useEffect(() => {
+    if (typeof value !== "string" || !onChange) return;
+    const next = keepEnglish(value);
+    if (next === value) return;
+    onChange({ target: { value: next, name: rest.name } });
+  }, [value, onChange, rest.name]);
+
   return (
     <div className={"sh-field" + (className ? " " + className : "")} data-ds-id="forms/Textarea" style={style}>
       <FieldLabel htmlFor={fid} label={label} required={required} optional={optional} />
-      <textarea id={fid} className="sh-ctl sh-ta" rows={rows} required={required} data-invalid={String(Boolean(error))} aria-invalid={error ? "true" : undefined} aria-describedby={error || hint ? mid : undefined} maxLength={maxLength} value={value} {...rest} />
-      {error || hint || showCount ? (
+      <textarea
+        {...rest}
+        id={fid}
+        className="sh-ctl sh-ta"
+        rows={rows}
+        lang={lang || "en"}
+        dir="ltr"
+        required={required}
+        data-invalid={String(Boolean(error))}
+        aria-invalid={error ? "true" : undefined}
+        aria-describedby={error || shownHint ? mid : undefined}
+        maxLength={maxLength}
+        value={shown}
+        defaultValue={shownDefault}
+        onBeforeInput={handleBeforeInput}
+        onChange={handleChange}
+      />
+      {error || shownHint || showCount ? (
         <span className="sh-field-foot">
-          <FieldMessage id={mid} error={error} hint={hint} />
+          <FieldMessage id={mid} error={error} hint={shownHint} live={note} />
           {showCount ? <span className="sh-field-count" aria-live="polite">{count}/{maxLength}</span> : null}
         </span>
       ) : null}

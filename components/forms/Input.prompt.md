@@ -10,4 +10,6 @@ Text field for all single-line entry.
 
 **Motion.** Hover darkens the hairline to `--border-strong`. Focus is Himalaya plus a 3px `--surface-brand-soft` halo, 160ms. An error message rises 8px (`sh-enter-up`) over 240ms — it does not shake.
 
-**RTL.** `startIcon` / `endIcon` follow reading direction. Search belongs in `startIcon` in both LTR and RTL.
+**English only.** Free text is for an answer the team will read. The field keeps Latin letters (accents in a name stay), numbers and ordinary punctuation. Other scripts are removed, and the hint becomes “Please write in English.” The control is `lang="en"` and left to right, including inside an RTL page. `password` and `number` are left as typed.
+
+**RTL.** `startIcon` / `endIcon` follow reading direction. Search belongs in `startIcon` in both LTR and RTL. The typed value stays left to right.

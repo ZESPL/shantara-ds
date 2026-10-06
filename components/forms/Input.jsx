@@ -1,4 +1,5 @@
 import React from "react";
+import { ENGLISH_HINT, acceptsEnglish, keepEnglish, rejectForeignInsert, stripForeignInput } from "./englishText.mjs";
 
 /* Shared field chrome — identical in Input, Textarea and Select (one <style id="sh-field-css">). */
 const FIELD_CSS = `
@@ -45,9 +46,9 @@ function FieldLabel({ htmlFor, label, required, optional }) {
   );
 }
 
-function FieldMessage({ id, error, hint }) {
+function FieldMessage({ id, error, hint, live }) {
   if (error) return <span className="sh-field-msg" data-kind="error" id={id}>{ALERT}<span>{error}</span></span>;
-  if (hint) return <span className="sh-field-msg" id={id}>{hint}</span>;
+  if (hint) return <span className="sh-field-msg" id={id} aria-live={live ? "polite" : undefined}>{hint}</span>;
   return null;
 }
 
@@ -71,20 +72,59 @@ function ensure() {
   document.head.appendChild(el);
 }
 
-export function Input({ label, hint, error, required, optional, size = "md", startIcon, endIcon, id, className, style, ...rest }) {
+export function Input({ label, hint, error, required, optional, size = "md", startIcon, endIcon, id, className, style, type, lang, value, defaultValue, onChange, onBeforeInput, ...rest }) {
   ensure();
+  const prose = acceptsEnglish(type);
+  const [englishNote, setEnglishNote] = React.useState(false);
   const auto = React.useId();
   const fid = id || "sh-in" + auto.replace(/:/g, "");
   const mid = fid + "-msg";
+  const note = prose && englishNote && !error;
+  const shownHint = note ? ENGLISH_HINT : hint;
+  const shownValue = prose && typeof value === "string" ? keepEnglish(value) : value;
+  const shownDefault = prose && typeof defaultValue === "string" ? keepEnglish(defaultValue) : defaultValue;
+
+  function handleBeforeInput(event) {
+    if (onBeforeInput) onBeforeInput(event);
+    if (!prose || event.defaultPrevented) return;
+    if (rejectForeignInsert(event)) setEnglishNote(true);
+  }
+
+  function handleChange(event) {
+    if (prose) setEnglishNote(stripForeignInput(event));
+    if (onChange) onChange(event);
+  }
+
+  React.useEffect(() => {
+    if (!prose || typeof value !== "string" || !onChange) return;
+    const next = keepEnglish(value);
+    if (next === value) return;
+    onChange({ target: { value: next, name: rest.name } });
+  }, [prose, value, onChange, rest.name]);
+
   return (
     <div className={"sh-field" + (className ? " " + className : "")} data-ds-id="forms/Input" style={style}>
       <FieldLabel htmlFor={fid} label={label} required={required} optional={optional} />
       <span className="sh-ctl sh-input-wrap" data-size={size} data-invalid={String(Boolean(error))} data-disabled={String(Boolean(rest.disabled))}>
         {startIcon ? <span className="sh-input-affix">{startIcon}</span> : null}
-        <input id={fid} className="sh-input" required={required} aria-invalid={error ? "true" : undefined} aria-describedby={error || hint ? mid : undefined} {...rest} />
+        <input
+          {...rest}
+          id={fid}
+          className="sh-input"
+          type={type}
+          lang={prose ? (lang || "en") : lang}
+          dir={prose ? "ltr" : undefined}
+          required={required}
+          aria-invalid={error ? "true" : undefined}
+          aria-describedby={error || shownHint ? mid : undefined}
+          value={shownValue}
+          defaultValue={shownDefault}
+          onBeforeInput={handleBeforeInput}
+          onChange={handleChange}
+        />
         {endIcon ? <span className="sh-input-affix">{endIcon}</span> : null}
       </span>
-      <FieldMessage id={mid} error={error} hint={hint} />
+      <FieldMessage id={mid} error={error} hint={shownHint} live={note} />
     </div>
   );
 }

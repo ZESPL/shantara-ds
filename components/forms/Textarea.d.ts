@@ -1,6 +1,6 @@
 import * as React from "react";
 
-/** Multi-line field with optional character counter. */
+/** Multi-line field with optional character counter. Notes stay in English: Latin letters, numbers and ordinary punctuation. */
 export interface TextareaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
   label?: string;
   hint?: string;

@@ -2,6 +2,7 @@ import * as React from "react";
 
 /**
  * Single-line text field with label, hint and error slots.
+ * Free text (`text`, `search`, `email`, `tel`, `url`) keeps English letters, numbers and ordinary punctuation.
  */
 export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: string;
