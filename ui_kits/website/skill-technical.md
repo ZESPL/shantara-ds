@@ -58,6 +58,14 @@ Properties: `page_type`; `source_page`; `locale` (added centrally).
 
 This is user-generated content, not a lead. Never fire `generate_lead` for it, and never send the question text to analytics.
 
+#### `press_request_submitted`
+
+Fire when the hosted-visits form at `/en/hosted-stays` confirms a successful submission. The page is specified in [special-pages/hosted-stays.md](special-pages/hosted-stays.md).
+
+Properties: `form_id` (`press`); `page_type` (`contact`); `source_page`; `visit_type` (`hosted` | `press`); `locale` (added centrally).
+
+This is not a guest lead. Never fire `generate_lead` for it, and never send names, contact details, or the written answers to analytics.
+
 #### `contact_click`
 
 Use one event for alternate contact channels.

@@ -17,6 +17,7 @@ Builder notes and thin samples for the public marketing website. **Not a product
 | [`skill-copy.md`](skill-copy.md) | Public-facing language |
 | [`skill-technical.md`](skill-technical.md) | Analytics, SEO, schema, a11y |
 | [`skill-qa.md`](skill-qa.md) | Workflow and QA |
+| [`special-pages.md`](special-pages.md) | Special pages sent by link, with no kit sample. Hosted visits is the first. |
 
 Internal ICP and marketing-audience strategy: [`docs/icp.md`](../../docs/icp.md). Need-led, not programme-led. Do not copy that file onto the public site.
 

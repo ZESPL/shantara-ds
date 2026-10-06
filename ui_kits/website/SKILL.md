@@ -29,6 +29,7 @@ Read this file first. Open a sibling reference only when the task needs that inv
 - [Technical](skill-technical.md) — analytics, SEO, schema, AEO/GEO, performance, accessibility
 - [Search and AI visibility rules](search-visibility/overview.md) — checkable rules with IDs, priorities and owners for SEO, AI answers, schema, languages and accessibility; read the overview, then only the section file you need
 - [QA and workflow](skill-qa.md) — page workflow, checklists, what not to build, agent rules
+- [Special pages](special-pages.md) — public URLs sent by link, indexable, with no kit sample. Hosted visits is the first.
 
 Internal audience strategy (need-led ICPs, CRM IDs, agency requirements) lives in [`docs/icp.md`](../../docs/icp.md). Do not duplicate those definitions here. Do not use internal ICP names as website headings or keywords unless search research supports that language.
 

@@ -192,6 +192,8 @@
     "measurement.md": "website-search-visibility-measurement.html",
     "do-not.md": "website-search-visibility-do-not.html",
     "skill-qa.md": "website-qa.html",
+    "special-pages.md": "website-special-pages.html",
+    "hosted-stays.md": "website-special-pages-hosted-visits.html",
     "SKILL.md": "website-skill.html",
     "README.md": "website-kit.html",
     "icp.md": "icp.html",

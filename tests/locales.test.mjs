@@ -143,6 +143,11 @@ test("analytics events stay English and receive a locale property; PII is stripp
   assert.equal(lead.properties.name, undefined);
   assert.equal(lead.properties.email, undefined);
   assert.equal(L.track("consultation_cta_click_ar", {}).ok, false);
+  const press = L.track("press_request_submitted", { form_id: "press", visit_type: "hosted", companion_name: "Ada", why_shantara: "A story" }, { locale: "en" });
+  assert.equal(press.ok, true);
+  assert.equal(press.properties.visit_type, "hosted");
+  assert.equal(press.properties.companion_name, undefined);
+  assert.equal(press.properties.why_shantara, undefined);
 });
 
 test("form field keys are stable English identifiers", () => {

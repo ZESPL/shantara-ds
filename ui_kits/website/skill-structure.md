@@ -122,6 +122,7 @@ Every URL carries a locale prefix, and `check-routes.mjs` enforces it ([Build ch
 | `/en/faq` | `faq.astro` | `faq/en.json` | `WebPage` + `BreadcrumbList` (`FAQPage` optional) |
 | `/en/contact` | `contact.astro` | `site/en.json` | `ContactPage` |
 | `/en/book-consultation` | `book-consultation.astro` | `ConsultationForm` | `WebPage` only |
+| `/en/hosted-stays` | `hosted-stays.astro` | Specified in [special-pages/hosted-stays.md](special-pages/hosted-stays.md). Indexable. No links from nav, footer, or guest pages. No kit sample. Same slug under each published locale. | `WebPage` only |
 | `/en/resident-policies` | `resident-policies.astro` | `copy/en/policies/resident-policies.md` | `WebPage` only |
 | `/en/cancellation-policy` | `cancellation-policy.astro` | `tariff/en.json` → `cancellation`, `payment_terms` | `WebPage` only |
 | `/en/privacy-policy` | `privacy-policy.astro` | `copy/en/policies/privacy-policy.md` | `WebPage` only |

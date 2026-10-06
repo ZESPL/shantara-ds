@@ -109,6 +109,7 @@
     "form_start",
     "generate_lead",
     "contact_click",
+    "press_request_submitted",
   ];
 
   const OPTIONAL_ANALYTICS_EVENTS = ["video_start", "video_complete"];
@@ -122,6 +123,15 @@
     "notes",
     "message",
     "free_text",
+    "companion_name",
+    "outlet",
+    "profile_url",
+    "audience",
+    "work_links",
+    "why_shantara",
+    "deliverables",
+    "other_guests",
+    "media_kit",
     "diagnosis",
     "symptoms",
     "medication",

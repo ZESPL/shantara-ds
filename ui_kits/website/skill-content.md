@@ -142,7 +142,9 @@ Example: if a visitor submits from `/en/conditions/diabetes`, the lead context s
 
 The same underlying form may appear as: dedicated `/en/book-consultation` page; modal; drawer; inline panel.
 
-Do not maintain separate forms or separate field definitions.
+Do not maintain separate forms or separate field definitions for the consultation.
+
+The hosted-visits request is the other exception, with Ask the Doctor. It is specified in [special-pages/hosted-stays.md](special-pages/hosted-stays.md). It is not a guest lead, and it fires `press_request_submitted`, never `generate_lead`.
 
 ### WhatsApp
 

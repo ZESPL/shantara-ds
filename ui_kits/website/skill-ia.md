@@ -180,6 +180,7 @@ Traditional blog articles may continue to exist, but do not make generic blog pr
 
 - Book a Consultation (`/en/book-consultation`)
 - Contact (`/en/contact`)
+- Hosted visits (`/en/hosted-stays`) — a special page. Specified in [special-pages/hosted-stays.md](special-pages/hosted-stays.md). Indexable. Not linked from the guest journey. No kit sample.
 - Frequently asked questions (`/en/faq`, grouped by category)
 - Resident Policies (`/en/resident-policies`)
 - Cancellation Policy (`/en/cancellation-policy`, rendered from the tariff's cancellation terms)
