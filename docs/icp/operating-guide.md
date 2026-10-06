@@ -29,7 +29,7 @@ Required work, per engagement:
 5. **Content strategy** mapped to ICP + intent, using the publishing families already specified (doctor answers, clinical guides, evidence notes, guest stories). See [skill-content.md](../../ui_kits/website/skill-content.md).
 6. **Paid acquisition briefs** that specify ICP + need + geo + audience + intent + message + creative + landing page + CTA + exclusions + metric. “General wellness audience” is insufficient. Apply the [operational paid exclusions](overlays.md#operational-paid-exclusions) unless a comparison ad is explicitly briefed.
 7. **Reporting** toward qualified visits, enquiries, consultations, bookings, revenue, and CPA by ICP / geo / channel. If a measurement does not exist yet, mark it as a **future requirement**. Do not substitute bounce rate or follower count.
-8. **Comparison and stay explainers** for GCC / West discovery: resource one medically reviewed Ayurveda-vs-naturopathy article/guide, and Experience + FAQ copy that clarifies a residential Kerala stay is not a US ND clinic — inside existing URL families only ([skill-ia.md](../../ui_kits/website/skill-ia.md)).
+8. **Comparison and stay explainers** for GCC / West discovery: resource one medically reviewed Ayurveda-vs-naturopathy article/guide, and Experience + FAQ copy that clarifies a residential Keralam stay is not a US ND clinic — inside existing URL families only ([skill-ia.md](../../ui_kits/website/skill-ia.md)).
 
 Agencies must also follow public language rules, claim governance, and the no-scattered-pricing rule. Internal ICP names stay out of H1s unless research shows customers actually use that phrase.
 
@@ -85,11 +85,11 @@ Marketing / localisation sequence. English remains the source implementation.
 | --- | --- | --- | --- |
 | 1 | English | `en` | Primary/source language; India + international |
 | 2 | Arabic | `ar` | GCC and Middle East |
-| 3 | German | `de` | Planned European localisation. Category noun **Naturheilkunde** measured **3,600**/mo (Germany 2276, `languageCode` de, 20 Sep 2026). “Strong fit for European wellness/naturopathy” as a Shantara acquisition claim remains {Hypothesis} — category volume ≠ proven Kerala-stay demand. Also measured: `wellness retreat` 590; `burnout retreat` 50 (DE). |
+| 3 | German | `de` | Planned European localisation. Category noun **Naturheilkunde** measured **3,600**/mo (Germany 2276, `languageCode` de, 20 Sep 2026). “Strong fit for European wellness/naturopathy” as a Shantara acquisition claim remains {Hypothesis} — category volume ≠ proven Keralam-stay demand. Also measured: `wellness retreat` 590; `burnout retreat` 50 (DE). |
 | 4 | French | `fr` | France, francophone Europe, Réunion/Mauritius and parts of Africa |
 | 5 | Russian | `ru` | Relevant international wellness/medical-travel audience |
 | 6 | Hindi | `hi` | Large domestic Indian market |
-| 7 | Malayalam | `ml` | Kerala/local market, **if** Shantara wants meaningful local acquisition |
+| 7 | Malayalam | `ml` | Keralam/local market, **if** Shantara wants meaningful local acquisition |
 
 Malayalam is **conditional**. Do not treat `ml` as a committed localisation project until Shantara confirms it wants meaningful local acquisition.
 

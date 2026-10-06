@@ -1,6 +1,6 @@
 # Shantara Design System
 
-**Shantara Naturopathy Retreat** is a clinical naturopathy retreat on a hilltop above the Chennamangallur valley in Kozhikode, Kerala. It is the evolution of Hygiene Nature Cure Hospital, which has treated more than 25,000 people since 2000. Treatment is drug-free, doctor-guided and planned after consultation and assessment. Programme duration depends on the programme and the guest. Do not treat a single night count as a site-wide public policy unless Shantara has confirmed it for that programme.
+**Shantara Naturopathy Retreat** is a clinical naturopathy retreat on a hilltop above the Chennamangallur valley in Kozhikode, Keralam. It is the evolution of Hygiene Nature Cure Hospital, which has treated more than 25,000 people since 2000. Treatment is drug-free, doctor-guided and planned after consultation and assessment. Programme duration depends on the programme and the guest. Do not treat a single night count as a site-wide public policy unless Shantara has confirmed it for that programme.
 
 The identity is built from one typeface (Diodrum Cyrillic), a deep olive/gold primary pair, a warm neutral field of stone and linen tones, six landscape accents, and a single ornamental asset: a sacred-geometry rosette pattern derived from the plumeria mark.
 

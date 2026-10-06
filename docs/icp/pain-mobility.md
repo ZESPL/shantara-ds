@@ -116,7 +116,7 @@ Marketing poor-fit: massage-only seekers, emergency acute injury, people wanting
 | Priority Countries | {Validated} 20 Sep 2026 | No measured India residential-stay spine for this ICP. Condition pages only when clinical content exists — not volume-led ahead of obesity/pcos/diabetes. |
 | Search Demand | {Validated} 20 Sep 2026 | **India Phase B:** `back pain retreat` / `back pain naturopathy` —. **Phase C:** `arthritis retreat`, `sciatica retreat`, `pain rehabilitation retreat`, `frozen shoulder retreat`, `naturopathy for arthritis` — (no volume returned). **UK/UAE:** same stay compounds —. Symptom floods from expansion are not stay demand. |
 | Validated Customer Language | {Validated} 20 Sep 2026 | No validated residential-stay phrase for this ICP. Keep seed language provisional. Measured dash closes “is there stay-intent language?” — it does not invent demand. |
-| Keyword Clusters | {Validated} 20 Sep 2026 | No commercial stay cluster measured. Symptom / ICD / treatment clusters are contamination for paid/SEO targeting of a Kerala stay. |
+| Keyword Clusters | {Validated} 20 Sep 2026 | No commercial stay cluster measured. Symptom / ICD / treatment clusters are contamination for paid/SEO targeting of a Keralam stay. |
 | Competitor / SERP Findings | {Validated} 20 Sep 2026 | Zero-volume stay SERPs skipped (Phase C rule). No dedicated pain-stay SERP. |
 | Recommended Landing Pages | {Validated} 20 Sep 2026 | `/en/conditions/back-pain` (or similar need-led slug) only when original content exists — not ranked ahead of obesity/pcos/diabetes from stay metrics. |
 | Paid Campaign Opportunities | {Validated} 20 Sep 2026 | No measured stay keywords to buy. Do not buy arthritis/sciatica symptom inventory as retreat demand. |

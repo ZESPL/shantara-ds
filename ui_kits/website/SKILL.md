@@ -313,7 +313,7 @@ Approved marketing-localisation order lives in [`docs/icp.md`](../../docs/icp.md
 | `fr` | Français | LTR | Planned. Separate future project. |
 | `ru` | Русский | LTR | Planned. Separate future project. |
 | `hi` | हिन्दी | LTR | Planned. Separate future project. Do not write public Hindi copy in this kit. |
-| `ml` | മലയാളം | LTR | Planned, **conditional** (meaningful local Kerala/local acquisition). Do not write public Malayalam copy in this kit. |
+| `ml` | മലയാളം | LTR | Planned, **conditional** (meaningful local Keralam/local acquisition). Do not write public Malayalam copy in this kit. |
 
 Italian (`it`) and Spanish (`es`) are not current marketing-localisation priorities and are not planned codes.
 

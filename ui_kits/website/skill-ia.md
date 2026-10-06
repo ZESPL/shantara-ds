@@ -42,8 +42,8 @@ Ranked from **India English** (`locationCode` 2356) residential / travel-intent 
 
 | Publish order | Slug | India evidence (monthly volume) | Notes |
 | --- | --- | --- | --- |
-| 1 | `obesity` | `naturopathy for weight loss` / `weight loss naturopathy` 210; `weight loss retreat india` 140; `weight loss retreat` 110; Kerala variants 30 | Clearest residential-stay signal among the three money slugs. |
-| 2 | `pcos` | `pcos treatment holistic` 480; `pcos treatment india` 30; `pcos retreat` / `pcos naturopathy` unmeasured or — | Holistic-treatment demand may be local clinic, not a Kerala stay. Publish when original content exists; do not treat 480 as proven retreat intent. |
+| 1 | `obesity` | `naturopathy for weight loss` / `weight loss naturopathy` 210; `weight loss retreat india` 140; `weight loss retreat` 110; Keralam variants 30 | Clearest residential-stay signal among the three money slugs. |
+| 2 | `pcos` | `pcos treatment holistic` 480; `pcos treatment india` 30; `pcos retreat` / `pcos naturopathy` unmeasured or — | Holistic-treatment demand may be local clinic, not a Keralam stay. Publish when original content exists; do not treat 480 as proven retreat intent. |
 | 3 | `diabetes` | `diabetes retreat india` 10; `diabetes naturopathy` / treatment compounds —; Phase C `diabetes reversal` / `diabetes reversal india` — | Floor-level retreat signal. Programme name Diabetes Reversal is approved; do not invent rates or guarantee copy. Resource when clinical content is ready, not because volume is high. |
 
 **Operational India stay-intent sequence** (comparable stay compounds for pages/spend; does **not** reorder ICP 01–06 IDs): (1) ICP 01 weight/metabolic stay — strongest; (2) ICP 04 digestive stay — thin (`naturopathy for ibs` 20, `ibs retreat` 10); (3) ICP 05 / 06 floor (`men's health retreat` / `longevity retreat` 10); (4) ICP 02 pain stay — Phase C compounds —; (5) ICP 03 India stay weak vs UK spa burnout; (6) Short Health Reset — secondary; do not lead with weekend wellness. Full write-up: [`docs/icp.md`](../../docs/icp.md) §26.

@@ -15,7 +15,7 @@ export interface HeroFullBleedProps extends React.HTMLAttributes<HTMLElement> {
   sub?: React.ReactNode;
   /** One primary button (Gold on photography), optionally one link. Stacks full width under 520px. */
   actions?: React.ReactNode;
-  /** Caption-size facts under the actions, e.g. ["Kozhikode, Kerala", "Since 2000"] (MetaRow items) or a node. */
+  /** Caption-size facts under the actions, e.g. ["Kozhikode, Keralam", "Since 2000"] (MetaRow items) or a node. */
   meta?: Array<string | import("../editorial/MetaRow").MetaItem> | React.ReactNode;
   /** `full` 100svh (560–1080px) for the home page; `tall` 72svh for inner pages; `short` 56svh. */
   height?: "full" | "tall" | "short";

@@ -18,8 +18,8 @@ This handbook is evergreen. It does not carry rates, currencies or validity date
 | --- | --- |
 | Property name | Shantara Naturopathy |
 | Parent institution | Hygiene Nature Cure Hospital |
-| Parent institution credentials | 66-bed hospital certified under the Kerala Clinical Establishment Act, with more than 25,000 patients treated to date |
-| Location | Kozhikode, Kerala, overlooking the Chennamangallur valley |
+| Parent institution credentials | 66-bed hospital certified under the Keralam Clinical Establishment Act, with more than 25,000 patients treated to date |
+| Location | Kozhikode, Keralam, overlooking the Chennamangallur valley |
 | Land area | 4 acres, hilltop setting |
 | Built-up wellness infrastructure | 60,000 sq. ft. |
 | Number of rooms | 52 |
@@ -42,7 +42,7 @@ This handbook is evergreen. It does not carry rates, currencies or validity date
 
 ### Our story
 
-Since 2000, Hygiene Nature Cure Hospital has welcomed people seeking a gentler, more natural way to heal. It was founded on the belief that the body has an innate ability to heal itself when given the right environment. Under Dr. P.A. Kareem's leadership, it grew into a 66-bed hospital, certified under the Kerala Clinical Establishment Act, and has treated more than 25,000 patients over the years.
+Since 2000, Hygiene Nature Cure Hospital has welcomed people seeking a gentler, more natural way to heal. It was founded on the belief that the body has an innate ability to heal itself when given the right environment. Under Dr. P.A. Kareem's leadership, it grew into a 66-bed hospital, certified under the Keralam Clinical Establishment Act, and has treated more than 25,000 patients over the years.
 
 Shantara Naturopathy is the evolution of that legacy, not an expansion of it but a new form of it. Spread across 4 acres of hilltop land in Kozhikode with 60,000 sq. ft. of dedicated wellness infrastructure, it blends decades of clinical expertise with mindful hospitality. The team, the philosophy, and the commitment remain the same. Only the setting has become more immersive.
 
@@ -393,7 +393,7 @@ Every guest in a medical programme is under a doctor's direct care. Staff should
 
 | Item | Detail |
 | --- | --- |
-| Location | Kozhikode, Kerala, overlooking the Chennamangallur valley |
+| Location | Kozhikode, Keralam, overlooking the Chennamangallur valley |
 | Land area | 4 acres, hilltop setting |
 | Wellness infrastructure | 60,000 sq. ft. |
 | Number of rooms | 52, across 5 categories |

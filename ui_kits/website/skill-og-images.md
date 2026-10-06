@@ -66,13 +66,13 @@ Jobs are the families in [skill-ia.md](skill-ia.md). The template is still the p
 
 | Family | Template | Picture headline | Supporting line |
 | --- | --- | --- | --- |
-| Home | `default` | A doctor-led stay in Kerala | Every stay begins with a doctor's consultation. |
+| Home | `default` | A doctor-led stay in Keralam | Every stay begins with a doctor's consultation. |
 | Conditions index | `editorial` | Conditions we see | Your doctor plans the stay after consultation. |
-| Condition detail | `programme` | The condition's name, when it fits one line | A residential stay in Kerala, after consultation. |
+| Condition detail | `programme` | The condition's name, when it fits one line | A residential stay in Keralam, after consultation. |
 | Programmes index | `editorial` | Programmes for a stay | Each programme follows a consultation. |
 | Programme detail | `programme` | The programme name, when it fits one line and does not state an outcome | Who it is for, from `proposition`, or "A doctor-supervised residential stay." |
 | Therapies | `default` | Therapies during a stay | Your doctor recommends them after consultation. |
-| Rooms | `default` | Rooms for the stay | Quiet rooms at the retreat in Kerala. |
+| Rooms | `default` | Rooms for the stay | Quiet rooms at the retreat in Keralam. |
 | Amenities | `default` | The grounds of the retreat | Shared rooms and time on the grounds. |
 | Farm and dining | `default` | Meals during the stay | Your doctor plans them with the programme. |
 | A day at Shantara | `default` | A day at the retreat | An example day. Each stay is planned. |
@@ -87,7 +87,7 @@ Jobs are the families in [skill-ia.md](skill-ia.md). The template is still the p
 | Medical Editorial Policy | `editorial` | How we review health pages | Who writes, who reviews, what we will not claim. No route yet, so nothing is generated. |
 | Tariff | `programme` | The tariff card | Rooms, inclusions, payment and cancellation. No amount. |
 | FAQ | `editorial` | Questions before a stay | Booking, who can stay, and the days here. |
-| Contact | `editorial` | Speak with the retreat | Call, WhatsApp or email from Kerala. No phone number. |
+| Contact | `editorial` | Speak with the retreat | Call, WhatsApp or email from Keralam. No phone number. |
 | Book a Consultation | `programme` | Book a consultation | A doctor helps you choose the next step. |
 | Resident policies | `editorial` | During your stay | House rules for life at the retreat. |
 | Cancellation | `editorial` | If a stay is cancelled | How a change or a cancellation is handled. |
@@ -413,11 +413,11 @@ type FixedPage = Pick<PageMeta, 'title' | 'description' | 'og'>;
 const FIXED_PAGES: Record<EnabledLocale, Record<FixedKey, FixedPage>> = {
   en: {
     home: {
-      title: 'A doctor-led naturopathy retreat in Kerala',
-      description: 'Shantara is a doctor-led naturopathy retreat in Kerala. Every stay begins with a consultation.',
+      title: 'A doctor-led naturopathy retreat in Keralam',
+      description: 'Shantara is a doctor-led naturopathy retreat in Keralam. Every stay begins with a consultation.',
       og: {
         template: 'default',
-        title: 'A doctor-led stay in Kerala',
+        title: 'A doctor-led stay in Keralam',
         description: "Every stay begins with a doctor's consultation.",
         photo: 'src/assets/images/site/arrival-dusk.jpg',
       },
@@ -433,8 +433,8 @@ const FIXED_PAGES: Record<EnabledLocale, Record<FixedKey, FixedPage>> = {
     },
     rooms: {
       title: 'Rooms for a residential stay',
-      description: 'Rooms at the retreat in Kerala, for guests on a doctor-planned residential stay.',
-      og: { template: 'default', title: 'Rooms for the stay', description: 'Quiet rooms at the retreat in Kerala.' },
+      description: 'Rooms at the retreat in Keralam, for guests on a doctor-planned residential stay.',
+      og: { template: 'default', title: 'Rooms for the stay', description: 'Quiet rooms at the retreat in Keralam.' },
     },
     // faq, contact, tariff, both doctor profiles and every other fixed page: section 2
     // tariff picture headline is "The tariff card", not "Tariff"

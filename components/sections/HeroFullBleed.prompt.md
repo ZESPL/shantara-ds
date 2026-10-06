@@ -3,13 +3,13 @@ Full-screen photographic hero with the statement bottom-left inside a scrim and 
 ```jsx
 <HeroFullBleed
   src="/assets/photos/arrival-dusk.jpg" alt="Shantara at dusk"
-  title="A doctor-led naturopathy retreat in Kerala"
+  title="A doctor-led naturopathy retreat in Keralam"
   sub="Drug-free naturopathy on a hilltop above the Chennamangallur valley. Every stay begins with a consultation, and your programme is planned by our doctors."
   actions={<>
     <Button size="lg">Book a Consultation</Button>
     <TextLink>View programmes</TextLink>
   </>}
-  meta={["Kozhikode, Kerala", "Since 2000"]}
+  meta={["Kozhikode, Keralam", "Since 2000"]}
 />
 ```
 

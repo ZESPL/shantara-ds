@@ -30,7 +30,7 @@ Public copy may describe that loop in plain language (consultation and assessmen
 
 ### Layer 3 — Comparison / interception (GCC and West)
 
-In UAE, UK, and US discovery, people often type Ayurveda, wellness retreat, or yoga retreat. Intercept that intent with an honest medically reviewed **Ayurveda vs naturopathy** article/guide and Experience / FAQ copy that explains a residential Kerala stay. Do **not** become an Ayurveda resort, wellness resort, or US ND clinic to win the query.
+In UAE, UK, and US discovery, people often type Ayurveda, wellness retreat, or yoga retreat. Intercept that intent with an honest medically reviewed **Ayurveda vs naturopathy** article/guide and Experience / FAQ copy that explains a residential Keralam stay. Do **not** become an Ayurveda resort, wellness resort, or US ND clinic to win the query.
 
 ---
 

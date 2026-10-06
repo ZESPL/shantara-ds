@@ -7,7 +7,7 @@ Do not reopen resolved items in campaigns.
 **Resolved {Approved} (management) — do not reopen:**
 
 - **Stay length.** 7 nights is not a mandatory minimum for all stays. Short Health Reset and stay-commitment bands are not constrained by a 7-night floor. Typical / indicative durations (including handbook language that most programmes are designed around a week or longer) remain useful. Do not invent night counts as facts, and do not invent pricing.
-- **Language priority** for marketing localisation: English → Arabic → German → French → Russian → Hindi → Malayalam (`en ar de fr ru hi ml`). Malayalam is conditional on meaningful local Kerala/local acquisition. Italian and Spanish are not current priorities.
+- **Language priority** for marketing localisation: English → Arabic → German → French → Russian → Hindi → Malayalam (`en ar de fr ru hi ml`). Malayalam is conditional on meaningful local Keralam/local acquisition. Italian and Spanish are not current priorities.
 - **Care model.** Assessment → personalised plan → therapies → measurable reassessment. Public voice of the loop lives in [skill-copy.md](../../ui_kits/website/skill-copy.md) Layer 2 (how a stay works), not as a slogan.
 - **Men’s Vitality and Longevity** are named wellness programmes in the handbook catalogue. They are **not** new ICPs. ICP 05 owns men’s vitality need; ICP 06 owns longevity / healthy-ageing need. Guests reach a programme after assessment.
 - **Outcomes data.** No public success rates, kilograms, or biomarker targets. Institutional heritage (Hygiene Nature Cure Hospital) lives on **About only**. Do not invent hospital-era statistics.

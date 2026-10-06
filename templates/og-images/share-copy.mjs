@@ -38,7 +38,7 @@ const CONDITION_HEADLINES = {
 };
 
 const RESIDENTIAL = "A doctor-supervised residential stay.";
-const CONDITION_LINE = "A residential stay in Kerala, after consultation.";
+const CONDITION_LINE = "A residential stay in Keralam, after consultation.";
 const ANSWER_LINE = "A Shantara doctor answers this on the page.";
 
 /** Picture headlines that must not be the catalogue name or the search title. */
@@ -74,11 +74,11 @@ const ANSWER_HEADLINES = {
  */
 export const FIXED_PAGES = {
   home: {
-    title: "A doctor-led naturopathy retreat in Kerala",
-    description: "Shantara is a doctor-led naturopathy retreat in Kerala. Every stay begins with a consultation.",
+    title: "A doctor-led naturopathy retreat in Keralam",
+    description: "Shantara is a doctor-led naturopathy retreat in Keralam. Every stay begins with a consultation.",
     og: {
       template: "default",
-      title: "A doctor-led stay in Kerala",
+      title: "A doctor-led stay in Keralam",
       description: "Every stay begins with a doctor's consultation.",
       photo: "arrival-dusk",
     },
@@ -95,11 +95,11 @@ export const FIXED_PAGES = {
   },
   rooms: {
     title: "Rooms for a residential stay",
-    description: "Rooms at the retreat in Kerala, for guests on a doctor-planned residential stay.",
+    description: "Rooms at the retreat in Keralam, for guests on a doctor-planned residential stay.",
     og: {
       template: "default",
       title: "Rooms for the stay",
-      description: "Quiet rooms at the retreat in Kerala.",
+      description: "Quiet rooms at the retreat in Keralam.",
       photo: "room-bedroom-forest-view-armchair",
     },
   },
@@ -208,11 +208,11 @@ export const FIXED_PAGES = {
   },
   contact: {
     title: "Contact",
-    description: "Call, WhatsApp or email Shantara Naturopathy Retreat in Kerala.",
+    description: "Call, WhatsApp or email Shantara Naturopathy Retreat in Keralam.",
     og: {
       template: "editorial",
       title: "Speak with the retreat",
-      description: "Call, WhatsApp or email from Kerala.",
+      description: "Call, WhatsApp or email from Keralam.",
     },
   },
   "book-consultation": {
