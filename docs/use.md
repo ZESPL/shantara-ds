@@ -73,6 +73,7 @@ You can also keep the folder at the repo root (as it is here) and treat `SKILL.m
 | Website IA / CMS / QA | `ui_kits/website/skill-*.md` | overlapping `README.md` chapters |
 | Share images (Open Graph) | [`ui_kits/website/skill-og-images.md`](../ui_kits/website/skill-og-images.md) | `skill-images.md`, `search-visibility/social.md` (they point to it) |
 | Favicon, touch icon, web manifest | [`ui_kits/website/skill-icons.md`](../ui_kits/website/skill-icons.md) | `skill-images.md`, `search-visibility/files.md` (they point to it) |
+| Video | [`ui_kits/website/skill-video.md`](../ui_kits/website/skill-video.md) | `skill-content.md`, `skill-images.md`, `search-visibility/schema.md`, `search-visibility/crawling.md` (they point to it) |
 | Audience | `docs/icp.md` (internal) | public page copy |
 | Policies / `[TO CONFIRM]` | `docs/handbook.txt` | hero copy; never quote §15 publicly |
 

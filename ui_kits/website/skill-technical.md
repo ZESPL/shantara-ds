@@ -155,6 +155,8 @@ Include alternate-language relationships for locales that actually have that pag
 
 Use accurate modification dates. Do not generate seven empty sitemap trees for unpublished languages.
 
+Public videos are listed in the video sitemap as well. Field sources and the R2 rule: [skill-video.md](skill-video.md).
+
 Do not update `lastmod` on every build unless the page actually changed.
 
 ### robots.txt
@@ -368,7 +370,7 @@ Ensure:
 - touch targets large enough;
 - reduced-motion support where appropriate — keep colour and opacity, drop movement; use the design-system motion tokens (`--ease-out`, `--ease-drawer`, `--duration-*`) rather than local curves;
 - accordions/dialogs use correct ARIA patterns;
-- videos have captions/transcripts when needed;
+- videos have captions/transcripts when needed, and follow [skill-video.md](skill-video.md) (native `<video>`, R2/CDN, VideoObject, video sitemap);
 - `html` `lang` and `dir` match the locale;
 - the language selector is named, keyboard-accessible, and announces the current locale;
 - passages in another language are annotated;

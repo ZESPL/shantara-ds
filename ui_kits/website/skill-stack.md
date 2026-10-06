@@ -20,6 +20,7 @@ This design-system Website Kit (`ui_kits/website/`) remains a composition previe
 | **Animation** | **CSS / Tailwind transitions** | Default and primary animation mechanism |
 | **Page transitions** | **Astro View Transitions** | Restrained navigation transitions |
 | **Images** | **Astro Image** | Responsive images, sizing and optimization. Storage, compression and widths: [skill-images.md](skill-images.md) |
+| **Video** | **Native `<video>` on Cloudflare R2 + CDN** | No committed files, no YouTube, Vimeo, Cloudflare Stream, Mux or other embeds. Schema and video sitemap: [skill-video.md](skill-video.md) |
 | **Multilingual** | **Astro native i18n** | Architecture ready for `/en/`, `/ar/`, etc. |
 | **Forms** | **Web3Forms** | Contact, enquiry and lead forms; no custom forms backend |
 | **Analytics** | **OpenPanel** | Behaviour, events, funnels and site analytics |

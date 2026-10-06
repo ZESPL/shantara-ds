@@ -16,6 +16,7 @@ Some SEO tools and older guides still recommend these. Do not follow them.
 - Do not add `SearchAction`, `Review` or `AggregateRating` for Shantara itself, `HowTo`, `Hospital`, spa types or `HealthAndBeautyBusiness`.
 - Do not use bare `#fragment` values as `@id`, or put a locale inside an entity `@id`.
 - Do not write JSON-LD by hand in page components or Markdoc.
+- Do not commit video files, reference a local video path, or embed YouTube, Vimeo, Cloudflare Stream, Mux or any iframe player. Videos are native `<video>` files on Cloudflare R2. See [skill-video.md](../skill-video.md).
 - Do not add FAQ content to chase rich results.
 - Do not show rates outside the tariff page, or change rates by location, locale or device.
 - Do not put health claims in titles, meta descriptions, alt text or schema.

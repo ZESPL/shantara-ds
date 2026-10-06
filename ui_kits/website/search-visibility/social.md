@@ -8,3 +8,5 @@ Shantara pages are shared on WhatsApp, Instagram, Facebook, LinkedIn and email. 
 - **SOCIAL-02 (P1) [Build]** `og:image` is generated at build time from the page's template (default, programme or editorial), using the page's own hero photograph and title. It is a 1200 × 630 JPEG of 300 KB or less, because some apps skip large preview images. **Check:** `scripts/check-og.mjs` passes on the build, including the share-copy audit (headline length, supporting line, claims and rates).
 - **SOCIAL-03 (P1) [Build]** `twitter:card` is `summary_large_image`, and `twitter:image` matches `og:image`. **Check:** view the page source.
 - **SOCIAL-04 (P1) [Content]** Pages that are not indexed (thank-you, 404) and pages the generator does not cover use one approved default share image, `og-default.jpg`. **Check:** paste the thank-you URL into WhatsApp.
+
+Pages that show a public video also emit `og:video`, `og:video:secure_url` and `og:video:type` from the same metadata generator. `og:type` becomes `video.other` only when the video is the subject of the page. Tag list: [skill-video.md](../skill-video.md).

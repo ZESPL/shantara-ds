@@ -43,7 +43,7 @@ public/
 
 - **Never put a photograph in `public/`.** Files there are copied as they are: no resizing, no AVIF or WebP, no width and height.
 - **Never link to a photograph in this design system** (`assets/photos/`) or any other remote host from production. Copy the file into the website repo and run it through the preparation steps in section 3.
-- **Video files never go in the repo.** `video.url` is a YouTube or Vimeo link ([skill-content.md](skill-content.md)). The `video.poster` is an ordinary image and follows this file.
+- **Video files never go in the repo.** The file, poster and caption track are Cloudflare R2 URLs served through Cloudflare CDN ([skill-video.md](skill-video.md)). Do not put them in `src/assets/images/` or `public/`. Every other photograph still follows this file.
 - **Images come only from the English entry.** Translated files carry text only ([skill-content.md](skill-content.md#languages)), so there is one image folder per entry, never one per language.
 
 ### Keystatic image fields

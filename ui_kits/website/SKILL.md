@@ -4,7 +4,7 @@ description: >
   Build, extend, review, and manage Shantara's public marketing website.
   Use when working on information architecture, page composition, design-system
   sections, CMS modeling, content publishing, lead capture, analytics, SEO,
-  schema, AEO/GEO, E-E-A-T, accessibility, performance, or website QA.
+  schema, AEO/GEO, E-E-A-T, accessibility, performance, video, or website QA.
 ---
 
 # Shantara Website Skill
@@ -20,6 +20,7 @@ Read this file first. Open a sibling reference only when the task needs that inv
 - [Images](skill-images.md) — where image files go in the Astro repo, preparing files before commit, widths and formats, build checks
 - [Share images](skill-og-images.md) — Open Graph and Twitter card images: three templates, page metadata and fallbacks, Astro build-time generation, manual overrides, checks
 - [Icons](skill-icons.md) — favicon, iOS touch icon, Android home-screen icons, web manifest and browser theme colour: the seven files, `<head>` tags, rebuild and checks
+- [Video](skill-video.md) — Cloudflare R2 + CDN only, native `<video>`, VideoObject, video sitemap, no committed files and no third-party players
 - [Premium design](skill-premium.md) — build order, design-system rules from the brand deck (type voices, grounds, shape, buttons, tiles, component map, responsive rules), motion vocabulary
 - [Information architecture](skill-ia.md) — nav, URLs, page inventory, publishing families
 - [Sections and composition](skill-sections.md) — heroes, section library → components, tiles, example pages

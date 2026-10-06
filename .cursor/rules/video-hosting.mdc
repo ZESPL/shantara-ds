@@ -1,0 +1,34 @@
+---
+description: Videos are native HTML5 files on Cloudflare R2, never committed or embedded
+alwaysApply: true
+---
+
+# Video hosting
+
+Canonical standard: `ui_kits/website/skill-video.md`.
+
+Video files must be uploaded to Cloudflare R2 and served via Cloudflare CDN. Never commit video files to the repository. Every video must also be included in the site’s video sitemap.
+
+## Not allowed
+
+```html
+<!-- ❌ local file, third-party player, missing schema -->
+<video src="/videos/stay.mp4" autoplay></video>
+<iframe src="https://www.youtube.com/embed/…"></iframe>
+```
+
+```html
+<!-- ✅ R2/CDN URLs, native element, poster -->
+<video controls preload="metadata" playsinline poster="https://cdn.example/stay.jpg">
+  <source src="https://cdn.example/stay.webm" type="video/webm" />
+  <source src="https://cdn.example/stay.mp4" type="video/mp4" />
+</video>
+```
+
+## Also required
+
+- Refuse YouTube, Vimeo, Cloudflare Stream, Mux, iframes and other embeds. A social-profile link is not a player.
+- WebM and MP4 when both exist. Autoplay only if muted and looping.
+- Props: `src` or `sources`, `poster`, `title`, `description`, `uploadDate`, `duration`. Prefer transcript, captions, chapters, creator.
+- `VideoObject` JSON-LD and Open Graph video tags in the first HTML, from the existing generators.
+- One video-sitemap entry per public video (thumbnail, title, description, content URL, publication date, duration in seconds).

@@ -27,6 +27,7 @@ https://shantara.life/#condition-{internal-id}
 - **SCHEMA-13 (P2) [Build]** `FAQPage` markup is optional and used only when the questions and answers are visible on the page. Google removed FAQ rich results in May 2026, so the markup brings no Google benefit. Never use `HowTo`. **Check:** none needed.
 - **SCHEMA-14 (P1) [Build]** No empty values: omit an optional property instead of sending an empty string or "N/A". URLs are absolute, dates are ISO 8601, and the phone number is `+919553600100`. **Check:** an automated JSON-LD lint in CI.
 - **SCHEMA-15 (P1) [Build]** Only add schema that states something true and useful, or that a known consumer (Google, Bing, AI tools) reads. Do not chase schema coverage. **Check:** every type in the generator is listed in the map below.
+- **SCHEMA-16 (P1) [Build]** A page that shows a public video includes one `VideoObject` in the same `@graph`, with `name`, `description`, `thumbnailUrl`, `uploadDate`, `duration`, `contentUrl`, and `transcript`, `creator` and `Clip` chapters when those exist. URLs are the Cloudflare R2/CDN addresses. The single schema generator emits the node. Hosting and the field list: [skill-video.md](../skill-video.md). **Check:** the page source contains the `VideoObject` without running JavaScript.
 
 ## Schema map by page type
 
@@ -47,3 +48,4 @@ Every indexable page also gets the `WebSite` node and a reference to `https://sh
 | Contact | `ContactPage` with `about` pointing to the organisation |
 | Book a Consultation, policies, terms, privacy | `WebPage` only |
 | Form confirmation, 404, 410 | No structured data |
+| Any indexable page that shows a public video | The row above, plus one `VideoObject` (SCHEMA-16) |

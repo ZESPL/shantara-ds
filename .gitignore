@@ -1,5 +1,13 @@
 uploads/
 dist/
+
+# Video files live on Cloudflare R2, never in git. See ui_kits/website/skill-video.md
+*.mp4
+*.webm
+*.mov
+*.m4v
+*.avi
+*.mkv
 node_modules/
 .netlify/
 .DS_Store

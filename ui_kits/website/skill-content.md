@@ -19,7 +19,7 @@ Define each group once and reuse it.
 | Status | `status`: `draft` or `published` | Every entry |
 | Featured image | `featured_image`: image and required `alt` | Conditions, programmes, therapies, rooms, doctors, articles, doctor answers. It is also the photograph in the page's share image ([skill-og-images.md](skill-og-images.md)). Authors and testimonials use `photo`. |
 | Featured | `featured`: true or false | Programmes, therapies, rooms, articles, doctor answers, testimonials |
-| Video | `video`: `url` (YouTube or Vimeo link), `poster`, `title`, `transcript` | Conditions, programmes, doctor answers, testimonials. Store a link, never the file. |
+| Video | `video`: R2/CDN URLs only — `sources` (WebM and MP4), `poster`, optional `captions`; text `title`, `description`, `uploadDate`, `duration` (both ISO 8601), `transcript`; optional `chapters`, `creator`. Standard: [skill-video.md](skill-video.md). | Conditions, programmes, doctor answers, testimonials. Store links, never the file. No YouTube, Vimeo, Cloudflare Stream or Mux. |
 | External references | `external_references`: list of `{title, url}` | Optional on conditions, programmes, therapies, articles, doctor answers |
 | Related pages | `related_pages`: list of `{type, id}` | Conditions, programmes, therapies, articles, doctor answers, doctors |
 | FAQs | `faqs`: list of `{question, answer}` | Conditions, programmes |

@@ -54,7 +54,7 @@ Full stack table: [skill-stack.md](skill-stack.md).
 - Prefer frames without identifiable guests where public marketing allows; never show faces in therapy or room numbers (guest privacy — root `SKILL.md`).
 - One strong image per section beats a grid of weak ones.
 - Always use Astro Image with correct `sizes`, width and height set, and modern formats. Storage and compression rules: [skill-images.md](skill-images.md).
-- Hero video: optional, short (10 to 15 seconds), muted, looped, compressed, with a still poster image that loads first. Never autoplay audio.
+- Hero video: optional, short (10 to 15 seconds), muted, looped, compressed, with a still poster image that loads first. Never autoplay audio. Hosting, the native `<video>` element, schema and the video sitemap: [skill-video.md](skill-video.md).
 - The LCP image (usually the hero) must not be lazy-loaded and should be prioritised.
 
 ## Typography

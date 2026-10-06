@@ -206,6 +206,7 @@ Do not introduce these without a demonstrated need:
 - a complete production website inside this design-system kit;
 - a translation platform, runtime MT, IP geolocation, a second Arabic frontend, or placeholder pages for unpublished locales;
 - stack substitutes forbidden in [skill-stack.md](skill-stack.md): third-party component libraries; Motion/GSAP by default; Redux/Zustand; Postgres/Supabase/Prisma or a separate API; custom forms backend instead of Web3Forms; GitHub Actions that deploy (Netlify owns deploy);
+- video files in the repository, local video paths, or YouTube, Vimeo, Cloudflare Stream, Mux or iframe players — native `<video>` on Cloudflare R2 only ([skill-video.md](skill-video.md));
 - motion or “premium” chrome that breaks [skill-premium.md](skill-premium.md): preloaders, homepage carousels, scroll hijacking, letter-scramble text, animation on every section.
 
 ## Migration / legacy brand rules

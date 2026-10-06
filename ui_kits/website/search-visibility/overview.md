@@ -45,7 +45,7 @@ Recorded on 25 September 2026. The rules below already follow them.
 | --- | --- | --- |
 | [One content truth (DATA)](data.md) | DATA-01 to DATA-05 | One content source, one JSON-LD generator, one metadata generator, business facts, rebuild on publish |
 | [Rendering (REN)](rendering.md) | REN-01 to REN-05 | Prerendering, head tags in the first HTML, error pages, 2 MB page limit, heading order |
-| [Crawling and sitemaps (CRAWL)](crawling.md) | CRAWL-01 to CRAWL-09 | robots.txt, Keystatic and confirmation pages, deploy previews, AI crawlers, sitemaps, IndexNow |
+| [Crawling and sitemaps (CRAWL)](crawling.md) | CRAWL-01 to CRAWL-10 | robots.txt, Keystatic and confirmation pages, deploy previews, AI crawlers, sitemaps, IndexNow, video sitemap |
 | [Languages (LANG)](languages.md) | LANG-01 to LANG-05 | Locale prefixes, root redirect, hreflang, disabled locales, translation canonicals and review |
 | [URLs (URL)](urls.md) | URL-01 to URL-06 | Slugs, trailing slashes, canonicals, real 404s, Journal pagination, internal links |
 | [Redirects and retired pages (REDIR)](redirects.md) | REDIR-01 to REDIR-05 | Slug-change redirects, single-hop 301s, host clean-up, query strings, retired pages |
@@ -53,7 +53,7 @@ Recorded on 25 September 2026. The rules below already follow them.
 | [Pages (PAGE)](pages.md) | PAGE-01 to PAGE-08 | Titles and descriptions, breadcrumbs, orphan pages, internal-only facts, original copy, trust pages |
 | [Medical content (MED)](medical.md) | MED-01 to MED-05 | Doctor review, sources, claim words in metadata, testimonials, honest dates |
 | [Rates (RATE)](rates.md) | RATE-01 to RATE-05 | Rates only on the tariff page, currency labels, same default for everyone, Offer schema, no rate-sheet internals |
-| [Structured data (SCHEMA)](schema.md) | SCHEMA-01 to SCHEMA-15 | JSON-LD graph, `@id` values, MedicalClinic, page nodes, doctors, programmes, articles, FAQ, schema map |
+| [Structured data (SCHEMA)](schema.md) | SCHEMA-01 to SCHEMA-16 | JSON-LD graph, `@id` values, MedicalClinic, page nodes, doctors, programmes, articles, FAQ, VideoObject, schema map |
 | [Link previews (SOCIAL)](social.md) | SOCIAL-01 to SOCIAL-04 | Open Graph tags, share images, Twitter card |
 | [Images (IMG)](images.md) | IMG-01 to IMG-06 | Astro Image, hero loading, lazy loading, alt text, filenames, real photography |
 | [Files (FILE)](files.md) | FILE-01 to FILE-02 | PDFs, favicon and web manifest |
@@ -66,6 +66,7 @@ Recorded on 25 September 2026. The rules below already follow them.
 
 ## Change log
 
+- **1.6, 6 October 2026.** Video: native `<video>` on Cloudflare R2 + CDN only. SCHEMA-16 adds `VideoObject` to the one `@graph`. CRAWL-10 adds the video sitemap. The standard is [skill-video.md](../skill-video.md). YouTube, Vimeo, Cloudflare Stream and Mux embeds are refused.
 - **1.5, 25 September 2026.** Share images: generated at build time from three templates instead of a plain crop of the hero photograph (SOCIAL-02), with `og:image` dimensions and alt text (SOCIAL-01), `twitter:image` (SOCIAL-03), and the default image for noindex and uncovered pages (SOCIAL-04). The standard is [skill-og-images.md](../skill-og-images.md).
 - **1.4, 25 September 2026.** Rates: any number of currencies from the production Keystatic tariff, exact amounts, no tax breakdown (RATE-02), same default currency for everyone (RATE-03), new RATE-05 keeps rate-sheet internals off the site. This design system holds no rates.
 - **1.3, 25 September 2026.** Split into one file per section, with this overview holding priorities, owners and decisions. Removed the table that mapped each Zarnik rule. No rule text changed.
