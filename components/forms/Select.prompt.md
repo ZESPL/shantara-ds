@@ -9,3 +9,5 @@ Native `<select>` in Input's chrome (same 52px, label, hint, error, required, di
 **Motion.** Same hover / focus halo as `Input`. The chevron takes Himalaya on `:focus-within` — it does not spin or flip.
 
 **RTL.** The caret sits at the inline end. Do not add a second physical `right` offset.
+
+When the list is long enough to search — countries, conditions — use `SearchList`.

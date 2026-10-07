@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"ShantaraDesignSystem_45bbe4","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"Divider","sourcePath":"components/core/Divider.jsx"},{"name":"ICON_GROUPS","sourcePath":"components/core/Icon.jsx"},{"name":"ICON_NAMES","sourcePath":"components/core/Icon.jsx"},{"name":"Icon","sourcePath":"components/core/Icon.jsx"},{"name":"IconButton","sourcePath":"components/core/IconButton.jsx"},{"name":"Logo","sourcePath":"components/core/Logo.jsx"},{"name":"PatternPanel","sourcePath":"components/core/PatternPanel.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Dialog","sourcePath":"components/feedback/Dialog.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Switch","sourcePath":"components/forms/Switch.jsx"},{"name":"Textarea","sourcePath":"components/forms/Textarea.jsx"},{"name":"Accordion","sourcePath":"components/navigation/Accordion.jsx"},{"name":"Breadcrumbs","sourcePath":"components/navigation/Breadcrumbs.jsx"},{"name":"LanguageSelector","sourcePath":"components/navigation/LanguageSelector.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"Media","sourcePath":"components/editorial/Media.jsx"},{"name":"ArticleFigure","sourcePath":"components/editorial/ArticleFigure.jsx"},{"name":"PortraitFrame","sourcePath":"components/editorial/PortraitFrame.jsx"},{"name":"AuthorCard","sourcePath":"components/editorial/AuthorCard.jsx"},{"name":"GroupedList","sourcePath":"components/editorial/GroupedList.jsx"},{"name":"MetaRow","sourcePath":"components/editorial/MetaRow.jsx"},{"name":"NumberedSteps","sourcePath":"components/editorial/NumberedSteps.jsx"},{"name":"Numeral","sourcePath":"components/editorial/Numeral.jsx"},{"name":"Pagination","sourcePath":"components/editorial/Pagination.jsx"},{"name":"PlainList","sourcePath":"components/editorial/PlainList.jsx"},{"name":"Prose","sourcePath":"components/editorial/Prose.jsx"},{"name":"QuoteBlock","sourcePath":"components/editorial/QuoteBlock.jsx"},{"name":"ReviewedBy","sourcePath":"components/editorial/ReviewedBy.jsx"},{"name":"ShareBar","sourcePath":"components/editorial/ShareBar.jsx"},{"name":"SpecTable","sourcePath":"components/editorial/SpecTable.jsx"},{"name":"Statement","sourcePath":"components/editorial/Statement.jsx"},{"name":"TableOfContents","sourcePath":"components/editorial/TableOfContents.jsx"},{"name":"TextLink","sourcePath":"components/editorial/TextLink.jsx"},{"name":"Tile","sourcePath":"components/editorial/Tile.jsx"},{"name":"TimeTable","sourcePath":"components/editorial/TimeTable.jsx"},{"name":"ArticleHeader","sourcePath":"components/sections/ArticleHeader.jsx"},{"name":"BandStatement","sourcePath":"components/sections/BandStatement.jsx"},{"name":"ClosingCTA","sourcePath":"components/sections/ClosingCTA.jsx"},{"name":"FormSplit","sourcePath":"components/sections/FormSplit.jsx"},{"name":"HeroFullBleed","sourcePath":"components/sections/HeroFullBleed.jsx"},{"name":"HeroSplit","sourcePath":"components/sections/HeroSplit.jsx"},{"name":"HeroStatement","sourcePath":"components/sections/HeroStatement.jsx"},{"name":"IndexList","sourcePath":"components/sections/IndexList.jsx"},{"name":"NumeralsSplit","sourcePath":"components/sections/NumeralsSplit.jsx"},{"name":"PanoramaCaption","sourcePath":"components/sections/PanoramaCaption.jsx"},{"name":"PeopleRow","sourcePath":"components/sections/PeopleRow.jsx"},{"name":"TileGrid","sourcePath":"components/sections/TileGrid.jsx"},{"name":"RelatedArticles","sourcePath":"components/sections/RelatedArticles.jsx"},{"name":"Section","sourcePath":"components/sections/Section.jsx"},{"name":"SplitSection","sourcePath":"components/sections/SplitSection.jsx"}],"sourceHashes":{"components/core/Badge.jsx":"b014d0a4d8ea","components/core/Button.jsx":"66ad8b155d36","components/core/Card.jsx":"899ecf09e977","components/core/Divider.jsx":"7841bbb870dd","components/core/Icon.jsx":"7eaaf731593f","components/core/IconButton.jsx":"0746d0dc8fb3","components/core/Logo.jsx":"82ebb0dfac10","components/core/PatternPanel.jsx":"dd26bb639ce9","components/core/Tag.jsx":"480f3225f1d4","components/feedback/Dialog.jsx":"c1b84ed6f276","components/feedback/Spinner.jsx":"49fa70a95320","components/feedback/Toast.jsx":"c64129df2a1a","components/feedback/Tooltip.jsx":"9c7b40a94408","components/forms/Checkbox.jsx":"621ba3e2309a","components/forms/Input.jsx":"b9f0693aead7","components/forms/Radio.jsx":"861dea337cdb","components/forms/Select.jsx":"4ebda94f9354","components/forms/Switch.jsx":"73709580dd9e","components/forms/Textarea.jsx":"80d6d168a80c","components/navigation/Accordion.jsx":"b8870511c6fe","components/navigation/Breadcrumbs.jsx":"421f19e62be1","components/navigation/LanguageSelector.jsx":"3255d13574aa","components/navigation/Tabs.jsx":"414b48cd2f58","components/editorial/Media.jsx":"33a6b0c1bfde","components/editorial/ArticleFigure.jsx":"f7689927c7db","components/editorial/PortraitFrame.jsx":"6b53471987b8","components/editorial/AuthorCard.jsx":"e96ed75df2fb","components/editorial/GroupedList.jsx":"d8cd9e26b4bf","components/editorial/MetaRow.jsx":"8c95d79ee5e1","components/editorial/NumberedSteps.jsx":"6f2950654a05","components/editorial/Numeral.jsx":"e6b7086ade4c","components/editorial/Pagination.jsx":"893e51b7753d","components/editorial/PlainList.jsx":"5fdca30d99bf","components/editorial/Prose.jsx":"e6e8e061f5d0","components/editorial/QuoteBlock.jsx":"c79559f0cb83","components/editorial/ReviewedBy.jsx":"cf907ffdf4c1","components/editorial/ShareBar.jsx":"a5d673d91fb9","components/editorial/SpecTable.jsx":"097e36746780","components/editorial/Statement.jsx":"50cb58806250","components/editorial/TableOfContents.jsx":"f92f3b4de4c4","components/editorial/TextLink.jsx":"b730c74e745f","components/editorial/Tile.jsx":"4ebf341907e5","components/editorial/TimeTable.jsx":"ce1bbdbc25c1","components/sections/ArticleHeader.jsx":"5444f56b29bf","components/sections/BandStatement.jsx":"28aa51447566","components/sections/ClosingCTA.jsx":"e010d9783ea4","components/sections/FormSplit.jsx":"86987313de54","components/sections/HeroFullBleed.jsx":"90de10fed20c","components/sections/HeroSplit.jsx":"e43e0f969b2f","components/sections/HeroStatement.jsx":"812f5fd0454a","components/sections/IndexList.jsx":"4a13d2f62a15","components/sections/NumeralsSplit.jsx":"58792a80105c","components/sections/PanoramaCaption.jsx":"34b6e6fbaf48","components/sections/PeopleRow.jsx":"fbf817dcc648","components/sections/TileGrid.jsx":"577cfcc55a90","components/sections/RelatedArticles.jsx":"8452368a277c","components/sections/Section.jsx":"eacd861e84d9","components/sections/SplitSection.jsx":"42b09796c47a"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":4,"namespace":"ShantaraDesignSystem_45bbe4","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"Divider","sourcePath":"components/core/Divider.jsx"},{"name":"ICON_GROUPS","sourcePath":"components/core/Icon.jsx"},{"name":"ICON_NAMES","sourcePath":"components/core/Icon.jsx"},{"name":"Icon","sourcePath":"components/core/Icon.jsx"},{"name":"IconButton","sourcePath":"components/core/IconButton.jsx"},{"name":"Logo","sourcePath":"components/core/Logo.jsx"},{"name":"PatternPanel","sourcePath":"components/core/PatternPanel.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Dialog","sourcePath":"components/feedback/Dialog.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"DateField","sourcePath":"components/forms/DateField.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"SearchList","sourcePath":"components/forms/SearchList.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Switch","sourcePath":"components/forms/Switch.jsx"},{"name":"Textarea","sourcePath":"components/forms/Textarea.jsx"},{"name":"Accordion","sourcePath":"components/navigation/Accordion.jsx"},{"name":"Breadcrumbs","sourcePath":"components/navigation/Breadcrumbs.jsx"},{"name":"LanguageSelector","sourcePath":"components/navigation/LanguageSelector.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"Media","sourcePath":"components/editorial/Media.jsx"},{"name":"ArticleFigure","sourcePath":"components/editorial/ArticleFigure.jsx"},{"name":"PortraitFrame","sourcePath":"components/editorial/PortraitFrame.jsx"},{"name":"AuthorCard","sourcePath":"components/editorial/AuthorCard.jsx"},{"name":"GroupedList","sourcePath":"components/editorial/GroupedList.jsx"},{"name":"MetaRow","sourcePath":"components/editorial/MetaRow.jsx"},{"name":"NumberedSteps","sourcePath":"components/editorial/NumberedSteps.jsx"},{"name":"Numeral","sourcePath":"components/editorial/Numeral.jsx"},{"name":"Pagination","sourcePath":"components/editorial/Pagination.jsx"},{"name":"PlainList","sourcePath":"components/editorial/PlainList.jsx"},{"name":"Prose","sourcePath":"components/editorial/Prose.jsx"},{"name":"QuoteBlock","sourcePath":"components/editorial/QuoteBlock.jsx"},{"name":"ReviewedBy","sourcePath":"components/editorial/ReviewedBy.jsx"},{"name":"ShareBar","sourcePath":"components/editorial/ShareBar.jsx"},{"name":"SpecTable","sourcePath":"components/editorial/SpecTable.jsx"},{"name":"Statement","sourcePath":"components/editorial/Statement.jsx"},{"name":"TableOfContents","sourcePath":"components/editorial/TableOfContents.jsx"},{"name":"TextLink","sourcePath":"components/editorial/TextLink.jsx"},{"name":"Tile","sourcePath":"components/editorial/Tile.jsx"},{"name":"TimeTable","sourcePath":"components/editorial/TimeTable.jsx"},{"name":"ArticleHeader","sourcePath":"components/sections/ArticleHeader.jsx"},{"name":"BandStatement","sourcePath":"components/sections/BandStatement.jsx"},{"name":"ClosingCTA","sourcePath":"components/sections/ClosingCTA.jsx"},{"name":"FormSplit","sourcePath":"components/sections/FormSplit.jsx"},{"name":"HeroFullBleed","sourcePath":"components/sections/HeroFullBleed.jsx"},{"name":"HeroSplit","sourcePath":"components/sections/HeroSplit.jsx"},{"name":"HeroStatement","sourcePath":"components/sections/HeroStatement.jsx"},{"name":"IndexList","sourcePath":"components/sections/IndexList.jsx"},{"name":"NumeralsSplit","sourcePath":"components/sections/NumeralsSplit.jsx"},{"name":"PanoramaCaption","sourcePath":"components/sections/PanoramaCaption.jsx"},{"name":"PeopleRow","sourcePath":"components/sections/PeopleRow.jsx"},{"name":"TileGrid","sourcePath":"components/sections/TileGrid.jsx"},{"name":"RelatedArticles","sourcePath":"components/sections/RelatedArticles.jsx"},{"name":"Section","sourcePath":"components/sections/Section.jsx"},{"name":"SplitSection","sourcePath":"components/sections/SplitSection.jsx"}],"sourceHashes":{"components/core/Badge.jsx":"b014d0a4d8ea","components/core/Button.jsx":"66ad8b155d36","components/core/Card.jsx":"899ecf09e977","components/core/Divider.jsx":"7841bbb870dd","components/core/Icon.jsx":"7eaaf731593f","components/core/IconButton.jsx":"0746d0dc8fb3","components/core/Logo.jsx":"82ebb0dfac10","components/core/PatternPanel.jsx":"dd26bb639ce9","components/core/Tag.jsx":"480f3225f1d4","components/feedback/Dialog.jsx":"c1b84ed6f276","components/feedback/Spinner.jsx":"49fa70a95320","components/feedback/Toast.jsx":"c64129df2a1a","components/feedback/Tooltip.jsx":"9c7b40a94408","components/forms/Checkbox.jsx":"621ba3e2309a","components/forms/DateField.jsx":"2fa229228168","components/forms/Input.jsx":"1321df74a451","components/forms/Radio.jsx":"861dea337cdb","components/forms/SearchList.jsx":"c0add5cde783","components/forms/Select.jsx":"4ebda94f9354","components/forms/Switch.jsx":"73709580dd9e","components/forms/Textarea.jsx":"e40a2c1357c6","components/navigation/Accordion.jsx":"b8870511c6fe","components/navigation/Breadcrumbs.jsx":"421f19e62be1","components/navigation/LanguageSelector.jsx":"3255d13574aa","components/navigation/Tabs.jsx":"414b48cd2f58","components/editorial/Media.jsx":"33a6b0c1bfde","components/editorial/ArticleFigure.jsx":"f7689927c7db","components/editorial/PortraitFrame.jsx":"6b53471987b8","components/editorial/AuthorCard.jsx":"e96ed75df2fb","components/editorial/GroupedList.jsx":"d8cd9e26b4bf","components/editorial/MetaRow.jsx":"8c95d79ee5e1","components/editorial/NumberedSteps.jsx":"6f2950654a05","components/editorial/Numeral.jsx":"e6b7086ade4c","components/editorial/Pagination.jsx":"893e51b7753d","components/editorial/PlainList.jsx":"5fdca30d99bf","components/editorial/Prose.jsx":"e6e8e061f5d0","components/editorial/QuoteBlock.jsx":"c79559f0cb83","components/editorial/ReviewedBy.jsx":"cf907ffdf4c1","components/editorial/ShareBar.jsx":"a5d673d91fb9","components/editorial/SpecTable.jsx":"097e36746780","components/editorial/Statement.jsx":"50cb58806250","components/editorial/TableOfContents.jsx":"f92f3b4de4c4","components/editorial/TextLink.jsx":"b730c74e745f","components/editorial/Tile.jsx":"4ebf341907e5","components/editorial/TimeTable.jsx":"ce1bbdbc25c1","components/sections/ArticleHeader.jsx":"5444f56b29bf","components/sections/BandStatement.jsx":"28aa51447566","components/sections/ClosingCTA.jsx":"e010d9783ea4","components/sections/FormSplit.jsx":"86987313de54","components/sections/HeroFullBleed.jsx":"90de10fed20c","components/sections/HeroSplit.jsx":"e43e0f969b2f","components/sections/HeroStatement.jsx":"812f5fd0454a","components/sections/IndexList.jsx":"4a13d2f62a15","components/sections/NumeralsSplit.jsx":"58792a80105c","components/sections/PanoramaCaption.jsx":"34b6e6fbaf48","components/sections/PeopleRow.jsx":"fbf817dcc648","components/sections/TileGrid.jsx":"577cfcc55a90","components/sections/RelatedArticles.jsx":"8452368a277c","components/sections/Section.jsx":"eacd861e84d9","components/sections/SplitSection.jsx":"42b09796c47a"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -1290,9 +1290,823 @@ function Checkbox({
 Object.assign(__ds_scope, { Checkbox });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/forms/Checkbox.jsx", error: String((e && e.message) || e) }); }
 
+// components/forms/DateField.jsx
+try { (() => {
+/* Pure helpers for DateField and SearchList.
+   Inlined into those components by scripts/build-bundle.mjs (the catalog has no module loader). */
+
+function parseIso(iso) {
+  if (typeof iso !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(iso)) return null;
+  const y = Number(iso.slice(0, 4));
+  const m = Number(iso.slice(5, 7));
+  const d = Number(iso.slice(8, 10));
+  if (m < 1 || m > 12 || d < 1) return null;
+  const dt = new Date(Date.UTC(y, m - 1, d));
+  if (dt.getUTCFullYear() !== y || dt.getUTCMonth() !== m - 1 || dt.getUTCDate() !== d) return null;
+  return {
+    y,
+    m,
+    d
+  };
+}
+function toIso(y, m, d) {
+  return y + "-" + String(m).padStart(2, "0") + "-" + String(d).padStart(2, "0");
+}
+function todayIso(now = new Date()) {
+  return toIso(now.getFullYear(), now.getMonth() + 1, now.getDate());
+}
+function daysInMonth(y, m) {
+  return new Date(Date.UTC(y, m, 0)).getUTCDate();
+}
+
+/* Intl weekInfo.firstDay: 1 Monday … 7 Sunday. English (en-GB) is Monday. */
+function weekStart(locale = "en-GB") {
+  try {
+    const info = new Intl.Locale(locale).weekInfo;
+    if (info && info.firstDay >= 1 && info.firstDay <= 7) return info.firstDay;
+  } catch {
+    /* Locale or weekInfo missing — Monday. */
+  }
+  return 1;
+}
+function weekdayLabels(locale = "en-GB", firstDay = 1) {
+  const fmt = new Intl.DateTimeFormat(locale, {
+    weekday: "short",
+    timeZone: "UTC"
+  });
+  const monday = Date.UTC(2024, 0, 1);
+  const fromMonday = firstDay === 7 ? 6 : firstDay - 1;
+  return Array.from({
+    length: 7
+  }, (_, i) => fmt.format(new Date(monday + (fromMonday + i) * 86400000)));
+}
+function monthNames(locale = "en-GB") {
+  const fmt = new Intl.DateTimeFormat(locale, {
+    month: "long",
+    timeZone: "UTC"
+  });
+  return Array.from({
+    length: 12
+  }, (_, i) => fmt.format(new Date(Date.UTC(2024, i, 1))));
+}
+function formatLong(iso, locale = "en-GB") {
+  const p = parseIso(iso);
+  if (!p) return "";
+  return new Intl.DateTimeFormat(locale, {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC"
+  }).format(new Date(Date.UTC(p.y, p.m - 1, p.d)));
+}
+function buildGrid(y, m, firstDay = 1) {
+  const jsFirst = firstDay === 7 ? 0 : firstDay;
+  const lead = (new Date(Date.UTC(y, m - 1, 1)).getUTCDay() - jsFirst + 7) % 7;
+  const count = daysInMonth(y, m);
+  const cells = [];
+  const pm = m === 1 ? 12 : m - 1;
+  const py = m === 1 ? y - 1 : y;
+  const prevCount = daysInMonth(py, pm);
+  for (let i = 0; i < lead; i++) {
+    const day = prevCount - lead + 1 + i;
+    cells.push({
+      iso: toIso(py, pm, day),
+      inMonth: false,
+      day
+    });
+  }
+  for (let d = 1; d <= count; d++) cells.push({
+    iso: toIso(y, m, d),
+    inMonth: true,
+    day: d
+  });
+  const nm = m === 12 ? 1 : m + 1;
+  const ny = m === 12 ? y + 1 : y;
+  let next = 1;
+  while (cells.length % 7 !== 0) {
+    cells.push({
+      iso: toIso(ny, nm, next),
+      inMonth: false,
+      day: next
+    });
+    next += 1;
+  }
+  return cells;
+}
+function addDays(iso, n) {
+  const p = parseIso(iso);
+  if (!p) return "";
+  const dt = new Date(Date.UTC(p.y, p.m - 1, p.d + n));
+  return toIso(dt.getUTCFullYear(), dt.getUTCMonth() + 1, dt.getUTCDate());
+}
+function shiftMonth(y, m, delta) {
+  const dt = new Date(Date.UTC(y, m - 1 + delta, 1));
+  return {
+    y: dt.getUTCFullYear(),
+    m: dt.getUTCMonth() + 1
+  };
+}
+function addMonths(iso, n) {
+  const p = parseIso(iso);
+  if (!p) return "";
+  const shifted = shiftMonth(p.y, p.m, n);
+  return toIso(shifted.y, shifted.m, Math.min(p.d, daysInMonth(shifted.y, shifted.m)));
+}
+function startOfWeek(iso, firstDay = 1) {
+  const p = parseIso(iso);
+  if (!p) return "";
+  const jsFirst = firstDay === 7 ? 0 : firstDay;
+  const back = (new Date(Date.UTC(p.y, p.m - 1, p.d)).getUTCDay() - jsFirst + 7) % 7;
+  return addDays(iso, -back);
+}
+function inRange(iso, min, max) {
+  if (!parseIso(iso)) return false;
+  if (min && iso < min) return false;
+  if (max && iso > max) return false;
+  return true;
+}
+function monthIntersects(y, m, min, max) {
+  const start = toIso(y, m, 1);
+  const end = toIso(y, m, daysInMonth(y, m));
+  if (max && start > max) return false;
+  if (min && end < min) return false;
+  return true;
+}
+function yearBounds(min, max, nowY = new Date().getFullYear()) {
+  const minY = parseIso(min || "") ? parseIso(min).y : nowY - 120;
+  const maxY = parseIso(max || "") ? parseIso(max).y : nowY + 5;
+  return [Math.min(minY, maxY), Math.max(minY, maxY)];
+}
+function fold(value) {
+  return String(value ?? "").normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
+}
+function normalizeOptions(options) {
+  return (options || []).map(option => {
+    if (option == null) return null;
+    if (typeof option === "string" || typeof option === "number") {
+      const label = String(option);
+      return {
+        value: label,
+        label,
+        description: ""
+      };
+    }
+    const value = option.value == null ? "" : String(option.value);
+    return {
+      value,
+      label: option.label == null ? value : String(option.label),
+      description: option.description ? String(option.description) : ""
+    };
+  }).filter(Boolean);
+}
+function filterOptions(options, query) {
+  const q = fold(query).trim();
+  if (!q) return options;
+  return options.filter(option => fold(option.label).includes(q) || option.description && fold(option.description).includes(q));
+}
+function highlightParts(label, query) {
+  const text = String(label ?? "");
+  const q = String(query ?? "").trim();
+  if (!q) return [{
+    text,
+    hit: false
+  }];
+  const at = text.toLowerCase().indexOf(q.toLowerCase());
+  if (at < 0) return [{
+    text,
+    hit: false
+  }];
+  return [{
+    text: text.slice(0, at),
+    hit: false
+  }, {
+    text: text.slice(at, at + q.length),
+    hit: true
+  }, {
+    text: text.slice(at + q.length),
+    hit: false
+  }].filter(part => part.text);
+}
+
+/* Shared field chrome — same rules and style id as Input, Textarea and Select. */
+const FIELD_CSS = `
+.sh-field{display:flex;flex-direction:column;gap:var(--space-3);min-width:0;font-family:var(--font-body)}
+.sh-field-label{display:flex;align-items:baseline;gap:var(--space-2);font:var(--weight-medium) var(--text-sm)/1.3 var(--font-body);color:var(--text-primary)}
+.sh-field-req{color:var(--text-brand);font-weight:var(--weight-regular)}
+.sh-field-opt{color:var(--text-muted);font-weight:var(--weight-regular);font-size:var(--text-xs)}
+.sh-field-msg{display:flex;align-items:flex-start;gap:var(--space-2);font:var(--weight-regular) var(--text-xs)/1.45 var(--font-body);color:var(--text-secondary)}
+.sh-field-msg[data-kind="error"]{color:var(--status-danger);animation:sh-enter-up var(--duration-base) var(--ease-out)}
+.sh-field-msg svg{flex:0 0 auto;margin-top:2px}
+.sh-field-foot{display:flex;justify-content:space-between;align-items:flex-start;gap:var(--space-4)}
+.sh-field-count{margin-inline-start:auto;font:var(--weight-regular) var(--text-xs)/1.45 var(--font-body);color:var(--text-muted);font-variant-numeric:tabular-nums}
+.sh-ctl{--_bd:var(--border-control);--_ring:var(--surface-brand-soft);width:100%;min-width:0;background:var(--surface-card);border:var(--border-width) solid var(--_bd);border-radius:var(--radius-input);color:var(--text-primary);font:var(--weight-regular) var(--text-base)/1.4 var(--font-body);transition:var(--transition-control)}
+.sh-ctl[data-invalid="true"]{--_bd:var(--status-danger);--_ring:var(--status-danger-soft)}
+@media (hover: hover) and (pointer: fine){
+  .sh-ctl:not([data-disabled="true"]):not([data-invalid="true"]):hover{--_bd:var(--border-strong)}
+}
+.sh-ctl:focus-within,.sh-ctl:focus{outline:none;--_bd:var(--border-focus);box-shadow:0 0 0 3px var(--_ring)}
+.sh-ctl[data-invalid="true"]:focus-within,.sh-ctl[data-invalid="true"]:focus{--_bd:var(--status-danger)}
+.sh-ctl[data-disabled="true"],.sh-ctl:disabled{background:var(--surface-raised);--_bd:var(--border-subtle);color:var(--text-muted);cursor:not-allowed}
+.sh-ctl ::placeholder,.sh-ctl::placeholder{color:var(--text-muted);opacity:1}
+.sh-field-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);clip-path:inset(50%);white-space:nowrap;border:0}
+`;
+const CSS = `
+.sh-date-anchor{position:relative}
+.sh-date-btnwrap{position:relative;display:flex;align-items:center;height:var(--control-lg)}
+.sh-date-btnwrap[data-size="sm"]{height:var(--control-md)}
+.sh-date-btnwrap[data-size="lg"]{height:var(--control-xl)}
+.sh-date-hit{flex:1;min-width:0;height:100%;padding-inline:var(--space-5) calc(var(--space-5) + 16px + var(--space-3));border:0;background:transparent;color:inherit;font:inherit;text-align:start;cursor:pointer;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sh-date-hit[data-empty="true"]{color:var(--text-muted)}
+.sh-date-hit:disabled{cursor:not-allowed}
+.sh-date-hit:focus,.sh-date-hit:focus-visible{outline:none}
+.sh-date-icon{position:absolute;top:50%;inset-inline-end:var(--space-5);width:16px;height:16px;margin-top:-8px;color:var(--text-secondary);pointer-events:none}
+.sh-date-anchor:focus-within .sh-date-icon{color:var(--text-brand)}
+.sh-date-btnwrap[data-disabled="true"] .sh-date-icon{color:var(--text-muted)}
+.sh-date-pop{position:absolute;z-index:40;inset-inline-start:0;inset-block-start:calc(100% + var(--space-2));width:max(100%, 18.5rem);max-width:calc(100vw - 24px);padding-block:var(--space-2);background:var(--surface-card);border:var(--border-width) solid var(--border-subtle);border-radius:var(--radius-card);box-shadow:var(--shadow-md);animation:sh-enter-up var(--duration-fast) var(--ease-out)}
+.sh-date-pop[data-flip="true"]{inset-block-start:auto;inset-block-end:calc(100% + var(--space-2))}
+.sh-date-pop[data-pin="end"]{inset-inline-start:auto;inset-inline-end:0}
+.sh-date-head{display:flex;align-items:center;gap:var(--space-1);padding-inline:var(--space-2)}
+.sh-date-nav{width:var(--tap-min);height:var(--tap-min);display:grid;place-items:center;padding:0;border:0;border-radius:var(--radius-xs);background:transparent;color:var(--text-secondary);cursor:pointer}
+.sh-date-nav:disabled{color:var(--text-muted);cursor:not-allowed}
+.sh-date-nav svg{display:block;width:16px;height:16px}
+.sh-date-chev-next{transform:scaleX(-1)}
+[dir="rtl"] .sh-date-chev-prev{transform:scaleX(-1)}
+[dir="rtl"] .sh-date-chev-next{transform:scaleX(1)}
+.sh-date-title{flex:1;min-width:0;min-height:var(--tap-min);padding:0 var(--space-2);border:0;border-radius:var(--radius-xs);background:transparent;color:var(--text-primary);font:var(--weight-medium) var(--text-sm)/1.2 var(--font-body);cursor:pointer}
+.sh-date-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:2px;padding:var(--space-2) var(--space-3) var(--space-3)}
+.sh-date-dow{display:grid;place-items:center;min-height:28px;font:var(--weight-medium) var(--text-2xs)/1 var(--font-body);color:var(--text-muted)}
+.sh-date-day{appearance:none;min-height:40px;padding:0;border:0;border-radius:var(--radius-xs);background:transparent;color:var(--text-primary);font:var(--weight-regular) var(--text-sm)/1 var(--font-body);font-variant-numeric:tabular-nums;cursor:pointer}
+.sh-date-day[data-out="true"]{color:var(--text-muted)}
+.sh-date-day[data-today="true"]:not([aria-selected="true"]){box-shadow:inset 0 0 0 1px var(--border-brand)}
+.sh-date-day[aria-selected="true"]{background:var(--surface-brand);color:var(--text-on-brand)}
+.sh-date-day[aria-disabled="true"]{color:var(--text-muted);cursor:not-allowed;background:transparent;box-shadow:none}
+.sh-date-day:focus-visible,.sh-date-nav:focus-visible,.sh-date-title:focus-visible,.sh-date-text:focus-visible,.sh-date-month:focus-visible{outline:none;box-shadow:var(--ring-focus)}
+.sh-date-months{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-2);padding:var(--space-2) var(--space-3) var(--space-3)}
+.sh-date-month{min-height:var(--tap-min);padding:0 var(--space-2);border:0;border-radius:var(--radius-xs);background:transparent;color:var(--text-primary);font:var(--weight-regular) var(--text-sm)/1.2 var(--font-body);cursor:pointer}
+.sh-date-month[aria-selected="true"]{background:var(--surface-brand);color:var(--text-on-brand);font-weight:var(--weight-medium)}
+.sh-date-month[aria-disabled="true"]{color:var(--text-muted);cursor:not-allowed}
+.sh-date-foot{display:flex;justify-content:space-between;gap:var(--space-3);padding:var(--space-2) var(--space-3) var(--space-2);border-top:var(--border-width) solid var(--border-subtle)}
+.sh-date-text{min-height:var(--tap-min);padding:0 var(--space-3);border:0;border-radius:var(--radius-xs);background:transparent;color:var(--text-brand);font:var(--weight-medium) var(--text-sm)/1 var(--font-body);cursor:pointer}
+.sh-date-text[data-quiet="true"]{color:var(--text-secondary);font-weight:var(--weight-regular)}
+.sh-date-text:disabled{color:var(--text-muted);cursor:not-allowed}
+@media (hover: hover) and (pointer: fine){
+  .sh-date-nav:not(:disabled):hover,.sh-date-title:hover,.sh-date-text:not(:disabled):hover,.sh-date-month:not([aria-disabled="true"]):not([aria-selected="true"]):hover,.sh-date-day:not([aria-disabled="true"]):not([aria-selected="true"]):hover{background:var(--surface-raised)}
+}
+`;
+function ensureField() {
+  if (typeof document === "undefined" || document.getElementById("sh-field-css")) return;
+  const el = document.createElement("style");
+  el.id = "sh-field-css";
+  el.textContent = FIELD_CSS;
+  document.head.appendChild(el);
+}
+function ensure() {
+  ensureField();
+  if (typeof document === "undefined" || document.getElementById("sh-date-css")) return;
+  const el = document.createElement("style");
+  el.id = "sh-date-css";
+  el.textContent = CSS;
+  document.head.appendChild(el);
+}
+const ALERT = /*#__PURE__*/React.createElement("svg", {
+  width: "14",
+  height: "14",
+  viewBox: "0 0 16 16",
+  "aria-hidden": "true"
+}, /*#__PURE__*/React.createElement("circle", {
+  cx: "8",
+  cy: "8",
+  r: "6.75",
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: "1.5"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M8 4.75v3.75",
+  stroke: "currentColor",
+  strokeWidth: "1.5",
+  strokeLinecap: "round"
+}), /*#__PURE__*/React.createElement("circle", {
+  cx: "8",
+  cy: "11.1",
+  r: "0.9",
+  fill: "currentColor"
+}));
+const CAL = /*#__PURE__*/React.createElement("svg", {
+  className: "sh-date-icon",
+  viewBox: "0 0 16 16",
+  "aria-hidden": "true"
+}, /*#__PURE__*/React.createElement("rect", {
+  x: "2.25",
+  y: "3.25",
+  width: "11.5",
+  height: "10.5",
+  rx: "1",
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: "1.5"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M2.25 6.5h11.5M5.25 2v2.5M10.75 2v2.5",
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: "1.5",
+  strokeLinecap: "round"
+}));
+const CHEV_PREV = /*#__PURE__*/React.createElement("svg", {
+  className: "sh-date-chev-prev",
+  viewBox: "0 0 16 16",
+  "aria-hidden": "true"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M10 4L6 8l4 4",
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: "1.5",
+  strokeLinecap: "round",
+  strokeLinejoin: "round"
+}));
+function FieldLabel({
+  htmlFor,
+  label,
+  required,
+  optional
+}) {
+  if (!label) return null;
+  return /*#__PURE__*/React.createElement("label", {
+    className: "sh-field-label",
+    htmlFor: htmlFor
+  }, /*#__PURE__*/React.createElement("span", null, label), required ? /*#__PURE__*/React.createElement("span", {
+    className: "sh-field-req",
+    "aria-hidden": "true"
+  }, "*") : null, !required && optional ? /*#__PURE__*/React.createElement("span", {
+    className: "sh-field-opt"
+  }, typeof optional === "string" ? optional : "Optional") : null);
+}
+function FieldMessage({
+  id,
+  error,
+  hint
+}) {
+  if (error) return /*#__PURE__*/React.createElement("span", {
+    className: "sh-field-msg",
+    "data-kind": "error",
+    id: id
+  }, ALERT, /*#__PURE__*/React.createElement("span", null, error));
+  if (hint) return /*#__PURE__*/React.createElement("span", {
+    className: "sh-field-msg",
+    id: id
+  }, hint);
+  return null;
+}
+function chunk(list, size) {
+  const rows = [];
+  for (let i = 0; i < list.length; i += size) rows.push(list.slice(i, i + size));
+  return rows;
+}
+function DateField({
+  label,
+  hint,
+  error,
+  required,
+  optional,
+  size = "md",
+  placeholder = "Choose a date",
+  value,
+  defaultValue,
+  onChange,
+  min,
+  max,
+  name,
+  id,
+  locale = "en-GB",
+  todayLabel = "Today",
+  clearLabel = "Clear",
+  prevLabel = "Previous month",
+  nextLabel = "Next month",
+  prevYearLabel = "Previous year",
+  nextYearLabel = "Next year",
+  dialogLabel = "Choose a date",
+  className,
+  style,
+  disabled
+}) {
+  ensure();
+  const auto = React.useId();
+  const fid = id || "sh-date" + auto.replace(/:/g, "");
+  const mid = fid + "-msg";
+  const controlled = value !== undefined;
+  const [inner, setInner] = React.useState(defaultValue || "");
+  const current = controlled ? value || "" : inner;
+  const [open, setOpen] = React.useState(false);
+  const [view, setView] = React.useState("days");
+  const [flip, setFlip] = React.useState(false);
+  const rootRef = React.useRef(null);
+  const anchorRef = React.useRef(null);
+  const panelRef = React.useRef(null);
+  const triggerRef = React.useRef(null);
+  const queueFocus = React.useRef(false);
+  const first = weekStart(locale);
+  const months = React.useMemo(() => monthNames(locale), [locale]);
+  const weekdays = React.useMemo(() => weekdayLabels(locale, first), [locale, first]);
+  const [minY, maxY] = yearBounds(min, max);
+  const seed = parseIso(current) || parseIso(todayIso());
+  const [shown, setShown] = React.useState({
+    y: seed.y,
+    m: seed.m
+  });
+  const [cursor, setCursor] = React.useState(current || todayIso());
+  function emit(next) {
+    if (!controlled) setInner(next);
+    if (onChange) onChange(next);
+  }
+  function close(focusTrigger) {
+    setOpen(false);
+    setView("days");
+    if (focusTrigger && triggerRef.current) triggerRef.current.focus();
+  }
+  function openCal() {
+    if (disabled) return;
+    const base = parseIso(current) || parseIso(todayIso());
+    setShown({
+      y: base.y,
+      m: base.m
+    });
+    setCursor(parseIso(current) ? current : todayIso());
+    setView("days");
+    queueFocus.current = true;
+    setOpen(true);
+  }
+  function commit(iso) {
+    if (!inRange(iso, min, max)) return;
+    emit(iso);
+    close(true);
+  }
+  function isRtl() {
+    return rootRef.current ? getComputedStyle(rootRef.current).direction === "rtl" : false;
+  }
+  function onPanelKey(e) {
+    if (e.key === "Escape") {
+      e.preventDefault();
+      e.stopPropagation();
+      if (view === "months") {
+        setView("days");
+        queueFocus.current = true;
+      } else close(true);
+      return;
+    }
+    const onDay = e.target.classList && e.target.classList.contains("sh-date-day");
+    const onMonth = e.target.classList && e.target.classList.contains("sh-date-month");
+    if (view === "months" && onMonth) {
+      const rtl = isRtl();
+      const step = {
+        ArrowRight: rtl ? -1 : 1,
+        ArrowLeft: rtl ? 1 : -1,
+        ArrowDown: 3,
+        ArrowUp: -3
+      }[e.key];
+      if (step) {
+        e.preventDefault();
+        const next = shown.m - 1 + step;
+        if (next >= 0 && next <= 11) {
+          setShown({
+            y: shown.y,
+            m: next + 1
+          });
+          queueFocus.current = true;
+        }
+        return;
+      }
+      if ((e.key === "Enter" || e.key === " ") && monthIntersects(shown.y, shown.m, min, max)) {
+        e.preventDefault();
+        setView("days");
+        queueFocus.current = true;
+      }
+      return;
+    }
+    if (view !== "days" || !onDay) return;
+    const rtl = isRtl();
+    const dayStep = {
+      ArrowRight: rtl ? -1 : 1,
+      ArrowLeft: rtl ? 1 : -1,
+      ArrowDown: 7,
+      ArrowUp: -7
+    }[e.key];
+    if (dayStep) {
+      e.preventDefault();
+      const next = addDays(cursor, dayStep);
+      const p = parseIso(next);
+      if (!p) return;
+      setCursor(next);
+      setShown({
+        y: p.y,
+        m: p.m
+      });
+      queueFocus.current = true;
+      return;
+    }
+    if (e.key === "Home" || e.key === "End") {
+      e.preventDefault();
+      const next = e.key === "Home" ? startOfWeek(cursor, first) : addDays(startOfWeek(cursor, first), 6);
+      const p = parseIso(next);
+      if (!p) return;
+      setCursor(next);
+      setShown({
+        y: p.y,
+        m: p.m
+      });
+      queueFocus.current = true;
+      return;
+    }
+    if (e.key === "PageUp" || e.key === "PageDown") {
+      e.preventDefault();
+      const next = addMonths(cursor, e.key === "PageUp" ? -1 : 1);
+      const p = parseIso(next);
+      if (!p) return;
+      setCursor(next);
+      setShown({
+        y: p.y,
+        m: p.m
+      });
+      queueFocus.current = true;
+      return;
+    }
+    if ((e.key === "Enter" || e.key === " ") && inRange(cursor, min, max)) {
+      e.preventDefault();
+      commit(cursor);
+    }
+  }
+  React.useEffect(() => {
+    if (!open) return undefined;
+    const onDoc = e => {
+      if (rootRef.current && !rootRef.current.contains(e.target)) close(false);
+    };
+    document.addEventListener("mousedown", onDoc);
+    return () => document.removeEventListener("mousedown", onDoc);
+  }, [open]);
+  React.useLayoutEffect(() => {
+    if (!open || !queueFocus.current || !panelRef.current) return;
+    queueFocus.current = false;
+    const sel = view === "days" ? "[data-cursor='true']" : "[data-month-current='true']";
+    const node = panelRef.current.querySelector(sel);
+    if (node) node.focus();
+  });
+  React.useLayoutEffect(() => {
+    if (!open) return undefined;
+    const place = () => {
+      const anchor = anchorRef.current;
+      const panel = panelRef.current;
+      if (!anchor || !panel) return;
+      const box = anchor.getBoundingClientRect();
+      const height = panel.offsetHeight;
+      const below = window.innerHeight - box.bottom;
+      const nextFlip = below < height + 8 && box.top > below;
+      setFlip(prev => prev === nextFlip ? prev : nextFlip);
+      const rect = panel.getBoundingClientRect();
+      const overflowEnd = rect.right > window.innerWidth - 8;
+      const overflowStart = rect.left < 8;
+      panel.dataset.pin = overflowEnd && !overflowStart ? "end" : "start";
+    };
+    place();
+    window.addEventListener("resize", place);
+    window.addEventListener("scroll", place, true);
+    return () => {
+      window.removeEventListener("resize", place);
+      window.removeEventListener("scroll", place, true);
+    };
+  }, [open, view, shown.y, shown.m, flip]);
+  const grid = buildGrid(shown.y, shown.m, first);
+  const today = todayIso();
+  const prevMonth = shiftMonth(shown.y, shown.m, -1);
+  const nextMonth = shiftMonth(shown.y, shown.m, 1);
+  const display = formatLong(current, locale);
+  const described = error || hint ? mid : undefined;
+  return /*#__PURE__*/React.createElement("div", {
+    ref: rootRef,
+    className: "sh-field" + (className ? " " + className : ""),
+    "data-ds-id": "forms/DateField",
+    style: style
+  }, /*#__PURE__*/React.createElement(FieldLabel, {
+    htmlFor: fid,
+    label: label,
+    required: required,
+    optional: optional
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "sh-date-anchor",
+    ref: anchorRef
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "sh-ctl sh-date-btnwrap",
+    "data-size": size,
+    "data-invalid": String(Boolean(error)),
+    "data-disabled": String(Boolean(disabled))
+  }, /*#__PURE__*/React.createElement("button", {
+    ref: triggerRef,
+    id: fid,
+    type: "button",
+    className: "sh-date-hit",
+    "data-empty": String(!display),
+    disabled: disabled,
+    "aria-haspopup": "dialog",
+    "aria-expanded": open,
+    "aria-controls": open ? fid + "-dialog" : undefined,
+    "aria-invalid": error ? "true" : undefined,
+    "aria-describedby": described,
+    "aria-required": required || undefined,
+    onClick: () => open ? close(false) : openCal(),
+    onKeyDown: e => {
+      if (disabled) return;
+      if (e.key === "ArrowDown") {
+        e.preventDefault();
+        openCal();
+      }
+    }
+  }, display || placeholder), CAL), open ? /*#__PURE__*/React.createElement("div", {
+    ref: panelRef,
+    id: fid + "-dialog",
+    className: "sh-date-pop",
+    role: "dialog",
+    "aria-modal": "false",
+    "aria-label": dialogLabel,
+    "data-flip": flip ? "true" : "false",
+    onKeyDown: onPanelKey
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "sh-date-head"
+  }, /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    className: "sh-date-nav",
+    "aria-label": view === "months" ? prevYearLabel : prevLabel,
+    disabled: view === "months" ? shown.y <= minY : !monthIntersects(prevMonth.y, prevMonth.m, min, max),
+    onClick: () => setShown(view === "months" ? {
+      y: shown.y - 1,
+      m: shown.m
+    } : prevMonth)
+  }, CHEV_PREV), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    id: fid + "-title",
+    className: "sh-date-title",
+    "aria-live": "polite",
+    onClick: () => {
+      setView(view === "days" ? "months" : "days");
+      queueFocus.current = true;
+    }
+  }, view === "months" ? shown.y : months[shown.m - 1] + " " + shown.y), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    className: "sh-date-nav",
+    "aria-label": view === "months" ? nextYearLabel : nextLabel,
+    disabled: view === "months" ? shown.y >= maxY : !monthIntersects(nextMonth.y, nextMonth.m, min, max),
+    onClick: () => setShown(view === "months" ? {
+      y: shown.y + 1,
+      m: shown.m
+    } : nextMonth)
+  }, /*#__PURE__*/React.createElement("svg", {
+    className: "sh-date-chev-next",
+    viewBox: "0 0 16 16",
+    "aria-hidden": "true"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M10 4L6 8l4 4",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "1.5",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  })))), view === "days" ? /*#__PURE__*/React.createElement("div", {
+    role: "grid",
+    "aria-labelledby": fid + "-title"
+  }, /*#__PURE__*/React.createElement("div", {
+    role: "row",
+    className: "sh-date-grid",
+    style: {
+      paddingBottom: 0
+    }
+  }, weekdays.map((day, index) => /*#__PURE__*/React.createElement("div", {
+    key: index,
+    role: "columnheader",
+    className: "sh-date-dow"
+  }, day))), chunk(grid, 7).map(week => /*#__PURE__*/React.createElement("div", {
+    key: week[0].iso,
+    role: "row",
+    className: "sh-date-grid",
+    style: {
+      paddingTop: 0,
+      paddingBottom: 0
+    }
+  }, week.map(cell => {
+    const parts = parseIso(cell.iso);
+    const off = !inRange(cell.iso, min, max);
+    const selected = cell.iso === current;
+    return /*#__PURE__*/React.createElement("button", {
+      key: cell.iso,
+      type: "button",
+      role: "gridcell",
+      className: "sh-date-day",
+      "data-out": String(!cell.inMonth),
+      "data-today": String(cell.iso === today),
+      "data-cursor": cell.iso === cursor ? "true" : undefined,
+      tabIndex: cell.iso === cursor ? 0 : -1,
+      "aria-selected": selected,
+      "aria-disabled": off || undefined,
+      "aria-current": cell.iso === today ? "date" : undefined,
+      "aria-label": formatLong(cell.iso, locale),
+      onClick: () => {
+        if (!off) commit(cell.iso);
+      }
+    }, parts ? parts.d : cell.day);
+  })))) : /*#__PURE__*/React.createElement("div", {
+    className: "sh-date-months"
+  }, months.map((name, index) => {
+    const m = index + 1;
+    const off = !monthIntersects(shown.y, m, min, max);
+    return /*#__PURE__*/React.createElement("button", {
+      key: name,
+      type: "button",
+      className: "sh-date-month",
+      "data-month-current": m === shown.m ? "true" : undefined,
+      "aria-selected": m === shown.m,
+      "aria-disabled": off || undefined,
+      onClick: () => {
+        if (!off) {
+          setShown({
+            y: shown.y,
+            m
+          });
+          setView("days");
+          queueFocus.current = true;
+        }
+      }
+    }, name);
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "sh-date-foot"
+  }, /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    className: "sh-date-text",
+    disabled: !inRange(today, min, max),
+    onClick: () => commit(today)
+  }, todayLabel), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    className: "sh-date-text",
+    "data-quiet": "true",
+    disabled: !current,
+    onClick: () => {
+      emit("");
+      close(true);
+    }
+  }, clearLabel))) : null), /*#__PURE__*/React.createElement("input", {
+    className: "sh-field-sr",
+    tabIndex: -1,
+    name: name,
+    value: current,
+    required: required || undefined,
+    disabled: disabled || undefined,
+    onChange: () => {},
+    onInvalid: e => {
+      e.preventDefault();
+      if (triggerRef.current) triggerRef.current.focus();
+    },
+    "aria-hidden": "true"
+  }), /*#__PURE__*/React.createElement(FieldMessage, {
+    id: mid,
+    error: error,
+    hint: hint
+  }));
+}
+Object.assign(__ds_scope, { DateField });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/forms/DateField.jsx", error: String((e && e.message) || e) }); }
+
 // components/forms/Input.jsx
 try { (() => {
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* Free-text answers are read by an English-speaking team.
+   Keep Latin letters (accents included), ASCII, and punctuation people paste. */
+
+const NON_TEXT = new Set(["password", "number", "range", "date", "time", "datetime-local", "month", "week", "color", "file", "checkbox", "radio", "hidden", "button", "submit", "reset", "image"]);
+const FANCY_SPACE = /[\u00A0\u2000-\u200A\u202F\u205F\u3000]/g;
+const INVISIBLE = /[\u200B-\u200D\uFEFF]/g;
+const DROP = /[^\p{Script=Latin}\p{M}\t\n\r\x20-\x7E\u2013\u2014\u2018\u2019\u201C\u201D\u2026\u2022\u00B0\u00A3\u20AC\u00B7]/gu;
+const ORPHAN_MARKS = /(^|[^\p{Script=Latin}])\p{M}+/gu;
+const ENGLISH_HINT = "Please write in English.";
+function acceptsEnglish(type) {
+  return !NON_TEXT.has(String(type || "").toLowerCase());
+}
+function keepEnglish(value) {
+  return String(value ?? "").replace(INVISIBLE, "").replace(FANCY_SPACE, " ").replace(DROP, "").replace(ORPHAN_MARKS, "$1");
+}
+
+/* True when the insertion was not English. A fully foreign insert is cancelled. */
+function rejectForeignInsert(event) {
+  const data = event.data;
+  if (typeof data !== "string" || data === "") return false;
+  const next = keepEnglish(data);
+  if (next === data) return false;
+  if (next === "") event.preventDefault();
+  return true;
+}
+
+/* Writes the English portion back onto the control. True when characters were removed. */
+function stripForeignInput(event) {
+  const raw = event.target.value;
+  const next = keepEnglish(raw);
+  if (next === raw) return false;
+  event.target.value = next;
+  return true;
+}
+
 /* Shared field chrome — identical in Input, Textarea and Select (one <style id="sh-field-css">). */
 const FIELD_CSS = `
 .sh-field{display:flex;flex-direction:column;gap:var(--space-3);min-width:0;font-family:var(--font-body)}
@@ -1364,7 +2178,8 @@ function FieldLabel({
 function FieldMessage({
   id,
   error,
-  hint
+  hint,
+  live
 }) {
   if (error) return /*#__PURE__*/React.createElement("span", {
     className: "sh-field-msg",
@@ -1373,7 +2188,8 @@ function FieldMessage({
   }, ALERT, /*#__PURE__*/React.createElement("span", null, error));
   if (hint) return /*#__PURE__*/React.createElement("span", {
     className: "sh-field-msg",
-    id: id
+    id: id,
+    "aria-live": live ? "polite" : undefined
   }, hint);
   return null;
 }
@@ -1408,12 +2224,44 @@ function Input({
   id,
   className,
   style,
+  type,
+  lang,
+  value,
+  defaultValue,
+  onChange,
+  onBeforeInput,
   ...rest
 }) {
   ensure();
+  const prose = acceptsEnglish(type);
+  const [englishNote, setEnglishNote] = React.useState(false);
   const auto = React.useId();
   const fid = id || "sh-in" + auto.replace(/:/g, "");
   const mid = fid + "-msg";
+  const note = prose && englishNote && !error;
+  const shownHint = note ? ENGLISH_HINT : hint;
+  const shownValue = prose && typeof value === "string" ? keepEnglish(value) : value;
+  const shownDefault = prose && typeof defaultValue === "string" ? keepEnglish(defaultValue) : defaultValue;
+  function handleBeforeInput(event) {
+    if (onBeforeInput) onBeforeInput(event);
+    if (!prose || event.defaultPrevented) return;
+    if (rejectForeignInsert(event)) setEnglishNote(true);
+  }
+  function handleChange(event) {
+    if (prose) setEnglishNote(stripForeignInput(event));
+    if (onChange) onChange(event);
+  }
+  React.useEffect(() => {
+    if (!prose || typeof value !== "string" || !onChange) return;
+    const next = keepEnglish(value);
+    if (next === value) return;
+    onChange({
+      target: {
+        value: next,
+        name: rest.name
+      }
+    });
+  }, [prose, value, onChange, rest.name]);
   return /*#__PURE__*/React.createElement("div", {
     className: "sh-field" + (className ? " " + className : ""),
     "data-ds-id": "forms/Input",
@@ -1430,18 +2278,26 @@ function Input({
     "data-disabled": String(Boolean(rest.disabled))
   }, startIcon ? /*#__PURE__*/React.createElement("span", {
     className: "sh-input-affix"
-  }, startIcon) : null, /*#__PURE__*/React.createElement("input", _extends({
+  }, startIcon) : null, /*#__PURE__*/React.createElement("input", _extends({}, rest, {
     id: fid,
     className: "sh-input",
+    type: type,
+    lang: prose ? lang || "en" : lang,
+    dir: prose ? "ltr" : undefined,
     required: required,
     "aria-invalid": error ? "true" : undefined,
-    "aria-describedby": error || hint ? mid : undefined
-  }, rest)), endIcon ? /*#__PURE__*/React.createElement("span", {
+    "aria-describedby": error || shownHint ? mid : undefined,
+    value: shownValue,
+    defaultValue: shownDefault,
+    onBeforeInput: handleBeforeInput,
+    onChange: handleChange
+  })), endIcon ? /*#__PURE__*/React.createElement("span", {
     className: "sh-input-affix"
   }, endIcon) : null), /*#__PURE__*/React.createElement(FieldMessage, {
     id: mid,
     error: error,
-    hint: hint
+    hint: shownHint,
+    live: note
   }));
 }
 Object.assign(__ds_scope, { Input });
@@ -1508,6 +2364,705 @@ function Radio({
 }
 Object.assign(__ds_scope, { Radio });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/forms/Radio.jsx", error: String((e && e.message) || e) }); }
+
+// components/forms/SearchList.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* Pure helpers for DateField and SearchList.
+   Inlined into those components by scripts/build-bundle.mjs (the catalog has no module loader). */
+
+function parseIso(iso) {
+  if (typeof iso !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(iso)) return null;
+  const y = Number(iso.slice(0, 4));
+  const m = Number(iso.slice(5, 7));
+  const d = Number(iso.slice(8, 10));
+  if (m < 1 || m > 12 || d < 1) return null;
+  const dt = new Date(Date.UTC(y, m - 1, d));
+  if (dt.getUTCFullYear() !== y || dt.getUTCMonth() !== m - 1 || dt.getUTCDate() !== d) return null;
+  return {
+    y,
+    m,
+    d
+  };
+}
+function toIso(y, m, d) {
+  return y + "-" + String(m).padStart(2, "0") + "-" + String(d).padStart(2, "0");
+}
+function todayIso(now = new Date()) {
+  return toIso(now.getFullYear(), now.getMonth() + 1, now.getDate());
+}
+function daysInMonth(y, m) {
+  return new Date(Date.UTC(y, m, 0)).getUTCDate();
+}
+
+/* Intl weekInfo.firstDay: 1 Monday … 7 Sunday. English (en-GB) is Monday. */
+function weekStart(locale = "en-GB") {
+  try {
+    const info = new Intl.Locale(locale).weekInfo;
+    if (info && info.firstDay >= 1 && info.firstDay <= 7) return info.firstDay;
+  } catch {
+    /* Locale or weekInfo missing — Monday. */
+  }
+  return 1;
+}
+function weekdayLabels(locale = "en-GB", firstDay = 1) {
+  const fmt = new Intl.DateTimeFormat(locale, {
+    weekday: "short",
+    timeZone: "UTC"
+  });
+  const monday = Date.UTC(2024, 0, 1);
+  const fromMonday = firstDay === 7 ? 6 : firstDay - 1;
+  return Array.from({
+    length: 7
+  }, (_, i) => fmt.format(new Date(monday + (fromMonday + i) * 86400000)));
+}
+function monthNames(locale = "en-GB") {
+  const fmt = new Intl.DateTimeFormat(locale, {
+    month: "long",
+    timeZone: "UTC"
+  });
+  return Array.from({
+    length: 12
+  }, (_, i) => fmt.format(new Date(Date.UTC(2024, i, 1))));
+}
+function formatLong(iso, locale = "en-GB") {
+  const p = parseIso(iso);
+  if (!p) return "";
+  return new Intl.DateTimeFormat(locale, {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC"
+  }).format(new Date(Date.UTC(p.y, p.m - 1, p.d)));
+}
+function buildGrid(y, m, firstDay = 1) {
+  const jsFirst = firstDay === 7 ? 0 : firstDay;
+  const lead = (new Date(Date.UTC(y, m - 1, 1)).getUTCDay() - jsFirst + 7) % 7;
+  const count = daysInMonth(y, m);
+  const cells = [];
+  const pm = m === 1 ? 12 : m - 1;
+  const py = m === 1 ? y - 1 : y;
+  const prevCount = daysInMonth(py, pm);
+  for (let i = 0; i < lead; i++) {
+    const day = prevCount - lead + 1 + i;
+    cells.push({
+      iso: toIso(py, pm, day),
+      inMonth: false,
+      day
+    });
+  }
+  for (let d = 1; d <= count; d++) cells.push({
+    iso: toIso(y, m, d),
+    inMonth: true,
+    day: d
+  });
+  const nm = m === 12 ? 1 : m + 1;
+  const ny = m === 12 ? y + 1 : y;
+  let next = 1;
+  while (cells.length % 7 !== 0) {
+    cells.push({
+      iso: toIso(ny, nm, next),
+      inMonth: false,
+      day: next
+    });
+    next += 1;
+  }
+  return cells;
+}
+function addDays(iso, n) {
+  const p = parseIso(iso);
+  if (!p) return "";
+  const dt = new Date(Date.UTC(p.y, p.m - 1, p.d + n));
+  return toIso(dt.getUTCFullYear(), dt.getUTCMonth() + 1, dt.getUTCDate());
+}
+function shiftMonth(y, m, delta) {
+  const dt = new Date(Date.UTC(y, m - 1 + delta, 1));
+  return {
+    y: dt.getUTCFullYear(),
+    m: dt.getUTCMonth() + 1
+  };
+}
+function addMonths(iso, n) {
+  const p = parseIso(iso);
+  if (!p) return "";
+  const shifted = shiftMonth(p.y, p.m, n);
+  return toIso(shifted.y, shifted.m, Math.min(p.d, daysInMonth(shifted.y, shifted.m)));
+}
+function startOfWeek(iso, firstDay = 1) {
+  const p = parseIso(iso);
+  if (!p) return "";
+  const jsFirst = firstDay === 7 ? 0 : firstDay;
+  const back = (new Date(Date.UTC(p.y, p.m - 1, p.d)).getUTCDay() - jsFirst + 7) % 7;
+  return addDays(iso, -back);
+}
+function inRange(iso, min, max) {
+  if (!parseIso(iso)) return false;
+  if (min && iso < min) return false;
+  if (max && iso > max) return false;
+  return true;
+}
+function monthIntersects(y, m, min, max) {
+  const start = toIso(y, m, 1);
+  const end = toIso(y, m, daysInMonth(y, m));
+  if (max && start > max) return false;
+  if (min && end < min) return false;
+  return true;
+}
+function yearBounds(min, max, nowY = new Date().getFullYear()) {
+  const minY = parseIso(min || "") ? parseIso(min).y : nowY - 120;
+  const maxY = parseIso(max || "") ? parseIso(max).y : nowY + 5;
+  return [Math.min(minY, maxY), Math.max(minY, maxY)];
+}
+function fold(value) {
+  return String(value ?? "").normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
+}
+function normalizeOptions(options) {
+  return (options || []).map(option => {
+    if (option == null) return null;
+    if (typeof option === "string" || typeof option === "number") {
+      const label = String(option);
+      return {
+        value: label,
+        label,
+        description: ""
+      };
+    }
+    const value = option.value == null ? "" : String(option.value);
+    return {
+      value,
+      label: option.label == null ? value : String(option.label),
+      description: option.description ? String(option.description) : ""
+    };
+  }).filter(Boolean);
+}
+function filterOptions(options, query) {
+  const q = fold(query).trim();
+  if (!q) return options;
+  return options.filter(option => fold(option.label).includes(q) || option.description && fold(option.description).includes(q));
+}
+function highlightParts(label, query) {
+  const text = String(label ?? "");
+  const q = String(query ?? "").trim();
+  if (!q) return [{
+    text,
+    hit: false
+  }];
+  const at = text.toLowerCase().indexOf(q.toLowerCase());
+  if (at < 0) return [{
+    text,
+    hit: false
+  }];
+  return [{
+    text: text.slice(0, at),
+    hit: false
+  }, {
+    text: text.slice(at, at + q.length),
+    hit: true
+  }, {
+    text: text.slice(at + q.length),
+    hit: false
+  }].filter(part => part.text);
+}
+
+/* Free-text answers are read by an English-speaking team.
+   Keep Latin letters (accents included), ASCII, and punctuation people paste. */
+
+const NON_TEXT = new Set(["password", "number", "range", "date", "time", "datetime-local", "month", "week", "color", "file", "checkbox", "radio", "hidden", "button", "submit", "reset", "image"]);
+const FANCY_SPACE = /[\u00A0\u2000-\u200A\u202F\u205F\u3000]/g;
+const INVISIBLE = /[\u200B-\u200D\uFEFF]/g;
+const DROP = /[^\p{Script=Latin}\p{M}\t\n\r\x20-\x7E\u2013\u2014\u2018\u2019\u201C\u201D\u2026\u2022\u00B0\u00A3\u20AC\u00B7]/gu;
+const ORPHAN_MARKS = /(^|[^\p{Script=Latin}])\p{M}+/gu;
+const ENGLISH_HINT = "Please write in English.";
+function acceptsEnglish(type) {
+  return !NON_TEXT.has(String(type || "").toLowerCase());
+}
+function keepEnglish(value) {
+  return String(value ?? "").replace(INVISIBLE, "").replace(FANCY_SPACE, " ").replace(DROP, "").replace(ORPHAN_MARKS, "$1");
+}
+
+/* True when the insertion was not English. A fully foreign insert is cancelled. */
+function rejectForeignInsert(event) {
+  const data = event.data;
+  if (typeof data !== "string" || data === "") return false;
+  const next = keepEnglish(data);
+  if (next === data) return false;
+  if (next === "") event.preventDefault();
+  return true;
+}
+
+/* Writes the English portion back onto the control. True when characters were removed. */
+function stripForeignInput(event) {
+  const raw = event.target.value;
+  const next = keepEnglish(raw);
+  if (next === raw) return false;
+  event.target.value = next;
+  return true;
+}
+
+/* Shared field chrome — same rules and style id as Input, Textarea and Select. */
+const FIELD_CSS = `
+.sh-field{display:flex;flex-direction:column;gap:var(--space-3);min-width:0;font-family:var(--font-body)}
+.sh-field-label{display:flex;align-items:baseline;gap:var(--space-2);font:var(--weight-medium) var(--text-sm)/1.3 var(--font-body);color:var(--text-primary)}
+.sh-field-req{color:var(--text-brand);font-weight:var(--weight-regular)}
+.sh-field-opt{color:var(--text-muted);font-weight:var(--weight-regular);font-size:var(--text-xs)}
+.sh-field-msg{display:flex;align-items:flex-start;gap:var(--space-2);font:var(--weight-regular) var(--text-xs)/1.45 var(--font-body);color:var(--text-secondary)}
+.sh-field-msg[data-kind="error"]{color:var(--status-danger);animation:sh-enter-up var(--duration-base) var(--ease-out)}
+.sh-field-msg svg{flex:0 0 auto;margin-top:2px}
+.sh-field-foot{display:flex;justify-content:space-between;align-items:flex-start;gap:var(--space-4)}
+.sh-field-count{margin-inline-start:auto;font:var(--weight-regular) var(--text-xs)/1.45 var(--font-body);color:var(--text-muted);font-variant-numeric:tabular-nums}
+.sh-ctl{--_bd:var(--border-control);--_ring:var(--surface-brand-soft);width:100%;min-width:0;background:var(--surface-card);border:var(--border-width) solid var(--_bd);border-radius:var(--radius-input);color:var(--text-primary);font:var(--weight-regular) var(--text-base)/1.4 var(--font-body);transition:var(--transition-control)}
+.sh-ctl[data-invalid="true"]{--_bd:var(--status-danger);--_ring:var(--status-danger-soft)}
+@media (hover: hover) and (pointer: fine){
+  .sh-ctl:not([data-disabled="true"]):not([data-invalid="true"]):hover{--_bd:var(--border-strong)}
+}
+.sh-ctl:focus-within,.sh-ctl:focus{outline:none;--_bd:var(--border-focus);box-shadow:0 0 0 3px var(--_ring)}
+.sh-ctl[data-invalid="true"]:focus-within,.sh-ctl[data-invalid="true"]:focus{--_bd:var(--status-danger)}
+.sh-ctl[data-disabled="true"],.sh-ctl:disabled{background:var(--surface-raised);--_bd:var(--border-subtle);color:var(--text-muted);cursor:not-allowed}
+.sh-ctl ::placeholder,.sh-ctl::placeholder{color:var(--text-muted);opacity:1}
+.sh-field-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);clip-path:inset(50%);white-space:nowrap;border:0}
+`;
+const CSS = `
+.sh-search-anchor{position:relative}
+.sh-search-wrap{display:flex;align-items:center;gap:var(--space-3);height:var(--control-lg);padding-inline:var(--space-5)}
+.sh-search-wrap[data-size="sm"]{height:var(--control-md)}
+.sh-search-wrap[data-size="lg"]{height:var(--control-xl)}
+.sh-search-icon,.sh-search-chev{flex:0 0 auto;width:16px;height:16px;color:var(--text-secondary);pointer-events:none}
+.sh-search-anchor:focus-within .sh-search-icon,.sh-search-anchor:focus-within .sh-search-chev{color:var(--text-brand)}
+.sh-search-wrap[data-disabled="true"] .sh-search-icon,.sh-search-wrap[data-disabled="true"] .sh-search-chev{color:var(--text-muted)}
+.sh-search-input{flex:1;min-width:0;height:100%;padding:0;border:0;background:transparent;color:inherit;font:inherit;outline:none}
+.sh-search-input:disabled{cursor:not-allowed}
+.sh-search-input:focus-visible{box-shadow:none}
+.sh-search-clear{flex:0 0 auto;width:28px;height:28px;display:grid;place-items:center;padding:0;border:0;border-radius:var(--radius-xs);background:transparent;color:var(--text-secondary);cursor:pointer}
+.sh-search-clear svg{display:block;width:14px;height:14px}
+.sh-search-clear:focus-visible{outline:none;box-shadow:var(--ring-focus)}
+.sh-search-clear:disabled{color:var(--text-muted);cursor:not-allowed}
+.sh-search-pop{position:absolute;z-index:40;inset-inline-start:0;inset-block-start:calc(100% + var(--space-2));width:100%;max-width:calc(100vw - 24px);background:var(--surface-card);border:var(--border-width) solid var(--border-subtle);border-radius:var(--radius-card);box-shadow:var(--shadow-md);animation:sh-enter-up var(--duration-fast) var(--ease-out)}
+.sh-search-pop[data-flip="true"]{inset-block-start:auto;inset-block-end:calc(100% + var(--space-2))}
+.sh-search-pop[data-pin="end"]{inset-inline-start:auto;inset-inline-end:0}
+.sh-search-list{list-style:none;margin:0;max-height:280px;overflow:auto;padding:var(--space-2)}
+.sh-search-opt{display:flex;align-items:center;justify-content:space-between;gap:var(--space-3);width:100%;min-height:var(--tap-min);padding:var(--space-3) var(--space-4);border-radius:var(--radius-xs);color:var(--text-primary);text-align:start;cursor:pointer}
+.sh-search-opt[data-active="true"]{background:var(--surface-raised)}
+.sh-search-opt[aria-selected="true"] .sh-search-label{font-weight:var(--weight-medium)}
+.sh-search-copy{display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-width:0}
+.sh-search-label{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:var(--weight-regular) var(--text-base)/1.3 var(--font-body)}
+.sh-search-desc{font:var(--weight-regular) var(--text-xs)/1.3 var(--font-body);color:var(--text-muted)}
+.sh-search-mark{background:none;color:inherit;font-weight:var(--weight-medium)}
+.sh-search-tick{flex:0 0 auto;width:16px;height:16px;color:var(--text-brand)}
+.sh-search-empty{padding:var(--space-5);color:var(--text-muted);font:var(--weight-regular) var(--text-sm)/1.4 var(--font-body)}
+@media (hover: hover) and (pointer: fine){
+  .sh-search-clear:not(:disabled):hover{background:var(--surface-raised);color:var(--text-primary)}
+  .sh-search-opt:hover{background:var(--surface-raised)}
+}
+`;
+function ensureField() {
+  if (typeof document === "undefined" || document.getElementById("sh-field-css")) return;
+  const el = document.createElement("style");
+  el.id = "sh-field-css";
+  el.textContent = FIELD_CSS;
+  document.head.appendChild(el);
+}
+function ensure() {
+  ensureField();
+  if (typeof document === "undefined" || document.getElementById("sh-search-css")) return;
+  const el = document.createElement("style");
+  el.id = "sh-search-css";
+  el.textContent = CSS;
+  document.head.appendChild(el);
+}
+const ALERT = /*#__PURE__*/React.createElement("svg", {
+  width: "14",
+  height: "14",
+  viewBox: "0 0 16 16",
+  "aria-hidden": "true"
+}, /*#__PURE__*/React.createElement("circle", {
+  cx: "8",
+  cy: "8",
+  r: "6.75",
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: "1.5"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M8 4.75v3.75",
+  stroke: "currentColor",
+  strokeWidth: "1.5",
+  strokeLinecap: "round"
+}), /*#__PURE__*/React.createElement("circle", {
+  cx: "8",
+  cy: "11.1",
+  r: "0.9",
+  fill: "currentColor"
+}));
+const SEARCH = /*#__PURE__*/React.createElement("svg", {
+  className: "sh-search-icon",
+  viewBox: "0 0 16 16",
+  "aria-hidden": "true"
+}, /*#__PURE__*/React.createElement("circle", {
+  cx: "7",
+  cy: "7",
+  r: "4.25",
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: "1.5"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M10.25 10.25L13.5 13.5",
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: "1.5",
+  strokeLinecap: "round"
+}));
+const CHEVRON = /*#__PURE__*/React.createElement("svg", {
+  className: "sh-search-chev",
+  viewBox: "0 0 16 16",
+  "aria-hidden": "true"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M4 6l4 4 4-4",
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: "1.5",
+  strokeLinecap: "round",
+  strokeLinejoin: "round"
+}));
+const TICK = /*#__PURE__*/React.createElement("svg", {
+  className: "sh-search-tick",
+  viewBox: "0 0 16 16",
+  "aria-hidden": "true"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M3.5 8.25l3 3 6-6.5",
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: "1.5",
+  strokeLinecap: "round",
+  strokeLinejoin: "round"
+}));
+function FieldLabel({
+  htmlFor,
+  label,
+  required,
+  optional
+}) {
+  if (!label) return null;
+  return /*#__PURE__*/React.createElement("label", {
+    className: "sh-field-label",
+    htmlFor: htmlFor
+  }, /*#__PURE__*/React.createElement("span", null, label), required ? /*#__PURE__*/React.createElement("span", {
+    className: "sh-field-req",
+    "aria-hidden": "true"
+  }, "*") : null, !required && optional ? /*#__PURE__*/React.createElement("span", {
+    className: "sh-field-opt"
+  }, typeof optional === "string" ? optional : "Optional") : null);
+}
+function FieldMessage({
+  id,
+  error,
+  hint,
+  live
+}) {
+  if (error) return /*#__PURE__*/React.createElement("span", {
+    className: "sh-field-msg",
+    "data-kind": "error",
+    id: id
+  }, ALERT, /*#__PURE__*/React.createElement("span", null, error));
+  if (hint) return /*#__PURE__*/React.createElement("span", {
+    className: "sh-field-msg",
+    id: id,
+    "aria-live": live ? "polite" : undefined
+  }, hint);
+  return null;
+}
+function Mark({
+  label,
+  query,
+  typed
+}) {
+  if (!typed) return label;
+  return highlightParts(label, query).map((part, index) => part.hit ? /*#__PURE__*/React.createElement("mark", {
+    key: index,
+    className: "sh-search-mark"
+  }, part.text) : /*#__PURE__*/React.createElement("span", {
+    key: index
+  }, part.text));
+}
+function SearchList({
+  label,
+  hint,
+  error,
+  required,
+  optional,
+  size = "md",
+  options: optionsProp = [],
+  placeholder = "Search",
+  emptyLabel = "No matches",
+  clearLabel = "Clear",
+  value,
+  defaultValue,
+  onChange,
+  name,
+  id,
+  className,
+  style,
+  disabled,
+  lang,
+  onBeforeInput,
+  ...rest
+}) {
+  ensure();
+  const auto = React.useId();
+  const fid = id || "sh-search" + auto.replace(/:/g, "");
+  const mid = fid + "-msg";
+  const controlled = value !== undefined;
+  const [inner, setInner] = React.useState(defaultValue != null ? String(defaultValue) : "");
+  const current = controlled ? value == null ? "" : String(value) : inner;
+  const options = React.useMemo(() => normalizeOptions(optionsProp), [optionsProp]);
+  const selected = options.find(option => option.value === current) || null;
+  const [open, setOpen] = React.useState(false);
+  const [typed, setTyped] = React.useState(false);
+  const [query, setQuery] = React.useState("");
+  const [active, setActive] = React.useState(0);
+  const [flip, setFlip] = React.useState(false);
+  const [englishNote, setEnglishNote] = React.useState(false);
+  const rootRef = React.useRef(null);
+  const anchorRef = React.useRef(null);
+  const panelRef = React.useRef(null);
+  const inputRef = React.useRef(null);
+  const filtered = React.useMemo(() => filterOptions(options, open && typed ? query : ""), [options, open, typed, query]);
+  const activeSafe = filtered.length ? Math.min(active, filtered.length - 1) : 0;
+  const shown = open && typed ? query : selected ? selected.label : "";
+  const note = englishNote && !error;
+  const shownHint = note ? ENGLISH_HINT : hint;
+  const described = [error || shownHint ? mid : null, open && filtered.length === 0 ? fid + "-empty" : null].filter(Boolean).join(" ") || undefined;
+  function emit(next) {
+    if (!controlled) setInner(next);
+    if (onChange) onChange(next);
+  }
+  function commit(next) {
+    emit(next);
+    setTyped(false);
+    setQuery("");
+    setEnglishNote(false);
+    setOpen(false);
+    if (inputRef.current) inputRef.current.focus();
+  }
+  function move(delta) {
+    const list = typed ? filterOptions(options, query) : options;
+    if (!list.length) {
+      setOpen(true);
+      return;
+    }
+    setOpen(true);
+    setActive(index => {
+      const currentIndex = list.findIndex(option => option.value === current);
+      const from = open ? index : currentIndex >= 0 ? currentIndex : delta > 0 ? -1 : list.length;
+      return Math.max(0, Math.min(list.length - 1, from + delta));
+    });
+  }
+  function onKeyDown(e) {
+    if (disabled) return;
+    if (e.key === "ArrowDown") {
+      e.preventDefault();
+      move(1);
+      return;
+    }
+    if (e.key === "ArrowUp") {
+      e.preventDefault();
+      move(-1);
+      return;
+    }
+    if (e.key === "Enter" && open && filtered[activeSafe]) {
+      e.preventDefault();
+      commit(filtered[activeSafe].value);
+      return;
+    }
+    if (e.key === "Escape" && open) {
+      e.preventDefault();
+      e.stopPropagation();
+      setOpen(false);
+      setTyped(false);
+      setQuery("");
+      setEnglishNote(false);
+    }
+  }
+  React.useEffect(() => {
+    if (!open) return undefined;
+    const onDoc = e => {
+      if (rootRef.current && !rootRef.current.contains(e.target)) {
+        setOpen(false);
+        setTyped(false);
+        setQuery("");
+        setEnglishNote(false);
+      }
+    };
+    document.addEventListener("mousedown", onDoc);
+    return () => document.removeEventListener("mousedown", onDoc);
+  }, [open]);
+  React.useEffect(() => {
+    if (!open || !panelRef.current) return undefined;
+    const list = panelRef.current.querySelector(".sh-search-list");
+    const el = panelRef.current.querySelector("[data-active='true']");
+    if (!list || !el) return undefined;
+    const item = el.getBoundingClientRect();
+    const box = list.getBoundingClientRect();
+    if (item.top < box.top) list.scrollTop -= box.top - item.top;else if (item.bottom > box.bottom) list.scrollTop += item.bottom - box.bottom;
+    return undefined;
+  }, [open, activeSafe, filtered.length]);
+  React.useLayoutEffect(() => {
+    if (!open) return undefined;
+    const place = () => {
+      const anchor = anchorRef.current;
+      const panel = panelRef.current;
+      if (!anchor || !panel) return;
+      const box = anchor.getBoundingClientRect();
+      const height = panel.offsetHeight;
+      const below = window.innerHeight - box.bottom;
+      const nextFlip = below < height + 8 && box.top > below;
+      setFlip(prev => prev === nextFlip ? prev : nextFlip);
+      const rect = panel.getBoundingClientRect();
+      const overflowEnd = rect.right > window.innerWidth - 8;
+      const overflowStart = rect.left < 8;
+      panel.dataset.pin = overflowEnd && !overflowStart ? "end" : "start";
+    };
+    place();
+    window.addEventListener("resize", place);
+    window.addEventListener("scroll", place, true);
+    return () => {
+      window.removeEventListener("resize", place);
+      window.removeEventListener("scroll", place, true);
+    };
+  }, [open, filtered.length, flip]);
+  return /*#__PURE__*/React.createElement("div", {
+    ref: rootRef,
+    className: "sh-field" + (className ? " " + className : ""),
+    "data-ds-id": "forms/SearchList",
+    style: style
+  }, /*#__PURE__*/React.createElement(FieldLabel, {
+    htmlFor: fid,
+    label: label,
+    required: required,
+    optional: optional
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "sh-search-anchor",
+    ref: anchorRef
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "sh-ctl sh-search-wrap",
+    "data-size": size,
+    "data-invalid": String(Boolean(error)),
+    "data-disabled": String(Boolean(disabled))
+  }, SEARCH, /*#__PURE__*/React.createElement("input", _extends({}, rest, {
+    ref: inputRef,
+    id: fid,
+    className: "sh-search-input",
+    role: "combobox",
+    "aria-autocomplete": "list",
+    "aria-expanded": open,
+    "aria-controls": open && filtered.length ? fid + "-list" : undefined,
+    "aria-activedescendant": open && filtered[activeSafe] ? fid + "-opt-" + activeSafe : undefined,
+    "aria-invalid": error ? "true" : undefined,
+    "aria-describedby": described,
+    "aria-required": required || undefined,
+    placeholder: placeholder,
+    value: shown,
+    disabled: disabled,
+    lang: lang || "en",
+    dir: "auto",
+    autoComplete: "off",
+    onBeforeInput: e => {
+      if (onBeforeInput) onBeforeInput(e);
+      if (e.defaultPrevented) return;
+      if (rejectForeignInsert(e)) setEnglishNote(true);
+    },
+    onChange: e => {
+      setEnglishNote(stripForeignInput(e));
+      setTyped(true);
+      setQuery(e.target.value);
+      setActive(0);
+      setOpen(true);
+    },
+    onFocus: e => {
+      if (disabled) return;
+      setOpen(true);
+      setTyped(false);
+      const index = options.findIndex(option => option.value === current);
+      setActive(index >= 0 ? index : 0);
+      requestAnimationFrame(() => e.target.select());
+    },
+    onBlur: () => {
+      setTimeout(() => {
+        if (rootRef.current && rootRef.current.contains(document.activeElement)) return;
+        setOpen(false);
+        setTyped(false);
+        setQuery("");
+        setEnglishNote(false);
+      }, 0);
+    },
+    onKeyDown: onKeyDown
+  })), current ? /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    className: "sh-search-clear",
+    "aria-label": clearLabel,
+    disabled: disabled,
+    onMouseDown: e => e.preventDefault(),
+    onClick: () => commit("")
+  }, /*#__PURE__*/React.createElement("svg", {
+    viewBox: "0 0 16 16",
+    "aria-hidden": "true"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M4.5 4.5l7 7M11.5 4.5l-7 7",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "1.5",
+    strokeLinecap: "round"
+  }))) : null, CHEVRON), open ? /*#__PURE__*/React.createElement("div", {
+    ref: panelRef,
+    className: "sh-search-pop",
+    "data-flip": flip ? "true" : "false"
+  }, filtered.length === 0 ? /*#__PURE__*/React.createElement("div", {
+    className: "sh-search-empty",
+    id: fid + "-empty"
+  }, emptyLabel) : /*#__PURE__*/React.createElement("ul", {
+    role: "listbox",
+    id: fid + "-list",
+    className: "sh-search-list"
+  }, filtered.map((option, index) => /*#__PURE__*/React.createElement("li", {
+    key: option.value,
+    id: fid + "-opt-" + index,
+    role: "option",
+    "aria-selected": option.value === current,
+    "data-active": index === activeSafe ? "true" : "false",
+    className: "sh-search-opt",
+    onMouseDown: e => e.preventDefault(),
+    onMouseEnter: () => setActive(index),
+    onClick: () => commit(option.value)
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "sh-search-copy"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "sh-search-label"
+  }, /*#__PURE__*/React.createElement(Mark, {
+    label: option.label,
+    query: query,
+    typed: typed
+  })), option.description ? /*#__PURE__*/React.createElement("span", {
+    className: "sh-search-desc"
+  }, option.description) : null), option.value === current ? TICK : null)))) : null), /*#__PURE__*/React.createElement("input", {
+    className: "sh-field-sr",
+    tabIndex: -1,
+    name: name,
+    value: current,
+    required: required || undefined,
+    disabled: disabled || undefined,
+    onChange: () => {},
+    onInvalid: e => {
+      e.preventDefault();
+      if (inputRef.current) inputRef.current.focus();
+    },
+    "aria-hidden": "true"
+  }), /*#__PURE__*/React.createElement(FieldMessage, {
+    id: mid,
+    error: error,
+    hint: shownHint,
+    live: note
+  }));
+}
+Object.assign(__ds_scope, { SearchList });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/forms/SearchList.jsx", error: String((e && e.message) || e) }); }
 
 // components/forms/Select.jsx
 try { (() => {
@@ -1762,6 +3317,41 @@ Object.assign(__ds_scope, { Switch });
 // components/forms/Textarea.jsx
 try { (() => {
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* Free-text answers are read by an English-speaking team.
+   Keep Latin letters (accents included), ASCII, and punctuation people paste. */
+
+const NON_TEXT = new Set(["password", "number", "range", "date", "time", "datetime-local", "month", "week", "color", "file", "checkbox", "radio", "hidden", "button", "submit", "reset", "image"]);
+const FANCY_SPACE = /[\u00A0\u2000-\u200A\u202F\u205F\u3000]/g;
+const INVISIBLE = /[\u200B-\u200D\uFEFF]/g;
+const DROP = /[^\p{Script=Latin}\p{M}\t\n\r\x20-\x7E\u2013\u2014\u2018\u2019\u201C\u201D\u2026\u2022\u00B0\u00A3\u20AC\u00B7]/gu;
+const ORPHAN_MARKS = /(^|[^\p{Script=Latin}])\p{M}+/gu;
+const ENGLISH_HINT = "Please write in English.";
+function acceptsEnglish(type) {
+  return !NON_TEXT.has(String(type || "").toLowerCase());
+}
+function keepEnglish(value) {
+  return String(value ?? "").replace(INVISIBLE, "").replace(FANCY_SPACE, " ").replace(DROP, "").replace(ORPHAN_MARKS, "$1");
+}
+
+/* True when the insertion was not English. A fully foreign insert is cancelled. */
+function rejectForeignInsert(event) {
+  const data = event.data;
+  if (typeof data !== "string" || data === "") return false;
+  const next = keepEnglish(data);
+  if (next === data) return false;
+  if (next === "") event.preventDefault();
+  return true;
+}
+
+/* Writes the English portion back onto the control. True when characters were removed. */
+function stripForeignInput(event) {
+  const raw = event.target.value;
+  const next = keepEnglish(raw);
+  if (next === raw) return false;
+  event.target.value = next;
+  return true;
+}
+
 /* Shared field chrome — identical in Input, Textarea and Select (one <style id="sh-field-css">). */
 const FIELD_CSS = `
 .sh-field{display:flex;flex-direction:column;gap:var(--space-3);min-width:0;font-family:var(--font-body)}
@@ -1833,7 +3423,8 @@ function FieldLabel({
 function FieldMessage({
   id,
   error,
-  hint
+  hint,
+  live
 }) {
   if (error) return /*#__PURE__*/React.createElement("span", {
     className: "sh-field-msg",
@@ -1842,7 +3433,8 @@ function FieldMessage({
   }, ALERT, /*#__PURE__*/React.createElement("span", null, error));
   if (hint) return /*#__PURE__*/React.createElement("span", {
     className: "sh-field-msg",
-    id: id
+    id: id,
+    "aria-live": live ? "polite" : undefined
   }, hint);
   return null;
 }
@@ -1867,18 +3459,47 @@ function Textarea({
   optional,
   maxLength,
   value,
+  defaultValue,
   rows = 4,
   id,
   className,
   style,
+  lang,
+  onChange,
+  onBeforeInput,
   ...rest
 }) {
   ensure();
+  const [englishNote, setEnglishNote] = React.useState(false);
   const auto = React.useId();
   const fid = id || "sh-ta" + auto.replace(/:/g, "");
   const mid = fid + "-msg";
-  const count = typeof value === "string" ? value.length : null;
+  const shown = typeof value === "string" ? keepEnglish(value) : value;
+  const shownDefault = typeof defaultValue === "string" ? keepEnglish(defaultValue) : defaultValue;
+  const count = typeof shown === "string" ? shown.length : null;
   const showCount = maxLength && count != null;
+  const note = englishNote && !error;
+  const shownHint = note ? ENGLISH_HINT : hint;
+  function handleBeforeInput(event) {
+    if (onBeforeInput) onBeforeInput(event);
+    if (event.defaultPrevented) return;
+    if (rejectForeignInsert(event)) setEnglishNote(true);
+  }
+  function handleChange(event) {
+    setEnglishNote(stripForeignInput(event));
+    if (onChange) onChange(event);
+  }
+  React.useEffect(() => {
+    if (typeof value !== "string" || !onChange) return;
+    const next = keepEnglish(value);
+    if (next === value) return;
+    onChange({
+      target: {
+        value: next,
+        name: rest.name
+      }
+    });
+  }, [value, onChange, rest.name]);
   return /*#__PURE__*/React.createElement("div", {
     className: "sh-field" + (className ? " " + className : ""),
     "data-ds-id": "forms/Textarea",
@@ -1888,22 +3509,28 @@ function Textarea({
     label: label,
     required: required,
     optional: optional
-  }), /*#__PURE__*/React.createElement("textarea", _extends({
+  }), /*#__PURE__*/React.createElement("textarea", _extends({}, rest, {
     id: fid,
     className: "sh-ctl sh-ta",
     rows: rows,
+    lang: lang || "en",
+    dir: "ltr",
     required: required,
     "data-invalid": String(Boolean(error)),
     "aria-invalid": error ? "true" : undefined,
-    "aria-describedby": error || hint ? mid : undefined,
+    "aria-describedby": error || shownHint ? mid : undefined,
     maxLength: maxLength,
-    value: value
-  }, rest)), error || hint || showCount ? /*#__PURE__*/React.createElement("span", {
+    value: shown,
+    defaultValue: shownDefault,
+    onBeforeInput: handleBeforeInput,
+    onChange: handleChange
+  })), error || shownHint || showCount ? /*#__PURE__*/React.createElement("span", {
     className: "sh-field-foot"
   }, /*#__PURE__*/React.createElement(FieldMessage, {
     id: mid,
     error: error,
-    hint: hint
+    hint: shownHint,
+    live: note
   }), showCount ? /*#__PURE__*/React.createElement("span", {
     className: "sh-field-count",
     "aria-live": "polite"
@@ -4992,8 +6619,10 @@ __ds_ns.Spinner = __ds_scope.Spinner;
 __ds_ns.Toast = __ds_scope.Toast;
 __ds_ns.Tooltip = __ds_scope.Tooltip;
 __ds_ns.Checkbox = __ds_scope.Checkbox;
+__ds_ns.DateField = __ds_scope.DateField;
 __ds_ns.Input = __ds_scope.Input;
 __ds_ns.Radio = __ds_scope.Radio;
+__ds_ns.SearchList = __ds_scope.SearchList;
 __ds_ns.Select = __ds_scope.Select;
 __ds_ns.Switch = __ds_scope.Switch;
 __ds_ns.Textarea = __ds_scope.Textarea;

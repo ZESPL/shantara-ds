@@ -47,6 +47,12 @@ const parsed = files.map((rel) => {
       deps.push(target);
       locals.push(...names.split(",").map((n) => n.trim()).filter(Boolean));
       return "";
+    })
+    .replace(/^import\s+\{([^}]+)\}\s+from\s+["'](\.{1,2}\/[^"']+\.mjs)["'];?\s*$/gm, (_, _names, spec) => {
+      const target = path.posix.normalize(path.posix.join(path.posix.dirname(rel), spec));
+      const abs = path.join(root, target);
+      if (!fs.existsSync(abs)) throw new Error(`build-bundle: ${rel} imports missing ${target}`);
+      return fs.readFileSync(abs, "utf8").replace(/^export\s+(function|const|class)\s+/gm, "$1 ") + "\n";
     });
   const exported = [...body.matchAll(/^export\s+(?:function|const)\s+([A-Z]\w*)/gm)].map((m) => m[1]);
   const code = body.replace(/^export\s+(function|const)\s+/gm, "$1 ");

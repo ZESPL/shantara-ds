@@ -1,4 +1,4 @@
-<!-- @dsCard group="Components" viewport="760x1480" name="Forms" subtitle="Input, textarea, select, checkbox, radio, switch" -->
+<!-- @dsCard group="Components" viewport="760x2100" name="Forms" subtitle="Input, textarea, select, search list, date, checkbox, radio, switch" -->
 <!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
 <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
@@ -7,9 +7,9 @@
 <script src="../../i18n.js"></script>
 <style>body{padding:20px;background:var(--surface-page)}.form{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-7) var(--space-6);max-width:720px;padding:clamp(20px,4vw,40px);background:var(--surface-card);border-radius:var(--radius-card)}.form>.full{grid-column:1 / -1}.group{display:flex;flex-direction:column;gap:0;border:0;margin:0;padding:0;min-width:0}.group legend{padding:0;margin-bottom:var(--space-2);font:var(--weight-medium) var(--text-sm)/1.3 var(--font-body);color:var(--text-primary)}.states{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-6);max-width:720px;margin-top:var(--space-8)}.stack{display:flex;flex-direction:column;gap:var(--space-5);min-width:0}.cap{margin:0 0 var(--space-3);font:var(--type-caption);color:var(--text-muted)}.pair{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-6);max-width:720px;margin-top:var(--space-8)}h2.t{font:var(--type-h4);margin:0 0 var(--space-2)}.sub{margin:0 0 var(--space-7);color:var(--text-secondary);font:var(--type-body-sm)}@media (max-width:640px){.form,.states,.pair{grid-template-columns:1fr}}</style></head><body><div id="root"></div>
 <script type="text/babel">
-const { Input, Textarea, Select, Checkbox, Radio, Switch, Button, Icon } = window.ShantaraDesignSystem_45bbe4;
+const { Input, Textarea, Select, SearchList, DateField, Checkbox, Radio, Switch, Button, Icon } = window.ShantaraDesignSystem_45bbe4;
 const PROGRAMMES=["Stress Management","Detox","Weight Management","Diabetes Reversal","Longevity","Complete Healing"];
-const COUNTRIES=["India","United Arab Emirates","Saudi Arabia","United Kingdom","Germany","Other"];
+const COUNTRIES=["India","United Arab Emirates","Saudi Arabia","Kuwait","Qatar","Oman","United Kingdom","Germany","France","Singapore","United States","Other"];
 function Demo(){
   const {ar}=window.ShantaraI18n.useLocale();
   const [note,setNote]=React.useState("Type 2 diabetes for eight years; on metformin.");
@@ -20,9 +20,9 @@ function Demo(){
 <Input label="Full name" required autoComplete="name" placeholder="As on your passport"/>
 <Input label="Email" type="email" required defaultValue="anya.raman@" error="Enter an email address like name@example.com."/>
 <Input label="Phone or WhatsApp" type="tel" required autoComplete="tel" startIcon={<Icon name="phone" size={16}/>} placeholder="+91 98765 43210" hint="Include your country code."/>
-<Select label="Country of residence" required placeholder="Choose a country" options={COUNTRIES}/>
+<SearchList label="Country of residence" required placeholder="Search countries" options={COUNTRIES}/>
 <Select label="Programme of interest" optional placeholder="Not sure yet" options={PROGRAMMES}/>
-<Input label="Preferred arrival" type="date" optional/>
+<DateField label="Preferred arrival" optional hint="Tell us if you already have a date in mind."/>
 <Textarea className="full" label="Health concerns" hint="Conditions, medication and anything your doctor should know." maxLength={400} value={note} onChange={e=>setNote(e.target.value)}/>
 <fieldset className="group full" role="radiogroup">
 <legend>How should we contact you?</legend>
@@ -69,11 +69,25 @@ function Demo(){
 <Radio card name="len" label="14 nights" description="Often recommended"/>
 </div>
 </div>
-<p className="shantara-note" style={{marginTop:"var(--space-6)"}}>52px fields, 2px corners, 17px text. Label 8px above, hint or error 8px below. Hover darkens the hairline; focus is Himalaya with a calm 3px brand-soft halo (Clay-soft when invalid). Required is a Himalaya asterisk; optional fields say so in muted text. The tick is an inline SVG and the radio dot a grid child — both centred with place-items:center.</p>
+<div className="pair">
+<div className="stack"><p className="cap">Date</p>
+<DateField label="Preferred arrival" defaultValue="2026-11-02"/>
+<DateField label="Date of birth" error="Enter a date."/>
+<DateField label="Disabled" disabled defaultValue="2026-11-02"/>
+</div>
+<div className="stack"><p className="cap">Search list</p>
+<SearchList label="Country of residence" options={COUNTRIES} defaultValue="India"/>
+<SearchList label="Country of residence" placeholder="Search countries" options={COUNTRIES} error="Choose a country."/>
+<SearchList label="Disabled" disabled options={COUNTRIES} defaultValue="Germany"/>
+</div>
+</div>
+<p className="shantara-note" style={{marginTop:"var(--space-6)"}}>52px fields, 2px corners, 17px text. Label 8px above, hint or error 8px below. Hover darkens the hairline; focus is Himalaya with a calm 3px brand-soft halo (Clay-soft when invalid). Required is a Himalaya asterisk; optional fields say so in muted text. The tick is an inline SVG and the radio dot a grid child — both centred with place-items:center. Date opens a calendar; search list filters as you type. Text fields accept English only — Latin letters, numbers and ordinary punctuation — so the team can read every answer.</p>
 <div className="pair">
 <div className="stack" dir="ltr" lang="en">
 <p className="shantara-usage-label">LTR</p>
 <Input label="Full name" required placeholder="As on your passport"/>
+<DateField label="Preferred arrival" placeholder="Choose a date" todayLabel="Today" clearLabel="Clear"/>
+<SearchList label="Country of residence" placeholder="Search countries" options={COUNTRIES}/>
 <Select label="Treatment room" placeholder="No preference" options={["Garden pavilion","Cedar suite"]}/>
 <Checkbox label="I will upload my medical records" defaultChecked/>
 <Switch label="Therapy reminders" labelFirst defaultChecked/>
@@ -81,6 +95,8 @@ function Demo(){
 <div className="stack shantara-rtl" dir="rtl" lang="ar">
 <p className="shantara-usage-label">RTL</p>
 <Input label={ar("Full name")} required/>
+<DateField label={ar("Preferred arrival")} placeholder={ar("Choose a date")} todayLabel={ar("Today")} clearLabel={ar("Clear")} prevLabel={ar("Previous month")} nextLabel={ar("Next month")} prevYearLabel={ar("Previous year")} nextYearLabel={ar("Next year")} dialogLabel={ar("Choose a date")} locale="ar"/>
+<SearchList label={ar("Country of residence")} placeholder={ar("Search countries")} emptyLabel={ar("No matches")} clearLabel={ar("Clear")} options={COUNTRIES.map(ar)}/>
 <Select label={ar("Treatment room")} placeholder={ar("No preference")} options={["Garden pavilion","Cedar suite"].map(ar)}/>
 <Checkbox label={ar("I will upload my medical records")} defaultChecked/>
 <Switch label={ar("Therapy reminders")} labelFirst defaultChecked/>

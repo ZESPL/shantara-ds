@@ -144,7 +144,7 @@ const CHROME_CSS = `
 .sh-menu-contact a{display:inline-flex;align-items:center;gap:var(--space-3);min-height:var(--tap-min);color:inherit;text-decoration:none}
 .sh-menu-lang{display:flex;align-items:center;justify-content:space-between;gap:var(--space-5);padding-top:var(--space-5);border-top:var(--border-width) solid var(--rule-color);font:var(--type-body-sm);color:var(--text-secondary)}
 
-/* FOOTER — Pine Tree ground, a rosette strip across the top, brand column + three link
+/* FOOTER — Pine Tree ground, a rosette strip across the top, cream wordmark + three link
    columns, bottom bar with the text-size control. A size container like the header. */
 .sh-foot{position:relative;container:sh-foot / inline-size;overflow:hidden;--foot-band:clamp(132px, 20vw, 264px)}
 .sh-foot-band{position:absolute;inset:0 0 auto 0;height:var(--foot-band);border-bottom:var(--border-width) solid var(--pattern-rule-dark);pointer-events:none}
@@ -498,7 +498,7 @@ function SiteFooter({ onNavigate, locale = "en" }) {
       <div className="sh-container sh-foot-main">
         <div className="sh-foot-grid" data-narrow={String(narrow)}>
           <div className="sh-foot-brand">
-            <Logo mark="full" tone="cream" height={44} assetBase="../../assets" />
+            <Logo mark="wordmark" tone="cream" height={22} assetBase="../../assets" />
             <p className="sh-foot-blurb">{t("A naturopathy retreat on a hilltop above the Chennamangallur valley, Kozhikode. An evolution of Hygiene Nature Cure Hospital, caring for guests since 2000.")}</p>
             <address className="sh-foot-nap">
               <strong>{t(c.name)}</strong>

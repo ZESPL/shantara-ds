@@ -13,3 +13,5 @@ Text field for all single-line entry.
 **English only.** Free text is for an answer the team will read. The field keeps Latin letters (accents in a name stay), numbers and ordinary punctuation. Other scripts are removed, and the hint becomes “Please write in English.” The control is `lang="en"` and left to right, including inside an RTL page. `password` and `number` are left as typed.
 
 **RTL.** `startIcon` / `endIcon` follow reading direction. Search belongs in `startIcon` in both LTR and RTL. The typed value stays left to right.
+
+Dates use `DateField`. A long list people will search — countries, conditions — uses `SearchList`.

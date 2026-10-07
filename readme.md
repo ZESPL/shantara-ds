@@ -64,7 +64,7 @@ SKILL.md                → Agent-Skills wrapper — drop this folder into anoth
 ### Components
 
 **core** — `Button`, `IconButton`, `Icon`, `Logo`, `Card`, `Badge`, `Tag`, `Divider`, `PatternPanel`
-**forms** — `Input`, `Textarea`, `Select`, `Checkbox`, `Radio`, `Switch`
+**forms** — `Input`, `Textarea`, `Select`, `SearchList`, `DateField`, `Checkbox`, `Radio`, `Switch`
 **navigation** — `Tabs`, `Breadcrumbs`, `Accordion`, `LanguageSelector`
 **feedback** — `Dialog`, `Toast`, `Tooltip`, `Spinner`
 **editorial** — `Media`, `Eyebrow`, `Statement`, `Numeral`, `TextLink`, `Tile`, `NumberedSteps`, `PlainList`, `GroupedList`, `SpecTable`, `TimeTable`, `QuoteBlock`, `PortraitFrame`
