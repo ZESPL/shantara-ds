@@ -81,7 +81,7 @@ function Demo(){
 <SearchList label="Disabled" disabled options={COUNTRIES} defaultValue="Germany"/>
 </div>
 </div>
-<p className="shantara-note" style={{marginTop:"var(--space-6)"}}>52px fields, 2px corners, 17px text. Label 8px above, hint or error 8px below. Hover darkens the hairline; focus is Himalaya with a calm 3px brand-soft halo (Clay-soft when invalid). Required is a Himalaya asterisk; optional fields say so in muted text. The tick is an inline SVG and the radio dot a grid child — both centred with place-items:center. Date opens a calendar; search list filters as you type. Text fields accept English only — Latin letters, numbers and ordinary punctuation — so the team can read every answer.</p>
+<p className="shantara-note" style={{marginTop:"var(--space-6)"}}>52px fields, 2px corners, 17px text. Label 8px above, hint or error 8px below. Hover darkens the hairline; focus is Himalaya with a calm 3px brand-soft halo (Clay-soft when invalid). Required is a Himalaya asterisk; optional fields say so in muted text. The tick is an inline SVG and the radio dot a grid child — both centred with place-items:center. Date opens a calendar. Click the year and scroll to a birth year. Search list filters as you type. Text fields accept English only — Latin letters, numbers and ordinary punctuation — so the team can read every answer.</p>
 <div className="pair">
 <div className="stack" dir="ltr" lang="en">
 <p className="shantara-usage-label">LTR</p>
@@ -95,7 +95,7 @@ function Demo(){
 <div className="stack shantara-rtl" dir="rtl" lang="ar">
 <p className="shantara-usage-label">RTL</p>
 <Input label={ar("Full name")} required/>
-<DateField label={ar("Preferred arrival")} placeholder={ar("Choose a date")} todayLabel={ar("Today")} clearLabel={ar("Clear")} prevLabel={ar("Previous month")} nextLabel={ar("Next month")} prevYearLabel={ar("Previous year")} nextYearLabel={ar("Next year")} dialogLabel={ar("Choose a date")} locale="ar"/>
+<DateField label={ar("Preferred arrival")} placeholder={ar("Choose a date")} todayLabel={ar("Today")} clearLabel={ar("Clear")} prevLabel={ar("Previous month")} nextLabel={ar("Next month")} prevYearLabel={ar("Previous year")} nextYearLabel={ar("Next year")} prevYearsLabel={ar("Previous years")} nextYearsLabel={ar("Next years")} chooseMonthLabel={ar("Choose a month")} chooseYearLabel={ar("Choose a year")} dialogLabel={ar("Choose a date")} locale="ar"/>
 <SearchList label={ar("Country of residence")} placeholder={ar("Search countries")} emptyLabel={ar("No matches")} clearLabel={ar("Clear")} options={COUNTRIES.map(ar)}/>
 <Select label={ar("Treatment room")} placeholder={ar("No preference")} options={["Garden pavilion","Cedar suite"].map(ar)}/>
 <Checkbox label={ar("I will upload my medical records")} defaultChecked/>

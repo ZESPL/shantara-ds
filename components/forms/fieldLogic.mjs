@@ -129,6 +129,25 @@ export function yearBounds(min, max, nowY = new Date().getFullYear()) {
   return [Math.min(minY, maxY), Math.max(minY, maxY)];
 }
 
+/* A year is in range when any day of it is. An empty bound leaves that side open. */
+export function yearIntersects(y, min, max) {
+  const start = toIso(y, 1, 1);
+  const end = toIso(y, 12, 31);
+  if (max && start > max) return false;
+  if (min && end < min) return false;
+  return true;
+}
+
+/* Four digits commit a year. Fewer digits are still being typed. */
+export function pushYearDigit(buffer, digit, minY, maxY) {
+  const next = String(buffer || "") + String(digit);
+  if (!/^\d{1,4}$/.test(next)) return { buffer: String(buffer || ""), year: null };
+  if (next.length < 4) return { buffer: next, year: null };
+  const y = Number(next);
+  if (y >= minY && y <= maxY) return { buffer: "", year: y };
+  return { buffer: "", year: null };
+}
+
 export function fold(value) {
   return String(value ?? "").normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
 }

@@ -11,9 +11,11 @@ import {
   shiftMonth,
   startOfWeek,
   todayIso,
+  pushYearDigit,
   weekStart,
   weekdayLabels,
   yearBounds,
+  yearIntersects,
 } from "./fieldLogic.mjs";
 
 /* Shared field chrome — same rules and style id as Input, Textarea and Select. */
@@ -61,7 +63,12 @@ const CSS = `
 .sh-date-chev-next{transform:scaleX(-1)}
 [dir="rtl"] .sh-date-chev-prev{transform:scaleX(-1)}
 [dir="rtl"] .sh-date-chev-next{transform:scaleX(1)}
-.sh-date-title{flex:1;min-width:0;min-height:var(--tap-min);padding:0 var(--space-2);border:0;border-radius:var(--radius-xs);background:transparent;color:var(--text-primary);font:var(--weight-medium) var(--text-sm)/1.2 var(--font-body);cursor:pointer}
+.sh-date-titles{flex:1;min-width:0;display:flex;align-items:center;justify-content:center;gap:var(--space-1)}
+.sh-date-title{flex:0 1 auto;min-width:0;max-width:100%;min-height:var(--tap-min);padding:0 var(--space-2);border:0;border-radius:var(--radius-xs);background:transparent;color:var(--text-primary);font:var(--weight-medium) var(--text-sm)/1.2 var(--font-body);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:2px}
+.sh-date-title[data-part="year"]{flex:none}
+.sh-date-title[data-static="true"]{cursor:default}
+.sh-date-title-text{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sh-date-title-chev{width:12px;height:12px;flex:none}
 .sh-date-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:2px;padding:var(--space-2) var(--space-3) var(--space-3)}
 .sh-date-dow{display:grid;place-items:center;min-height:28px;font:var(--weight-medium) var(--text-2xs)/1 var(--font-body);color:var(--text-muted)}
 .sh-date-day{appearance:none;min-height:40px;padding:0;border:0;border-radius:var(--radius-xs);background:transparent;color:var(--text-primary);font:var(--weight-regular) var(--text-sm)/1 var(--font-body);font-variant-numeric:tabular-nums;cursor:pointer}
@@ -74,12 +81,16 @@ const CSS = `
 .sh-date-month{min-height:var(--tap-min);padding:0 var(--space-2);border:0;border-radius:var(--radius-xs);background:transparent;color:var(--text-primary);font:var(--weight-regular) var(--text-sm)/1.2 var(--font-body);cursor:pointer}
 .sh-date-month[aria-selected="true"]{background:var(--surface-brand);color:var(--text-on-brand);font-weight:var(--weight-medium)}
 .sh-date-month[aria-disabled="true"]{color:var(--text-muted);cursor:not-allowed}
+.sh-date-years{max-height:calc(4.5 * var(--tap-min) + 4 * var(--space-2) + var(--space-2) + var(--space-3));padding:var(--space-2) var(--space-3) var(--space-3);overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable}
+.sh-date-year-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-2)}
+.sh-date-year-row + .sh-date-year-row{margin-top:var(--space-2)}
+.sh-date-year{font-variant-numeric:tabular-nums}
 .sh-date-foot{display:flex;justify-content:space-between;gap:var(--space-3);padding:var(--space-2) var(--space-3) var(--space-2);border-top:var(--border-width) solid var(--border-subtle)}
 .sh-date-text{min-height:var(--tap-min);padding:0 var(--space-3);border:0;border-radius:var(--radius-xs);background:transparent;color:var(--text-brand);font:var(--weight-medium) var(--text-sm)/1 var(--font-body);cursor:pointer}
 .sh-date-text[data-quiet="true"]{color:var(--text-secondary);font-weight:var(--weight-regular)}
 .sh-date-text:disabled{color:var(--text-muted);cursor:not-allowed}
 @media (hover: hover) and (pointer: fine){
-  .sh-date-nav:not(:disabled):hover,.sh-date-title:hover,.sh-date-text:not(:disabled):hover,.sh-date-month:not([aria-disabled="true"]):not([aria-selected="true"]):hover,.sh-date-day:not([aria-disabled="true"]):not([aria-selected="true"]):hover{background:var(--surface-raised)}
+  .sh-date-nav:not(:disabled):hover,.sh-date-title:not([data-static="true"]):hover,.sh-date-text:not(:disabled):hover,.sh-date-month:not([aria-disabled="true"]):not([aria-selected="true"]):hover,.sh-date-day:not([aria-disabled="true"]):not([aria-selected="true"]):hover{background:var(--surface-raised)}
 }
 `;
 
@@ -111,6 +122,30 @@ const CAL = (
 const CHEV_PREV = (
   <svg className="sh-date-chev-prev" viewBox="0 0 16 16" aria-hidden="true"><path d="M10 4L6 8l4 4" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
 );
+
+const CHEV_DOWN = (
+  <svg className="sh-date-title-chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+);
+
+const YEAR_STEP = 12;
+
+function revealYear(node, center) {
+  const scroller = node.closest(".sh-date-years");
+  if (!scroller || scroller.clientHeight === 0) return false;
+  const style = getComputedStyle(scroller);
+  const padTop = parseFloat(style.paddingTop) || 0;
+  const padBottom = parseFloat(style.paddingBottom) || 0;
+  const nodeRect = node.getBoundingClientRect();
+  const box = scroller.getBoundingClientRect();
+  const viewTop = box.top + padTop;
+  const viewBottom = box.bottom - padBottom;
+  let delta = 0;
+  if (center) delta = nodeRect.top - viewTop - (viewBottom - viewTop - nodeRect.height) / 2;
+  else if (nodeRect.top < viewTop) delta = nodeRect.top - viewTop;
+  else if (nodeRect.bottom > viewBottom) delta = nodeRect.bottom - viewBottom;
+  if (delta) scroller.scrollTop += delta;
+  return true;
+}
 
 function FieldLabel({ htmlFor, label, required, optional }) {
   if (!label) return null;
@@ -157,6 +192,10 @@ export function DateField({
   nextLabel = "Next month",
   prevYearLabel = "Previous year",
   nextYearLabel = "Next year",
+  prevYearsLabel = "Previous years",
+  nextYearsLabel = "Next years",
+  chooseMonthLabel = "Choose a month",
+  chooseYearLabel = "Choose a year",
   dialogLabel = "Choose a date",
   className,
   style,
@@ -177,11 +216,22 @@ export function DateField({
   const panelRef = React.useRef(null);
   const triggerRef = React.useRef(null);
   const queueFocus = React.useRef(false);
+  const yearFrom = React.useRef("days");
+  const enteredYears = React.useRef(false);
+  const yearDigits = React.useRef("");
+  const yearDigitTimer = React.useRef(0);
 
   const first = weekStart(locale);
   const months = React.useMemo(() => monthNames(locale), [locale]);
   const weekdays = React.useMemo(() => weekdayLabels(locale, first), [locale, first]);
   const [minY, maxY] = yearBounds(min, max);
+  const years = React.useMemo(() => {
+    const list = [];
+    for (let y = maxY; y >= minY; y -= 1) {
+      if (yearIntersects(y, min, max)) list.push(y);
+    }
+    return list;
+  }, [minY, maxY, min, max]);
   const seed = parseIso(current) || parseIso(todayIso());
   const [shown, setShown] = React.useState({ y: seed.y, m: seed.m });
   const [cursor, setCursor] = React.useState(current || todayIso());
@@ -207,6 +257,47 @@ export function DateField({
     setOpen(true);
   }
 
+  function monthInYear(y, month) {
+    if (monthIntersects(y, month, min, max)) return month;
+    for (let m = 1; m <= 12; m += 1) {
+      if (monthIntersects(y, m, min, max)) return m;
+    }
+    return month;
+  }
+
+  function openYears() {
+    yearFrom.current = view === "months" ? "months" : "days";
+    if (years.length && !years.includes(shown.y)) {
+      const y = shown.y > years[0] ? years[0] : years[years.length - 1];
+      setShown({ y, m: monthInYear(y, shown.m) });
+    }
+    setView("years");
+    queueFocus.current = true;
+  }
+
+  function moveYear(y, focus) {
+    if (y == null) return;
+    if (y !== shown.y) setShown({ y, m: monthInYear(y, shown.m) });
+    if (focus) queueFocus.current = true;
+  }
+
+  function chooseYear(y) {
+    setShown({ y, m: monthInYear(y, shown.m) });
+    setView("months");
+    queueFocus.current = true;
+  }
+
+  function onYearDigit(digit) {
+    window.clearTimeout(yearDigitTimer.current);
+    const result = pushYearDigit(yearDigits.current, digit, minY, maxY);
+    yearDigits.current = result.buffer;
+    if (result.year == null) {
+      if (result.buffer) yearDigitTimer.current = window.setTimeout(() => { yearDigits.current = ""; }, 1000);
+      return;
+    }
+    moveYear(result.year, true);
+  }
+
   function commit(iso) {
     if (!inRange(iso, min, max)) return;
     emit(iso);
@@ -221,14 +312,49 @@ export function DateField({
     if (e.key === "Escape") {
       e.preventDefault();
       e.stopPropagation();
-      if (view === "months") {
+      if (view === "years") {
+        setView(yearFrom.current === "months" ? "months" : "days");
+        queueFocus.current = true;
+      } else if (view === "months") {
         setView("days");
         queueFocus.current = true;
       } else close(true);
       return;
     }
+    if (view === "years" && /^\d$/.test(e.key)) {
+      e.preventDefault();
+      onYearDigit(e.key);
+      return;
+    }
     const onDay = e.target.classList && e.target.classList.contains("sh-date-day");
     const onMonth = e.target.classList && e.target.classList.contains("sh-date-month");
+    const onYear = e.target.classList && e.target.classList.contains("sh-date-year");
+    if (view === "years" && onYear) {
+      const index = years.indexOf(shown.y);
+      const rtl = isRtl();
+      const step = { ArrowRight: rtl ? -1 : 1, ArrowLeft: rtl ? 1 : -1, ArrowDown: 3, ArrowUp: -3 }[e.key];
+      if (step && index >= 0) {
+        e.preventDefault();
+        moveYear(years[index + step], true);
+        return;
+      }
+      if ((e.key === "Home" || e.key === "End") && years.length) {
+        e.preventDefault();
+        moveYear(e.key === "Home" ? years[0] : years[years.length - 1], true);
+        return;
+      }
+      if ((e.key === "PageUp" || e.key === "PageDown") && index >= 0) {
+        e.preventDefault();
+        const delta = e.key === "PageUp" ? -YEAR_STEP : YEAR_STEP;
+        moveYear(years[Math.min(years.length - 1, Math.max(0, index + delta))], true);
+        return;
+      }
+      if ((e.key === "Enter" || e.key === " ") && years.includes(shown.y)) {
+        e.preventDefault();
+        chooseYear(shown.y);
+      }
+      return;
+    }
     if (view === "months" && onMonth) {
       const rtl = isRtl();
       const step = { ArrowRight: rtl ? -1 : 1, ArrowLeft: rtl ? 1 : -1, ArrowDown: 3, ArrowUp: -3 }[e.key];
@@ -287,6 +413,12 @@ export function DateField({
     }
   }
 
+  React.useEffect(() => () => window.clearTimeout(yearDigitTimer.current), []);
+
+  React.useEffect(() => {
+    if (view !== "years") yearDigits.current = "";
+  }, [view]);
+
   React.useEffect(() => {
     if (!open) return undefined;
     const onDoc = (e) => {
@@ -299,10 +431,20 @@ export function DateField({
   React.useLayoutEffect(() => {
     if (!open || !queueFocus.current || !panelRef.current) return;
     queueFocus.current = false;
-    const sel = view === "days" ? "[data-cursor='true']" : "[data-month-current='true']";
+    const sel = view === "days" ? "[data-cursor='true']" : view === "months" ? "[data-month-current='true']" : "[data-year-current='true']";
     const node = panelRef.current.querySelector(sel);
-    if (node) node.focus();
+    if (node) node.focus(view === "years" ? { preventScroll: true } : undefined);
   });
+
+  React.useLayoutEffect(() => {
+    if (!open || view !== "years") {
+      enteredYears.current = false;
+      return;
+    }
+    const node = panelRef.current && panelRef.current.querySelector("[data-year-current='true']");
+    if (!node) return;
+    if (revealYear(node, !enteredYears.current)) enteredYears.current = true;
+  }, [open, view, shown.y]);
 
   React.useLayoutEffect(() => {
     if (!open) return undefined;
@@ -333,6 +475,7 @@ export function DateField({
   const today = todayIso();
   const prevMonth = shiftMonth(shown.y, shown.m, -1);
   const nextMonth = shiftMonth(shown.y, shown.m, 1);
+  const yearIndex = years.indexOf(shown.y);
   const display = formatLong(current, locale);
   const described = error || hint ? mid : undefined;
 
@@ -379,21 +522,40 @@ export function DateField({
               <button
                 type="button"
                 className="sh-date-nav"
-                aria-label={view === "months" ? prevYearLabel : prevLabel}
-                disabled={view === "months" ? shown.y <= minY : !monthIntersects(prevMonth.y, prevMonth.m, min, max)}
-                onClick={() => setShown(view === "months" ? { y: shown.y - 1, m: shown.m } : prevMonth)}
+                aria-label={view === "years" ? prevYearsLabel : view === "months" ? prevYearLabel : prevLabel}
+                disabled={view === "years" ? yearIndex < 0 || yearIndex >= years.length - 1 : view === "months" ? shown.y <= minY : !monthIntersects(prevMonth.y, prevMonth.m, min, max)}
+                onClick={() => {
+                  if (view === "years") moveYear(years[Math.min(years.length - 1, yearIndex + YEAR_STEP)], false);
+                  else setShown(view === "months" ? { y: shown.y - 1, m: shown.m } : prevMonth);
+                }}
               >
                 {CHEV_PREV}
               </button>
-              <button type="button" id={fid + "-title"} className="sh-date-title" aria-live="polite" onClick={() => { setView(view === "days" ? "months" : "days"); queueFocus.current = true; }}>
-                {view === "months" ? shown.y : months[shown.m - 1] + " " + shown.y}
-              </button>
+              <div className="sh-date-titles" id={fid + "-title"} aria-live={view === "years" ? "off" : "polite"}>
+                {view === "days" ? (
+                  <button type="button" className="sh-date-title" data-part="month" aria-label={chooseMonthLabel + ", " + months[shown.m - 1]} onClick={() => { setView("months"); queueFocus.current = true; }}>
+                    <span className="sh-date-title-text">{months[shown.m - 1]}</span>
+                    {CHEV_DOWN}
+                  </button>
+                ) : null}
+                {view === "years" ? (
+                  <span className="sh-date-title" data-static="true">{shown.y}</span>
+                ) : (
+                  <button type="button" className="sh-date-title" data-part="year" aria-label={chooseYearLabel + ", " + shown.y} onClick={openYears}>
+                    <span className="sh-date-title-text">{shown.y}</span>
+                    {CHEV_DOWN}
+                  </button>
+                )}
+              </div>
               <button
                 type="button"
                 className="sh-date-nav"
-                aria-label={view === "months" ? nextYearLabel : nextLabel}
-                disabled={view === "months" ? shown.y >= maxY : !monthIntersects(nextMonth.y, nextMonth.m, min, max)}
-                onClick={() => setShown(view === "months" ? { y: shown.y + 1, m: shown.m } : nextMonth)}
+                aria-label={view === "years" ? nextYearsLabel : view === "months" ? nextYearLabel : nextLabel}
+                disabled={view === "years" ? yearIndex <= 0 : view === "months" ? shown.y >= maxY : !monthIntersects(nextMonth.y, nextMonth.m, min, max)}
+                onClick={() => {
+                  if (view === "years") moveYear(years[Math.max(0, yearIndex - YEAR_STEP)], false);
+                  else setShown(view === "months" ? { y: shown.y + 1, m: shown.m } : nextMonth);
+                }}
               >
                 <svg className="sh-date-chev-next" viewBox="0 0 16 16" aria-hidden="true"><path d="M10 4L6 8l4 4" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
               </button>
@@ -432,7 +594,7 @@ export function DateField({
                   </div>
                 ))}
               </div>
-            ) : (
+            ) : view === "months" ? (
               <div className="sh-date-months">
                 {months.map((name, index) => {
                   const m = index + 1;
@@ -451,6 +613,26 @@ export function DateField({
                     </button>
                   );
                 })}
+              </div>
+            ) : (
+              <div className="sh-date-years" role="group" aria-label={chooseYearLabel}>
+                {chunk(years, 3).map((row) => (
+                  <div key={row[0]} className="sh-date-year-row">
+                    {row.map((y) => (
+                      <button
+                        key={y}
+                        type="button"
+                        className="sh-date-month sh-date-year"
+                        data-year-current={y === shown.y ? "true" : undefined}
+                        tabIndex={y === shown.y ? 0 : -1}
+                        aria-selected={y === shown.y}
+                        onClick={() => chooseYear(y)}
+                      >
+                        {y}
+                      </button>
+                    ))}
+                  </div>
+                ))}
               </div>
             )}
             <div className="sh-date-foot">

@@ -34,6 +34,13 @@ export interface DateFieldProps {
   nextLabel?: string;
   prevYearLabel?: string;
   nextYearLabel?: string;
+  /** Year-list chevrons, which jump twelve years. */
+  prevYearsLabel?: string;
+  nextYearsLabel?: string;
+  /** Accessible name for the month-name button in the day view. */
+  chooseMonthLabel?: string;
+  /** Accessible name for the year button, and the year list. */
+  chooseYearLabel?: string;
   dialogLabel?: string;
   className?: string;
   style?: React.CSSProperties;

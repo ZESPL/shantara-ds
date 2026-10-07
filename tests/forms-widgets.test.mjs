@@ -12,7 +12,9 @@ import {
   monthIntersects,
   normalizeOptions,
   parseIso,
+  pushYearDigit,
   shiftMonth,
+  yearIntersects,
   startOfWeek,
   weekStart,
   weekdayLabels,
@@ -49,6 +51,20 @@ test("month and week steps clamp short months and cross years", () => {
   assert.equal(inRange("2026-10-05", "2026-10-06", "2026-12-01"), false);
   assert.equal(monthIntersects(2026, 9, "2026-10-06", "2026-12-01"), false);
   assert.equal(monthIntersects(2026, 10, "2026-10-06", "2026-12-01"), true);
+});
+
+test("a year is selectable when any day of it falls in range", () => {
+  assert.equal(yearIntersects(2026, "2026-10-06", "2026-12-01"), true);
+  assert.equal(yearIntersects(2025, "2026-10-06", "2026-12-01"), false);
+  assert.equal(yearIntersects(2027, "2026-10-06", "2026-12-01"), false);
+  assert.equal(yearIntersects(1976, "", ""), true);
+});
+
+test("a typed year resolves on the fourth digit", () => {
+  assert.deepEqual(pushYearDigit("", "1", 1906, 2031), { buffer: "1", year: null });
+  assert.deepEqual(pushYearDigit("197", "6", 1906, 2031), { buffer: "", year: 1976 });
+  assert.deepEqual(pushYearDigit("189", "0", 1906, 2031), { buffer: "", year: null });
+  assert.deepEqual(pushYearDigit("19", "x", 1906, 2031), { buffer: "19", year: null });
 });
 
 test("week labels follow the locale start day", () => {

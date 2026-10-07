@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"ShantaraDesignSystem_45bbe4","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"Divider","sourcePath":"components/core/Divider.jsx"},{"name":"ICON_GROUPS","sourcePath":"components/core/Icon.jsx"},{"name":"ICON_NAMES","sourcePath":"components/core/Icon.jsx"},{"name":"Icon","sourcePath":"components/core/Icon.jsx"},{"name":"IconButton","sourcePath":"components/core/IconButton.jsx"},{"name":"Logo","sourcePath":"components/core/Logo.jsx"},{"name":"PatternPanel","sourcePath":"components/core/PatternPanel.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Dialog","sourcePath":"components/feedback/Dialog.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"DateField","sourcePath":"components/forms/DateField.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"SearchList","sourcePath":"components/forms/SearchList.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Switch","sourcePath":"components/forms/Switch.jsx"},{"name":"Textarea","sourcePath":"components/forms/Textarea.jsx"},{"name":"Accordion","sourcePath":"components/navigation/Accordion.jsx"},{"name":"Breadcrumbs","sourcePath":"components/navigation/Breadcrumbs.jsx"},{"name":"LanguageSelector","sourcePath":"components/navigation/LanguageSelector.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"Media","sourcePath":"components/editorial/Media.jsx"},{"name":"ArticleFigure","sourcePath":"components/editorial/ArticleFigure.jsx"},{"name":"PortraitFrame","sourcePath":"components/editorial/PortraitFrame.jsx"},{"name":"AuthorCard","sourcePath":"components/editorial/AuthorCard.jsx"},{"name":"GroupedList","sourcePath":"components/editorial/GroupedList.jsx"},{"name":"MetaRow","sourcePath":"components/editorial/MetaRow.jsx"},{"name":"NumberedSteps","sourcePath":"components/editorial/NumberedSteps.jsx"},{"name":"Numeral","sourcePath":"components/editorial/Numeral.jsx"},{"name":"Pagination","sourcePath":"components/editorial/Pagination.jsx"},{"name":"PlainList","sourcePath":"components/editorial/PlainList.jsx"},{"name":"Prose","sourcePath":"components/editorial/Prose.jsx"},{"name":"QuoteBlock","sourcePath":"components/editorial/QuoteBlock.jsx"},{"name":"ReviewedBy","sourcePath":"components/editorial/ReviewedBy.jsx"},{"name":"ShareBar","sourcePath":"components/editorial/ShareBar.jsx"},{"name":"SpecTable","sourcePath":"components/editorial/SpecTable.jsx"},{"name":"Statement","sourcePath":"components/editorial/Statement.jsx"},{"name":"TableOfContents","sourcePath":"components/editorial/TableOfContents.jsx"},{"name":"TextLink","sourcePath":"components/editorial/TextLink.jsx"},{"name":"Tile","sourcePath":"components/editorial/Tile.jsx"},{"name":"TimeTable","sourcePath":"components/editorial/TimeTable.jsx"},{"name":"ArticleHeader","sourcePath":"components/sections/ArticleHeader.jsx"},{"name":"BandStatement","sourcePath":"components/sections/BandStatement.jsx"},{"name":"ClosingCTA","sourcePath":"components/sections/ClosingCTA.jsx"},{"name":"FormSplit","sourcePath":"components/sections/FormSplit.jsx"},{"name":"HeroFullBleed","sourcePath":"components/sections/HeroFullBleed.jsx"},{"name":"HeroSplit","sourcePath":"components/sections/HeroSplit.jsx"},{"name":"HeroStatement","sourcePath":"components/sections/HeroStatement.jsx"},{"name":"IndexList","sourcePath":"components/sections/IndexList.jsx"},{"name":"NumeralsSplit","sourcePath":"components/sections/NumeralsSplit.jsx"},{"name":"PanoramaCaption","sourcePath":"components/sections/PanoramaCaption.jsx"},{"name":"PeopleRow","sourcePath":"components/sections/PeopleRow.jsx"},{"name":"TileGrid","sourcePath":"components/sections/TileGrid.jsx"},{"name":"RelatedArticles","sourcePath":"components/sections/RelatedArticles.jsx"},{"name":"Section","sourcePath":"components/sections/Section.jsx"},{"name":"SplitSection","sourcePath":"components/sections/SplitSection.jsx"}],"sourceHashes":{"components/core/Badge.jsx":"b014d0a4d8ea","components/core/Button.jsx":"66ad8b155d36","components/core/Card.jsx":"899ecf09e977","components/core/Divider.jsx":"7841bbb870dd","components/core/Icon.jsx":"7eaaf731593f","components/core/IconButton.jsx":"0746d0dc8fb3","components/core/Logo.jsx":"82ebb0dfac10","components/core/PatternPanel.jsx":"dd26bb639ce9","components/core/Tag.jsx":"480f3225f1d4","components/feedback/Dialog.jsx":"c1b84ed6f276","components/feedback/Spinner.jsx":"49fa70a95320","components/feedback/Toast.jsx":"c64129df2a1a","components/feedback/Tooltip.jsx":"9c7b40a94408","components/forms/Checkbox.jsx":"621ba3e2309a","components/forms/DateField.jsx":"2fa229228168","components/forms/Input.jsx":"1321df74a451","components/forms/Radio.jsx":"861dea337cdb","components/forms/SearchList.jsx":"c0add5cde783","components/forms/Select.jsx":"4ebda94f9354","components/forms/Switch.jsx":"73709580dd9e","components/forms/Textarea.jsx":"e40a2c1357c6","components/navigation/Accordion.jsx":"b8870511c6fe","components/navigation/Breadcrumbs.jsx":"421f19e62be1","components/navigation/LanguageSelector.jsx":"3255d13574aa","components/navigation/Tabs.jsx":"414b48cd2f58","components/editorial/Media.jsx":"33a6b0c1bfde","components/editorial/ArticleFigure.jsx":"f7689927c7db","components/editorial/PortraitFrame.jsx":"6b53471987b8","components/editorial/AuthorCard.jsx":"e96ed75df2fb","components/editorial/GroupedList.jsx":"d8cd9e26b4bf","components/editorial/MetaRow.jsx":"8c95d79ee5e1","components/editorial/NumberedSteps.jsx":"6f2950654a05","components/editorial/Numeral.jsx":"e6b7086ade4c","components/editorial/Pagination.jsx":"893e51b7753d","components/editorial/PlainList.jsx":"2d7a0d571c4a","components/editorial/Prose.jsx":"1b1a9a3ffec2","components/editorial/QuoteBlock.jsx":"c79559f0cb83","components/editorial/ReviewedBy.jsx":"cf907ffdf4c1","components/editorial/ShareBar.jsx":"a5d673d91fb9","components/editorial/SpecTable.jsx":"097e36746780","components/editorial/Statement.jsx":"50cb58806250","components/editorial/TableOfContents.jsx":"f92f3b4de4c4","components/editorial/TextLink.jsx":"b730c74e745f","components/editorial/Tile.jsx":"4ebf341907e5","components/editorial/TimeTable.jsx":"610e5af78002","components/sections/ArticleHeader.jsx":"5444f56b29bf","components/sections/BandStatement.jsx":"28aa51447566","components/sections/ClosingCTA.jsx":"e010d9783ea4","components/sections/FormSplit.jsx":"86987313de54","components/sections/HeroFullBleed.jsx":"90de10fed20c","components/sections/HeroSplit.jsx":"e43e0f969b2f","components/sections/HeroStatement.jsx":"812f5fd0454a","components/sections/IndexList.jsx":"4a13d2f62a15","components/sections/NumeralsSplit.jsx":"58792a80105c","components/sections/PanoramaCaption.jsx":"34b6e6fbaf48","components/sections/PeopleRow.jsx":"fbf817dcc648","components/sections/TileGrid.jsx":"577cfcc55a90","components/sections/RelatedArticles.jsx":"8452368a277c","components/sections/Section.jsx":"eacd861e84d9","components/sections/SplitSection.jsx":"42b09796c47a"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":4,"namespace":"ShantaraDesignSystem_45bbe4","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"Divider","sourcePath":"components/core/Divider.jsx"},{"name":"ICON_GROUPS","sourcePath":"components/core/Icon.jsx"},{"name":"ICON_NAMES","sourcePath":"components/core/Icon.jsx"},{"name":"Icon","sourcePath":"components/core/Icon.jsx"},{"name":"IconButton","sourcePath":"components/core/IconButton.jsx"},{"name":"Logo","sourcePath":"components/core/Logo.jsx"},{"name":"PatternPanel","sourcePath":"components/core/PatternPanel.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Dialog","sourcePath":"components/feedback/Dialog.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"DateField","sourcePath":"components/forms/DateField.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"SearchList","sourcePath":"components/forms/SearchList.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Switch","sourcePath":"components/forms/Switch.jsx"},{"name":"Textarea","sourcePath":"components/forms/Textarea.jsx"},{"name":"Accordion","sourcePath":"components/navigation/Accordion.jsx"},{"name":"Breadcrumbs","sourcePath":"components/navigation/Breadcrumbs.jsx"},{"name":"LanguageSelector","sourcePath":"components/navigation/LanguageSelector.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"Media","sourcePath":"components/editorial/Media.jsx"},{"name":"ArticleFigure","sourcePath":"components/editorial/ArticleFigure.jsx"},{"name":"PortraitFrame","sourcePath":"components/editorial/PortraitFrame.jsx"},{"name":"AuthorCard","sourcePath":"components/editorial/AuthorCard.jsx"},{"name":"GroupedList","sourcePath":"components/editorial/GroupedList.jsx"},{"name":"MetaRow","sourcePath":"components/editorial/MetaRow.jsx"},{"name":"NumberedSteps","sourcePath":"components/editorial/NumberedSteps.jsx"},{"name":"Numeral","sourcePath":"components/editorial/Numeral.jsx"},{"name":"Pagination","sourcePath":"components/editorial/Pagination.jsx"},{"name":"PlainList","sourcePath":"components/editorial/PlainList.jsx"},{"name":"Prose","sourcePath":"components/editorial/Prose.jsx"},{"name":"QuoteBlock","sourcePath":"components/editorial/QuoteBlock.jsx"},{"name":"ReviewedBy","sourcePath":"components/editorial/ReviewedBy.jsx"},{"name":"ShareBar","sourcePath":"components/editorial/ShareBar.jsx"},{"name":"SpecTable","sourcePath":"components/editorial/SpecTable.jsx"},{"name":"Statement","sourcePath":"components/editorial/Statement.jsx"},{"name":"TableOfContents","sourcePath":"components/editorial/TableOfContents.jsx"},{"name":"TextLink","sourcePath":"components/editorial/TextLink.jsx"},{"name":"Tile","sourcePath":"components/editorial/Tile.jsx"},{"name":"TimeTable","sourcePath":"components/editorial/TimeTable.jsx"},{"name":"ArticleHeader","sourcePath":"components/sections/ArticleHeader.jsx"},{"name":"BandStatement","sourcePath":"components/sections/BandStatement.jsx"},{"name":"ClosingCTA","sourcePath":"components/sections/ClosingCTA.jsx"},{"name":"FormSplit","sourcePath":"components/sections/FormSplit.jsx"},{"name":"HeroFullBleed","sourcePath":"components/sections/HeroFullBleed.jsx"},{"name":"HeroSplit","sourcePath":"components/sections/HeroSplit.jsx"},{"name":"HeroStatement","sourcePath":"components/sections/HeroStatement.jsx"},{"name":"IndexList","sourcePath":"components/sections/IndexList.jsx"},{"name":"NumeralsSplit","sourcePath":"components/sections/NumeralsSplit.jsx"},{"name":"PanoramaCaption","sourcePath":"components/sections/PanoramaCaption.jsx"},{"name":"PeopleRow","sourcePath":"components/sections/PeopleRow.jsx"},{"name":"TileGrid","sourcePath":"components/sections/TileGrid.jsx"},{"name":"RelatedArticles","sourcePath":"components/sections/RelatedArticles.jsx"},{"name":"Section","sourcePath":"components/sections/Section.jsx"},{"name":"SplitSection","sourcePath":"components/sections/SplitSection.jsx"}],"sourceHashes":{"components/core/Badge.jsx":"b014d0a4d8ea","components/core/Button.jsx":"66ad8b155d36","components/core/Card.jsx":"899ecf09e977","components/core/Divider.jsx":"7841bbb870dd","components/core/Icon.jsx":"7eaaf731593f","components/core/IconButton.jsx":"0746d0dc8fb3","components/core/Logo.jsx":"82ebb0dfac10","components/core/PatternPanel.jsx":"dd26bb639ce9","components/core/Tag.jsx":"480f3225f1d4","components/feedback/Dialog.jsx":"c1b84ed6f276","components/feedback/Spinner.jsx":"49fa70a95320","components/feedback/Toast.jsx":"c64129df2a1a","components/feedback/Tooltip.jsx":"9c7b40a94408","components/forms/Checkbox.jsx":"621ba3e2309a","components/forms/DateField.jsx":"a4fef507a824","components/forms/Input.jsx":"1321df74a451","components/forms/Radio.jsx":"861dea337cdb","components/forms/SearchList.jsx":"c0add5cde783","components/forms/Select.jsx":"4ebda94f9354","components/forms/Switch.jsx":"73709580dd9e","components/forms/Textarea.jsx":"e40a2c1357c6","components/navigation/Accordion.jsx":"b8870511c6fe","components/navigation/Breadcrumbs.jsx":"421f19e62be1","components/navigation/LanguageSelector.jsx":"3255d13574aa","components/navigation/Tabs.jsx":"414b48cd2f58","components/editorial/Media.jsx":"33a6b0c1bfde","components/editorial/ArticleFigure.jsx":"f7689927c7db","components/editorial/PortraitFrame.jsx":"6b53471987b8","components/editorial/AuthorCard.jsx":"e96ed75df2fb","components/editorial/GroupedList.jsx":"d8cd9e26b4bf","components/editorial/MetaRow.jsx":"8c95d79ee5e1","components/editorial/NumberedSteps.jsx":"6f2950654a05","components/editorial/Numeral.jsx":"e6b7086ade4c","components/editorial/Pagination.jsx":"893e51b7753d","components/editorial/PlainList.jsx":"2d7a0d571c4a","components/editorial/Prose.jsx":"1b1a9a3ffec2","components/editorial/QuoteBlock.jsx":"c79559f0cb83","components/editorial/ReviewedBy.jsx":"cf907ffdf4c1","components/editorial/ShareBar.jsx":"a5d673d91fb9","components/editorial/SpecTable.jsx":"097e36746780","components/editorial/Statement.jsx":"50cb58806250","components/editorial/TableOfContents.jsx":"f92f3b4de4c4","components/editorial/TextLink.jsx":"b730c74e745f","components/editorial/Tile.jsx":"4ebf341907e5","components/editorial/TimeTable.jsx":"610e5af78002","components/sections/ArticleHeader.jsx":"5444f56b29bf","components/sections/BandStatement.jsx":"28aa51447566","components/sections/ClosingCTA.jsx":"e010d9783ea4","components/sections/FormSplit.jsx":"86987313de54","components/sections/HeroFullBleed.jsx":"90de10fed20c","components/sections/HeroSplit.jsx":"e43e0f969b2f","components/sections/HeroStatement.jsx":"812f5fd0454a","components/sections/IndexList.jsx":"4a13d2f62a15","components/sections/NumeralsSplit.jsx":"58792a80105c","components/sections/PanoramaCaption.jsx":"34b6e6fbaf48","components/sections/PeopleRow.jsx":"fbf817dcc648","components/sections/TileGrid.jsx":"577cfcc55a90","components/sections/RelatedArticles.jsx":"8452368a277c","components/sections/Section.jsx":"eacd861e84d9","components/sections/SplitSection.jsx":"42b09796c47a"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -1437,6 +1437,37 @@ function yearBounds(min, max, nowY = new Date().getFullYear()) {
   const maxY = parseIso(max || "") ? parseIso(max).y : nowY + 5;
   return [Math.min(minY, maxY), Math.max(minY, maxY)];
 }
+
+/* A year is in range when any day of it is. An empty bound leaves that side open. */
+function yearIntersects(y, min, max) {
+  const start = toIso(y, 1, 1);
+  const end = toIso(y, 12, 31);
+  if (max && start > max) return false;
+  if (min && end < min) return false;
+  return true;
+}
+
+/* Four digits commit a year. Fewer digits are still being typed. */
+function pushYearDigit(buffer, digit, minY, maxY) {
+  const next = String(buffer || "") + String(digit);
+  if (!/^\d{1,4}$/.test(next)) return {
+    buffer: String(buffer || ""),
+    year: null
+  };
+  if (next.length < 4) return {
+    buffer: next,
+    year: null
+  };
+  const y = Number(next);
+  if (y >= minY && y <= maxY) return {
+    buffer: "",
+    year: y
+  };
+  return {
+    buffer: "",
+    year: null
+  };
+}
 function fold(value) {
   return String(value ?? "").normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
 }
@@ -1532,7 +1563,12 @@ const CSS = `
 .sh-date-chev-next{transform:scaleX(-1)}
 [dir="rtl"] .sh-date-chev-prev{transform:scaleX(-1)}
 [dir="rtl"] .sh-date-chev-next{transform:scaleX(1)}
-.sh-date-title{flex:1;min-width:0;min-height:var(--tap-min);padding:0 var(--space-2);border:0;border-radius:var(--radius-xs);background:transparent;color:var(--text-primary);font:var(--weight-medium) var(--text-sm)/1.2 var(--font-body);cursor:pointer}
+.sh-date-titles{flex:1;min-width:0;display:flex;align-items:center;justify-content:center;gap:var(--space-1)}
+.sh-date-title{flex:0 1 auto;min-width:0;max-width:100%;min-height:var(--tap-min);padding:0 var(--space-2);border:0;border-radius:var(--radius-xs);background:transparent;color:var(--text-primary);font:var(--weight-medium) var(--text-sm)/1.2 var(--font-body);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:2px}
+.sh-date-title[data-part="year"]{flex:none}
+.sh-date-title[data-static="true"]{cursor:default}
+.sh-date-title-text{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sh-date-title-chev{width:12px;height:12px;flex:none}
 .sh-date-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:2px;padding:var(--space-2) var(--space-3) var(--space-3)}
 .sh-date-dow{display:grid;place-items:center;min-height:28px;font:var(--weight-medium) var(--text-2xs)/1 var(--font-body);color:var(--text-muted)}
 .sh-date-day{appearance:none;min-height:40px;padding:0;border:0;border-radius:var(--radius-xs);background:transparent;color:var(--text-primary);font:var(--weight-regular) var(--text-sm)/1 var(--font-body);font-variant-numeric:tabular-nums;cursor:pointer}
@@ -1545,12 +1581,16 @@ const CSS = `
 .sh-date-month{min-height:var(--tap-min);padding:0 var(--space-2);border:0;border-radius:var(--radius-xs);background:transparent;color:var(--text-primary);font:var(--weight-regular) var(--text-sm)/1.2 var(--font-body);cursor:pointer}
 .sh-date-month[aria-selected="true"]{background:var(--surface-brand);color:var(--text-on-brand);font-weight:var(--weight-medium)}
 .sh-date-month[aria-disabled="true"]{color:var(--text-muted);cursor:not-allowed}
+.sh-date-years{max-height:calc(4.5 * var(--tap-min) + 4 * var(--space-2) + var(--space-2) + var(--space-3));padding:var(--space-2) var(--space-3) var(--space-3);overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable}
+.sh-date-year-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-2)}
+.sh-date-year-row + .sh-date-year-row{margin-top:var(--space-2)}
+.sh-date-year{font-variant-numeric:tabular-nums}
 .sh-date-foot{display:flex;justify-content:space-between;gap:var(--space-3);padding:var(--space-2) var(--space-3) var(--space-2);border-top:var(--border-width) solid var(--border-subtle)}
 .sh-date-text{min-height:var(--tap-min);padding:0 var(--space-3);border:0;border-radius:var(--radius-xs);background:transparent;color:var(--text-brand);font:var(--weight-medium) var(--text-sm)/1 var(--font-body);cursor:pointer}
 .sh-date-text[data-quiet="true"]{color:var(--text-secondary);font-weight:var(--weight-regular)}
 .sh-date-text:disabled{color:var(--text-muted);cursor:not-allowed}
 @media (hover: hover) and (pointer: fine){
-  .sh-date-nav:not(:disabled):hover,.sh-date-title:hover,.sh-date-text:not(:disabled):hover,.sh-date-month:not([aria-disabled="true"]):not([aria-selected="true"]):hover,.sh-date-day:not([aria-disabled="true"]):not([aria-selected="true"]):hover{background:var(--surface-raised)}
+  .sh-date-nav:not(:disabled):hover,.sh-date-title:not([data-static="true"]):hover,.sh-date-text:not(:disabled):hover,.sh-date-month:not([aria-disabled="true"]):not([aria-selected="true"]):hover,.sh-date-day:not([aria-disabled="true"]):not([aria-selected="true"]):hover{background:var(--surface-raised)}
 }
 `;
 function ensureField() {
@@ -1623,6 +1663,34 @@ const CHEV_PREV = /*#__PURE__*/React.createElement("svg", {
   strokeLinecap: "round",
   strokeLinejoin: "round"
 }));
+const CHEV_DOWN = /*#__PURE__*/React.createElement("svg", {
+  className: "sh-date-title-chev",
+  viewBox: "0 0 16 16",
+  "aria-hidden": "true"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M4 6l4 4 4-4",
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: "1.5",
+  strokeLinecap: "round",
+  strokeLinejoin: "round"
+}));
+const YEAR_STEP = 12;
+function revealYear(node, center) {
+  const scroller = node.closest(".sh-date-years");
+  if (!scroller || scroller.clientHeight === 0) return false;
+  const style = getComputedStyle(scroller);
+  const padTop = parseFloat(style.paddingTop) || 0;
+  const padBottom = parseFloat(style.paddingBottom) || 0;
+  const nodeRect = node.getBoundingClientRect();
+  const box = scroller.getBoundingClientRect();
+  const viewTop = box.top + padTop;
+  const viewBottom = box.bottom - padBottom;
+  let delta = 0;
+  if (center) delta = nodeRect.top - viewTop - (viewBottom - viewTop - nodeRect.height) / 2;else if (nodeRect.top < viewTop) delta = nodeRect.top - viewTop;else if (nodeRect.bottom > viewBottom) delta = nodeRect.bottom - viewBottom;
+  if (delta) scroller.scrollTop += delta;
+  return true;
+}
 function FieldLabel({
   htmlFor,
   label,
@@ -1683,6 +1751,10 @@ function DateField({
   nextLabel = "Next month",
   prevYearLabel = "Previous year",
   nextYearLabel = "Next year",
+  prevYearsLabel = "Previous years",
+  nextYearsLabel = "Next years",
+  chooseMonthLabel = "Choose a month",
+  chooseYearLabel = "Choose a year",
   dialogLabel = "Choose a date",
   className,
   style,
@@ -1703,10 +1775,21 @@ function DateField({
   const panelRef = React.useRef(null);
   const triggerRef = React.useRef(null);
   const queueFocus = React.useRef(false);
+  const yearFrom = React.useRef("days");
+  const enteredYears = React.useRef(false);
+  const yearDigits = React.useRef("");
+  const yearDigitTimer = React.useRef(0);
   const first = weekStart(locale);
   const months = React.useMemo(() => monthNames(locale), [locale]);
   const weekdays = React.useMemo(() => weekdayLabels(locale, first), [locale, first]);
   const [minY, maxY] = yearBounds(min, max);
+  const years = React.useMemo(() => {
+    const list = [];
+    for (let y = maxY; y >= minY; y -= 1) {
+      if (yearIntersects(y, min, max)) list.push(y);
+    }
+    return list;
+  }, [minY, maxY, min, max]);
   const seed = parseIso(current) || parseIso(todayIso());
   const [shown, setShown] = React.useState({
     y: seed.y,
@@ -1734,6 +1817,53 @@ function DateField({
     queueFocus.current = true;
     setOpen(true);
   }
+  function monthInYear(y, month) {
+    if (monthIntersects(y, month, min, max)) return month;
+    for (let m = 1; m <= 12; m += 1) {
+      if (monthIntersects(y, m, min, max)) return m;
+    }
+    return month;
+  }
+  function openYears() {
+    yearFrom.current = view === "months" ? "months" : "days";
+    if (years.length && !years.includes(shown.y)) {
+      const y = shown.y > years[0] ? years[0] : years[years.length - 1];
+      setShown({
+        y,
+        m: monthInYear(y, shown.m)
+      });
+    }
+    setView("years");
+    queueFocus.current = true;
+  }
+  function moveYear(y, focus) {
+    if (y == null) return;
+    if (y !== shown.y) setShown({
+      y,
+      m: monthInYear(y, shown.m)
+    });
+    if (focus) queueFocus.current = true;
+  }
+  function chooseYear(y) {
+    setShown({
+      y,
+      m: monthInYear(y, shown.m)
+    });
+    setView("months");
+    queueFocus.current = true;
+  }
+  function onYearDigit(digit) {
+    window.clearTimeout(yearDigitTimer.current);
+    const result = pushYearDigit(yearDigits.current, digit, minY, maxY);
+    yearDigits.current = result.buffer;
+    if (result.year == null) {
+      if (result.buffer) yearDigitTimer.current = window.setTimeout(() => {
+        yearDigits.current = "";
+      }, 1000);
+      return;
+    }
+    moveYear(result.year, true);
+  }
   function commit(iso) {
     if (!inRange(iso, min, max)) return;
     emit(iso);
@@ -1746,14 +1876,54 @@ function DateField({
     if (e.key === "Escape") {
       e.preventDefault();
       e.stopPropagation();
-      if (view === "months") {
+      if (view === "years") {
+        setView(yearFrom.current === "months" ? "months" : "days");
+        queueFocus.current = true;
+      } else if (view === "months") {
         setView("days");
         queueFocus.current = true;
       } else close(true);
       return;
     }
+    if (view === "years" && /^\d$/.test(e.key)) {
+      e.preventDefault();
+      onYearDigit(e.key);
+      return;
+    }
     const onDay = e.target.classList && e.target.classList.contains("sh-date-day");
     const onMonth = e.target.classList && e.target.classList.contains("sh-date-month");
+    const onYear = e.target.classList && e.target.classList.contains("sh-date-year");
+    if (view === "years" && onYear) {
+      const index = years.indexOf(shown.y);
+      const rtl = isRtl();
+      const step = {
+        ArrowRight: rtl ? -1 : 1,
+        ArrowLeft: rtl ? 1 : -1,
+        ArrowDown: 3,
+        ArrowUp: -3
+      }[e.key];
+      if (step && index >= 0) {
+        e.preventDefault();
+        moveYear(years[index + step], true);
+        return;
+      }
+      if ((e.key === "Home" || e.key === "End") && years.length) {
+        e.preventDefault();
+        moveYear(e.key === "Home" ? years[0] : years[years.length - 1], true);
+        return;
+      }
+      if ((e.key === "PageUp" || e.key === "PageDown") && index >= 0) {
+        e.preventDefault();
+        const delta = e.key === "PageUp" ? -YEAR_STEP : YEAR_STEP;
+        moveYear(years[Math.min(years.length - 1, Math.max(0, index + delta))], true);
+        return;
+      }
+      if ((e.key === "Enter" || e.key === " ") && years.includes(shown.y)) {
+        e.preventDefault();
+        chooseYear(shown.y);
+      }
+      return;
+    }
     if (view === "months" && onMonth) {
       const rtl = isRtl();
       const step = {
@@ -1833,6 +2003,10 @@ function DateField({
       commit(cursor);
     }
   }
+  React.useEffect(() => () => window.clearTimeout(yearDigitTimer.current), []);
+  React.useEffect(() => {
+    if (view !== "years") yearDigits.current = "";
+  }, [view]);
   React.useEffect(() => {
     if (!open) return undefined;
     const onDoc = e => {
@@ -1844,10 +2018,21 @@ function DateField({
   React.useLayoutEffect(() => {
     if (!open || !queueFocus.current || !panelRef.current) return;
     queueFocus.current = false;
-    const sel = view === "days" ? "[data-cursor='true']" : "[data-month-current='true']";
+    const sel = view === "days" ? "[data-cursor='true']" : view === "months" ? "[data-month-current='true']" : "[data-year-current='true']";
     const node = panelRef.current.querySelector(sel);
-    if (node) node.focus();
+    if (node) node.focus(view === "years" ? {
+      preventScroll: true
+    } : undefined);
   });
+  React.useLayoutEffect(() => {
+    if (!open || view !== "years") {
+      enteredYears.current = false;
+      return;
+    }
+    const node = panelRef.current && panelRef.current.querySelector("[data-year-current='true']");
+    if (!node) return;
+    if (revealYear(node, !enteredYears.current)) enteredYears.current = true;
+  }, [open, view, shown.y]);
   React.useLayoutEffect(() => {
     if (!open) return undefined;
     const place = () => {
@@ -1876,6 +2061,7 @@ function DateField({
   const today = todayIso();
   const prevMonth = shiftMonth(shown.y, shown.m, -1);
   const nextMonth = shiftMonth(shown.y, shown.m, 1);
+  const yearIndex = years.indexOf(shown.y);
   const display = formatLong(current, locale);
   const described = error || hint ? mid : undefined;
   return /*#__PURE__*/React.createElement("div", {
@@ -1931,30 +2117,51 @@ function DateField({
   }, /*#__PURE__*/React.createElement("button", {
     type: "button",
     className: "sh-date-nav",
-    "aria-label": view === "months" ? prevYearLabel : prevLabel,
-    disabled: view === "months" ? shown.y <= minY : !monthIntersects(prevMonth.y, prevMonth.m, min, max),
-    onClick: () => setShown(view === "months" ? {
-      y: shown.y - 1,
-      m: shown.m
-    } : prevMonth)
-  }, CHEV_PREV), /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    id: fid + "-title",
-    className: "sh-date-title",
-    "aria-live": "polite",
+    "aria-label": view === "years" ? prevYearsLabel : view === "months" ? prevYearLabel : prevLabel,
+    disabled: view === "years" ? yearIndex < 0 || yearIndex >= years.length - 1 : view === "months" ? shown.y <= minY : !monthIntersects(prevMonth.y, prevMonth.m, min, max),
     onClick: () => {
-      setView(view === "days" ? "months" : "days");
+      if (view === "years") moveYear(years[Math.min(years.length - 1, yearIndex + YEAR_STEP)], false);else setShown(view === "months" ? {
+        y: shown.y - 1,
+        m: shown.m
+      } : prevMonth);
+    }
+  }, CHEV_PREV), /*#__PURE__*/React.createElement("div", {
+    className: "sh-date-titles",
+    id: fid + "-title",
+    "aria-live": view === "years" ? "off" : "polite"
+  }, view === "days" ? /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    className: "sh-date-title",
+    "data-part": "month",
+    "aria-label": chooseMonthLabel + ", " + months[shown.m - 1],
+    onClick: () => {
+      setView("months");
       queueFocus.current = true;
     }
-  }, view === "months" ? shown.y : months[shown.m - 1] + " " + shown.y), /*#__PURE__*/React.createElement("button", {
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "sh-date-title-text"
+  }, months[shown.m - 1]), CHEV_DOWN) : null, view === "years" ? /*#__PURE__*/React.createElement("span", {
+    className: "sh-date-title",
+    "data-static": "true"
+  }, shown.y) : /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    className: "sh-date-title",
+    "data-part": "year",
+    "aria-label": chooseYearLabel + ", " + shown.y,
+    onClick: openYears
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "sh-date-title-text"
+  }, shown.y), CHEV_DOWN)), /*#__PURE__*/React.createElement("button", {
     type: "button",
     className: "sh-date-nav",
-    "aria-label": view === "months" ? nextYearLabel : nextLabel,
-    disabled: view === "months" ? shown.y >= maxY : !monthIntersects(nextMonth.y, nextMonth.m, min, max),
-    onClick: () => setShown(view === "months" ? {
-      y: shown.y + 1,
-      m: shown.m
-    } : nextMonth)
+    "aria-label": view === "years" ? nextYearsLabel : view === "months" ? nextYearLabel : nextLabel,
+    disabled: view === "years" ? yearIndex <= 0 : view === "months" ? shown.y >= maxY : !monthIntersects(nextMonth.y, nextMonth.m, min, max),
+    onClick: () => {
+      if (view === "years") moveYear(years[Math.max(0, yearIndex - YEAR_STEP)], false);else setShown(view === "months" ? {
+        y: shown.y + 1,
+        m: shown.m
+      } : nextMonth);
+    }
   }, /*#__PURE__*/React.createElement("svg", {
     className: "sh-date-chev-next",
     viewBox: "0 0 16 16",
@@ -2008,7 +2215,7 @@ function DateField({
         if (!off) commit(cell.iso);
       }
     }, parts ? parts.d : cell.day);
-  })))) : /*#__PURE__*/React.createElement("div", {
+  })))) : view === "months" ? /*#__PURE__*/React.createElement("div", {
     className: "sh-date-months"
   }, months.map((name, index) => {
     const m = index + 1;
@@ -2031,7 +2238,22 @@ function DateField({
         }
       }
     }, name);
-  })), /*#__PURE__*/React.createElement("div", {
+  })) : /*#__PURE__*/React.createElement("div", {
+    className: "sh-date-years",
+    role: "group",
+    "aria-label": chooseYearLabel
+  }, chunk(years, 3).map(row => /*#__PURE__*/React.createElement("div", {
+    key: row[0],
+    className: "sh-date-year-row"
+  }, row.map(y => /*#__PURE__*/React.createElement("button", {
+    key: y,
+    type: "button",
+    className: "sh-date-month sh-date-year",
+    "data-year-current": y === shown.y ? "true" : undefined,
+    tabIndex: y === shown.y ? 0 : -1,
+    "aria-selected": y === shown.y,
+    onClick: () => chooseYear(y)
+  }, y))))), /*#__PURE__*/React.createElement("div", {
     className: "sh-date-foot"
   }, /*#__PURE__*/React.createElement("button", {
     type: "button",
@@ -2512,6 +2734,37 @@ function yearBounds(min, max, nowY = new Date().getFullYear()) {
   const minY = parseIso(min || "") ? parseIso(min).y : nowY - 120;
   const maxY = parseIso(max || "") ? parseIso(max).y : nowY + 5;
   return [Math.min(minY, maxY), Math.max(minY, maxY)];
+}
+
+/* A year is in range when any day of it is. An empty bound leaves that side open. */
+function yearIntersects(y, min, max) {
+  const start = toIso(y, 1, 1);
+  const end = toIso(y, 12, 31);
+  if (max && start > max) return false;
+  if (min && end < min) return false;
+  return true;
+}
+
+/* Four digits commit a year. Fewer digits are still being typed. */
+function pushYearDigit(buffer, digit, minY, maxY) {
+  const next = String(buffer || "") + String(digit);
+  if (!/^\d{1,4}$/.test(next)) return {
+    buffer: String(buffer || ""),
+    year: null
+  };
+  if (next.length < 4) return {
+    buffer: next,
+    year: null
+  };
+  const y = Number(next);
+  if (y >= minY && y <= maxY) return {
+    buffer: "",
+    year: y
+  };
+  return {
+    buffer: "",
+    year: null
+  };
 }
 function fold(value) {
   return String(value ?? "").normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
