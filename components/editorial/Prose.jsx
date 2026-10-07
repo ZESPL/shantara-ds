@@ -12,7 +12,7 @@ const CSS = `
 .sh-prose>:first-child{margin-top:0}
 .sh-prose h2{font:var(--type-h3);color:var(--text-primary);margin-top:2.2em;text-wrap:balance;scroll-margin-top:calc(var(--space-12) + 24px)}
 .sh-prose h3{font:var(--type-h4);color:var(--text-primary);margin-top:1.9em;text-wrap:balance;scroll-margin-top:calc(var(--space-12) + 24px)}
-.sh-prose h4{font:var(--type-item);font-size:var(--text-base);margin-top:1.6em}
+.sh-prose h4{font:var(--type-item-sm);margin-top:1.6em}
 .sh-prose h2+*,.sh-prose h3+*,.sh-prose h4+*{margin-top:0.6em}
 .sh-prose p{text-wrap:pretty}
 .sh-prose>p:first-child[data-lead],.sh-prose .lead{font:var(--type-lead);color:var(--text-secondary)}

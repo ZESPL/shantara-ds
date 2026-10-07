@@ -29,7 +29,7 @@ function ContactScreen({ onNavigate }) {
 
       <P id="contact/details">
         <SplitSection src={window.photoSrc("exterior-entrance-dusk-driveway")} alt={t("The entrance drive at dusk")} ground="stone" align="center">
-          <Statement meta={[c.name]} sub={t("A hilltop above the Chennamangallur valley. Airport and railway transfers are included with a confirmed stay. Details follow after consultation.")}>
+          <Statement size="title" meta={[c.name]} sub={t("A hilltop above the Chennamangallur valley. Airport and railway transfers are included with a confirmed stay. Details follow after consultation.")}>
             {t("Chennamangallur, Kozhikode, Keralam, India - 673602")}
           </Statement>
           <SpecTable

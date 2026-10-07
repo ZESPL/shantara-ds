@@ -137,7 +137,7 @@ const CHROME_CSS = `
 .sh-menu-nav li{border-top:var(--border-width) solid var(--rule-color)}
 .sh-menu-nav li:last-child{border-bottom:var(--border-width) solid var(--rule-color)}
 /* Change-1 look: Light, 22px on phones growing to 30px, set here so later type-token changes do not restyle the menu. */
-.sh-menu-nav a{display:flex;align-items:center;min-height:var(--tap-min);padding-block:var(--space-4);font:var(--weight-light) clamp(22px, 0.75vw + 19px, 30px)/1.24 var(--font-display);color:var(--text-primary);text-decoration:none}
+.sh-menu-nav a{display:flex;align-items:center;min-height:var(--tap-min);padding-block:var(--space-4);font:var(--weight-light) var(--text-heading-h3)/var(--leading-snug) var(--font-display);color:var(--text-primary);text-decoration:none}
 .sh-menu-nav a[aria-current="page"]{color:var(--text-brand)}
 .sh-menu-nav a:focus-visible,.sh-menu-contact a:focus-visible{outline:none;box-shadow:var(--ring-focus)}
 .sh-menu-contact{display:flex;flex-direction:column;gap:var(--space-2);font:var(--type-body-sm);color:var(--text-secondary)}
@@ -158,7 +158,7 @@ const CHROME_CSS = `
 .sh-foot-social{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:var(--space-2)}
 .sh-foot-social a{justify-content:center;min-width:var(--tap-min);min-height:var(--tap-min)}
 .sh-foot-col{min-width:0}
-.sh-foot-h{margin:0 0 var(--space-4);font-family:var(--font-body);font-size:var(--text-base);font-weight:var(--weight-medium);line-height:1.3;letter-spacing:0;text-transform:none;color:var(--color-gold-crayola)}
+.sh-foot-h{margin:0 0 var(--space-4);font:var(--type-item-sm);letter-spacing:0;text-transform:none;color:var(--color-gold-crayola)}
 .sh-foot-links{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:var(--space-1)}
 .sh-foot a{display:inline-flex;align-items:center;gap:var(--space-3);min-height:var(--control-sm);font:var(--type-body-sm);color:var(--text-secondary);text-decoration:none;transition:color var(--duration-fast) var(--ease-standard)}
 .sh-foot a:focus-visible,.sh-foot button:focus-visible{outline:none;box-shadow:var(--ring-focus)}
