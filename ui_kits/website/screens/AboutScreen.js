@@ -57,7 +57,7 @@ function AboutScreen({ onNavigate }) {
 
       <P id="about/story">
         <SplitSection src={window.photoSrc("courtyard")} alt={t("The courtyard at Shantara")} ground="merino">
-          <Statement sub={t("Dr. P.A. Kareem founded Hygiene Nature Cure Hospital in 2000. Its core approach is to treat the cause through ethical, drug-free naturopathy.")}>
+          <Statement size="title" sub={t("Dr. P.A. Kareem founded Hygiene Nature Cure Hospital in 2000. Its core approach is to treat the cause through ethical, drug-free naturopathy.")}>
             {t("Shantara is the evolution of Hygiene Nature Cure Hospital.")}
           </Statement>
         </SplitSection>
@@ -65,7 +65,7 @@ function AboutScreen({ onNavigate }) {
 
       <P id="about/approach">
         <SplitSection src={window.photoSrc("library")} alt={t("The library at Shantara")} mediaSide="end" ground="merino">
-          <Statement sub={t("Treatment is drug-free and planned by our doctors after consultation and assessment. Plans are reviewed during the stay and adjusted where needed.")}>
+          <Statement size="title" sub={t("Treatment is drug-free and planned by our doctors after consultation and assessment. Plans are reviewed during the stay and adjusted where needed.")}>
             {t("Your programme is planned after consultation and assessment.")}
           </Statement>
           <div>
@@ -76,7 +76,7 @@ function AboutScreen({ onNavigate }) {
 
       <P id="about/editorial-policy">
         <Section ground="stone" space="sm">
-          <Statement size="title" sub={t("Health pages name who writes, who reviews, which sources are used, and how often content is reviewed.")}>
+          <Statement sub={t("Health pages name who writes, who reviews, which sources are used, and how often content is reviewed.")}>
             {t("Medical Editorial Policy")}
           </Statement>
         </Section>

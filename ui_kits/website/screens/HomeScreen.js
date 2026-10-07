@@ -117,7 +117,7 @@ function HomeScreen({ onNavigate }) {
 
       <P id="home/therapies">
         <SplitSection mediaSide="end" src={window.photoSrc("treatment-bath-corridor-cubicles")} alt={t("Bath corridor in the therapy wing")}>
-          <Statement sub={t("Your doctor may recommend specific therapies based on your assessment and programme.")}>
+          <Statement size="title" sub={t("Your doctor may recommend specific therapies based on your assessment and programme.")}>
             {t("Naturopathy treatments and therapies")}
           </Statement>
           <PlainList columns={2} rules items={therapies.map((x) => ({ title: t(x.name), text: t(x.description) }))} />

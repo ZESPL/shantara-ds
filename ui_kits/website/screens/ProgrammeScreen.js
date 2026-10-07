@@ -31,8 +31,8 @@ const STRIP_CSS = `
 .sh-prog-strip:focus-visible{outline:none;box-shadow:var(--ring-focus)}
 .sh-prog-strip>*{flex:0 0 max(calc((100% - 2 * var(--grid-gap)) / 3), min(78%, 22rem));scroll-snap-align:start}
 @media (min-width:1000px){.sh-prog-strip{margin-inline:0;padding-inline:0}}
-.sh-prog-h{margin:0;font:var(--type-title);color:var(--text-primary)}
-.sh-prog-sub{margin:0 0 var(--space-3);font:var(--type-item);font-size:var(--text-base);color:var(--text-primary)}
+.sh-prog-name{margin:0;font:var(--type-title);color:var(--text-primary)}
+.sh-prog-sub{margin:0 0 var(--space-3);font:var(--type-item-sm);color:var(--text-primary)}
 .sh-prog-note{margin:0 0 var(--space-5);font:var(--type-body-sm);color:var(--text-brand)}
 `;
 
@@ -79,7 +79,7 @@ function ProgrammeScreen({ onNavigate }) {
         <FormSplit
           aside={<>
             <div>
-              <h2 className="sh-prog-h">{t(programme.name)}</h2>
+              <p className="sh-prog-name">{t(programme.name)}</p>
               <MetaRow style={{ marginTop: "var(--space-3)" }} items={[t("Consultation first"), programme.durations ? t(programme.durations) : null]} />
             </div>
             <div>
@@ -97,12 +97,12 @@ function ProgrammeScreen({ onNavigate }) {
             <p style={{ margin: 0, font: "var(--type-body-sm)", color: "var(--text-secondary)" }}>{t("Your stay is confirmed after a doctor reviews your details.")}</p>
           </>}
         >
-          <Statement size="title" as="p" sub={t("Your programme is planned after consultation and assessment. A doctor reviews it each morning and adjusts it where needed. If fasting is included, it is introduced gradually and supervised throughout. Meals are planned according to your programme and dietary requirements.")}>
+          <Statement size="title" sub={t("Your programme is planned after consultation and assessment. A doctor reviews it each morning and adjusts it where needed. If fasting is included, it is introduced gradually and supervised throughout. Meals are planned according to your programme and dietary requirements.")}>
             {t("Doctor-guided and drug-free. Supervised fasting may be included when your doctor considers it appropriate.")}
           </Statement>
 
           <div style={stack}>
-            <h2 className="sh-prog-h" style={{ marginBottom: "var(--space-6)" }}>{t("Who this programme is for")}</h2>
+            <Statement size="title" style={{ marginBottom: "var(--space-6)" }}>{t("Who this programme is for")}</Statement>
             <PlainList columns={1} rules items={[
               t("Feeling persistently heavy, sluggish or fatigued"),
               t("Digestive discomfort or an irregular appetite"),
@@ -111,12 +111,12 @@ function ProgrammeScreen({ onNavigate }) {
           </div>
 
           <div style={stack}>
-            <h2 className="sh-prog-h" style={{ marginBottom: "var(--space-6)" }}>{t("What guests commonly report")}</h2>
+            <Statement size="title" style={{ marginBottom: "var(--space-6)" }}>{t("What guests commonly report")}</Statement>
             <PlainList columns={2} rules items={["Feeling lighter and more alert", "Easier digestion and clearer appetite", "Better sleep and morning energy", "Less bloating"].map((s) => t(s))} />
           </div>
 
           <div style={stack}>
-            <h2 className="sh-prog-h" style={{ marginBottom: "var(--space-6)" }}>{t("How programmes are planned")}</h2>
+            <Statement size="title" style={{ marginBottom: "var(--space-6)" }}>{t("How programmes are planned")}</Statement>
             {PLANNING.map((col, i) => (
               <div key={col.title} style={i ? { marginTop: "var(--space-9)" } : undefined}>
                 <h3 className="sh-prog-sub">{t(col.title)}</h3>

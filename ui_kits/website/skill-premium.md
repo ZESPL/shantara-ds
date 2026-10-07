@@ -91,7 +91,7 @@ The website is the brand deck carried to a scrolling page. The deck rules that a
 | --- | --- | --- | --- | --- |
 | Display | `--type-display` | 40 → 84 | Light | Full-bleed hero headline only |
 | Statement | `--type-h1` / `--type-statement` (= h2) | 34 → 64 / 28 → 48 | Light | Page title / section headline, a full sentence |
-| Title | `--type-title` (= h3) | 22 → 30 | Light | Tile and sub-section titles |
+| Title | `--type-title` (= h3) | 24 → 30 | Light | Tile and sub-section titles |
 | Item | `--type-item` (= h4) | 20 | Medium | Step, list and table item titles |
 | Numeral | `--type-numeral` | 48 → 84 | Light | Two or three figures in `NumeralsSplit` |
 
