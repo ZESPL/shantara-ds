@@ -30,13 +30,30 @@ function ConsultationScreen({ onNavigate, locale = "en", view = "booking" }) {
     if (track) track("form_start", { form_id: "consultation", page_type: "consultation" });
   };
 
+  const readKeyedFields = () => {
+    if (typeof document === "undefined") return {};
+    const root = document.querySelector('[data-ds-id="page/booking/form"]');
+    if (!root) return {};
+    const fields = {};
+    root.querySelectorAll("input[name], textarea[name], select[name]").forEach((el) => {
+      if (el.name) fields[el.name] = el.value;
+    });
+    return fields;
+  };
+
   const submit = () => {
+    const fields = readKeyedFields();
     setPending(true);
     setTimeout(() => {
       setPending(false);
       setConfirming(false);
       setDone(true);
-      if (track) track("generate_lead", { form_id: "consultation", page_type: "consultation", source_page: context.source_page });
+      if (track) track("generate_lead", {
+        ...fields,
+        form_id: "consultation",
+        page_type: "consultation",
+        source_page: context.source_page,
+      });
     }, 1400);
   };
 

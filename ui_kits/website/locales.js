@@ -114,9 +114,23 @@
 
   const OPTIONAL_ANALYTICS_EVENTS = ["video_start", "video_complete"];
 
-  const PII_KEYS = new Set([
+  /* Health and the Ask the Doctor question stay off both destinations. */
+  const HEALTH_KEYS = new Set([
+    "diagnosis",
+    "symptoms",
+    "medication",
+    "medications",
+    "medical_history",
+    "health",
+    "question",
+  ]);
+
+  /* GA4 omits name, email, phone, written answers and health data. */
+  const GA4_OMIT_KEYS = new Set([
     "name",
     "full_name",
+    "first_name",
+    "last_name",
     "email",
     "phone",
     "mobile",
@@ -132,12 +146,7 @@
     "deliverables",
     "other_guests",
     "media_kit",
-    "diagnosis",
-    "symptoms",
-    "medication",
-    "medications",
-    "medical_history",
-    "health",
+    ...HEALTH_KEYS,
   ]);
 
   const FORM_FIELD_KEYS = {
@@ -633,14 +642,51 @@
     };
   }
 
-  function stripPii(properties) {
+  function omitKeys(properties, blocked) {
     const out = {};
     const src = properties || {};
     for (const key of Object.keys(src)) {
-      if (PII_KEYS.has(key)) continue;
+      if (blocked.has(key)) continue;
       out[key] = src[key];
     }
     return out;
+  }
+
+  /* Payload safe for GA4: no name, email, phone, form answers, or health data. */
+  function stripPii(properties) {
+    return omitKeys(properties, GA4_OMIT_KEYS);
+  }
+
+  /* OpenPanel receives every keyed field except health data and the question text. */
+  function openPanelProperties(properties) {
+    return omitKeys(properties, HEALTH_KEYS);
+  }
+
+  function textValue(value) {
+    if (value == null) return "";
+    return String(value).trim();
+  }
+
+  /* Profile for openpanel.identify. profileId is the email, otherwise the phone. */
+  function profileFromProperties(properties) {
+    const src = properties || {};
+    const email = textValue(src.email);
+    const phone = textValue(src.phone || src.mobile);
+    const profileId = email || phone;
+    if (!profileId) return null;
+    const firstName = textValue(src.full_name || src.name || src.first_name);
+    const lastName = textValue(src.last_name);
+    const traits = {};
+    for (const key of Object.keys(src)) {
+      if (textValue(src[key]) === "") continue;
+      traits[key] = src[key];
+    }
+    const profile = { profileId, properties: traits };
+    if (firstName) profile.firstName = firstName;
+    if (lastName) profile.lastName = lastName;
+    if (email) profile.email = email;
+    if (phone) profile.phone = phone;
+    return profile;
   }
 
   function withLocale(properties, locale) {
@@ -655,13 +701,19 @@
       return { ok: false, reason: "unknown-event", eventName };
     }
     const locale = (opts.locale && localeRecord(opts.locale)?.code) || DEFAULT_LOCALE;
-    const payload = withLocale(stripPii(properties), locale);
+    const ga4 = withLocale(stripPii(properties), locale);
+    const openpanel = withLocale(openPanelProperties(properties), locale);
+    const profile = profileFromProperties(openpanel);
     if (typeof window !== "undefined") {
-      window.dispatchEvent(new CustomEvent("shantara:track", { detail: { eventName, properties: payload } }));
-      if (typeof window.gtag === "function") window.gtag("event", eventName, payload);
-      if (window.openpanel && typeof window.openpanel.track === "function") window.openpanel.track(eventName, payload);
+      window.dispatchEvent(new CustomEvent("shantara:track", { detail: { eventName, properties: ga4, openpanel, profile } }));
+      if (typeof window.gtag === "function") window.gtag("event", eventName, ga4);
+      const op = window.openpanel;
+      if (op) {
+        if (profile && typeof op.identify === "function") op.identify(profile);
+        if (typeof op.track === "function") op.track(eventName, openpanel);
+      }
     }
-    return { ok: true, eventName, properties: payload };
+    return { ok: true, eventName, properties: ga4, openpanel, profile };
   }
 
   function leadContext(fields) {

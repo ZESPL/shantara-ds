@@ -56,7 +56,7 @@ Fire when the Ask the Doctor form confirms a successful submission.
 
 Properties: `page_type`; `source_page`; `locale` (added centrally).
 
-This is user-generated content, not a lead. Never fire `generate_lead` for it, and never send the question text to analytics.
+This is user-generated content, not a lead. Never fire `generate_lead` for it. Name and email may go to OpenPanel with the profile. Never send the question text to OpenPanel or GA4. Never send name or email to GA4.
 
 #### `press_request_submitted`
 
@@ -64,7 +64,7 @@ Fire when the hosted-visits form at `/en/hosted-stays` confirms a successful sub
 
 Properties: `form_id` (`press`); `page_type` (`contact`); `source_page`; `visit_type` (`hosted` | `press`); `locale` (added centrally).
 
-This is not a guest lead. Never fire `generate_lead` for it, and never send names, contact details, or the written answers to analytics.
+This is not a guest lead. Never fire `generate_lead` for it. Pass the form's keyed fields on the event. OpenPanel receives them and identifies a profile. Do not send name, email, phone, or the written answers to GA4.
 
 #### `contact_click`
 
@@ -82,11 +82,15 @@ Page paths and standard analytics already answer many of these questions.
 
 ### Privacy
 
-Never send to GA4 or OpenPanel: name; email; phone; consultation free text; diagnosis; symptoms; medication; medical history; other health information.
+OpenPanel receives every keyed field on the event, except health information and the Ask the Doctor question text. When the payload includes an email or a phone, call `openpanel.identify` before `openpanel.track` so the same keys are stored on a profile.
 
-If identity linkage is ever required, use opaque internal identifiers.
+`profileId` is the email. When email is absent, `profileId` is the phone. Map `full_name` or `name` to `firstName`. Set `email` and `phone` as profile traits. Put the keyed fields on `properties`.
 
-Analytics is not the CRM.
+Do not send name, email, or phone to GA4. Do not send consultation free text or written answers to GA4. GA4 receives the event properties listed above (`form_id`, `page_type`, `source_page`, `locale`, and the rest of each event's list).
+
+Never send to OpenPanel or GA4: diagnosis; symptoms; medication; medical history; other health information; the Ask the Doctor question text.
+
+Analytics is not the clinical record, and it is not the CRM.
 
 ICP and overlay fields (`primary_icp`, `country`, `landing_page`, and the rest of the taxonomy in [`docs/icp.md`](../../docs/icp.md)) belong in CRM or a carefully designed reporting layer. Do not automatically push need-state or health detail into ad platforms. Do not add extra pixel events at launch just to record ICP. Infer ICP from landing page and campaign where possible.
 

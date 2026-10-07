@@ -137,7 +137,9 @@ Verify:
 - [ ] Source page/context and locale are captured automatically.
 - [ ] Field keys stay `full_name`, `phone`, `email`, `country`, `notes`.
 - [ ] Form success is confirmed before `generate_lead`.
-- [ ] GA4/OpenPanel receive no PII or health data.
+- [ ] OpenPanel receives the form's keyed fields and identifies a profile (`profileId` is the email, otherwise the phone).
+- [ ] GA4 receives no name, email, or phone, and no free text or written answers.
+- [ ] Neither OpenPanel nor GA4 receives diagnosis, symptoms, medication, medical history, or other health information.
 - [ ] CTA click is not counted as a successful lead.
 - [ ] WhatsApp/phone/email use `contact_click`.
 - [ ] Success state tells the visitor what happens next.

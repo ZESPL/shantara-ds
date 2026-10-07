@@ -11,7 +11,7 @@ Writers, editors and creators request a hosted visit here. The page is quiet fir
 - Indexable. Include it in the sitemap for each published locale. `robots` is `index, follow`.
 - Do not link it from the navigation, the footer, or any guest page. There is no kit sample and no mockup.
 - Do not put a tariff on this page, and do not link to the tariff card. Do not add Book a Consultation in the page body.
-- This is not a guest lead. Submit through Web3Forms to the sales and partnerships inbox. Fire `press_request_submitted` only after a confirmed send, with `form_id` `press`, `page_type` `contact`, `source_page`, and `visit_type` (`hosted` or `press`). Never fire `generate_lead`. Do not send names, contact details, or written answers to analytics.
+- This is not a guest lead. Submit through Web3Forms to the sales and partnerships inbox. Fire `press_request_submitted` only after a confirmed send, with `form_id` `press`, `page_type` `contact`, `source_page`, `visit_type` (`hosted` or `press`), and the form's keyed fields. Never fire `generate_lead`. OpenPanel receives those keys and identifies a profile. Do not send name, email, phone, or the written answers to GA4.
 - English is the source. Every visitor-facing string goes through `t()`. Do not translate the page in this kit.
 - Hero: `HeroStatement`, the same editorial family as Contact. No eyebrow. The title is the only heading in the opening.
 

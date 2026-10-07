@@ -61,11 +61,12 @@ Recorded on 25 September 2026. The rules below already follow them.
 | [Performance (PERF)](performance.md) | PERF-01 to PERF-06 | Core Web Vitals, CDN, fonts, pop-ups, back/forward cache, prefetch |
 | [Security and hosts (SEC)](security.md) | SEC-01 to SEC-04 | HTTPS, HSTS, exposed files, Content-Security-Policy |
 | [AI answers, AI agents and local presence (AI)](ai.md) | AI-01 to AI-11 | Answer-first writing, facts, name and address consistency, Google Business Profile, AI agents, llms.txt |
-| [Measurement (MEAS)](measurement.md) | MEAS-01 to MEAS-07 | Search Console, Bing, launch events, health data privacy, AI assistant referrals, alerts |
+| [Measurement (MEAS)](measurement.md) | MEAS-01 to MEAS-07 | Search Console, Bing, launch events, analytics privacy, AI assistant referrals, alerts |
 | [Do not do this](do-not.md) | — | Outdated or wrong SEO advice to ignore |
 
 ## Change log
 
+- **1.7, 7 October 2026.** MEAS-03: OpenPanel receives keyed form fields and identifies a profile. Name, email, and phone stay out of GA4. Health data stays out of both.
 - **1.6, 6 October 2026.** Video: native `<video>` on Cloudflare R2 + CDN only. SCHEMA-16 adds `VideoObject` to the one `@graph`. CRAWL-10 adds the video sitemap. The standard is [skill-video.md](../skill-video.md). YouTube, Vimeo, Cloudflare Stream and Mux embeds are refused.
 - **1.5, 25 September 2026.** Share images: generated at build time from three templates instead of a plain crop of the hero photograph (SOCIAL-02), with `og:image` dimensions and alt text (SOCIAL-01), `twitter:image` (SOCIAL-03), and the default image for noindex and uncovered pages (SOCIAL-04). The standard is [skill-og-images.md](../skill-og-images.md).
 - **1.4, 25 September 2026.** Rates: any number of currencies from the production Keystatic tariff, exact amounts, no tax breakdown (RATE-02), same default currency for everyone (RATE-03), new RATE-05 keeps rate-sheet internals off the site. This design system holds no rates.

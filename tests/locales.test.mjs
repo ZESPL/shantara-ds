@@ -135,19 +135,105 @@ test("sitemap lists only published localized pages", () => {
   assert.ok(entries[0].alternates.some((a) => a.hreflang === "x-default"));
 });
 
-test("analytics events stay English and receive a locale property; PII is stripped", () => {
-  const lead = L.track("generate_lead", { form_id: "consultation", name: "Ada", email: "ada@example.com", page_type: "consultation" }, { locale: "en" });
-  assert.equal(lead.ok, true);
-  assert.equal(lead.eventName, "generate_lead");
-  assert.equal(lead.properties.locale, "en");
-  assert.equal(lead.properties.name, undefined);
-  assert.equal(lead.properties.email, undefined);
-  assert.equal(L.track("consultation_cta_click_ar", {}).ok, false);
-  const press = L.track("press_request_submitted", { form_id: "press", visit_type: "hosted", companion_name: "Ada", why_shantara: "A story" }, { locale: "en" });
-  assert.equal(press.ok, true);
-  assert.equal(press.properties.visit_type, "hosted");
-  assert.equal(press.properties.companion_name, undefined);
-  assert.equal(press.properties.why_shantara, undefined);
+test("OpenPanel receives keyed fields and a profile; GA4 omits name, email and phone", () => {
+  const calls = [];
+  const previousWindow = globalThis.window;
+  globalThis.window = {
+    gtag(command, eventName, properties) {
+      calls.push({ dest: "ga4", command, eventName, properties });
+    },
+    openpanel: {
+      identify(profile) { calls.push({ dest: "identify", profile }); },
+      track(eventName, properties) { calls.push({ dest: "openpanel", eventName, properties }); },
+    },
+    dispatchEvent() {},
+  };
+
+  try {
+    const lead = L.track("generate_lead", {
+      form_id: "consultation",
+      full_name: "Ada Lovelace",
+      name: "Ada",
+      email: "ada@example.com",
+      phone: "+910000000000",
+      country: "IN",
+      notes: "A note",
+      diagnosis: "secret",
+      question: "Will this help?",
+      page_type: "consultation",
+    }, { locale: "en" });
+    assert.equal(lead.ok, true);
+    assert.equal(lead.eventName, "generate_lead");
+    assert.equal(lead.properties.locale, "en");
+    assert.equal(lead.properties.page_type, "consultation");
+    assert.equal(lead.properties.country, "IN");
+    assert.equal(lead.properties.name, undefined);
+    assert.equal(lead.properties.full_name, undefined);
+    assert.equal(lead.properties.email, undefined);
+    assert.equal(lead.properties.phone, undefined);
+    assert.equal(lead.properties.notes, undefined);
+    assert.equal(lead.properties.diagnosis, undefined);
+    assert.equal(lead.properties.question, undefined);
+
+    assert.equal(lead.openpanel.full_name, "Ada Lovelace");
+    assert.equal(lead.openpanel.name, "Ada");
+    assert.equal(lead.openpanel.email, "ada@example.com");
+    assert.equal(lead.openpanel.phone, "+910000000000");
+    assert.equal(lead.openpanel.country, "IN");
+    assert.equal(lead.openpanel.notes, "A note");
+    assert.equal(lead.openpanel.locale, "en");
+    assert.equal(lead.openpanel.diagnosis, undefined);
+    assert.equal(lead.openpanel.question, undefined);
+
+    assert.equal(lead.profile.profileId, "ada@example.com");
+    assert.equal(lead.profile.firstName, "Ada Lovelace");
+    assert.equal(lead.profile.email, "ada@example.com");
+    assert.equal(lead.profile.phone, "+910000000000");
+    assert.equal(lead.profile.properties.full_name, "Ada Lovelace");
+    assert.equal(lead.profile.properties.notes, "A note");
+    assert.equal(lead.profile.properties.country, "IN");
+    assert.equal(lead.profile.properties.diagnosis, undefined);
+    assert.equal(lead.profile.properties.question, undefined);
+
+    assert.equal(calls.find((call) => call.dest === "ga4").properties.email, undefined);
+    assert.equal(calls.find((call) => call.dest === "ga4").properties.phone, undefined);
+    assert.equal(calls.find((call) => call.dest === "openpanel").properties.email, "ada@example.com");
+    assert.equal(calls.find((call) => call.dest === "identify").profile.profileId, "ada@example.com");
+    assert.ok(calls.findIndex((call) => call.dest === "identify") < calls.findIndex((call) => call.dest === "openpanel"));
+
+    const phoneOnly = L.track("generate_lead", { form_id: "consultation", phone: "+91111", page_type: "consultation" }, { locale: "en" });
+    assert.equal(phoneOnly.profile.profileId, "+91111");
+    assert.equal(phoneOnly.profile.email, undefined);
+    assert.equal(phoneOnly.properties.phone, undefined);
+    assert.equal(phoneOnly.openpanel.phone, "+91111");
+
+    const namedOnly = L.track("generate_lead", { form_id: "consultation", full_name: "Ada", page_type: "consultation" }, { locale: "en" });
+    assert.equal(namedOnly.profile, null);
+    assert.equal(namedOnly.openpanel.full_name, "Ada");
+    assert.equal(namedOnly.properties.full_name, undefined);
+
+    assert.equal(L.track("consultation_cta_click_ar", {}).ok, false);
+    const press = L.track("press_request_submitted", {
+      form_id: "press",
+      visit_type: "hosted",
+      email: "ada@example.com",
+      companion_name: "Ada",
+      why_shantara: "A story",
+    }, { locale: "en" });
+    assert.equal(press.ok, true);
+    assert.equal(press.properties.visit_type, "hosted");
+    assert.equal(press.properties.companion_name, undefined);
+    assert.equal(press.properties.why_shantara, undefined);
+    assert.equal(press.properties.email, undefined);
+    assert.equal(press.openpanel.companion_name, "Ada");
+    assert.equal(press.openpanel.why_shantara, "A story");
+    assert.equal(press.openpanel.email, "ada@example.com");
+    assert.equal(press.profile.profileId, "ada@example.com");
+    assert.equal(press.profile.properties.why_shantara, "A story");
+  } finally {
+    if (previousWindow === undefined) delete globalThis.window;
+    else globalThis.window = previousWindow;
+  }
 });
 
 test("form field keys are stable English identifiers", () => {

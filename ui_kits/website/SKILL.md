@@ -200,7 +200,7 @@ Launch custom events only:
 
 `locale` is attached centrally by `ShantaraLocales.track()`. Do not create `consultation_cta_click_ar`. Do not send translated user-entered medical data to analytics.
 
-Never send name, email, phone, free text, diagnosis, symptoms, medication, or medical history to GA4 or OpenPanel.
+On a confirmed submission, pass every form field key into `track()`. OpenPanel receives those keyed fields and identifies a profile: `profileId` is the email, otherwise the phone; `full_name` maps to `firstName`. Do not send name, email, or phone to GA4. Do not send free text or written answers to GA4. Do not send diagnosis, symptoms, medication, medical history, or the Ask the Doctor question to OpenPanel or GA4.
 
 Primary funnel: Page View → Consultation CTA Click → Form Start → Generate Lead.
 
