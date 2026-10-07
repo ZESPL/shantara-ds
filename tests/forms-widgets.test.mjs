@@ -8,6 +8,7 @@ import {
   fold,
   formatLong,
   highlightParts,
+  pointerMovesHighlight,
   inRange,
   monthIntersects,
   normalizeOptions,
@@ -97,6 +98,14 @@ test("free text keeps English and drops other scripts", () => {
   assert.equal(acceptsEnglish("tel"), true);
   assert.equal(acceptsEnglish("password"), false);
   assert.equal(acceptsEnglish("number"), false);
+});
+
+test("a still or touch pointer does not retarget the search highlight", () => {
+  assert.equal(pointerMovesHighlight(null), false);
+  assert.equal(pointerMovesHighlight({ pointerType: "touch", movementX: 4, movementY: 0 }), false);
+  assert.equal(pointerMovesHighlight({ pointerType: "mouse", movementX: 0, movementY: 0 }), false);
+  assert.equal(pointerMovesHighlight({ pointerType: "mouse", movementX: 2, movementY: 0 }), true);
+  assert.equal(pointerMovesHighlight({ pointerType: "pen", movementX: 0, movementY: -3 }), true);
 });
 
 test("search matches accents and highlights the typed span", () => {

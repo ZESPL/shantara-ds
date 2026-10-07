@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"ShantaraDesignSystem_45bbe4","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"Divider","sourcePath":"components/core/Divider.jsx"},{"name":"ICON_GROUPS","sourcePath":"components/core/Icon.jsx"},{"name":"ICON_NAMES","sourcePath":"components/core/Icon.jsx"},{"name":"Icon","sourcePath":"components/core/Icon.jsx"},{"name":"IconButton","sourcePath":"components/core/IconButton.jsx"},{"name":"Logo","sourcePath":"components/core/Logo.jsx"},{"name":"PatternPanel","sourcePath":"components/core/PatternPanel.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Dialog","sourcePath":"components/feedback/Dialog.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"DateField","sourcePath":"components/forms/DateField.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"SearchList","sourcePath":"components/forms/SearchList.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Switch","sourcePath":"components/forms/Switch.jsx"},{"name":"Textarea","sourcePath":"components/forms/Textarea.jsx"},{"name":"Accordion","sourcePath":"components/navigation/Accordion.jsx"},{"name":"Breadcrumbs","sourcePath":"components/navigation/Breadcrumbs.jsx"},{"name":"LanguageSelector","sourcePath":"components/navigation/LanguageSelector.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"Media","sourcePath":"components/editorial/Media.jsx"},{"name":"ArticleFigure","sourcePath":"components/editorial/ArticleFigure.jsx"},{"name":"PortraitFrame","sourcePath":"components/editorial/PortraitFrame.jsx"},{"name":"AuthorCard","sourcePath":"components/editorial/AuthorCard.jsx"},{"name":"GroupedList","sourcePath":"components/editorial/GroupedList.jsx"},{"name":"MetaRow","sourcePath":"components/editorial/MetaRow.jsx"},{"name":"NumberedSteps","sourcePath":"components/editorial/NumberedSteps.jsx"},{"name":"Numeral","sourcePath":"components/editorial/Numeral.jsx"},{"name":"Pagination","sourcePath":"components/editorial/Pagination.jsx"},{"name":"PlainList","sourcePath":"components/editorial/PlainList.jsx"},{"name":"Prose","sourcePath":"components/editorial/Prose.jsx"},{"name":"QuoteBlock","sourcePath":"components/editorial/QuoteBlock.jsx"},{"name":"ReviewedBy","sourcePath":"components/editorial/ReviewedBy.jsx"},{"name":"ShareBar","sourcePath":"components/editorial/ShareBar.jsx"},{"name":"SpecTable","sourcePath":"components/editorial/SpecTable.jsx"},{"name":"Statement","sourcePath":"components/editorial/Statement.jsx"},{"name":"TableOfContents","sourcePath":"components/editorial/TableOfContents.jsx"},{"name":"TextLink","sourcePath":"components/editorial/TextLink.jsx"},{"name":"Tile","sourcePath":"components/editorial/Tile.jsx"},{"name":"TimeTable","sourcePath":"components/editorial/TimeTable.jsx"},{"name":"ArticleHeader","sourcePath":"components/sections/ArticleHeader.jsx"},{"name":"BandStatement","sourcePath":"components/sections/BandStatement.jsx"},{"name":"ClosingCTA","sourcePath":"components/sections/ClosingCTA.jsx"},{"name":"FormSplit","sourcePath":"components/sections/FormSplit.jsx"},{"name":"HeroFullBleed","sourcePath":"components/sections/HeroFullBleed.jsx"},{"name":"HeroSplit","sourcePath":"components/sections/HeroSplit.jsx"},{"name":"HeroStatement","sourcePath":"components/sections/HeroStatement.jsx"},{"name":"IndexList","sourcePath":"components/sections/IndexList.jsx"},{"name":"NumeralsSplit","sourcePath":"components/sections/NumeralsSplit.jsx"},{"name":"PanoramaCaption","sourcePath":"components/sections/PanoramaCaption.jsx"},{"name":"PeopleRow","sourcePath":"components/sections/PeopleRow.jsx"},{"name":"TileGrid","sourcePath":"components/sections/TileGrid.jsx"},{"name":"RelatedArticles","sourcePath":"components/sections/RelatedArticles.jsx"},{"name":"Section","sourcePath":"components/sections/Section.jsx"},{"name":"SplitSection","sourcePath":"components/sections/SplitSection.jsx"}],"sourceHashes":{"components/core/Badge.jsx":"b014d0a4d8ea","components/core/Button.jsx":"66ad8b155d36","components/core/Card.jsx":"899ecf09e977","components/core/Divider.jsx":"7841bbb870dd","components/core/Icon.jsx":"7eaaf731593f","components/core/IconButton.jsx":"0746d0dc8fb3","components/core/Logo.jsx":"82ebb0dfac10","components/core/PatternPanel.jsx":"dd26bb639ce9","components/core/Tag.jsx":"480f3225f1d4","components/feedback/Dialog.jsx":"c1b84ed6f276","components/feedback/Spinner.jsx":"49fa70a95320","components/feedback/Toast.jsx":"c64129df2a1a","components/feedback/Tooltip.jsx":"9c7b40a94408","components/forms/Checkbox.jsx":"621ba3e2309a","components/forms/DateField.jsx":"a4fef507a824","components/forms/Input.jsx":"1321df74a451","components/forms/Radio.jsx":"861dea337cdb","components/forms/SearchList.jsx":"c0add5cde783","components/forms/Select.jsx":"4ebda94f9354","components/forms/Switch.jsx":"73709580dd9e","components/forms/Textarea.jsx":"e40a2c1357c6","components/navigation/Accordion.jsx":"b8870511c6fe","components/navigation/Breadcrumbs.jsx":"421f19e62be1","components/navigation/LanguageSelector.jsx":"3255d13574aa","components/navigation/Tabs.jsx":"414b48cd2f58","components/editorial/Media.jsx":"33a6b0c1bfde","components/editorial/ArticleFigure.jsx":"f7689927c7db","components/editorial/PortraitFrame.jsx":"6b53471987b8","components/editorial/AuthorCard.jsx":"e96ed75df2fb","components/editorial/GroupedList.jsx":"d8cd9e26b4bf","components/editorial/MetaRow.jsx":"8c95d79ee5e1","components/editorial/NumberedSteps.jsx":"6f2950654a05","components/editorial/Numeral.jsx":"e6b7086ade4c","components/editorial/Pagination.jsx":"893e51b7753d","components/editorial/PlainList.jsx":"2d7a0d571c4a","components/editorial/Prose.jsx":"1b1a9a3ffec2","components/editorial/QuoteBlock.jsx":"c79559f0cb83","components/editorial/ReviewedBy.jsx":"cf907ffdf4c1","components/editorial/ShareBar.jsx":"a5d673d91fb9","components/editorial/SpecTable.jsx":"097e36746780","components/editorial/Statement.jsx":"50cb58806250","components/editorial/TableOfContents.jsx":"f92f3b4de4c4","components/editorial/TextLink.jsx":"b730c74e745f","components/editorial/Tile.jsx":"4ebf341907e5","components/editorial/TimeTable.jsx":"610e5af78002","components/sections/ArticleHeader.jsx":"5444f56b29bf","components/sections/BandStatement.jsx":"28aa51447566","components/sections/ClosingCTA.jsx":"e010d9783ea4","components/sections/FormSplit.jsx":"86987313de54","components/sections/HeroFullBleed.jsx":"90de10fed20c","components/sections/HeroSplit.jsx":"e43e0f969b2f","components/sections/HeroStatement.jsx":"812f5fd0454a","components/sections/IndexList.jsx":"4a13d2f62a15","components/sections/NumeralsSplit.jsx":"58792a80105c","components/sections/PanoramaCaption.jsx":"34b6e6fbaf48","components/sections/PeopleRow.jsx":"fbf817dcc648","components/sections/TileGrid.jsx":"577cfcc55a90","components/sections/RelatedArticles.jsx":"8452368a277c","components/sections/Section.jsx":"eacd861e84d9","components/sections/SplitSection.jsx":"42b09796c47a"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":4,"namespace":"ShantaraDesignSystem_45bbe4","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"Divider","sourcePath":"components/core/Divider.jsx"},{"name":"ICON_GROUPS","sourcePath":"components/core/Icon.jsx"},{"name":"ICON_NAMES","sourcePath":"components/core/Icon.jsx"},{"name":"Icon","sourcePath":"components/core/Icon.jsx"},{"name":"IconButton","sourcePath":"components/core/IconButton.jsx"},{"name":"Logo","sourcePath":"components/core/Logo.jsx"},{"name":"PatternPanel","sourcePath":"components/core/PatternPanel.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Dialog","sourcePath":"components/feedback/Dialog.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"DateField","sourcePath":"components/forms/DateField.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"SearchList","sourcePath":"components/forms/SearchList.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Switch","sourcePath":"components/forms/Switch.jsx"},{"name":"Textarea","sourcePath":"components/forms/Textarea.jsx"},{"name":"Accordion","sourcePath":"components/navigation/Accordion.jsx"},{"name":"Breadcrumbs","sourcePath":"components/navigation/Breadcrumbs.jsx"},{"name":"LanguageSelector","sourcePath":"components/navigation/LanguageSelector.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"Media","sourcePath":"components/editorial/Media.jsx"},{"name":"ArticleFigure","sourcePath":"components/editorial/ArticleFigure.jsx"},{"name":"PortraitFrame","sourcePath":"components/editorial/PortraitFrame.jsx"},{"name":"AuthorCard","sourcePath":"components/editorial/AuthorCard.jsx"},{"name":"GroupedList","sourcePath":"components/editorial/GroupedList.jsx"},{"name":"MetaRow","sourcePath":"components/editorial/MetaRow.jsx"},{"name":"NumberedSteps","sourcePath":"components/editorial/NumberedSteps.jsx"},{"name":"Numeral","sourcePath":"components/editorial/Numeral.jsx"},{"name":"Pagination","sourcePath":"components/editorial/Pagination.jsx"},{"name":"PlainList","sourcePath":"components/editorial/PlainList.jsx"},{"name":"Prose","sourcePath":"components/editorial/Prose.jsx"},{"name":"QuoteBlock","sourcePath":"components/editorial/QuoteBlock.jsx"},{"name":"ReviewedBy","sourcePath":"components/editorial/ReviewedBy.jsx"},{"name":"ShareBar","sourcePath":"components/editorial/ShareBar.jsx"},{"name":"SpecTable","sourcePath":"components/editorial/SpecTable.jsx"},{"name":"Statement","sourcePath":"components/editorial/Statement.jsx"},{"name":"TableOfContents","sourcePath":"components/editorial/TableOfContents.jsx"},{"name":"TextLink","sourcePath":"components/editorial/TextLink.jsx"},{"name":"Tile","sourcePath":"components/editorial/Tile.jsx"},{"name":"TimeTable","sourcePath":"components/editorial/TimeTable.jsx"},{"name":"ArticleHeader","sourcePath":"components/sections/ArticleHeader.jsx"},{"name":"BandStatement","sourcePath":"components/sections/BandStatement.jsx"},{"name":"ClosingCTA","sourcePath":"components/sections/ClosingCTA.jsx"},{"name":"FormSplit","sourcePath":"components/sections/FormSplit.jsx"},{"name":"HeroFullBleed","sourcePath":"components/sections/HeroFullBleed.jsx"},{"name":"HeroSplit","sourcePath":"components/sections/HeroSplit.jsx"},{"name":"HeroStatement","sourcePath":"components/sections/HeroStatement.jsx"},{"name":"IndexList","sourcePath":"components/sections/IndexList.jsx"},{"name":"NumeralsSplit","sourcePath":"components/sections/NumeralsSplit.jsx"},{"name":"PanoramaCaption","sourcePath":"components/sections/PanoramaCaption.jsx"},{"name":"PeopleRow","sourcePath":"components/sections/PeopleRow.jsx"},{"name":"TileGrid","sourcePath":"components/sections/TileGrid.jsx"},{"name":"RelatedArticles","sourcePath":"components/sections/RelatedArticles.jsx"},{"name":"Section","sourcePath":"components/sections/Section.jsx"},{"name":"SplitSection","sourcePath":"components/sections/SplitSection.jsx"}],"sourceHashes":{"components/core/Badge.jsx":"b014d0a4d8ea","components/core/Button.jsx":"66ad8b155d36","components/core/Card.jsx":"899ecf09e977","components/core/Divider.jsx":"7841bbb870dd","components/core/Icon.jsx":"7eaaf731593f","components/core/IconButton.jsx":"0746d0dc8fb3","components/core/Logo.jsx":"82ebb0dfac10","components/core/PatternPanel.jsx":"dd26bb639ce9","components/core/Tag.jsx":"480f3225f1d4","components/feedback/Dialog.jsx":"c1b84ed6f276","components/feedback/Spinner.jsx":"49fa70a95320","components/feedback/Toast.jsx":"c64129df2a1a","components/feedback/Tooltip.jsx":"9c7b40a94408","components/forms/Checkbox.jsx":"621ba3e2309a","components/forms/DateField.jsx":"a4fef507a824","components/forms/Input.jsx":"1321df74a451","components/forms/Radio.jsx":"861dea337cdb","components/forms/SearchList.jsx":"39137752d536","components/forms/Select.jsx":"4ebda94f9354","components/forms/Switch.jsx":"73709580dd9e","components/forms/Textarea.jsx":"e40a2c1357c6","components/navigation/Accordion.jsx":"b8870511c6fe","components/navigation/Breadcrumbs.jsx":"421f19e62be1","components/navigation/LanguageSelector.jsx":"3255d13574aa","components/navigation/Tabs.jsx":"414b48cd2f58","components/editorial/Media.jsx":"33a6b0c1bfde","components/editorial/ArticleFigure.jsx":"f7689927c7db","components/editorial/PortraitFrame.jsx":"6b53471987b8","components/editorial/AuthorCard.jsx":"e96ed75df2fb","components/editorial/GroupedList.jsx":"d8cd9e26b4bf","components/editorial/MetaRow.jsx":"8c95d79ee5e1","components/editorial/NumberedSteps.jsx":"6f2950654a05","components/editorial/Numeral.jsx":"e6b7086ade4c","components/editorial/Pagination.jsx":"893e51b7753d","components/editorial/PlainList.jsx":"2d7a0d571c4a","components/editorial/Prose.jsx":"1b1a9a3ffec2","components/editorial/QuoteBlock.jsx":"c79559f0cb83","components/editorial/ReviewedBy.jsx":"cf907ffdf4c1","components/editorial/ShareBar.jsx":"a5d673d91fb9","components/editorial/SpecTable.jsx":"097e36746780","components/editorial/Statement.jsx":"50cb58806250","components/editorial/TableOfContents.jsx":"f92f3b4de4c4","components/editorial/TextLink.jsx":"b730c74e745f","components/editorial/Tile.jsx":"4ebf341907e5","components/editorial/TimeTable.jsx":"610e5af78002","components/sections/ArticleHeader.jsx":"5444f56b29bf","components/sections/BandStatement.jsx":"28aa51447566","components/sections/ClosingCTA.jsx":"e010d9783ea4","components/sections/FormSplit.jsx":"86987313de54","components/sections/HeroFullBleed.jsx":"90de10fed20c","components/sections/HeroSplit.jsx":"e43e0f969b2f","components/sections/HeroStatement.jsx":"812f5fd0454a","components/sections/IndexList.jsx":"4a13d2f62a15","components/sections/NumeralsSplit.jsx":"58792a80105c","components/sections/PanoramaCaption.jsx":"34b6e6fbaf48","components/sections/PeopleRow.jsx":"fbf817dcc648","components/sections/TileGrid.jsx":"577cfcc55a90","components/sections/RelatedArticles.jsx":"8452368a277c","components/sections/Section.jsx":"eacd861e84d9","components/sections/SplitSection.jsx":"42b09796c47a"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -1495,6 +1495,14 @@ function filterOptions(options, query) {
   if (!q) return options;
   return options.filter(option => fold(option.label).includes(q) || option.description && fold(option.description).includes(q));
 }
+
+/** A real pointer move should retarget the highlight. Touch and a stationary
+ *  pointer (the list scrolled underneath it) must not — otherwise the highlight
+ *  scroll chases the cursor to the top or the bottom. */
+function pointerMovesHighlight(event) {
+  if (!event || event.pointerType === "touch") return false;
+  return event.movementX !== 0 || event.movementY !== 0;
+}
 function highlightParts(label, query) {
   const text = String(label ?? "");
   const q = String(query ?? "").trim();
@@ -2793,6 +2801,14 @@ function filterOptions(options, query) {
   if (!q) return options;
   return options.filter(option => fold(option.label).includes(q) || option.description && fold(option.description).includes(q));
 }
+
+/** A real pointer move should retarget the highlight. Touch and a stationary
+ *  pointer (the list scrolled underneath it) must not — otherwise the highlight
+ *  scroll chases the cursor to the top or the bottom. */
+function pointerMovesHighlight(event) {
+  if (!event || event.pointerType === "touch") return false;
+  return event.movementX !== 0 || event.movementY !== 0;
+}
 function highlightParts(label, query) {
   const text = String(label ?? "");
   const q = String(query ?? "").trim();
@@ -3077,6 +3093,8 @@ function SearchList({
   const anchorRef = React.useRef(null);
   const panelRef = React.useRef(null);
   const inputRef = React.useRef(null);
+  const highlightFrom = React.useRef("keys");
+  const revealLock = React.useRef(0);
   const filtered = React.useMemo(() => filterOptions(options, open && typed ? query : ""), [options, open, typed, query]);
   const activeSafe = filtered.length ? Math.min(active, filtered.length - 1) : 0;
   const shown = open && typed ? query : selected ? selected.label : "";
@@ -3101,6 +3119,7 @@ function SearchList({
       setOpen(true);
       return;
     }
+    highlightFrom.current = "keys";
     setOpen(true);
     setActive(index => {
       const currentIndex = list.findIndex(option => option.value === current);
@@ -3148,13 +3167,23 @@ function SearchList({
     return () => document.removeEventListener("mousedown", onDoc);
   }, [open]);
   React.useEffect(() => {
-    if (!open || !panelRef.current) return undefined;
+    if (!open || !panelRef.current || highlightFrom.current === "pointer") return undefined;
     const list = panelRef.current.querySelector(".sh-search-list");
     const el = panelRef.current.querySelector("[data-active='true']");
     if (!list || !el) return undefined;
     const item = el.getBoundingClientRect();
     const box = list.getBoundingClientRect();
-    if (item.top < box.top) list.scrollTop -= box.top - item.top;else if (item.bottom > box.bottom) list.scrollTop += item.bottom - box.bottom;
+    let delta = 0;
+    if (item.top < box.top) delta = item.top - box.top;else if (item.bottom > box.bottom) delta = item.bottom - box.bottom;
+    if (!delta) return undefined;
+    const lock = revealLock.current + 1;
+    revealLock.current = lock;
+    list.scrollTop += delta;
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        if (revealLock.current === lock) revealLock.current = 0;
+      });
+    });
     return undefined;
   }, [open, activeSafe, filtered.length]);
   React.useLayoutEffect(() => {
@@ -3224,6 +3253,7 @@ function SearchList({
     },
     onChange: e => {
       setEnglishNote(stripForeignInput(e));
+      highlightFrom.current = "keys";
       setTyped(true);
       setQuery(e.target.value);
       setActive(0);
@@ -3231,6 +3261,7 @@ function SearchList({
     },
     onFocus: e => {
       if (disabled) return;
+      highlightFrom.current = "keys";
       setOpen(true);
       setTyped(false);
       const index = options.findIndex(option => option.value === current);
@@ -3282,7 +3313,11 @@ function SearchList({
     "data-active": index === activeSafe ? "true" : "false",
     className: "sh-search-opt",
     onMouseDown: e => e.preventDefault(),
-    onMouseEnter: () => setActive(index),
+    onPointerMove: e => {
+      if (revealLock.current || !pointerMovesHighlight(e)) return;
+      highlightFrom.current = "pointer";
+      if (index !== activeSafe) setActive(index);
+    },
     onClick: () => commit(option.value)
   }, /*#__PURE__*/React.createElement("span", {
     className: "sh-search-copy"

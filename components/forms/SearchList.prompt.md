@@ -9,6 +9,8 @@ Same 52px chrome as `Input`. `options` are strings or `{ value, label, descripti
 
 **Keyboard.** Arrow Down and Arrow Up move the highlight and open the list. Enter picks the highlighted row. Escape closes without changing the value. The field is a combobox (`aria-expanded`, `aria-activedescendant`).
 
+**Pointer.** Moving onto a row highlights it and leaves the scroll position where it is. A stationary pointer does not follow rows that slide underneath it, so the list does not chase the cursor.
+
 **Motion.** The list rises 8px over 160ms. The highlighted row uses the raised ground. The chosen row keeps a Himalaya tick. The chevron does not spin.
 
 **English only.** The search box accepts the same characters as `Input`. Other scripts are removed, and the hint becomes “Please write in English.” Use an English `value` when the team will read the choice; the label can still be translated.

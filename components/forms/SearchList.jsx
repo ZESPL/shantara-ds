@@ -1,5 +1,5 @@
 import React from "react";
-import { filterOptions, highlightParts, normalizeOptions } from "./fieldLogic.mjs";
+import { filterOptions, highlightParts, normalizeOptions, pointerMovesHighlight } from "./fieldLogic.mjs";
 import { ENGLISH_HINT, rejectForeignInsert, stripForeignInput } from "./englishText.mjs";
 
 /* Shared field chrome — same rules and style id as Input, Textarea and Select. */
@@ -158,6 +158,8 @@ export function SearchList({
   const anchorRef = React.useRef(null);
   const panelRef = React.useRef(null);
   const inputRef = React.useRef(null);
+  const highlightFrom = React.useRef("keys");
+  const revealLock = React.useRef(0);
 
   const filtered = React.useMemo(
     () => filterOptions(options, open && typed ? query : ""),
@@ -186,6 +188,7 @@ export function SearchList({
   function move(delta) {
     const list = typed ? filterOptions(options, query) : options;
     if (!list.length) { setOpen(true); return; }
+    highlightFrom.current = "keys";
     setOpen(true);
     setActive((index) => {
       const currentIndex = list.findIndex((option) => option.value === current);
@@ -228,14 +231,24 @@ export function SearchList({
   }, [open]);
 
   React.useEffect(() => {
-    if (!open || !panelRef.current) return undefined;
+    if (!open || !panelRef.current || highlightFrom.current === "pointer") return undefined;
     const list = panelRef.current.querySelector(".sh-search-list");
     const el = panelRef.current.querySelector("[data-active='true']");
     if (!list || !el) return undefined;
     const item = el.getBoundingClientRect();
     const box = list.getBoundingClientRect();
-    if (item.top < box.top) list.scrollTop -= box.top - item.top;
-    else if (item.bottom > box.bottom) list.scrollTop += item.bottom - box.bottom;
+    let delta = 0;
+    if (item.top < box.top) delta = item.top - box.top;
+    else if (item.bottom > box.bottom) delta = item.bottom - box.bottom;
+    if (!delta) return undefined;
+    const lock = revealLock.current + 1;
+    revealLock.current = lock;
+    list.scrollTop += delta;
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        if (revealLock.current === lock) revealLock.current = 0;
+      });
+    });
     return undefined;
   }, [open, activeSafe, filtered.length]);
 
@@ -296,6 +309,7 @@ export function SearchList({
             }}
             onChange={(e) => {
               setEnglishNote(stripForeignInput(e));
+              highlightFrom.current = "keys";
               setTyped(true);
               setQuery(e.target.value);
               setActive(0);
@@ -303,6 +317,7 @@ export function SearchList({
             }}
             onFocus={(e) => {
               if (disabled) return;
+              highlightFrom.current = "keys";
               setOpen(true);
               setTyped(false);
               const index = options.findIndex((option) => option.value === current);
@@ -349,7 +364,11 @@ export function SearchList({
                     data-active={index === activeSafe ? "true" : "false"}
                     className="sh-search-opt"
                     onMouseDown={(e) => e.preventDefault()}
-                    onMouseEnter={() => setActive(index)}
+                    onPointerMove={(e) => {
+                      if (revealLock.current || !pointerMovesHighlight(e)) return;
+                      highlightFrom.current = "pointer";
+                      if (index !== activeSafe) setActive(index);
+                    }}
                     onClick={() => commit(option.value)}
                   >
                     <span className="sh-search-copy">

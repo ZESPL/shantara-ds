@@ -174,6 +174,14 @@ export function filterOptions(options, query) {
   return options.filter((option) => fold(option.label).includes(q) || (option.description && fold(option.description).includes(q)));
 }
 
+/** A real pointer move should retarget the highlight. Touch and a stationary
+ *  pointer (the list scrolled underneath it) must not — otherwise the highlight
+ *  scroll chases the cursor to the top or the bottom. */
+export function pointerMovesHighlight(event) {
+  if (!event || event.pointerType === "touch") return false;
+  return event.movementX !== 0 || event.movementY !== 0;
+}
+
 export function highlightParts(label, query) {
   const text = String(label ?? "");
   const q = String(query ?? "").trim();
