@@ -1252,7 +1252,7 @@ window.ShantaraContent = {
         "Travancore-Cochin Medical Council (TCMC), Kerala",
         "Saudi Ministry of Health"
       ],
-      "years_practice": "13+",
+      "years_practice": "14+",
       "publications_note": null,
       "biography": "Medical Director at Shantara. Chief Medical Officer at Hygiene Nature Cure Hospital, Kozhikode (2012–2022), Head of Naturopathy at Hi-Tech MediCity, Kozhikode (2022–2023), and Naturopathy Specialist at Cell Fitness Riyadh, Saudi Arabia (2023–2024). Treats the root cause through a drug-free plan of diet and fasting therapy, hydrotherapy, manual therapy, mud therapy, yoga and mind-body work.",
       "areas_of_practice": [
@@ -1337,7 +1337,7 @@ window.ShantaraContent = {
       "photo_profile": "doctor-pa-kareem-portrait-cropped.jpeg",
       "qualification": "Government of India-certified Naturopathy Practitioner",
       "licences": [],
-      "years_practice": "35+",
+      "years_practice": "33+",
       "publications_note": "Author of 17 books and translator of 2 on naturopathy, health and nutrition (Malayalam, English, Arabic)",
       "biography": "Founded Hygiene Nature Cure Hospital in 2000. Trained under the naturopath C. R. R. Varma, and has lectured on naturopathy across India and abroad in Malayalam, Urdu, Hindi and English. Core approach: treat the cause through ethical, drug-free naturopathy.",
       "areas_of_practice": [

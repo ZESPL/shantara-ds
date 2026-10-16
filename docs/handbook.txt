@@ -66,10 +66,10 @@ Modern illness is rarely sudden. It builds quietly through routine, stress, and 
 
 | Name | Role |
 | --- | --- |
-| Dr. P.A. Kareem | Founder and Chairman. Government of India-certified Naturopathy Practitioner, with 35+ years of naturopathy practice and author of 17 books on naturopathy. |
+| Dr. P.A. Kareem | Founder and Chairman. Government of India-certified Naturopathy Practitioner, with 33+ years of naturopathy practice and author of 17 books on naturopathy. |
 | Abdulla Aboobacker | Board Member. Engineer and Industrialist. |
 | Nishan Kareem | Chief Executive Officer. |
-| Dr. Bahja Janu | Medical Director. BNYS (Rajiv Gandhi University of Health Sciences), with 13+ years of clinical naturopathy practice. |
+| Dr. Bahja Janu | Medical Director. BNYS (Rajiv Gandhi University of Health Sciences), with 14+ years of clinical naturopathy practice. |
 
 ## 4. Medical & Wellness Team
 
@@ -80,7 +80,7 @@ Every team member should know who the doctors are and what they specialise in, e
 Founder, Chairman & Chief Naturopathy Consultant
 
 - Government of India-certified Naturopathy Practitioner
-- Practising naturopathy since 1989, which is 35+ years. Use "35+ years" wherever his years of practice appear.
+- 33+ years of naturopathy practice. Use "33+ years" wherever his years of practice appear.
 - Disciple of the naturopath C. R. R. Varma
 - Author of 17 books and translator of 2 more, published in Malayalam, English, and Arabic
 - Founded Hygiene Nature Cure Hospital in 2000, and has personally guided the treatment of more than 25,000 patients since
@@ -92,7 +92,7 @@ Founder, Chairman & Chief Naturopathy Consultant
 | Present positions | Founder, Chairman & Chief Naturopathy Consultant of Hygiene Nature Cure Hospital, Chennamangallur, and of Shantara Naturopathy, Chennamangallur |
 | Naturopathy credential | Government of India Certified Naturopath. Trained under C. R. R. Varma. |
 | Degrees | B.A. in Urdu (Adib-e-Fazil) with Language Teachers' Training. B.A. in History with B.Ed. |
-| Naturopathy practice | Practising since 1989. Has established and run naturopathy hospitals since 2000. |
+| Naturopathy practice | 33+ years. Has established and run naturopathy hospitals since 2000. |
 | Teaching and public service | About 30 years as High School Assistant (Urdu) at the Kerala Government Higher Secondary School, REC, Calicut. Member of the Kerala Government Textbook Committee, 1984–1996. |
 | Public education | Lectures and awareness programmes on naturopathy in Malayalam, Urdu, Hindi and English, across India and abroad |
 | Languages | Malayalam, Urdu, Hindi and English, the languages he lectures in |
@@ -127,7 +127,7 @@ The resume lists the second title as "Prakrthi Chikilsa…", so the full title i
 
 **Settled wording.** Where his resume differs, use these:
 
-- **Years of practice:** 35+ years, counted from 1989.
+- **Years of practice:** 33+ years. Do not use the resume's "since 1989".
 - **Hospital size:** Hygiene Nature Cure Hospital is a 66-bed hospital. Do not use the resume's "160-bed" figure.
 - **Title:** Founder, Chairman & Chief Naturopathy Consultant. Do not use the resume's "Director & Chief Physician".
 - **Hospital name:** Hygiene Nature Cure Hospital. Do not use the resume's "Hygiene Nature Cure & Yoga".
@@ -137,7 +137,7 @@ The resume lists the second title as "Prakrthi Chikilsa…", so the full title i
 Medical Director
 
 - Medical Director at Shantara. Leads clinical operations and the team of naturopaths, nutritionists, physiotherapists and wellness practitioners, and designs the treatment protocols and programmes.
-- 13+ years of clinical naturopathy practice
+- 14+ years of clinical naturopathy practice
 - Chief Medical Officer at Hygiene Nature Cure Hospital, Mukkam, Kozhikode, 2012–2022 (her resume calls it "Hygiene Naturopathy Hospital"). Directed clinical and hospital operations, planned therapeutic diets, and mentored doctors, therapists, interns and trainees.
 - Head of Department, Naturopathy, Hi-Tech MediCity, Kozhikode, 2022–2023. Ran the department and its therapeutic diet programmes.
 - Naturopathy Specialist, Cell Fitness Riyadh, a specialty oxygen clinic in Saudi Arabia, 2023–2024. Gave hyperbaric oxygen therapy (HBOT), acupressure and lifestyle consultations.
@@ -200,7 +200,7 @@ Naturopathy Physician, Lifestyle & Nutrition
 
 ### About these records
 
-The details above for every doctor come from resumes they supplied in October 2026. Dr. P.A. Kareem's entry also keeps the facts this handbook already held. Treat each resume as accurate and do not contradict it. Contact details, home addresses, dates of birth, marks, joining dates and registration numbers were left out on purpose. Each doctor's entry in `content/doctors/` holds the fields the website uses.
+The details above for every doctor come from resumes they supplied in October 2026. Dr. P.A. Kareem's entry also keeps the facts this handbook already held. Treat each resume as accurate and do not contradict it, except where this section gives settled wording, such as years of practice. Contact details, home addresses, dates of birth, marks, joining dates and registration numbers were left out on purpose. Each doctor's entry in `content/doctors/` holds the fields the website uses.
 
 ### Therapists & practitioners
 
@@ -297,8 +297,6 @@ Guests share sensitive personal and health information in order to receive care.
 ### Why this matters
 
 Guests come to Shantara to address health conditions many would not want discussed casually. A breach of this trust affects the guest directly, and it affects Shantara's credibility as a clinical facility.
-
-[TO CONFIRM] The formal disciplinary process for a confidentiality breach should be confirmed with management and HR, and referenced here before this handbook is printed.
 
 ## 9. Wellness & Medical Programmes
 
@@ -555,7 +553,7 @@ Rooms are designed with restraint, so comfort feels subtle rather than excessive
 | Sky Garden | Elevated space for quiet walks, especially at sunrise or in the evening. |
 | Water Features & Secret Gardens | Ambient calm woven through the property. |
 
-[TO CONFIRM] Property layout or map, and accessibility information for guests with mobility needs.
+[TO CONFIRM] Accessibility information for guests with mobility needs.
 
 ## 11. Food & Dining
 
@@ -746,7 +744,7 @@ Guests who complete a program remain part of the Shantara family, and doctors re
 
 - Anything about diagnosis, medication, or treatment specifics should go to the doctor.
 - Anything about billing or cancellation exceptions should go to front office or management.
-- Anything about corporate or group bookings should go to [TO CONFIRM, sales contact].
+- Anything about corporate or group bookings, partnerships or contracting should go to the Head of Sales & Partnerships: +91 98955 95990, sales@shantara.life.
 
 ## 16. Departments, Roles & Emergency Contacts
 
@@ -768,7 +766,7 @@ Guests who complete a program remain part of the Shantara family, and doctors re
 | Yoga, physiotherapy, or therapy session | Assigned therapist (Clinical) |
 | Booking, room, or stay-duration question | Front Office |
 | Housekeeping or room maintenance issue | Housekeeping / Maintenance |
-| Corporate or group booking enquiry | Sales team |
+| Corporate or group booking, partnership or contracting enquiry | Head of Sales & Partnerships |
 
 ### Emergency & important contacts
 
@@ -778,6 +776,7 @@ Guests who complete a program remain part of the Shantara family, and doctors re
 | Dr. Bahja Janu | Medical Director |
 | PS Ravindran | Operations Manager, and day-to-day operations contact |
 | Front Office | 095536 00100 |
+| Head of Sales & Partnerships | Partnerships and contracting. +91 98955 95990, sales@shantara.life |
 | Nearest Hospital | KMCT Medical College Hospital, Manassery P.O., Mukkam, Kozhikode 673602. 24-hour casualty and emergency: +91 99952 20044. Hospital: 0495 229 3500. |
 | General enquiries | +91 9553 600 100, heal@shantara.life |
 
