@@ -80,10 +80,57 @@ Every team member should know who the doctors are and what they specialise in, e
 Founder, Chairman & Chief Naturopathy Consultant
 
 - Government of India-certified Naturopathy Practitioner
-- 26+ years of clinical naturopathy practice
-- Author of 17 books on naturopathy, published in Malayalam, English, and Arabic
+- Practising naturopathy since 1989. The "26+ years" used across Shantara counts from the founding of Hygiene Nature Cure Hospital in 2000.
+- Disciple of the naturopath C. R. R. Varma
+- Author of 17 books and translator of 2 more, published in Malayalam, English, and Arabic
 - Founded Hygiene Nature Cure Hospital in 2000, and has personally guided the treatment of more than 25,000 patients since
-- Core philosophy: treat the cause and not merely the condition, through ethical, drug-free healing
+- Core philosophy: treat the cause and not merely the condition, through ethical, drug-free healing. He advocates natural living, appropriate diet, physical activity, yoga and fasting.
+
+| Field | Detail |
+| --- | --- |
+| Full name | P. Abdul Kareem, from Chennamangallur, Kozhikode |
+| Present positions | Director and Chief Physician, Hygiene Nature Cure & Yoga, Chennamangallur. Director and Chief Physician, Shantara Naturopathy, Chennamangallur. |
+| Naturopathy credential | Government of India Certified Naturopath. Trained under C. R. R. Varma. [TO CONFIRM] The certifying body and year. |
+| Degrees | B.A. in Urdu (Adib-e-Fazil) with Language Teachers' Training. B.A. in History with B.Ed. |
+| Naturopathy practice | Practising since 1989. Has established and run naturopathy hospitals since 2000. |
+| Teaching and public service | About 30 years as High School Assistant (Urdu) at the Kerala Government Higher Secondary School, REC, Calicut. Member of the Kerala Government Textbook Committee, 1984–1996. |
+| Public education | Lectures and awareness programmes on naturopathy in Malayalam, Urdu, Hindi and English, across India and abroad |
+| Languages | Malayalam, Urdu, Hindi and English, the languages he lectures in |
+
+**Publications.** He wrote 17 books, and the other 2 below are translations.
+
+| Title | Language |
+| --- | --- |
+| Nature Cures Not Medicines | English |
+| Prakrthi Chikilsa | Malayalam |
+| Atthibbu Thabeeyi | Arabic |
+| Ammayum Kunjum | Malayalam |
+| Mother and Child | English |
+| Drugless Cure for Diabetes and Hypertension | Malayalam |
+| Plants, Fruits and Medicinal Values | Malayalam |
+| Food That Heals | Malayalam |
+| Cooking for Health | Malayalam |
+| A Handbook on Naturopathy | English |
+| Kaippusthakam | Malayalam |
+| Disease Germs | Malayalam |
+| Vaccination | Malayalam |
+| Fasting Can Save Health | Malayalam |
+| Lunar Month | Malayalam |
+| The Divine Doctrine | English |
+| Akasa Vilambaram | Malayalam |
+| Bangedara of Dr. Iqbal | Malayalam translation |
+| Karbala of Premchand | Malayalam translation |
+
+The resume lists the second title as "Prakrthi Chikilsa…", so the full title is cut off. Several titles are not about naturopathy, so describe the body of work as books on naturopathy, health, nutrition and natural living. Do not quote "Drugless Cure for Diabetes and Hypertension" in public copy, because "cure" is an outcome claim.
+
+**How to describe him.** His naturopathy credential is the Government of India certification, and his degrees are in arts and education. Describe him by that credential and his years of practice. Never attribute a BNYS or a medical degree to him.
+
+[TO CONFIRM] His resume differs from what this handbook and the website say in four places:
+
+- **Years of practice.** The resume says he has practised since 1989, which is 35+ years. Public copy says 26+, which counts from 2000. Decide which figure his profile uses before changing `years_practice`.
+- **Hospital size.** The resume says he is "currently associated with a 160-bed naturopathic hospital". This handbook says Hygiene is a 66-bed hospital. Confirm the current bed count and which hospital the 160 refers to.
+- **Title.** The resume uses "Director & Chief Physician". This handbook uses "Founder, Chairman & Chief Naturopathy Consultant". Keep the handbook title until Shantara decides.
+- **Hospital name.** The resume calls it "Hygiene Nature Cure & Yoga". The established name here is "Hygiene Nature Cure Hospital".
 
 ### Dr. Bahja Janu
 
@@ -156,7 +203,7 @@ Medical Director
 
 ### About these records
 
-The three doctor entries above and Dr. Bahja Janu's credentials come from resumes the doctors supplied in October 2026. They are self-reported and have not been checked against the issuing bodies. Contact details, home addresses, dates of birth and marks were left out on purpose. Each doctor's entry in `content/doctors/` holds the fields the website uses.
+The details above for every doctor come from resumes they supplied in October 2026. Dr. P.A. Kareem's entry also keeps the facts this handbook already held. They are self-reported and have not been checked against the issuing bodies. Contact details, home addresses, dates of birth and marks were left out on purpose. Each doctor's entry in `content/doctors/` holds the fields the website uses.
 
 ### Therapists & practitioners
 
