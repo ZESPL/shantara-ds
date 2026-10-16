@@ -3,7 +3,7 @@
    Copy comes from content/ (site, doctors) and the strings this screen already carried. */
 
 function aboutDoctors() {
-  return (window.ShantaraContent.doctors || []).map((d) => ({
+  return (window.ShantaraContent.doctors || []).filter((d) => ["pa-kareem", "bahja-janu"].includes(d.id)).map((d) => ({
     name: d.full_name,
     role: d.role,
     detail: [d.qualification, d.publications_note].filter(Boolean).join(". ") || undefined,
