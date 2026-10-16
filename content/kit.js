@@ -1248,18 +1248,93 @@ window.ShantaraContent = {
       "full_name": "Dr. Bahja Janu",
       "role": "Medical Director",
       "photo_profile": "doctor-bahja-janu-portrait-cropped.jpeg",
-      "qualification": null,
-      "years_practice": null,
+      "qualification": "Bachelor of Naturopathy and Yogic Sciences (BNYS)",
+      "registration": [
+        {
+          "body": "Travancore-Cochin Medical Council (TCMC), Kerala",
+          "number": null
+        },
+        {
+          "body": "Saudi Ministry of Health",
+          "number": null
+        }
+      ],
+      "years_practice": "13+",
       "publications_note": null,
-      "biography": null,
-      "areas_of_practice": [],
+      "biography": "Medical Director at Shantara since October 2025. Chief Medical Officer at Hygiene Nature Cure Hospital, Kozhikode, from 2012. Treats the root cause through a drug-free plan of diet and fasting therapy, hydrotherapy, manual therapy, mud therapy, yoga and mind-body work.",
+      "areas_of_practice": [
+        "Lifestyle disorders: diabetes, hypertension and obesity",
+        "Women's health",
+        "Therapeutic fasting and detox",
+        "Gut and metabolic health",
+        "Stress management",
+        "Preventive healthcare"
+      ],
+      "memberships": [
+        "Central Council for Research in Yoga & Naturopathy (CCRYN)",
+        "International Dorn Healer, AHHAI, Germany"
+      ],
+      "external_profiles": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/dr-bahja-janu-89445324"
+        }
+      ],
       "locale": "en",
-      "source": "handbook",
+      "source": "resume",
       "status": "draft",
       "featured_image": {
         "src": "doctor-bahja-janu-portrait",
         "alt": "Dr. Bahja Janu"
       }
+    },
+    {
+      "id": "gangrei-gangmei",
+      "slug": "gangrei-gangmei",
+      "full_name": "Dr. Gangrei Gangmei",
+      "role": null,
+      "photo_profile": null,
+      "qualification": "Bachelor of Naturopathy and Yogic Sciences (BNYS)",
+      "registration": [],
+      "years_practice": null,
+      "publications_note": null,
+      "biography": null,
+      "areas_of_practice": [
+        "Naturopathy",
+        "Yoga therapy",
+        "Diet consultation",
+        "Acupuncture"
+      ],
+      "memberships": [],
+      "external_profiles": [],
+      "locale": "en",
+      "source": "resume",
+      "status": "draft"
+    },
+    {
+      "id": "keerthana-v-s",
+      "slug": "keerthana-v-s",
+      "full_name": "Dr. Keerthana V S",
+      "role": null,
+      "photo_profile": null,
+      "qualification": "Bachelor of Naturopathy and Yogic Sciences (BNYS)",
+      "registration": [],
+      "years_practice": null,
+      "publications_note": null,
+      "biography": null,
+      "areas_of_practice": [
+        "Naturopathy",
+        "Hydrotherapy",
+        "Acupuncture and acupressure",
+        "Yoga therapy",
+        "Diet and nutrition",
+        "Fasting therapy"
+      ],
+      "memberships": [],
+      "external_profiles": [],
+      "locale": "en",
+      "source": "resume",
+      "status": "draft"
     },
     {
       "id": "pa-kareem",
@@ -1268,12 +1343,15 @@ window.ShantaraContent = {
       "role": "Founder, Chairman & Chief Naturopathy Consultant",
       "photo_profile": "doctor-pa-kareem-portrait-cropped.jpeg",
       "qualification": "Government of India-certified Naturopathy Practitioner",
+      "registration": [],
       "years_practice": "26+",
       "publications_note": "Author of 17 books on naturopathy (Malayalam, English, Arabic)",
       "biography": "Founded Hygiene Nature Cure Hospital in 2000. Core approach: treat the cause through ethical, drug-free naturopathy.",
       "areas_of_practice": [
         "Naturopathy"
       ],
+      "memberships": [],
+      "external_profiles": [],
       "locale": "en",
       "source": "handbook",
       "status": "published",
@@ -1281,6 +1359,29 @@ window.ShantaraContent = {
         "src": "doctor-pa-kareem-portrait",
         "alt": "Dr. P.A. Kareem"
       }
+    },
+    {
+      "id": "sara-shanti-alen",
+      "slug": "sara-shanti-alen",
+      "full_name": "Dr. Sara Shanti Alen",
+      "role": null,
+      "photo_profile": null,
+      "qualification": "Bachelor of Naturopathy and Yogic Sciences (BNYS)",
+      "registration": [],
+      "years_practice": null,
+      "publications_note": null,
+      "biography": null,
+      "areas_of_practice": [
+        "Naturopathy",
+        "Yoga therapy and mindfulness",
+        "Diet planning",
+        "Stress and sleep"
+      ],
+      "memberships": [],
+      "external_profiles": [],
+      "locale": "en",
+      "source": "resume",
+      "status": "draft"
     }
   ],
   "articles": [

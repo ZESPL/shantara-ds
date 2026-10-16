@@ -51,7 +51,7 @@ function ProgrammeScreen({ onNavigate }) {
   ensureProgrammeCss();
   const C = window.ShantaraContent;
   const programme = (C.programs || []).find((p) => p.id === PROGRAMME_ID) || { name: "Detox", durations: "7–21 nights", proposition: "" };
-  const doctors = (C.doctors || []).map((d) => ({
+  const doctors = (C.doctors || []).filter((d) => ["pa-kareem", "bahja-janu"].includes(d.id)).map((d) => ({
     name: t(d.full_name),
     role: t(d.role),
     detail: d.qualification ? t(d.qualification) : undefined,

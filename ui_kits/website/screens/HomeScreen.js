@@ -11,7 +11,7 @@ function firstSentence(text) {
 }
 
 function homeDoctors(t) {
-  return (window.ShantaraContent.doctors || []).map((d) => ({
+  return (window.ShantaraContent.doctors || []).filter((d) => ["pa-kareem", "bahja-janu"].includes(d.id)).map((d) => ({
     name: t(d.full_name),
     role: t(d.role),
     detail: d.qualification ? t(d.qualification) : undefined,

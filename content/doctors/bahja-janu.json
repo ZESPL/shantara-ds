@@ -4,13 +4,31 @@
   "full_name": "Dr. Bahja Janu",
   "role": "Medical Director",
   "photo_profile": "doctor-bahja-janu-portrait-cropped.jpeg",
-  "qualification": null,
-  "years_practice": null,
+  "qualification": "Bachelor of Naturopathy and Yogic Sciences (BNYS)",
+  "registration": [
+    { "body": "Travancore-Cochin Medical Council (TCMC), Kerala", "number": null },
+    { "body": "Saudi Ministry of Health", "number": null }
+  ],
+  "years_practice": "13+",
   "publications_note": null,
-  "biography": null,
-  "areas_of_practice": [],
+  "biography": "Medical Director at Shantara since October 2025. Chief Medical Officer at Hygiene Nature Cure Hospital, Kozhikode, from 2012. Treats the root cause through a drug-free plan of diet and fasting therapy, hydrotherapy, manual therapy, mud therapy, yoga and mind-body work.",
+  "areas_of_practice": [
+    "Lifestyle disorders: diabetes, hypertension and obesity",
+    "Women's health",
+    "Therapeutic fasting and detox",
+    "Gut and metabolic health",
+    "Stress management",
+    "Preventive healthcare"
+  ],
+  "memberships": [
+    "Central Council for Research in Yoga & Naturopathy (CCRYN)",
+    "International Dorn Healer, AHHAI, Germany"
+  ],
+  "external_profiles": [
+    { "title": "LinkedIn", "url": "https://www.linkedin.com/in/dr-bahja-janu-89445324" }
+  ],
   "locale": "en",
-  "source": "handbook",
+  "source": "resume",
   "status": "draft",
   "featured_image": {
     "src": "doctor-bahja-janu-portrait",
