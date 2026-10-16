@@ -1266,6 +1266,7 @@ window.ShantaraContent = {
       "slug": "pa-kareem",
       "full_name": "Dr. P.A. Kareem",
       "role": "Founder, Chairman & Chief Naturopathy Consultant",
+      "photo_profile": "doctor-pa-kareem-portrait-cropped.jpeg",
       "qualification": "Government of India-certified Naturopathy Practitioner",
       "years_practice": "26+",
       "publications_note": "Author of 17 books on naturopathy (Malayalam, English, Arabic)",
@@ -1275,7 +1276,11 @@ window.ShantaraContent = {
       ],
       "locale": "en",
       "source": "handbook",
-      "status": "published"
+      "status": "published",
+      "featured_image": {
+        "src": "doctor-pa-kareem-portrait",
+        "alt": "Dr. P.A. Kareem"
+      }
     }
   ],
   "articles": [
