@@ -38,5 +38,5 @@ Plus descriptive alternates (rooms, dining, exteriors, treatments, etc.) and doc
 ## Still open
 
 - Ocean / Clay / Lavender hexes were sampled because the accent board printed the same value for all three.
-- Handbook figures marked `[TO CONFIRM]`, and two internal conflicts (built-up area, check-in/out).
+- Handbook items still marked `[TO CONFIRM]`.
 - `Welnez Pattern.ai` was named in an earlier brief and is not on disk.
