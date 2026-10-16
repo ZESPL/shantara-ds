@@ -39,7 +39,7 @@ function AboutScreen({ onNavigate }) {
       <P id="about/numerals">
         <Section ground="stone">
           <NumeralsSplit
-            title={t("Shantara is the evolution of Hygiene Nature Cure Hospital, founded in 2000.")}
+            title={t("Doctor-led naturopathy on a hilltop above the Chennamangallur valley.")}
             numerals={aboutNumerals().map((s) => ({ value: s.value, label: t(s.label) }))}
           />
         </Section>
@@ -65,8 +65,8 @@ function AboutScreen({ onNavigate }) {
 
       <P id="about/approach">
         <SplitSection src={window.photoSrc("library")} alt={t("The library at Shantara")} mediaSide="end" ground="merino">
-          <Statement size="title" sub={t("Treatment is drug-free and planned by our doctors after consultation and assessment. Plans are reviewed during the stay and adjusted where needed.")}>
-            {t("Your programme is planned after consultation and assessment.")}
+          <Statement size="title" sub={t("Treatment is drug-free. Plans are reviewed during the stay and adjusted where needed.")}>
+            {t("Doctors set the daily plan — treatments, meals, activity and rest.")}
           </Statement>
           <div>
             <TextLink onClick={() => onNavigate("programme")}>{t("Programmes")}</TextLink>

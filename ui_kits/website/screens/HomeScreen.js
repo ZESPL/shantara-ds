@@ -64,7 +64,7 @@ function HomeScreen({ onNavigate }) {
 
       <P id="home/band">
         <BandStatement>
-          <Statement>{t("Your programme is planned after consultation and assessment.")}</Statement>
+          <Statement>{t("Drug-free care, planned by doctors after they have assessed you.")}</Statement>
           <div><TextLink onClick={() => onNavigate("about")}>{t("Our approach")}</TextLink></div>
         </BandStatement>
       </P>
@@ -134,7 +134,7 @@ function HomeScreen({ onNavigate }) {
 
       <P id="home/rooms">
         <SplitSection ground="stone" mediaSide="start" src={window.photoSrc("room-bedroom-balcony-open-book")} alt={t("A bedroom with a balcony over the valley")}>
-          <Statement size="title" sub={t("Every room category is designed for a comfortable residential stay.")}>
+          <Statement size="title" sub={t("Quiet interiors, valley views where the category allows, and short walks to treatment and common areas.")}>
             {t("Rooms for resting between treatments")}
           </Statement>
           <SpecTable

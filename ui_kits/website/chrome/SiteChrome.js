@@ -435,7 +435,7 @@ function SiteHeader({ view, onNavigate, locale = "en", onLocaleChange }) {
 }
 
 const FOOTER_COLS = [
-  { title: "Explore", links: [
+  { title: "Programmes & visits", links: [
     { label: "Programmes", view: "programme" },
     { label: "Conditions", view: "conditions" },
     { label: "Experience", view: "experience" },

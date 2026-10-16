@@ -85,7 +85,7 @@ function ProgrammeScreen({ onNavigate }) {
             <div>
               <p className="sh-prog-sub" id="sh-prog-len">{t("Typical duration")}</p>
               <div role="radiogroup" aria-labelledby="sh-prog-len" style={{ display: "flex", flexDirection: "column", gap: "var(--space-3)" }}>
-                {[["7", "7 nights", "a shorter stay"], ["14", "14 nights", "often recommended for this programme"], ["21", "21 nights", "for a longer residential stay"]].map(([v, l, d]) => (
+                {[["7", "7 nights", "a shorter stay"], ["14", "14 nights", "a common length for this programme"], ["21", "21 nights", "for a longer residential stay"]].map(([v, l, d]) => (
                   <Radio key={v} card name="len" value={v} label={t(l)} description={t(d)} checked={len === v} onChange={() => setLen(v)} />
                 ))}
               </div>
@@ -111,8 +111,13 @@ function ProgrammeScreen({ onNavigate }) {
           </div>
 
           <div style={stack}>
-            <Statement size="title" style={{ marginBottom: "var(--space-6)" }}>{t("What guests commonly report")}</Statement>
-            <PlainList columns={2} rules items={["Feeling lighter and more alert", "Easier digestion and clearer appetite", "Better sleep and morning energy", "Less bloating"].map((s) => t(s))} />
+            <Statement size="title" style={{ marginBottom: "var(--space-6)" }}>{t("What the programme may include")}</Statement>
+            <PlainList columns={2} rules items={[
+              "Daily doctor review of vitals and the plan",
+              "Therapies sequenced for your assessment",
+              "Meals planned with the clinical team",
+              "Movement, rest and an early night",
+            ].map((s) => t(s))} />
           </div>
 
           <div style={stack}>

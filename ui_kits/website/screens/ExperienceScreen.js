@@ -4,23 +4,23 @@
 
 const EXPERIENCES = [
   { title: "Treatments and therapies", copy: "Your doctor may recommend therapies based on your assessment and programme.", photo: "treatment", alt: "Treatment room", view: "programme" },
-  { title: "Accommodation", copy: "Five room categories, designed for comfortable residential stays.", photo: "room-premium", alt: "A room with a balcony over the valley", view: "tariffs" },
+  { title: "Accommodation", copy: "Five room categories, from quiet valley rooms to suites with balcony access.", photo: "room-premium", alt: "A room with a balcony over the valley", view: "tariffs" },
   { title: "Meals during your stay", copy: "Meals are planned as part of your programme, taking into account your doctor's recommendations and dietary requirements.", photo: "dining", alt: "The dining room", view: "booking" },
-  { title: "What to expect during your stay", copy: "A typical day may include a consultation, therapies, meals, physical activity, rest and personal time.", photo: "grounds-pond-building-path", alt: "A path beside the pond on the grounds", view: "programme" },
+  { title: "Daily schedule", copy: "Morning review, therapies, meals, walking or quiet time, then an early night.", photo: "grounds-pond-building-path", alt: "A path beside the pond on the grounds", view: "programme" },
 ];
 
 const DAY_STEPS = [
-  { title: "Consultation", text: "Vitals and a doctor review, every morning" },
-  { title: "Therapies", text: "Sessions recommended for your programme" },
-  { title: "Meals and rest", text: "Meals planned for your programme, walking or quiet time, and an early night" },
+  { title: "Morning", text: "Vitals and a doctor review before the day begins" },
+  { title: "Midday", text: "Therapies sequenced for your programme" },
+  { title: "Evening", text: "Programme meals, quiet time, and an early night" },
 ];
 
-/* The same four parts of the day as the programme page. */
+/* Day rhythm for this page — shorter leads than the programme detail timetable. */
 const DAY_TIMES = [
-  { time: "Morning", text: "Vitals and a short doctor review, then yoga therapy in the hall. Movement and breathwork are adapted to what you can manage that day." },
-  { time: "Midday", text: "Therapy sessions may include mud therapy, hydrotherapy, massage or acupuncture, sequenced by the clinical team." },
-  { time: "Afternoon", text: "Depending on your programme, the afternoon may include controlled sunlight, walking on the grounds, or time in the library." },
-  { time: "Evening", text: "A meal planned for your programme, a mind-body session and an early night." },
+  { time: "Morning", text: "Vitals, a short doctor review, then movement in the yoga hall adapted to that day." },
+  { time: "Midday", text: "Mud, hydrotherapy, massage or acupuncture when your doctor has planned them." },
+  { time: "Afternoon", text: "Sunlight, a walk on the grounds, or quiet time in the library — as your plan allows." },
+  { time: "Evening", text: "A programme meal, a mind-body session when scheduled, then rest." },
 ];
 
 function ExperienceScreen({ onNavigate }) {
@@ -36,8 +36,8 @@ function ExperienceScreen({ onNavigate }) {
           position="center 80%"
           mobilePosition="center"
           alt={t("The planted courtyard")}
-          title={t("What to expect during your stay")}
-          sub={t("A typical day may include consultations, therapies, meals, physical activity, rest and time for yourself.")}
+          title={t("A day at Shantara")}
+          sub={t("Consultations, therapies, meals, movement and rest — reviewed each morning by your doctor.")}
         />
       </P>
 
@@ -47,7 +47,7 @@ function ExperienceScreen({ onNavigate }) {
           <Statement sub={t("A typical day is planned by your doctor and reviewed each morning. It may include a consultation, therapies, meals, movement, rest and personal time.")}>
             {t("What a day may include")}
           </Statement>
-          <NumberedSteps style={{ marginTop: "var(--stack-lg)" }} columns={3} items={DAY_STEPS.map((s) => ({ title: t(s.title), text: t(s.text) }))} />
+          <NumberedSteps style={{ marginTop: "var(--stack-lg)" }} columns={1} items={DAY_STEPS.map((s) => ({ title: t(s.title), text: t(s.text) }))} />
         </Section>
       </P>
 
@@ -81,8 +81,8 @@ function ExperienceScreen({ onNavigate }) {
           variant="photo"
           src={window.photoSrc("terrace-cafe-wave-ceiling-valley")}
           alt={t("The terrace café over the valley")}
-          title={t("Start with a consultation.")}
-          sub={t("Share your name and a number we can reach. Our team will contact you to arrange a consultation.")}
+          title={t("Share your name and a number we can reach.")}
+          sub={t("Our team will contact you to arrange a consultation.")}
           action={<Button size="lg" onClick={() => onNavigate("booking")}>{t("Book a Consultation")}</Button>}
           contact={window.siteContactItems(t)}
         />

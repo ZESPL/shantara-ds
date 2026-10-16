@@ -44,7 +44,7 @@ function TariffScreen({ onNavigate }) {
           breadcrumbs={<Breadcrumbs items={[{ label: t("Home"), href: home }, t("Rooms and tariffs")]} />}
           title={t("Rooms and tariffs")}
           meta={[t("Five room categories"), t("Rates per night")]}
-          sub={t("Every room category is designed for a comfortable residential stay. Reservations are confirmed after a preliminary consultation.")}
+          sub={t("Quiet rooms for resting between treatments. Reservations are confirmed after a preliminary consultation.")}
         />
       </P>
 
