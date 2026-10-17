@@ -49,7 +49,7 @@ Medical categories ([`content/medical-categories.json`](../../content/medical-ca
 | Programme | name; slug; focus; proposition; durations; suitability; inclusions; clinicians (doctors). **No prices.** | `/en/programs/[slug]` |
 | Therapy | name; slug; description; purpose; how it is used at Shantara | One `/en/therapies` page for all therapies. No page per therapy. |
 | Room | name; slug; summary; size; specification (`spec_line`); occupancy; balcony; amenities; gallery. **No prices.** | One `/en/rooms` page for all room categories. No page per room. |
-| Doctor | full name; slug; role; `photo_profile`; qualification; licences (issuing body only, never a registration number or joining date); years in practice; biography (Markdoc); areas of practice; professional memberships; publications; external profiles | Every doctor is listed on `/en/our-doctors`. Only Dr. P.A. Kareem and Dr. Bahja Janu have a profile page (`/en/doctors/[slug]`), which lists their answers, reviewed articles and programmes automatically. No other doctor gets one. |
+| Doctor | full name; slug; role; `photo_profile`; qualification; licences (issuing body only, never a registration number or joining date); years in practice; biography (Markdoc); areas of practice; professional memberships; publications; press; talks; videos; social posts; external profiles | Every doctor is listed on `/en/our-doctors`. Only Dr. P.A. Kareem and Dr. Bahja Janu have a profile page (`/en/doctors/[slug]`), which lists their answers, reviewed articles, programmes, press, talks, videos and social posts. No other doctor gets one. |
 | Author | name; slug; role; photo; short bio; optional link to a doctor | No page |
 | Article / Clinical Guide | title; slug; category; lead; body (Markdoc); read minutes; date published; date modified; author (required); medical reviewer (doctor, required for clinical content) | `/en/journal/[slug]` |
 | Doctor Answer | question; slug; short answer; detailed answer (Markdoc); category; read minutes; reviewed date; doctor (required) | `/en/journal/[slug]` |
@@ -58,6 +58,15 @@ Medical categories ([`content/medical-categories.json`](../../content/medical-ca
 Deferred until real records exist: Guest Story, Event.
 
 Unconfirmed facts stay out of published records: keep the entry `draft` until Shantara confirms it. There is no `to_confirm` flag and no ICP field. ICPs stay in [`docs/icp.md`](../../docs/icp.md) for strategy and CRM.
+
+**Doctor press and talks.** Optional lists on a doctor record. Omit the list when it is empty.
+
+- `press`: `{outlet, title, date, url}`. `date` is ISO 8601. `title` is the link text on the profile. When an outlet headline states a cure or another outcome, use a plain description instead and keep the headline in handbook §4.
+- `talks`: `{title, url, publisher, date}`. `date` is optional, ISO 8601. Outbound links only. Never an embed. YouTube, Vimeo and other players stay off the page ([skill-video.md](skill-video.md)).
+- `videos`: `{publisher, title, date, url}`. Other third-party films. Same outbound-link rule as talks.
+- `social_posts`: `{source, date, url}`. Outbound links only.
+
+Notes that are not page copy — one lecture carried by several outlets, a sponsored placement, a title the recording gets wrong — stay in handbook §4. The unique list for Dr. P.A. Kareem is [`docs/media-kareem.md`](../../docs/media-kareem.md). His profile lists that register.
 
 ### Tariff
 

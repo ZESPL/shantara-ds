@@ -24,7 +24,7 @@ Keep these here so they are not buried only in guideline cards:
 
 - **Ocean / Clay / Lavender.** The guideline deck printed `#3B6B7B` under Ocean, Clay **and** Lavender. Sampled from artwork instead: Ocean `#A0B1BB`, Clay `#E0A198`, Lavender `#C6C2D1`.
 - **Icon set.** The brand package ships **no icon set**. Stand-in: **Lucide** (`lucide-static@0.544.0`), flagged for review. Render through `Icon` as CSS masks. **No emoji.**
-- **`[TO CONFIRM]`.** Anything still marked in the handbook stays off public pages until Azhar / Dr. P.A. Kareem / Dr. Bahja Janu confirm it. The handbook is evergreen and carries no rates; [`docs/handbook.txt`](docs/handbook.txt) is the canonical handbook text.
+- **`[TO CONFIRM]`.** Anything still marked in the handbook stays off public pages until Azhar / Dr. P.A. Kareem / Dr. Bahja Janu confirm it. The handbook is evergreen and carries no rates. [`docs/handbook.txt`](docs/handbook.txt) is the index; each section lives under [`docs/handbook/`](docs/handbook/).
 - **Clear-space and minimum-size numbers** in `guidelines/logo.html` are conventions consistent with the guideline artwork, not quoted brand law.
 
 Voice, colour, type, pattern, motion, corners, cards, imagery, print, and accessibility live on the matching **Brand** and **Foundations** catalog cards. Public website language has one source: `ui_kits/website/skill-copy.md`, browsed as `docs/website-copy.html`. Do not restate those chapters here. Live contrast audit: `guidelines/accessibility.html`.

@@ -170,7 +170,7 @@
     { key: "Start", label: "Start", blurb: "How to browse this folder, how to drop it into another repo, the agent skill and the ID scheme",
       order: ["docs/use.html", "docs/skill.html", "docs/readme.html", "docs/copy-ids.html"] },
     { key: "Brand", label: "Brand", blurb: "Colour, type, logo, pattern, imagery and print",
-      order: ["guidelines/colors.html", "guidelines/type.html", "guidelines/logo.html", "guidelines/brand-pattern.html", "guidelines/brand-imagery.html", "guidelines/brand-protection.html", "guidelines/brand-applications.html"] },
+      order: ["guidelines/colors.html", "guidelines/type.html", "guidelines/logo.html", "guidelines/hnch-logo.html", "guidelines/brand-pattern.html", "guidelines/brand-imagery.html", "guidelines/brand-protection.html", "guidelines/brand-applications.html"] },
     { key: "Foundations", label: "Foundations", blurb: "Scale, rhythm, radius, borders, elevation, motion and accessibility",
       order: ["guidelines/spacing-scale.html", "guidelines/spacing-inuse.html", "guidelines/radius.html", "guidelines/borders.html", "guidelines/elevation.html", "guidelines/motion.html", "guidelines/accessibility.html"] },
     { key: "Components", label: "Components", blurb: "Core, forms, navigation, feedback, editorial and sections — family overviews and one page per component", families: true },
@@ -209,8 +209,18 @@
       order: ["ui_kits/app/index.html", "docs/app-kit.html"] },
     { key: "Templates", label: "Templates", blurb: "Brand deck layouts and the presentation skill",
       order: ["templates/brand-deck/BrandDeck.dc.html", "docs/presentations-skill.html"] },
-    { key: "Content", label: "Content & sources", blurb: "Property handbook and the original source files",
-      order: ["docs/handbook.html", "docs/sources.html"] },
+    { key: "Content", label: "Content & sources", blurb: "Property handbook, media mentions and the original source files",
+      order: [
+        { path: "docs/handbook.html", prefix: "docs/handbook-", children: [
+          "docs/handbook-quick-reference.html", "docs/handbook-about.html", "docs/handbook-founder.html",
+          "docs/handbook-team.html", "docs/handbook-admission.html", "docs/handbook-therapies.html",
+          "docs/handbook-protocols.html", "docs/handbook-privacy.html", "docs/handbook-programmes.html",
+          "docs/handbook-property.html", "docs/handbook-food.html", "docs/handbook-stay.html",
+          "docs/handbook-policies.html", "docs/handbook-faqs.html", "docs/handbook-communication.html",
+          "docs/handbook-contacts.html",
+        ] },
+        "docs/media-kareem.html", "docs/sources.html",
+      ] },
   ];
   const LABELS = {
     "ui_kits/website/index.html": "Sample site",

@@ -185,6 +185,8 @@
     tariffs: "tariffs",
     /* Single Journal article. Navigate with "article:<slug>"; bare "article" opens the sample. */
     article: "journal/how-meals-are-planned",
+    /* Doctor profile. Navigate with "doctor:<slug>"; bare "doctor" opens Dr. P.A. Kareem. */
+    doctor: "doctors/pa-kareem",
   };
 
   const ARTICLE_PREFIX = "journal/";
@@ -755,6 +757,8 @@
     const v = String(view || "");
     if (v === "article" && slug) return ARTICLE_PREFIX + slug;
     if (v.indexOf("article:") === 0) return ARTICLE_PREFIX + v.slice(8);
+    if (v === "doctor" && slug) return "doctors/" + slug;
+    if (v.indexOf("doctor:") === 0) return "doctors/" + v.slice(7);
     return KIT_VIEWS[v] != null ? KIT_VIEWS[v] : v;
   }
 
@@ -765,9 +769,16 @@
     return m ? m[1] : null;
   }
 
+  function doctorSlugFromPath(rest) {
+    const key = String(rest || "").replace(/^\/+|\/+$/g, "");
+    const m = key.match(/^doctors\/([a-z0-9-]+)$/);
+    return m ? m[1] : null;
+  }
+
   function kitViewFromPath(rest) {
     const key = String(rest || "").replace(/^\/+|\/+$/g, "");
     if (articleSlugFromPath(key)) return "article";
+    if (doctorSlugFromPath(key)) return "doctor";
     return VIEW_FROM_PATH[key] || (key ? null : "home");
   }
 
@@ -783,7 +794,7 @@
     if (parsed.isRoot || !parsed.locale) {
       return { locale: DEFAULT_LOCALE, view: "home", redirect: kitHash(DEFAULT_LOCALE, "home") };
     }
-    const slug = articleSlugFromPath(parsed.rest);
+    const slug = articleSlugFromPath(parsed.rest) || doctorSlugFromPath(parsed.rest);
     if (!isEnabled(parsed.locale)) {
       return { locale: DEFAULT_LOCALE, view: kitViewFromPath(parsed.rest) || "home", slug, redirect: kitHash(DEFAULT_LOCALE, kitViewFromPath(parsed.rest) || "home", slug) };
     }

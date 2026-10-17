@@ -141,7 +141,7 @@ Pages:
 
 Medical Editorial Policy also sits under About.
 
-`/en/our-doctors` lists every doctor with a photo, name, qualification, areas of practice and a **Book a Consultation** button. Only Dr. P.A. Kareem and Dr. Bahja Janu have a profile page. Each profile lists the doctor's answers, the articles they reviewed and their programmes automatically. Do not create a profile page for any other doctor; link to their section on `/en/our-doctors` instead (for example `/en/our-doctors#{slug}`).
+`/en/our-doctors` lists every doctor with a photo, name, qualification, areas of practice and a **Book a Consultation** button. Only Dr. P.A. Kareem and Dr. Bahja Janu have a profile page. Each profile lists the doctor's answers, the articles they reviewed, their programmes, and any press, talks, videos and social posts on the doctor record. Those lists are outbound links. A YouTube recording is a link, never an embedded player. Do not create a profile page for any other doctor; link to their section on `/en/our-doctors` instead (for example `/en/our-doctors#{slug}`).
 
 Entity and parent history (including Hygiene Nature Cure Hospital / HNCH) belong here — not on condition or programme pages, and not as a hospital product pitch.
 ## Publishing families

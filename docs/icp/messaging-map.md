@@ -25,7 +25,7 @@ All customer-language examples in this document are {Seed terms requiring resear
 
 This table is a **cross-reference**, not a substitute for the profiles. Associations are indicative. Final suitability is clinical. The ICP system is not limited to programmes that exist today.
 
-Handbook admission language (“who we treat”) is **clinical eligibility**, not an ICP list. See [Property handbook §5](handbook.html#section-5) and [§9](handbook.html#section-9).
+Handbook admission language (“who we treat”) is **clinical eligibility**, not an ICP list. See [Property handbook §5](handbook-admission.html#section-5) and [§9](handbook-programmes.html#section-9).
 
 | ICP | Major need states | Indicative current programme areas |
 | --- | --- | --- |
