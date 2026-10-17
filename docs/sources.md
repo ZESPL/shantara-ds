@@ -37,7 +37,7 @@ Plus descriptive alternates (rooms, dining, exteriors, treatments, etc.) and doc
 
 ## Parent hospital mark
 
-Hygiene Nature Cure Hospital does not have a vector logo in the brand pack. The files in `assets/hnch/` were traced on 17 October 2026 from the rasters wrapped as SVG on [hygienecure.com](https://www.hygienecure.com/): the header and footer lockup (`/frontend/images/logo.svg`) and the mark (`/frontend/images/logo-icon.svg`). The published artwork is white. `dark`, `green` and `current` are placement fills of that same drawing. The card is [`guidelines/hnch-logo.html`](../guidelines/hnch-logo.html). This is not the Shantara lockup.
+Hygiene Nature Cure Hospital does not have a vector logo in the brand pack. The files in `assets/hnch/` were traced on 17 October 2026 from the rasters wrapped as SVG on [hygienecure.com](https://www.hygienecure.com/): the header and footer lockup (`/frontend/images/logo.svg`) and the mark (`/frontend/images/logo-icon.svg`). The published artwork is white. `dark`, `green` and `current` are placement fills of that same drawing. `hygiene-*.svg` is that lockup with the Nature Cure line removed. The card is [`guidelines/hnch-logo.html`](../guidelines/hnch-logo.html). This is not the Shantara lockup.
 
 ## Still open
 

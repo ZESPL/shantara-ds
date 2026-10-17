@@ -8,15 +8,16 @@ function resolveBase() {
   return "assets";
 }
 
-const FILE = { full: "logo", icon: "icon" };
+const FILE = { full: "logo", hygiene: "hygiene", icon: "icon" };
+const ALT = { full: "Hygiene Nature Cure", hygiene: "Hygiene", icon: "Hygiene Nature Cure" };
 
 export function HnchLogo({ mark = "full", tone = "dark", height, assetBase, style, ...rest }) {
   const base = assetBase || resolveBase();
-  const h = height || (mark === "icon" ? 40 : 56);
+  const h = height || (mark === "icon" ? 40 : mark === "hygiene" ? 37 : 56);
   return (
     <img
       src={`${base}/hnch/${FILE[mark] || "logo"}-${tone}.svg`}
-      alt="Hygiene Nature Cure"
+      alt={ALT[mark] || ALT.full}
       data-ds-id="core/HnchLogo"
       style={{ height: typeof h === "number" ? h + "px" : h, width: "auto", display: "block", ...style }}
       {...rest}
