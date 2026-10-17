@@ -40,6 +40,7 @@
 <script type="text/babel" src="/ui_kits/website/screens/ProgrammeScreen.js"></script>
 <script type="text/babel" src="/ui_kits/website/screens/ExperienceScreen.js"></script>
 <script type="text/babel" src="/ui_kits/website/screens/AboutScreen.js"></script>
+<script type="text/babel" src="/ui_kits/website/screens/DoctorScreen.js"></script>
 <script type="text/babel" src="/ui_kits/website/screens/JournalScreen.js"></script>
 <script type="text/babel" src="/ui_kits/website/screens/ArticleScreen.js"></script>
 <script type="text/babel" src="/ui_kits/website/screens/ContactScreen.js"></script>
@@ -86,11 +87,11 @@ function Site(){
     window.addEventListener("hashchange", onHash);
     return () => window.removeEventListener("hashchange", onHash);
   }, []);
-  /* go("article:<slug>") opens one Journal article at #/<locale>/journal/<slug>. */
+  /* go("article:<slug>") opens one Journal article. go("doctor:<slug>") opens a doctor profile. */
   const go=(target)=>{
     const t = String(target || "home");
-    const v = t.indexOf("article:") === 0 ? "article" : t;
-    const sl = v === "article" ? (t.slice(8) || null) : null;
+    const v = t.indexOf("article:") === 0 ? "article" : t.indexOf("doctor:") === 0 ? "doctor" : t;
+    const sl = v === "article" ? (t.slice(8) || null) : v === "doctor" ? (t.slice(7) || null) : null;
     setView(v);
     setSlug(sl);
     location.hash = L.kitHash(locale, v, sl);
@@ -103,8 +104,8 @@ function Site(){
     location.hash = L.kitHash(code, view, slug);
     applyChrome(code);
   };
-  const { SiteHeader, SiteFooter, HomeScreen, ConditionsScreen, ProgrammeScreen, ExperienceScreen, AboutScreen, JournalScreen, ArticleScreen, ContactScreen, ConsultationScreen, TariffScreen } = window;
-  const screens={home:<HomeScreen onNavigate={go}/>,conditions:<ConditionsScreen onNavigate={go}/>,programme:<ProgrammeScreen onNavigate={go}/>,experience:<ExperienceScreen onNavigate={go}/>,about:<AboutScreen onNavigate={go}/>,journal:<JournalScreen onNavigate={go}/>,article:<ArticleScreen onNavigate={go} slug={slug}/>,contact:<ContactScreen onNavigate={go}/>,tariffs:<TariffScreen onNavigate={go}/>,booking:<ConsultationScreen onNavigate={go} locale={locale} view={view}/>};
+  const { SiteHeader, SiteFooter, HomeScreen, ConditionsScreen, ProgrammeScreen, ExperienceScreen, AboutScreen, DoctorScreen, JournalScreen, ArticleScreen, ContactScreen, ConsultationScreen, TariffScreen } = window;
+  const screens={home:<HomeScreen onNavigate={go}/>,conditions:<ConditionsScreen onNavigate={go}/>,programme:<ProgrammeScreen onNavigate={go}/>,experience:<ExperienceScreen onNavigate={go}/>,about:<AboutScreen onNavigate={go}/>,doctor:<DoctorScreen onNavigate={go} slug={slug}/>,journal:<JournalScreen onNavigate={go}/>,article:<ArticleScreen onNavigate={go} slug={slug}/>,contact:<ContactScreen onNavigate={go}/>,tariffs:<TariffScreen onNavigate={go}/>,booking:<ConsultationScreen onNavigate={go} locale={locale} view={view}/>};
   const screen=screens[view]||screens.booking;
   const rest = L.kitViewPath(view, slug);
   const canonical = L.canonicalUrl({ origin: "", locale, path: rest });
@@ -126,7 +127,7 @@ function Site(){
     {alternates.map((alt) => <link key={alt.hreflang} rel="alternate" hrefLang={alt.hreflang} href={alt.href} />)}
   </React.Fragment>);
 }
-const boot=()=>{ if(window.ShantaraLocales&&window.SiteHeader&&window.HomeScreen&&window.ConsultationScreen&&window.ConditionsScreen&&window.ExperienceScreen&&window.AboutScreen&&window.ContactScreen&&window.TariffScreen&&window.JournalScreen&&window.ArticleScreen&&window.Photo){ReactDOM.createRoot(document.getElementById("root")).render(<Site/>);}else{setTimeout(boot,50);} };
+const boot=()=>{ if(window.ShantaraLocales&&window.SiteHeader&&window.HomeScreen&&window.ConsultationScreen&&window.ConditionsScreen&&window.ExperienceScreen&&window.AboutScreen&&window.DoctorScreen&&window.ContactScreen&&window.TariffScreen&&window.JournalScreen&&window.ArticleScreen&&window.Photo){ReactDOM.createRoot(document.getElementById("root")).render(<Site/>);}else{setTimeout(boot,50);} };
 boot();
 </script>
 </body></html>

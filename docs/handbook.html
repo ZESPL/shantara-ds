@@ -1,10 +1,34 @@
-<!-- @dsCard group="Content" viewport="doc" kind="doc" name="Property handbook" subtitle="Property Handbook extract — programmes, rooms, rules, team" -->
+<!-- @dsCard group="Content" viewport="doc" kind="doc" name="Property handbook" subtitle="Index of the staff handbook. Open one section at a time." -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Property handbook · Shantara design system</title>
+  <script>
+    (function () {
+      var pages = {
+        "section-1": "handbook-quick-reference.html",
+        "section-2": "handbook-about.html",
+        "section-3": "handbook-founder.html",
+        "section-4": "handbook-team.html",
+        "section-5": "handbook-admission.html",
+        "section-6": "handbook-therapies.html",
+        "section-7": "handbook-protocols.html",
+        "section-8": "handbook-privacy.html",
+        "section-9": "handbook-programmes.html",
+        "section-10": "handbook-property.html",
+        "section-11": "handbook-food.html",
+        "section-12": "handbook-stay.html",
+        "section-13": "handbook-policies.html",
+        "section-14": "handbook-faqs.html",
+        "section-15": "handbook-communication.html",
+        "section-16": "handbook-contacts.html"
+      };
+      var id = location.hash.replace(/^#/, "");
+      if (pages[id]) location.replace(pages[id] + "#" + id);
+    })();
+  </script>
   <link rel="icon" href="../assets/icon-olive.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="doc.css">
@@ -14,13 +38,12 @@
   <header class="ds-handbook-mast">
     <div class="ds-handbook-mast-inner">
       <h1>Property handbook</h1>
-      <p class="ds-handbook-lead">The questions guests actually ask — what this place is, who the doctor is, what a stay includes, and what staff may say.</p>
+      <p class="ds-handbook-lead">The questions guests actually ask — what this place is, who the doctor is, what a stay includes, and what staff may say. Each section is its own page.</p>
       <p class="ds-handbook-meta">
         <span>Internal team reference</span>
         <span>Shantara Naturopathy</span>
         <span>Kozhikode</span>
         <span>Draft, July 2026</span>
-        <span data-confirm-count></span>
       </p>
     </div>
   </header>

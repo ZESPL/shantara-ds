@@ -11,7 +11,7 @@ description: >
 
 This is the website-building skill. The Website Kit (`ui_kits/website/`) is the place humans and agents read it. Sample screens here illustrate composition — they are **not** a production website.
 
-Entity facts for programmes, rooms, conditions, NAP, and tariff live in [`content/`](../../content/). Prefer those records over inventing local arrays. Use [`docs/handbook.txt`](../../docs/handbook.txt) for policies and `[TO CONFIRM]` flags — not for hero copy. Never quote handbook §15 as public language. Start from root [`AGENTS.md`](../../AGENTS.md).
+Entity facts for programmes, rooms, conditions, NAP, and tariff live in [`content/`](../../content/). Prefer those records over inventing local arrays. Use [`docs/handbook.txt`](../../docs/handbook.txt) as the index, then the section file under [`docs/handbook/`](../../docs/handbook/), for policies and `[TO CONFIRM]` flags — not for hero copy. Never quote handbook §15 as public language. Start from root [`AGENTS.md`](../../AGENTS.md).
 
 Read this file first. Open a sibling reference only when the task needs that inventory:
 

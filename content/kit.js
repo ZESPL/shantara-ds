@@ -1348,6 +1348,114 @@ window.ShantaraContent = {
         "Preventive health"
       ],
       "memberships": [],
+      "press": [
+        {
+          "outlet": "EduAdvice",
+          "title": "JNMC AMU Advances Integrative Medical Education with Expert Lecture on Natural Healing",
+          "date": "2026-02-11",
+          "url": "https://eduadvice.in/educational-news-details/jnmc-amu/9864"
+        },
+        {
+          "outlet": "India Education Diary",
+          "title": "JNMC AMU Advances Integrative Medical Education with Expert Lecture on Natural Healing",
+          "date": "2026-02-10",
+          "url": "https://indiaeducationdiary.in/jnmc-amu-advances-integrative-medical-education-with-expert-lecture-on-natural-healing/"
+        },
+        {
+          "outlet": "Hindusthan Samachar",
+          "title": "Lecture on Ilaj bil Tadbeer at JNMC",
+          "date": "2026-02-10",
+          "url": "https://urdu.hindusthansamachar.in/Encyc/2026/2/10/JNMC-Lecture-on-Ilaj-bil-Tadbe.php"
+        },
+        {
+          "outlet": "Arab News",
+          "title": "Lectures in Riyadh and Dammam",
+          "date": "2015-03-12",
+          "url": "https://www.arabnews.com/corporate-and-sponsored-content/naturopath-to-deliver-lectures-on-life-without-medicine-716926"
+        },
+        {
+          "outlet": "Gulf Times",
+          "title": "Interview in Doha",
+          "date": "2014-11-23",
+          "url": "https://www.gulf-times.com/story/417341/naturopathy-can-cure-without-medicines"
+        },
+        {
+          "outlet": "Arab News",
+          "title": "Interview in Jeddah",
+          "date": "2007-09-05",
+          "url": "https://www.arabnews.com/archive/302959"
+        }
+      ],
+      "talks": [
+        {
+          "title": "Naturopathy - a Lifestyle closer to God",
+          "url": "https://www.youtube.com/watch?v=HdIrKYeaXeE",
+          "publisher": "The Sisters Union",
+          "date": "2025-05-03"
+        },
+        {
+          "title": "Naturopathy for Lasting Health with Dr. P A Kareem",
+          "url": "https://www.youtube.com/watch?v=M9pblYsIH5I",
+          "publisher": "Unity College Lucknow",
+          "date": "2025-03-09"
+        },
+        {
+          "title": "Getting real with Dr. PA Kareem, Founder - Chief physician Hygiene Naturopathy Hospital Kerala",
+          "url": "https://www.youtube.com/watch?v=dvvtxKk1MCw",
+          "publisher": "Mujeeb Akhtar",
+          "date": "2025-02-28"
+        },
+        {
+          "title": "Dr. P A KAREEM, FROM KERALA COMPLETE LECTURE (ON Heart Attack's Aur Diabetes)",
+          "url": "https://www.youtube.com/watch?v=GDhITlmr-qw",
+          "publisher": "AZAD STUDIO",
+          "date": "2022-11-01"
+        }
+      ],
+      "videos": [
+        {
+          "publisher": "BB World",
+          "title": "പ്രകൃതിചികിത്സ/കളിമൺ ചികിത്സ/HYGIENE HOSPITAL FOR NATUROPATHI/mud pack( second part) /-BB WORLD",
+          "date": "2022-06-19",
+          "url": "https://www.youtube.com/watch?v=63yDK8eqY5I"
+        },
+        {
+          "publisher": "BB World",
+          "title": "വരൂ  പ്രകൃതിയിലേക് മടങ്ങാം||HYGIENE HOSPITAL FOR NATUROPATHI & YOGA- BB WORLD",
+          "date": "2022-06-12",
+          "url": "https://www.youtube.com/watch?v=SdwoJaW1x54"
+        },
+        {
+          "publisher": "Ayshu's Vlogs",
+          "title": "My weight loss journey /HYGIENE hospital naturopathy/naturopathy treatment/ weight loss video 2021",
+          "date": "2021-09-26",
+          "url": "https://www.youtube.com/watch?v=aimuT_xW_3s"
+        },
+        {
+          "publisher": "Ayshu's Vlogs",
+          "title": "weight loss journey/ HYGIENE hospital mukkam / 1month 14kg weight loss/ naturopathy treatment part 2",
+          "date": "2021-09-14",
+          "url": "https://www.youtube.com/watch?v=SzaE7GabF9o"
+        },
+        {
+          "publisher": "Ruhu's kitchen & vlog",
+          "title": "ഹൈജീനിലെപ്രകൃതി ചികിത്സാ വിശേഷങ്ങൾ|Hygiene Naturopath|Malappuram Ruhaila kitchen",
+          "date": "2021-09-10",
+          "url": "https://www.youtube.com/watch?v=37EWatPCC5g"
+        }
+      ],
+      "social_posts": [
+        {
+          "source": "Prof. Syed Ziaur Rahman, LinkedIn",
+          "date": "2026-02-10",
+          "url": "https://www.linkedin.com/posts/syed-ziaur-rahman-7236661b_a-guest-lecture-onhealing-the-natural-way-activity-7426988385518485504-Amty"
+        },
+        {
+          "source": "Dr. Supriya S., LinkedIn",
+          "date": "2026-02-06",
+          "url": "https://www.linkedin.com/posts/dr-supriya-s-b0577027a_healingthenaturalway-holistichealth-naturopathy-activity-7425393265459417088-pz5b"
+        }
+      ],
       "external_profiles": [],
       "locale": "en",
       "source": "handbook",

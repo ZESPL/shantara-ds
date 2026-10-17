@@ -51,6 +51,7 @@ function AboutScreen({ onNavigate }) {
             title={t("A doctor plans your programme after consultation and reviews it during your stay.")}
             sub={t("Profiles include qualifications so you can see who is responsible for clinical guidance.")}
             people={aboutDoctors().map((p) => ({ ...p, role: t(p.role), detail: p.detail ? t(p.detail) : undefined }))}
+            action={<TextLink onClick={() => onNavigate("doctor:pa-kareem")}>{t("Dr. P.A. Kareem")}</TextLink>}
           />
         </Section>
       </P>

@@ -58,7 +58,7 @@ You can also keep the folder at the repo root (as it is here) and treat `SKILL.m
 | `templates/og-images/og-image.mjs` and `samples/og-default.jpg` if you are building the website's share images | `templates/og-images/node_modules/` |
 | `templates/icons/public/` and `check-icons.mjs` if you are building the website's favicon and web manifest | `templates/icons/node_modules/` |
 | `scripts/build-bundle.mjs` if you edit components and need `_ds_bundle.js` rebuilt | |
-| `docs/handbook.txt` for policies and `[TO CONFIRM]` | Handbook §15 as public copy; inventing clinical bodies |
+| `docs/handbook.txt` (index) and `docs/handbook/` for policies and `[TO CONFIRM]` | Handbook §15 as public copy; inventing clinical bodies |
 
 ## Where this lives
 
@@ -75,7 +75,7 @@ You can also keep the folder at the repo root (as it is here) and treat `SKILL.m
 | Favicon, touch icon, web manifest | [`ui_kits/website/skill-icons.md`](../ui_kits/website/skill-icons.md) | `skill-images.md`, `search-visibility/files.md` (they point to it) |
 | Video | [`ui_kits/website/skill-video.md`](../ui_kits/website/skill-video.md) | `skill-content.md`, `skill-images.md`, `search-visibility/schema.md`, `search-visibility/crawling.md` (they point to it) |
 | Audience | `docs/icp.md` (internal) | public page copy |
-| Policies / `[TO CONFIRM]` | `docs/handbook.txt` | hero copy; never quote §15 publicly |
+| Policies / `[TO CONFIRM]` | `docs/handbook.txt` and `docs/handbook/` | hero copy; never quote §15 publicly |
 
 ## What an agent should read
 
@@ -86,7 +86,7 @@ You can also keep the folder at the repo root (as it is here) and treat `SKILL.m
 5. `ui_kits/website/SKILL.md` when the work is the public marketing website
 6. `.cursor/skills/shantara-premium-presentations/SKILL.md` when the work is any presentation or deck (HTML brand deck: `templates/brand-deck/`)
 7. The `*.prompt.md` next to the component being used (or the catalog component page)
-8. `docs/handbook.txt` for policies, conflicts, and `[TO CONFIRM]` — not for inventing public copy
+8. `docs/handbook.txt`, then the section file under `docs/handbook/`, for policies, conflicts, and `[TO CONFIRM]` — not for inventing public copy
 9. `docs/icp.md` when the work is audience, SEO, campaigns, CRM, or content strategy — internal only; do not paste ICP names into public copy
 10. `guidelines/accessibility.html` before changing a colour token
 

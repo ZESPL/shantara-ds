@@ -115,7 +115,7 @@ Every URL carries a locale prefix, and `check-routes.mjs` enforces it ([Build ch
 | `/en/our-story` | `our-story.astro` | copy and the founder's doctor record | `AboutPage` + `BreadcrumbList` |
 | `/en/our-approach` | `our-approach.astro` | copy, with the guest journey shown in `NumberedSteps` | `AboutPage` + `BreadcrumbList` |
 | `/en/our-doctors` | `our-doctors.astro` | all doctors, one section each with `id="{slug}"` | `AboutPage` + `ItemList` + `BreadcrumbList`. A full `Person` node for each doctor without a profile; an `@id` reference for the two with one |
-| `/en/doctors/pa-kareem` and `/en/doctors/bahja-janu` | `doctors/[slug].astro`, whose paths come from `DOCTOR_PROFILES` only | doctor, plus their answers, reviewed articles and programmes | `ProfilePage` + `Person` + `BreadcrumbList` |
+| `/en/doctors/pa-kareem` and `/en/doctors/bahja-janu` | `doctors/[slug].astro`, whose paths come from `DOCTOR_PROFILES` only | doctor, plus their answers, reviewed articles, programmes, press, talks, videos and social posts | `ProfilePage` + `Person` + `BreadcrumbList` |
 | `/en/journal` and `/en/journal/{n}` | `journal/[...page].astro` | articles and doctor answers, newest first | `CollectionPage` + `ItemList` + `BreadcrumbList` |
 | `/en/journal/{slug}` | `journal/[slug].astro` | article or doctor answer | `Article` + `BreadcrumbList`, with `MedicalWebPage` fields when medical |
 | `/en/tariff` | `tariff.astro` | `tariff/en.json` | `WebPage` + `BreadcrumbList`, with `Offer` only for visible rates |

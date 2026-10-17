@@ -224,7 +224,24 @@
     "research-and-sources.md": "icp-research-and-sources.html",
     "use.md": "use.html",
     "sources.md": "sources.html",
+    "media-kareem.md": "media-kareem.html",
     "handbook.txt": "handbook.html",
+    "quick-reference.md": "handbook-quick-reference.html",
+    "about.md": "handbook-about.html",
+    "founder.md": "handbook-founder.html",
+    "team.md": "handbook-team.html",
+    "admission.md": "handbook-admission.html",
+    "therapies.md": "handbook-therapies.html",
+    "protocols.md": "handbook-protocols.html",
+    "privacy.md": "handbook-privacy.html",
+    "programmes.md": "handbook-programmes.html",
+    "property.md": "handbook-property.html",
+    "food.md": "handbook-food.html",
+    "stay.md": "handbook-stay.html",
+    "policies.md": "handbook-policies.html",
+    "faqs.md": "handbook-faqs.html",
+    "communication.md": "handbook-communication.html",
+    "contacts.md": "handbook-contacts.html",
   };
 
   /* Repo paths (relative to the design-system root) that have a portal page. */
@@ -273,7 +290,8 @@
       }
       const next = KIT_MD_HREF[file];
       const kitOnly = file === "SKILL.md" || file === "README.md";
-      if (next && (!kitOnly || inWebsiteKit(pathPart, sourcePath))) {
+      const handbookSection = HANDBOOK_SECTION_MD.has(file);
+      if (next && (!kitOnly || inWebsiteKit(pathPart, sourcePath)) && (!handbookSection || inHandbook(pathPart, sourcePath))) {
         a.setAttribute("href", next + suffix);
         return;
       }
@@ -285,6 +303,17 @@
       if (/^[a-z][a-z0-9+.-]*:/i.test(src) || src.startsWith("/")) return;
       img.setAttribute("src", new URL(src, new URL(sourcePath, location.href)).href);
     });
+  }
+
+  /* Section filenames such as about.md are only the handbook's. Other folders must not inherit that map. */
+  const HANDBOOK_SECTION_MD = new Set([
+    "quick-reference.md", "about.md", "founder.md", "team.md", "admission.md", "therapies.md",
+    "protocols.md", "privacy.md", "programmes.md", "property.md", "food.md", "stay.md",
+    "policies.md", "faqs.md", "communication.md", "contacts.md",
+  ]);
+
+  function inHandbook(pathPart, sourcePath) {
+    return /(?:^|\/)handbook\//.test(pathPart) || /(?:^|\/)handbook\//.test(sourcePath || "");
   }
 
   /* SKILL.md and README.md exist in several folders; only the website kit's own copies map to kit pages. */
@@ -302,12 +331,6 @@
       { label: "Using this system", from: 1, to: 6 },
       { label: "Audience profiles", from: 7, to: 13 },
       { label: "How to operate", from: 14, to: 26 },
-    ],
-    handbook: [
-      { label: "Orientation", from: 1, to: 4 },
-      { label: "Clinical", from: 5, to: 9 },
-      { label: "The stay", from: 10, to: 13 },
-      { label: "Operations", from: 14, to: 16 },
     ],
     "website-skill": [
       { label: "Foundations", from: 1, to: 5 },
@@ -695,7 +718,13 @@
     if (!title) return;
     const section = el.querySelector("h2");
     if (section && !(title.compareDocumentPosition(section) & Node.DOCUMENT_POSITION_FOLLOWING)) return;
+    const id = title.id;
     title.remove();
+    if (id && !document.getElementById(id)) {
+      const anchor = document.createElement("span");
+      anchor.id = id;
+      el.prepend(anchor);
+    }
   }
 
   function promotePageTitle(el) {

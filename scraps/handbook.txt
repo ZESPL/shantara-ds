@@ -1,1 +1,1 @@
-Superseded dump. Canonical staff handbook: docs/handbook.txt
+Superseded dump. Canonical staff handbook: docs/handbook.txt (index) and docs/handbook/ (one file per section).

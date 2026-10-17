@@ -24,7 +24,7 @@ On this machine the pack was about **575MB**, almost all of it the raw `TRD` fra
 
 | File | What it is |
 | --- | --- |
-| `scraps/handbook.txt` | Plain-text dump of the handbook — also at `docs/handbook.txt` |
+| `scraps/handbook.txt` | Superseded plain-text dump. The staff handbook is `docs/handbook.txt` plus one file per section in `docs/handbook/` |
 | `scraps/accessibility-contract-src.html` | Earlier contract card. Now folded into `guidelines/accessibility.html` |
 
 ## Photos (`assets/photos/`)
@@ -34,6 +34,10 @@ Flat folder — see [`assets/photos/README.md`](../assets/photos/README.md).
 **Kit defaults:** `arrival-dusk` · `valley` · `courtyard` · `treatment` · `room-premium` · `room-twin` · `balcony` · `dining` · `water-wall` · `library` · `grounds` · `lobby` · `exterior-day` · `reception` · `corridor` · `lounge`
 
 Plus descriptive alternates (rooms, dining, exteriors, treatments, etc.) and doctor photos (`doctor-*-portrait` full; `doctor-*-profile` square close-up). Prefer frames without `-guest` for public marketing. No room numbers.
+
+## Parent hospital mark
+
+Hygiene Nature Cure Hospital does not have a vector logo in the brand pack. The files in `assets/hnch/` were traced on 17 October 2026 from the rasters wrapped as SVG on [hygienecure.com](https://www.hygienecure.com/): the header and footer lockup (`/frontend/images/logo.svg`) and the mark (`/frontend/images/logo-icon.svg`). The published artwork is white. `dark`, `green` and `current` are placement fills of that same drawing. The card is [`guidelines/hnch-logo.html`](../guidelines/hnch-logo.html). This is not the Shantara lockup.
 
 ## Still open
 
