@@ -2,6 +2,8 @@
 
 Part of the [property handbook](../handbook.txt).
 
+This section is for staff. It is not the public privacy policy. Do not paste it onto the website.
+
 Guests share sensitive personal and health information in order to receive care. Protecting that information is a condition of every guest's trust in Shantara, and it is every team member's responsibility, not only clinical staff.
 
 ### What counts as confidential

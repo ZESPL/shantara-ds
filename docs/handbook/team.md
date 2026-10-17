@@ -4,7 +4,7 @@ Part of the [property handbook](../handbook.txt).
 
 Every team member should know who the doctors are and what they specialise in, even if they never discuss treatment details themselves.
 
-### Dr. P.A. Kareem
+### P.A. Kareem
 
 Founder, Chairman & Chief Naturopathy Consultant
 
@@ -70,9 +70,9 @@ No Indian national or Kerala newspaper coverage was found. `arabnews.com/node/30
 | Title | Publisher | Link |
 | --- | --- | --- |
 | Naturopathy - a Lifestyle closer to God | The Sisters Union | https://www.youtube.com/watch?v=HdIrKYeaXeE |
-| Naturopathy for Lasting Health with Dr. P A Kareem | Unity College Lucknow | https://www.youtube.com/watch?v=M9pblYsIH5I |
-| Getting real with Dr. PA Kareem, Founder - Chief physician Hygiene Naturopathy Hospital Kerala | Mujeeb Akhtar | https://www.youtube.com/watch?v=dvvtxKk1MCw |
-| Dr. P A KAREEM, FROM KERALA COMPLETE LECTURE (ON Heart Attack's Aur Diabetes) | AZAD STUDIO | https://www.youtube.com/watch?v=GDhITlmr-qw |
+| Naturopathy for Lasting Health with P A Kareem | Unity College Lucknow | https://www.youtube.com/watch?v=M9pblYsIH5I |
+| Getting real with PA Kareem, Founder - Chief physician Hygiene Naturopathy Hospital Kerala | Mujeeb Akhtar | https://www.youtube.com/watch?v=dvvtxKk1MCw |
+| P A KAREEM, FROM KERALA COMPLETE LECTURE (ON Heart Attack's Aur Diabetes) | AZAD STUDIO | https://www.youtube.com/watch?v=GDhITlmr-qw |
 
 The recordings introduce him with figures this section has already settled against: "Chief Physician", "since 1989", a bed count other than 66, and a book count other than 17. Keep the settled wording. Do not quote cure or reversal claims from the lectures. A phone number spoken in the Unity College recording stays out of this handbook and off the profile.
 
@@ -154,7 +154,7 @@ Naturopathy Physician, Lifestyle & Nutrition
 
 ### About these records
 
-The details above for every doctor come from resumes they supplied in October 2026. Dr. P.A. Kareem's entry also keeps the facts this handbook already held. Treat each resume as accurate and do not contradict it, except where this section gives settled wording, such as years of practice. Contact details, home addresses, dates of birth, marks, joining dates and registration numbers were left out on purpose. Each doctor's entry in `content/doctors/` holds the fields the website uses.
+The details above for every doctor come from resumes they supplied in October 2026. P.A. Kareem's entry also keeps the facts this handbook already held. Treat each resume as accurate and do not contradict it, except where this section gives settled wording, such as years of practice. Contact details, home addresses, dates of birth, marks, joining dates and registration numbers were left out on purpose. Each doctor's entry in `content/doctors/` holds the fields the website uses.
 
 ### Therapists & practitioners
 

@@ -1332,7 +1332,7 @@ window.ShantaraContent = {
     {
       "id": "pa-kareem",
       "slug": "pa-kareem",
-      "full_name": "Dr. P.A. Kareem",
+      "full_name": "P.A. Kareem",
       "role": "Founder, Chairman & Chief Naturopathy Consultant",
       "photo_profile": "doctor-pa-kareem-portrait-cropped.jpeg",
       "qualification": "Government of India-certified Naturopathy Practitioner",
@@ -1394,19 +1394,19 @@ window.ShantaraContent = {
           "date": "2025-05-03"
         },
         {
-          "title": "Naturopathy for Lasting Health with Dr. P A Kareem",
+          "title": "Naturopathy for Lasting Health with P A Kareem",
           "url": "https://www.youtube.com/watch?v=M9pblYsIH5I",
           "publisher": "Unity College Lucknow",
           "date": "2025-03-09"
         },
         {
-          "title": "Getting real with Dr. PA Kareem, Founder - Chief physician Hygiene Naturopathy Hospital Kerala",
+          "title": "Getting real with PA Kareem, Founder - Chief physician Hygiene Naturopathy Hospital Kerala",
           "url": "https://www.youtube.com/watch?v=dvvtxKk1MCw",
           "publisher": "Mujeeb Akhtar",
           "date": "2025-02-28"
         },
         {
-          "title": "Dr. P A KAREEM, FROM KERALA COMPLETE LECTURE (ON Heart Attack's Aur Diabetes)",
+          "title": "P A KAREEM, FROM KERALA COMPLETE LECTURE (ON Heart Attack's Aur Diabetes)",
           "url": "https://www.youtube.com/watch?v=GDhITlmr-qw",
           "publisher": "AZAD STUDIO",
           "date": "2022-11-01"
@@ -1462,7 +1462,7 @@ window.ShantaraContent = {
       "status": "published",
       "featured_image": {
         "src": "doctor-pa-kareem-portrait",
-        "alt": "Dr. P.A. Kareem"
+        "alt": "P.A. Kareem"
       }
     },
     {
@@ -1591,7 +1591,7 @@ window.ShantaraContent = {
       "title": "Twenty-six years of treating the cause",
       "category": "Clinical Guides",
       "read_minutes": 3,
-      "lead": "Dr. P.A. Kareem on Hygiene Nature Cure Hospital's drug-free care since 2000.",
+      "lead": "P.A. Kareem on Hygiene Nature Cure Hospital's drug-free care since 2000.",
       "body": null,
       "author": null,
       "medical_reviewer": null,

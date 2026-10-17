@@ -91,7 +91,7 @@ or:
 
 > Patient
 
-**Guest** is the default public noun for the person staying. Do not call them a patient on marketing pages, heroes, CTAs, or testimonials. Use **patient** only when a clinical, medical, regulatory, or handbook context specifically requires that term.
+**Guest** is the public noun for the person staying, including Guest Rights and Responsibilities. Handbook and internal notes may say patient when that text is not published.
 
 ---
 

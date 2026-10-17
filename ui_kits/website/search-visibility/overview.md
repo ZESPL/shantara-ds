@@ -2,7 +2,7 @@
 
 Back to the [website skill](../SKILL.md).
 
-Version 1.5. Updated 25 September 2026. Adapted for **shantara.life** from the Zarnik Marketplace checklist "Search and AI Visibility" version 6.2.
+Version 1.8. Updated 17 October 2026. Adapted for **shantara.life** from the Zarnik Marketplace checklist "Search and AI Visibility" version 6.2.
 
 This is the checkable rule list for search engines, AI answer engines (ChatGPT, Perplexity, Claude, Gemini, Google AI Overviews), AI browsing agents and accessibility on Shantara's public website. The reasoning and the locked decisions stay in [skill-technical.md](../skill-technical.md), [skill-ia.md](../skill-ia.md), [SKILL.md §15](../SKILL.md#section-15) and [skill-stack.md](../skill-stack.md). These files turn them into rules with IDs and checks. They do not replace them.
 
@@ -57,7 +57,7 @@ Recorded on 25 September 2026. The rules below already follow them.
 | [Link previews (SOCIAL)](social.md) | SOCIAL-01 to SOCIAL-04 | Open Graph tags, share images, Twitter card |
 | [Images (IMG)](images.md) | IMG-01 to IMG-06 | Astro Image, hero loading, lazy loading, alt text, filenames, real photography |
 | [Files (FILE)](files.md) | FILE-01 to FILE-02 | PDFs, favicon and web manifest |
-| [Accessibility (ACC)](accessibility.md) | ACC-01 to ACC-17 | Native HTML, landmarks, keyboard, dialogs, forms, tables, contrast, zoom, motion, axe tests |
+| [Accessibility (ACC)](accessibility.md) | ACC-01 to ACC-21 | Native HTML, landmarks, keyboard, dialogs, forms, tables, contrast, zoom, motion, time limits, link text, CAPTCHA, media, axe tests |
 | [Performance (PERF)](performance.md) | PERF-01 to PERF-06 | Core Web Vitals, CDN, fonts, pop-ups, back/forward cache, prefetch |
 | [Security and hosts (SEC)](security.md) | SEC-01 to SEC-04 | HTTPS, HSTS, exposed files, Content-Security-Policy |
 | [AI answers, AI agents and local presence (AI)](ai.md) | AI-01 to AI-11 | Answer-first writing, facts, name and address consistency, Google Business Profile, AI agents, llms.txt |
@@ -66,6 +66,7 @@ Recorded on 25 September 2026. The rules below already follow them.
 
 ## Change log
 
+- **1.8, 17 October 2026.** PAGE-01: the document title is the one template in skill-technical.md. ACC-03, ACC-04, ACC-06 and ACC-12 to ACC-14 take in reading order, hover, error text, colour, type size, line spacing and flashing. ACC-18 to ACC-21 add time limits, link text, consistent navigation, CAPTCHA and media.
 - **1.7, 7 October 2026.** MEAS-03: OpenPanel receives keyed form fields and identifies a profile. Name, email, and phone stay out of GA4. Health data stays out of both.
 - **1.6, 6 October 2026.** Video: native `<video>` on Cloudflare R2 + CDN only. SCHEMA-16 adds `VideoObject` to the one `@graph`. CRAWL-10 adds the video sitemap. The standard is [skill-video.md](../skill-video.md). YouTube, Vimeo, Cloudflare Stream and Mux embeds are refused.
 - **1.5, 25 September 2026.** Share images: generated at build time from three templates instead of a plain crop of the hero photograph (SOCIAL-02), with `og:image` dimensions and alt text (SOCIAL-01), `twitter:image` (SOCIAL-03), and the default image for noindex and uncovered pages (SOCIAL-04). The standard is [skill-og-images.md](../skill-og-images.md).

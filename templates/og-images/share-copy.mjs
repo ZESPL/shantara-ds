@@ -153,7 +153,7 @@ export const FIXED_PAGES = {
   },
   "our-story": {
     title: "How Shantara began",
-    description: "Shantara grew from Hygiene Nature Cure Hospital, founded by Dr. P.A. Kareem in 2000.",
+    description: "Shantara grew from Hygiene Nature Cure Hospital, founded by P.A. Kareem in 2000.",
     og: {
       template: "editorial",
       title: "How Shantara began",

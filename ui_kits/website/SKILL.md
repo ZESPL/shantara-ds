@@ -121,9 +121,7 @@ Experience pages (typical, not mandatory as individual URLs): Therapies, Rooms &
 
 About: Our Story, Our Approach, Our Doctors, Medical Editorial Policy.
 
-Utility: Book a Consultation, Contact, Resident Policies, Cancellation Policy, Privacy Policy, Terms of Service.
-
-Full inventory, publishing families, and URL rules: [skill-ia.md](skill-ia.md).
+Utility, guest, policy and about pages are in [skill-ia.md](skill-ia.md), with the rest of the inventory, publishing families and URL rules. That file also holds the last-updated line, the contact for questions, and the links from the booking confirmation and the tariff letter.
 
 ## 5. Compose a page
 
@@ -173,7 +171,7 @@ Recommended fields:
 - Country
 - Anything you'd like us to know? — optional
 
-Do not turn first contact into a medical intake. Do not ask questions merely because a CRM has fields. Do not calculate stay totals on this form.
+Do not turn first contact into a medical intake. Do not ask questions merely because a CRM has fields. Do not calculate stay totals on this form. Privacy consent on every form is specified in [skill-content.md](skill-content.md#privacy-consent-on-forms).
 
 Automatically attach locale, source URL, page type, content id/name, program/condition context, landing page, referrer, UTMs, timestamp. If the visitor submits from `/en/conditions/diabetes`, do not ask “Which condition?”. Field **keys** stay `full_name`, `phone`, `email`, `country`, `notes` in every language — labels translate, keys do not.
 
@@ -234,9 +232,7 @@ Do not invent content, credentials, prices, medical facts, or program details. F
 
 Marketing site: prefer static generation / prerendering. Minimize client JS. Hydrate only forms, navigation, gallery, accordion, modal/drawer, analytics, video.
 
-Accessibility is baseline: semantic headings, keyboard access, visible focus, meaningful alt, labelled fields, associated errors, contrast, 44px touch targets, reduced-motion, correct ARIA on accordion/dialog, captions/transcripts when needed. Set `html` `lang` and `dir` from the locale. Language selector must have an accessible name, current-locale state, keyboard support, and visible focus. Annotate passages in another language. Do not rely on color alone.
-
-This kit follows the design-system accessibility contract in `guidelines/accessibility.html`.
+The website accessibility standard is [search-visibility/accessibility.md](search-visibility/accessibility.md). This kit follows the design-system contract in `guidelines/accessibility.html`. Set `html` `lang` and `dir` from the locale. The language selector must have an accessible name, current-locale state, keyboard support, and visible focus. Annotate passages in another language.
 
 ## 11. Page workflow
 

@@ -22,7 +22,7 @@ function ensure() {
   document.head.appendChild(el);
 }
 
-/* First and last initial: "Dr. P.A. Kareem" → "PK", "Dr. Bahja Janu" → "BJ". */
+/* First and last initial: "P.A. Kareem" → "PK", "Dr. Bahja Janu" → "BJ". */
 function initialsOf(name) {
   const parts = String(name || "")
     .replace(/^(Dr\.?|Mr\.?|Ms\.?|Mrs\.?)\s+/i, "")

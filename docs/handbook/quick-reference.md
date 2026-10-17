@@ -15,7 +15,7 @@ Part of the [property handbook](../handbook.txt).
 | Land area | 4 acres, hilltop setting |
 | Built-up wellness infrastructure | 56,000 sq. ft. |
 | Number of rooms | 52 |
-| Founder | Dr. P.A. Kareem, Government of India-certified Naturopathy Practitioner |
+| Founder | P.A. Kareem, Government of India-certified Naturopathy Practitioner |
 | Typical stay length | Most programmes are designed around a week or longer so protocols have time to take effect. This is typical, not a mandatory floor for every stay. |
 | Monthly booking cap | 100 bookings per month, to preserve personalised care and attention |
 | Phone | +91 9553 600 100 |

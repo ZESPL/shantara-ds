@@ -13,14 +13,14 @@ The first edition is meant to cover the past 3 months of clinical data. The hand
 - Working title can follow the handbook name of the place: Shantara Naturopathy, Kozhikode, Keralam. `docs/handbook/quick-reference.md`
 - Shantara is the evolution of Hygiene Nature Cure Hospital. The parent hospital is a 66-bed hospital certified under the Keralam Clinical Establishment Act. `docs/handbook/about.md`, `docs/handbook/quick-reference.md`
 - Doctors named in the handbook, with the qualifications and roles it gives:
-  - Dr. P.A. Kareem. Founder, Chairman and Chief Naturopathy Consultant. Government of India Certified Naturopath. 33+ years of practice. Degrees: B.A. in Urdu (Adib-e-Fazil) with Language Teachers' Training, and B.A. in History with B.Ed. The handbook says never to attribute a BNYS or a medical degree to him. `docs/handbook/team.md`, `docs/handbook/founder.md`
+  - P.A. Kareem. Founder, Chairman and Chief Naturopathy Consultant. Government of India Certified Naturopath. 33+ years of practice. Degrees: B.A. in Urdu (Adib-e-Fazil) with Language Teachers' Training, and B.A. in History with B.Ed. The handbook says never to attribute a BNYS or a medical degree to him. `docs/handbook/team.md`, `docs/handbook/founder.md`
   - Dr. Bahja Janu. Medical Director. BNYS, Alva's College of Naturopathy and Yogic Sciences, Rajiv Gandhi University of Health Sciences, 2012. 14+ years of clinical naturopathy practice. She leads clinical operations and the team of naturopaths, nutritionists, physiotherapists and wellness practitioners, and she designs the treatment protocols and programmes. Licences named: Travancore-Cochin Medical Council, Kerala; Saudi Ministry of Health; listed with CCRYN. Registration numbers must not be published. `docs/handbook/team.md`, `docs/handbook/founder.md`
   - Dr. Gangrei Gangmei. Resident Medical Officer. BNYS, Rajiv Gandhi University of Health Sciences, 2024. `docs/handbook/team.md`
   - Dr. Keerthana V S. Naturopathy Physician and Yoga Therapist. She also leads yoga sessions as a yoga trainer. BNYS, Alva's College, Rajiv Gandhi University of Health Sciences, 2024. `docs/handbook/team.md`
   - Dr. Sara Shanti Alen. Naturopathy Physician, Lifestyle and Nutrition. BNYS, SDM College of Naturopathy and Yogic Sciences, Ujire, Rajiv Gandhi University of Health Sciences, 2019 to 2025. `docs/handbook/team.md`
 - The only named therapist is Hiba Shereef, Physiotherapist. The handbook does not list her as a doctor. `docs/handbook/team.md`
 - Clinical work sits under the Medical Director. Clinical departments are Consultation, Therapy, Nursing, and Lab. `docs/handbook/contacts.md`
-- Handbook text that is still open needs input from Azhar, Dr. P.A. Kareem, or Dr. Bahja Janu. `docs/handbook.txt`
+- Handbook text that is still open needs input from Azhar, P.A. Kareem, or Dr. Bahja Janu. `docs/handbook.txt`
 
 **Gaps**
 
@@ -30,7 +30,7 @@ The first edition is meant to cover the past 3 months of clinical data. The hand
 
 **Ask this person**
 
-- Doctors. Start with the Medical Director, Dr. Bahja Janu, and the Chief Naturopathy Consultant, Dr. P.A. Kareem.
+- Doctors. Start with the Medical Director, Dr. Bahja Janu, and the Chief Naturopathy Consultant, P.A. Kareem.
 - Management, for who may publish the finished report. The Chief Executive Officer is Nishan Kareem. The handbook does not say he signs clinical reports. `docs/handbook/founder.md`, `docs/handbook/contacts.md`
 
 ### 2. Summary
@@ -238,7 +238,7 @@ The first edition is meant to cover the past 3 months of clinical data. The hand
 
 - Doctors, for how stable the forms and programme definitions have been.
 - Operations and front office, for whether booking names and clinical programme names match.
-- Azhar, Dr. P.A. Kareem, or Dr. Bahja Janu, for anything still marked [TO CONFIRM]. Azhar's job title: Not found in handbook. `docs/handbook.txt`
+- Azhar, P.A. Kareem, or Dr. Bahja Janu, for anything still marked [TO CONFIRM]. Azhar's job title: Not found in handbook. `docs/handbook.txt`
 
 ### 9. Changes for next quarter
 
@@ -260,10 +260,10 @@ The first edition is meant to cover the past 3 months of clinical data. The hand
 **Found in handbook**
 
 - Dr. Bahja Janu, Medical Director, leads clinical operations and designs the treatment protocols and programmes. `docs/handbook/team.md`, `docs/handbook/contacts.md`
-- Dr. P.A. Kareem is Founder, Chairman and Chief Naturopathy Consultant. `docs/handbook/team.md`, `docs/handbook/founder.md`
+- P.A. Kareem is Founder, Chairman and Chief Naturopathy Consultant. `docs/handbook/team.md`, `docs/handbook/founder.md`
 - The doctor on duty handles the treatment plan and is the first step for an emergency. `docs/handbook/contacts.md`
 - Non-medical staff must not contradict a doctor's recommendation. `docs/handbook/protocols.md`
-- Unfinished handbook statements need Azhar, Dr. P.A. Kareem, or Dr. Bahja Janu. That line is about the handbook, not about this report. `docs/handbook.txt`
+- Unfinished handbook statements need Azhar, P.A. Kareem, or Dr. Bahja Janu. That line is about the handbook, not about this report. `docs/handbook.txt`
 - Commercial and administrative departments (Sales, Marketing, Finance, Human Resources) sit with the Chief Executive Officer, Nishan Kareem. `docs/handbook/founder.md`, `docs/handbook/contacts.md`
 
 **Gaps**
@@ -274,7 +274,7 @@ The first edition is meant to cover the past 3 months of clinical data. The hand
 
 **Ask this person**
 
-- Doctors. Ask Dr. Bahja Janu and Dr. P.A. Kareem who is allowed to sign.
+- Doctors. Ask Dr. Bahja Janu and P.A. Kareem who is allowed to sign.
 - Management (Nishan Kareem), for permission to publish on the website after the doctors sign. The handbook does not give him clinical sign-off.
 
 ### Treatments and therapies
@@ -383,10 +383,10 @@ The first edition is meant to cover the past 3 months of clinical data. The hand
 - Non-medical staff must never diagnose, promise a health outcome, advise on medication changes, or contradict a doctor. `docs/handbook/protocols.md`
 - Individual results vary. Naturopathy is complementary and is not a substitute for emergency medical care. `docs/handbook/policies.md`
 - Do not quote the book title "Drugless Cure for Diabetes and Hypertension" in public copy, because "cure" is an outcome claim. `docs/handbook/team.md`
-- Do not quote cure or reversal claims from Dr. P.A. Kareem's lectures or from old headlines. A headline that states a cure or another outcome is rewritten as a plain description. `docs/handbook/team.md`
+- Do not quote cure or reversal claims from P.A. Kareem's lectures or from old headlines. A headline that states a cure or another outcome is rewritten as a plain description. `docs/handbook/team.md`
 - Do not repeat the Onmanorama headline wording "diabetes reversal". `docs/handbook/team.md`
 - Men's Vitality is not a guarantee of any biomarker change. Longevity is not a longevity-medicine or sanctuary product. `docs/handbook/programmes.md`
-- Do not attribute a BNYS or a medical degree to Dr. P.A. Kareem. Use 33+ years, not "since 1989". Use 66-bed, not 160-bed. Use Founder, Chairman and Chief Naturopathy Consultant, not "Director and Chief Physician". Use Hygiene Nature Cure Hospital, not "Hygiene Nature Cure and Yoga". `docs/handbook/team.md`
+- Do not attribute a BNYS or a medical degree to P.A. Kareem. Use 33+ years, not "since 1989". Use 66-bed, not 160-bed. Use Founder, Chairman and Chief Naturopathy Consultant, not "Director and Chief Physician". Use Hygiene Nature Cure Hospital, not "Hygiene Nature Cure and Yoga". `docs/handbook/team.md`
 - Never publish a registration number. Do not present Dr. Bahja Janu's Certified Professional Coder credential as a clinical qualification. Do not offer oncology nutrition as a service. `docs/handbook/team.md`
 - Do not confirm that a named person was a guest. Do not publish identifying health details. `docs/handbook/privacy.md`
 - Rates, currencies, and validity dates are not in the handbook and must not be added to this report. `docs/handbook.txt`

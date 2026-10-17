@@ -20,7 +20,7 @@ This file sets the folder layout, routes and data sources for the **shantara.lif
 | 8 | **Singletons are per language** | Singletons use `site/{locale}.json`, `tariff/{locale}.json` and `faq/{locale}.json`. English is the master copy. |
 | 9 | **Doctors are `Person` nodes, and pages carry a `BreadcrumbList`** | Use `Person`, never `Physician`, which Schema.org defines as a medical business ([SCHEMA-09](search-visibility/schema.md)). Programmes use `Service` with no `offers` ([SCHEMA-10](search-visibility/schema.md)). |
 | 10 | **Code says `program`, copy says programme** | Folder names, URLs, collection names, `related_pages` types, TypeScript types and schema `@id` values all use `program`. Only visible copy says "programme". |
-| 11 | **One page lists all doctors, and only two doctors get a profile page** | `/en/our-doctors` lists every doctor, each with an anchor section. Only Dr. P.A. Kareem (`/en/doctors/pa-kareem`) and Dr. Bahja Janu (`/en/doctors/bahja-janu`) have a profile page. The allowlist `DOCTOR_PROFILES` in `lib/routes.ts` controls this. No other doctor gets a page. |
+| 11 | **One page lists all doctors, and only two doctors get a profile page** | `/en/our-doctors` lists every doctor, each with an anchor section. Only P.A. Kareem (`/en/doctors/pa-kareem`) and Dr. Bahja Janu (`/en/doctors/bahja-janu`) have a profile page. The allowlist `DOCTOR_PROFILES` in `lib/routes.ts` controls this. No other doctor gets a page. |
 
 ## Folder tree
 
@@ -48,7 +48,10 @@ src/
     our-story.ts  our-approach.ts  our-doctors.ts
     conditions.ts  programs.ts  journal.ts  faq.ts  tariff.ts  contact.ts  book-consultation.ts
     policies/
-      resident-policies.md  privacy-policy.md  terms-of-service.md
+      admission-criteria.md  house-rules.md  guest-rights.md
+      feedback-and-complaints.md  accessibility.md  terms.md
+      privacy-policy.md  ethics.md  diversity.md
+      accreditations.md  sustainability.md
   components/
     ui/          Button, Badge, Tag, Icon, Logo, Divider, PatternPanel
     editorial/   Prose, QuoteBlock, ArticleFigure, SpecTable, TimeTable, NumberedSteps,
@@ -76,7 +79,7 @@ src/
     schema.ts         @id builders (#doctor-{id}, #program-{id}, …)
     track.ts          the one analytics abstraction (OpenPanel + Google Tag)
     lead-context.ts   locale, page type, content ID, UTMs → hidden form fields
-    seo/meta.ts       PageMeta → title, canonical, robots, Open Graph (one resolver)
+    seo/meta.ts       PageMeta → document title (the one template), canonical, robots, Open Graph
     seo/pages.ts      one PageMeta generator per page type; feeds getStaticPaths and share images
     seo/og/           og-image.mjs (copied from the design system), its fonts and marks
   markdoc/       config.ts (tags and nodes) + Renderer.astro (maps them to editorial/*.astro)
@@ -123,10 +126,18 @@ Every URL carries a locale prefix, and `check-routes.mjs` enforces it ([Build ch
 | `/en/contact` | `contact.astro` | `site/en.json` | `ContactPage` |
 | `/en/book-consultation` | `book-consultation.astro` | `ConsultationForm` | `WebPage` only |
 | `/en/hosted-stays` | `hosted-stays.astro` | Specified in [special-pages/hosted-stays.md](special-pages/hosted-stays.md). Indexable. No links from nav, footer, or guest pages. No kit sample. Same slug under each published locale. | `WebPage` only |
-| `/en/resident-policies` | `resident-policies.astro` | `copy/en/policies/resident-policies.md` | `WebPage` only |
+| `/en/admission-criteria` | `admission-criteria.astro` | `copy/en/policies/admission-criteria.md` | `WebPage` only |
+| `/en/house-rules` | `house-rules.astro` | `copy/en/policies/house-rules.md` | `WebPage` only |
+| `/en/guest-rights` | `guest-rights.astro` | `copy/en/policies/guest-rights.md` | `WebPage` only |
+| `/en/feedback-and-complaints` | `feedback-and-complaints.astro` | `copy/en/policies/feedback-and-complaints.md` | `WebPage` only |
+| `/en/accessibility` | `accessibility.astro` | `copy/en/policies/accessibility.md` | `WebPage` only |
+| `/en/terms` | `terms.astro` | `copy/en/policies/terms.md` | `WebPage` only |
 | `/en/cancellation-policy` | `cancellation-policy.astro` | `tariff/en.json` → `cancellation`, `payment_terms` | `WebPage` only |
 | `/en/privacy-policy` | `privacy-policy.astro` | `copy/en/policies/privacy-policy.md` | `WebPage` only |
-| `/en/terms-of-service` | `terms-of-service.astro` | `copy/en/policies/terms-of-service.md` | `WebPage` only |
+| `/en/ethics` | `ethics.astro` | `copy/en/policies/ethics.md` | `WebPage` only |
+| `/en/diversity` | `diversity.astro` | `copy/en/policies/diversity.md` | `WebPage` only |
+| `/en/accreditations` | `accreditations.astro` | `copy/en/policies/accreditations.md` | `WebPage` only |
+| `/en/sustainability` | `sustainability.astro` | `copy/en/policies/sustainability.md` | `WebPage` only |
 
 The cancellation policy has no copy file of its own. It renders from the tariff singleton, so the policy and the tariff page can never disagree.
 
@@ -153,10 +164,10 @@ The copy for these pages is written in code (`src/copy/en/`). Facts come from th
 | Amenities & Activities | Handbook §10, "Facilities & amenities" | Use the handbook names (it says "Yoga Hall", not "Yoga Pavilion"). The jogging track, conference room and indoor/outdoor games are not in the handbook, so keep them off the page until they are confirmed. |
 | Organic Farm & Dining | Handbook §11 | The handbook says meals are part of treatment and "not a restaurant menu". Show "An example day of meals" and say that the doctor prescribes each guest's diet. Meal and juice timings are in handbook §11. |
 | A Day at Shantara | Handbook §12 (daily routine) and §13 | Use the daily routine timings from handbook §12. Say that the doctor prescribes which treatments fill the morning and afternoon slots. The name follows Shantara, never Welnez. |
-| Our Story | Handbook §2–3 | Hygiene Nature Cure Hospital (2000) → Shantara. The founder is Dr. P.A. Kareem. Mention Welnez only as the former name, and only if the history needs it. |
+| Our Story | Handbook §2–3 | Hygiene Nature Cure Hospital (2000) → Shantara. The founder is P.A. Kareem. Mention Welnez only as the former name, and only if the history needs it. |
 | Our Approach | Handbook, naturopathy principles and the guest journey | Describe the journey as enquiry → consultation → stay → going home. Do not use hospital words such as "discharge" or "patients". [AGENTS.md](../../AGENTS.md) bans "patients" on public pages. |
-| Our Doctors | `content/doctors/` | Each doctor gets a photo, name, qualification, areas of practice and a **Book a Consultation** button. Dr. Kareem and Dr. Bahja also link to their profile pages. Show only public, visible credentials. |
-| Policies | Handbook §13 (house rules) and §8 (privacy), plus the tariff for cancellation | Use plain language with a visible "last updated" date. |
+| Our Doctors | `content/doctors/` | Each doctor gets a photo, name, qualification, areas of practice and a **Book a Consultation** button. P.A. Kareem and Dr. Bahja also link to their profile pages. Show only public, visible credentials. |
+| Guest, policy and about pages | The lists in [skill-ia.md](skill-ia.md#utility-pages) | Do not invent text. Cancellation has no copy file; it renders from the tariff. |
 
 ## Reading content
 

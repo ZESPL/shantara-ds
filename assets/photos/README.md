@@ -17,7 +17,7 @@ Full seated studio shots (`*-portrait.jpg`, 1920×2880) and matching square clos
 | Portrait (full) | Close-up (square) | Who |
 | --- | --- | --- |
 | `doctor-bahja-janu-portrait` | `doctor-bahja-janu-portrait-cropped.jpeg` | Dr. Bahja Janu (Medical Director; content id `bahja-janu`) |
-| `doctor-pa-kareem-portrait` | `doctor-pa-kareem-portrait-cropped.jpeg` | Dr. P.A. Kareem (Founder; content id `pa-kareem`) |
+| `doctor-pa-kareem-portrait` | `doctor-pa-kareem-portrait-cropped.jpeg` | P.A. Kareem (Founder; content id `pa-kareem`) |
 | `doctor-gangrei-gangmei-portrait` | `doctor-gangrei-gangmei-portrait-cropped.jpeg` | Dr. Gangrei Gangmei |
 | `doctor-keerthana-portrait` | `doctor-keerthana-portrait-cropped.jpeg` | Dr. Keerthana |
 | `doctor-sara-portrait` | `doctor-sara-portrait-cropped.jpeg` | Dr. Sara |

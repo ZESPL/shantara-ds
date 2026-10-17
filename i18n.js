@@ -449,7 +449,7 @@
     "What naturopathy protocols actually need to take effect.": "ما تحتاجه بروتوكولات العلاج الطبيعي حتى تؤتي أثرها.",
     "How a supervised fast is introduced, monitored and ended.": "كيف يُبدأ الصيام تحت الإشراف ويُراقب ويُنهى.",
     "How meals are prescribed, and why there is no menu.": "كيف تُوصف الوجبات، ولماذا لا توجد قائمة.",
-    "Dr. P.A. Kareem on drug-free practice since 2000.": "د. ب. أ. كريم عن الممارسة بلا أدوية منذ 2000.",
+    "P.A. Kareem on drug-free practice since 2000.": "ب. أ. كريم عن الممارسة بلا أدوية منذ 2000.",
     "Why the rooms are quiet, plain and easy to rest in.": "لماذا الغرف هادئة وبسيطة وسهلة للراحة.",
     "Alongside these, Shantara runs condition-specific medical programmes across eleven categories, from metabolic and renal health to hormonal conditions. Every guest in a medical programme is under a doctor's direct care.": "إلى جانب هذه، تدير شانتارا برامج طبية حسب الحالة عبر إحدى عشرة فئة، من الصحة الأيضية والكلوية إلى الحالات الهرمونية. كل ضيف في برنامج طبي يكون تحت رعاية طبيب مباشرة.",
     "Rates are quoted only on the tariff card. Your stay is confirmed after doctor review.": "تُذكر الأسعار على بطاقة التعرفة فقط. تُؤكَّد إقامتك بعد مراجعة الطبيب.",

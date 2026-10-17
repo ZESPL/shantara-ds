@@ -1,4 +1,4 @@
-# Media mentions — Dr. P.A. Kareem and Hygiene Nature Cure Hospital
+# Media mentions — P.A. Kareem and Hygiene Nature Cure Hospital
 
 Checked 17 October 2026.
 
@@ -23,9 +23,9 @@ Four stories, six links. The three February 2026 rows are one lecture at Jawahar
 | Publisher             | Title                                                                         | Date             | Link                                                                                       |
 | --------------------- | ----------------------------------------------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------ |
 | The Sisters Union     | Naturopathy - a Lifestyle closer to God                                       | 3 May 2025       | [https://www.youtube.com/watch?v=HdIrKYeaXeE](https://www.youtube.com/watch?v=HdIrKYeaXeE) |
-| Unity College Lucknow | Naturopathy for Lasting Health with Dr. P A Kareem                            | 9 March 2025     | [https://www.youtube.com/watch?v=M9pblYsIH5I](https://www.youtube.com/watch?v=M9pblYsIH5I) |
-| Mujeeb Akhtar         | Getting real with Dr. PA Kareem                                               | 28 February 2025 | [https://www.youtube.com/watch?v=dvvtxKk1MCw](https://www.youtube.com/watch?v=dvvtxKk1MCw) |
-| AZAD STUDIO           | Dr. P A KAREEM, FROM KERALA COMPLETE LECTURE (ON Heart Attack's Aur Diabetes) | 1 November 2022  | [https://www.youtube.com/watch?v=GDhITlmr-qw](https://www.youtube.com/watch?v=GDhITlmr-qw) |
+| Unity College Lucknow | Naturopathy for Lasting Health with P A Kareem                            | 9 March 2025     | [https://www.youtube.com/watch?v=M9pblYsIH5I](https://www.youtube.com/watch?v=M9pblYsIH5I) |
+| Mujeeb Akhtar         | Getting real with PA Kareem                                               | 28 February 2025 | [https://www.youtube.com/watch?v=dvvtxKk1MCw](https://www.youtube.com/watch?v=dvvtxKk1MCw) |
+| AZAD STUDIO           | P A KAREEM, FROM KERALA COMPLETE LECTURE (ON Heart Attack's Aur Diabetes) | 1 November 2022  | [https://www.youtube.com/watch?v=GDhITlmr-qw](https://www.youtube.com/watch?v=GDhITlmr-qw) |
 
 
 ## Other videos on Hygiene Nature Cure Hospital

@@ -185,7 +185,7 @@
     tariffs: "tariffs",
     /* Single Journal article. Navigate with "article:<slug>"; bare "article" opens the sample. */
     article: "journal/how-meals-are-planned",
-    /* Doctor profile. Navigate with "doctor:<slug>"; bare "doctor" opens Dr. P.A. Kareem. */
+    /* Doctor profile. Navigate with "doctor:<slug>"; bare "doctor" opens P.A. Kareem. */
     doctor: "doctors/pa-kareem",
   };
 

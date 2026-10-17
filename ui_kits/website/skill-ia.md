@@ -141,7 +141,9 @@ Pages:
 
 Medical Editorial Policy also sits under About.
 
-`/en/our-doctors` lists every doctor with a photo, name, qualification, areas of practice and a **Book a Consultation** button. Only Dr. P.A. Kareem and Dr. Bahja Janu have a profile page. Each profile lists the doctor's answers, the articles they reviewed, their programmes, and any press, talks, videos and social posts on the doctor record. Those lists are outbound links. A YouTube recording is a link, never an embedded player. Do not create a profile page for any other doctor; link to their section on `/en/our-doctors` instead (for example `/en/our-doctors#{slug}`).
+Accreditations and Sustainability are standing pages. Their URLs are under [Utility pages](#utility-pages).
+
+`/en/our-doctors` lists every doctor with a photo, name, qualification, areas of practice and a **Book a Consultation** button. Only P.A. Kareem and Dr. Bahja Janu have a profile page. Each profile lists the doctor's answers, the articles they reviewed, their programmes, and any press, talks, videos and social posts on the doctor record. Those lists are outbound links. A YouTube recording is a link, never an embedded player. Do not create a profile page for any other doctor; link to their section on `/en/our-doctors` instead (for example `/en/our-doctors#{slug}`).
 
 Entity and parent history (including Hygiene Nature Cure Hospital / HNCH) belong here — not on condition or programme pages, and not as a hospital product pitch.
 ## Publishing families
@@ -182,10 +184,37 @@ Traditional blog articles may continue to exist, but do not make generic blog pr
 - Contact (`/en/contact`)
 - Hosted visits (`/en/hosted-stays`) — a special page. Specified in [special-pages/hosted-stays.md](special-pages/hosted-stays.md). Indexable. Not linked from the guest journey. No kit sample.
 - Frequently asked questions (`/en/faq`, grouped by category)
-- Resident Policies (`/en/resident-policies`)
-- Cancellation Policy (`/en/cancellation-policy`, rendered from the tariff's cancellation terms)
-- Privacy Policy (`/en/privacy-policy`)
-- Terms of Service (`/en/terms-of-service`)
+
+The pages below are top-level. Each one is published only at its locale-prefixed URL, for example `/en/house-rules`. An unprefixed path is not a route. Do not add them to the five-item header. Footer linking is [PAGE-08](search-visibility/pages.md).
+
+Each of these pages shows a **Last updated** date — the date its text last changed, not the deploy date — and a contact for questions. The contact is the public email and phone on the site record. Do not invent a second address.
+
+Do not invent the text. A page with no fact source below stays unpublished until Shantara supplies it. Guest and policy pages use the page type `policy`. Accreditations and Sustainability use `about`.
+
+**For guests**
+
+1. Admission Criteria (`/en/admission-criteria`). Facts: handbook §5, written for a guest.
+2. House Rules (`/en/house-rules`). Facts: handbook §13, except cancellation, which stays on the cancellation page.
+3. Guest Rights and Responsibilities (`/en/guest-rights`). The page says guests.
+4. Feedback and Complaints (`/en/feedback-and-complaints`).
+5. Accessibility (`/en/accessibility`). This is the public page. The website standard stays in [search-visibility/accessibility.md](search-visibility/accessibility.md). Do not paste those rules here, and do not state what the property can accommodate until that is confirmed.
+
+**Policies**
+
+6. Terms and Conditions (`/en/terms`).
+7. Cancellation and Refund Policy (`/en/cancellation-policy`). Rendered from the tariff’s cancellation terms, so the page and the tariff cannot disagree.
+8. Privacy Policy (`/en/privacy-policy`). This is the public notice of what the website collects and why, including the consultation form, Ask the Doctor, the hosted-visits form, and analytics. The text is supplied by Shantara in `copy/en/policies/privacy-policy.md`. Handbook §8 is staff guidance and is not a source for this page. The page stays unpublished until that public text exists.
+9. Ethics Policy (`/en/ethics`).
+10. Diversity and Inclusion (`/en/diversity`).
+
+**About Shantara**
+
+11. Accreditations and Certifications (`/en/accreditations`). Publish only a credential Shantara can show.
+12. Sustainability (`/en/sustainability`).
+
+The booking confirmation, and the tariff letter or email, each link to Terms and Conditions and to the Cancellation and Refund Policy. They do not restate either policy.
+
+Earlier planned paths redirect: `/en/resident-policies` to `/en/house-rules`, and `/en/terms-of-service` to `/en/terms`.
 
 ## Page types
 

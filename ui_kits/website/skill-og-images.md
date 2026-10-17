@@ -89,7 +89,7 @@ Jobs are the families in [skill-ia.md](skill-ia.md). The template is still the p
 | FAQ | `editorial` | Questions before a stay | Booking, who can stay, and the days here. |
 | Contact | `editorial` | Speak with the retreat | Call, WhatsApp or email from Keralam. No phone number. |
 | Book a Consultation | `programme` | Book a consultation | A doctor helps you choose the next step. |
-| Resident policies | `editorial` | During your stay | House rules for life at the retreat. |
+| House rules | `editorial` | During your stay | House rules for life at the retreat. |
 | Cancellation | `editorial` | If a stay is cancelled | How a change or a cancellation is handled. |
 | Privacy | `editorial` | Privacy at the retreat | What we collect, and why we keep it. |
 | Terms | `editorial` | Terms for this website | The terms that cover using the site. |
@@ -124,7 +124,7 @@ An article's `category` is the subtype (Clinical Guide, Guest Story, Food & Reci
 
 ![Dr. Bahja Janu. The line is the role, because no qualification is recorded.](../../templates/og-images/samples/doctor.jpg)
 
-![Dr. P.A. Kareem. The line is the qualification. The photograph is his portrait.](../../templates/og-images/samples/doctor-kareem.jpg)
+![P.A. Kareem. The line is the qualification. The photograph is his portrait.](../../templates/og-images/samples/doctor-kareem.jpg)
 
 ![A Clinical Guide. The search title is longer. The picture uses a one-line headline, and the lead is the line.](../../templates/og-images/samples/editorial.jpg)
 

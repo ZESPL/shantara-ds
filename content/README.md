@@ -6,7 +6,7 @@ JSON records matching [`ui_kits/website/skill-content.md`](../ui_kits/website/sk
 
 1. Prefer these files over inventing programmes, rooms or NAP in kit screens or consumer apps.
 2. `status`: `published` | `draft`. Anything unconfirmed stays `draft`. There is no `to_confirm` flag.
-3. `source`: `handbook` | `kit` | `gap` | `rate-control-sheet` | `resume` (doctor records built from the doctor's own resume; the full background is in handbook §4. Dr. P.A. Kareem's record stays `handbook`. The unique media register is [`docs/media-kareem.md`](../docs/media-kareem.md); his profile lists only the press and talks from that file).
+3. `source`: `handbook` | `kit` | `gap` | `rate-control-sheet` | `resume` (doctor records built from the doctor's own resume; the full background is in handbook §4. P.A. Kareem's record stays `handbook`. The unique media register is [`docs/media-kareem.md`](../docs/media-kareem.md); his profile lists only the press and talks from that file).
 4. Shared fields follow the content model: `featured_image` (`src` is a filename in `assets/photos/` without `.jpg`, plus `alt`), `featured`, `related_pages` (`{type, id}`; the reverse links are generated), `external_references` (`{title, url}`), `faqs`.
 5. Empty directories (`guest-stories/`, `events/`, `testimonials/`) mean the entity is **not ready**. Do not invent consent, quotes, or events.
 6. Draft conditions have empty `clinical` / `faqs` — listing summaries only until medical review.

@@ -72,7 +72,7 @@ Before publishing a new or rebuilt page:
 - [ ] Primary CTA uses the unified enquiry flow and a visitor-facing label from skill-copy.md.
 - [ ] Copy follows [skill-copy.md](skill-copy.md): no architecture notes, invented policies, scattered prices, or promised outcomes.
 - [ ] Analytics context is correct.
-- [ ] SEO title/meta/canonical are set for **this locale**.
+- [ ] SEO title/meta/canonical are set for **this locale**. The document title is the template in [skill-technical.md](skill-technical.md#global-site-identity-titles-and-open-graph): the page supplies only its segment, and the separator and brand text come from `site/{locale}.json`.
 - [ ] `hreflang` lists only published equivalents, plus `x-default`.
 - [ ] Internal links stay in the current locale.
 - [ ] `html` `lang` and `dir` match the locale.
@@ -95,6 +95,7 @@ Before publishing a new or rebuilt page:
 - [ ] Type never sits on the rosette band; narrow surfaces drop the band.
 - [ ] CTAs are short; no decorative Badge/Tag pills next to actions; no 2xs helper essays.
 - [ ] Text-size control (if present) works at Larger without breaking layout.
+- [ ] The footer links to every published page in the For guests, Policies, and About Shantara lists in [skill-ia.md](skill-ia.md#utility-pages), plus Our Story, Our Approach, Our Doctors, Medical Editorial Policy, and Contact ([PAGE-08](search-visibility/pages.md)). Privacy and Terms are links to `/en/privacy-policy` and `/en/terms`.
 
 ## QA Checklist — Medical / condition content
 
@@ -135,7 +136,8 @@ Verify:
 - [ ] Same consultation fields are used everywhere.
 - [ ] Form does not ask unnecessary medical questions.
 - [ ] Source page/context and locale are captured automatically.
-- [ ] Field keys stay `full_name`, `phone`, `email`, `country`, `notes`.
+- [ ] Field keys stay `full_name`, `phone`, `email`, `country`, `notes`, plus the consent key in [Privacy consent on forms](skill-content.md#privacy-consent-on-forms).
+- [ ] Every form has a consent checkbox that starts unchecked. Its label links to `/en/privacy-policy`. The form cannot be sent while it is empty.
 - [ ] Form success is confirmed before `generate_lead`.
 - [ ] OpenPanel receives the form's keyed fields and identifies a profile (`profileId` is the email, otherwise the phone).
 - [ ] GA4 receives no name, email, or phone, and no free text or written answers.

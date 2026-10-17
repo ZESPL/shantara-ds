@@ -49,7 +49,7 @@ Every Video component or page implementation must accept and use:
 - `description`
 - `uploadDate` (ISO 8601)
 - `duration` (ISO 8601, for example `"PT3M45S"`)
-- Optional but strongly recommended: `transcript`, `captions`, `chapters`, `creator`
+- When the video contains speech, `transcript` and `captions` are required ([ACC-21](search-visibility/accessibility.md)). A muted loop needs neither. `chapters` and `creator` stay optional.
 
 Keystatic stores these as URL and text fields on the English master. Translated files do not carry a second video. Field placement: [skill-content.md](skill-content.md).
 
@@ -99,7 +99,7 @@ Twitter stays `summary_large_image` (SOCIAL-03) on ordinary pages. When the vide
 
 ## AI visibility
 
-- Provide a full, accurate transcript whenever possible. This is critical for AI Overviews, Perplexity, ChatGPT and similar systems.
+- The transcript required by ACC-21 is what AI Overviews, Perplexity, ChatGPT and similar systems read.
 - Keep all important video metadata in the initial HTML. Do not rely on client-side JavaScript to inject schema or core information.
 - Ensure the surrounding page has meaningful text content that gives context to the video.
 - Use clear, descriptive titles and descriptions.
@@ -167,7 +167,7 @@ const { src, sources, poster, title, description, uploadDate, duration, transcri
 </figure>
 ```
 
-`captions` is the optional WebVTT URL.
+`captions` is the WebVTT URL. [ACC-21](search-visibility/accessibility.md) says when it is required.
 
 VideoObject shape (schema generator):
 

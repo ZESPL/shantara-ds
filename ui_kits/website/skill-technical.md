@@ -142,9 +142,11 @@ Do not canonicalize a translation to English. Do not emit `hreflang` for a local
 
 Frozen public Organization / NAP name: **Shantara Naturopathy Retreat**.
 
-- Use that string for `og:site_name`, default title brand segment, and Organization schema `name`.
+- Use that string for `og:site_name`, the title template’s brand text, and Organization schema `name`.
 - Do **not** use **Shantara Life Naturopathy** (or “Shantara Life”) in titles, `og:site_name`, schema `name`, or other global metadata.
-- Page titles may read `{Page} | Shantara Naturopathy Retreat` (or an approved short equivalent that still says Naturopathy Retreat). Do not invent a parallel brand line for SEO.
+- The document `<title>` is one template. A page supplies only its own segment. The separator, and the brand pretext or posttext, are constants in that template. `lib/seo/meta.ts` is the only code that applies them. Do not write the separator or the brand text in a page, a content record, or a share-image generator.
+- Store the three constants with that locale’s global SEO defaults in `site/{locale}.json`: the separator, the brand text, and the position (`before` or `after`). Changing the separator or the brand text means changing that record. `PageMeta.title` stays the page segment, with no brand text.
+- English uses posttext. The separator is ` | ` and the brand text is `Shantara Naturopathy Retreat`, so a title reads `{page} | Shantara Naturopathy Retreat`. A later locale may set position to `before`. That is the same template, not a second pattern.
 - Open Graph images, the metadata that feeds them and the full tag list are in [skill-og-images.md](skill-og-images.md).
 
 ### URL principles
@@ -364,33 +366,16 @@ Do not install multiple overlapping analytics/heatmap/chat tools without a clear
 
 ## Accessibility
 
-Accessibility is a baseline requirement.
+The website standard is [search-visibility/accessibility.md](search-visibility/accessibility.md). This section is how the design system meets it.
 
-Ensure:
-
-- semantic headings;
-- keyboard access;
-- visible focus states;
-- meaningful alt text;
-- decorative images marked appropriately;
-- accessible form labels;
-- error messages associated with fields;
-- sufficient contrast — including type on photography judged against the scrimmed photograph (solid Merino on a shorter bottom `--scrim-bottom`; Gold text only on flat dark grounds; no double scrims);
-- pick the right media ratio: **4:3** listing tiles, **16:9** wide editorial, **4:5** doctor portraits, **3:4** tall architecture, **21:9** desktop panorama with a `mobileRatio`; page heroes use a height (not a ratio);
-- accordions open with a `.sh-acc-clip` wrapper (`aria-hidden` / `inert`, not `hidden`) — kit loads `_ds_bundle.js`, so sync after editing `components/navigation/Accordion.jsx`;
-- type never on the rosette; drop the band below ~880px;
-- touch targets large enough;
-- reduced-motion support where appropriate — keep colour and opacity, drop movement; use the design-system motion tokens (`--ease-out`, `--ease-drawer`, `--duration-*`) rather than local curves;
-- accordions/dialogs use correct ARIA patterns;
-- videos have captions/transcripts when needed, and follow [skill-video.md](skill-video.md) (native `<video>`, R2/CDN, VideoObject, video sitemap);
-- `html` `lang` and `dir` match the locale;
-- the language selector is named, keyboard-accessible, and announces the current locale;
-- passages in another language are annotated;
-- optional in-page text size via `html[data-text-size]` → `--text-scale` (Default / Large / Larger). Browser zoom to 200% remains the WCAG 1.4.4 path.
-
-Do not rely on color alone to communicate state.
-
-This design system’s live audit is `guidelines/accessibility.html`. Active nav uses `aria-current="page"` plus an underline. Interactive cards take a button role when they have `onClick`.
+- Type on photography is judged against the scrimmed photograph: solid Merino on a shorter bottom `--scrim-bottom`; Gold text only on flat dark grounds; no double scrims. The live pair audit is `guidelines/accessibility.html`.
+- Media ratios: **4:3** listing tiles, **16:9** wide editorial, **4:5** doctor portraits, **3:4** tall architecture, **21:9** desktop panorama with a `mobileRatio`. Page heroes use a height, not a ratio.
+- Accordions open with a `.sh-acc-clip` wrapper (`aria-hidden` / `inert`, not `hidden`). The kit loads `_ds_bundle.js`, so sync after editing `components/navigation/Accordion.jsx`.
+- Type never sits on the rosette. Drop the band below ~880px.
+- Reduced motion keeps colour and opacity and drops movement. Use the motion tokens (`--ease-out`, `--ease-drawer`, `--duration-*`) rather than local curves.
+- `html` `lang` and `dir` match the locale. The language selector is named, keyboard-accessible, and announces the current locale. Passages in another language are annotated.
+- In-page text size (`html[data-text-size]` → `--text-scale`, Default / Large / Larger) is a convenience. Browser zoom to 200% is the requirement in ACC-13.
+- Active nav uses `aria-current="page"` plus an underline. Interactive cards take a button role when they have `onClick`.
 
 ## Managing technical growth
 

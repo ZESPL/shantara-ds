@@ -31,7 +31,7 @@ Please submit your request at least 30 days before you hope to arrive. We read e
 
 If you cancel, you may ask for another date later. If you leave before the nights you agreed, other than because a doctor advises it, that visit ends. You are welcome to ask again later.
 
-We read a draft before anything is published. Other guests are not filmed. The visit follows the same resident policies as any guest.
+We read a draft before anything is published. Other guests are not filmed. The visit follows the same house rules as any guest.
 
 ## Before the form
 
@@ -71,8 +71,8 @@ One form. The two visit lengths are choices in it, not two pages.
 **Before you send**
 
 - I will send the draft before anything is published.
-- A doctor assesses the stay first. I will not film other guests. Resident policies apply.
-- Shantara may store this request and use it to reply.
+- A doctor assesses the stay first. I will not film other guests. House rules apply.
+- Shantara may store this request and use it to reply. The label links to the Privacy Policy, and the box starts unchecked (`privacy`). See [Privacy consent on forms](../skill-content.md#privacy-consent-on-forms).
 
 The button is **Send your request**.
 

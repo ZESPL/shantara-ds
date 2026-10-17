@@ -26,7 +26,7 @@ Part of the [property handbook](../handbook.txt).
 
 | Contact | Role / Note |
 | --- | --- |
-| Dr. P.A. Kareem | Founder and Chief Naturopathy Consultant |
+| P.A. Kareem | Founder and Chief Naturopathy Consultant |
 | Dr. Bahja Janu | Medical Director |
 | PS Ravindran | Operations Manager, and day-to-day operations contact |
 | Front Office | 095536 00100 |
