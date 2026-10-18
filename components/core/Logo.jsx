@@ -9,14 +9,15 @@ function resolveBase() {
   return "assets";
 }
 
-const FILE = { full: "logo", icon: "icon", wordmark: "wordmark" };
+const FILE = { wordmark: "wordmark", icon: "icon" };
 
-export function Logo({ mark = "full", tone = "dark", height, assetBase, style, ...rest }) {
+export function Logo({ mark = "wordmark", tone = "dark", height, assetBase, style, ...rest }) {
   const base = assetBase || resolveBase();
-  const h = height || (mark === "icon" ? 40 : mark === "wordmark" ? 22 : 56);
+  const kind = FILE[mark] ? mark : "wordmark";
+  const h = height || (kind === "icon" ? 40 : 22);
   return (
     <img
-      src={`${base}/${FILE[mark] || "logo"}-${tone}.svg`}
+      src={`${base}/${FILE[kind]}-${tone}.svg`}
       alt="Shantara"
       data-ds-id="core/Logo"
       style={{ height: typeof h === "number" ? h + "px" : h, width: "auto", display: "block", ...style }}

@@ -12,7 +12,7 @@ The original brand pack lives in `uploads/`. Claude Design read it, curated what
 | `uploads/Primary Colors.jpg` | Primary colour board | Himalaya, Gold Crayola |
 | `uploads/colors secondary.jpg` | Neutral board | Pine Tree through Merino |
 | `uploads/accent colors.jpg` | Accent board | Sand, Ocean, Clay, Forest, Sky, Lavender — three hexes sampled, not read |
-| `uploads/Shantara - Full logo / Icon / wordmark` | SVG ×4 each, plus PDF | Recoloured into `assets/` lockups |
+| `uploads/Shantara - Full logo / Icon / wordmark` | SVG ×4 each, plus PDF | Wordmark and flower recoloured into `assets/`. The stacked file is not used. |
 | `uploads/Pattern Single Tile.png` | Single rosette motif | `assets/pattern-motif.png` — ornament only, never tiled |
 | `uploads/Pattern Seamless_SCALE ACCORDINGLY.png` | Seamless repeat | Measured; `assets/pattern-unit.png` is the 530×530 cell |
 | `uploads/pattern LOW Q White/Black.png` | Low-resolution pattern proofs | Reference only |

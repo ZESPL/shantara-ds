@@ -33,7 +33,7 @@ Google Search shows a site icon next to results. Google chooses which declared i
 
 ## 2. How the icons look
 
-- **The mark only, never the wordmark or the full lockup.** Text is unreadable at tab size.
+- **The flower only.** The wordmark is unreadable at tab size, and the flower is never stacked on it.
 - **Browser tab: the bare mark in Himalaya on a transparent background, with no tile or background shape.** Himalaya on a white tab has a contrast ratio of about 8 : 1.
 - **Dark tabs: the same `favicon.svg` switches to a Gold Crayola mark** through a `prefers-color-scheme: dark` style inside the file. Himalaya on a dark tab is about 1.5 : 1 and almost disappears; Gold Crayola is about 7.5 : 1, and matches the `gold` colourway the logo guideline sets for dark grounds. Chrome and Edge follow the switch.
 - **Known limit: Safari in dark mode shows the faint Himalaya mark.** Safari 26 and later read `favicon.svg` but ignore the dark-mode style inside it. Safari 18 and earlier do not read SVG favicons and use `favicon.ico`, which cannot switch. Either way, a Safari user with a dark tab bar sees Himalaya at about 1.5 : 1. This is accepted to keep the approved transparent Himalaya mark. If the post-launch check (section 8) shows the icon is unreadable there, the fix is a design decision, such as a thin Gold Crayola outline around the mark, approved by a designer. No mid-tone colour reads on both light and dark tabs.

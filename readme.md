@@ -13,7 +13,7 @@ Foundations (colour, type, logo, pattern, voice, imagery, print) are **verbatim 
 | `uploads/Compressed/Frame 1–5.jpg` | The five brand-guideline pages as images. **Read** — logo story, pattern structure, colour palette, tone of voice, typography, logo colourways, print rules, product applications, imagery direction. |
 | `uploads/Compressed/TRD*.jpg` (45 frames) | The property shoot. Organised in flat `assets/photos/` (kit slugs + descriptive frames, retina-sized). |
 | `uploads/Primary Colors.jpg`, `colors secondary.jpg`, `accent colors.jpg` | Colour boards. Hexes read from the labels; three mislabels corrected by sampling (below). |
-| `uploads/Shantara - Full logo / Icon / wordmark` (.svg ×4 each, .pdf) | The numbered SVG copies are byte-identical monochrome artwork with no fill declared. Copied in and re-coloured programmatically into four brand tones. |
+| `uploads/Shantara - Full logo / Icon / wordmark` (.svg ×4 each, .pdf) | The numbered SVG copies are byte-identical monochrome artwork with no fill declared. The wordmark and the flower were recoloured into four brand tones. The stacked file is not a logo. |
 | `uploads/Pattern Single Tile.png`, `Pattern Seamless_SCALE ACCORDINGLY.png`, `pattern LOW Q White/Black.png` | Rosette artwork. The repeat cell was measured out of the seamless file — see the pattern guideline card. |
 | `uploads/DiodrumCyrillic-*.ttf` (6 weights) | Shipped as-is in `assets/fonts/`. No substitution needed. |
 | `uploads/Shantara_Brand Guidelines HQ.pdf` | Superseded by the page images. Not parsed. |
@@ -26,6 +26,7 @@ Keep these here so they are not buried only in guideline cards:
 - **Icon set.** The brand package ships **no icon set**. Stand-in: **Lucide** (`lucide-static@0.544.0`), flagged for review. Render through `Icon` as CSS masks. **No emoji.**
 - **`[TO CONFIRM]`.** Anything still marked in the handbook stays off public pages until Azhar / P.A. Kareem / Dr. Bahja Janu confirm it. The handbook is evergreen and carries no rates. [`docs/handbook.txt`](docs/handbook.txt) is the index; each section lives under [`docs/handbook/`](docs/handbook/).
 - **Clear-space and minimum-size numbers** in `guidelines/logo.html` are conventions consistent with the guideline artwork, not quoted brand law.
+- **The logo is the wordmark, or the flower as the mark.** The stacked file in the brand pack (flower above the word) is not a Shantara logo. Do not combine them.
 
 Voice, colour, type, pattern, motion, corners, cards, imagery, print, and accessibility live on the matching **Brand** and **Foundations** catalog cards. Public website language has one source: `ui_kits/website/skill-copy.md`, browsed as `docs/website-copy.html`. Do not restate those chapters here. Live contrast audit: `guidelines/accessibility.html`.
 
@@ -44,7 +45,7 @@ Then open `http://localhost:4173`. Netlify publishes a `dist/` copy; raw `upload
 ```
 styles.css              → the single entry point consumers link (imports only)
 tokens/                 → fonts, colors, typography, spacing, radius, elevation, motion, pattern, base; layout.css (grounds, container, grid, section rhythm)
-assets/                 → logo / icon / wordmark in 4 colourways each, pattern cell + motif, Diodrum TTFs
+assets/                 → wordmark and flower in 4 colourways each, pattern cell + motif, Diodrum TTFs
 assets/photos/          → property + doctor photos (flat; see assets/photos/README.md)
 guidelines/             → specimen cards (Brand, Foundations)
 components/             → core, forms, navigation, feedback, editorial, sections — jsx, d.ts, prompt.md; catalog pages via docs/component.html?c=

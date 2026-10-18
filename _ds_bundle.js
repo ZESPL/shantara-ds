@@ -467,12 +467,11 @@ function resolveBase() {
   return "assets";
 }
 const FILE = {
-  full: "logo",
-  icon: "icon",
-  wordmark: "wordmark"
+  wordmark: "wordmark",
+  icon: "icon"
 };
 function Logo({
-  mark = "full",
+  mark = "wordmark",
   tone = "dark",
   height,
   assetBase,
@@ -480,9 +479,10 @@ function Logo({
   ...rest
 }) {
   const base = assetBase || resolveBase();
-  const h = height || (mark === "icon" ? 40 : mark === "wordmark" ? 22 : 56);
+  const kind = FILE[mark] ? mark : "wordmark";
+  const h = height || (kind === "icon" ? 40 : 22);
   return /*#__PURE__*/React.createElement("img", _extends({
-    src: `${base}/${FILE[mark] || "logo"}-${tone}.svg`,
+    src: `${base}/${FILE[kind]}-${tone}.svg`,
     alt: "Shantara",
     "data-ds-id": "core/Logo",
     style: {

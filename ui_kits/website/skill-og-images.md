@@ -154,7 +154,7 @@ All values are design-system tokens. The renderer resolves them to literals beca
 | --- | --- |
 | Canvas | 1200 × 630 px |
 | Safe area | 64 px inset on all four sides (`--space-11`). The wordmark and all text stay inside it. Photographs and the rosette band bleed to the edges. |
-| Wordmark | `wordmark-cream.svg` on the photograph, `wordmark-dark.svg` on Merino. 216 px wide, top left of the safe area. Never the full lockup or the mark alone. |
+| Wordmark | `wordmark-cream.svg` on the photograph, `wordmark-dark.svg` on Merino. 216 px wide, top left of the safe area. The wordmark only — never the flower alone, and never the flower stacked on the word. |
 | Title | Diodrum Light 300, line height 1.06 (`--leading-tight`), balanced wrapping, left-aligned. 64 px up to 32 characters, 56 px up to 60, 48 px above that (`--text-5xl` → `--text-4xl`). |
 | Supporting line | Diodrum Regular 400, 24 px (`--text-xl`), line height 1.45, 24 px below the title (`--space-7`). |
 | Ink on photograph | Solid Merino for title and line. Never Gold, never a faded Merino mix. |
