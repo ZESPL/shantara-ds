@@ -1,17 +1,22 @@
-**Staff extract — not public copy.** Use for property facts, policies, and `[TO CONFIRM]` flags. Prefer `content/` for entity records on the website. Do not quote §15 (the “wellness retreat” 30-second line) or use “patients” / “wellness retreat” as public product language. Rates stay on the tariff surface only.
+**Staff extract — not public copy.** Use for property facts, policies, and `[TO CONFIRM]` flags. Prefer `content/` for entity records on the website. Do not quote §15 (the “wellness retreat” 30-second line) or use “patients” / “wellness retreat” as public product language. Rates stay on the tariff surface only, except the personal attendant charge in the [glossary](handbook/glossary.md).
 
 This handbook exists so that any team member, regardless of department, can confidently answer the questions guests actually ask. Guests commonly ask what this place is, who the doctor is, what they can do during their stay, and what their package includes. This handbook is not an SOP manual, and it does not replace your department's operating procedures.
 
 Read [Quick Reference](handbook/quick-reference.md) first. It answers between 80 and 90 percent of ordinary guest questions on its own. Then open only the section the question needs.
 
+Before writing about nursing, nurses, attendants, bystanders or helpers, read the [glossary](handbook/glossary.md) and follow the naming rules exactly.
+
+Before writing about devices, phones, Wi-Fi, work, workstations or amenities, read the [glossary](handbook/glossary.md). Never add an amenity that is not in the handbook amenities section.
+
 [TO CONFIRM] Sections marked like this need input from Azhar, P.A. Kareem, or Dr. Bahja Janu before this handbook is finalised and printed.
 
-This handbook is evergreen. It does not carry rates, currencies or validity dates. Rates are published only on the current tariff.
+This handbook is evergreen. It does not carry room rates, stay currencies or validity dates. The personal attendant charge is stated once, in the [glossary](handbook/glossary.md), so that service is never described as nursing care. Do not copy that figure onto any other page. Room rates are published only on the current tariff.
 
 ## Orientation
 
 | Section | Covers |
 | --- | --- |
+| [Glossary](handbook/glossary.md) | Nursing care and the personal attendant. Devices, work, Wi-Fi and which amenities may be published. |
 | [01 · Quick Reference](handbook/quick-reference.md) | What Shantara is, the property at a glance, and what guests should know first |
 | [02 · About Shantara](handbook/about.md) | The story, the name, the approach, and why Shantara exists |
 | [03 · Founder & Ownership](handbook/founder.md) | Founder, board, chief executive, and medical director |
@@ -32,7 +37,7 @@ This handbook is evergreen. It does not carry rates, currencies or validity date
 | Section | Covers |
 | --- | --- |
 | [10 · Property, Rooms & Facilities](handbook/property.md) | The property, room types, and facilities |
-| [11 · Food & Dining](handbook/food.md) | The farm, the healing diet, and meal timings |
+| [11 · Food & Dining](handbook/food.md) | The farm, the healing diet, tea and coffee, and meal timings |
 | [12 · Stay Essentials: Booking, Arrival & Attire](handbook/stay.md) | Booking, arrival, the daily routine, transfers, and attire |
 | [13 · Guest Policies & House Rules](handbook/policies.md) | Cancellation, movement, visitors, conduct, and post-stay support |
 

@@ -32,6 +32,7 @@ These are enforced everywhere; the linked part has the full rule.
 * **Phone and WhatsApp**: stored as separate fields, both currently **+91 9553 600 100**. Email **heal@shantara.life**. See [naming and NAP](copy/naming-and-nap.md#one-contact-number).
 * **Guest**, not "patient" or "client", on public pages. See [voice and tone](copy/voice-and-tone.md#voice).
 * **No isolated prices** outside the tariff surface. See [health claims and compliance](copy/health-claims-and-compliance.md#pricing-must-remain-controlled).
+* **Nursing care and the personal attendant are different services.** Before writing about nursing, nurses, attendants, bystanders or helpers, read `docs/handbook/glossary.md` and follow the naming rules exactly.
 * **No outcome guarantees** (cure, reverse, heal, medication-free, guaranteed weight loss). See [health claims and compliance](copy/health-claims-and-compliance.md#clinical-claims).
 
 ## Do not narrate the website to the visitor

@@ -8,7 +8,9 @@ Read this before inventing copy, programmes, rates, or IA.
 4. **Samples.** Files under `ui_kits/website/screens/` illustrate composition. They are not the production site. Production URLs are `/en/…`, not `#/en/…`.
 5. **Bundle.** Do not read [`_ds_bundle.js`](_ds_bundle.js) for copy, programmes, or rates. It is components-only.
 6. **Leave alone** unless the task needs them: catalog chrome (`catalog.js`, `index.html`), `scraps/`, and `uploads/`.
+7. **Nursing and attendants.** Before writing about nursing, nurses, attendants, bystanders or helpers, read [`docs/handbook/glossary.md`](docs/handbook/glossary.md) and follow the naming rules exactly.
+8. **Devices, work and amenities.** Before writing about devices, phones, Wi-Fi, work, workstations or amenities, read [`docs/handbook/glossary.md`](docs/handbook/glossary.md). Never add an amenity that is not in the handbook amenities section.
 
-Rates, currencies and validity dates are not stored in this design system or its documentation. Production rates live only in the shantara.life Keystatic tariff. Everywhere else, link to the tariff page and never quote a rate. [`content/tariff.json`](content/tariff.json) holds only the tariff structure (inclusions, supplements, payment terms, cancellation). Nothing the rate sheet marks internal ever enters this folder.
+Rates, currencies and validity dates are not stored in this design system or its documentation, except the personal attendant charge in that glossary, which is recorded there so the attendant is never described as nursing care. Do not copy that figure onto any other page. Production rates live only in the shantara.life Keystatic tariff. Everywhere else, link to the tariff page and never quote a rate. [`content/tariff.json`](content/tariff.json) holds only the tariff structure (inclusions, supplements, payment terms, cancellation). Nothing the rate sheet marks internal ever enters this folder.
 
 What to take vs leave when consuming this folder: [`docs/use.md`](docs/use.md).

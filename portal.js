@@ -217,7 +217,7 @@
           "docs/handbook-protocols.html", "docs/handbook-privacy.html", "docs/handbook-programmes.html",
           "docs/handbook-property.html", "docs/handbook-food.html", "docs/handbook-stay.html",
           "docs/handbook-policies.html", "docs/handbook-faqs.html", "docs/handbook-communication.html",
-          "docs/handbook-contacts.html",
+          "docs/handbook-contacts.html", "docs/handbook-glossary.html",
         ] },
         "docs/media-kareem.html", "docs/sources.html",
       ] },

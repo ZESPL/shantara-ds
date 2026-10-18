@@ -53,6 +53,16 @@
     return numbered ? `section-${numbered[1]}` : slugify(text);
   }
 
+  /* `{#old-id}` on a heading keeps a retired fragment working. */
+  function splitHeadingAliases(title) {
+    const aliases = [];
+    const visible = String(title).replace(/\s+\{#([a-z0-9-]+)\}/g, (_, id) => {
+      aliases.push(id);
+      return "";
+    }).trim();
+    return { visible, aliases };
+  }
+
   function renderMarkdown(src) {
     const text = String(src).replace(/\r\n/g, "\n").replace(/^---\n[\s\S]*?\n---\n/, "");
     const fences = [];
@@ -100,8 +110,9 @@
       const heading = /^(#{1,4})\s+(.*)$/.exec(line);
       if (heading) {
         const level = heading[1].length;
-        const title = heading[2];
-        html.push(`<h${level} id="${escapeHtml(headingId(title))}">${inline(title)}</h${level}>`);
+        const { visible, aliases } = splitHeadingAliases(heading[2]);
+        const aliasHtml = aliases.map((id) => `<a id="${escapeHtml(id)}"></a>`).join("");
+        html.push(`${aliasHtml}<h${level} id="${escapeHtml(headingId(visible))}">${inline(visible)}</h${level}>`);
         i += 1;
         continue;
       }
@@ -239,6 +250,7 @@
     "food.md": "handbook-food.html",
     "stay.md": "handbook-stay.html",
     "policies.md": "handbook-policies.html",
+    "glossary.md": "handbook-glossary.html",
     "faqs.md": "handbook-faqs.html",
     "communication.md": "handbook-communication.html",
     "contacts.md": "handbook-contacts.html",
@@ -309,7 +321,7 @@
   const HANDBOOK_SECTION_MD = new Set([
     "quick-reference.md", "about.md", "founder.md", "team.md", "admission.md", "therapies.md",
     "protocols.md", "privacy.md", "programmes.md", "property.md", "food.md", "stay.md",
-    "policies.md", "faqs.md", "communication.md", "contacts.md",
+    "policies.md", "glossary.md", "faqs.md", "communication.md", "contacts.md",
   ]);
 
   function inHandbook(pathPart, sourcePath) {

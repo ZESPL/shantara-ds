@@ -15,7 +15,7 @@ Part of the [property handbook](../handbook.txt).
 
 - A completed medical screening questionnaire and relevant medical records, as requested by the doctors during the preliminary consultation (see [section 5](admission.md#section-5)).
 - A valid photo ID: Passport, Aadhar Card, Driving License, or Voter ID. Foreign nationals must also submit passport and visa documents on arrival.
-- Guests are asked to discontinue tea and coffee 3 to 4 days before arrival, to avoid withdrawal symptoms during detox and to improve treatment outcomes.
+- Tea and coffee: [Food & Dining](food.md#tea-and-coffee).
 
 ### Check-in & check-out
 

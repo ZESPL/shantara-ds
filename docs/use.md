@@ -76,6 +76,7 @@ You can also keep the folder at the repo root (as it is here) and treat `SKILL.m
 | Video | [`ui_kits/website/skill-video.md`](../ui_kits/website/skill-video.md) | `skill-content.md`, `skill-images.md`, `search-visibility/schema.md`, `search-visibility/crawling.md` (they point to it) |
 | Audience | `docs/icp.md` (internal) | public page copy |
 | Policies / `[TO CONFIRM]` | `docs/handbook.txt` and `docs/handbook/` | hero copy; never quote §15 publicly |
+| Tea and coffee | [Food & Dining](handbook/food.md#tea-and-coffee) | anywhere else — link to that section |
 
 ## What an agent should read
 

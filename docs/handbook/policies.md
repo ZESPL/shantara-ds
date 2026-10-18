@@ -27,13 +27,17 @@ Most programmes are designed around a week or longer so naturopathy protocols ha
 - An extra bed or mattress is charged per bed, per night, as shown on the current tariff.
 - Companions must follow all retreat policies, including diet, movement restrictions, prohibited items, attire, and conduct. Violation results in discharge without refund, and companions may not bring outside food or leave the premises.
 
-### Helper policy
+### Personal attendant (bystander) {#helper-policy}
 
-If a guest's condition requires continuous assistance, Shantara assigns a qualified nurse for 24/7 support for a daily charge that the team confirms. This must be requested during the preliminary consultation and is subject to the doctor's recommendation.
+Every guest receives 24-hour nursing care. It is included in the tariff. No request is needed.
+
+If a guest's condition requires continuous assistance, Shantara assigns a personal attendant (bystander) for 24/7 support, for a daily charge that the team confirms. This must be requested during the preliminary consultation and is subject to the doctor's recommendation.
+
+The personal attendant is in addition to the 24-hour nursing care every guest receives.
 
 ### Prohibited items
 
-Coffee, tea, alcohol, packed food, non-vegetarian food, non-pharmaceutical drugs, cigarettes, and any other outside food are not permitted anywhere on the premises. This rule is enforced strictly, and any violation may result in discharge without refund.
+Alcohol, packed food, non-vegetarian food, non-pharmaceutical drugs, cigarettes, and any other outside food are not permitted anywhere on the premises. This rule is enforced strictly, and any violation may result in discharge without refund. Tea and coffee: [Food & Dining](food.md#tea-and-coffee).
 
 ### Movement during stay
 
@@ -41,7 +45,7 @@ Leaving the premises during the stay is not permitted. This restriction supports
 
 ### Digital detox
 
-Guests are strongly advised to minimise use of mobile phones, laptops, and other communication devices, to rest the mind and support healing. If use is necessary, it should be restricted to the guest's own room so it does not disturb other guests. Devices are not permitted in treatment areas, dining areas, the library, yoga halls, meditation halls, or other shared therapeutic spaces.
+Guests are strongly advised to minimise use of mobile phones, laptops, and other communication devices, to rest the mind and support healing. If use is necessary, it should be restricted to the guest's own room or the designated workstations so it does not disturb other guests. Devices are not permitted in treatment areas, dining areas, the library, yoga halls, meditation halls, or other shared therapeutic spaces. Devices are discouraged across the retreat. Guests who need to work can use their own room or the designated workstations.
 
 ### Retreat conduct
 

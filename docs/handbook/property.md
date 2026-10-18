@@ -64,5 +64,8 @@ Rooms are designed with restraint, so comfort feels subtle rather than excessive
 | Amphitheatre | Small gatherings and guided sessions in a natural setting. |
 | Sky Garden | Elevated space for quiet walks, especially at sunrise or in the evening. |
 | Water Features & Secret Gardens | Ambient calm woven through the property. |
+| 24-hour Nursing Care | The on-site nursing team, included for every guest. This is not the personal attendant. |
+| High-speed Wi-Fi | Connection for guests during the stay. |
+| Designated Workstations | The exception to the device policy, not a feature. Devices are discouraged across the retreat. Guests who need to work can use their own room or the designated workstations. |
 
 [TO CONFIRM] Accessibility information for guests with mobility needs.

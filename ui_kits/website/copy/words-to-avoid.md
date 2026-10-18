@@ -110,4 +110,5 @@ These are hard bans, distinct from the caution words above. They are wrong regar
 * **“Shantara Naturopathy”** as the business name, without “Retreat”. See [naming and NAP](naming-and-nap.md#business-name-nap).
 * Any phone number other than **+91 9553 600 100**. See [naming and NAP](naming-and-nap.md#one-contact-number).
 * **Patients** or **wellness retreat** as public product language (see [AGENTS.md](../../../AGENTS.md)).
+* **Nursing care, nurse support, 24/7 nurse, nursing service, helper, helper policy, or private nurse** as the name of the paid one-to-one service. That service is the personal attendant (bystander). Included care is 24-hour nursing care. Before writing about nursing, nurses, attendants, bystanders or helpers, read [`docs/handbook/glossary.md`](../../../docs/handbook/glossary.md) and follow the naming rules exactly.
 * An eyebrow or overline above a section or title, anywhere. See [voice and tone](voice-and-tone.md#punctuation).

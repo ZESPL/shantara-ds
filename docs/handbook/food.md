@@ -12,6 +12,20 @@ Shantara serves a 100% vegetarian, plant-based diet, customised to each guest's 
 
 In-room dining is available only on a doctor's recommendation.
 
+### Tea and coffee
+
+Coffee and tea are not served, and they are not permitted anywhere on the premises. Tea means any drink made from the tea leaf, including black tea, green tea, and decaffeinated tea. Coffee includes decaffeinated coffee. This is ordinary naturopathy practice: treatment is drug-less and chemical-free, and caffeine works against that.
+
+- Caffeine stimulates the nervous system and can stress the adrenal glands.
+- Caffeine increases stomach acid and can irritate the digestive lining, which interferes with gut healing on a prescribed diet.
+- Tea and coffee are habit-forming. Guests are asked to stop them 3 to 4 days before arrival, so withdrawal symptoms, including headaches, do not begin during detox.
+
+Plain warm water is the ordinary hot drink. A caffeine-free herbal infusion is served when the doctor prescribes one; the 08:00 herbal drink is that infusion. Juices are only the herbal juice, fruit juice, and vegetable juice on the timetable below.
+
+Bringing tea or coffee onto the premises may result in discharge without refund.
+
+This is the only statement of the tea and coffee rule. Link here. Do not copy it into another section.
+
 ### Meal and juice timings
 
 | Time | Meal |

@@ -14,6 +14,7 @@ They do not appear on home, programme, enquiry, journal, app, component demos, t
 - `ui_kits/website/screens/TariffScreen.js` (the website tariff card)
 - Brand-deck slides whose subject *is* rooms & tariffs
 - The Property Handbook tariff section
+- `docs/handbook/glossary.md` — the personal attendant's daily charge only, so it is not described as nursing care. Do not copy it onto any other page.
 - A future page whose filename/title is clearly a price list / tariff / pricing document
 
 ## Not allowed
