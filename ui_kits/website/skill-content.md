@@ -59,6 +59,8 @@ Deferred until real records exist: Guest Story, Event.
 
 Unconfirmed facts stay out of published records: keep the entry `draft` until Shantara confirms it. There is no `to_confirm` flag and no ICP field. ICPs stay in [`docs/icp.md`](../../docs/icp.md) for strategy and CRM.
 
+**Doctor photographs.** `photo_profile` is the public profile photograph: avatars, team grids, the doctor page and the share image. Every doctor's is the passport headshot `doctor-*-passport.jpeg` (extension kept). The file index is [`assets/photos/README.md`](../../assets/photos/README.md).
+
 **Doctor press and talks.** Optional lists on a doctor record. Omit the list when it is empty.
 
 - `press`: `{outlet, title, date, url}`. `date` is ISO 8601. `title` is the link text on the profile. When an outlet headline states a cure or another outcome, use a plain description instead and keep the headline in handbook §4.

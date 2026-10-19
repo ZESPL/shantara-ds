@@ -12,3 +12,5 @@ Places the Hygiene Nature Cure mark, the parent hospital of Shantara. Use it onl
 The artwork is a single colour. `light` is the white lockup published on hygienecure.com. `dark` (`#1C1A1D`) is for Merino, white and other light grounds. `green` (`#0A481E`) is the hospital’s site secondary, for a light ground when the mark should read in their green. `current` is `currentColor` for an inlined SVG or a CSS mask; an `<img>` does not inherit colour, so use `light`, `dark` or `green` there.
 
 Do not recolour it into Himalaya or Gold Crayola, and do not put it in place of the Shantara wordmark.
+
+To show the two organisations together, use the ready-made lockups in `assets/lockups/` instead of placing `HnchLogo` beside `Logo` by hand: `endorsed-horizontal-*` and `endorsed-stacked-*` for Shantara as a sister concern of Hygiene (“A sister concern of” and the Hygiene wordmark always on one line), `cobrand-*` for document headers and footers. Both use the Hygiene lockup without the Nature Cure line. See `guidelines/cobrand-lockups.html`; rebuild with `python scripts/build-lockups.py`.

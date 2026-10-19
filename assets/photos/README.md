@@ -17,12 +17,22 @@ Full seated studio shots (`*-portrait.jpg`, 1920×2880) and matching square clos
 | Portrait (full) | Close-up (square) | Who |
 | --- | --- | --- |
 | `doctor-bahja-janu-portrait` | `doctor-bahja-janu-portrait-cropped.jpeg` | Dr. Bahja Janu (Medical Director; content id `bahja-janu`) |
-| `doctor-pa-kareem-portrait` | `doctor-pa-kareem-portrait-cropped.jpeg` | P.A. Kareem (Founder; content id `pa-kareem`) |
+| `doctor-pa-kareem-portrait` | `doctor-pa-kareem-portrait-cropped.jpeg` | P.A. Kareem (Founder; content id `pa-kareem`). |
 | `doctor-gangrei-gangmei-portrait` | `doctor-gangrei-gangmei-portrait-cropped.jpeg` | Dr. Gangrei Gangmei |
 | `doctor-keerthana-portrait` | `doctor-keerthana-portrait-cropped.jpeg` | Dr. Keerthana |
 | `doctor-sara-portrait` | `doctor-sara-portrait-cropped.jpeg` | Dr. Sara |
 
-Use `photo` for editorial / full portraits; use `photo_profile` for avatars, team grids, and circular crops. The close-ups are `.jpeg`, so `photo_profile` keeps the extension (e.g. `doctor-bahja-janu-portrait-cropped.jpeg`).
+Use `photo` for editorial / full portraits; use `photo_profile` for avatars, team grids, doctor pages and share images. `photo_profile` names the passport headshot and keeps the `.jpeg` extension (e.g. `doctor-bahja-janu-passport.jpeg`).
+
+Every doctor has a passport headshot (`doctor-*-passport.jpeg`, 1072×1280, head and shoulders, face centred, top of head about 5% from the top edge). It is the public profile photo. P.A. Kareem's is a separate white-background sitting. The other four are cropped from the seated studio portrait, so they keep the grey studio backdrop. The square studio crops remain in the folder for the seated portrait series.
+
+| Passport (`photo_profile`) | Who |
+| --- | --- |
+| `doctor-bahja-janu-passport.jpeg` | Dr. Bahja Janu |
+| `doctor-pa-kareem-passport.jpeg` | P.A. Kareem |
+| `doctor-gangrei-gangmei-passport.jpeg` | Dr. Gangrei Gangmei |
+| `doctor-keerthana-passport.jpeg` | Dr. Keerthana (content id `keerthana-v-s`) |
+| `doctor-sara-passport.jpeg` | Dr. Sara (content id `sara-shanti-alen`) |
 
 ## Extra property frames (by prefix)
 

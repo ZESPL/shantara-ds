@@ -4,7 +4,7 @@ A statement, then two to four doctors in the same 4:5 portrait framing (deck sli
 <PeopleRow
   title="Your programme is planned by our doctors."
   people={[
-    { name: "P.A. Kareem", role: "Founder, Chairman & Chief Naturopathy Consultant", detail: "Government of India-certified Naturopathy Practitioner", src: "/assets/photos/doctor-pa-kareem-portrait-cropped.jpeg" },
+    { name: "P.A. Kareem", role: "Founder, Chairman & Chief Naturopathy Consultant", detail: "Government of India-certified Naturopathy Practitioner", src: "/assets/photos/doctor-pa-kareem-passport.jpeg" },
     { name: "Dr. Bahja Janu", role: "Medical Director", src: "/assets/photos/doctor-bahja-janu-portrait-cropped.jpeg" },
   ]}
   action={<TextLink href="/en/about">About Shantara</TextLink>}
