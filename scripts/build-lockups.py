@@ -23,11 +23,14 @@ WM_W, WM_H, CAP = 664.59, 86.07, 73.0
 # Hygiene Nature Cure lockup without the Nature Cure line: 1946 x 454.
 HN_W, HN_H = 1946.0, 454.0
 
-# Each tone pairs a Shantara colourway with a supplied Hygiene tone. Nothing is recoloured.
+# One tone per Shantara wordmark colourway. Endorsed lockups are that one colour throughout:
+# Hygiene and the endorsement line take the Shantara colour. The co-brand keeps the supplied
+# Hygiene tone beside Shantara and has no gold version.
 TONES = {
     "dark": dict(wordmark="dark", shantara="#2D2926", hnch="dark", hygiene="#1C1A1D", ink="#2D2926"),
     "olive": dict(wordmark="olive", shantara="#495213", hnch="dark", hygiene="#1C1A1D", ink="#495213"),
     "cream": dict(wordmark="cream", shantara="#F4F0E6", hnch="light", hygiene="#FFFFFF", ink="#F4F0E6"),
+    "gold": dict(wordmark="gold", shantara="#DFC985", hnch="light", hygiene=None, ink="#DFC985"),
     "current": dict(wordmark="current", shantara="currentColor", hnch="current", hygiene="currentColor", ink="currentColor"),
 }
 RULE_W = 2.5          # hairline between the two names, in wordmark units
@@ -85,7 +88,7 @@ def endorsement(t, eb_cap, x, baseline):
     hy = baseline - eb_cap / 2 - hn_h / 2         # wordmark centre on the text's cap middle
     hn = inner(ROOT / "assets" / "hnch" / f"hygiene-{t['hnch']}.svg")
     parts = [f'<path transform="translate({x:.2f} {baseline - eb_cap:.2f})" fill="{t["ink"]}" d="{d}"/>',
-             place(hn, t["hygiene"], hx, hy, hn_w, hn_h, HN_W, HN_H)]
+             place(hn, t["shantara"], hx, hy, hn_w, hn_h, HN_W, HN_H)]
     return parts, hx + hn_w - x, hy, hy + hn_h
 
 
@@ -116,7 +119,9 @@ def build(tone, t):
         [shantara] + parts,
         0, 0, WM_W, y1)
 
-    # Co-brand: one line, Hygiene centred on the Shantara capitals. Headers and footers.
+    # Co-brand: one line, Hygiene centred on the Shantara capitals. Joint material, never documents.
+    if t["hygiene"] is None:
+        return write(tone, files)
     s = 0.8 * CAP / 265.0                        # HYGIENE capitals are 265 units tall
     hn_w, hn_h = HN_W * s, HN_H * s
     hy = (85.0 - CAP / 2) - hn_h / 2             # wordmark centre on the Shantara cap middle
@@ -128,7 +133,10 @@ def build(tone, t):
          rule(rx, 85.0 - CAP, CAP, t["ink"]),
          place(hn, t["hygiene"], hx, hy, hn_w, hn_h, HN_W, HN_H)],
         0, min(0, hy), hx + hn_w, max(WM_H, hy + hn_h))
+    write(tone, files)
 
+
+def write(tone, files):
     for name, text in files.items():
         (OUT / f"{name}-{tone}.svg").write_text(text, encoding="utf-8")
 
@@ -137,4 +145,4 @@ if __name__ == "__main__":
     OUT.mkdir(parents=True, exist_ok=True)
     for tone, t in TONES.items():
         build(tone, t)
-    print(f"Wrote {3 * len(TONES)} lockups to {OUT.relative_to(ROOT)}")
+    print(f"Wrote {len(list(OUT.glob('*.svg')))} lockups to {OUT.relative_to(ROOT)}")
