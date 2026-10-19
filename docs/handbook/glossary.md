@@ -47,3 +47,13 @@ Shantara encourages guests to disconnect, because constant connection works agai
 ## Amenities
 
 An amenity appears on the website or in structured data only if it is listed in the handbook amenities section.
+
+## Credentials and claims
+
+A credential, licence, registration, certification or membership appears on the website or in structured data only if it is listed in the verified credentials list below, with the document that proves it.
+
+### Verified credentials
+- Dr. Bahja Janu: BNYS, Rajiv Gandhi University of Health Sciences. Proof: [document name]
+- Dr. Bahja Janu: licence, Travancore-Cochin Medical Council (TCMC), Kerala. Proof: [document name]
+- Dr. Bahja Janu: licence, Ministry of Health, Saudi Arabia. Proof: [document name]
+- Dr. P.A. Kareem: Government of India-certified Naturopathy Practitioner, issued by [issuing body as named on the certificate]. Proof: [document name]

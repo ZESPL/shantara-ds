@@ -10,3 +10,7 @@ Before writing about nursing, nurses, attendants, bystanders or helpers, read do
 # Devices, work and amenities
 
 Before writing about devices, phones, Wi-Fi, work, workstations or amenities, read docs/handbook/glossary.md. Never add an amenity that is not in the handbook amenities section.
+
+# Credentials and claims
+
+Before writing any doctor credential, licence or membership, check the verified credentials list in docs/handbook/glossary.md. Never add a credential that is not on that list. Never remove or question one that is.

@@ -67,5 +67,16 @@ Rooms are designed with restraint, so comfort feels subtle rather than excessive
 | 24-hour Nursing Care | The on-site nursing team, included for every guest. This is not the personal attendant. |
 | High-speed Wi-Fi | Connection for guests during the stay. |
 | Designated Workstations | The exception to the device policy, not a feature. Devices are discouraged across the retreat. Guests who need to work can use their own room or the designated workstations. |
+| Naturopathy Treatment Rooms | Rooms used for naturopathy treatments. |
+| Meditation Space | A space set aside for meditation. |
+| Doctor Consultation Rooms | Rooms used for consultations with the doctor. |
+| On-site Laboratory | Laboratory on the property. |
+| Dining Hall | Hall where meals are served. |
+| Air Conditioning | Air conditioning in the room. |
+| Electronic Safe | A safe in the room. |
+| Tea and Coffee Maker | A tea and coffee maker in the room. |
+| Private Bathroom with Rain Shower | A private bathroom with a rain shower. |
+
+Naturopathy Treatment Rooms, Meditation Space, Doctor Consultation Rooms, On-site Laboratory, Dining Hall, Air Conditioning, Electronic Safe, Tea and Coffee Maker, and Private Bathroom with Rain Shower are from the Shantara agent agreement (Retreat Amenities and Facilities, and Room Facilities).
 
 [TO CONFIRM] Accessibility information for guests with mobility needs.
