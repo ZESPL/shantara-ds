@@ -1,8 +1,9 @@
 """Builds the Shantara x Hygiene Nature Cure lockups in assets/lockups/.
 
 The lockups are composed from the approved artwork only: assets/wordmark-*.svg for
-Shantara and assets/hnch/*.svg for Hygiene Nature Cure. The endorsement line is
-outlined from Diodrum Semibold, so every file renders the same without the font.
+Shantara and assets/hnch/*.svg for Hygiene Nature Cure in the co-brand. The endorsed
+lockups name Hygiene Nature Cure in type, not artwork. The endorsement line is outlined
+from Diodrum Semibold, so every file renders the same without the font.
 
     python scripts/build-lockups.py          (needs fontTools)
 """
@@ -16,16 +17,18 @@ from fontTools.ttLib import TTFont
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "assets" / "lockups"
 FONT = ROOT / "assets" / "fonts" / "DiodrumCyrillic-Semibold.ttf"
-ENDORSEMENT = "A SISTER CONCERN OF"
+ENDORSEMENT = "A SISTER CONCERN OF HYGIENE NATURE CURE"
+# The horizontal lockup wraps the line here; the stacked lockup keeps it on one line.
+WRAPPED = ("A SISTER CONCERN OF", "HYGIENE NATURE CURE")
+LEADING = 2.0         # baseline to baseline, in endorsement cap heights
 
 # Shantara wordmark box is 664.59 x 86.07; its capitals run from y 12.2 to the baseline at 85.
 WM_W, WM_H, CAP = 664.59, 86.07, 73.0
 # Hygiene Nature Cure lockup without the Nature Cure line: 1946 x 454.
 HN_W, HN_H = 1946.0, 454.0
 
-# One tone per Shantara wordmark colourway. Endorsed lockups are that one colour throughout:
-# Hygiene and the endorsement line take the Shantara colour. The co-brand keeps the supplied
-# Hygiene tone beside Shantara and has no gold version.
+# One tone per Shantara wordmark colourway. Endorsed lockups are that one colour throughout.
+# The co-brand keeps the supplied Hygiene tone beside Shantara and has no gold version.
 TONES = {
     "dark": dict(wordmark="dark", shantara="#2D2926", hnch="dark", hygiene="#1C1A1D", ink="#2D2926"),
     "olive": dict(wordmark="olive", shantara="#495213", hnch="dark", hygiene="#1C1A1D", ink="#495213"),
@@ -79,17 +82,11 @@ def svg(title, parts, x0, y0, x1, y1):
 
 
 def endorsement(t, eb_cap, x, baseline):
-    """A SISTER CONCERN OF + the Hygiene wordmark on one line, the text centred vertically on
-    the wordmark. Never split over two lines. Returns (parts, width, top, bottom)."""
-    d, eb_w = outline(ENDORSEMENT, eb_cap)
-    s = 2.1 * eb_cap / 265.0                      # HYGIENE capitals are 265 units tall
-    hn_w, hn_h = HN_W * s, HN_H * s
-    hx = x + eb_w + 0.9 * eb_cap
-    hy = baseline - eb_cap / 2 - hn_h / 2         # wordmark centre on the text's cap middle
-    hn = inner(ROOT / "assets" / "hnch" / f"hygiene-{t['hnch']}.svg")
-    parts = [f'<path transform="translate({x:.2f} {baseline - eb_cap:.2f})" fill="{t["ink"]}" d="{d}"/>',
-             place(hn, t["shantara"], hx, hy, hn_w, hn_h, HN_W, HN_H)]
-    return parts, hx + hn_w - x, hy, hy + hn_h
+    """A SISTER CONCERN OF HYGIENE NATURE CURE, one line of type, for the stacked lockup.
+    Returns (parts, width, top, bottom)."""
+    d, w = outline(ENDORSEMENT, eb_cap)
+    parts = [f'<path transform="translate({x:.2f} {baseline - eb_cap:.2f})" fill="{t["ink"]}" d="{d}"/>']
+    return parts, w, baseline - eb_cap, baseline
 
 
 def build(tone, t):
@@ -98,14 +95,21 @@ def build(tone, t):
     shantara = place(wm, t["shantara"], 0, 0, WM_W, WM_H, WM_W, WM_H)
     files = {}
 
-    # Endorsed, horizontal: Shantara | A SISTER CONCERN OF HYGIENE, centred on the Shantara capitals.
-    eb_cap = 0.24 * CAP
+    # Endorsed, horizontal: Shantara | the endorsement on two left-aligned lines, the block
+    # centred on the Shantara capitals.
+    eb_cap = 0.27 * CAP
     rx = WM_W + 0.85 * CAP
     bx = rx + 0.85 * CAP
-    base = (85.0 - CAP / 2) + eb_cap / 2         # the endorsement line shares the Shantara cap middle
-    parts, w, y0, y1 = endorsement(t, eb_cap, bx, base)
+    block = (1 + LEADING) * eb_cap
+    top = (85.0 - CAP / 2) - block / 2
+    parts, w = [], 0.0
+    for i, line in enumerate(WRAPPED):
+        d, lw = outline(line, eb_cap)
+        parts.append(f'<path transform="translate({bx:.2f} {top + i * LEADING * eb_cap:.2f})" fill="{t["ink"]}" d="{d}"/>')
+        w = max(w, lw)
+    y0, y1 = top, top + block
     files["endorsed-horizontal"] = svg(
-        "Shantara, a sister concern of Hygiene",
+        "Shantara, a sister concern of Hygiene Nature Cure",
         [shantara, rule(rx, 85.0 - CAP, CAP, t["ink"])] + parts,
         0, min(0, y0), bx + w, max(WM_H, y1))
 
@@ -115,9 +119,9 @@ def build(tone, t):
     base = WM_H + 0.7 * CAP - y0               # top of the line's ink sits 0.7 cap below Shantara
     parts, w, y0, y1 = endorsement(t, eb_cap, (WM_W - w) / 2, base)
     files["endorsed-stacked"] = svg(
-        "Shantara, a sister concern of Hygiene",
+        "Shantara, a sister concern of Hygiene Nature Cure",
         [shantara] + parts,
-        0, 0, WM_W, y1)
+        min(0, (WM_W - w) / 2), 0, max(WM_W, (WM_W + w) / 2), y1)
 
     # Co-brand: one line, Hygiene centred on the Shantara capitals. Joint material, never documents.
     if t["hygiene"] is None:
