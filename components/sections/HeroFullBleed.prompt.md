@@ -9,13 +9,13 @@ Full-screen photographic hero with the statement bottom-left inside a scrim and 
     <Button size="lg">Book a Consultation</Button>
     <TextLink>View programmes</TextLink>
   </>}
-  meta={["Kozhikode, Keralam", "Since 2000"]}
+  meta={["Kozhikode, Keralam"]}
 />
 ```
 
 **Use** once per page, first. `height="full"` for the home page (display-size headline); `height="tall"` for inner pages that earn a photograph (experience) with an h1-size headline; `short` for secondary pages. The transparent site header sits over it.
 
-**Content.** No eyebrow. The headline is one sentence and leads with what Shantara is — never “not a spa” or “wellness retreat”. Place and since-year, if wanted, go in `meta` below the actions. One primary button; a second action is a `TextLink`, not a second filled button. The photograph is the LCP image, so the hero passes `priority` for you; choose a frame with dark, quiet space bottom-left.
+**Content.** No eyebrow. The headline is one sentence and leads with what Shantara is — never “not a spa” or “wellness retreat”. Place, if wanted, goes in `meta` below the actions. Do not put a year there. One primary button; a second action is a `TextLink`, not a second filled button. The photograph is the LCP image, so the hero passes `priority` for you; choose a frame with dark, quiet space bottom-left.
 
 **Responsive.** Phone (<520px): at least 560px tall (100svh up to 1080px), the headline wraps at 20ch in the fluid display size, actions stack full width. Tablet: same layout, the scrim still covers the whole text block. Desktop: the statement caps at 44rem inside the container, bottom-left. Pass `mobilePosition` when the subject of the photograph moves out of a portrait crop.
 

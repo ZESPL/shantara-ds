@@ -30,11 +30,11 @@ OpenSEO (20 Sep 2026) clarified **how** to resource discovery and comparison. It
 
 | Job | Existing family / surface | Notes |
 | --- | --- | --- |
-| What Shantara is (entity) | Home + About | Lead with the positive entity sentence before atmospheric copy. HNCH / Hygiene Nature Cure Hospital relationship → **About only**. |
+| What Shantara is (entity) | Home + About | Lead with the positive entity sentence before atmospheric copy. HNCH / Hygiene Nature Cure Hospital relationship → **About story only**, as the one history sentence. Do not date Shantara to 2000. |
 | Ayurveda vs naturopathy | One medically reviewed **article / Clinical Guide** under Journal | Required GCC/West interception path. Not a fake Ayurveda service page. Not a nav item. |
 | What a residential stay is | Experience hub + FAQ | Fixes US/UK “ND clinic” misread. Not a new `/stay` family. |
 | Named conditions | `/en/conditions/{slug}` only | Original clinical content; India commercial spine. Do not invent ICP-named hubs. |
-| HNCH parent history | About | Keep hospital out of audience framing elsewhere. |
+| HNCH parent history | About story | One sentence. Keep the hospital out of audience framing elsewhere. |
 
 ### Condition launch inventory (status 20 Sep 2026 · Phase B + Phase C)
 

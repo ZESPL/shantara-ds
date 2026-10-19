@@ -499,7 +499,7 @@ function SiteFooter({ onNavigate, locale = "en" }) {
         <div className="sh-foot-grid" data-narrow={String(narrow)}>
           <div className="sh-foot-brand">
             <Logo mark="wordmark" tone="cream" height={22} assetBase="../../assets" />
-            <p className="sh-foot-blurb">{t("A naturopathy retreat on a hilltop above the Chennamangallur valley, Kozhikode. An evolution of Hygiene Nature Cure Hospital, caring for guests since 2000.")}</p>
+            <p className="sh-foot-blurb">{t("A naturopathy retreat on a hilltop above the Chennamangallur valley, Kozhikode.")}</p>
             <address className="sh-foot-nap">
               <strong>{t(c.name)}</strong>
               <span>{t("Chennamangallur, Kozhikode, Keralam, India - 673602")}</span>

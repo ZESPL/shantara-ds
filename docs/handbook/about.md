@@ -4,9 +4,9 @@ Part of the [property handbook](../handbook.txt).
 
 ### Our story
 
-Since 2000, Hygiene Nature Cure Hospital has welcomed people seeking a gentler, more natural way to heal. It was founded on the belief that the body has an innate ability to heal itself when given the right environment. Under P.A. Kareem's leadership, it grew into a 66-bed hospital, certified under the Keralam Clinical Establishment Act, and has treated more than 25,000 patients over the years.
+P.A. Kareem has practised naturopathy for more than 33 years. In 2000 he founded Hygiene Nature Cure Hospital. Under his leadership it grew into a 66-bed hospital, certified under the Keralam Clinical Establishment Act, and has treated more than 25,000 patients. Shantara continues that practice. The team, the philosophy and the commitment are the same. The setting is a retreat on the hilltop above the Chennamangallur valley.
 
-Shantara Naturopathy is the evolution of that legacy, not an expansion of it but a new form of it. Spread across 4 acres of hilltop land in Kozhikode with 56,000 sq. ft. of dedicated wellness infrastructure, it blends decades of clinical expertise with mindful hospitality. The team, the philosophy, and the commitment remain the same. Only the setting has become more immersive.
+Publish this history only as the About story. On that page, say people rather than patients, and leave out the bed count and the certification. The year 2000 is the founding of Hygiene Nature Cure Hospital, within his longer practice. Shantara continues that practice.
 
 ### What "Shantara" means
 

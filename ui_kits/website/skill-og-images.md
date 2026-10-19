@@ -76,7 +76,7 @@ Jobs are the families in [skill-ia.md](skill-ia.md). The template is still the p
 | Amenities | `default` | The grounds of the retreat | Shared rooms and time on the grounds. |
 | Farm and dining | `default` | Meals during the stay | Your doctor plans them with the programme. |
 | A day at Shantara | `default` | A day at the retreat | An example day. Each stay is planned. |
-| Our Story | `editorial` | How Shantara began | Founded from Hygiene Nature Cure Hospital. The parent hospital appears only here. |
+| Our Story | `editorial` | How Shantara began | P.A. Kareem's naturopathy practice. The parent hospital is named only in that story. |
 | Our Approach | `editorial` | How a stay is planned | Consultation, the stay, then going home. |
 | Our Doctors | `editorial` | The doctors at Shantara | Qualifications, practice and how to consult. |
 | Doctor profile | `programme` | The doctor's name | Qualification, or the role if there is no qualification. |

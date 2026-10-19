@@ -4,7 +4,7 @@ Part of the [property handbook](../handbook.txt).
 
 | Guest question | How to answer |
 | --- | --- |
-| Is this a hospital or a resort? | Both, in spirit. Shantara evolved from Hygiene Nature Cure Hospital, a 66-bed naturopathy hospital established in 2000 that has treated more than 25,000 patients, into an immersive retreat. Every stay is doctor-guided, but the setting is a retreat rather than a clinical ward. |
+| Is this a hospital or a resort? | Shantara is a doctor-led naturopathy retreat. Every stay is doctor-guided. The setting is a retreat rather than a clinical ward. |
 | How long do I need to stay? | Duration is advised following consultation. Most programmes are designed around a week or longer so protocols have time to take effect; shorter stays may be appropriate for some offers. Typical duration is a clinical recommendation, not a sales policy. |
 | Can I choose my own meals? | Meals are personalised by the doctor based on your condition and program, so it is best to think of food as part of treatment rather than a restaurant menu. |
 | Can I bring my own medication? | Yes, but it must be declared at the preliminary consultation and again at admission. Self-medication is not permitted during the stay; ongoing prescriptions continue only under the doctors' supervision. |

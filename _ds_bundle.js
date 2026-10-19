@@ -6530,7 +6530,7 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
 const CSS = `
 .sh-nsplit{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--stack-lg);align-items:end}
 /* Equal columns while the figures fit; a figure never shrinks below its own width, so a
-   long value ("25,000+") wraps to the next row instead of running into its neighbour. */
+   long value wraps to the next row instead of running into its neighbour. */
 .sh-nsplit-nums{display:flex;flex-wrap:wrap;gap:var(--space-8) calc(var(--grid-gap) * 2)}
 .sh-nsplit-nums>.sh-num{flex:1 1 0;min-width:max-content}
 @media (min-width:1000px){.sh-nsplit{grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:calc(var(--grid-gap) * 2)}}

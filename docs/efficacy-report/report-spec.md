@@ -11,7 +11,7 @@ The first edition is meant to cover the past 3 months of clinical data. The hand
 **Found in handbook**
 
 - Working title can follow the handbook name of the place: Shantara Naturopathy, Kozhikode, Keralam. `docs/handbook/quick-reference.md`
-- Shantara is the evolution of Hygiene Nature Cure Hospital. The parent hospital is a 66-bed hospital certified under the Keralam Clinical Establishment Act. `docs/handbook/about.md`, `docs/handbook/quick-reference.md`
+- The parent-hospital history is stated once in `docs/handbook/about.md`. Parent-hospital credentials are in `docs/handbook/quick-reference.md`.
 - Doctors named in the handbook, with the qualifications and roles it gives:
   - P.A. Kareem. Founder, Chairman and Chief Naturopathy Consultant. Government of India Certified Naturopath. 33+ years of practice. Degrees: B.A. in Urdu (Adib-e-Fazil) with Language Teachers' Training, and B.A. in History with B.Ed. The handbook says never to attribute a BNYS or a medical degree to him. `docs/handbook/team.md`, `docs/handbook/founder.md`
   - Dr. Bahja Janu. Medical Director. BNYS, Alva's College of Naturopathy and Yogic Sciences, Rajiv Gandhi University of Health Sciences, 2012. 14+ years of clinical naturopathy practice. She leads clinical operations and the team of naturopaths, nutritionists, physiotherapists and wellness practitioners, and she designs the treatment protocols and programmes. Licences named: Travancore-Cochin Medical Council, Kerala; Saudi Ministry of Health; listed with CCRYN. Registration numbers must not be published. `docs/handbook/team.md`, `docs/handbook/founder.md`
@@ -39,7 +39,7 @@ The first edition is meant to cover the past 3 months of clinical data. The hand
 
 - No Shantara outcome count, rate, or percentage is stated anywhere in the handbook.
 - Numbers that do appear are property or parent-hospital facts. They are not this quarter's efficacy:
-  - More than 25,000 patients treated at Hygiene Nature Cure Hospital since 2000. `docs/handbook/about.md`, `docs/handbook/team.md`, `docs/handbook/quick-reference.md`, `docs/handbook/faqs.md`
+  - The parent-hospital history, including the patient total, is stated once in `docs/handbook/about.md`.
   - 66 beds at the parent hospital. `docs/handbook/about.md`, `docs/handbook/quick-reference.md`
   - 52 rooms, 4 acres, 56,000 sq. ft. `docs/handbook/quick-reference.md`, `docs/handbook/property.md`
   - Monthly booking cap of 100 bookings, to preserve personalised care. This is a cap, not a count of guests treated. `docs/handbook/quick-reference.md`
@@ -224,7 +224,7 @@ The first edition is meant to cover the past 3 months of clinical data. The hand
 - How a guest feels at the start of a stay can reflect the tea and coffee rule. That rule is only in `docs/handbook/food.md`.
 - Admission exclusions and the heart-category examples do not use the same line for post-heart-attack care. Cohort rules need a doctor decision before results are grouped. `docs/handbook/admission.md`, `docs/handbook/programmes.md`
 - Active cancer under treatment cannot be admitted. Dr. Sara Shanti Alen's current study is oncology nutrition, and the handbook says not to offer that as a service. `docs/handbook/admission.md`, `docs/handbook/team.md`
-- The 25,000 figure and the 66-bed figure belong to Hygiene Nature Cure Hospital, not to a Shantara quarter. Resume wording that conflicts (160-bed, "since 1989", "Director and Chief Physician") is settled in the handbook and must not be used. `docs/handbook/team.md`
+- The parent-hospital history is stated once in `docs/handbook/about.md`. The 66-bed figure belongs to Hygiene Nature Cure Hospital, not to a Shantara quarter. Resume wording that conflicts (160-bed, "since 1989", "Director and Chief Physician") is settled in the handbook and must not be used. Do not write that Shantara has cared for guests since 2000. `docs/handbook/about.md`, `docs/handbook/team.md`
 - Public wording constraints in section 10 of this spec apply to every number and sentence in the report.
 - Doctor records in the handbook come from resumes supplied in October 2026. That date is about the biographies, not about a change in programmes. `docs/handbook/team.md`
 

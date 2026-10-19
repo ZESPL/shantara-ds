@@ -105,3 +105,7 @@ Internally:
 * Preserve the old name only where there is a legitimate historical, legal, SEO migration or citation reason.
 
 Public visitors should not see editorial instructions.
+
+## Practice legacy
+
+The history of P.A. Kareem's naturopathy practice, and of Hygiene Nature Cure Hospital, is written once in [About](../../../docs/handbook/about.md). The About story section is the only public mention. Do not repeat it in the footer, the home hero, a numeral, a doctor biography, a journal title, the brand deck, or a type specimen. Do not write “caring for guests since 2000”, “guests since 2000”, or “Since 2000” as a fact about Shantara.

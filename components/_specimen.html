@@ -331,7 +331,6 @@
           </div>;
         case "Numeral":
           return <div style={{ display: "grid", gridTemplateColumns: "repeat(2, minmax(0, 1fr))", gap: "var(--grid-gap)", maxWidth: 560 }}>
-            <Numeral value="25,000+" label="guests since 2000" />
             <Numeral value="13" label="therapies" />
           </div>;
         case "TextLink":
@@ -376,7 +375,6 @@
             quote="Naturopathy treats the causes of a condition through diet, activity, therapies and rest rather than through medication."
             cite="Shantara Naturopathy Retreat" role="Our approach to care"
             facts={[
-              { label: "Since 2000", text: "The evolution of Hygiene Nature Cure Hospital, which has cared for guests since 2000." },
               { label: "The setting", text: "A hilltop above the Chennamangallur valley, in Kozhikode, Keralam." },
             ]} />;
         case "PortraitFrame":
@@ -434,7 +432,7 @@
             title="A doctor-led naturopathy retreat in Keralam"
             sub="Drug-free naturopathy on a hilltop above the Chennamangallur valley. Every stay begins with a consultation, and your programme is planned by our doctors."
             actions={<><Button size="lg">Book a Consultation</Button><TextLink href="#">View programmes</TextLink></>}
-            meta={["Kozhikode, Keralam", "Since 2000"]} />;
+            meta={["Kozhikode, Keralam"]} />;
         case "HeroSplit":
           return <>
             <HeroSplit
@@ -463,10 +461,10 @@
               meta={["Reviewed by Dr. Bahja Janu, Medical Director", "Updated August 2026"]} />
             <HeroStatement ground="stone" tall={false}
               breadcrumbs={<Breadcrumbs items={[{ label: "Home", href: "#" }, "About"]} />}
-              title="A doctor-led naturopathy retreat in Keralam, since 2000"
-              sub="Shantara Naturopathy Retreat is the evolution of Hygiene Nature Cure Hospital, on a hilltop above the Chennamangallur valley."
+              title="A doctor-led naturopathy retreat in Keralam"
+              sub="Shantara is a doctor-led naturopathy retreat on a hilltop above the Chennamangallur valley."
               src={P + "courtyard.jpg"} alt="The courtyard" ratio="4:3"
-              meta={["Kozhikode, Keralam", "25,000+ guests since 2000"]} />
+              meta={["Kozhikode, Keralam"]} />
           </>;
         case "SplitSection":
           return <>
@@ -495,7 +493,7 @@
         case "NumeralsSplit":
           return <Section ground="stone">
             <NumeralsSplit title="Doctor-led naturopathy, planned around your assessment."
-              numerals={[{ value: "25,000+", label: "guests since 2000" }, { value: "13", label: "therapies" }]} />
+              numerals={[{ value: "13", label: "therapies" }]} />
           </Section>;
         case "TileGrid":
           return <Section>

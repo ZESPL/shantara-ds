@@ -12,7 +12,7 @@ Founder, Chairman & Chief Naturopathy Consultant
 - 33+ years of naturopathy practice. Use "33+ years" wherever his years of practice appear.
 - Disciple of the naturopath C. R. R. Varma
 - Author of 17 books and translator of 2 more, published in Malayalam, English, and Arabic
-- Founded Hygiene Nature Cure Hospital in 2000, and has personally guided the treatment of more than 25,000 patients since
+- The history of Hygiene Nature Cure Hospital is stated once, in [About](about.md).
 - Core philosophy: treat the cause and not merely the condition, through ethical, drug-free healing. He advocates natural living, appropriate diet, physical activity, yoga and fasting.
 
 | Field | Detail |
@@ -21,7 +21,7 @@ Founder, Chairman & Chief Naturopathy Consultant
 | Present positions | Founder, Chairman & Chief Naturopathy Consultant of Hygiene Nature Cure Hospital, Chennamangallur, and of Shantara Naturopathy, Chennamangallur |
 | Naturopathy credential | Government of India Certified Naturopath. Trained under C. R. R. Varma. |
 | Degrees | B.A. in Urdu (Adib-e-Fazil) with Language Teachers' Training. B.A. in History with B.Ed. |
-| Naturopathy practice | 33+ years. Has established and run naturopathy hospitals since 2000. |
+| Naturopathy practice | 33+ years. |
 | Teaching and public service | About 30 years as High School Assistant (Urdu) at the Kerala Government Higher Secondary School, REC, Calicut. Member of the Kerala Government Textbook Committee, 1984–1996. |
 | Public education | Lectures and awareness programmes on naturopathy in Malayalam, Urdu, Hindi and English, across India and abroad |
 | Languages | Malayalam, Urdu, Hindi and English, the languages he lectures in |
@@ -80,7 +80,7 @@ The recordings introduce him with figures this section has already settled again
 
 **Settled wording.** Where his resume differs, use these:
 
-- **Years of practice:** 33+ years. Do not use the resume's "since 1989".
+- **Years of practice:** 33+ years. Do not use the resume's "since 1989", and do not date his practice or Shantara to 2000. The hospital history is stated once, in [About](about.md).
 - **Hospital size:** Hygiene Nature Cure Hospital is a 66-bed hospital. Do not use the resume's "160-bed" figure.
 - **Title:** Founder, Chairman & Chief Naturopathy Consultant. Do not use the resume's "Director & Chief Physician".
 - **Hospital name:** Hygiene Nature Cure Hospital. Do not use the resume's "Hygiene Nature Cure & Yoga".

@@ -44,8 +44,6 @@ window.ShantaraContent = {
     "room_categories": 5,
     "built_up_sq_ft": 56000,
     "therapies_count": 13,
-    "guests_served_label": "25,000+",
-    "guests_served_since": 2000,
     "primary_cta": "Book a Consultation",
     "form_chrome_cta": "Send your details",
     "form_field_keys": [
@@ -58,16 +56,6 @@ window.ShantaraContent = {
     "schema_defaults": {
       "type": "MedicalClinic"
     },
-    "stats": [
-      {
-        "value": "25,000+",
-        "label": "guests since 2000"
-      },
-      {
-        "value": "13",
-        "label": "therapies"
-      }
-    ],
     "short_name": "Shantara",
     "whatsapp": "+91 9553 600 100",
     "land_acres_note": "Internal only. Never publish the acreage; say 'hilltop'.",
@@ -1339,7 +1327,7 @@ window.ShantaraContent = {
       "licences": [],
       "years_practice": "33+",
       "publications_note": "Author of 17 books and translator of 2 on naturopathy, health and nutrition (Malayalam, English, Arabic)",
-      "biography": "Founded Hygiene Nature Cure Hospital in 2000. Trained under the naturopath C. R. R. Varma, and has lectured on naturopathy across India and abroad in Malayalam, Urdu, Hindi and English. Core approach: treat the cause through ethical, drug-free naturopathy.",
+      "biography": "Trained under the naturopath C. R. R. Varma, and has lectured on naturopathy across India and abroad in Malayalam, Urdu, Hindi and English. Core approach: treat the cause through ethical, drug-free naturopathy.",
       "areas_of_practice": [
         "Naturopathy",
         "Fasting therapy",
@@ -1583,25 +1571,6 @@ window.ShantaraContent = {
       "featured_image": {
         "src": "corridor",
         "alt": "A corridor at Shantara"
-      }
-    },
-    {
-      "id": "twenty-six-years",
-      "slug": "twenty-six-years",
-      "title": "Twenty-six years of treating the cause",
-      "category": "Clinical Guides",
-      "read_minutes": 3,
-      "lead": "P.A. Kareem on Hygiene Nature Cure Hospital's drug-free care since 2000.",
-      "body": null,
-      "author": null,
-      "medical_reviewer": null,
-      "kit_journal": true,
-      "locale": "en",
-      "source": "kit",
-      "status": "draft",
-      "featured_image": {
-        "src": "library",
-        "alt": "The library at Shantara"
       }
     },
     {

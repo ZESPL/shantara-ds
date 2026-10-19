@@ -1,6 +1,7 @@
-/* About — HeroStatement (side photograph) → numerals → doctors → story → approach →
+/* About — HeroStatement (side photograph) → doctors → story → approach →
    editorial policy → ClosingCTA (ground, Pine Tree; the page has no other CTA).
-   Copy comes from content/ (site, doctors) and the strings this screen already carried. */
+   The practice history is stated once, in the story section.
+   Copy comes from content/ (doctors) and the strings this screen already carried. */
 
 function aboutDoctors() {
   return (window.ShantaraContent.doctors || []).filter((d) => ["pa-kareem", "bahja-janu"].includes(d.id)).map((d) => ({
@@ -11,15 +12,9 @@ function aboutDoctors() {
   }));
 }
 
-function aboutNumerals() {
-  const stats = (window.ShantaraContent.site && window.ShantaraContent.site.stats) || [];
-  // Two or three figures from site.json stats (never the room count — #8).
-  return stats.slice(0, 3);
-}
-
 function AboutScreen({ onNavigate }) {
   const { t } = window.ShantaraI18n.useLocale();
-  const { Breadcrumbs, HeroStatement, Section, NumeralsSplit, PeopleRow, SplitSection, Statement, TextLink, ClosingCTA, Button } = window.ShantaraDesignSystem_45bbe4;
+  const { Breadcrumbs, HeroStatement, Section, PeopleRow, SplitSection, Statement, TextLink, ClosingCTA, Button } = window.ShantaraDesignSystem_45bbe4;
   const P = window.PageSlot;
   const L = window.ShantaraLocales;
   const home = L ? L.kitHash(window.ShantaraI18n.currentLocaleCode(), "home") : "#/en/";
@@ -29,20 +24,11 @@ function AboutScreen({ onNavigate }) {
         <HeroStatement
           breadcrumbs={<Breadcrumbs items={[{ label: t("Home"), href: home }, t("About")]} />}
           title={t("About Shantara")}
-          sub={t("Shantara is a doctor-led naturopathy retreat on a hilltop above the Chennamangallur valley. It is the evolution of Hygiene Nature Cure Hospital, which has cared for guests since 2000.")}
+          sub={t("Shantara is a doctor-led naturopathy retreat on a hilltop above the Chennamangallur valley.")}
           src={window.photoSrc("lobby")}
           alt={t("The lobby at Shantara")}
           ratio="4:5"
         />
-      </P>
-
-      <P id="about/numerals">
-        <Section ground="stone">
-          <NumeralsSplit
-            title={t("Doctor-led naturopathy on a hilltop above the Chennamangallur valley.")}
-            numerals={aboutNumerals().map((s) => ({ value: s.value, label: t(s.label) }))}
-          />
-        </Section>
       </P>
 
       <P id="about/doctors">
@@ -58,8 +44,8 @@ function AboutScreen({ onNavigate }) {
 
       <P id="about/story">
         <SplitSection src={window.photoSrc("courtyard")} alt={t("The courtyard at Shantara")} ground="merino">
-          <Statement size="title" sub={t("P.A. Kareem founded Hygiene Nature Cure Hospital in 2000. Its core approach is to treat the cause through ethical, drug-free naturopathy.")}>
-            {t("Shantara is the evolution of Hygiene Nature Cure Hospital.")}
+          <Statement size="title" sub={t("He has practised for more than 33 years. In 2000 he founded Hygiene Nature Cure Hospital, which has cared for more than 25,000 people.")}>
+            {t("Shantara continues P.A. Kareem's naturopathy practice.")}
           </Statement>
         </SplitSection>
       </P>

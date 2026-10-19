@@ -40,8 +40,6 @@
   "room_categories": 5,
   "built_up_sq_ft": 56000,
   "therapies_count": 13,
-  "guests_served_label": "25,000+",
-  "guests_served_since": 2000,
   "primary_cta": "Book a Consultation",
   "form_chrome_cta": "Send your details",
   "form_field_keys": [
@@ -54,16 +52,6 @@
   "schema_defaults": {
     "type": "MedicalClinic"
   },
-  "stats": [
-    {
-      "value": "25,000+",
-      "label": "guests since 2000"
-    },
-    {
-      "value": "13",
-      "label": "therapies"
-    }
-  ],
   "short_name": "Shantara",
   "whatsapp": "+91 9553 600 100",
   "land_acres_note": "Internal only. Never publish the acreage; say 'hilltop'.",

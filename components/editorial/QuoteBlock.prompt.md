@@ -4,7 +4,7 @@ A large Light quote, left-aligned, closed by an attribution line (short brand ru
 <QuoteBlock
   quote="Naturopathy treats the causes of a condition through diet, activity, therapies and rest rather than through medication."
   cite="Shantara Naturopathy Retreat" role="Our approach to care"
-  facts={[{ label: "Since 2000", text: "The evolution of Hygiene Nature Cure Hospital." }]} />
+  facts={[{ label: "The setting", text: "A hilltop above the Chennamangallur valley." }]} />
 ```
 
 **Content rule.** Only consented, recorded words, or the organisation's own stated position attributed to the organisation. `content/testimonials/` is empty, so the kit uses this block for brand statements only — never a composed testimonial, never words put in a doctor's mouth. Always give an attribution; a quote without one looks unfinished.

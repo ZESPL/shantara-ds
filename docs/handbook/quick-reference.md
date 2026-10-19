@@ -10,7 +10,7 @@ Part of the [property handbook](../handbook.txt).
 | --- | --- |
 | Property name | Shantara Naturopathy |
 | Parent institution | Hygiene Nature Cure Hospital |
-| Parent institution credentials | 66-bed hospital certified under the Keralam Clinical Establishment Act, with more than 25,000 patients treated to date |
+| Parent institution credentials | 66-bed hospital certified under the Keralam Clinical Establishment Act |
 | Location | Kozhikode, Keralam, overlooking the Chennamangallur valley |
 | Land area | 4 acres, hilltop setting |
 | Built-up wellness infrastructure | 56,000 sq. ft. |
