@@ -6,18 +6,30 @@ These policies protect the clinical integrity of naturopathy treatment and creat
 
 ### Cancellation policy
 
+Cancellations must be received by email at `heal@shantara.life`. The refund tier is set by the date and time (IST) the email is received. Confirm every cancellation to the guest by email.
+
 - More than 30 days before arrival: 100% refund
 - 21 to 30 days before arrival: 50% refund
-- 20 days or less before arrival, no-show, or early departure: no refund
-- No refunds for disciplinary discharges
+- 20 days or less before arrival, or no-show: no refund
+- Early departure by choice: no refund for unused nights
+- Early departure on medical grounds, certified by a Shantara doctor (emergency, hospital transfer, or doctor-advised stop): unused nights refunded in cash
+- Admission declined by a Shantara doctor before arrival: 100% refund, whatever the date
+- Admission declined by a Shantara doctor on arrival: full refund less the nights and services already used
+- Disciplinary discharge of the guest or companion: no refund, including prepaid supplements
+
+Refunds go to the original payment method, in the currency paid, within 7 working days of the confirmed cancellation. Bank and gateway charges and exchange-rate differences are not refunded.
+
+Prepaid supplements (non-participating companion, extra bed or mattress) are refunded for unused nights, and prepaid additional therapies not given are refunded, however the stay is cancelled or ends, except after a disciplinary discharge. The cancellation tiers do not apply to them. Therapies already given are not refunded.
+
+If Shantara cancels, or force majeure prevents the stay, offer a free date move or credit for a stay within 12 months. Refund in full if the guest cannot use either. Shantara is not liable for the guest's travel costs.
 
 ### Date changes
 
-Date changes are permitted once without penalty if requested at least 20 days before the original arrival date, subject to availability. Any subsequent change is treated as a cancellation, with no refund.
+A stay can be postponed once at no charge, with written notice at least 21 days before arrival, subject to availability. The guest must give the new dates within 30 days, and the new stay must start within 6 months of the original arrival date. Any rate difference is payable; a lower rate is not refunded. After a date change, the booking cannot be changed again or refunded.
 
 ### Stay duration
 
-Most programmes are designed around a week or longer so naturopathy protocols have time to take effect. That is typical duration, not a mandatory floor for every stay: shorter stays may be offered where clinically and commercially appropriate. The guest's doctor recommends the optimal programme duration at the preliminary consultation. Early departure does not entitle a refund for unused nights of the booked stay — see the cancellation policy above. Do not quote rates here; they live on the tariff surface.
+Most programmes are designed around a week or longer so naturopathy protocols have time to take effect. That is typical duration, not a mandatory floor for every stay: shorter stays may be offered where clinically and commercially appropriate. The guest's doctor recommends the optimal programme duration at the preliminary consultation. Early departure by choice does not entitle a refund for unused nights of the booked stay; a doctor-certified medical departure does — see the cancellation policy above. Do not quote rates here; they live on the tariff surface.
 
 ### Non-participating companions
 
