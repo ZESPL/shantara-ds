@@ -60,6 +60,8 @@ Hospitality leads. Belonging follows. Rejuvenation is not a voice word; *rejuven
 
 Register for writers: spoken-formal, serious about the medicine, fully respectful, warmly hospitable. A little warmth is hospitality. Spa enthusiasm is not.
 
+Policy pages are the exception. They use formal policy language. See [policy language](policy-language.md).
+
 | Pole | Position | Meaning |
 | --- | --- | --- |
 | Formal → Casual | near Formal | Spoken-formal, not stiff |

@@ -20,6 +20,7 @@ This skill is split into focused files under [`copy/`](copy/). Read the one rele
 | [Page copy patterns](copy/page-copy-patterns.md) | Headings, CTAs, forms, information-architecture leakage, rewrite patterns, public vs internal copy |
 | [Words to avoid](copy/words-to-avoid.md) | Banned product language, luxury and mystical clichés, caution words, hard bans |
 | [Localisation](copy/localisation.md) | Published language, planned locales, translation rules |
+| [Policy language](copy/policy-language.md) | Formal register for policy pages (privacy, terms, cancellation, house rules, guest rights and every other `page_type: policy` page) |
 
 ## Non-negotiables (quick reference)
 
@@ -33,6 +34,7 @@ These are enforced everywhere; the linked part has the full rule.
 * **Guest**, not "patient" or "client", on public pages. See [voice and tone](copy/voice-and-tone.md#voice).
 * **No isolated prices** outside the tariff surface. See [health claims and compliance](copy/health-claims-and-compliance.md#pricing-must-remain-controlled).
 * **Nursing care and the personal attendant are different services.** Before writing about nursing, nurses, attendants, bystanders or helpers, read `docs/handbook/glossary.md` and follow the naming rules exactly.
+* **Policy pages use formal policy language**, not the spoken-formal site voice, and rewording never changes a commitment. See [policy language](copy/policy-language.md).
 * **No outcome guarantees** (cure, reverse, heal, medication-free, guaranteed weight loss). See [health claims and compliance](copy/health-claims-and-compliance.md#clinical-claims).
 
 ## Do not narrate the website to the visitor
