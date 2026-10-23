@@ -111,7 +111,7 @@ An article's `category` is the subtype (Clinical Guide, Guest Story, Food & Reci
 | Template | Mirrors | Ground | Used for |
 | --- | --- | --- | --- |
 | `default` | `HeroFullBleed` | Full-bleed photograph, `--scrim-hero` behind the text, `--scrim-header` behind the wordmark | Home; the Experience pages (`/en/therapies`, `/en/rooms`, `/en/amenities-activities`, `/en/farm-dining`, `/en/a-day-at-shantara`); any page that sets no template |
-| `programme` | `HeroSplit` | Merino text column, photograph on the right at 40% of the width | Programme and condition detail pages, doctor profiles (`/en/doctors/{slug}`), Tariffs, Book a Consultation |
+| `programme` | `HeroSplit` | Merino text column, photograph on the right at 40% of the width | Programme and condition detail pages, profile pages (`/en/pa-kareem`, `/en/doctors/{slug}`), Tariffs, Book a Consultation |
 | `editorial` | `HeroStatement`, `ArticleHeader` | Merino, rosette band on the right edge | Conditions and Programmes indexes; About pages (Our Story, Our Approach, Our Doctors, Medical Editorial Policy); the Journal index; every Journal entry (articles, Clinical Guides, Evidence Notes, Doctor Answers, Guest Stories); FAQ, Contact and the policy pages |
 
 **The template follows the page's hero.** A page type not listed here uses the template that matches its hero. Do not add a fourth template; a page that seems to need one uses the closest of the three.

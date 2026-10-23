@@ -1,4 +1,4 @@
-/* Doctor profile — route #/<locale>/doctors/<slug> (view "doctor").
+/* Doctor profile — route #/<locale>/doctors/<slug>, or #/<locale>/pa-kareem for the founder (view "doctor").
    Portrait, biography, then the media register on the doctor record:
    press, talks, videos, social posts. Every item is an outbound link.
    Never an embedded player. */

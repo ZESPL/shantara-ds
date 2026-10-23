@@ -7,7 +7,7 @@ Some SEO tools and older guides still recommend these. Do not follow them.
 - Do not create separate "AI versions" of pages, micro-Q&A pages, or pages chopped into fragments for AI. Google treats this as scaled content abuse.
 - Do not create keyword-variation pages, location doorway pages, ICP-named hubs or condition-category hubs.
 - Do not canonicalise a translation to English, or emit hreflang for a page that is not published.
-- Do not leave both `/` and `/en/` indexable.
+- Do not leave both `/` and `/en` indexable.
 - Do not canonicalise page 2 of a listing to page 1, and do not use `rel="next"` or `rel="prev"`.
 - Do not change a slug without a redirect, reuse a retired slug, or send visitors through more than one redirect.
 - Do not redirect a retired page to the homepage, a listing hub or a merely similar page.
@@ -18,7 +18,7 @@ Some SEO tools and older guides still recommend these. Do not follow them.
 - Do not write JSON-LD by hand in page components or Markdoc.
 - Do not commit video files, reference a local video path, or embed YouTube, Vimeo, Cloudflare Stream, Mux or any iframe player. Videos are native `<video>` files on Cloudflare R2. See [skill-video.md](../skill-video.md).
 - Do not add FAQ content to chase rich results.
-- Do not show rates outside the tariff page, or change rates by location, locale or device.
+- Do not show rates outside the tariff page, or change rates by location, locale or device. The organisation's `priceRange` in JSON-LD is an indicative range, not a rate (RATE-01).
 - Do not put health claims in titles, meta descriptions, alt text or schema.
 - Do not change published, modified or reviewed dates on a deploy.
 - Do not inject canonical, robots, hreflang or JSON-LD with client-side JavaScript.

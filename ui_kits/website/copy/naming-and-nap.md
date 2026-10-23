@@ -58,7 +58,7 @@ Never write **“four acres”**, **“4 acres”**, or **“four hilltop acres�
 
 ## Rooms
 
-Shantara has 52 rooms across five accommodation categories. **“52 rooms” may be stated at most once on the whole website**, and never prominently — no stat tile, no numeral treatment, no heading, no hero. If it appears, it belongs in ordinary body copy on the accommodation page.
+Shantara has 52 rooms across five accommodation categories. **“52 rooms” may be stated at most once on the whole website**, and never prominently — no stat tile, no numeral treatment, no heading, no hero. If it appears, it belongs in ordinary body copy on the accommodation page. The organisation's `numberOfRooms` in JSON-LD is structured data, not copy, and does not count towards this limit ([SCHEMA-03](../search-visibility/schema.md)).
 
 ## One contact number
 

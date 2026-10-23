@@ -186,7 +186,7 @@
     /* Single Journal article. Navigate with "article:<slug>"; bare "article" opens the sample. */
     article: "journal/how-meals-are-planned",
     /* Doctor profile. Navigate with "doctor:<slug>"; bare "doctor" opens P.A. Kareem. */
-    doctor: "doctors/pa-kareem",
+    doctor: "pa-kareem",
   };
 
   const ARTICLE_PREFIX = "journal/";
@@ -247,7 +247,7 @@
   }
 
   function localeHomePath(code) {
-    return "/" + (localeRecord(code) || LOCALES[DEFAULT_LOCALE]).code + "/";
+    return "/" + (localeRecord(code) || LOCALES[DEFAULT_LOCALE]).code;
   }
 
   function localePath(code, path) {
@@ -373,7 +373,7 @@
       };
     }
 
-    if (parsed.isLocaleHome && !trailing && pathname !== localeHomePath(parsed.locale)) {
+    if (parsed.isLocaleHome && pathname !== localeHomePath(parsed.locale)) {
       return {
         action: "redirect",
         status: 301,
@@ -531,11 +531,11 @@
       name: opts.name,
       description: opts.description,
       isPartOf: { "@id": origin + "/#website" },
-      about: { "@id": organizationId(origin) },
+      about: opts.type === "AboutPage" || opts.type === "ContactPage" ? { "@id": organizationId(origin) } : undefined,
     };
   }
 
-  /* MedicalClinic (a LocalBusiness subtype) organisation node. NAP name is always "Shantara Naturopathy Retreat"
+  /* MedicalClinic + Resort organisation node (SCHEMA-03). NAP name is always "Shantara Naturopathy Retreat"
      (copy/naming-and-nap.md); telephone is the public call number. legalName is omitted when empty (SCHEMA-14). */
   function organizationSchema(options) {
     const opts = options || {};
@@ -544,7 +544,7 @@
     const place = site.place || {};
     return {
       "@context": "https://schema.org",
-      "@type": (site.schema_defaults && site.schema_defaults.type) || "MedicalClinic",
+      "@type": (site.schema_defaults && site.schema_defaults.type) || ["MedicalClinic", "Resort"],
       "@id": organizationId(origin),
       name: site.business_name || "Shantara Naturopathy Retreat",
       legalName: site.legal_name || undefined,
@@ -757,8 +757,8 @@
     const v = String(view || "");
     if (v === "article" && slug) return ARTICLE_PREFIX + slug;
     if (v.indexOf("article:") === 0) return ARTICLE_PREFIX + v.slice(8);
-    if (v === "doctor" && slug) return "doctors/" + slug;
-    if (v.indexOf("doctor:") === 0) return "doctors/" + v.slice(7);
+    if (v === "doctor" && slug) return doctorPath(slug);
+    if (v.indexOf("doctor:") === 0) return doctorPath(v.slice(7));
     return KIT_VIEWS[v] != null ? KIT_VIEWS[v] : v;
   }
 
@@ -769,8 +769,16 @@
     return m ? m[1] : null;
   }
 
+  /* The founder's profile sits at the locale root (/en/pa-kareem); other profiles under doctors/. */
+  const FOUNDER_SLUG = "pa-kareem";
+
+  function doctorPath(slug) {
+    return slug === FOUNDER_SLUG ? slug : "doctors/" + slug;
+  }
+
   function doctorSlugFromPath(rest) {
     const key = String(rest || "").replace(/^\/+|\/+$/g, "");
+    if (key === FOUNDER_SLUG) return FOUNDER_SLUG;
     const m = key.match(/^doctors\/([a-z0-9-]+)$/);
     return m ? m[1] : null;
   }

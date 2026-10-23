@@ -2,7 +2,7 @@
 
 Back to the [website skill](../SKILL.md).
 
-Version 1.8. Updated 17 October 2026. Adapted for **shantara.life** from the Zarnik Marketplace checklist "Search and AI Visibility" version 6.2.
+Version 1.9. Updated 23 October 2026. Adapted for **shantara.life** from the Zarnik Marketplace checklist "Search and AI Visibility" version 6.2.
 
 This is the checkable rule list for search engines, AI answer engines (ChatGPT, Perplexity, Claude, Gemini, Google AI Overviews), AI browsing agents and accessibility on Shantara's public website. The reasoning and the locked decisions stay in [skill-technical.md](../skill-technical.md), [skill-ia.md](../skill-ia.md), [SKILL.md §15](../SKILL.md#section-15) and [skill-stack.md](../skill-stack.md). These files turn them into rules with IDs and checks. They do not replace them.
 
@@ -19,19 +19,27 @@ This is the checkable rule list for search engines, AI answer engines (ChatGPT, 
 
 ## Decisions
 
-Recorded on 25 September 2026. The rules below already follow them.
+Recorded on 25 September 2026 and 23 October 2026. The rules below already follow them. The website records each deviation from these rules, and the decision on it, in its own `docs/ds-decisions.md`. A deviation approved there is written into these rules in the same piece of work.
 
 | Decision | Outcome |
 | --- | --- |
 | Canonical host | `https://shantara.life`. Every other host and protocol 301s to it. `content/site.json` updated to match. |
 | Organisation schema type | `MedicalClinic`. `content/site.json` and the kit's schema helper in `locales.js` updated to match. |
-| Lodging companion type | Still open in [skill-technical.md](../skill-technical.md). Emit `MedicalClinic` only until it is decided. |
+| Organisation type | `["MedicalClinic", "Resort"]` on the one organisation node. `MedicalClinic` comes first. `Resort` is the lodging companion and carries the rooms, check-in times and amenities. Decided 23 October 2026. |
 | AI crawlers, including training crawlers (GPTBot, ClaudeBot, Google-Extended, CCBot) | Allowed. robots.txt has no named groups that block any AI crawler. |
 | Tax on rates | Tariff rates include all taxes. The page says so once; no tax is broken out. |
 | OpenPanel address | `https://openpanel.zescloud.net/`. [skill-stack.md](../skill-stack.md) updated. |
 | Google Business Profile | Shantara has its own profile, linked only to Shantara. It is not merged with, or managed as part of, the Hygiene Nature Cure Hospital listing. |
 | Page size | Every page's HTML stays below 2 MB. |
 | FAQ rich results | Google removed FAQ rich results in May 2026. `FAQPage` markup brings no Google benefit. |
+| Trailing slash | No page URL ends in a slash, including the locale home: `/en`, not `/en/`. Decided 23 October 2026. |
+| Sitemap index | `/sitemap.xml`. `/sitemap-index.xml` 301s to it. The video sitemap is listed in the index only. Decided 23 October 2026. |
+| Organisation graph | The full organisation graph (the clinic, its parent hospital, and the doctors' and leaders' `Person` nodes) is on every page. Decided 23 October 2026. |
+| Programme type | `["Service", "MedicalTherapy"]`. Shantara practises clinical naturopathy, and `relevantSpecialty` is valid only on `MedicalTherapy`. Decided 23 October 2026. |
+| `priceRange` and `numberOfRooms` | Allowed on the organisation node on every page. `priceRange` is an indicative range, not a rate, and `numberOfRooms` is structured data, not copy. Exact rates stay on the tariff page. Decided 23 October 2026. |
+| Font preload | Every Diodrum weight the site uses is preloaded, so no text changes font after first paint. Decided 23 October 2026. |
+| Founder | P.A. Kareem is the founder, not one of the doctors. His `Person` node is `https://shantara.life/#person-pa-kareem`, the organisation's `founder` points to it, his profile is `/en/pa-kareem`, and he is not listed on Our Doctors or in `employee`. Decided 23 October 2026. |
+| Policy breadcrumbs | Policy pages, like Book a Consultation, emit `WebPage` + `BreadcrumbList`, because they show a breadcrumb (SCHEMA-07). Decided 23 October 2026. |
 
 ### Still open
 
@@ -66,6 +74,7 @@ Recorded on 25 September 2026. The rules below already follow them.
 
 ## Change log
 
+- **1.9, 23 October 2026.** Brought into line with the website's recorded decisions. URL-02, LANG-01 and every `/en/` home reference: the locale home is `/en`, with no trailing slash. CRAWL-01, CRAWL-06 and CRAWL-10: the sitemap index is `/sitemap.xml`, and the video sitemap is listed in the index only. SCHEMA-03: the organisation is `["MedicalClinic", "Resort"]`, which settles the lodging companion, and its full graph is on every page, with `priceRange` and `numberOfRooms` allowed. SCHEMA-05: only `AboutPage` and `ContactPage` carry `about` pointing to the organisation. SCHEMA-06 and the schema map: Book a Consultation also emits `BreadcrumbList`. SCHEMA-09: doctors' `Person` nodes are part of the organisation graph. SCHEMA-10: programmes are `["Service", "MedicalTherapy"]`. RATE-01 and PAGE-04 exempt the organisation's `priceRange` and `numberOfRooms`. PERF-03: preload every Diodrum weight the site uses. SCHEMA-02, SCHEMA-03, SCHEMA-09 and URL-01: P.A. Kareem is the founder (`#person-pa-kareem`, profile at `/en/pa-kareem`), not one of the doctors. Schema map: policy pages also emit `BreadcrumbList`. The cancellation policy is `/en/cancellation`.
 - **1.8, 17 October 2026.** PAGE-01: the document title is the one template in skill-technical.md. ACC-03, ACC-04, ACC-06 and ACC-12 to ACC-14 take in reading order, hover, error text, colour, type size, line spacing and flashing. ACC-18 to ACC-21 add time limits, link text, consistent navigation, CAPTCHA and media.
 - **1.7, 7 October 2026.** MEAS-03: OpenPanel receives keyed form fields and identifies a profile. Name, email, and phone stay out of GA4. Health data stays out of both.
 - **1.6, 6 October 2026.** Video: native `<video>` on Cloudflare R2 + CDN only. SCHEMA-16 adds `VideoObject` to the one `@graph`. CRAWL-10 adds the video sitemap. The standard is [skill-video.md](../skill-video.md). YouTube, Vimeo, Cloudflare Stream and Mux embeds are refused.

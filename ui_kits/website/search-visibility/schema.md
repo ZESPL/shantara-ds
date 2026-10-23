@@ -9,19 +9,20 @@ Part of the [search and AI visibility rules](overview.md). Priorities, owner tag
 https://shantara.life/#organization
 https://shantara.life/#website
 https://shantara.life/#doctor-{internal-id}
+https://shantara.life/#person-{slug}   (the founder and the leadership)
 https://shantara.life/#program-{internal-id}
 https://shantara.life/#condition-{internal-id}
 {page URL}#webpage   and   {page URL}#breadcrumb
 ```
 
-- **SCHEMA-03 (P1) [Build]** Shantara is one `MedicalClinic` named "Shantara Naturopathy Retreat". Never use `Hospital`, spa types or `HealthAndBeautyBusiness`. The full node appears only on each published locale's homepage. It carries name, legalName ("Metropolis Forward LLP", omitted when empty), url, logo, image, description, telephone, email, address, geo, sameAs and contactPoint from DATA-04. The address is a `PostalAddress` with streetAddress "Chennamangallur", addressLocality "Kozhikode", addressRegion "Keralam", postalCode "673602" and addressCountry "IN". Every other page references it by `@id`. **Check:** Rich Results Test on `/en/`. Other pages contain only an `@id` reference.
+- **SCHEMA-03 (P1) [Build]** Shantara is one organisation typed `["MedicalClinic", "Resort"]`, in that order, and named "Shantara Naturopathy Retreat". `Resort` is the lodging companion. Never use `Hospital`, spa types or `HealthAndBeautyBusiness`. The full node is on every page, in the same `@graph` as the page's own nodes, together with the parent hospital and the founder's, doctors' and leaders' `Person` nodes it links to. It carries name, legalName ("Metropolis Forward LLP", omitted when empty), url, logo, image, description, telephone, email, address, geo, sameAs and contactPoint from DATA-04. The address is a `PostalAddress` with streetAddress "Chennamangallur", addressLocality "Kozhikode", addressRegion "Keralam", postalCode "673602" and addressCountry "IN". From the site record it may also carry `numberOfRooms`, `checkinTime`, `checkoutTime`, `amenityFeature`, `priceRange` and `currenciesAccepted`. `priceRange` is an indicative range, not a rate (RATE-01). Every other node refers to the organisation by `@id`. **Check:** Rich Results Test on `/en` and on one policy page. Each shows the organisation node exactly once.
 - **SCHEMA-04 (P1) [Build]** A `WebSite` node on every page has `@id`, `url`, `name`, `inLanguage` and `publisher` pointing to the organisation. No `SearchAction`: Shantara has no site search, and Google retired the sitelinks search box in November 2024. **Check:** no `potentialAction` in the WebSite node.
-- **SCHEMA-05 (P1) [Build]** Every indexable page has a page node of the most specific type in the [schema map](#schema-map-by-page-type), with `url`, `inLanguage`, `isPartOf` pointing to the website and `breadcrumb` pointing to its BreadcrumbList. **Check:** an automated test on each page type.
-- **SCHEMA-06 (P0) [Build]** Structured data describes only what is visible and public. Never put form data, health information or a guest's identity in JSON-LD unless the guest consented and the details are visible on the page. **Check:** code review of the generator. The consultation page emits only `WebPage`.
+- **SCHEMA-05 (P1) [Build]** Every indexable page has a page node of the most specific type in the [schema map](#schema-map-by-page-type), with `url`, `inLanguage`, `isPartOf` pointing to the website and `breadcrumb` pointing to its BreadcrumbList. Only `AboutPage` and `ContactPage` nodes carry `about` pointing to the organisation. Condition pages point `about` to their `MedicalCondition` (SCHEMA-08). Other page nodes have no `about`. **Check:** an automated test on each page type.
+- **SCHEMA-06 (P0) [Build]** Structured data describes only what is visible and public. Never put form data, health information or a guest's identity in JSON-LD unless the guest consented and the details are visible on the page. **Check:** code review of the generator. The consultation page emits only `WebPage` and `BreadcrumbList`, besides the shared organisation graph.
 - **SCHEMA-07 (P1) [Build]** A `BreadcrumbList` appears on every page that shows breadcrumbs and matches the visible trail. **Check:** Rich Results Test.
 - **SCHEMA-08 (P1) [Build]** Medical pages use `MedicalWebPage` with `about` pointing to a `MedicalCondition` (name and only what is visible), `reviewedBy` pointing to the doctor's `@id`, and `lastReviewed` equal to the visible date. **Check:** Schema Markup Validator on one condition page.
-- **SCHEMA-09 (P1) [Build]** Doctors are `Person` nodes with name, jobTitle, image, `worksFor` pointing to the organisation, and qualifications and `sameAs` links only when they are public and visible. A doctor profile page is `ProfilePage` with `mainEntity` pointing to that Person. Only P.A. Kareem and Dr. Bahja Janu have one; every other doctor's full `Person` node sits on `/en/our-doctors`. Do not use `Physician` for an individual: Schema.org defines `Physician` as a medical business type, not a person. **Check:** the generator outputs `ProfilePage` only on doctor pages.
-- **SCHEMA-10 (P1) [Build]** Programme pages use `Service` with name, description and `provider` pointing to the organisation. No `offers` on programme pages (RATE-04). **Check:** Schema Markup Validator on one programme page.
+- **SCHEMA-09 (P1) [Build]** Doctors are `Person` nodes with name, jobTitle, image, `worksFor` pointing to the organisation, and qualifications and `sameAs` links only when they are public and visible. A doctor profile page is `ProfilePage` with `mainEntity` pointing to that Person. Two people have one: the founder, P.A. Kareem, at `/en/pa-kareem`, and Dr. Bahja Janu at `/en/doctors/bahja-janu`. P.A. Kareem is the founder, not one of the doctors. His `Person` node is `https://shantara.life/#person-pa-kareem` and keeps his qualifications, the organisation's `founder` points to it, and he is in neither `employee` nor the Our Doctors `ItemList`. Every `Person` node is part of the organisation graph on every page (SCHEMA-03), so other nodes refer to it by `@id`. Do not use `Physician` for an individual: Schema.org defines `Physician` as a medical business type, not a person. **Check:** the generator outputs `ProfilePage` only on doctor pages.
+- **SCHEMA-10 (P1) [Build]** Programme pages use one node typed `["Service", "MedicalTherapy"]` with name, description, `provider` pointing to the organisation, and `relevantSpecialty` when the programme has one. Shantara practises clinical naturopathy, and `relevantSpecialty` is valid only on `MedicalTherapy`. No `offers` on programme pages (RATE-04). **Check:** Schema Markup Validator on one programme page.
 - **SCHEMA-11 (P1) [Build]** Listing pages (`/en/conditions`, `/en/programs`, `/en/journal`) use `CollectionPage` with an `ItemList` of the URLs shown. Condition and programme nodes live only on their own pages. **Check:** Schema Markup Validator shows no `Service` or `MedicalCondition` nodes on listing pages.
 - **SCHEMA-12 (P1) [Build]** Articles use `Article` or `BlogPosting` with headline, image, datePublished, dateModified, `author` pointing to a doctor's or writer's Person `@id`, and `publisher` pointing to the organisation. Medical articles also follow SCHEMA-08. **Check:** Rich Results Test.
 - **SCHEMA-13 (P2) [Build]** `FAQPage` markup is optional and used only when the questions and answers are visible on the page. Google removed FAQ rich results in May 2026, so the markup brings no Google benefit. Never use `HowTo`. **Check:** none needed.
@@ -31,21 +32,22 @@ https://shantara.life/#condition-{internal-id}
 
 ## Schema map by page type
 
-Every indexable page also gets the `WebSite` node and a reference to `https://shantara.life/#organization`.
+Every indexable page also gets the `WebSite` node and the full organisation graph (SCHEMA-03).
 
 | Page type | Nodes |
 | --- | --- |
-| Home (each published locale) | Full `MedicalClinic` + `WebSite` + `WebPage` |
+| Home (each published locale) | `WebPage` |
 | Condition | `MedicalWebPage` + `MedicalCondition` + `BreadcrumbList`, with `reviewedBy` and `lastReviewed` |
-| Programme | `WebPage` + `Service` + `BreadcrumbList` |
+| Programme | `WebPage` + `["Service", "MedicalTherapy"]` + `BreadcrumbList` |
 | Tariff | `WebPage` + `BreadcrumbList`, and `Offer` nodes only for visible, confirmed rates |
 | Experience pages | `WebPage` + `BreadcrumbList` |
-| Doctor profile (P.A. Kareem and Dr. Bahja Janu only) | `ProfilePage` + `Person` + `BreadcrumbList` |
-| Our Doctors (`/en/our-doctors`) | `AboutPage` + `ItemList` + `BreadcrumbList`. A full `Person` node for each doctor without a profile page; an `@id` reference for the two who have one |
+| Profile page (the founder, P.A. Kareem, at `/en/pa-kareem`, and Dr. Bahja Janu only) | `ProfilePage` + `BreadcrumbList`, with `mainEntity` pointing to the `Person` node |
+| Our Doctors (`/en/our-doctors`) | `AboutPage` + `ItemList` + `BreadcrumbList`. The `ItemList` refers to each practising doctor's `Person` node by `@id`. The founder is not listed |
 | Article, Clinical Guide, Doctor Answer | `Article` or `BlogPosting` + `BreadcrumbList`, and `MedicalWebPage` fields when medical |
 | Conditions, Programmes and Journal listings | `CollectionPage` + `ItemList` + `BreadcrumbList` |
 | About | `AboutPage` with `about` pointing to the organisation |
 | Contact | `ContactPage` with `about` pointing to the organisation |
-| Book a Consultation, policies, terms, privacy | `WebPage` only |
+| Book a Consultation | `WebPage` + `BreadcrumbList` |
+| Policies, terms, privacy | `WebPage` + `BreadcrumbList` |
 | Form confirmation, 404, 410 | No structured data |
 | Any indexable page that shows a public video | The row above, plus one `VideoObject` (SCHEMA-16) |

@@ -91,7 +91,7 @@ writeFileSync(join(out, "favicon.ico"), Buffer.concat([ico, png32]));
 const manifest = {
   name: "Shantara",
   short_name: "Shantara",
-  start_url: "/en/",
+  start_url: "/en",
   scope: "/",
   display: "browser",
   background_color: GROUND,

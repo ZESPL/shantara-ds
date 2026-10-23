@@ -50,7 +50,7 @@
     "notes"
   ],
   "schema_defaults": {
-    "type": "MedicalClinic"
+    "type": ["MedicalClinic", "Resort"]
   },
   "short_name": "Shantara",
   "whatsapp": "+91 9553 600 100",

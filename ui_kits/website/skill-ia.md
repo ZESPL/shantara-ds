@@ -135,7 +135,7 @@ Pages:
 /en/our-story
 /en/our-approach
 /en/our-doctors
-/en/doctors/pa-kareem
+/en/pa-kareem
 /en/doctors/bahja-janu
 ```
 
@@ -143,7 +143,7 @@ Medical Editorial Policy also sits under About.
 
 Accreditations and Sustainability are standing pages. Their URLs are under [Utility pages](#utility-pages).
 
-`/en/our-doctors` lists every doctor with a photo, name, qualification, areas of practice and a **Book a Consultation** button. Only P.A. Kareem and Dr. Bahja Janu have a profile page. Each profile lists the doctor's answers, the articles they reviewed, their programmes, and any press, talks, videos and social posts on the doctor record. Those lists are outbound links. A YouTube recording is a link, never an embedded player. Do not create a profile page for any other doctor; link to their section on `/en/our-doctors` instead (for example `/en/our-doctors#{slug}`).
+`/en/our-doctors` lists every practising doctor with a photo, name, qualification, areas of practice and a **Book a Consultation** button. The founder, P.A. Kareem, is not listed there: he appears on Our Story and on his own page, `/en/pa-kareem`. Only he and Dr. Bahja Janu (`/en/doctors/bahja-janu`) have a profile page. Each profile lists the doctor's answers, the articles they reviewed, their programmes, and any press, talks, videos and social posts on the doctor record. Those lists are outbound links. A YouTube recording is a link, never an embedded player. Do not create a profile page for any other doctor; link to their section on `/en/our-doctors` instead (for example `/en/our-doctors#{slug}`).
 
 Entity and parent history (including Hygiene Nature Cure Hospital / HNCH) belong here — not on condition or programme pages, and not as a hospital product pitch.
 ## Publishing families
@@ -202,7 +202,7 @@ Do not invent the text. A page with no fact source below stays unpublished until
 **Policies**
 
 6. Terms and Conditions (`/en/terms`).
-7. Cancellation and Refund Policy (`/en/cancellation-policy`). Rendered from the tariff’s cancellation terms, so the page and the tariff cannot disagree.
+7. Cancellation and Refund Policy (`/en/cancellation`; footer label "Cancellation policy"). Rendered from the tariff’s cancellation terms, so the page and the tariff cannot disagree.
 8. Privacy Policy (`/en/privacy-policy`). This is the public notice of what the website collects and why, including the consultation form, Ask the Doctor, the hosted-visits form, and analytics. The text is supplied by Shantara in `copy/en/policies/privacy-policy.md`. Handbook §8 is staff guidance and is not a source for this page. The page stays unpublished until that public text exists.
 9. Ethics Policy (`/en/ethics`).
 10. Diversity and Inclusion (`/en/diversity`).
@@ -246,7 +246,7 @@ Prefer:
 /en/programs/weight-management
 ```
 
-Every language uses the same families under its prefix (`/ar/conditions/diabetes` when that page is published). Root `/` is not an indexable duplicate of `/en/`. Until localized slugs exist, English slugs may be reused under another prefix. Identity is the internal ID, not the slug.
+Every language uses the same families under its prefix (`/ar/conditions/diabetes` when that page is published). Root `/` is not an indexable duplicate of `/en`. Until localized slugs exist, English slugs may be reused under another prefix. Identity is the internal ID, not the slug.
 
 Avoid unnecessary hierarchy and keyword repetition.
 
@@ -281,7 +281,7 @@ The Website Kit shows **one thin sample per family**, not every URL above.
 
 | Skill URL family | Kit sample |
 | --- | --- |
-| `/en/` | `HomeScreen.js` |
+| `/en` | `HomeScreen.js` |
 | `/en/conditions` | `ConditionsScreen.js` |
 | `/en/programs/[slug]` | `ProgrammeScreen.js` (Detox) |
 | Experience hub | `ExperienceScreen.js` |

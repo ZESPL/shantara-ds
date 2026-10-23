@@ -111,7 +111,7 @@ URL families are **locale-prefixed for every language, including English**:
 /en/programs/[program-slug]
 ```
 
-Root `/` is the x-default entry and redirects to `/en/` (or a remembered enabled locale). Do not force locale by IP. Do not leave `/` and `/en/` both indexable. Only a published localized URL is canonical.
+Root `/` is the x-default entry and redirects to `/en` (or a remembered enabled locale). Do not force locale by IP. Do not leave `/` and `/en` both indexable. Only a published localized URL is canonical.
 
 Do not invent condition-category SEO hubs (`/en/conditions/metabolic-lifestyle/diabetes`). Group visually on `/en/conditions` without creating indexable category pages.
 
@@ -328,10 +328,10 @@ Arabic is the first language to localise later. When that project starts: enable
 
 ### URLs, slugs, root
 
-Every published URL is locale-prefixed, including English: `/en/`, `/en/programs`, later `/ar/…`.
+Every published URL is locale-prefixed, including English: `/en`, `/en/programs`, later `/ar/…`.
 
-- `/` is x-default. It may redirect to `/en/` or a remembered **enabled** locale. It is not a second indexable English homepage.
-- `/en` normalises to `/en/`. Other paths drop a trailing slash.
+- `/` is x-default. It may redirect to `/en` or a remembered **enabled** locale. It is not a second indexable English homepage.
+- No path ends in a slash, including the locale home: `/en/` 301s to `/en`, and every other path drops a trailing slash the same way ([URL-02](search-visibility/urls.md)).
 - `/ar` and `/ar/` are not published while `ar` is disabled.
 - Do not force locale by IP. `Accept-Language` may **suggest** once; an explicit choice is remembered (`shantara-locale`). The suggestion is never irreversible.
 - Content identity uses stable internal IDs, not translated slugs. Relationships reference IDs. Localized slugs are allowed later; until then English slugs may be reused under the locale prefix (`/ar/programs/detox`). Document the reuse; do not make identity depend on the slug.

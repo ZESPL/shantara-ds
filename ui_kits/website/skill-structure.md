@@ -18,9 +18,9 @@ This file sets the folder layout, routes and data sources for the **shantara.lif
 | 6 | **Authors and testimonials are added now** | Add `authors/en/` and `testimonials/en/`. Testimonials publish only when `consent_status` is `recorded`. |
 | 7 | **Keys and analytics IDs are environment variables** | Keys and IDs never go in `src/content/`. Keep them in Netlify environment variables and document them in `.env.example`. |
 | 8 | **Singletons are per language** | Singletons use `site/{locale}.json`, `tariff/{locale}.json` and `faq/{locale}.json`. English is the master copy. |
-| 9 | **Doctors are `Person` nodes, and pages carry a `BreadcrumbList`** | Use `Person`, never `Physician`, which Schema.org defines as a medical business ([SCHEMA-09](search-visibility/schema.md)). Programmes use `Service` with no `offers` ([SCHEMA-10](search-visibility/schema.md)). |
+| 9 | **Doctors are `Person` nodes, and pages carry a `BreadcrumbList`** | Use `Person`, never `Physician`, which Schema.org defines as a medical business ([SCHEMA-09](search-visibility/schema.md)). Programmes use `["Service", "MedicalTherapy"]` with no `offers` ([SCHEMA-10](search-visibility/schema.md)). |
 | 10 | **Code says `program`, copy says programme** | Folder names, URLs, collection names, `related_pages` types, TypeScript types and schema `@id` values all use `program`. Only visible copy says "programme". |
-| 11 | **One page lists all doctors, and only two doctors get a profile page** | `/en/our-doctors` lists every doctor, each with an anchor section. Only P.A. Kareem (`/en/doctors/pa-kareem`) and Dr. Bahja Janu (`/en/doctors/bahja-janu`) have a profile page. The allowlist `DOCTOR_PROFILES` in `lib/routes.ts` controls this. No other doctor gets a page. |
+| 11 | **One page lists the doctors, and only two people get a profile page** | `/en/our-doctors` lists every practising doctor, each with an anchor section. The founder, P.A. Kareem, is not listed there; his profile is `/en/pa-kareem`. Only he and Dr. Bahja Janu (`/en/doctors/bahja-janu`) have a profile page. The allowlist `DOCTOR_PROFILES` in `lib/routes.ts` controls this. No other doctor gets a page. |
 
 ## Folder tree
 
@@ -101,15 +101,15 @@ tests/                Playwright: 4–5 smoke tests only
 
 ## Route table
 
-Every URL carries a locale prefix, and `check-routes.mjs` enforces it ([Build checks](#build-checks)). Until a localisation project starts, only `/en/` exists.
+Every URL carries a locale prefix, and `check-routes.mjs` enforces it ([Build checks](#build-checks)). Until a localisation project starts, only `/en` exists.
 
-| URL | File under `src/pages/[locale]/` | Data | Schema nodes (plus `WebSite` and the organisation reference) |
+| URL | File under `src/pages/[locale]/` | Data | Schema nodes (plus `WebSite` and the full organisation graph) |
 | --- | --- | --- | --- |
-| `/en/` | `index.astro` | `copy/en/home.ts` and `featured` entities | Full `MedicalClinic` + `WebPage` |
+| `/en` | `index.astro` | `copy/en/home.ts` and `featured` entities | `WebPage` |
 | `/en/conditions` | `conditions/index.astro` | conditions | `CollectionPage` + `ItemList` + `BreadcrumbList` |
 | `/en/conditions/{slug}` | `conditions/[slug].astro` | condition | `MedicalWebPage` + `MedicalCondition` + `BreadcrumbList`, `reviewedBy` pointing to the doctor's `Person` `@id` |
 | `/en/programs` | `programs/index.astro` | programs | `CollectionPage` + `ItemList` + `BreadcrumbList` |
-| `/en/programs/{slug}` | `programs/[slug].astro` | program | `WebPage` + `Service` + `BreadcrumbList` (no `offers`) |
+| `/en/programs/{slug}` | `programs/[slug].astro` | program | `WebPage` + `["Service", "MedicalTherapy"]` + `BreadcrumbList` (no `offers`) |
 | `/en/therapies` | `therapies.astro` | therapies, one section per therapy with `id="{slug}"` | `WebPage` + `BreadcrumbList` |
 | `/en/rooms` | `rooms.astro` | rooms, one section each plus a comparison `SpecTable` | `WebPage` + `BreadcrumbList` |
 | `/en/amenities-activities` | `amenities-activities.astro` | `copy/en/amenities-activities.ts` | `WebPage` + `BreadcrumbList` |
@@ -117,27 +117,27 @@ Every URL carries a locale prefix, and `check-routes.mjs` enforces it ([Build ch
 | `/en/a-day-at-shantara` | `a-day-at-shantara.astro` | `copy/en/a-day-at-shantara.ts` shown in a `TimeTable` | `WebPage` + `BreadcrumbList` |
 | `/en/our-story` | `our-story.astro` | copy and the founder's doctor record | `AboutPage` + `BreadcrumbList` |
 | `/en/our-approach` | `our-approach.astro` | copy, with the guest journey shown in `NumberedSteps` | `AboutPage` + `BreadcrumbList` |
-| `/en/our-doctors` | `our-doctors.astro` | all doctors, one section each with `id="{slug}"` | `AboutPage` + `ItemList` + `BreadcrumbList`. A full `Person` node for each doctor without a profile; an `@id` reference for the two with one |
-| `/en/doctors/pa-kareem` and `/en/doctors/bahja-janu` | `doctors/[slug].astro`, whose paths come from `DOCTOR_PROFILES` only | doctor, plus their answers, reviewed articles, programmes, press, talks, videos and social posts | `ProfilePage` + `Person` + `BreadcrumbList` |
+| `/en/our-doctors` | `our-doctors.astro` | every practising doctor (not the founder), one section each with `id="{slug}"` | `AboutPage` + `ItemList` + `BreadcrumbList`. The `ItemList` refers to each practising doctor's `Person` node by `@id` |
+| `/en/pa-kareem` and `/en/doctors/bahja-janu` | `pa-kareem.astro` and `doctors/[slug].astro`, whose paths come from `DOCTOR_PROFILES` only | doctor, plus their answers, reviewed articles, programmes, press, talks, videos and social posts | `ProfilePage` + `Person` + `BreadcrumbList` |
 | `/en/journal` and `/en/journal/{n}` | `journal/[...page].astro` | articles and doctor answers, newest first | `CollectionPage` + `ItemList` + `BreadcrumbList` |
 | `/en/journal/{slug}` | `journal/[slug].astro` | article or doctor answer | `Article` + `BreadcrumbList`, with `MedicalWebPage` fields when medical |
 | `/en/tariff` | `tariff.astro` | `tariff/en.json` | `WebPage` + `BreadcrumbList`, with `Offer` only for visible rates |
 | `/en/faq` | `faq.astro` | `faq/en.json` | `WebPage` + `BreadcrumbList` (`FAQPage` optional) |
 | `/en/contact` | `contact.astro` | `site/en.json` | `ContactPage` |
-| `/en/book-consultation` | `book-consultation.astro` | `ConsultationForm` | `WebPage` only |
+| `/en/book-consultation` | `book-consultation.astro` | `ConsultationForm` | `WebPage` + `BreadcrumbList` |
 | `/en/hosted-stays` | `hosted-stays.astro` | Specified in [special-pages/hosted-stays.md](special-pages/hosted-stays.md). Indexable. No links from nav, footer, or guest pages. No kit sample. Same slug under each published locale. | `WebPage` only |
-| `/en/admission-criteria` | `admission-criteria.astro` | `copy/en/policies/admission-criteria.md` | `WebPage` only |
-| `/en/house-rules` | `house-rules.astro` | `copy/en/policies/house-rules.md` | `WebPage` only |
-| `/en/guest-rights` | `guest-rights.astro` | `copy/en/policies/guest-rights.md` | `WebPage` only |
-| `/en/feedback-and-complaints` | `feedback-and-complaints.astro` | `copy/en/policies/feedback-and-complaints.md` | `WebPage` only |
-| `/en/accessibility` | `accessibility.astro` | `copy/en/policies/accessibility.md` | `WebPage` only |
-| `/en/terms` | `terms.astro` | `copy/en/policies/terms.md` | `WebPage` only |
-| `/en/cancellation-policy` | `cancellation-policy.astro` | `tariff/en.json` → `cancellation`, `payment_terms` | `WebPage` only |
-| `/en/privacy-policy` | `privacy-policy.astro` | `copy/en/policies/privacy-policy.md` | `WebPage` only |
-| `/en/ethics` | `ethics.astro` | `copy/en/policies/ethics.md` | `WebPage` only |
-| `/en/diversity` | `diversity.astro` | `copy/en/policies/diversity.md` | `WebPage` only |
-| `/en/accreditations` | `accreditations.astro` | `copy/en/policies/accreditations.md` | `WebPage` only |
-| `/en/sustainability` | `sustainability.astro` | `copy/en/policies/sustainability.md` | `WebPage` only |
+| `/en/admission-criteria` | `admission-criteria.astro` | `copy/en/policies/admission-criteria.md` | `WebPage` + `BreadcrumbList` |
+| `/en/house-rules` | `house-rules.astro` | `copy/en/policies/house-rules.md` | `WebPage` + `BreadcrumbList` |
+| `/en/guest-rights` | `guest-rights.astro` | `copy/en/policies/guest-rights.md` | `WebPage` + `BreadcrumbList` |
+| `/en/feedback-and-complaints` | `feedback-and-complaints.astro` | `copy/en/policies/feedback-and-complaints.md` | `WebPage` + `BreadcrumbList` |
+| `/en/accessibility` | `accessibility.astro` | `copy/en/policies/accessibility.md` | `WebPage` + `BreadcrumbList` |
+| `/en/terms` | `terms.astro` | `copy/en/policies/terms.md` | `WebPage` + `BreadcrumbList` |
+| `/en/cancellation` | `cancellation.astro` | `tariff/en.json` → `cancellation`, `payment_terms` | `WebPage` + `BreadcrumbList` |
+| `/en/privacy-policy` | `privacy-policy.astro` | `copy/en/policies/privacy-policy.md` | `WebPage` + `BreadcrumbList` |
+| `/en/ethics` | `ethics.astro` | `copy/en/policies/ethics.md` | `WebPage` + `BreadcrumbList` |
+| `/en/diversity` | `diversity.astro` | `copy/en/policies/diversity.md` | `WebPage` + `BreadcrumbList` |
+| `/en/accreditations` | `accreditations.astro` | `copy/en/policies/accreditations.md` | `WebPage` + `BreadcrumbList` |
+| `/en/sustainability` | `sustainability.astro` | `copy/en/policies/sustainability.md` | `WebPage` + `BreadcrumbList` |
 
 The cancellation policy has no copy file of its own. It renders from the tariff singleton, so the policy and the tariff page can never disagree.
 
@@ -149,7 +149,7 @@ The cancellation policy has no copy file of its own. It renders from the tariff 
 | --- | --- |
 | `therapy` | `/en/therapies#{slug}` |
 | `room` | `/en/rooms#{slug}` |
-| `doctor` | `/en/doctors/{slug}` for the two doctors in `DOCTOR_PROFILES`, otherwise `/en/our-doctors#{slug}`. This covers `ReviewedBy` and author links too |
+| `doctor` | `/en/pa-kareem` for the founder and `/en/doctors/{slug}` for the other entry in `DOCTOR_PROFILES`, otherwise `/en/our-doctors#{slug}`. This covers `ReviewedBy` and author links too |
 | `author` (not a doctor) | No link. Show the name and role only |
 | `testimonial` | No link |
 

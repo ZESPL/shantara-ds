@@ -99,7 +99,7 @@ src/content/conditions/ar/diabetes.json   ← only the text fields
 - The same filename is the same entry. A translated file holds only translatable text (name, summary, body, FAQs, SEO). Images, video, related pages, featured flags and prices always come from English.
 - A translated page publishes only when its file is `published`. No translated file means no page and no hreflang for that language.
 - The build warns when the English file was committed after the translation. There are no translation review fields.
-- Only `/en/` exists until a localisation project. Button and navigation labels stay in the code dictionary (`locales.js`), not in Keystatic.
+- Only `/en` exists until a localisation project. Button and navigation labels stay in the code dictionary (`locales.js`), not in Keystatic.
 
 ## Site settings
 

@@ -17,7 +17,7 @@ Canonical standard: **`ui_kits/website/skill-icons.md`**. Read it before any cha
 3. Mark only, never the wordmark. Tab icon: the bare Himalaya mark on a transparent background, switching to Gold Crayola in dark mode in Chrome and Edge (Safari ignores the switch and keeps Himalaya, an accepted known limit); no tile, no gold. Home-screen icons: a Gold Crayola mark on a solid Himalaya square, no transparency, no rounded corners.
 4. The 16px mark is allowed only as a browser icon from this build. The 24px minimum in `guidelines/logo.html` applies everywhere else.
 5. Icon tags live only in `src/components/seo/Head.astro`, as listed in section 3 of the canonical doc.
-6. The manifest keeps `display: "browser"` and `start_url: "/en/"`, with one manifest for every language and the maskable icon as its own entry.
+6. The manifest keeps `display: "browser"` and `start_url: "/en"`, with one manifest for every language and the maskable icon as its own entry.
 7. Review `templates/icons/samples/preview.png`, then run `npm run check`. In the website, CI runs `node scripts/check-icons.mjs public dist` after `astro build`, which also checks every built page's head tags.
 8. `display: "browser"` means the site is not installable: no install prompt, splash screen or app-drawer entry. A DevTools installability warning about `display` is expected. Do not describe the icons as install or splash icons.
 9. After a real redesign, add `?v=N` to the icon `href` values so returning visitors see the change.

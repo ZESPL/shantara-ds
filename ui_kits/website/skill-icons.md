@@ -68,7 +68,7 @@ The tags are the same on every page and every language, so they sit at the top o
 {
   "name": "Shantara",
   "short_name": "Shantara",
-  "start_url": "/en/",
+  "start_url": "/en",
   "scope": "/",
   "display": "browser",
   "background_color": "#495213",
@@ -82,7 +82,7 @@ The tags are the same on every page and every language, so they sit at the top o
 ```
 
 - **`display: "browser"`.** shantara.life is a marketing site, not an app. Browsers do not treat a site with `browser` as installable: there is no install prompt, no splash screen and no app-drawer entry. A visitor can still add a home-screen shortcut from the browser menu; it uses the manifest icons and opens the site in the normal browser, with the address bar. Do not change it to `standalone` without an offline and navigation plan.
-- **`start_url` is `/en/`**, not `/`, so a launch does not go through the root redirect. There is one manifest for every language. Do not add per-language manifests; the visitor's language comes from the URL they choose.
+- **`start_url` is `/en`**, not `/` or `/en/`, so a launch does not go through the root redirect. There is one manifest for every language. Do not add per-language manifests; the visitor's language comes from the URL they choose.
 - **The maskable icon is its own entry.** `"purpose": "any maskable"` on one file makes the normal icon look shrunken everywhere.
 - **`background_color` is Himalaya**, the icon's ground. Browsers use it only for the splash screen of an installed app, so it has no effect with `browser`; it is set so the manifest is complete and correct if `display` ever changes. **`theme_color` is Merino**, the page colour, as in the `theme-color` tag.
 - **No `description`, `screenshots`, `shortcuts` or service worker.** They exist for installable apps and add nothing here.

@@ -1,7 +1,7 @@
 {
   "name": "Shantara",
   "short_name": "Shantara",
-  "start_url": "/en/",
+  "start_url": "/en",
   "scope": "/",
   "display": "browser",
   "background_color": "#495213",

@@ -136,7 +136,7 @@ The checkable version of this section and the schema section, with rule IDs, pri
 
 Support: unique SEO title; meta description; **self-referencing** canonical URL for that locale; Open Graph title; Open Graph description; Open Graph image; index/noindex setting; correct H1; crawlable internal links in the current locale; `hreflang` alternates only for published equivalents, plus `x-default`.
 
-Do not canonicalize a translation to English. Do not emit `hreflang` for a locale or page that is not published. Root `/` must not compete with `/en/` as an indexable English document.
+Do not canonicalize a translation to English. Do not emit `hreflang` for a locale or page that is not published. Root `/` must not compete with `/en` as an indexable English document.
 
 ### Global site identity (titles and Open Graph)
 
@@ -221,16 +221,16 @@ Do not ask editors to manually write JSON-LD.
 
 ### Site / business entity
 
-Use one Organization with a stable canonical `@id` across every locale.
+Use one Organization with a stable canonical `@id` across every locale. Its full node is on every page ([SCHEMA-03](search-visibility/schema.md)).
 
 - **`name`:** `Shantara Naturopathy Retreat` (same as the frozen NAP / `og:site_name`).
-- **Primary type:** `MedicalClinic`, plus lodging / residential-stay facts that match visible content (rooms, residential programme, address). Prefer additional typed properties or a clearly related lodging representation over inventing a second competing Organization. Exact lodging companion (`Hotel` vs other lodging properties) is still TBD — do not invent a second competing Organization while that choice is open.
+- **Type:** `["MedicalClinic", "Resort"]` on the one organisation node. `MedicalClinic` comes first. `Resort` is the lodging companion and carries `numberOfRooms`, check-in and check-out times, amenities, `priceRange` and `currenciesAccepted`. Do not add a second, competing Organization. Decided 23 October 2026.
 - **Do not use** `Hospital`, spa types, or `HealthAndBeautyBusiness` — those mis-state the entity (hospital is the wrong local entity; spa framing is paid-exclusion territory).
 - Do not choose a medical schema type merely because it sounds advantageous; `MedicalClinic` is allowed here because the offer is a doctor-led residential clinic stay, not a beauty business.
 
 Localized web pages have a locale-specific `url` and `inLanguage`. Doctor and program identities stay on the same `@id` when their names are translated.
 
-Typical data: name; URL; logo; telephone; email; address; geo; opening hours; sameAs; contactPoint; lodging-relevant facts only when they appear on the site.
+Typical data: name; URL; logo; telephone; email; address; geo; opening hours; sameAs; contactPoint; lodging facts from the site record ([SCHEMA-03](search-visibility/schema.md)).
 
 ### Condition content
 
@@ -238,7 +238,7 @@ Where appropriate: `MedicalWebPage`; `MedicalCondition`; `BreadcrumbList`; revie
 
 ### Programs
 
-Where appropriate: `WebPage`; `Service`; `Offer` only where real visible commercial information exists; `BreadcrumbList`.
+Where appropriate: `WebPage`; one node typed `["Service", "MedicalTherapy"]` with `relevantSpecialty` ([SCHEMA-10](search-visibility/schema.md)); `Offer` only where real visible commercial information exists; `BreadcrumbList`.
 
 Visible commercial figures exist only on the production tariff page, read from the Keystatic tariff. Do not emit `Offer` amounts anywhere else. Each `Offer` uses the exact amount and ISO currency code as entered; never convert or round. This design system holds no rates.
 
@@ -352,7 +352,7 @@ In production, use **Astro Image**. Where files go, how to compress them and whi
 ### Fonts
 
 - keep families/weights limited;
-- preload only required files;
+- preload every Diodrum weight the site uses, and no other font file ([PERF-03](search-visibility/performance.md));
 - use sensible fallbacks;
 - avoid layout shift.
 

@@ -32,23 +32,24 @@ test("seven planned locales; only English enabled and source", () => {
   assert.equal(L.isSupported("es"), false);
 });
 
-test("/ is x-default and redirects to /en/; /en/ is the English home", () => {
+test("/ is x-default and redirects to /en; /en is the English home", () => {
   const rootReq = L.normalizeRequest("/");
   assert.equal(rootReq.action, "redirect");
-  assert.equal(rootReq.location, "/en/");
+  assert.equal(rootReq.location, "/en");
   assert.equal(rootReq.indexable, false);
 
-  const enHome = L.normalizeRequest("/en/");
+  const enHome = L.normalizeRequest("/en");
   assert.equal(enHome.action, "serve");
   assert.equal(enHome.locale, "en");
   assert.equal(enHome.indexable, true);
 
-  const enBare = L.normalizeRequest("/en");
-  assert.equal(enBare.action, "redirect");
-  assert.equal(enBare.location, "/en/");
+  const enSlash = L.normalizeRequest("/en/");
+  assert.equal(enSlash.action, "redirect");
+  assert.equal(enSlash.status, 301);
+  assert.equal(enSlash.location, "/en");
 
   const remembered = L.normalizeRequest("/", { remembered: "en" });
-  assert.equal(remembered.location, "/en/");
+  assert.equal(remembered.location, "/en");
 });
 
 test("locale persist is remembered and browser language only suggests enabled locales", () => {
@@ -250,10 +251,12 @@ test("form field keys are stable English identifiers", () => {
 });
 
 test("schema URLs are locale-specific; organization @id is stable", () => {
-  const page = L.webpageSchema({ origin: "https://shantara.life", locale: "en", path: "about", name: "About" });
+  const page = L.webpageSchema({ origin: "https://shantara.life", locale: "en", path: "about", name: "About", type: "AboutPage" });
   assert.equal(page.url, "https://shantara.life/en/about");
   assert.equal(page.inLanguage, "en");
   assert.equal(page.about["@id"], "https://shantara.life/#organization");
+  const plain = L.webpageSchema({ origin: "https://shantara.life", locale: "en", path: "terms", name: "Terms" });
+  assert.equal(plain.about, undefined);
   assert.equal(L.entityId("https://shantara.life", "doctor", "kareem"), "https://shantara.life/#doctor/kareem");
 });
 
