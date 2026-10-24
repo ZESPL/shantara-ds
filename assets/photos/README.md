@@ -69,6 +69,7 @@ Names follow `category-subject-setting-variant-orientation-ratio`. Every file en
 | `massage-head-*` / `massage-face-*` / `massage-foot-reflexology-*` | Head, face and foot massage | `massage-therapy` |
 | `acupuncture-*` | Facial acupuncture | `acupuncture` |
 | `physiotherapy-*` | Mobility assessment, electrotherapy | `physiotherapy` |
+| `food-*` | Plated meals and juice: single dishes and table spreads in the restaurant (white table, green chairs), on the wood slab table and in the garden | `diet-therapy` |
 | `consultation-*` | Doctor consultation at a desk | — |
 | `grounds-*` | Walks, garden paths, textured walls, courtyard deck, pebble path | — |
 | `leisure-*` | Balcony valley view, pergola terrace, garden swing, water-wall lounge | — |
@@ -76,8 +77,12 @@ Names follow `category-subject-setting-variant-orientation-ratio`. Every file en
 
 `grounds-*` also covers the older property frame `grounds-pond-building-path`, which has no orientation suffix.
 
+`food-*` names describe what is on the plate, not a menu: `salad-apple-lettuce`, `salad-beetroot-carrot`, `salad-sprouts-cucumber`, `vegetable-crescent`, `fruit-ring`, `soup-golden`, `juice-purple`, `red-rice-curry-plate`, and `spread-*` for several plates together. Settings are `restaurant`, `wood-table`, `stone-table` and `garden`. Do not turn a filename into a dish name, ingredient or health claim in copy; meals are planned by the doctor (handbook §11).
+
 ## Privacy
 
 Prefer frames **without** `-guest` for public marketing. Doctor portraits are intentional for About / Meet the doctors. See handbook guest-privacy rules and `ui_kits/website/chrome/Photo.js`.
 
 Almost every activity & lifestyle frame carries `-guest`. The exceptions are hands-and-feet close-ups (`massage-foot-reflexology-*`, `physiotherapy-electrotherapy-electrode-*`), `grounds-pebble-path-*` and `detail-*`.
+
+Food frames show no guest, except `food-soup-salad-restaurant-spoon-guest-landscape-3x2` (a hand and patterned sleeve, face out of frame).
