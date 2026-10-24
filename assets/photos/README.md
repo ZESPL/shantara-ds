@@ -34,6 +34,14 @@ Every doctor has a passport headshot (`doctor-*-passport.jpeg`, 1072×1280, head
 | `doctor-keerthana-passport.jpeg` | Dr. Keerthana (content id `keerthana-v-s`) |
 | `doctor-sara-passport.jpeg` | Dr. Sara (content id `sara-shanti-alen`) |
 
+## Board
+
+Board portraits (`board-*.jpeg`, extension kept). Names and roles come from handbook §3 ([Founder & Ownership](../../docs/handbook/founder.md)); there is no content record for the board.
+
+| Portrait | Who |
+| --- | --- |
+| `board-abdulla-aboobacker.jpeg` | Abdulla Aboobacker, Board Member (1014×1280, waist-up, blurred office backdrop) |
+
 ## Extra property frames (by prefix)
 
 | Prefix | Use for |

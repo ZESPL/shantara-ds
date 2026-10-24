@@ -1,7 +1,13 @@
-/* About — HeroStatement (side photograph) → doctors → story → approach →
+/* About — HeroStatement (side photograph) → doctors → story → board → approach →
    editorial policy → ClosingCTA (ground, Pine Tree; the page has no other CTA).
    The practice history is stated once, in the story section.
-   Copy comes from content/ (doctors) and the strings this screen already carried. */
+   Copy comes from content/ (doctors), handbook §3 (board) and the strings this screen already carried. */
+
+/* Board names and roles from docs/handbook/founder.md; there is no content record for the board. */
+const ABOUT_BOARD = [
+  { name: "P.A. Kareem", role: "Founder and Chairman", src: "doctor-pa-kareem-passport.jpeg" },
+  { name: "Abdulla Aboobacker", role: "Board Member", detail: "Engineer and Industrialist", src: "board-abdulla-aboobacker.jpeg" },
+];
 
 function aboutDoctors() {
   return (window.ShantaraContent.doctors || []).filter((d) => ["pa-kareem", "bahja-janu"].includes(d.id)).map((d) => ({
@@ -48,6 +54,15 @@ function AboutScreen({ onNavigate }) {
             {t("Shantara continues P.A. Kareem's naturopathy practice.")}
           </Statement>
         </SplitSection>
+      </P>
+
+      <P id="about/board">
+        <Section>
+          <PeopleRow
+            title={t("Board")}
+            people={ABOUT_BOARD.map((p) => ({ ...p, role: t(p.role), detail: p.detail ? t(p.detail) : undefined, src: window.photoSrc(p.src) }))}
+          />
+        </Section>
       </P>
 
       <P id="about/approach">
