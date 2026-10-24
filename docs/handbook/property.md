@@ -29,7 +29,7 @@ Rooms are designed with restraint, so comfort feels subtle rather than excessive
 - En-suite bathroom with rain shower
 - Individually controlled central air-conditioning
 - 10-inch orthopaedic mattress, king or twin options
-- Electronic safe locker, high-speed Wi-Fi, and a 49-inch smart LED TV
+- Electronic safe locker and high-speed Wi-Fi
 
 **What a stay includes**
 

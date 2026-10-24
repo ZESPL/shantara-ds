@@ -1126,7 +1126,7 @@ window.ShantaraContent = {
         "En-suite bathroom with rain shower",
         "Individually controlled central air-conditioning",
         "Orthopaedic mattress",
-        "Electronic safe, Wi-Fi, smart LED TV"
+        "Electronic safe, Wi-Fi"
       ],
       "status": "published",
       "featured_image": {
@@ -1149,7 +1149,7 @@ window.ShantaraContent = {
         "En-suite bathroom with rain shower",
         "Individually controlled central air-conditioning",
         "Orthopaedic mattress",
-        "Electronic safe, Wi-Fi, smart LED TV"
+        "Electronic safe, Wi-Fi"
       ],
       "status": "published",
       "featured_image": {
@@ -1172,7 +1172,7 @@ window.ShantaraContent = {
         "En-suite bathroom with rain shower",
         "Individually controlled central air-conditioning",
         "Orthopaedic mattress",
-        "Electronic safe, Wi-Fi, smart LED TV"
+        "Electronic safe, Wi-Fi"
       ],
       "status": "published",
       "featured_image": {
@@ -1195,7 +1195,7 @@ window.ShantaraContent = {
         "En-suite bathroom with rain shower",
         "Individually controlled central air-conditioning",
         "Orthopaedic mattress",
-        "Electronic safe, Wi-Fi, smart LED TV"
+        "Electronic safe, Wi-Fi"
       ],
       "status": "published",
       "featured_image": {
@@ -1218,7 +1218,7 @@ window.ShantaraContent = {
         "En-suite bathroom with rain shower",
         "Individually controlled central air-conditioning",
         "Orthopaedic mattress",
-        "Electronic safe, Wi-Fi, smart LED TV"
+        "Electronic safe, Wi-Fi"
       ],
       "status": "published",
       "featured_image": {
