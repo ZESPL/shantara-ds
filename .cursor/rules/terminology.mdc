@@ -14,3 +14,5 @@ Before writing about devices, phones, Wi-Fi, work, workstations or amenities, re
 # Credentials and claims
 
 Before writing any doctor credential, licence or membership, check the verified credentials list in docs/handbook/glossary.md. Never add a credential that is not on that list. Never remove or question one that is.
+
+A doctor who holds a BNYS, and who is legally entitled to the prefix "Dr.", is written "Dr. [Full Name], BNYS" or "Dr. [Full Name]". Follow the naming rules in docs/handbook/glossary.md.

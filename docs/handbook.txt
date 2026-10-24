@@ -8,6 +8,8 @@ Before writing about nursing, nurses, attendants, bystanders or helpers, read th
 
 Before writing about devices, phones, Wi-Fi, work, workstations or amenities, read the [glossary](handbook/glossary.md). Never add an amenity that is not in the handbook amenities section.
 
+Before writing a doctor credential, licence or membership, read the [glossary](handbook/glossary.md). A doctor who holds a BNYS, and who is legally entitled to the prefix "Dr.", is written "Dr. [Full Name], BNYS" or "Dr. [Full Name]".
+
 [TO CONFIRM] Sections marked like this need input from Azhar, P.A. Kareem, or Dr. Bahja Janu before this handbook is finalised and printed.
 
 This handbook is evergreen. It does not carry room rates, stay currencies or validity dates. The personal attendant charge is stated once, in the [glossary](handbook/glossary.md), so that service is never described as nursing care. Do not copy that figure onto any other page. Room rates are published only on the current tariff.
@@ -16,7 +18,7 @@ This handbook is evergreen. It does not carry room rates, stay currencies or val
 
 | Section | Covers |
 | --- | --- |
-| [Glossary](handbook/glossary.md) | Nursing care and the personal attendant. Devices, work, Wi-Fi and which amenities may be published. |
+| [Glossary](handbook/glossary.md) | Nursing care and the personal attendant. Devices, work, Wi-Fi and which amenities may be published. How to write a BNYS doctor. |
 | [01 · Quick Reference](handbook/quick-reference.md) | What Shantara is, the property at a glance, and what guests should know first |
 | [02 · About Shantara](handbook/about.md) | The story, the name, the approach, and why Shantara exists |
 | [03 · Founder & Ownership](handbook/founder.md) | Founder, board, chief executive, and medical director |

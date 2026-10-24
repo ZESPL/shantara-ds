@@ -254,9 +254,11 @@ A compact attribution component, kept separate from a full doctor profile.
 Typical output:
 
 ```text
-Medically reviewed by Dr. X, BNYS
+Medically reviewed by Dr. [Full Name], BNYS
 Last medically reviewed: 12 September 2026
 ```
+
+A doctor who holds a BNYS, and who is legally entitled to "Dr.", is written "Dr. [Full Name], BNYS" or "Dr. [Full Name]". Follow the naming rules in [`docs/handbook/glossary.md`](../../docs/handbook/glossary.md).
 
 ### Expert Quote
 

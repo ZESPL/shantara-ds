@@ -61,6 +61,8 @@ Unconfirmed facts stay out of published records: keep the entry `draft` until Sh
 
 **Doctor photographs.** `photo_profile` is the public profile photograph: avatars, team grids, the doctor page and the share image. Every doctor's is the passport headshot `doctor-*-passport.jpeg` (extension kept). The file index is [`assets/photos/README.md`](../../assets/photos/README.md).
 
+**BNYS.** A doctor who holds a Bachelor of Naturopathy and Yogic Sciences, and who is legally entitled to "Dr.", is identified as "Dr. [Full Name], BNYS" or "Dr. [Full Name]". The qualification field may spell the degree in full. Written form: [`docs/handbook/glossary.md`](../../docs/handbook/glossary.md).
+
 **Doctor press and talks.** Optional lists on a doctor record. Omit the list when it is empty.
 
 - `press`: `{outlet, title, date, url}`. `date` is ISO 8601. `title` is the link text on the profile. When an outlet headline states a cure or another outcome, use a plain description instead and keep the headline in handbook §4.

@@ -111,6 +111,7 @@ Set the goal before writing. Common Shantara deck types:
 - Agent and partner decks show only Shantara's published rates, taken from the current tariff at the time the deck is made. The brand-deck template stores no rates, currencies or validity dates. Copy amounts exactly; never convert or round them. No discounts or markups presented as available.
 - Investor decks do not promise returns. Shareholder entitlements must match the current Shareholder Privilege Program document exactly.
 - Use real guest testimonials only with written consent, and never imply a medical outcome.
+- A doctor who holds a BNYS, and who is legally entitled to "Dr.", is written "Dr. [Full Name], BNYS" or "Dr. [Full Name]". Follow the naming rules in [`docs/handbook/glossary.md`](../../../docs/handbook/glossary.md).
 
 ## Animation and transitions
 

@@ -52,6 +52,22 @@ An amenity appears on the website or in structured data only if it is listed in 
 
 A credential, licence, registration, certification or membership appears on the website or in structured data only if it is listed in the verified credentials list below, with the document that proves it.
 
+### How to write a BNYS
+
+A doctor who holds a Bachelor of Naturopathy and Yogic Sciences (BNYS), and who is legally entitled to the prefix "Dr.", is identified in one of these two forms on the website and in documents:
+
+- Dr. [Full Name], BNYS
+- Dr. [Full Name]
+
+#### Naming rules
+
+- Use "Dr. [Full Name], BNYS" when the qualification is shown with the name. Example: Dr. Bahja Janu, BNYS.
+- Use "Dr. [Full Name]" when the name stands alone. Example: Dr. Bahja Janu.
+- Write BNYS in capitals, after a comma. Do not punctuate the letters, and do not place them before the name. Never write "B.N.Y.S.", "Dr. [Full Name] BNYS", or "BNYS Dr. [Full Name]".
+- Spell the degree in full, "Bachelor of Naturopathy and Yogic Sciences (BNYS)", only in a degree field or in a sentence that explains the qualification. The name line uses the short form.
+- Use "Dr." only when the practitioner is legally entitled to that prefix.
+- This section sets the written form. It does not add BNYS to anyone. Publishing the credential still requires an entry in the verified credentials list below.
+
 ### Verified credentials
 - Dr. Bahja Janu: BNYS, Rajiv Gandhi University of Health Sciences. Proof: [document name]
 - Dr. Bahja Janu: licence, Travancore-Cochin Medical Council (TCMC), Kerala. Proof: [document name]
