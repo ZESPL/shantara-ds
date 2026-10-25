@@ -166,6 +166,17 @@
 
   /* ---------- information architecture ---------- */
   const FAMILY_ORDER = ["Core", "Forms", "Navigation", "Feedback", "Editorial", "Sections"];
+  /* Sub-groups inside a family, in page order rather than A–Z. Mirrors the section library
+     in ui_kits/website/skill-sections.md. A member not listed here lands in "More". */
+  const FAMILY_GROUPS = {
+    Sections: [
+      ["Shell", ["Section"]],
+      ["Heroes", ["HeroFullBleed", "HeroSplit", "HeroStatement", "ArticleHeader"]],
+      ["Content", ["SplitSection", "PanoramaCaption", "BandStatement", "NumeralsSplit", "PeopleRow"]],
+      ["Collections", ["TileGrid", "RelatedArticles", "IndexList"]],
+      ["Calls to action", ["FormSplit", "ClosingCTA"]],
+    ],
+  };
   const GROUPS = [
     { key: "Start", label: "Start", blurb: "How to browse this folder, how to drop it into another repo, the agent skill and the ID scheme",
       order: ["docs/use.html", "docs/skill.html", "docs/readme.html", "docs/copy-ids.html"] },
@@ -301,7 +312,15 @@
       if (!overview && !members.length) continue;
       const fam = overview ? node(overview, family) : { label: family, children: [] };
       fam.family = family;
-      fam.children = members.map((c) => node(c));
+      const subgroups = FAMILY_GROUPS[family];
+      if (subgroups) {
+        const byName = new Map(members.map((c) => [c.name, c]));
+        fam.children = subgroups.map(([label, names]) => ({
+          label, sub: true, key: `${family}-${label}`,
+          children: names.filter((name) => byName.has(name)).map((name) => { const c = byName.get(name); byName.delete(name); return node(c); }),
+        })).filter((g) => g.children.length);
+        if (byName.size) fam.children.push({ label: "More", sub: true, key: `${family}-more`, children: [...byName.values()].map((c) => node(c)) });
+      } else fam.children = members.map((c) => node(c));
       comps.children.push(fam);
     }
 
@@ -480,6 +499,15 @@
   }
 
   function renderItem(n) {
+    if (n.sub) {
+      /* A family sub-group: a small heading that folds its items. Open unless closed. */
+      const id = "s-" + slug(n.key);
+      const open = contains(n, current) || isOpen(id, true);
+      return `<li class="dsp-subgroup">
+        <button type="button" class="dsp-subgroup-btn" aria-expanded="${open}" aria-controls="dsp-${id}" data-dsp-toggle="${id}"><span>${esc(n.label)}</span><span class="dsp-subgroup-n">${n.children.length}</span>${ICON.chevron}</button>
+        <ul class="dsp-list dsp-subgroup-list" id="dsp-${id}"${open ? "" : " hidden"}>${n.children.map(renderItem).join("")}</ul>
+      </li>`;
+    }
     const cur = n.card && n.card.path === current;
     const link = n.card
       ? `<a class="dsp-link" href="${esc(hrefFor(n.card))}"${cur ? ' aria-current="page"' : ""}>${esc(n.label)}</a>`
@@ -505,14 +533,32 @@
       </div>`;
     }).join("");
     els.nav.innerHTML = `<a class="dsp-link dsp-home-link" href="${HOME || "./"}"${home ? ' aria-current="page"' : ""}>Overview</a>${groups}`;
+    placeSidebar();
+  }
+
+  /* Keep the sidebar where the reader left it: docs pages are full page loads, so restore
+     the saved scroll first, and only move it when the current page would be out of view —
+     then bring the item into view together with its family heading, not cut under the top. */
+  function placeSidebar() {
+    const side = els.side;
+    let saved = null;
+    try { saved = sessionStorage.getItem("dsp:side-scroll"); } catch (err) { saved = null; }
+    if (saved != null) side.scrollTop = Number(saved) || 0;
     const active = els.nav.querySelector("[aria-current='page']");
-    if (active) {
-      const sideRect = els.side.getBoundingClientRect();
-      const r = active.getBoundingClientRect();
-      if (r.top < sideRect.top || r.bottom > sideRect.bottom) {
-        els.side.scrollTop += r.top - sideRect.top - sideRect.height / 3;
-      }
-    }
+    if (!active) return;
+    const box = side.getBoundingClientRect();
+    const head = side.querySelector(".dsp-side-head");
+    const top = box.top + (head && head.offsetHeight ? head.offsetHeight : 0) + 8;
+    const r = active.getBoundingClientRect();
+    if (r.top >= top && r.bottom <= box.bottom - 8) return;
+    const branch = active.closest(".dsp-branch");
+    const anchor = branch ? branch.querySelector(".dsp-branch-row") : active;
+    const a = anchor.getBoundingClientRect();
+    const fits = r.bottom - a.top < box.bottom - top - 24;
+    side.scrollTop += (fits ? a.top : r.top - (box.bottom - top) / 3) - top;
+  }
+  function saveSidebar() {
+    try { sessionStorage.setItem("dsp:side-scroll", String(els.side.scrollTop)); } catch (err) { /* private mode */ }
   }
 
   function onNavClick(event) {
@@ -838,6 +884,7 @@
   els.backdrop.addEventListener("click", () => closeDrawer(true));
   drawerQuery.addEventListener("change", () => { if (!drawerQuery.matches) closeDrawer(false); });
   els.nav.addEventListener("click", onNavClick);
+  els.side.addEventListener("scroll", saveSidebar, { passive: true });
   bindSearch();
   renderChrome();
 

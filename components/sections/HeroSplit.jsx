@@ -19,7 +19,9 @@ const CSS = `
 .sh-hsplit-main{display:flex;flex-direction:column;gap:var(--stack-lg);margin-block:auto}
 .sh-hsplit[data-mobile-first="true"] .sh-hsplit-media{order:-1}
 .sh-hsplit[data-mobile-first="true"] .sh-hsplit-text{padding-top:var(--section-y-sm)}
-.sh-hsplit-facts{padding-top:var(--space-5);border-top:var(--border-width) solid var(--rule-color)}
+.sh-hsplit-facts{container-type:inline-size;padding-top:var(--space-5);border-top:var(--border-width) solid var(--rule-color)}
+/* A two-column fact list only while each column keeps a readable line (about 15ch+). */
+@container (max-width:480px){.sh-hsplit-facts .sh-plist[data-columns]{grid-template-columns:minmax(0,1fr)}}
 @media (min-width:1000px){
   .sh-hsplit{--_outer:max(var(--layout-gutter), (100cqw - var(--layout-max)) / 2)}
   .sh-hsplit-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);min-height:var(--_minh,clamp(600px, 88svh, 920px))}

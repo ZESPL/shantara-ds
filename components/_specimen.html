@@ -535,18 +535,18 @@
           </>;
         case "FormSplit":
           return <Section>
-            <FormSplit aside={<>
+            <FormSplit onSubmit={(e) => e.preventDefault()} aside={<>
               <PortraitFrame src={P + "doctor-bahja-janu-portrait-cropped.jpeg"} name="Dr. Bahja Janu" role="Medical Director" style={{ maxWidth: 220 }} />
               <Statement as="h3" size="title" sub="A member of the team will call you to understand what you need. A doctor then reviews whether a stay is the right next step.">We'll be in touch</Statement>
             </>}>
               <Statement as="h2" size="title" sub="Share your name and a number we can reach. Our team will contact you to arrange a consultation.">Send your details</Statement>
-              <Input label="Name" />
-              <Input label="Mobile / WhatsApp number" placeholder="+91" />
-              <Input label="Email" type="email" />
-              <Select label="Country" options={["India", "United Arab Emirates", "United Kingdom", "Other"]} />
-              <Textarea label="Anything you'd like us to know?" rows={3} />
+              <Input label="Name" name="full_name" autoComplete="name" required />
+              <Input label="Mobile / WhatsApp number" name="phone" type="tel" autoComplete="tel" placeholder="+91" required />
+              <Input label="Email" name="email" type="email" autoComplete="email" />
+              <Select label="Country" name="country" options={["India", "United Arab Emirates", "United Kingdom", "Other"]} />
+              <Textarea label="Anything you'd like us to know?" name="notes" rows={3} />
               <p style={{ margin: 0, font: "var(--type-caption)", color: "var(--text-muted)" }}>We will use these details only to contact you.</p>
-              <div><Button size="lg">Send your details</Button></div>
+              <div><Button size="lg" type="submit">Send your details</Button></div>
             </FormSplit>
           </Section>;
         case "ArticleHeader":

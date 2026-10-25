@@ -1,4 +1,4 @@
-<!-- @dsCard group="Components" viewport="1440x14200" name="Sections" subtitle="Full-width page sections from the brand deck, stacked at desktop width — heroes, splits, band, panorama, people, numerals, tiles, index, form, close — plus HeroSplit and the Journal article header and related reading" -->
+<!-- @dsCard group="Components" viewport="1440x14200" name="Sections" subtitle="Every website section at desktop width, in five groups — shell, heroes, content, collections and calls to action" -->
 <!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../styles.css">
 <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
@@ -10,6 +10,10 @@ body{margin:0;background:var(--ground-merino)}
 /* A thin label strip between sections — catalog chrome, not part of any section. */
 .lbl{margin:0;max-width:none;padding:10px var(--layout-gutter);font:var(--type-caption);letter-spacing:var(--tracking-wide);color:var(--text-muted);background:var(--surface-page);border-block:1px dashed var(--border-subtle)}
 .lbl b{font-weight:var(--weight-medium);color:var(--text-primary)}
+/* A group heading between runs of sections — same order as the sidebar. */
+.grp{margin:0;padding:48px var(--layout-gutter) 16px;background:var(--surface-page);border-top:1px solid var(--border-subtle)}
+.grp h2{margin:0;font:var(--type-title);color:var(--text-primary)}
+.grp p{margin:6px 0 0;font:var(--type-body-sm);color:var(--text-secondary)}
 </style></head><body><div id="root"></div>
 <script type="text/babel">
 const NS = window.ShantaraDesignSystem_45bbe4;
@@ -17,6 +21,7 @@ const { Button, Breadcrumbs, Input, Select, Textarea, Statement, Tile, TextLink,
   Section, HeroFullBleed, HeroStatement, SplitSection, BandStatement, PanoramaCaption, PeopleRow, NumeralsSplit, TileGrid, IndexList, ClosingCTA, FormSplit, HeroSplit, ArticleHeader, RelatedArticles, ShareBar } = NS;
 const P = "../../assets/photos/";
 const Label = ({ name, note }) => <p className="lbl"><b>{name}</b>{note ? " · " + note : ""}</p>;
+const Group = ({ id, name, note }) => <header className="grp" id={id}><h2>{name}</h2><p>{note}</p></header>;
 const rooms = [
   { name: "Standard Room", size: "260 sq.ft", occ: "Single or double" },
   { name: "Junior Suite", size: "420 sq.ft", occ: "Single or double" },
@@ -26,6 +31,17 @@ const rooms = [
 ];
 function Demo(){
   return (<div>
+<Group id="shell" name="Shell" note="Section — the ground and rhythm every block sits in" />
+
+<Label name="Section" note="the shell · one ground per section, fluid rhythm and gutter" />
+{[["merino", "Merino — the page"], ["stone", "Stone — a quiet change of room"], ["himalaya", "Himalaya — dark, ink re-pointed"], ["pine", "Pine — dark, ink re-pointed"]].map(([gr, label]) => (
+  <Section key={gr} ground={gr} space="sm">
+    <Statement size="title" sub={label}>Your programme is planned after consultation and assessment.</Statement>
+  </Section>
+))}
+
+<Group id="heroes" name="Heroes" note="one per page, always first — immersive, offer, editorial, article" />
+
 <Label name="HeroFullBleed" note="deck slide 1 · photo ground, Gold primary" />
 <HeroFullBleed src={P + "arrival-dusk.jpg"} alt="Shantara at dusk"
   title="A doctor-led naturopathy retreat in Keralam"
@@ -41,26 +57,22 @@ function Demo(){
   actions={<><Button size="lg">Book a Consultation</Button><TextLink href="#">What the programme includes</TextLink></>}
   facts={<PlainList columns={2} size="sm" items={["Consultation and assessment first", "Doctor review each morning"]} />} />
 
-<Label name="Section + NumeralsSplit" note="deck slide 8 · stone ground" />
-<Section ground="stone">
-  <NumeralsSplit title="Doctor-led naturopathy, planned around your assessment."
-    numerals={[{ value: "13", label: "therapies" }]} />
-</Section>
+<Label name="HeroStatement" note="editorial hero · rosette band edge, closing hairline + meta" />
+<HeroStatement tall={false} pattern
+  breadcrumbs={<Breadcrumbs items={[{ label: "Home", href: "#" }, "Conditions"]} />}
+  title="Conditions we commonly see"
+  sub="Our doctors see guests with a range of long-standing conditions. Programmes are planned after consultation and assessment."
+  meta={["Reviewed by Dr. Bahja Janu, Medical Director", "Updated August 2026"]} />
 
-<Label name="BandStatement" note="deck slide 3 · himalaya ground, rosette band on one edge" />
-<BandStatement>
-  <Statement sub="The clinical team plans your programme and adjusts it where necessary during your stay.">Your programme is planned after consultation and assessment.</Statement>
-  <PlainList columns={2} items={["Consultation and assessment", "A plan for you", "Therapies and daily routines", "Progress reviewed"]} />
-</BandStatement>
+<Label name="ArticleHeader" note="journal article · meta below the title, byline + reviewer" />
+<ArticleHeader breadcrumbs={<Breadcrumbs items={[{ label: "Journal", href: "#" }, "Food & Recipes"]} />}
+  title="How meals are planned during a stay" dek="How meals are planned around your programme and dietary requirements."
+  category="Food & Recipes" date="12 August 2026" dateTime="2026-08-12" readTime="4 min read"
+  author={{ name: "Dr. Bahja Janu", role: "Medical Director", src: P + "doctor-bahja-janu-portrait-cropped.jpeg" }}
+  reviewer={{ name: "P.A. Kareem", role: "Chief Naturopathy Consultant" }}
+  share={<ShareBar compact label="" url="https://shantara.life/en/journal/how-meals-are-planned" />} />
 
-<Label name="Section + TileGrid" note="deck slide 11 · layout 3" />
-<Section>
-  <TileGrid title="Naturopathy programmes" action={<TextLink href="#">All programmes</TextLink>}>
-    <Tile href="#" src={P + "balcony.jpg"} alt="" title="Stress Management" meta={["Mind", "7–14 nights"]} text="Doctor-led routines, therapies and rest for guests managing sustained stress, poor sleep or fatigue." />
-    <Tile href="#" src={P + "water-wall.jpg"} alt="" title="Detox" meta={["Metabolic", "7–21 nights"]} text="Your doctor may recommend a meal plan or supervised fasting based on your assessment. Therapies may also form part of your programme." />
-    <Tile href="#" src={P + "grounds.jpg"} alt="" title="Weight Management" meta={["Metabolic", "14–21 nights"]} text="Meals, daily activity and therapies, with weight and vitals reviewed by a doctor each morning." />
-  </TileGrid>
-</Section>
+<Group id="content" name="Content" note="media and text, the pause, the page's one accent, figures, doctors" />
 
 <Label name="SplitSection" note="deck slides 4 / 6 · photo to the edge, text bottom-aligned" />
 <SplitSection src={P + "dining-restaurant-valley-window.jpg"} alt="The dining room by the valley window">
@@ -77,6 +89,18 @@ function Demo(){
 <Label name="PanoramaCaption" note="deck slide 5 · 21:9, 4:5 on phones, no button" />
 <PanoramaCaption src={P + "valley.jpg"} alt="The Chennamangallur valley from the hilltop" title="Overlooking the Chennamangallur valley" />
 
+<Label name="BandStatement" note="deck slide 3 · himalaya ground, rosette band on one edge" />
+<BandStatement>
+  <Statement sub="The clinical team plans your programme and adjusts it where necessary during your stay.">Your programme is planned after consultation and assessment.</Statement>
+  <PlainList columns={2} items={["Consultation and assessment", "A plan for you", "Therapies and daily routines", "Progress reviewed"]} />
+</BandStatement>
+
+<Label name="Section + NumeralsSplit" note="deck slide 8 · stone ground" />
+<Section ground="stone">
+  <NumeralsSplit title="Doctor-led naturopathy, planned around your assessment."
+    numerals={[{ value: "13", label: "therapies" }]} />
+</Section>
+
 <Label name="Section + PeopleRow" note="deck slide 7 · 4:5 portraits from content/doctors" />
 <Section>
   <PeopleRow title="Your programme is planned by our doctors."
@@ -87,20 +111,16 @@ function Demo(){
     action={<TextLink href="#">About Shantara</TextLink>} />
 </Section>
 
-<Label name="HeroStatement" note="editorial hero · rosette band edge, closing hairline + meta" />
-<HeroStatement tall={false} pattern
-  breadcrumbs={<Breadcrumbs items={[{ label: "Home", href: "#" }, "Conditions"]} />}
-  title="Conditions we commonly see"
-  sub="Our doctors see guests with a range of long-standing conditions. Programmes are planned after consultation and assessment."
-  meta={["Reviewed by Dr. Bahja Janu, Medical Director", "Updated August 2026"]} />
+<Group id="collections" name="Collections" note="tiles, related reading and the text-only index" />
 
-<Label name="ArticleHeader" note="journal article · meta below the title, byline + reviewer" />
-<ArticleHeader breadcrumbs={<Breadcrumbs items={[{ label: "Journal", href: "#" }, "Food & Recipes"]} />}
-  title="How meals are planned during a stay" dek="How meals are planned around your programme and dietary requirements."
-  category="Food & Recipes" date="12 August 2026" dateTime="2026-08-12" readTime="4 min read"
-  author={{ name: "Dr. Bahja Janu", role: "Medical Director", src: P + "doctor-bahja-janu-portrait-cropped.jpeg" }}
-  reviewer={{ name: "P.A. Kareem", role: "Chief Naturopathy Consultant" }}
-  share={<ShareBar compact label="" url="https://shantara.life/en/journal/how-meals-are-planned" />} />
+<Label name="Section + TileGrid" note="deck slide 11 · layout 3" />
+<Section>
+  <TileGrid title="Naturopathy programmes" action={<TextLink href="#">All programmes</TextLink>}>
+    <Tile href="#" src={P + "balcony.jpg"} alt="" title="Stress Management" meta={["Mind", "7–14 nights"]} text="Doctor-led routines, therapies and rest for guests managing sustained stress, poor sleep or fatigue." />
+    <Tile href="#" src={P + "water-wall.jpg"} alt="" title="Detox" meta={["Metabolic", "7–21 nights"]} text="Your doctor may recommend a meal plan or supervised fasting based on your assessment. Therapies may also form part of your programme." />
+    <Tile href="#" src={P + "grounds.jpg"} alt="" title="Weight Management" meta={["Metabolic", "14–21 nights"]} text="Meals, daily activity and therapies, with weight and vitals reviewed by a doctor each morning." />
+  </TileGrid>
+</Section>
 
 <Label name="Section + RelatedArticles" note="TileGrid preset for the end of an article" />
 <Section ground="stone">
@@ -127,18 +147,20 @@ function Demo(){
   ]} />
 </Section>
 
+<Group id="calls-to-action" name="Calls to action" note="the consultation form, and the close for pages with no other CTA" />
+
 <Label name="Section + FormSplit" note="consultation form beside the Stone panel" />
 <Section>
-  <FormSplit aside={<>
+  <FormSplit onSubmit={(e) => e.preventDefault()} aside={<>
     <PortraitFrame src={P + "doctor-bahja-janu-portrait-cropped.jpeg"} name="Dr. Bahja Janu" role="Medical Director" style={{ maxWidth: 220 }} />
     <Statement as="h3" size="title" sub="A member of the team will call you to understand what you need. A doctor then reviews whether a stay is the right next step.">We'll be in touch</Statement>
   </>}>
     <Statement as="h2" size="title" sub="Share your name and a number we can reach. Our team will contact you to arrange a consultation.">Send your details</Statement>
-    <Input label="Name" />
-    <Input label="Mobile / WhatsApp number" placeholder="+91" />
-    <Select label="Country" options={["India", "United Arab Emirates", "United Kingdom", "Other"]} />
-    <Textarea label="Anything you'd like us to know?" rows={3} />
-    <div><Button size="lg">Send your details</Button></div>
+    <Input label="Name" name="full_name" autoComplete="name" required />
+    <Input label="Mobile / WhatsApp number" name="phone" type="tel" autoComplete="tel" placeholder="+91" required />
+    <Select label="Country" name="country" options={["India", "United Arab Emirates", "United Kingdom", "Other"]} />
+    <Textarea label="Anything you'd like us to know?" name="notes" rows={3} />
+    <div><Button size="lg" type="submit">Send your details</Button></div>
   </FormSplit>
 </Section>
 

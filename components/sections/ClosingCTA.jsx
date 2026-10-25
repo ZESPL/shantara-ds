@@ -64,7 +64,7 @@ export function ClosingCTA({ variant, ground = "pine", src, alt = "", position, 
   return (
     <section data-ds-id="sections/ClosingCTA" className="sh-close" data-variant={v} data-ground={g} style={style} {...rest}>
       {v === "photo" && src ? <Media src={src} alt={alt} ratio="fill" scrim="hero" position={position} /> : null}
-      <div className="sh-close-body">
+      <div className={"sh-close-body" + (v === "photo" ? " sh-photo-text" : "")}>
         <div className="sh-container">
           <div className="sh-close-row">
             <Statement as={titleAs} size={compact ? "h3" : "statement"} sub={sub} measure={compact ? "32ch" : undefined}>{title}</Statement>

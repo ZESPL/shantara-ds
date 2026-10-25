@@ -27,4 +27,6 @@ The closing call to action (deck slide 18). **Use ClosingCTA only on pages that 
 
 **Contact row.** Pass items, not loose inline elements: every item is the same 44px inline-flex box, so links and plain text share a baseline; icons are optional per item (all or none). One row on wide screens, wrapping as needed; one per line under 520px.
 
+**Photo variant ink.** Over the photograph every line — sub, contact text and contact icons — is solid Merino (no faded Merino, no Gold), and the text block carries its own scrim so a headline that wraps high on a phone is never left on bright sky.
+
 **Responsive.** Photo: content height with a 520px floor on phones, 72svh (520–860px) on desktop, statement bottom-left inside a full scrim. Ground: content height, section padding. Compact: stacks under 760px (actions full width under 520px), one row from 760px.

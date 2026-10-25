@@ -1,4 +1,5 @@
 import React from "react";
+import { Icon } from "../core/Icon.jsx";
 
 /* A text-only index for lists too long for photographs (conditions, the full programme
    list). Group label on the left (3 of 12 columns) and hairline rows on the right in one
@@ -11,14 +12,17 @@ const CSS = `
 .sh-index-items{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);column-gap:var(--grid-gap)}
 .sh-index-item{border-top:var(--border-width) solid var(--rule-color)}
 .sh-index-link{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--space-2) var(--space-5);align-items:baseline;padding:var(--space-6) 0;color:inherit;text-decoration:none;min-height:var(--tap-min)}
-.sh-index-title{font:var(--type-item);color:var(--text-primary)}
+/* Row titles sit a clear step below the group label (24→30px), so the group still reads
+   as the heading on a phone where both would otherwise be 24px. */
+.sh-index-title{font:var(--weight-medium) var(--text-lg)/var(--leading-snug) var(--font-display);color:var(--text-primary)}
 .sh-index-text{grid-column:1;font:var(--type-body-sm);color:var(--text-secondary);max-width:52ch}
-.sh-index-arrow{grid-column:2;grid-row:1;color:var(--text-brand);transition:transform var(--duration-fast) var(--ease-out)}
-[dir="rtl"] .sh-index-arrow{transform:scaleX(-1)}
+.sh-index-arrow{grid-column:2;grid-row:1;align-self:center;display:inline-flex;color:var(--text-brand);transition:transform var(--duration-fast) var(--ease-out)}
 .sh-index-link:focus-visible{outline:none;box-shadow:var(--ring-focus)}
 @media (hover: hover) and (pointer: fine){
   a.sh-index-link:hover .sh-index-title{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
   a.sh-index-link:hover .sh-index-arrow{transform:translateX(3px)}
+  /* The arrow icon flips itself in RTL (tokens/rtl.css); only the nudge mirrors. */
+  [dir="rtl"] a.sh-index-link:hover .sh-index-arrow{transform:translateX(-3px)}
 }
 @media (min-width:760px){.sh-index-items[data-columns="2"]{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (min-width:1000px){.sh-index-group{grid-template-columns:minmax(0,3fr) minmax(0,9fr)}}
@@ -50,7 +54,7 @@ export function IndexList({ groups = [], columns = 2, headingLevel = 2, style, .
                 <li className="sh-index-item" key={it.title}>
                   <Tag className="sh-index-link" href={linked ? it.href || "#" : undefined} onClick={it.onClick ? (e) => { if (!it.href) e.preventDefault(); it.onClick(e); } : undefined}>
                     <I className="sh-index-title" style={{ margin: 0 }}>{it.title}</I>
-                    {linked ? <span className="sh-index-arrow" aria-hidden="true">→</span> : null}
+                    {linked ? <span className="sh-index-arrow" aria-hidden="true"><Icon name="arrow-right" size={18} /></span> : null}
                     {it.text ? <span className="sh-index-text">{it.text}</span> : null}
                   </Tag>
                 </li>

@@ -5,7 +5,8 @@ import { MetaRow } from "../editorial/MetaRow.jsx";
 
 /* Deck slide 1. A photograph fills the screen (100svh, floor 560px), the transparent
    header sits over it, and the text block sits bottom-left inside a scrim that covers
-   all of it. Merino type, Light headline, one Gold primary button. No label above the headline. `height="tall"` is
+   all of it (the frame's --scrim-hero plus the block's own --scrim-text, which follows the
+   block when it wraps tall on a phone). Merino type, Light headline, one Gold primary button. No label above the headline. `height="tall"` is
    the 72svh inner-page version with an h1-size headline. */
 const CSS = `
 .sh-hero{position:relative;display:flex;align-items:flex-end;min-height:clamp(560px, 100svh, 1080px);overflow:hidden;isolation:isolate}
@@ -32,7 +33,7 @@ export function HeroFullBleed({ media, src, alt = "", position, mobilePosition, 
   return (
     <section data-ds-id="sections/HeroFullBleed" className="sh-hero" data-ground="photo" data-height={height} style={style} {...rest}>
       {figure}
-      <div className="sh-hero-body">
+      <div className="sh-hero-body sh-photo-text">
         <div className="sh-container">
           <Statement as={titleAs} size={height === "full" ? "display" : "h1"} sub={sub} actions={actions} measure="20ch">{title}</Statement>
           {meta ? (Array.isArray(meta) ? <MetaRow items={meta} /> : <p className="sh-hero-meta">{meta}</p>) : null}

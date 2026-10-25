@@ -17,6 +17,8 @@ Full-screen photographic hero with the statement bottom-left inside a scrim and 
 
 **Content.** No eyebrow. The headline is one sentence and leads with what Shantara is — never “not a spa” or “wellness retreat”. Place, if wanted, goes in `meta` below the actions. Do not put a year there. One primary button; a second action is a `TextLink`, not a second filled button. The photograph is the LCP image, so the hero passes `priority` for you; choose a frame with dark, quiet space bottom-left.
 
+**Scrim.** The frame's hero scrim plus a scrim behind the text block itself (`--scrim-text`), so the headline stays protected when the block wraps tall on a phone. Sub, meta and links over the photograph are solid Merino.
+
 **Responsive.** Phone (<520px): at least 560px tall (100svh up to 1080px), the headline wraps at 20ch in the fluid display size, actions stack full width. Tablet: same layout, the scrim still covers the whole text block. Desktop: the statement caps at 44rem inside the container, bottom-left. Pass `mobilePosition` when the subject of the photograph moves out of a portrait crop.
 
 ## Choosing a hero (exactly three)

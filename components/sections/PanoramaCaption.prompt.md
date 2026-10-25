@@ -11,4 +11,4 @@ A full-width photograph with a short caption bottom-left and no button — the p
 
 **Content.** A place or a moment, in a few words. Only frames with no identifiable guests.
 
-**Responsive.** Desktop and tablet (≥760px): 21:9, full width, the caption inside a bottom scrim and aligned to the page container; the title is statement size from 1000px, title size below. Phone (<760px): the frame switches to 4:5 so it keeps its height instead of becoming a sliver — pass `mobilePosition` to choose which part of the panorama survives the crop.
+**Responsive.** The frame keeps its ratio, but a caption that wraps taller than the frame (narrow tablet, large guest text) grows the frame instead of being clipped; the caption carries its own scrim on top of the frame's. Desktop and tablet (≥760px): 21:9, full width, the caption inside a bottom scrim and aligned to the page container; the title is statement size from 1000px, title size below. Phone (<760px): the frame switches to 4:5 so it keeps its height instead of becoming a sliver — pass `mobilePosition` to choose which part of the panorama survives the crop.

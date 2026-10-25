@@ -34,9 +34,14 @@
     return { w: w || 960, h: h || 600 };
   }
 
+  /* A family's members can sit inside sub-groups (Sections › Heroes …): count the pages. */
+  function leaves(n) {
+    return n.children.flatMap((c) => (c.card ? [c] : leaves(c)));
+  }
+
   function metaFor(n) {
     const card = n.card;
-    if (n.family) return `${n.children.length} components`;
+    if (n.family) return `${leaves(n).length} components`;
     if (n.children.length) return `${n.children.length + 1} pages`;
     if (card.kind === "doc") return "Notes";
     const { w, h } = parseViewport(card);
@@ -45,7 +50,7 @@
 
   function nodeMatches(n) {
     if (!query) return true;
-    const hay = [n.label, n.card && n.card.name, n.card && n.card.subtitle, n.card && n.card.path, ...n.children.map((c) => c.label)].join(" ").toLowerCase();
+    const hay = [n.label, n.card && n.card.name, n.card && n.card.subtitle, n.card && n.card.path, ...leaves(n).map((c) => c.label)].join(" ").toLowerCase();
     return query.split(/\s+/).every((t) => hay.includes(t));
   }
 

@@ -34,8 +34,17 @@
   --ring-focus:var(--ring-focus-inverse);
   color:var(--text-primary);
 }
-/* On photography the eyebrow is Merino: the crop under it is never guaranteed dark. */
-[data-ground="photo"]{--eyebrow-color:var(--color-merino)}
+/* On photography every ink is solid Merino: the crop under it is never guaranteed dark, so
+   no faded Merino mixes and no Gold (guidelines/accessibility.html). */
+[data-ground="photo"]{
+  --eyebrow-color:var(--color-merino);
+  --text-secondary:var(--color-merino);
+  --text-muted:var(--color-merino);
+  --text-brand:var(--color-merino);
+}
+/* A text block over photography carries its own scrim (see --scrim-text). */
+.sh-photo-text{position:relative}
+.sh-photo-text::before{content:"";position:absolute;inset:-160px 0 0;z-index:-1;background:var(--scrim-text);pointer-events:none}
 
 /* CONTAINER — content never touches the viewport edge; gutter is fluid 20 → 48. */
 .sh-container{width:100%;max-width:calc(var(--layout-max) + 2 * var(--layout-gutter));margin-inline:auto;padding-inline:var(--layout-gutter)}

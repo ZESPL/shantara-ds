@@ -16,6 +16,10 @@
 /* Hero scrim — covers the whole text block, not just the lower half. Type on photography
    sits in the bottom 60% of the frame, so the gradient holds 60%+ Pine up to 55% height. */
 --scrim-hero:linear-gradient(to top, color-mix(in srgb, var(--color-pine-tree) 86%, transparent) 0%, color-mix(in srgb, var(--color-pine-tree) 62%, transparent) 38%, color-mix(in srgb, var(--color-pine-tree) 22%, transparent) 68%, transparent 88%);
+/* Text scrim — painted behind the text block itself (inset -160px 0 0), so it follows the
+   block however tall it wraps: on phones a hero's text fills most of the frame and outruns
+   --scrim-hero. It stacks on the frame scrim and fades out over the 160px above the block. */
+--scrim-text:linear-gradient(to top, color-mix(in srgb, var(--color-pine-tree) 56%, transparent) 0%, color-mix(in srgb, var(--color-pine-tree) 46%, transparent) calc(100% - 160px), transparent 100%);
 /* Top wash under a transparent header, so the nav reads on any photograph. */
 --scrim-header:linear-gradient(to bottom, color-mix(in srgb, var(--color-pine-tree) 50%, transparent) 0%, transparent 100%);
 --scrim-full:color-mix(in srgb, var(--color-pine-tree) 40%, transparent); /* @kind color */

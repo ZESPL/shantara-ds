@@ -133,7 +133,7 @@ function ConsultationScreen({ onNavigate, locale = "en", view = "booking" }) {
 
       <P id="booking/form">
       <Section space="bottom">
-        <FormSplit aside={aside}>
+        <FormSplit aside={aside} onSubmit={(event) => { event.preventDefault(); setConfirming(true); }}>
           <Input name={keys.full_name} autoComplete="name" label={t("Name")} required onFocus={markStart} />
           <Input name={keys.phone} autoComplete="tel" label={t("Mobile / WhatsApp number")} required onFocus={markStart} />
           <Input name={keys.email} autoComplete="email" label={t("Email")} type="email" hint={t("Optional")} onFocus={markStart} />
@@ -143,7 +143,7 @@ function ConsultationScreen({ onNavigate, locale = "en", view = "booking" }) {
             <input key={key} type="hidden" name={key} value={value || ""} readOnly />
           ))}
           <div className="sh-actions" data-stack="mobile" style={{ marginTop: "var(--space-4)" }}>
-            <Button size="lg" onClick={() => setConfirming(true)}>{t("Send your details")}</Button>
+            <Button size="lg" type="submit">{t("Send your details")}</Button>
           </div>
         </FormSplit>
       </Section>

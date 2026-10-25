@@ -22,6 +22,7 @@ const CSS = `
 .sh-ahead-lines a{color:inherit;text-decoration:none}
 .sh-ahead-lines a:hover strong{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
 .sh-ahead-rev{font:var(--type-caption);color:var(--text-muted)}
+.sh-ahead-upd{white-space:nowrap}
 .sh-ahead-fig{margin:var(--stack-lg) 0 0}
 .sh-ahead-cap{margin-top:var(--space-3);font:var(--type-caption);color:var(--text-muted);max-width:68ch}
 @media (max-width:759.98px){.sh-ahead-fig{margin-inline:calc(-1 * var(--layout-gutter))}.sh-ahead-cap{padding-inline:var(--layout-gutter)}}
@@ -73,7 +74,7 @@ export function ArticleHeader({ title, dek, breadcrumbs, category, date, dateTim
                       <span className="sh-ahead-rev">
                         {reviewer ? <Person p={reviewer} prefix="Medically reviewed by " /> : null}
                         {reviewer && updated ? " · " : null}
-                        {updated ? <>Updated <time dateTime={updatedDateTime}>{updated}</time></> : null}
+                        {updated ? <span className="sh-ahead-upd">Updated <time dateTime={updatedDateTime}>{updated}</time></span> : null}
                       </span>
                     ) : null}
                   </div>

@@ -29,8 +29,9 @@ const CSS = `
   .sh-split[data-side="end"] .sh-split-text{padding-inline:var(--_outer) calc(var(--grid-gap) * 2.5)}
   .sh-split[data-bleed="false"] .sh-split-grid{min-height:0;gap:calc(var(--grid-gap) * 2.5);padding-block:var(--section-y)}
   .sh-split[data-bleed="false"] .sh-split-text{padding:0}
-  .sh-split-sticky{position:sticky;top:calc(var(--space-12) + 16px)}
 }
+/* Sticky only when the window can show the whole block (see FormSplit). */
+@media (min-width:1000px) and (min-height:800px){.sh-split-sticky{position:sticky;top:calc(var(--space-12) + 16px)}}
 `;
 
 function ensure() {

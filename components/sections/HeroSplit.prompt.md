@@ -18,7 +18,7 @@ The **offer** hero: a photograph on one side, running to the screen edge and the
 
 **Ground.** Merino by default; `stone` for a quieter page; `himalaya`/`pine` when the photograph is light and the page needs weight (Gold primary button re-points automatically).
 
-**Responsive.** ≥1000px: two columns (50/50; `split="40"` gives the photo 40%, `"60"` gives it 60%), at least 600px / 88svh tall, the text column aligned to the page container on its outer edge and vertically centred, breadcrumbs at its top. <1000px: breadcrumbs, title, meta, sub, actions (full width under 520px), facts — then the photograph full-bleed at `mobileRatio` (4:3). `mobileMediaFirst` puts the photo on top when the picture is the point.
+**Responsive.** `facts` in two columns drop to one while the text column is narrower than about 480px (1000–1279px screens), so items never wrap into ragged half-lines. ≥1000px: two columns (50/50; `split="40"` gives the photo 40%, `"60"` gives it 60%), at least 600px / 88svh tall, the text column aligned to the page container on its outer edge and vertically centred, breadcrumbs at its top. <1000px: breadcrumbs, title, meta, sub, actions (full width under 520px), facts — then the photograph full-bleed at `mobileRatio` (4:3). `mobileMediaFirst` puts the photo on top when the picture is the point.
 
 ## Choosing a hero (exactly three)
 

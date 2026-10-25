@@ -219,9 +219,29 @@ body.dsp{
   padding-left:6px !important;
   border-left:1px solid var(--border-subtle);
 }
+/* Family sub-groups (Sections › Heroes …): a quiet caption-size heading that folds. */
+.dsp-subgroup + .dsp-subgroup{margin-top:2px}
+.dsp-subgroup-btn{
+  display:flex;align-items:center;gap:6px;
+  width:100%;min-height:30px;
+  margin-top:4px;padding:0 10px;
+  border:0;border-radius:var(--radius-sm);
+  background:transparent;
+  color:var(--text-muted);
+  font:var(--type-caption);
+  font-weight:var(--weight-medium);
+  letter-spacing:var(--tracking-wide);
+  text-align:left;cursor:pointer;
+}
+.dsp-subgroup-btn > span:first-child{flex:1 1 auto}
+.dsp-subgroup-n{font-variant-numeric:tabular-nums;color:var(--text-muted)}
+.dsp-subgroup-btn svg{transition:transform var(--duration-fast) var(--ease-standard);color:var(--text-muted)}
+.dsp-subgroup-btn[aria-expanded="true"] svg{transform:rotate(90deg)}
+.dsp-subgroup-list{margin:0 0 4px 8px !important}
 @media (hover:hover) and (pointer:fine){
   .dsp-link:hover,
   .dsp-group-btn:hover,
+  .dsp-subgroup-btn:hover,
   .dsp-twisty:hover{background:var(--surface-sunken);color:var(--text-primary)}
   .dsp-link[aria-current="page"]:hover{background:var(--surface-brand-soft)}
 }
@@ -470,7 +490,7 @@ body:not(.dsp) .ds-handbook-mast-inner{margin:0 auto;max-width:1320px}
   .dsp-pager-next{grid-column:1}
 }
 @media (prefers-reduced-motion:reduce){
-  .dsp-side,.dsp-group-btn svg,.dsp-twisty svg,.dsp-id-h{transition:none !important}
+  .dsp-side,.dsp-group-btn svg,.dsp-subgroup-btn svg,.dsp-twisty svg,.dsp-id-h{transition:none !important}
 }
 @media print{
   .dsp-top,.dsp-side,.dsp-bar,.dsp-pager,.dsp-id{display:none !important}

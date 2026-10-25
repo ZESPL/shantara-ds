@@ -23,7 +23,7 @@ The **editorial** hero: words lead, no full photograph (deck slide 2). A large L
 
 **Content.** One full-sentence title, no label above it. `sub` is one line.
 
-**Responsive.** Phone: crumbs → title → sub → actions → image/aside → hairline → meta; the band is gone; fluid top padding clears the header. `tall` (default) keeps a 440–760px floor and sits the text low. From 1000px a side image/aside takes a 4-column column (7/4), bottom-aligned. The headline wraps at 22ch.
+**Responsive.** Phone: crumbs → title → sub → actions → image/aside → hairline → meta; the band is gone; fluid top padding clears the header. `tall` (default) keeps a 440–760px floor and sits the text low. From 760px a side image/aside takes a 4-column column beside the title (7/4), bottom-aligned. The headline wraps at 22ch.
 
 ## Choosing a hero (exactly three)
 
