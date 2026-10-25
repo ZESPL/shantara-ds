@@ -15,6 +15,8 @@ import { PatternPanel } from "../core/PatternPanel.jsx";
 const CSS = `
 .sh-hstmt{position:relative;display:flex;flex-direction:column}
 .sh-hstmt[data-tall="true"]{min-height:clamp(440px, 64svh, 760px)}
+/* variant "utility": legal pages, 404, confirmation — short, no band, no image, no rule. */
+.sh-hstmt[data-variant="utility"] .sh-hstmt-inner{padding-block:calc(var(--header-h, 72px) + var(--space-10)) var(--space-8)}
 .sh-hstmt>.sh-pp{flex:1 1 auto;display:flex;flex-direction:column}
 .sh-hstmt .sh-pp-body{flex:1 1 auto;display:flex;flex-direction:column}
 .sh-hstmt-inner{flex:1 1 auto;display:flex;flex-direction:column;justify-content:flex-end;padding-block:calc(var(--space-12) + var(--section-y-sm)) var(--section-y-sm)}
@@ -47,8 +49,10 @@ function ensure() {
   document.head.appendChild(el);
 }
 
-export function HeroStatement({ title, sub, actions, breadcrumbs, meta, rule = true, aside, media, src, alt = "", ratio = "4:5", pattern = false, ground = "merino", tall = true, size = "h1", titleAs = "h1", measure = "22ch", style, ...rest }) {
+export function HeroStatement({ variant = "editorial", title, sub, actions, breadcrumbs, meta, rule = true, aside, media, src, alt = "", ratio = "4:5", pattern = false, ground = "merino", tall = true, size = "h1", titleAs = "h1", measure = "22ch", style, ...rest }) {
   ensure();
+  const utility = variant === "utility";
+  if (utility) { pattern = false; tall = false; rule = !!meta; }
   const edge = pattern === true ? "end" : pattern || null;
   const figure = media || (src ? <Media src={src} alt={alt} ratio={ratio} priority /> : null);
   const hasSide = !!(figure || aside);
@@ -66,7 +70,7 @@ export function HeroStatement({ title, sub, actions, breadcrumbs, meta, rule = t
     </div>
   );
   return (
-    <section data-ds-id="sections/HeroStatement" className="sh-hstmt" data-ground={ground} data-tall={String(tall)} data-pattern={edge || undefined} style={style} {...rest}>
+    <section data-ds-id="sections/HeroStatement" className="sh-hstmt" data-ground={ground} data-tall={String(tall)} data-variant={utility ? "utility" : undefined} data-pattern={edge || undefined} style={style} {...rest}>
       {edge ? (
         <PatternPanel tone={ground === "stone" ? "pearl" : "merino"} edge={edge} band="30%" scale="15cqw" data-ds-id="core/PatternPanel">{inner}</PatternPanel>
       ) : inner}

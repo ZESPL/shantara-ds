@@ -30,3 +30,5 @@ The closing call to action (deck slide 18). **Use ClosingCTA only on pages that 
 **Photo variant ink.** Over the photograph every line — sub, contact text and contact icons — is solid Merino (no faded Merino, no Gold), and the text block carries its own scrim so a headline that wraps high on a phone is never left on bright sky.
 
 **Responsive.** Photo: content height with a 520px floor on phones, 72svh (520–860px) on desktop, statement bottom-left inside a full scrim. Ground: content height, section padding. Compact: stacks under 760px (actions full width under 520px), one row from 760px.
+
+**Variations.** `variant="whatsapp"` — the ground layout with "Message us on WhatsApp" as the primary action and a call as the second; pass `whatsapp` (a wa.me URL) and `phone` (a tel: URL) from content/site.json, and `phoneLabel`. `variant="tariff"` — a compact Stone band, "Current rates and what a stay includes", with one link to the tariff page (`tariffHref`): the commercial close for programme and room pages, which never quote a rate.

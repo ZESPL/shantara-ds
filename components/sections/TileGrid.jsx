@@ -10,6 +10,11 @@ const CSS = `
 .sh-tgrid{display:flex;flex-direction:column;gap:var(--stack-lg)}
 .sh-tgrid-head{display:flex;flex-direction:column;gap:var(--space-5)}
 .sh-tgrid-items{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--space-10) var(--grid-gap)}
+/* layout "list": one tile per row, photograph beside the text from 760px (Tile layout "row"). */
+.sh-tgrid-items[data-layout="list"]{grid-template-columns:minmax(0,1fr) !important;gap:0}
+.sh-tgrid-items[data-layout="list"]>.sh-tile{padding-block:var(--space-8);border-top:var(--border-width) solid var(--rule-color)}
+.sh-tgrid-items[data-layout="list"]>.sh-tile:first-child{border-top:0;padding-top:0}
+.sh-tgrid-items[data-layout="list"][data-odd="true"]>:first-child{grid-column:auto}
 .sh-tgrid-foot{margin:0;font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-body)}
 @media (min-width:760px){
   .sh-tgrid-head{flex-direction:row;align-items:flex-end;justify-content:space-between;gap:var(--grid-gap)}
@@ -21,18 +26,20 @@ const CSS = `
      Each part is placed in its own row, so a tile without meta or text keeps the others. */
   /* The parent's row gap would sit between a tile's own rows, so it is zero here and each
      tile carries a fifth spacer row that makes the gap between rows of tiles. */
-  .sh-tgrid-items:not([data-layout="feature"]){row-gap:0;margin-bottom:calc(var(--space-10) * -1)}
-  .sh-tgrid-items:not([data-layout="feature"])>.sh-tile[data-layout="stack"]{display:grid;grid-template-rows:subgrid;grid-row:span 5;row-gap:0;align-content:start}
-  .sh-tgrid-items:not([data-layout="feature"])>.sh-tile[data-layout="stack"]::after{content:"";grid-row:5;height:var(--space-10)}
-  .sh-tgrid-items:not([data-layout="feature"])>.sh-tile[data-layout="stack"]>.sh-tile-body{display:contents}
-  .sh-tgrid-items:not([data-layout="feature"])>.sh-tile[data-layout="stack"]>.sh-media{grid-row:1}
-  .sh-tgrid-items:not([data-layout="feature"])>.sh-tile[data-layout="stack"] .sh-tile-title{grid-row:2;align-self:start;margin-top:var(--space-5)}
-  .sh-tgrid-items:not([data-layout="feature"])>.sh-tile[data-layout="stack"] .sh-tile-body>.sh-meta,
-  .sh-tgrid-items:not([data-layout="feature"])>.sh-tile[data-layout="stack"] .sh-tile-meta{grid-row:3;align-self:start;margin-top:var(--space-2)}
-  .sh-tgrid-items:not([data-layout="feature"])>.sh-tile[data-layout="stack"] .sh-tile-text{grid-row:4;align-self:start;margin-top:var(--space-3)}
+  .sh-tgrid-items:not([data-layout="feature"]):not([data-layout="list"]){row-gap:0;margin-bottom:calc(var(--space-10) * -1)}
+  .sh-tgrid-items:not([data-layout="feature"]):not([data-layout="list"])>.sh-tile[data-layout="stack"]{display:grid;grid-template-rows:subgrid;grid-row:span 5;row-gap:0;align-content:start}
+  .sh-tgrid-items:not([data-layout="feature"]):not([data-layout="list"])>.sh-tile[data-layout="stack"]::after{content:"";grid-row:5;height:var(--space-10)}
+  .sh-tgrid-items:not([data-layout="feature"]):not([data-layout="list"])>.sh-tile[data-layout="stack"]>.sh-tile-body{display:contents}
+  .sh-tgrid-items:not([data-layout="feature"]):not([data-layout="list"])>.sh-tile[data-layout="stack"]>.sh-media{grid-row:1}
+  .sh-tgrid-items:not([data-layout="feature"]):not([data-layout="list"])>.sh-tile[data-layout="stack"] .sh-tile-title{grid-row:2;align-self:start;margin-top:var(--space-5)}
+  .sh-tgrid-items:not([data-layout="feature"]):not([data-layout="list"])>.sh-tile[data-layout="stack"] .sh-tile-body>.sh-meta,
+  .sh-tgrid-items:not([data-layout="feature"]):not([data-layout="list"])>.sh-tile[data-layout="stack"] .sh-tile-meta{grid-row:3;align-self:start;margin-top:var(--space-2)}
+  .sh-tgrid-items:not([data-layout="feature"]):not([data-layout="list"])>.sh-tile[data-layout="stack"] .sh-tile-text{grid-row:4;align-self:start;margin-top:var(--space-3)}
 }
 @media (min-width:1000px){
   .sh-tgrid-items[data-layout="3"]{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .sh-tgrid-items[data-layout="4"]{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .sh-tgrid-items[data-layout="4"][data-odd="true"]>:first-child{grid-column:auto}
   .sh-tgrid-items[data-layout="3"][data-odd="true"]>:first-child{grid-column:auto}
   .sh-tgrid-items[data-layout="2"][data-odd="true"]>:first-child{grid-column:1/-1}
   .sh-tgrid-items[data-layout="feature"]{grid-template-columns:minmax(0,7fr) minmax(0,5fr);grid-auto-flow:dense}
@@ -52,7 +59,8 @@ function ensure() {
 
 export function TileGrid({ title, sub, action, layout = "3", footnote, children, style, ...rest }) {
   ensure();
-  const items = React.Children.toArray(children).filter(Boolean);
+  let items = React.Children.toArray(children).filter(Boolean);
+  if (layout === "list") items = items.map((c) => (React.isValidElement(c) ? React.cloneElement(c, { layout: "row" }) : c));
   return (
     <div data-ds-id="sections/TileGrid" className="sh-tgrid" style={style} {...rest}>
       {title || action ? (

@@ -16,5 +16,7 @@ export interface PanoramaCaptionProps extends React.HTMLAttributes<HTMLElement> 
   /** Ratio under 760px. Default `4:5`. */
   mobileRatio?: string;
   headingLevel?: 2 | 3;
+  /** A muted loop in place of the photograph — editorial/Video props. */
+  video?: import("../editorial/Video").VideoProps;
 }
 export declare function PanoramaCaption(props: PanoramaCaptionProps): JSX.Element;

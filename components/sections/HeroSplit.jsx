@@ -2,6 +2,7 @@ import React from "react";
 import { Media } from "../editorial/Media.jsx";
 import { Statement } from "../editorial/Statement.jsx";
 import { MetaRow } from "../editorial/MetaRow.jsx";
+import { Video } from "../editorial/Video.jsx";
 
 /* The OFFER hero, for programme and other detail pages. A photograph on one side that
    runs to the screen edge and the full hero height; on the other side, on a flat ground,
@@ -14,7 +15,7 @@ const CSS = `
 .sh-hsplit{container-type:inline-size;position:relative}
 .sh-hsplit-grid{display:grid;grid-template-columns:minmax(0,1fr)}
 .sh-hsplit-media{position:relative;min-width:0}
-.sh-hsplit-media>.sh-media{aspect-ratio:var(--_mr,var(--media-ratio))}
+.sh-hsplit-media>.sh-media,.sh-hsplit-media>.sh-video{aspect-ratio:var(--_mr,var(--media-ratio))}
 .sh-hsplit-text{min-width:0;display:flex;flex-direction:column;gap:var(--stack-lg);padding:calc(var(--space-12) + var(--section-y-sm)) var(--layout-gutter) var(--section-y-sm)}
 .sh-hsplit-main{display:flex;flex-direction:column;gap:var(--stack-lg);margin-block:auto}
 .sh-hsplit[data-mobile-first="true"] .sh-hsplit-media{order:-1}
@@ -31,7 +32,7 @@ const CSS = `
   .sh-hsplit[data-side="start"][data-split="60"] .sh-hsplit-grid{grid-template-columns:minmax(0,3fr) minmax(0,2fr)}
   .sh-hsplit-media,.sh-hsplit[data-mobile-first="true"] .sh-hsplit-media{order:2}
   .sh-hsplit[data-side="start"] .sh-hsplit-media{order:-1}
-  .sh-hsplit-media>.sh-media{position:absolute;inset:0;aspect-ratio:auto;height:100%}
+  .sh-hsplit-media>.sh-media,.sh-hsplit-media>.sh-video{position:absolute;inset:0;aspect-ratio:auto;height:100%}
   .sh-hsplit-text,.sh-hsplit[data-mobile-first="true"] .sh-hsplit-text{padding-block:calc(var(--space-12) + var(--section-y-sm)) var(--section-y-sm)}
   .sh-hsplit[data-side="end"] .sh-hsplit-text{padding-inline:var(--_outer) calc(var(--grid-gap) * 2.5)}
   .sh-hsplit[data-side="start"] .sh-hsplit-text{padding-inline:calc(var(--grid-gap) * 2.5) var(--_outer)}
@@ -48,9 +49,10 @@ function ensure() {
 
 const MR = { "4:3": "var(--media-ratio)", "4:5": "var(--media-ratio-portrait)", "3:2": "3 / 2", "16:9": "var(--media-ratio-wide)", "1:1": "1 / 1" };
 
-export function HeroSplit({ media, src, alt = "", position, mobilePosition, title, sub, actions, meta, breadcrumbs, facts, mediaSide = "end", split = "50", ground = "merino", mobileRatio = "4:3", mobileMediaFirst = false, minHeight, size = "h1", titleAs = "h1", measure = "18ch", style, ...rest }) {
+export function HeroSplit({ media, video, src, alt = "", position, mobilePosition, title, sub, actions, meta, breadcrumbs, facts, mediaSide = "end", split = "50", ground = "merino", mobileRatio = "4:3", mobileMediaFirst = false, minHeight, size = "h1", titleAs = "h1", measure = "18ch", style, ...rest }) {
   ensure();
-  const figure = media || <Media src={src} alt={alt} ratio="4:3" position={position} mobilePosition={mobilePosition} priority />;
+  /* `video`: a short muted loop in place of the photograph (editorial/Video, R2 only). */
+  const figure = media || (video ? <Video {...video} mode="loop" ratio="4:3" /> : <Media src={src} alt={alt} ratio="4:3" position={position} mobilePosition={mobilePosition} priority />);
   const vars = { "--_mr": MR[mobileRatio] || mobileRatio };
   if (minHeight) vars["--_minh"] = minHeight;
   const metaNode = meta ? (Array.isArray(meta) || typeof meta === "string" ? <MetaRow items={meta} /> : meta) : null;

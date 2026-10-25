@@ -15,5 +15,9 @@ export interface IndexListProps extends React.HTMLAttributes<HTMLDivElement> {
   columns?: 1 | 2;
   /** Level of the group label; row titles are one level below. Default 2. */
   headingLevel?: 2 | 3 | 4;
+  /** Rows link to #id on the same page, without an arrow. */
+  anchors?: boolean;
+  /** Show the number of rows beside each group label. */
+  counts?: boolean;
 }
 export declare function IndexList(props: IndexListProps): JSX.Element;

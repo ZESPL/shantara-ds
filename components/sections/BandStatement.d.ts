@@ -7,5 +7,7 @@ export interface BandStatementProps extends React.HTMLAttributes<HTMLDivElement>
   ground?: "himalaya" | "pine";
   /** Usually a <Statement/> and an optional <PlainList/>. */
   children?: React.ReactNode;
+  /** The accent as a quote — QuoteBlock props. */
+  quote?: { quote: React.ReactNode; cite?: React.ReactNode; role?: React.ReactNode };
 }
 export declare function BandStatement(props: BandStatementProps): JSX.Element;

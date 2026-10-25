@@ -1,6 +1,7 @@
 import React from "react";
 import { Media } from "../editorial/Media.jsx";
 import { MetaRow } from "../editorial/MetaRow.jsx";
+import { Video } from "../editorial/Video.jsx";
 
 /* The top of a single Journal article. No label above the title: breadcrumbs → h1 →
    dek (lead) → meta row (category · date · read time) → a byline on a hairline (author
@@ -46,14 +47,15 @@ function Person({ p, prefix }) {
   return <>{prefix}{p.href ? <a href={p.href}>{name}</a> : name}{p.role ? <>, {p.role}</> : null}</>;
 }
 
-export function ArticleHeader({ title, dek, breadcrumbs, category, date, dateTime, updated, updatedDateTime, readTime, author, reviewer, share, media, src, alt = "", caption, credit, ratio = "16:9", mobileRatio = "4:3", ground = "merino", titleAs = "h1", style, ...rest }) {
+export function ArticleHeader({ title, dek, breadcrumbs, category, date, dateTime, updated, updatedDateTime, readTime, author, reviewer, share, media, video, src, alt = "", caption, credit, ratio = "16:9", mobileRatio = "4:3", ground = "merino", titleAs = "h1", style, ...rest }) {
   ensure();
   const meta = [
     category ? (typeof category === "object" ? category : { label: category }) : null,
     date ? { label: date, dateTime } : null,
     readTime || null,
   ];
-  const figure = media || (src ? <Media src={src} alt={alt} ratio={ratio} mobileRatio={mobileRatio} priority /> : null);
+  /* `video`: a video article — the player (with captions) takes the lead photograph's place. */
+  const figure = media || (video ? <Video {...video} ratio={ratio} mobileRatio={mobileRatio} /> : src ? <Media src={src} alt={alt} ratio={ratio} mobileRatio={mobileRatio} priority /> : null);
   const H = titleAs;
   return (
     <header data-ds-id="sections/ArticleHeader" className="sh-ahead" data-ground={ground} style={style} {...rest}>

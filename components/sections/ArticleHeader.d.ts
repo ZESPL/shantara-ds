@@ -42,5 +42,7 @@ export interface ArticleHeaderProps extends React.HTMLAttributes<HTMLElement> {
   mobileRatio?: string;
   ground?: "merino" | "stone";
   titleAs?: "h1" | "h2";
+  /** A player in the lead photograph's place — editorial/Video props. */
+  video?: import("../editorial/Video").VideoProps;
 }
 export declare function ArticleHeader(props: ArticleHeaderProps): JSX.Element;

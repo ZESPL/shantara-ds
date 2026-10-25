@@ -11,5 +11,6 @@ export interface TileGridProps extends React.HTMLAttributes<HTMLDivElement> {
   footnote?: React.ReactNode;
   /** <Tile/> elements. Keep counts to multiples of the column count. */
   children?: React.ReactNode;
+  /* layout also takes "4" (four across) and "list" (one per row, photograph beside text). */
 }
 export declare function TileGrid(props: TileGridProps): JSX.Element;

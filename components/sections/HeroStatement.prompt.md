@@ -34,3 +34,5 @@ The **editorial** hero: words lead, no full photograph (deck slide 2). A large L
 | `HeroStatement` | Editorial — words lead, no photograph needed | Conditions and Programmes indexes, About, Journal index, Contact, legal pages (`ArticleHeader` for single articles) |
 
 One hero per page, always first. None of them takes a label above the title: place, category or duration go in `meta`, below it.
+
+**Variation — `variant="utility"`.** For legal pages, the 404 page, confirmation and the editorial policy: short (no 440px floor), no rosette band, no side image; the closing rule shows only when there is `meta` ("Updated 20 August 2026"). Pair it with `ArticleLayout` for the page body.

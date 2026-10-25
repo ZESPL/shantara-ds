@@ -1,4 +1,4 @@
-<!-- @dsCard group="Components" viewport="1440x14200" name="Sections" subtitle="Every website section at desktop width, in five groups — shell, heroes, content, collections and calls to action" -->
+<!-- @dsCard group="Components" viewport="1440x14200" name="Sections" subtitle="The fifteen core website sections at desktop width, grouped as shell, heroes, content, collections and calls to action. Every newer section and every variation has its own page in the sidebar." -->
 <!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../styles.css">
 <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
@@ -158,8 +158,7 @@ function Demo(){
 
 <Label name="Section + FormSplit" note="consultation form beside the Stone panel" />
 <Section>
-  <FormSplit onSubmit={(e) => e.preventDefault()} aside={<>
-    <PortraitFrame src={P + "doctor-bahja-janu-portrait-cropped.jpeg"} name="Dr. Bahja Janu" role="Medical Director" />
+  <FormSplit onSubmit={(e) => e.preventDefault()} src={P + "reception.jpg"} alt="The reception desk" aside={<>
     <Statement as="h3" size="title" sub="A member of the team will call you to understand what you need. A doctor then reviews whether a stay is the right next step.">We'll be in touch</Statement>
   </>}>
     <Statement as="h2" size="title" sub="Share your name and a number we can reach. Our team will contact you to arrange a consultation.">Send your details</Statement>

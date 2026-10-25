@@ -171,10 +171,14 @@
   const FAMILY_GROUPS = {
     Sections: [
       ["Shell", ["Section"]],
+      ["Page structure", ["InPageNav", "ArticleLayout"]],
       ["Heroes", ["HeroFullBleed", "HeroSplit", "HeroStatement", "ArticleHeader"]],
-      ["Content", ["SplitSection", "PanoramaCaption", "BandStatement", "NumeralsSplit", "PeopleRow"]],
-      ["Collections", ["TileGrid", "RelatedArticles", "IndexList"]],
-      ["Calls to action", ["FormSplit", "ClosingCTA"]],
+      ["Content", ["SplitSection", "PanoramaCaption", "BandStatement", "NumeralsSplit", "PeopleRow", "ProcessSection", "TimelineSection", "FeatureGrid", "VideoFeature"]],
+      ["Collections", ["TileGrid", "RelatedArticles", "IndexList", "CatalogueSection", "GalleryGrid", "ListingSection", "ProgrammeCompare"]],
+      ["Information", ["KeyFacts", "InclusionsSection", "FaqSection", "PolicySection", "ContactLocation"]],
+      ["Trust", ["CredentialStrip", "ReferencesSection", "GuestStory", "NoticeBand"]],
+      ["Calls to action", ["FormSplit", "ClosingCTA", "ConfirmationSection"]],
+      ["Utility", ["NotFoundSection"]],
     ],
   };
   const GROUPS = [

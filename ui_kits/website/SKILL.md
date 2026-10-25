@@ -183,6 +183,8 @@ Success copy:
 
 Fire `generate_lead` **only after** the destination confirms success. A button click is not a lead.
 
+The success state is never a dead end: every form ends on `ConfirmationSection` with next steps, call / WhatsApp / email, and three Keep exploring cards chosen by the form and the page it was sent from. The matrix is in [skill-content.md › Confirmation screens](skill-content.md#confirmation-screens).
+
 ## 7. Analytics
 
 One internal `track("event_name", properties)` abstraction. May forward to OpenPanel and GA4. Do not scatter `gtag` / `openpanel.track` in components.

@@ -2,6 +2,8 @@ import React from "react";
 import { Media } from "../editorial/Media.jsx";
 import { Statement } from "../editorial/Statement.jsx";
 import { Icon } from "../core/Icon.jsx";
+import { Button } from "../core/Button.jsx";
+import { TextLink } from "../editorial/TextLink.jsx";
 
 /* The closing call to action (deck slide 18) — ONLY for pages that otherwise have no CTA.
    variant "photo": a full-bleed dark photograph, 72svh, statement bottom-left.
@@ -55,19 +57,32 @@ function Contact({ contact }) {
   );
 }
 
-export function ClosingCTA({ variant, ground = "pine", src, alt = "", position, title, sub, action, secondaryAction, contact, titleAs = "h2", style, ...rest }) {
+/* variant "whatsapp": the ground layout with WhatsApp as the primary action and a call as
+   the second (pass `whatsapp` — a wa.me URL — and `phone`, a tel: URL, from content/site.json).
+   variant "tariff": a compact band that sends the reader to the tariff page (`tariffHref`):
+   programme and room pages never quote a rate, so this is their commercial close. */
+export function ClosingCTA({ variant, ground = "pine", src, alt = "", position, title, sub, action, secondaryAction, contact, whatsapp, phone, phoneLabel, tariffHref = "/en/tariffs", titleAs = "h2", style, ...rest }) {
   ensure();
   const v = variant || (src ? "photo" : "ground");
-  const g = v === "photo" ? "photo" : ground;
-  const acts = action || secondaryAction ? <>{action}{secondaryAction}</> : null;
-  const compact = v === "compact";
+  const g = v === "photo" ? "photo" : v === "tariff" && ground === "pine" ? "stone" : ground;
+  let primary = action, secondary = secondaryAction, heading = title;
+  if (v === "whatsapp") {
+    primary = action || (whatsapp ? <Button size="lg" href={whatsapp} startIcon={<Icon name="message-circle" size={18} />}>Message us on WhatsApp</Button> : null);
+    secondary = secondaryAction || (phone ? <Button size="lg" variant="secondary" href={phone} startIcon={<Icon name="phone" size={18} />}>{phoneLabel || "Call us"}</Button> : null);
+  }
+  if (v === "tariff") {
+    heading = title || "Current rates and what a stay includes";
+    primary = action || <TextLink href={tariffHref}>View the tariff</TextLink>;
+  }
+  const acts = primary || secondary ? <>{primary}{secondary}</> : null;
+  const compact = v === "compact" || v === "tariff";
   return (
-    <section data-ds-id="sections/ClosingCTA" className="sh-close" data-variant={v} data-ground={g} style={style} {...rest}>
+    <section data-ds-id="sections/ClosingCTA" className="sh-close" data-variant={compact ? "compact" : v === "whatsapp" ? "ground" : v} data-kind={v} data-ground={g} style={style} {...rest}>
       {v === "photo" && src ? <Media src={src} alt={alt} ratio="fill" scrim="hero" position={position} /> : null}
       <div className={"sh-close-body" + (v === "photo" ? " sh-photo-text" : "")}>
         <div className="sh-container">
           <div className="sh-close-row">
-            <Statement as={titleAs} size={compact ? "h3" : "statement"} sub={sub} measure={compact ? "32ch" : undefined}>{title}</Statement>
+            <Statement as={titleAs} size={compact ? "h3" : "statement"} sub={sub} measure={compact ? "32ch" : undefined}>{heading}</Statement>
             {acts ? <div className="sh-actions sh-close-actions" data-stack="mobile">{acts}</div> : null}
           </div>
           <Contact contact={contact} />

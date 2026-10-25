@@ -29,5 +29,10 @@ export interface ClosingCTAProps extends React.HTMLAttributes<HTMLElement> {
   /** Optional contact row: items (aligned, 44px each, stack under 520px) or a node. */
   contact?: Array<string | ContactItem> | React.ReactNode;
   titleAs?: "h2" | "h3";
+  /** variant also takes "whatsapp" and "tariff". */
+  whatsapp?: string;
+  phone?: string;
+  phoneLabel?: string;
+  tariffHref?: string;
 }
 export declare function ClosingCTA(props: ClosingCTAProps): JSX.Element;

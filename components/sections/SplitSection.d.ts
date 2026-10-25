@@ -20,6 +20,10 @@ export interface SplitSectionProps extends React.HTMLAttributes<HTMLElement> {
   minHeight?: string;
   ground?: "merino" | "stone" | "himalaya" | "pine";
   /** The text column — usually a <Statement/> and one list or link. */
+  /** A player in the photograph's place — editorial/Video props. */
+  video?: import("../editorial/Video").VideoProps;
+  /** Text above the photograph at every width. */
+  stack?: boolean;
   children?: React.ReactNode;
 }
 export declare function SplitSection(props: SplitSectionProps): JSX.Element;

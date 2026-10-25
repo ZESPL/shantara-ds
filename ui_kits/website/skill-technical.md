@@ -70,7 +70,7 @@ This is not a guest lead. Never fire `generate_lead` for it. Pass the form's key
 
 Use one event for alternate contact channels.
 
-Properties: `contact_method` (`whatsapp` | `phone` | `email`); `page_type`; `cta_location`; `locale` (added centrally).
+Properties: `contact_method` (`whatsapp` | `phone` | `email`); `page_type`; `cta_location`; `locale` (added centrally). A tap on a form's confirmation screen uses `cta_location` `confirmation` (see [skill-content.md › Confirmation screens](skill-content.md#confirmation-screens)).
 
 ### Optional events
 

@@ -10,6 +10,8 @@ export interface HeroSplitProps extends React.HTMLAttributes<HTMLElement> {
   position?: string;
   mobilePosition?: string;
   /** The page title (h1). No label above it. */
+  /** A short muted loop in place of the photograph — editorial/Video props (R2 URLs only). */
+  video?: import("../editorial/Video").VideoProps;
   title: React.ReactNode;
   /** Caption facts directly under the title, e.g. ["Metabolic", "7–21 nights"] or icon items. */
   meta?: Array<string | MetaItem> | React.ReactNode;

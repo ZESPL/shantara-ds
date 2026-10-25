@@ -190,7 +190,55 @@ Recommended success copy:
 
 > Consultation request received. Our team will contact you to understand your requirements and guide you on the appropriate next step.
 
-A secondary WhatsApp action may be offered after lead capture.
+A secondary WhatsApp action may be offered after lead capture. The full success state is specified under [Confirmation screens](#confirmation-screens).
+
+### Confirmation screens
+
+A visitor who has just sent a form is at their most interested. The confirmation must not be a dead end. Every form ends on `ConfirmationSection`, rendered in place of the form, and it always answers four things in this order:
+
+1. **It arrived.** The title names what was received.
+2. **What happens next.** Two or three plain sentences. Never internal process, never a response time that is not confirmed.
+3. **How to reach us sooner.** The channels the matrix below allows, from `content/site.json`.
+4. **One way back.** **Back to home**, or back to the page the form was sent from.
+
+Then, under a rule, a **Keep exploring** row of three cards (`explore`): photograph, title, a short category line and one sentence. A card can lead to another page, something to read (a Journal article, Doctor Answer or Clinical Guide), or an outside link such as a Doctor Talk recording. Always three cards; never more, never one alone.
+
+#### Choosing the cards
+
+The form already captures its context (source page, page type, content id). Use that same context to pick the cards, so a visitor who sent the form from the diabetes page reads about diabetes next, not the homepage. Link only to published pages. When a page in a slot is not published, use the general set's card for that slot instead. Each card's photograph is one that does not already appear on the page. Never ask the visitor what they want to read next.
+
+| Form · sent from | Title | Contact | Keep exploring cards (in order) | Way back |
+| --- | --- | --- | --- | --- |
+| Consultation · `/en/book-consultation`, home, header, any page without its own row | Consultation request received | Call, WhatsApp, email | A day at Shantara · Our doctors · Tariff page | Back to home |
+| Consultation · a programme page | Consultation request received | Call, WhatsApp, email | The doctors on that programme (`/en/our-doctors#{slug}`) · A day at Shantara · Tariff page | Back to the programme |
+| Consultation · a condition page | Consultation request received | Call, WhatsApp, email | The programme for that condition · A Doctor Answer or Clinical Guide on that condition · Our approach | Back to the condition |
+| Consultation · a doctor profile or Our doctors | Consultation request received | Call, WhatsApp, email | That doctor's answers (Journal) · A day at Shantara · Tariff page | Back to the doctor |
+| Consultation · a Journal article or Doctor Answer | Consultation request received | Call, WhatsApp, email | The programme or condition the article is about · Our doctors · A day at Shantara | Back to the article |
+| Ask the Doctor (popup) | Question received | Email | More Doctor Answers (`/en/journal`) · The doctor's profile or section · Book a Consultation, as the last card only | Close, back to the page |
+| Hosted visits (`/en/hosted-stays`) | Request received | Email | Our story · Farm dining · A day at Shantara | Back to home |
+
+What happens next, by form:
+
+- **Consultation.** A member of the team will call you to understand what you need. A doctor then reviews whether a stay is the right next step. A stay is confirmed after a doctor has spoken with you.
+- **Ask the Doctor.** A doctor replies by email. If the question is chosen for the Journal, it is published without your name.
+- **Hosted visits.** We read each request and reply when we can host the visit. (The page's own words; see [special-pages/hosted-stays.md](special-pages/hosted-stays.md).)
+
+#### WhatsApp on the confirmation
+
+Offer WhatsApp on every consultation confirmation, between the call and the email. Link to `https://wa.me/` with the `whatsapp` number from `content/site.json` and this pre-filled line, translated with the page:
+
+> Hello, I have just sent my details on the Shantara website.
+
+The pre-filled line never repeats anything the visitor typed: no name, no condition, no notes. Do not offer WhatsApp after Ask the Doctor or a hosted-visits request; those replies come by email.
+
+#### Rules for every confirmation
+
+- In a modal, drawer or inline panel, the confirmation replaces the form inside the same container (`headingLevel={2}`, `exploreLayout="list"` so the cards become rows), and closing it returns the visitor to the page they were reading.
+- Do not repeat Book a Consultation on a consultation confirmation. Do not add a second form, a newsletter sign-up, a share bar, social follow buttons, testimonials, a countdown, a promotion or an autoplaying video.
+- Never echo health information the visitor typed, on screen or in a URL.
+- No separate thank-you URL. The confirmation is a state of the page that holds the form. Conversion is the event, fired only after the destination confirms success.
+- Hosted visits keep their page rules: no tariff link and no Book a Consultation on the confirmation.
+- Analytics: WhatsApp, call and email taps fire `contact_click` with `cta_location` `confirmation`. Do not add an event for card clicks; page views with the referrer already answer that.
 
 ## Publishing strategy
 

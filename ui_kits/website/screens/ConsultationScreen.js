@@ -6,7 +6,7 @@ function ConsultationScreen({ onNavigate, locale = "en", view = "booking" }) {
   const { t, track } = window.ShantaraI18n.useLocale();
   const L = window.ShantaraLocales;
   const keys = (L && L.FORM_FIELD_KEYS) || { full_name: "full_name", phone: "phone", email: "email", country: "country", notes: "notes" };
-  const { Button, Input, Select, Textarea, Dialog, Toast, Spinner, HeroStatement, Section, FormSplit, PortraitFrame, Statement, NumberedSteps, TextLink } = window.ShantaraDesignSystem_45bbe4;
+  const { Button, Input, Select, Textarea, Dialog, Toast, Spinner, HeroStatement, Section, FormSplit, Statement, NumberedSteps, TextLink } = window.ShantaraDesignSystem_45bbe4;
   const P = window.PageSlot;
   const [started, setStarted] = React.useState(false);
   const [confirming, setConfirming] = React.useState(false);
@@ -68,7 +68,6 @@ function ConsultationScreen({ onNavigate, locale = "en", view = "booking" }) {
     return () => clearTimeout(timer);
   }, [done]);
 
-  const bahja = (window.ShantaraContent.doctors || []).find((d) => d.id === "bahja-janu");
 
   if (done) {
     return (
@@ -94,15 +93,6 @@ function ConsultationScreen({ onNavigate, locale = "en", view = "booking" }) {
 
   const aside = (
     <>
-      {bahja ? (
-        <PortraitFrame
-          src={bahja.photo_profile ? window.photoSrc(bahja.photo_profile) : undefined}
-          alt={bahja.full_name}
-          name={bahja.full_name}
-          role={t(bahja.role)}
-          headingLevel={2}
-        />
-      ) : null}
       <Statement size="title" as="h2">{t("We'll be in touch")}</Statement>
       <NumberedSteps
         columns={1}
@@ -132,7 +122,7 @@ function ConsultationScreen({ onNavigate, locale = "en", view = "booking" }) {
 
       <P id="booking/form">
       <Section space="bottom">
-        <FormSplit aside={aside} onSubmit={(event) => { event.preventDefault(); setConfirming(true); }}>
+        <FormSplit aside={aside} src={window.photoSrc("reception")} alt={t("The reception desk")} onSubmit={(event) => { event.preventDefault(); setConfirming(true); }}>
           <Input name={keys.full_name} autoComplete="name" label={t("Name")} required onFocus={markStart} />
           <Input name={keys.phone} autoComplete="tel" label={t("Mobile / WhatsApp number")} required onFocus={markStart} />
           <Input name={keys.email} autoComplete="email" label={t("Email")} type="email" hint={t("Optional")} onFocus={markStart} />

@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"ShantaraDesignSystem_45bbe4","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"Divider","sourcePath":"components/core/Divider.jsx"},{"name":"HnchLogo","sourcePath":"components/core/HnchLogo.jsx"},{"name":"ICON_GROUPS","sourcePath":"components/core/Icon.jsx"},{"name":"ICON_NAMES","sourcePath":"components/core/Icon.jsx"},{"name":"Icon","sourcePath":"components/core/Icon.jsx"},{"name":"IconButton","sourcePath":"components/core/IconButton.jsx"},{"name":"Logo","sourcePath":"components/core/Logo.jsx"},{"name":"PatternPanel","sourcePath":"components/core/PatternPanel.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Dialog","sourcePath":"components/feedback/Dialog.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"DateField","sourcePath":"components/forms/DateField.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"SearchList","sourcePath":"components/forms/SearchList.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Switch","sourcePath":"components/forms/Switch.jsx"},{"name":"Textarea","sourcePath":"components/forms/Textarea.jsx"},{"name":"Accordion","sourcePath":"components/navigation/Accordion.jsx"},{"name":"Breadcrumbs","sourcePath":"components/navigation/Breadcrumbs.jsx"},{"name":"LanguageSelector","sourcePath":"components/navigation/LanguageSelector.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"Media","sourcePath":"components/editorial/Media.jsx"},{"name":"ArticleFigure","sourcePath":"components/editorial/ArticleFigure.jsx"},{"name":"PortraitFrame","sourcePath":"components/editorial/PortraitFrame.jsx"},{"name":"AuthorCard","sourcePath":"components/editorial/AuthorCard.jsx"},{"name":"GroupedList","sourcePath":"components/editorial/GroupedList.jsx"},{"name":"MetaRow","sourcePath":"components/editorial/MetaRow.jsx"},{"name":"NumberedSteps","sourcePath":"components/editorial/NumberedSteps.jsx"},{"name":"Numeral","sourcePath":"components/editorial/Numeral.jsx"},{"name":"Pagination","sourcePath":"components/editorial/Pagination.jsx"},{"name":"PlainList","sourcePath":"components/editorial/PlainList.jsx"},{"name":"Prose","sourcePath":"components/editorial/Prose.jsx"},{"name":"QuoteBlock","sourcePath":"components/editorial/QuoteBlock.jsx"},{"name":"ReviewedBy","sourcePath":"components/editorial/ReviewedBy.jsx"},{"name":"ShareBar","sourcePath":"components/editorial/ShareBar.jsx"},{"name":"SpecTable","sourcePath":"components/editorial/SpecTable.jsx"},{"name":"Statement","sourcePath":"components/editorial/Statement.jsx"},{"name":"TableOfContents","sourcePath":"components/editorial/TableOfContents.jsx"},{"name":"TextLink","sourcePath":"components/editorial/TextLink.jsx"},{"name":"Tile","sourcePath":"components/editorial/Tile.jsx"},{"name":"TimeTable","sourcePath":"components/editorial/TimeTable.jsx"},{"name":"ArticleHeader","sourcePath":"components/sections/ArticleHeader.jsx"},{"name":"BandStatement","sourcePath":"components/sections/BandStatement.jsx"},{"name":"ClosingCTA","sourcePath":"components/sections/ClosingCTA.jsx"},{"name":"FormSplit","sourcePath":"components/sections/FormSplit.jsx"},{"name":"HeroFullBleed","sourcePath":"components/sections/HeroFullBleed.jsx"},{"name":"HeroSplit","sourcePath":"components/sections/HeroSplit.jsx"},{"name":"HeroStatement","sourcePath":"components/sections/HeroStatement.jsx"},{"name":"IndexList","sourcePath":"components/sections/IndexList.jsx"},{"name":"NumeralsSplit","sourcePath":"components/sections/NumeralsSplit.jsx"},{"name":"PanoramaCaption","sourcePath":"components/sections/PanoramaCaption.jsx"},{"name":"PeopleRow","sourcePath":"components/sections/PeopleRow.jsx"},{"name":"TileGrid","sourcePath":"components/sections/TileGrid.jsx"},{"name":"RelatedArticles","sourcePath":"components/sections/RelatedArticles.jsx"},{"name":"Section","sourcePath":"components/sections/Section.jsx"},{"name":"SplitSection","sourcePath":"components/sections/SplitSection.jsx"}],"sourceHashes":{"components/core/Badge.jsx":"b014d0a4d8ea","components/core/Button.jsx":"66ad8b155d36","components/core/Card.jsx":"899ecf09e977","components/core/Divider.jsx":"7841bbb870dd","components/core/HnchLogo.jsx":"3086ba9ae2ea","components/core/Icon.jsx":"7eaaf731593f","components/core/IconButton.jsx":"0746d0dc8fb3","components/core/Logo.jsx":"71651ae4093b","components/core/PatternPanel.jsx":"dd26bb639ce9","components/core/Tag.jsx":"480f3225f1d4","components/feedback/Dialog.jsx":"c1b84ed6f276","components/feedback/Spinner.jsx":"49fa70a95320","components/feedback/Toast.jsx":"c64129df2a1a","components/feedback/Tooltip.jsx":"9c7b40a94408","components/forms/Checkbox.jsx":"621ba3e2309a","components/forms/DateField.jsx":"a4fef507a824","components/forms/Input.jsx":"1321df74a451","components/forms/Radio.jsx":"861dea337cdb","components/forms/SearchList.jsx":"39137752d536","components/forms/Select.jsx":"4ebda94f9354","components/forms/Switch.jsx":"73709580dd9e","components/forms/Textarea.jsx":"e40a2c1357c6","components/navigation/Accordion.jsx":"b8870511c6fe","components/navigation/Breadcrumbs.jsx":"421f19e62be1","components/navigation/LanguageSelector.jsx":"3255d13574aa","components/navigation/Tabs.jsx":"414b48cd2f58","components/editorial/Media.jsx":"33a6b0c1bfde","components/editorial/ArticleFigure.jsx":"f7689927c7db","components/editorial/PortraitFrame.jsx":"d79181ab4681","components/editorial/AuthorCard.jsx":"e96ed75df2fb","components/editorial/GroupedList.jsx":"d8cd9e26b4bf","components/editorial/MetaRow.jsx":"8c95d79ee5e1","components/editorial/NumberedSteps.jsx":"6f2950654a05","components/editorial/Numeral.jsx":"e6b7086ade4c","components/editorial/Pagination.jsx":"893e51b7753d","components/editorial/PlainList.jsx":"2d7a0d571c4a","components/editorial/Prose.jsx":"1b1a9a3ffec2","components/editorial/QuoteBlock.jsx":"c79559f0cb83","components/editorial/ReviewedBy.jsx":"cf907ffdf4c1","components/editorial/ShareBar.jsx":"a5d673d91fb9","components/editorial/SpecTable.jsx":"097e36746780","components/editorial/Statement.jsx":"50cb58806250","components/editorial/TableOfContents.jsx":"f92f3b4de4c4","components/editorial/TextLink.jsx":"b730c74e745f","components/editorial/Tile.jsx":"4ebf341907e5","components/editorial/TimeTable.jsx":"610e5af78002","components/sections/ArticleHeader.jsx":"83ce45ae40da","components/sections/BandStatement.jsx":"28aa51447566","components/sections/ClosingCTA.jsx":"8953540b81f6","components/sections/FormSplit.jsx":"de80a36c4d58","components/sections/HeroFullBleed.jsx":"020e02a3e0fd","components/sections/HeroSplit.jsx":"e6152e6379dd","components/sections/HeroStatement.jsx":"bb964624fc4b","components/sections/IndexList.jsx":"92df51713fbc","components/sections/NumeralsSplit.jsx":"10d1fde8fd02","components/sections/PanoramaCaption.jsx":"c9f164c3675d","components/sections/PeopleRow.jsx":"1c5f1b2eb3aa","components/sections/TileGrid.jsx":"76322cc24b8f","components/sections/RelatedArticles.jsx":"8452368a277c","components/sections/Section.jsx":"eacd861e84d9","components/sections/SplitSection.jsx":"46b4d81e3a59"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":4,"namespace":"ShantaraDesignSystem_45bbe4","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"Divider","sourcePath":"components/core/Divider.jsx"},{"name":"HnchLogo","sourcePath":"components/core/HnchLogo.jsx"},{"name":"ICON_GROUPS","sourcePath":"components/core/Icon.jsx"},{"name":"ICON_NAMES","sourcePath":"components/core/Icon.jsx"},{"name":"Icon","sourcePath":"components/core/Icon.jsx"},{"name":"IconButton","sourcePath":"components/core/IconButton.jsx"},{"name":"Logo","sourcePath":"components/core/Logo.jsx"},{"name":"PatternPanel","sourcePath":"components/core/PatternPanel.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Dialog","sourcePath":"components/feedback/Dialog.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"DateField","sourcePath":"components/forms/DateField.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"SearchList","sourcePath":"components/forms/SearchList.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Switch","sourcePath":"components/forms/Switch.jsx"},{"name":"Textarea","sourcePath":"components/forms/Textarea.jsx"},{"name":"Accordion","sourcePath":"components/navigation/Accordion.jsx"},{"name":"Breadcrumbs","sourcePath":"components/navigation/Breadcrumbs.jsx"},{"name":"LanguageSelector","sourcePath":"components/navigation/LanguageSelector.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"Media","sourcePath":"components/editorial/Media.jsx"},{"name":"ArticleFigure","sourcePath":"components/editorial/ArticleFigure.jsx"},{"name":"PortraitFrame","sourcePath":"components/editorial/PortraitFrame.jsx"},{"name":"AuthorCard","sourcePath":"components/editorial/AuthorCard.jsx"},{"name":"GroupedList","sourcePath":"components/editorial/GroupedList.jsx"},{"name":"MetaRow","sourcePath":"components/editorial/MetaRow.jsx"},{"name":"NumberedSteps","sourcePath":"components/editorial/NumberedSteps.jsx"},{"name":"Numeral","sourcePath":"components/editorial/Numeral.jsx"},{"name":"Pagination","sourcePath":"components/editorial/Pagination.jsx"},{"name":"PlainList","sourcePath":"components/editorial/PlainList.jsx"},{"name":"Prose","sourcePath":"components/editorial/Prose.jsx"},{"name":"QuoteBlock","sourcePath":"components/editorial/QuoteBlock.jsx"},{"name":"ReviewedBy","sourcePath":"components/editorial/ReviewedBy.jsx"},{"name":"ShareBar","sourcePath":"components/editorial/ShareBar.jsx"},{"name":"SpecTable","sourcePath":"components/editorial/SpecTable.jsx"},{"name":"Statement","sourcePath":"components/editorial/Statement.jsx"},{"name":"TableOfContents","sourcePath":"components/editorial/TableOfContents.jsx"},{"name":"TextLink","sourcePath":"components/editorial/TextLink.jsx"},{"name":"Tile","sourcePath":"components/editorial/Tile.jsx"},{"name":"TimeTable","sourcePath":"components/editorial/TimeTable.jsx"},{"name":"Video","sourcePath":"components/editorial/Video.jsx"},{"name":"ArticleHeader","sourcePath":"components/sections/ArticleHeader.jsx"},{"name":"ArticleLayout","sourcePath":"components/sections/ArticleLayout.jsx"},{"name":"BandStatement","sourcePath":"components/sections/BandStatement.jsx"},{"name":"CatalogueSection","sourcePath":"components/sections/CatalogueSection.jsx"},{"name":"ClosingCTA","sourcePath":"components/sections/ClosingCTA.jsx"},{"name":"TileGrid","sourcePath":"components/sections/TileGrid.jsx"},{"name":"ConfirmationSection","sourcePath":"components/sections/ConfirmationSection.jsx"},{"name":"ContactLocation","sourcePath":"components/sections/ContactLocation.jsx"},{"name":"CredentialStrip","sourcePath":"components/sections/CredentialStrip.jsx"},{"name":"FaqSection","sourcePath":"components/sections/FaqSection.jsx"},{"name":"FeatureGrid","sourcePath":"components/sections/FeatureGrid.jsx"},{"name":"FormSplit","sourcePath":"components/sections/FormSplit.jsx"},{"name":"GalleryGrid","sourcePath":"components/sections/GalleryGrid.jsx"},{"name":"GuestStory","sourcePath":"components/sections/GuestStory.jsx"},{"name":"HeroFullBleed","sourcePath":"components/sections/HeroFullBleed.jsx"},{"name":"HeroSplit","sourcePath":"components/sections/HeroSplit.jsx"},{"name":"HeroStatement","sourcePath":"components/sections/HeroStatement.jsx"},{"name":"InPageNav","sourcePath":"components/sections/InPageNav.jsx"},{"name":"InclusionsSection","sourcePath":"components/sections/InclusionsSection.jsx"},{"name":"IndexList","sourcePath":"components/sections/IndexList.jsx"},{"name":"KeyFacts","sourcePath":"components/sections/KeyFacts.jsx"},{"name":"ListingSection","sourcePath":"components/sections/ListingSection.jsx"},{"name":"NotFoundSection","sourcePath":"components/sections/NotFoundSection.jsx"},{"name":"NoticeBand","sourcePath":"components/sections/NoticeBand.jsx"},{"name":"NumeralsSplit","sourcePath":"components/sections/NumeralsSplit.jsx"},{"name":"PanoramaCaption","sourcePath":"components/sections/PanoramaCaption.jsx"},{"name":"PeopleRow","sourcePath":"components/sections/PeopleRow.jsx"},{"name":"PolicySection","sourcePath":"components/sections/PolicySection.jsx"},{"name":"ProcessSection","sourcePath":"components/sections/ProcessSection.jsx"},{"name":"ProgrammeCompare","sourcePath":"components/sections/ProgrammeCompare.jsx"},{"name":"ReferencesSection","sourcePath":"components/sections/ReferencesSection.jsx"},{"name":"RelatedArticles","sourcePath":"components/sections/RelatedArticles.jsx"},{"name":"Section","sourcePath":"components/sections/Section.jsx"},{"name":"SplitSection","sourcePath":"components/sections/SplitSection.jsx"},{"name":"TimelineSection","sourcePath":"components/sections/TimelineSection.jsx"},{"name":"VideoFeature","sourcePath":"components/sections/VideoFeature.jsx"}],"sourceHashes":{"components/core/Badge.jsx":"b014d0a4d8ea","components/core/Button.jsx":"66ad8b155d36","components/core/Card.jsx":"899ecf09e977","components/core/Divider.jsx":"7841bbb870dd","components/core/HnchLogo.jsx":"3086ba9ae2ea","components/core/Icon.jsx":"7eaaf731593f","components/core/IconButton.jsx":"0746d0dc8fb3","components/core/Logo.jsx":"71651ae4093b","components/core/PatternPanel.jsx":"dd26bb639ce9","components/core/Tag.jsx":"480f3225f1d4","components/feedback/Dialog.jsx":"c1b84ed6f276","components/feedback/Spinner.jsx":"49fa70a95320","components/feedback/Toast.jsx":"c64129df2a1a","components/feedback/Tooltip.jsx":"9c7b40a94408","components/forms/Checkbox.jsx":"621ba3e2309a","components/forms/DateField.jsx":"a4fef507a824","components/forms/Input.jsx":"1321df74a451","components/forms/Radio.jsx":"861dea337cdb","components/forms/SearchList.jsx":"39137752d536","components/forms/Select.jsx":"4ebda94f9354","components/forms/Switch.jsx":"73709580dd9e","components/forms/Textarea.jsx":"e40a2c1357c6","components/navigation/Accordion.jsx":"b8870511c6fe","components/navigation/Breadcrumbs.jsx":"421f19e62be1","components/navigation/LanguageSelector.jsx":"3255d13574aa","components/navigation/Tabs.jsx":"414b48cd2f58","components/editorial/Media.jsx":"33a6b0c1bfde","components/editorial/ArticleFigure.jsx":"f7689927c7db","components/editorial/PortraitFrame.jsx":"d79181ab4681","components/editorial/AuthorCard.jsx":"e96ed75df2fb","components/editorial/GroupedList.jsx":"d8cd9e26b4bf","components/editorial/MetaRow.jsx":"8c95d79ee5e1","components/editorial/NumberedSteps.jsx":"6f2950654a05","components/editorial/Numeral.jsx":"e6b7086ade4c","components/editorial/Pagination.jsx":"893e51b7753d","components/editorial/PlainList.jsx":"2d7a0d571c4a","components/editorial/Prose.jsx":"1b1a9a3ffec2","components/editorial/QuoteBlock.jsx":"c79559f0cb83","components/editorial/ReviewedBy.jsx":"cf907ffdf4c1","components/editorial/ShareBar.jsx":"a5d673d91fb9","components/editorial/SpecTable.jsx":"097e36746780","components/editorial/Statement.jsx":"50cb58806250","components/editorial/TableOfContents.jsx":"f92f3b4de4c4","components/editorial/TextLink.jsx":"b730c74e745f","components/editorial/Tile.jsx":"4ebf341907e5","components/editorial/TimeTable.jsx":"610e5af78002","components/editorial/Video.jsx":"e21a3629d769","components/sections/ArticleHeader.jsx":"dcbe9cde9956","components/sections/ArticleLayout.jsx":"ec0fa928583c","components/sections/BandStatement.jsx":"e9a0008b4f26","components/sections/CatalogueSection.jsx":"603b270adcd9","components/sections/ClosingCTA.jsx":"6f8f248e0564","components/sections/TileGrid.jsx":"fbb2649bbce1","components/sections/ConfirmationSection.jsx":"ae65bbbfabb7","components/sections/ContactLocation.jsx":"f14702177eb1","components/sections/CredentialStrip.jsx":"fd9f68bd56cd","components/sections/FaqSection.jsx":"b68b80cab3ab","components/sections/FeatureGrid.jsx":"d472f2fd12c4","components/sections/FormSplit.jsx":"c87831902c01","components/sections/GalleryGrid.jsx":"f9f538dc8689","components/sections/GuestStory.jsx":"06f627264128","components/sections/HeroFullBleed.jsx":"020e02a3e0fd","components/sections/HeroSplit.jsx":"4719847ea210","components/sections/HeroStatement.jsx":"d9a38016a925","components/sections/InPageNav.jsx":"9ed444571815","components/sections/InclusionsSection.jsx":"a99954de9009","components/sections/IndexList.jsx":"8b059cd6e204","components/sections/KeyFacts.jsx":"8600300421bb","components/sections/ListingSection.jsx":"73a61fe090ab","components/sections/NotFoundSection.jsx":"bfc4dc096c09","components/sections/NoticeBand.jsx":"29f4801b9cf4","components/sections/NumeralsSplit.jsx":"10d1fde8fd02","components/sections/PanoramaCaption.jsx":"8f145c35b8ac","components/sections/PeopleRow.jsx":"c64813a6b16a","components/sections/PolicySection.jsx":"57d0ba42b74a","components/sections/ProcessSection.jsx":"61b91ecfbaa9","components/sections/ProgrammeCompare.jsx":"5b81f153d44e","components/sections/ReferencesSection.jsx":"9a32b5c127ab","components/sections/RelatedArticles.jsx":"8452368a277c","components/sections/Section.jsx":"eacd861e84d9","components/sections/SplitSection.jsx":"275162930637","components/sections/TimelineSection.jsx":"ad7941ee85f3","components/sections/VideoFeature.jsx":"238e9cb6a137"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -5779,9 +5779,142 @@ function TimeTable({
 Object.assign(__ds_scope, { TimeTable });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/editorial/TimeTable.jsx", error: String((e && e.message) || e) }); }
 
+// components/editorial/Video.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* Native <video> only (ui_kits/website/skill-video.md): sources and poster are absolute
+   R2/CDN URLs, never committed files, never a third-party player. Two modes:
+   - player (default): controls, preload="none", the poster shows until play; `captions`
+     (WebVTT) is required when the video has speech, `transcript` is kept for the page.
+   - loop: a short muted background loop (hero, panorama). Autoplays only when the visitor
+     has not asked for reduced motion, and always carries a pause / play button.
+   The frame keeps `ratio` (and `mobileRatio` under 760px) like Media; `fill` covers its
+   parent. No radius. Above the fold, preload the poster in the page head (it is the LCP image). */
+const CSS = `
+.sh-video{position:relative;display:block;margin:0;overflow:hidden;background:var(--color-pine-tree);aspect-ratio:var(--_r,16 / 9)}
+.sh-video[data-ratio="fill"]{position:absolute;inset:0;aspect-ratio:auto;height:100%}
+.sh-video>video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--_pos,center);display:block;background:transparent}
+.sh-video-toggle{position:absolute;inset-inline-end:var(--space-4);inset-block-end:var(--space-4);z-index:2;display:inline-grid;place-items:center;width:var(--tap-min);height:var(--tap-min);border:0;border-radius:var(--radius-pill);background:color-mix(in srgb, var(--color-pine-tree) 62%, transparent);color:var(--color-merino);cursor:pointer;backdrop-filter:var(--blur-glass)}
+.sh-video-toggle:focus-visible{outline:none;box-shadow:var(--ring-focus-inverse)}
+.sh-video-toggle svg{width:18px;height:18px}
+@media (prefers-reduced-transparency: reduce){.sh-video-toggle{backdrop-filter:none;background:var(--color-pine-tree)}}
+@media (max-width:759.98px){.sh-video[data-mobile-ratio]{aspect-ratio:var(--_rm)}}
+`;
+function ensure() {
+  if (typeof document === "undefined" || document.getElementById("sh-video-css")) return;
+  const el = document.createElement("style");
+  el.id = "sh-video-css";
+  el.textContent = CSS;
+  document.head.appendChild(el);
+}
+const RATIO = {
+  "16:9": "16 / 9",
+  "21:9": "21 / 9",
+  "4:3": "4 / 3",
+  "3:2": "3 / 2",
+  "4:5": "4 / 5",
+  "1:1": "1 / 1"
+};
+const PAUSE = /*#__PURE__*/React.createElement("svg", {
+  viewBox: "0 0 24 24",
+  "aria-hidden": "true"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M8 5v14M16 5v14",
+  stroke: "currentColor",
+  strokeWidth: "2",
+  strokeLinecap: "round"
+}));
+const PLAY = /*#__PURE__*/React.createElement("svg", {
+  viewBox: "0 0 24 24",
+  "aria-hidden": "true"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M8 5.5v13l10-6.5z",
+  fill: "currentColor"
+}));
+
+/* sources: [{ src, type }] */
+function Video({
+  src,
+  sources,
+  poster,
+  title,
+  captions,
+  transcript,
+  mode = "player",
+  ratio = "16:9",
+  mobileRatio,
+  position,
+  className,
+  style,
+  ...rest
+}) {
+  ensure();
+  const ref = React.useRef(null);
+  const loop = mode === "loop";
+  const reduce = typeof window !== "undefined" && window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const [playing, setPlaying] = React.useState(loop && !reduce);
+  React.useEffect(() => {
+    const v = ref.current;
+    if (!loop || !v) return;
+    if (playing) {
+      const p = v.play();
+      if (p && p.catch) p.catch(() => setPlaying(false));
+    } else v.pause();
+  }, [playing, loop]);
+  const vars = {
+    "--_r": ratio === "fill" ? undefined : RATIO[ratio] || ratio,
+    "--_pos": position
+  };
+  if (mobileRatio) vars["--_rm"] = RATIO[mobileRatio] || mobileRatio;
+  return /*#__PURE__*/React.createElement("figure", _extends({
+    "data-ds-id": "editorial/Video",
+    className: "sh-video" + (className ? " " + className : ""),
+    "data-mode": loop ? "loop" : "player",
+    "data-ratio": ratio === "fill" ? "fill" : undefined,
+    "data-mobile-ratio": mobileRatio ? "" : undefined,
+    style: {
+      ...vars,
+      ...style
+    }
+  }, rest), /*#__PURE__*/React.createElement("video", {
+    ref: ref,
+    poster: poster,
+    controls: !loop,
+    muted: loop,
+    loop: loop,
+    playsInline: true,
+    autoPlay: loop && !reduce,
+    preload: loop ? "metadata" : "none",
+    "aria-label": title
+  }, sources ? sources.map(s => /*#__PURE__*/React.createElement("source", {
+    key: s.src,
+    src: s.src,
+    type: s.type
+  })) : src ? /*#__PURE__*/React.createElement("source", {
+    src: src,
+    type: "video/mp4"
+  }) : null, captions ? /*#__PURE__*/React.createElement("track", {
+    kind: "captions",
+    src: captions,
+    srcLang: "en",
+    label: "English",
+    default: true
+  }) : null), loop ? /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    className: "sh-video-toggle",
+    "aria-label": playing ? "Pause video" : "Play video",
+    "aria-pressed": !playing,
+    onClick: () => setPlaying(!playing)
+  }, playing ? PAUSE : PLAY) : null, transcript ? /*#__PURE__*/React.createElement("figcaption", {
+    className: "sh-visually-hidden"
+  }, transcript) : null);
+}
+Object.assign(__ds_scope, { Video });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/editorial/Video.jsx", error: String((e && e.message) || e) }); }
+
 // components/sections/ArticleHeader.jsx
 try { (() => {
-const { Media, MetaRow } = __ds_scope;
+const { Media, MetaRow, Video } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 /* The top of a single Journal article. No label above the title: breadcrumbs → h1 →
    dek (lead) → meta row (category · date · read time) → a byline on a hairline (author
@@ -5842,6 +5975,7 @@ function ArticleHeader({
   reviewer,
   share,
   media,
+  video,
   src,
   alt = "",
   caption,
@@ -5860,7 +5994,11 @@ function ArticleHeader({
     label: date,
     dateTime
   } : null, readTime || null];
-  const figure = media || (src ? /*#__PURE__*/React.createElement(Media, {
+  /* `video`: a video article — the player (with captions) takes the lead photograph's place. */
+  const figure = media || (video ? /*#__PURE__*/React.createElement(Video, _extends({}, video, {
+    ratio: ratio,
+    mobileRatio: mobileRatio
+  })) : src ? /*#__PURE__*/React.createElement(Media, {
     src: src,
     alt: alt,
     ratio: ratio,
@@ -5918,9 +6056,72 @@ function ArticleHeader({
 Object.assign(__ds_scope, { ArticleHeader });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/ArticleHeader.jsx", error: String((e && e.message) || e) }); }
 
+// components/sections/ArticleLayout.jsx
+try { (() => {
+const { TableOfContents } = __ds_scope;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* The body of a long read — a Journal article, a legal page, the editorial policy. The
+   article recipe as one section: the text (children, usually <Prose>) in 8 of 12 columns
+   and a sticky "On this page" list in the last 3. `toc` comes from the article's h2s (each
+   needs an id); `aside` adds a block under the list (ReviewedBy, ShareBar).
+   Phones and tablets: the list collapses into one row above the text; `aside` follows the
+   text. ≥1000px: text at the start, list and aside at the end, sticky in tall windows. */
+const CSS = `
+.sh-alay{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--stack-lg);align-items:start}
+.sh-alay-body{min-width:0}
+.sh-alay-body [id]{scroll-margin-top:calc(var(--header-h, 72px) + 24px)}
+.sh-alay-side{display:flex;flex-direction:column;gap:var(--stack-lg);min-width:0}
+.sh-alay-aside{min-width:0}
+@media (max-width:999.98px){.sh-alay-side{display:contents}.sh-alay-aside{order:3}}
+@media (min-width:1000px){
+  .sh-alay{grid-template-columns:minmax(0,8fr) minmax(0,1fr) minmax(0,3fr);gap:var(--grid-gap)}
+  .sh-alay-body{grid-column:1;grid-row:1}
+  .sh-alay-side{grid-column:3;grid-row:1}
+}
+@media (min-width:1000px) and (min-height:720px){
+  .sh-alay-side{position:sticky;top:calc(var(--header-h, 72px) + 24px)}
+  .sh-alay-side .sh-toc[data-sticky="true"]{position:static}
+}
+`;
+function ensure() {
+  if (typeof document === "undefined" || document.getElementById("sh-alay-css")) return;
+  const el = document.createElement("style");
+  el.id = "sh-alay-css";
+  el.textContent = CSS;
+  document.head.appendChild(el);
+}
+
+/* toc: [{ id, label, level? }] */
+function ArticleLayout({
+  toc = [],
+  tocTitle = "On this page",
+  aside,
+  children,
+  style,
+  ...rest
+}) {
+  ensure();
+  return /*#__PURE__*/React.createElement("div", _extends({
+    "data-ds-id": "sections/ArticleLayout",
+    className: "sh-alay",
+    style: style
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    className: "sh-alay-side"
+  }, toc.length ? /*#__PURE__*/React.createElement(TableOfContents, {
+    items: toc,
+    title: tocTitle
+  }) : null, aside ? /*#__PURE__*/React.createElement("div", {
+    className: "sh-alay-aside"
+  }, aside) : null), /*#__PURE__*/React.createElement("div", {
+    className: "sh-alay-body"
+  }, children));
+}
+Object.assign(__ds_scope, { ArticleLayout });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/ArticleLayout.jsx", error: String((e && e.message) || e) }); }
+
 // components/sections/BandStatement.jsx
 try { (() => {
-const { PatternPanel } = __ds_scope;
+const { PatternPanel, QuoteBlock } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 /* Deck slide 3. Solid Himalaya with the rosette band on one edge (30% of the surface,
    cell = 15cqw so it is always band/2 and never under 130px). Merino Light statement
@@ -5938,9 +6139,13 @@ function ensure() {
   el.textContent = CSS;
   document.head.appendChild(el);
 }
+
+/* `quote`: the page's one accent can be a doctor's or the founder's own words instead of a
+   statement — { quote, cite, role }. Real words only (QuoteBlock rules). */
 function BandStatement({
   edge = "end",
   ground = "himalaya",
+  quote,
   children,
   style,
   ...rest
@@ -5958,14 +6163,99 @@ function BandStatement({
     className: "sh-band-body"
   }, /*#__PURE__*/React.createElement("div", {
     className: "sh-container"
-  }, children)));
+  }, quote ? /*#__PURE__*/React.createElement(QuoteBlock, {
+    quote: quote.quote,
+    cite: quote.cite,
+    role: quote.role
+  }) : null, children)));
 }
 Object.assign(__ds_scope, { BandStatement });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/BandStatement.jsx", error: String((e && e.message) || e) }); }
 
+// components/sections/CatalogueSection.jsx
+try { (() => {
+const { Media, MetaRow } = __ds_scope;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* One page, many entries — Therapies, Rooms, Farm & Dining. The IA gives each family one
+   page, so a link to a single therapy or room is `/en/therapies#hijama`: every entry carries
+   that `id`, and its anchor clears the sticky header plus an InPageNav.
+   Entry: photograph → name (h3) → meta row → one paragraph → optional facts (SpecTable /
+   PlainList) → optional link. Phones: photograph first, full width. ≥1000px: photograph and
+   text side by side (5 / 7 by default), sides alternating, entries ruled apart. */
+const CSS = `
+.sh-cat{display:flex;flex-direction:column}
+.sh-cat-entry{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--space-6);padding-block:var(--stack-lg);border-top:var(--border-width) solid var(--rule-color);scroll-margin-top:calc(var(--header-h, 72px) + 64px)}
+.sh-cat-entry:first-child{border-top:0;padding-top:0}
+.sh-cat-entry:last-child{padding-bottom:0}
+.sh-cat-body{display:flex;flex-direction:column;gap:var(--space-4);min-width:0}
+.sh-cat-title{margin:0;font:var(--type-title);color:var(--text-primary);text-wrap:balance}
+.sh-cat-text{margin:0;font:var(--type-body);color:var(--text-secondary);max-width:var(--measure-body)}
+.sh-cat-facts{margin-top:var(--space-3)}
+.sh-cat-action{margin-top:var(--space-2)}
+.sh-cat-entry:target .sh-cat-title{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:6px;text-decoration-color:var(--text-brand)}
+@media (max-width:759.98px){.sh-cat-entry>.sh-media{margin-inline:calc(-1 * var(--layout-gutter))}}
+@media (min-width:1000px){
+  .sh-cat-entry{grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:calc(var(--grid-gap) * 2);align-items:center}
+  .sh-cat[data-alternate="true"] .sh-cat-entry:nth-child(even)>.sh-media{order:2}
+  .sh-cat[data-alternate="true"] .sh-cat-entry:nth-child(even){grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+  .sh-cat[data-media="half"] .sh-cat-entry,.sh-cat[data-media="half"][data-alternate="true"] .sh-cat-entry:nth-child(even){grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+}
+`;
+function ensure() {
+  if (typeof document === "undefined" || document.getElementById("sh-cat-css")) return;
+  const el = document.createElement("style");
+  el.id = "sh-cat-css";
+  el.textContent = CSS;
+  document.head.appendChild(el);
+}
+
+/* entries: [{ id, title, text?, meta?, src?, alt?, media?, position?, facts?, action? }] */
+function CatalogueSection({
+  entries = [],
+  alternate = true,
+  media = "5",
+  ratio = "4:3",
+  headingLevel = 3,
+  style,
+  ...rest
+}) {
+  ensure();
+  const H = "h" + headingLevel;
+  return /*#__PURE__*/React.createElement("div", _extends({
+    "data-ds-id": "sections/CatalogueSection",
+    className: "sh-cat",
+    "data-alternate": String(alternate),
+    "data-media": media === "half" ? "half" : "5",
+    style: style
+  }, rest), entries.map(e => /*#__PURE__*/React.createElement("article", {
+    className: "sh-cat-entry",
+    id: e.id,
+    key: e.id || e.title
+  }, e.media || (e.src ? /*#__PURE__*/React.createElement(Media, {
+    src: e.src,
+    alt: e.alt || "",
+    ratio: ratio,
+    position: e.position
+  }) : null), /*#__PURE__*/React.createElement("div", {
+    className: "sh-cat-body"
+  }, /*#__PURE__*/React.createElement(H, {
+    className: "sh-cat-title"
+  }, e.title), e.meta ? Array.isArray(e.meta) || typeof e.meta === "string" ? /*#__PURE__*/React.createElement(MetaRow, {
+    items: e.meta
+  }) : e.meta : null, e.text ? /*#__PURE__*/React.createElement("p", {
+    className: "sh-cat-text"
+  }, e.text) : null, e.facts ? /*#__PURE__*/React.createElement("div", {
+    className: "sh-cat-facts"
+  }, e.facts) : null, e.action ? /*#__PURE__*/React.createElement("div", {
+    className: "sh-cat-action"
+  }, e.action) : null))));
+}
+Object.assign(__ds_scope, { CatalogueSection });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/CatalogueSection.jsx", error: String((e && e.message) || e) }); }
+
 // components/sections/ClosingCTA.jsx
 try { (() => {
-const { Media, Statement, Icon } = __ds_scope;
+const { Media, Statement, Icon, Button, TextLink } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 /* The closing call to action (deck slide 18) — ONLY for pages that otherwise have no CTA.
    variant "photo": a full-bleed dark photograph, 72svh, statement bottom-left.
@@ -6027,6 +6317,11 @@ function Contact({
     }, inner) : inner);
   }));
 }
+
+/* variant "whatsapp": the ground layout with WhatsApp as the primary action and a call as
+   the second (pass `whatsapp` — a wa.me URL — and `phone`, a tel: URL, from content/site.json).
+   variant "tariff": a compact band that sends the reader to the tariff page (`tariffHref`):
+   programme and room pages never quote a rate, so this is their commercial close. */
 function ClosingCTA({
   variant,
   ground = "pine",
@@ -6038,19 +6333,52 @@ function ClosingCTA({
   action,
   secondaryAction,
   contact,
+  whatsapp,
+  phone,
+  phoneLabel,
+  tariffHref = "/en/tariffs",
   titleAs = "h2",
   style,
   ...rest
 }) {
   ensure();
   const v = variant || (src ? "photo" : "ground");
-  const g = v === "photo" ? "photo" : ground;
-  const acts = action || secondaryAction ? /*#__PURE__*/React.createElement(React.Fragment, null, action, secondaryAction) : null;
-  const compact = v === "compact";
+  const g = v === "photo" ? "photo" : v === "tariff" && ground === "pine" ? "stone" : ground;
+  let primary = action,
+    secondary = secondaryAction,
+    heading = title;
+  if (v === "whatsapp") {
+    primary = action || (whatsapp ? /*#__PURE__*/React.createElement(Button, {
+      size: "lg",
+      href: whatsapp,
+      startIcon: /*#__PURE__*/React.createElement(Icon, {
+        name: "message-circle",
+        size: 18
+      })
+    }, "Message us on WhatsApp") : null);
+    secondary = secondaryAction || (phone ? /*#__PURE__*/React.createElement(Button, {
+      size: "lg",
+      variant: "secondary",
+      href: phone,
+      startIcon: /*#__PURE__*/React.createElement(Icon, {
+        name: "phone",
+        size: 18
+      })
+    }, phoneLabel || "Call us") : null);
+  }
+  if (v === "tariff") {
+    heading = title || "Current rates and what a stay includes";
+    primary = action || /*#__PURE__*/React.createElement(TextLink, {
+      href: tariffHref
+    }, "View the tariff");
+  }
+  const acts = primary || secondary ? /*#__PURE__*/React.createElement(React.Fragment, null, primary, secondary) : null;
+  const compact = v === "compact" || v === "tariff";
   return /*#__PURE__*/React.createElement("section", _extends({
     "data-ds-id": "sections/ClosingCTA",
     className: "sh-close",
-    "data-variant": v,
+    "data-variant": compact ? "compact" : v === "whatsapp" ? "ground" : v,
+    "data-kind": v,
     "data-ground": g,
     style: style
   }, rest), v === "photo" && src ? /*#__PURE__*/React.createElement(Media, {
@@ -6070,7 +6398,7 @@ function ClosingCTA({
     size: compact ? "h3" : "statement",
     sub: sub,
     measure: compact ? "32ch" : undefined
-  }, title), acts ? /*#__PURE__*/React.createElement("div", {
+  }, heading), acts ? /*#__PURE__*/React.createElement("div", {
     className: "sh-actions sh-close-actions",
     "data-stack": "mobile"
   }, acts) : null), /*#__PURE__*/React.createElement(Contact, {
@@ -6080,32 +6408,643 @@ function ClosingCTA({
 Object.assign(__ds_scope, { ClosingCTA });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/ClosingCTA.jsx", error: String((e && e.message) || e) }); }
 
+// components/sections/TileGrid.jsx
+try { (() => {
+const { Statement } = __ds_scope;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* Deck slide 11. A heading row (statement + one text link on the right), then tiles.
+   layout "3": three across from 1000px. layout "feature": one large tile (7 columns) and
+   the rest stacked beside it (5 columns). layout "2": two across.
+   Never an uneven last row: on tablets (760–999px) an odd count makes the first tile span
+   both columns; on phones tiles stack. Keep counts to multiples of the column count. */
+const CSS = `
+.sh-tgrid{display:flex;flex-direction:column;gap:var(--stack-lg)}
+.sh-tgrid-head{display:flex;flex-direction:column;gap:var(--space-5)}
+.sh-tgrid-items{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--space-10) var(--grid-gap)}
+/* layout "list": one tile per row, photograph beside the text from 760px (Tile layout "row"). */
+.sh-tgrid-items[data-layout="list"]{grid-template-columns:minmax(0,1fr) !important;gap:0}
+.sh-tgrid-items[data-layout="list"]>.sh-tile{padding-block:var(--space-8);border-top:var(--border-width) solid var(--rule-color)}
+.sh-tgrid-items[data-layout="list"]>.sh-tile:first-child{border-top:0;padding-top:0}
+.sh-tgrid-items[data-layout="list"][data-odd="true"]>:first-child{grid-column:auto}
+.sh-tgrid-foot{margin:0;font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-body)}
+@media (min-width:760px){
+  .sh-tgrid-head{flex-direction:row;align-items:flex-end;justify-content:space-between;gap:var(--grid-gap)}
+  .sh-tgrid-head>:last-child:not(:first-child){flex:0 0 auto}
+  .sh-tgrid-items{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sh-tgrid-items[data-odd="true"]>:first-child{grid-column:1/-1}
+  /* Uniform tiles: tiles in a row share the rows photograph, title, meta, text — so a
+     two-line title or a longer description never pushes its neighbours' text out of line.
+     Each part is placed in its own row, so a tile without meta or text keeps the others. */
+  /* The parent's row gap would sit between a tile's own rows, so it is zero here and each
+     tile carries a fifth spacer row that makes the gap between rows of tiles. */
+  .sh-tgrid-items:not([data-layout="feature"]):not([data-layout="list"]){row-gap:0;margin-bottom:calc(var(--space-10) * -1)}
+  .sh-tgrid-items:not([data-layout="feature"]):not([data-layout="list"])>.sh-tile[data-layout="stack"]{display:grid;grid-template-rows:subgrid;grid-row:span 5;row-gap:0;align-content:start}
+  .sh-tgrid-items:not([data-layout="feature"]):not([data-layout="list"])>.sh-tile[data-layout="stack"]::after{content:"";grid-row:5;height:var(--space-10)}
+  .sh-tgrid-items:not([data-layout="feature"]):not([data-layout="list"])>.sh-tile[data-layout="stack"]>.sh-tile-body{display:contents}
+  .sh-tgrid-items:not([data-layout="feature"]):not([data-layout="list"])>.sh-tile[data-layout="stack"]>.sh-media{grid-row:1}
+  .sh-tgrid-items:not([data-layout="feature"]):not([data-layout="list"])>.sh-tile[data-layout="stack"] .sh-tile-title{grid-row:2;align-self:start;margin-top:var(--space-5)}
+  .sh-tgrid-items:not([data-layout="feature"]):not([data-layout="list"])>.sh-tile[data-layout="stack"] .sh-tile-body>.sh-meta,
+  .sh-tgrid-items:not([data-layout="feature"]):not([data-layout="list"])>.sh-tile[data-layout="stack"] .sh-tile-meta{grid-row:3;align-self:start;margin-top:var(--space-2)}
+  .sh-tgrid-items:not([data-layout="feature"]):not([data-layout="list"])>.sh-tile[data-layout="stack"] .sh-tile-text{grid-row:4;align-self:start;margin-top:var(--space-3)}
+}
+@media (min-width:1000px){
+  .sh-tgrid-items[data-layout="3"]{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .sh-tgrid-items[data-layout="4"]{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .sh-tgrid-items[data-layout="4"][data-odd="true"]>:first-child{grid-column:auto}
+  .sh-tgrid-items[data-layout="3"][data-odd="true"]>:first-child{grid-column:auto}
+  .sh-tgrid-items[data-layout="2"][data-odd="true"]>:first-child{grid-column:1/-1}
+  .sh-tgrid-items[data-layout="feature"]{grid-template-columns:minmax(0,7fr) minmax(0,5fr);grid-auto-flow:dense}
+  .sh-tgrid-items[data-layout="feature"]>:first-child{grid-column:1;grid-row:1 / span var(--_rest,2)}
+  .sh-tgrid-items[data-layout="feature"]>:not(:first-child){grid-column:2}
+  .sh-tgrid-items[data-layout="feature"][data-odd="true"]>:first-child{grid-column:1}
+}
+`;
+function ensure() {
+  if (typeof document === "undefined" || document.getElementById("sh-tgrid-css")) return;
+  const el = document.createElement("style");
+  el.id = "sh-tgrid-css";
+  el.textContent = CSS;
+  document.head.appendChild(el);
+}
+function TileGrid({
+  title,
+  sub,
+  action,
+  layout = "3",
+  footnote,
+  children,
+  style,
+  ...rest
+}) {
+  ensure();
+  let items = React.Children.toArray(children).filter(Boolean);
+  if (layout === "list") items = items.map(c => React.isValidElement(c) ? React.cloneElement(c, {
+    layout: "row"
+  }) : c);
+  return /*#__PURE__*/React.createElement("div", _extends({
+    "data-ds-id": "sections/TileGrid",
+    className: "sh-tgrid",
+    style: style
+  }, rest), title || action ? /*#__PURE__*/React.createElement("div", {
+    className: "sh-tgrid-head"
+  }, title ? /*#__PURE__*/React.createElement(Statement, {
+    sub: sub
+  }, title) : /*#__PURE__*/React.createElement("span", null), action ? /*#__PURE__*/React.createElement("div", null, action) : null) : null, /*#__PURE__*/React.createElement("div", {
+    className: "sh-tgrid-items",
+    "data-layout": layout,
+    "data-odd": String(items.length % 2 === 1),
+    style: {
+      "--_rest": String(Math.max(1, items.length - 1))
+    }
+  }, items), footnote ? /*#__PURE__*/React.createElement("p", {
+    className: "sh-tgrid-foot"
+  }, footnote) : null);
+}
+Object.assign(__ds_scope, { TileGrid });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/TileGrid.jsx", error: String((e && e.message) || e) }); }
+
+// components/sections/ConfirmationSection.jsx
+try { (() => {
+const { Statement, Icon, Tile, TileGrid } = __ds_scope;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* What a visitor sees after sending a form: that it arrived, what happens next in plain
+   sentences, how to reach the team meanwhile (call, WhatsApp, email), a way back, and then
+   up to three cards to keep exploring. Which form decides the copy and the links — the
+   standard is in ui_kits/website/skill-content.md#confirmation-screens. Never a promised
+   response time that is not confirmed, never internal process. Rendered in place of the
+   form — focus moves to the title so a screen reader announces it (`autoFocus`), and the
+   page scrolls to it.
+   The message is one column capped at 44rem; the cards below it use the full container,
+   three across from 1000px (TileGrid). Phones: actions stack full width; contact one per
+   line; cards stack. */
+const CSS = `
+.sh-conf{display:flex;flex-direction:column;gap:var(--section-y-sm)}
+.sh-conf-main{display:flex;flex-direction:column;gap:var(--stack-lg);max-width:44rem}
+.sh-conf-explore{display:flex;flex-direction:column;gap:var(--stack-lg);padding-top:var(--section-y-sm);border-top:var(--border-width) solid var(--rule-color)}
+.sh-conf-mark{display:inline-grid;place-items:center;width:48px;height:48px;border-radius:var(--radius-pill);background:var(--surface-brand-soft);color:var(--text-brand)}
+.sh-conf [tabindex="-1"]:focus{outline:none}
+.sh-conf-next{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;border-top:var(--border-width) solid var(--rule-color)}
+.sh-conf-next>li{padding:var(--space-4) 0;border-bottom:var(--border-width) solid var(--rule-color);font:var(--type-body);color:var(--text-primary)}
+.sh-conf-label{margin:0 0 var(--space-3);font:var(--type-label);font-size:var(--text-sm);color:var(--text-secondary)}
+.sh-conf-ways{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:0 var(--space-8);font:var(--type-body-sm);color:var(--text-secondary)}
+.sh-conf-ways a,.sh-conf-ways span{display:inline-flex;align-items:center;gap:var(--space-3);min-height:var(--tap-min);color:inherit;text-decoration:none}
+.sh-conf-ways [data-icon]{color:var(--text-brand)}
+.sh-conf-ways a:focus-visible{outline:none;box-shadow:var(--ring-focus)}
+@media (hover: hover) and (pointer: fine){.sh-conf-ways a:hover{color:var(--text-primary);text-decoration:underline;text-underline-offset:4px}}
+@media (max-width:519.98px){.sh-conf-ways{flex-direction:column}}
+`;
+function ensure() {
+  if (typeof document === "undefined" || document.getElementById("sh-conf-css")) return;
+  const el = document.createElement("style");
+  el.id = "sh-conf-css";
+  el.textContent = CSS;
+  document.head.appendChild(el);
+}
+
+/* next: string[] · contact: [{ icon, label, href? }] ·
+   explore: [{ title, text?, meta?, src?, alt?, href }] — three cards (only the first three render).
+   An http(s) href opens in a new tab. */
+function ConfirmationSection({
+  title = "Consultation request received",
+  sub,
+  next = [],
+  nextLabel = "What happens next",
+  contact = [],
+  contactLabel = "If you need us sooner",
+  explore = [],
+  exploreLabel = "Keep exploring",
+  exploreLayout = "3",
+  actions,
+  autoFocus = true,
+  headingLevel = 1,
+  style,
+  ...rest
+}) {
+  ensure();
+  const ref = React.useRef(null);
+  React.useEffect(() => {
+    const h = ref.current && ref.current.querySelector(".sh-stmt-title");
+    if (!autoFocus || !h) return;
+    h.setAttribute("tabindex", "-1");
+    h.focus({
+      preventScroll: true
+    });
+    ref.current.scrollIntoView({
+      block: "start",
+      behavior: "smooth"
+    });
+  }, [autoFocus]);
+  return /*#__PURE__*/React.createElement("div", _extends({
+    "data-ds-id": "sections/ConfirmationSection",
+    className: "sh-conf",
+    ref: ref,
+    style: style
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    className: "sh-conf-main",
+    role: "status"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "sh-conf-mark",
+    "aria-hidden": "true"
+  }, /*#__PURE__*/React.createElement(Icon, {
+    name: "check",
+    size: 24
+  })), /*#__PURE__*/React.createElement(Statement, {
+    as: "h" + headingLevel,
+    size: "h1",
+    sub: sub,
+    actions: actions,
+    measure: "22ch"
+  }, title), next.length ? /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", {
+    className: "sh-conf-label"
+  }, nextLabel), /*#__PURE__*/React.createElement("ul", {
+    className: "sh-conf-next"
+  }, next.map(n => /*#__PURE__*/React.createElement("li", {
+    key: n
+  }, n)))) : null, contact.length ? /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", {
+    className: "sh-conf-label"
+  }, contactLabel), /*#__PURE__*/React.createElement("ul", {
+    className: "sh-conf-ways"
+  }, contact.map(c => {
+    const inner = /*#__PURE__*/React.createElement(React.Fragment, null, c.icon ? /*#__PURE__*/React.createElement(Icon, {
+      name: c.icon,
+      size: 16
+    }) : null, c.label);
+    return /*#__PURE__*/React.createElement("li", {
+      key: c.label
+    }, c.href ? /*#__PURE__*/React.createElement("a", {
+      href: c.href
+    }, inner) : /*#__PURE__*/React.createElement("span", null, inner));
+  }))) : null), explore.length ? /*#__PURE__*/React.createElement("div", {
+    className: "sh-conf-explore"
+  }, /*#__PURE__*/React.createElement(Statement, {
+    as: "h" + (headingLevel + 1)
+  }, exploreLabel), /*#__PURE__*/React.createElement(TileGrid, {
+    layout: exploreLayout
+  }, explore.slice(0, 3).map(x => {
+    const external = /^https?:/.test(x.href);
+    return /*#__PURE__*/React.createElement(Tile, _extends({
+      key: x.href,
+      src: x.src,
+      alt: x.alt,
+      ratio: "3:2",
+      title: x.title,
+      meta: x.meta,
+      text: x.text,
+      href: x.href,
+      headingLevel: headingLevel + 2
+    }, external ? {
+      target: "_blank",
+      rel: "noopener"
+    } : {}));
+  }))) : null);
+}
+Object.assign(__ds_scope, { ConfirmationSection });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/ConfirmationSection.jsx", error: String((e && e.message) || e) }); }
+
+// components/sections/ContactLocation.jsx
+try { (() => {
+const { Statement, Media, Icon, TextLink } = __ds_scope;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* How to reach Shantara: the ways to get in touch (call, WhatsApp, email), the address,
+   a photograph of the arrival with an "Open in Maps" link (no embedded map — it is heavy,
+   tracks visitors and is hard to use with a keyboard), and directions from the airport and
+   railway station. Numbers and address from content/site.json; distances from handbook §12.
+   Phones: contact → address → photograph → directions. ≥1000px: contact, address and
+   directions on the left (7 columns), the photograph on the right (5), top-aligned. */
+const CSS = `
+.sh-loc{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--stack-lg);align-items:start}
+.sh-loc-main{display:flex;flex-direction:column;gap:var(--stack-lg);min-width:0}
+.sh-loc-ways{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);border-top:var(--border-width) solid var(--rule-color)}
+.sh-loc-ways>li{border-bottom:var(--border-width) solid var(--rule-color)}
+.sh-loc-way{display:grid;grid-template-columns:24px minmax(0,1fr) auto;gap:var(--space-4);align-items:center;min-height:var(--tap-min);padding:var(--space-4) 0;color:inherit;text-decoration:none}
+.sh-loc-way [data-icon]{color:var(--text-brand)}
+.sh-loc-way-label{display:block;font:var(--type-caption);color:var(--text-secondary)}
+.sh-loc-way-value{display:block;font:var(--type-item-sm);color:var(--text-primary);overflow-wrap:anywhere}
+.sh-loc-way-go{color:var(--text-muted)}
+a.sh-loc-way:focus-visible{outline:none;box-shadow:var(--ring-focus)}
+@media (hover: hover) and (pointer: fine){a.sh-loc-way:hover .sh-loc-way-value{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}}
+.sh-loc-sub{margin:0 0 var(--space-4);font:var(--type-item-sm);color:var(--text-primary)}
+.sh-loc-address{margin:0;font-style:normal;font:var(--type-body);color:var(--text-secondary)}
+.sh-loc-dirs{list-style:none;margin:0;padding:0;display:grid;gap:var(--space-5)}
+.sh-loc-dir{display:grid;grid-template-columns:24px minmax(0,1fr);gap:var(--space-4);align-items:start}
+.sh-loc-dir [data-icon]{margin-top:2px;color:var(--text-brand)}
+.sh-loc-dir-title{display:block;font:var(--type-item-sm);color:var(--text-primary)}
+.sh-loc-dir-text{display:block;margin-top:var(--space-1);font:var(--type-body-sm);color:var(--text-secondary)}
+.sh-loc-side{display:flex;flex-direction:column;gap:var(--space-4);min-width:0}
+@media (max-width:999.98px){.sh-loc-side .sh-media{aspect-ratio:3 / 2}}
+@media (min-width:760px){.sh-loc-ways{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:calc(var(--grid-gap) * 2)}}
+@media (min-width:1000px){.sh-loc{grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:calc(var(--grid-gap) * 2)}}
+`;
+function ensure() {
+  if (typeof document === "undefined" || document.getElementById("sh-loc-css")) return;
+  const el = document.createElement("style");
+  el.id = "sh-loc-css";
+  el.textContent = CSS;
+  document.head.appendChild(el);
+}
+
+/* ways: [{ icon, label, value, href }] · address: string[] (lines) ·
+   directions: [{ icon, title, text }] · map: { href, label? } */
+function ContactLocation({
+  title = "How to reach us",
+  sub,
+  ways = [],
+  address = [],
+  directions = [],
+  src,
+  alt = "",
+  media,
+  map,
+  headingLevel = 2,
+  style,
+  ...rest
+}) {
+  ensure();
+  const H = "h" + Math.min(6, headingLevel + 1);
+  const figure = media || (src ? /*#__PURE__*/React.createElement(Media, {
+    src: src,
+    alt: alt,
+    ratio: "4:5",
+    mobileRatio: "4:3"
+  }) : null);
+  return /*#__PURE__*/React.createElement("div", _extends({
+    "data-ds-id": "sections/ContactLocation",
+    className: "sh-loc",
+    style: style
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    className: "sh-loc-main"
+  }, /*#__PURE__*/React.createElement(Statement, {
+    as: "h" + headingLevel,
+    size: "title",
+    sub: sub
+  }, title), ways.length ? /*#__PURE__*/React.createElement("ul", {
+    className: "sh-loc-ways"
+  }, ways.map(w => {
+    const inner = /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(Icon, {
+      name: w.icon || "phone",
+      size: 20
+    }), /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("span", {
+      className: "sh-loc-way-label"
+    }, w.label), /*#__PURE__*/React.createElement("span", {
+      className: "sh-loc-way-value"
+    }, w.value)), w.href ? /*#__PURE__*/React.createElement(Icon, {
+      name: "arrow-right",
+      size: 16,
+      className: "sh-loc-way-go"
+    }) : /*#__PURE__*/React.createElement("span", null));
+    return /*#__PURE__*/React.createElement("li", {
+      key: w.label
+    }, w.href ? /*#__PURE__*/React.createElement("a", {
+      className: "sh-loc-way",
+      href: w.href
+    }, inner) : /*#__PURE__*/React.createElement("div", {
+      className: "sh-loc-way"
+    }, inner));
+  })) : null, address.length ? /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(H, {
+    className: "sh-loc-sub"
+  }, "Address"), /*#__PURE__*/React.createElement("address", {
+    className: "sh-loc-address"
+  }, address.map((l, i) => /*#__PURE__*/React.createElement(React.Fragment, {
+    key: i
+  }, l, i < address.length - 1 ? /*#__PURE__*/React.createElement("br", null) : null)))) : null, directions.length ? /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(H, {
+    className: "sh-loc-sub"
+  }, "Getting here"), /*#__PURE__*/React.createElement("ul", {
+    className: "sh-loc-dirs"
+  }, directions.map(d => /*#__PURE__*/React.createElement("li", {
+    className: "sh-loc-dir",
+    key: d.title
+  }, /*#__PURE__*/React.createElement(Icon, {
+    name: d.icon || "car",
+    size: 20
+  }), /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("span", {
+    className: "sh-loc-dir-title"
+  }, d.title), d.text ? /*#__PURE__*/React.createElement("span", {
+    className: "sh-loc-dir-text"
+  }, d.text) : null))))) : null), figure || map ? /*#__PURE__*/React.createElement("div", {
+    className: "sh-loc-side"
+  }, figure, map && map.href ? /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(TextLink, {
+    href: map.href,
+    target: "_blank",
+    rel: "noopener",
+    arrow: false,
+    endIcon: /*#__PURE__*/React.createElement(Icon, {
+      name: "external-link",
+      size: 16
+    })
+  }, map.label || "Open in Maps")) : null) : null);
+}
+Object.assign(__ds_scope, { ContactLocation });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/ContactLocation.jsx", error: String((e && e.message) || e) }); }
+
+// components/sections/CredentialStrip.jsx
+try { (() => {
+const { Statement, Icon } = __ds_scope;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* Credentials, spelled out — About and doctor profiles. Each item is the credential's exact
+   name, who issued it, the number where appropriate and whose it is. Only entries on the
+   verified credentials list in docs/handbook/glossary.md, and never one shown as a bare
+   logo. An entry whose issuer or proof is still "[…]" in that list is left out until it
+   is filled.
+   Phones: one column. ≥760px: two. ≥1000px: three. */
+const CSS = `
+.sh-cred{display:flex;flex-direction:column;gap:var(--stack-lg)}
+.sh-cred-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:0 calc(var(--grid-gap) * 1.5)}
+.sh-cred-item{display:grid;grid-template-columns:24px minmax(0,1fr);gap:var(--space-4);align-items:start;padding:var(--space-5) 0;border-top:var(--border-width) solid var(--rule-color)}
+.sh-cred-item [data-icon]{margin-top:2px;color:var(--text-brand)}
+.sh-cred-name{display:block;font:var(--type-item-sm);color:var(--text-primary)}
+.sh-cred-issuer{display:block;margin-top:var(--space-1);font:var(--type-body-sm);color:var(--text-secondary)}
+.sh-cred-meta{display:block;margin-top:var(--space-2);font:var(--type-caption);color:var(--text-muted)}
+@media (min-width:760px){.sh-cred-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1000px){.sh-cred-list{grid-template-columns:repeat(3,minmax(0,1fr))}}
+`;
+function ensure() {
+  if (typeof document === "undefined" || document.getElementById("sh-cred-css")) return;
+  const el = document.createElement("style");
+  el.id = "sh-cred-css";
+  el.textContent = CSS;
+  document.head.appendChild(el);
+}
+
+/* items: [{ name, issuer, holder?, number? }] */
+function CredentialStrip({
+  title,
+  sub,
+  items = [],
+  headingLevel = 2,
+  style,
+  ...rest
+}) {
+  ensure();
+  return /*#__PURE__*/React.createElement("div", _extends({
+    "data-ds-id": "sections/CredentialStrip",
+    className: "sh-cred",
+    style: style
+  }, rest), title ? /*#__PURE__*/React.createElement(Statement, {
+    as: "h" + headingLevel,
+    size: "title",
+    sub: sub
+  }, title) : null, /*#__PURE__*/React.createElement("ul", {
+    className: "sh-cred-list"
+  }, items.map((c, i) => /*#__PURE__*/React.createElement("li", {
+    className: "sh-cred-item",
+    key: c.name + i
+  }, /*#__PURE__*/React.createElement(Icon, {
+    name: "award",
+    size: 22
+  }), /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("span", {
+    className: "sh-cred-name"
+  }, c.name), c.issuer ? /*#__PURE__*/React.createElement("span", {
+    className: "sh-cred-issuer"
+  }, c.issuer) : null, c.holder || c.number ? /*#__PURE__*/React.createElement("span", {
+    className: "sh-cred-meta"
+  }, [c.holder, c.number ? "No. " + c.number : null].filter(Boolean).join(" · ")) : null)))));
+}
+Object.assign(__ds_scope, { CredentialStrip });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/CredentialStrip.jsx", error: String((e && e.message) || e) }); }
+
+// components/sections/FaqSection.jsx
+try { (() => {
+const { Statement, Accordion } = __ds_scope;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* Questions and answers: a statement (and one optional link) on the left, the questions on
+   the right as an Accordion. Pass `items` for one list, or `groups` for named groups
+   (content/faq.json `categories`). `schema` emits FAQPage JSON-LD from the plain-text
+   answers, so the page ships the same questions to search.
+   <1000px: statement above the questions. ≥1000px: 4 / 8 columns, the statement sticky
+   while the questions scroll (tall windows only). */
+const CSS = `
+.sh-faq{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--stack-lg);align-items:start}
+.sh-faq-head{display:flex;flex-direction:column;gap:var(--space-5);min-width:0}
+.sh-faq-list{display:flex;flex-direction:column;gap:var(--stack-lg);min-width:0}
+.sh-faq-group{display:flex;flex-direction:column;gap:var(--space-3)}
+.sh-faq-group-title{margin:0;font:var(--type-label);font-size:var(--text-sm);color:var(--text-secondary)}
+.sh-faq-answer{margin:0;font:var(--type-body);color:var(--text-secondary);max-width:var(--measure-body)}
+@media (min-width:1000px){
+  .sh-faq{grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:calc(var(--grid-gap) * 2)}
+}
+@media (min-width:1000px) and (min-height:800px){
+  .sh-faq-head{position:sticky;top:calc(var(--header-h, 72px) + var(--space-6))}
+}
+`;
+function ensure() {
+  if (typeof document === "undefined" || document.getElementById("sh-faq-css")) return;
+  const el = document.createElement("style");
+  el.id = "sh-faq-css";
+  el.textContent = CSS;
+  document.head.appendChild(el);
+}
+const toItems = faqs => faqs.map(f => ({
+  title: f.question,
+  content: typeof f.answer === "string" ? /*#__PURE__*/React.createElement("p", {
+    className: "sh-faq-answer"
+  }, f.answer) : f.answer
+}));
+
+/* items: [{ question, answer }] · groups: [{ name, faqs: [{ question, answer }] }] */
+function FaqSection({
+  title = "Questions guests ask",
+  sub,
+  action,
+  items,
+  groups,
+  schema = false,
+  headingLevel = 2,
+  defaultOpen = null,
+  style,
+  ...rest
+}) {
+  ensure();
+  const H = "h" + Math.min(6, headingLevel + 1);
+  const all = groups ? groups.flatMap(g => g.faqs || []) : items || [];
+  const ld = schema ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: all.filter(f => typeof f.answer === "string").map(f => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: f.answer
+      }
+    }))
+  } : null;
+  return /*#__PURE__*/React.createElement("div", _extends({
+    "data-ds-id": "sections/FaqSection",
+    className: "sh-faq",
+    style: style
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    className: "sh-faq-head"
+  }, /*#__PURE__*/React.createElement(Statement, {
+    as: "h" + headingLevel,
+    size: "title",
+    sub: sub
+  }, title), action ? /*#__PURE__*/React.createElement("div", null, action) : null), /*#__PURE__*/React.createElement("div", {
+    className: "sh-faq-list"
+  }, groups ? groups.map(g => /*#__PURE__*/React.createElement("section", {
+    className: "sh-faq-group",
+    key: g.name
+  }, /*#__PURE__*/React.createElement(H, {
+    className: "sh-faq-group-title"
+  }, g.name), /*#__PURE__*/React.createElement(Accordion, {
+    items: toItems(g.faqs || []),
+    defaultOpen: defaultOpen
+  }))) : /*#__PURE__*/React.createElement(Accordion, {
+    items: toItems(all),
+    defaultOpen: defaultOpen
+  })), ld ? /*#__PURE__*/React.createElement("script", {
+    type: "application/ld+json",
+    dangerouslySetInnerHTML: {
+      __html: JSON.stringify(ld)
+    }
+  }) : null);
+}
+Object.assign(__ds_scope, { FaqSection });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/FaqSection.jsx", error: String((e && e.message) || e) }); }
+
+// components/sections/FeatureGrid.jsx
+try { (() => {
+const { Statement, Icon } = __ds_scope;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* Facilities at a glance — an icon, a short label and one line, in a grid. Only amenities
+   named in the handbook amenities section (docs/handbook/property.md); never add one. The
+   workstations are an exception to the device policy, not a feature — leave them out of a
+   marketing grid. Icons from the curated Lucide registry (core/Icon).
+   Phones: one column, icon beside the text. ≥520px: two. ≥1000px: `columns` (3 or 4). */
+const CSS = `
+.sh-feat{display:flex;flex-direction:column;gap:var(--stack-lg)}
+.sh-feat-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:0 calc(var(--grid-gap) * 1.5)}
+.sh-feat-item{display:grid;grid-template-columns:28px minmax(0,1fr);gap:var(--space-4);align-items:start;padding:var(--space-5) 0;border-top:var(--border-width) solid var(--rule-color)}
+.sh-feat-item [data-icon]{margin-top:1px;color:var(--text-brand)}
+.sh-feat-title{margin:0;font:var(--type-item-sm);color:var(--text-primary)}
+.sh-feat-text{margin:var(--space-1) 0 0;font:var(--type-body-sm);color:var(--text-secondary);max-width:40ch}
+@media (min-width:520px){.sh-feat-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1000px){
+  .sh-feat-list{grid-template-columns:repeat(var(--_c,3),minmax(0,1fr))}
+  .sh-feat-item{grid-template-columns:minmax(0,1fr);gap:var(--space-4);padding-top:var(--space-6)}
+}
+`;
+function ensure() {
+  if (typeof document === "undefined" || document.getElementById("sh-feat-css")) return;
+  const el = document.createElement("style");
+  el.id = "sh-feat-css";
+  el.textContent = CSS;
+  document.head.appendChild(el);
+}
+
+/* items: [{ icon, title, text? }] */
+function FeatureGrid({
+  title,
+  sub,
+  items = [],
+  columns = 3,
+  action,
+  headingLevel = 2,
+  style,
+  ...rest
+}) {
+  ensure();
+  const H = "h" + Math.min(6, headingLevel + 1);
+  return /*#__PURE__*/React.createElement("div", _extends({
+    "data-ds-id": "sections/FeatureGrid",
+    className: "sh-feat",
+    style: {
+      "--_c": String(columns === 4 ? 4 : 3),
+      ...style
+    }
+  }, rest), title ? /*#__PURE__*/React.createElement(Statement, {
+    as: "h" + headingLevel,
+    sub: sub
+  }, title) : null, /*#__PURE__*/React.createElement("ul", {
+    className: "sh-feat-list"
+  }, items.map(it => /*#__PURE__*/React.createElement("li", {
+    className: "sh-feat-item",
+    key: it.title
+  }, /*#__PURE__*/React.createElement(Icon, {
+    name: it.icon || "leaf",
+    size: 24
+  }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(H, {
+    className: "sh-feat-title"
+  }, it.title), it.text ? /*#__PURE__*/React.createElement("p", {
+    className: "sh-feat-text"
+  }, it.text) : null)))), action ? /*#__PURE__*/React.createElement("div", null, action) : null);
+}
+Object.assign(__ds_scope, { FeatureGrid });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/FeatureGrid.jsx", error: String((e && e.message) || e) }); }
+
 // components/sections/FormSplit.jsx
 try { (() => {
+const { Media } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* The consultation form on Merino with square fields, beside a Stone panel that shows who
-   will call (a doctor portrait) and what happens next. The form comes first on phones.
+/* The consultation form on Merino with square fields, beside a Stone panel that says what
+   happens next. The panel opens with a photograph of the place — `src`/`alt` (or `media`) —
+   running edge to edge across its top at 4:3; reception.jpg by default in the demos. Not a
+   doctor thumbnail: the panel copy says a member of the team calls first.
    The left column is a real <form>: Enter submits, `required` fields are checked by the
    browser, and assistive technology announces a form. Give the button type="submit" and
    handle onSubmit.
-   ≥1000px: form 7 columns, panel 5 columns, the panel sticky while the form scrolls — only
-   when the window is tall enough to show the whole panel (short laptop windows and large
-   text keep it in the flow so its lower half is never hidden). */
+   Phones: form first, then the panel (photograph on top). ≥1000px: form 7 columns, panel 5,
+   sticky while the form scrolls in windows at least 800px tall.
+   `compact`: the same form without the panel, capped at 44rem; name and phone fields sit
+   side by side from 760px — for Hosted visits or the end of a condition page. */
 const CSS = `
 .sh-fsplit{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--stack-lg);align-items:start}
 .sh-fsplit-form{min-width:0;display:flex;flex-direction:column;gap:var(--space-6);margin:0}
-.sh-fsplit-aside{min-width:0;background:var(--ground-stone);padding:clamp(24px, 2.2vw + 16px, 48px);display:flex;flex-direction:column;gap:var(--space-7)}
-/* Who will call: a fixed 4:5 thumbnail beside the name and role — the same size at every
-   width, so the panel never becomes a full-height portrait (phone) or a small frame
-   stranded in a wide panel (desktop). */
-.sh-fsplit-aside>.sh-portrait{display:grid;grid-template-columns:clamp(88px, 3vw + 64px, 120px) minmax(0,1fr);align-items:end;gap:var(--space-5)}
-.sh-fsplit-aside>.sh-portrait figcaption{padding-bottom:var(--space-1)}
-.sh-fsplit-aside>.sh-portrait .sh-portrait-initials{font-size:var(--text-2xl)}
+.sh-fsplit-aside{--_pad:clamp(24px, 2.2vw + 16px, 48px);min-width:0;background:var(--ground-stone);padding:var(--_pad);display:flex;flex-direction:column;gap:var(--space-6)}
+.sh-fsplit-photo{margin:calc(-1 * var(--_pad)) calc(-1 * var(--_pad)) var(--space-2)}
+.sh-fsplit-photo>.sh-media{aspect-ratio:4 / 3}
 @media (min-width:1000px){
   .sh-fsplit{grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:calc(var(--grid-gap) * 2.5)}
+  .sh-fsplit[data-compact="true"]{grid-template-columns:minmax(0,1fr)}
 }
 @media (min-width:1000px) and (min-height:800px){
-  .sh-fsplit-aside{position:sticky;top:calc(var(--space-12) + 16px)}
+  .sh-fsplit-aside{position:sticky;top:calc(var(--header-h, 72px) + 24px)}
+}
+.sh-fsplit[data-compact="true"] .sh-fsplit-form{max-width:44rem}
+@media (min-width:760px){
+  .sh-fsplit[data-compact="true"] .sh-fsplit-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-6) var(--grid-gap)}
+  .sh-fsplit[data-compact="true"] .sh-fsplit-form>*{grid-column:1/-1}
+  .sh-fsplit[data-compact="true"] .sh-fsplit-form>[data-ds-id="forms/Input"],
+  .sh-fsplit[data-compact="true"] .sh-fsplit-form>[data-ds-id="forms/Select"]{grid-column:auto}
 }
 `;
 function ensure() {
@@ -6118,6 +7057,11 @@ function ensure() {
 function FormSplit({
   children,
   aside,
+  src,
+  alt = "",
+  position,
+  media,
+  compact = false,
   onSubmit,
   action,
   method,
@@ -6128,9 +7072,17 @@ function FormSplit({
   ...rest
 }) {
   ensure();
+  const photo = media || (src ? /*#__PURE__*/React.createElement(Media, {
+    src: src,
+    alt: alt,
+    ratio: "4:3",
+    position: position
+  }) : null);
+  const panel = !compact && (aside || photo);
   return /*#__PURE__*/React.createElement("div", _extends({
     "data-ds-id": "sections/FormSplit",
     className: "sh-fsplit",
+    "data-compact": String(compact),
     style: style
   }, rest), /*#__PURE__*/React.createElement("form", _extends({
     className: "sh-fsplit-form",
@@ -6139,13 +7091,189 @@ function FormSplit({
     method: method,
     noValidate: noValidate,
     "aria-label": formLabel
-  }, formProps), children), aside ? /*#__PURE__*/React.createElement("aside", {
+  }, formProps), children), panel ? /*#__PURE__*/React.createElement("aside", {
     className: "sh-fsplit-aside",
     "data-ground": "stone"
-  }, aside) : null);
+  }, photo ? /*#__PURE__*/React.createElement("div", {
+    className: "sh-fsplit-photo"
+  }, photo) : null, aside) : null);
 }
 Object.assign(__ds_scope, { FormSplit });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/FormSplit.jsx", error: String((e && e.message) || e) }); }
+
+// components/sections/GalleryGrid.jsx
+try { (() => {
+const { Statement, Media } = __ds_scope;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* Photographs of a place — Rooms, Dining, Amenities, Hosted visits. A fixed rhythm of wide
+   and tall frames that repeats every five photographs, each with an optional caption. No
+   carousel, no lightbox, no thumbnail strip (skill-sections: one photograph per job).
+   Frames without guests; every photograph needs real alt text.
+   ≥1000px (6 columns): [wide 4 + tall 2] then [three at 2] — the tall frame stretches to
+   the wide frame's height. 760–999px: one wide across, then pairs. Phones: one column. */
+const CSS = `
+.sh-gal{display:flex;flex-direction:column;gap:var(--stack-lg)}
+.sh-gal-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--space-8) var(--grid-gap);align-items:stretch}
+.sh-gal-item{display:flex;flex-direction:column;gap:var(--space-3);margin:0;min-width:0}
+.sh-gal-item>.sh-media{flex:1 1 auto;aspect-ratio:4 / 3}
+.sh-gal-cap{font:var(--type-caption);color:var(--text-secondary);max-width:52ch}
+@media (min-width:760px){
+  .sh-gal-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sh-gal-item:nth-child(5n+1){grid-column:1/-1}
+  .sh-gal-item:nth-child(5n+1)>.sh-media{aspect-ratio:16 / 9}
+}
+@media (min-width:1000px){
+  .sh-gal-grid{grid-template-columns:repeat(6,minmax(0,1fr))}
+  .sh-gal-item{grid-column:span 2}
+  .sh-gal-item:nth-child(5n+1){grid-column:span 4}
+  .sh-gal-item:nth-child(5n+1)>.sh-media{aspect-ratio:3 / 2}
+  .sh-gal-item:nth-child(5n+2)>.sh-media{aspect-ratio:auto;min-height:240px}
+  .sh-gal-item:nth-child(5n+2){grid-column:span 2}
+  /* A lone last frame after a wide one would leave a gap: let it fill the row. */
+  .sh-gal-item:nth-child(5n+1):last-child{grid-column:1/-1}
+}
+`;
+function ensure() {
+  if (typeof document === "undefined" || document.getElementById("sh-gal-css")) return;
+  const el = document.createElement("style");
+  el.id = "sh-gal-css";
+  el.textContent = CSS;
+  document.head.appendChild(el);
+}
+
+/* items: [{ src, alt, caption?, position? }] — five or ten read best */
+function GalleryGrid({
+  title,
+  sub,
+  items = [],
+  action,
+  headingLevel = 2,
+  style,
+  ...rest
+}) {
+  ensure();
+  return /*#__PURE__*/React.createElement("div", _extends({
+    "data-ds-id": "sections/GalleryGrid",
+    className: "sh-gal",
+    style: style
+  }, rest), title ? /*#__PURE__*/React.createElement(Statement, {
+    as: "h" + headingLevel,
+    sub: sub
+  }, title) : null, /*#__PURE__*/React.createElement("div", {
+    className: "sh-gal-grid"
+  }, items.map((it, i) => /*#__PURE__*/React.createElement("figure", {
+    className: "sh-gal-item",
+    key: it.src + i
+  }, /*#__PURE__*/React.createElement(Media, {
+    src: it.src,
+    alt: it.alt || "",
+    ratio: "4:3",
+    position: it.position
+  }), it.caption ? /*#__PURE__*/React.createElement("figcaption", {
+    className: "sh-gal-cap"
+  }, it.caption) : null))), action ? /*#__PURE__*/React.createElement("div", null, action) : null);
+}
+Object.assign(__ds_scope, { GalleryGrid });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/GalleryGrid.jsx", error: String((e && e.message) || e) }); }
+
+// components/sections/GuestStory.jsx
+try { (() => {
+const { Statement, Media } = __ds_scope;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* A guest's own words. Only real stories with written consent (content/guest-stories,
+   content/testimonials — both empty today, so nothing ships until they are not). A name only
+   when the guest agreed to it; otherwise a first initial and the context of the stay. Never
+   a health result or a claim the clinical team would not make; never a face in therapy.
+   `story` — one story: a large quote, the attribution and the context of the stay, with an
+   optional photograph of the place (not the guest) beside it from 1000px.
+   `stories` — two or three short quotes side by side from 1000px, stacked below. No carousel. */
+const CSS = `
+.sh-story{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--stack-lg);align-items:center}
+.sh-story-quote{margin:0;display:flex;flex-direction:column;gap:var(--space-6);min-width:0}
+.sh-story-text{margin:0;font:var(--type-statement);color:var(--text-primary);max-width:var(--measure-statement);text-wrap:pretty}
+.sh-story-text::before{content:"\\201C"}.sh-story-text::after{content:"\\201D"}
+.sh-story-cite{display:flex;flex-direction:column;gap:var(--space-1);font:var(--type-body-sm);color:var(--text-secondary);font-style:normal}
+.sh-story-name{font-weight:var(--weight-medium);color:var(--text-primary)}
+.sh-story-cite::before{content:"";width:32px;height:1px;margin-bottom:var(--space-3);background:var(--text-brand)}
+.sh-story[data-has-media="true"]{align-items:end}
+@media (max-width:999.98px){.sh-story .sh-media{aspect-ratio:4 / 3}}
+@media (min-width:1000px){.sh-story[data-has-media="true"]{grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:calc(var(--grid-gap) * 2)}}
+.sh-stories{display:flex;flex-direction:column;gap:var(--stack-lg)}
+.sh-stories-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:var(--stack-lg) calc(var(--grid-gap) * 2)}
+.sh-stories-list .sh-story-text{font:var(--type-title)}
+.sh-stories-list>li{padding-top:var(--space-6);border-top:var(--border-width) solid var(--rule-color)}
+@media (min-width:1000px){.sh-stories-list{grid-template-columns:repeat(var(--_n,3),minmax(0,1fr))}}
+`;
+function ensure() {
+  if (typeof document === "undefined" || document.getElementById("sh-story-css")) return;
+  const el = document.createElement("style");
+  el.id = "sh-story-css";
+  el.textContent = CSS;
+  document.head.appendChild(el);
+}
+function Quote({
+  s
+}) {
+  return /*#__PURE__*/React.createElement("blockquote", {
+    className: "sh-story-quote"
+  }, /*#__PURE__*/React.createElement("p", {
+    className: "sh-story-text"
+  }, s.quote), /*#__PURE__*/React.createElement("footer", {
+    className: "sh-story-cite"
+  }, s.name ? /*#__PURE__*/React.createElement("span", {
+    className: "sh-story-name"
+  }, s.name) : null, s.context ? /*#__PURE__*/React.createElement("span", null, s.context) : null));
+}
+
+/* story / stories: { quote, name?, context?, src?, alt? } */
+function GuestStory({
+  story,
+  stories,
+  title,
+  sub,
+  headingLevel = 2,
+  style,
+  ...rest
+}) {
+  ensure();
+  if (stories) {
+    const shown = stories.slice(0, 3);
+    return /*#__PURE__*/React.createElement("div", _extends({
+      "data-ds-id": "sections/GuestStory",
+      className: "sh-stories",
+      style: {
+        "--_n": String(shown.length),
+        ...style
+      }
+    }, rest), title ? /*#__PURE__*/React.createElement(Statement, {
+      as: "h" + headingLevel,
+      sub: sub
+    }, title) : null, /*#__PURE__*/React.createElement("ul", {
+      className: "sh-stories-list"
+    }, shown.map((s, i) => /*#__PURE__*/React.createElement("li", {
+      key: i
+    }, /*#__PURE__*/React.createElement(Quote, {
+      s: s
+    })))));
+  }
+  const s = story || {};
+  const figure = s.src ? /*#__PURE__*/React.createElement(Media, {
+    src: s.src,
+    alt: s.alt || "",
+    ratio: "4:5",
+    mobileRatio: "4:3"
+  }) : null;
+  return /*#__PURE__*/React.createElement("div", _extends({
+    "data-ds-id": "sections/GuestStory",
+    className: "sh-story",
+    "data-has-media": String(!!figure),
+    style: style
+  }, rest), /*#__PURE__*/React.createElement(Quote, {
+    s: s
+  }), figure);
+}
+Object.assign(__ds_scope, { GuestStory });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/GuestStory.jsx", error: String((e && e.message) || e) }); }
 
 // components/sections/HeroFullBleed.jsx
 try { (() => {
@@ -6232,7 +7360,7 @@ Object.assign(__ds_scope, { HeroFullBleed });
 
 // components/sections/HeroSplit.jsx
 try { (() => {
-const { Media, Statement, MetaRow } = __ds_scope;
+const { Media, Statement, MetaRow, Video } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 /* The OFFER hero, for programme and other detail pages. A photograph on one side that
    runs to the screen edge and the full hero height; on the other side, on a flat ground,
@@ -6245,7 +7373,7 @@ const CSS = `
 .sh-hsplit{container-type:inline-size;position:relative}
 .sh-hsplit-grid{display:grid;grid-template-columns:minmax(0,1fr)}
 .sh-hsplit-media{position:relative;min-width:0}
-.sh-hsplit-media>.sh-media{aspect-ratio:var(--_mr,var(--media-ratio))}
+.sh-hsplit-media>.sh-media,.sh-hsplit-media>.sh-video{aspect-ratio:var(--_mr,var(--media-ratio))}
 .sh-hsplit-text{min-width:0;display:flex;flex-direction:column;gap:var(--stack-lg);padding:calc(var(--space-12) + var(--section-y-sm)) var(--layout-gutter) var(--section-y-sm)}
 .sh-hsplit-main{display:flex;flex-direction:column;gap:var(--stack-lg);margin-block:auto}
 .sh-hsplit[data-mobile-first="true"] .sh-hsplit-media{order:-1}
@@ -6262,7 +7390,7 @@ const CSS = `
   .sh-hsplit[data-side="start"][data-split="60"] .sh-hsplit-grid{grid-template-columns:minmax(0,3fr) minmax(0,2fr)}
   .sh-hsplit-media,.sh-hsplit[data-mobile-first="true"] .sh-hsplit-media{order:2}
   .sh-hsplit[data-side="start"] .sh-hsplit-media{order:-1}
-  .sh-hsplit-media>.sh-media{position:absolute;inset:0;aspect-ratio:auto;height:100%}
+  .sh-hsplit-media>.sh-media,.sh-hsplit-media>.sh-video{position:absolute;inset:0;aspect-ratio:auto;height:100%}
   .sh-hsplit-text,.sh-hsplit[data-mobile-first="true"] .sh-hsplit-text{padding-block:calc(var(--space-12) + var(--section-y-sm)) var(--section-y-sm)}
   .sh-hsplit[data-side="end"] .sh-hsplit-text{padding-inline:var(--_outer) calc(var(--grid-gap) * 2.5)}
   .sh-hsplit[data-side="start"] .sh-hsplit-text{padding-inline:calc(var(--grid-gap) * 2.5) var(--_outer)}
@@ -6284,6 +7412,7 @@ const MR = {
 };
 function HeroSplit({
   media,
+  video,
   src,
   alt = "",
   position,
@@ -6307,14 +7436,18 @@ function HeroSplit({
   ...rest
 }) {
   ensure();
-  const figure = media || /*#__PURE__*/React.createElement(Media, {
+  /* `video`: a short muted loop in place of the photograph (editorial/Video, R2 only). */
+  const figure = media || (video ? /*#__PURE__*/React.createElement(Video, _extends({}, video, {
+    mode: "loop",
+    ratio: "4:3"
+  })) : /*#__PURE__*/React.createElement(Media, {
     src: src,
     alt: alt,
     ratio: "4:3",
     position: position,
     mobilePosition: mobilePosition,
     priority: true
-  });
+  }));
   const vars = {
     "--_mr": MR[mobileRatio] || mobileRatio
   };
@@ -6370,6 +7503,8 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
 const CSS = `
 .sh-hstmt{position:relative;display:flex;flex-direction:column}
 .sh-hstmt[data-tall="true"]{min-height:clamp(440px, 64svh, 760px)}
+/* variant "utility": legal pages, 404, confirmation — short, no band, no image, no rule. */
+.sh-hstmt[data-variant="utility"] .sh-hstmt-inner{padding-block:calc(var(--header-h, 72px) + var(--space-10)) var(--space-8)}
 .sh-hstmt>.sh-pp{flex:1 1 auto;display:flex;flex-direction:column}
 .sh-hstmt .sh-pp-body{flex:1 1 auto;display:flex;flex-direction:column}
 .sh-hstmt-inner{flex:1 1 auto;display:flex;flex-direction:column;justify-content:flex-end;padding-block:calc(var(--space-12) + var(--section-y-sm)) var(--section-y-sm)}
@@ -6401,6 +7536,7 @@ function ensure() {
   document.head.appendChild(el);
 }
 function HeroStatement({
+  variant = "editorial",
   title,
   sub,
   actions,
@@ -6422,6 +7558,12 @@ function HeroStatement({
   ...rest
 }) {
   ensure();
+  const utility = variant === "utility";
+  if (utility) {
+    pattern = false;
+    tall = false;
+    rule = !!meta;
+  }
   const edge = pattern === true ? "end" : pattern || null;
   const figure = media || (src ? /*#__PURE__*/React.createElement(Media, {
     src: src,
@@ -6461,6 +7603,7 @@ function HeroStatement({
     className: "sh-hstmt",
     "data-ground": ground,
     "data-tall": String(tall),
+    "data-variant": utility ? "utility" : undefined,
     "data-pattern": edge || undefined,
     style: style
   }, rest), edge ? /*#__PURE__*/React.createElement(PatternPanel, {
@@ -6474,6 +7617,222 @@ function HeroStatement({
 Object.assign(__ds_scope, { HeroStatement });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/HeroStatement.jsx", error: String((e && e.message) || e) }); }
 
+// components/sections/InPageNav.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* "On this page" — a sticky bar of jump links for long pages (programme detail, Therapies,
+   Rooms, legal). It sits under the site header, marks the section in view, and scrolls
+   sideways on phones instead of wrapping. Each target needs an `id`; CatalogueSection and
+   SplitSection (`id`) already reserve the header offset on their anchors. */
+const CSS = `
+.sh-ipn{position:sticky;top:var(--header-h, 72px);z-index:20;background:var(--surface-page);border-block:var(--border-width) solid var(--rule-color)}
+.sh-ipn[data-sticky="false"]{position:relative;top:auto}
+.sh-ipn-inner{display:flex;align-items:center;gap:var(--space-6)}
+.sh-ipn-label{flex:0 0 auto;font:var(--type-label);font-size:var(--text-xs);color:var(--text-muted)}
+.sh-ipn-list{display:flex;gap:var(--space-2);margin:0;padding:0;list-style:none;overflow-x:auto;scrollbar-width:none;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;mask-image:linear-gradient(to right, #000 calc(100% - 32px), transparent)}
+.sh-ipn-list::-webkit-scrollbar{display:none}
+.sh-ipn-list>li{flex:0 0 auto;scroll-snap-align:start}
+.sh-ipn-link{display:inline-flex;align-items:center;min-height:var(--tap-min);padding:0 var(--space-3);font:var(--type-body-sm);color:var(--text-secondary);text-decoration:none;white-space:nowrap;box-shadow:inset 0 -2px 0 transparent;transition:color var(--duration-fast) var(--ease-standard),box-shadow var(--duration-fast) var(--ease-standard)}
+.sh-ipn-link[aria-current="true"]{color:var(--text-primary);box-shadow:inset 0 -2px 0 var(--text-brand)}
+.sh-ipn-link:focus-visible{outline:none;box-shadow:var(--ring-focus)}
+@media (hover: hover) and (pointer: fine){.sh-ipn-link:hover{color:var(--text-primary)}}
+@media (max-width:759.98px){.sh-ipn-label{display:none}}
+@media (min-width:1000px){.sh-ipn-list{mask-image:none;flex-wrap:wrap;overflow:visible}}
+`;
+function ensure() {
+  if (typeof document === "undefined" || document.getElementById("sh-ipn-css")) return;
+  const el = document.createElement("style");
+  el.id = "sh-ipn-css";
+  el.textContent = CSS;
+  document.head.appendChild(el);
+}
+
+/* items: [{ id, label }] */
+function InPageNav({
+  items = [],
+  label = "On this page",
+  sticky = true,
+  activeId,
+  style,
+  ...rest
+}) {
+  ensure();
+  const [seen, setSeen] = React.useState(items[0] && items[0].id);
+  const listRef = React.useRef(null);
+  React.useEffect(() => {
+    if (activeId || typeof IntersectionObserver === "undefined") return undefined;
+    const els = items.map(it => document.getElementById(it.id)).filter(Boolean);
+    if (!els.length) return undefined;
+    const io = new IntersectionObserver(entries => {
+      const vis = entries.filter(e => e.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+      if (vis[0]) setSeen(vis[0].target.id);
+    }, {
+      rootMargin: "-20% 0px -65% 0px"
+    });
+    els.forEach(el => io.observe(el));
+    return () => io.disconnect();
+  }, [activeId, items.map(i => i.id).join("|")]);
+  const current = activeId || seen;
+  /* Keep the current link visible in the sideways-scrolling row. */
+  React.useEffect(() => {
+    const list = listRef.current;
+    const link = list && list.querySelector('[aria-current="true"]');
+    if (!link || list.scrollWidth <= list.clientWidth) return;
+    const l = link.offsetLeft,
+      r = l + link.offsetWidth;
+    if (l < list.scrollLeft || r > list.scrollLeft + list.clientWidth) list.scrollTo({
+      left: l - 16,
+      behavior: "smooth"
+    });
+  }, [current]);
+  return /*#__PURE__*/React.createElement("nav", _extends({
+    "data-ds-id": "sections/InPageNav",
+    className: "sh-ipn",
+    "aria-label": label,
+    "data-sticky": String(sticky),
+    style: style
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    className: "sh-container sh-ipn-inner"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "sh-ipn-label",
+    "aria-hidden": "true"
+  }, label), /*#__PURE__*/React.createElement("ul", {
+    className: "sh-ipn-list",
+    ref: listRef
+  }, items.map(it => /*#__PURE__*/React.createElement("li", {
+    key: it.id
+  }, /*#__PURE__*/React.createElement("a", {
+    className: "sh-ipn-link",
+    href: "#" + it.id,
+    "aria-current": current === it.id ? "true" : undefined,
+    onClick: () => setSeen(it.id)
+  }, it.label))))));
+}
+Object.assign(__ds_scope, { InPageNav });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/InPageNav.jsx", error: String((e && e.message) || e) }); }
+
+// components/sections/InclusionsSection.jsx
+try { (() => {
+const { Statement, Icon } = __ds_scope;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* What a stay includes — read from the structure in content/tariff.json: `includes`,
+   `excludes` and `supplements` (label + basis). Never a figure, currency or "from" price:
+   the one link goes to the tariff page, where the rates live.
+   Phones: one column. ≥760px: Included beside Not included; supplements under both.
+   ≥1000px: statement on the left (4 columns), the lists on the right (8). */
+const CSS = `
+.sh-incl{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--stack-lg);align-items:start}
+.sh-incl-head{display:flex;flex-direction:column;gap:var(--space-5);min-width:0}
+.sh-incl-cols{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--stack-lg) calc(var(--grid-gap) * 2);min-width:0}
+.sh-incl-col{display:flex;flex-direction:column;gap:var(--space-4);min-width:0}
+.sh-incl-col[data-span="all"]{grid-column:1/-1}
+.sh-incl-title{margin:0;padding-bottom:var(--space-3);border-bottom:var(--border-width) solid var(--rule-color);font:var(--type-item-sm);color:var(--text-primary)}
+.sh-incl-list{list-style:none;margin:0;padding:0;display:grid;gap:var(--space-3)}
+.sh-incl-list li{display:grid;grid-template-columns:20px minmax(0,1fr);gap:var(--space-3);align-items:start;font:var(--type-body-sm);color:var(--text-primary)}
+.sh-incl-list li [data-icon]{margin-top:2px;color:var(--text-brand)}
+.sh-incl-list[data-kind="excludes"] li [data-icon]{color:var(--text-muted)}
+.sh-incl-basis{display:block;margin-top:var(--space-1);font:var(--type-caption);color:var(--text-secondary)}
+.sh-incl-notes{margin:0;padding:0;list-style:none;display:grid;gap:var(--space-2);font:var(--type-caption);color:var(--text-secondary);max-width:var(--measure-body)}
+@media (min-width:760px){
+  .sh-incl-cols{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sh-incl-col[data-kind="supplements"] .sh-incl-list{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:calc(var(--grid-gap) * 2)}
+}
+@media (min-width:1000px){.sh-incl{grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:calc(var(--grid-gap) * 2)}}
+`;
+function ensure() {
+  if (typeof document === "undefined" || document.getElementById("sh-incl-css")) return;
+  const el = document.createElement("style");
+  el.id = "sh-incl-css";
+  el.textContent = CSS;
+  document.head.appendChild(el);
+}
+
+/* includes / excludes: string[] · supplements: [{ label, basis }] · notes: string[] */
+function InclusionsSection({
+  title = "What your stay includes",
+  sub,
+  includes = [],
+  excludes = [],
+  supplements = [],
+  notes = [],
+  action,
+  labels = {},
+  headingLevel = 2,
+  style,
+  ...rest
+}) {
+  ensure();
+  const H = "h" + Math.min(6, headingLevel + 1);
+  const L = {
+    includes: "Included",
+    excludes: "Not included",
+    supplements: "Supplements",
+    ...labels
+  };
+  return /*#__PURE__*/React.createElement("div", _extends({
+    "data-ds-id": "sections/InclusionsSection",
+    className: "sh-incl",
+    style: style
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    className: "sh-incl-head"
+  }, /*#__PURE__*/React.createElement(Statement, {
+    as: "h" + headingLevel,
+    size: "title",
+    sub: sub
+  }, title), action ? /*#__PURE__*/React.createElement("div", null, action) : null), /*#__PURE__*/React.createElement("div", {
+    className: "sh-incl-cols"
+  }, includes.length ? /*#__PURE__*/React.createElement("div", {
+    className: "sh-incl-col",
+    "data-kind": "includes"
+  }, /*#__PURE__*/React.createElement(H, {
+    className: "sh-incl-title"
+  }, L.includes), /*#__PURE__*/React.createElement("ul", {
+    className: "sh-incl-list",
+    "data-kind": "includes"
+  }, includes.map(t => /*#__PURE__*/React.createElement("li", {
+    key: t
+  }, /*#__PURE__*/React.createElement(Icon, {
+    name: "check",
+    size: 18
+  }), t)))) : null, excludes.length ? /*#__PURE__*/React.createElement("div", {
+    className: "sh-incl-col",
+    "data-kind": "excludes"
+  }, /*#__PURE__*/React.createElement(H, {
+    className: "sh-incl-title"
+  }, L.excludes), /*#__PURE__*/React.createElement("ul", {
+    className: "sh-incl-list",
+    "data-kind": "excludes"
+  }, excludes.map(t => /*#__PURE__*/React.createElement("li", {
+    key: t
+  }, /*#__PURE__*/React.createElement(Icon, {
+    name: "minus",
+    size: 18
+  }), t)))) : null, supplements.length ? /*#__PURE__*/React.createElement("div", {
+    className: "sh-incl-col",
+    "data-kind": "supplements",
+    "data-span": "all"
+  }, /*#__PURE__*/React.createElement(H, {
+    className: "sh-incl-title"
+  }, L.supplements), /*#__PURE__*/React.createElement("ul", {
+    className: "sh-incl-list",
+    "data-kind": "supplements"
+  }, supplements.map(s => /*#__PURE__*/React.createElement("li", {
+    key: s.label
+  }, /*#__PURE__*/React.createElement(Icon, {
+    name: "plus",
+    size: 18
+  }), /*#__PURE__*/React.createElement("span", null, s.label, s.basis ? /*#__PURE__*/React.createElement("span", {
+    className: "sh-incl-basis"
+  }, s.basis) : null))))) : null, notes.length ? /*#__PURE__*/React.createElement("ul", {
+    className: "sh-incl-notes sh-incl-col",
+    "data-span": "all"
+  }, notes.map(n => /*#__PURE__*/React.createElement("li", {
+    key: n
+  }, n))) : null));
+}
+Object.assign(__ds_scope, { InclusionsSection });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/InclusionsSection.jsx", error: String((e && e.message) || e) }); }
+
 // components/sections/IndexList.jsx
 try { (() => {
 const { Icon } = __ds_scope;
@@ -6486,6 +7845,8 @@ const CSS = `
 .sh-index{display:flex;flex-direction:column;gap:var(--section-y-sm)}
 .sh-index-group{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--space-6) var(--grid-gap)}
 .sh-index-label{margin:0;font:var(--type-title);color:var(--text-primary)}
+.sh-index-count{margin-inline-start:var(--space-3);font:var(--type-body-sm);color:var(--text-muted);font-variant-numeric:tabular-nums}
+.sh-index-link[data-anchor]{grid-template-columns:minmax(0,1fr)}
 .sh-index-items{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);column-gap:var(--grid-gap)}
 .sh-index-item{border-top:var(--border-width) solid var(--rule-color)}
 .sh-index-link{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--space-2) var(--space-5);align-items:baseline;padding:var(--space-6) 0;color:inherit;text-decoration:none;min-height:var(--tap-min)}
@@ -6513,10 +7874,14 @@ function ensure() {
 }
 
 /* groups: [{ label, items: [{ title, text?, href?, onClick? }] }] */
+/* anchors: rows link to sections on the same page (it.id → #id) and show no arrow.
+   counts: the number of rows beside each group label. */
 function IndexList({
   groups = [],
   columns = 2,
   headingLevel = 2,
+  anchors = false,
+  counts = false,
   style,
   ...rest
 }) {
@@ -6532,20 +7897,24 @@ function IndexList({
     key: g.label
   }, /*#__PURE__*/React.createElement(H, {
     className: "sh-index-label"
-  }, g.label), /*#__PURE__*/React.createElement("ul", {
+  }, g.label, counts ? /*#__PURE__*/React.createElement("span", {
+    className: "sh-index-count"
+  }, g.items.length) : null), /*#__PURE__*/React.createElement("ul", {
     className: "sh-index-items",
     "data-columns": String(columns)
   }, g.items.map(it => {
-    const linked = !!(it.href || it.onClick);
+    const href = it.href || (anchors && it.id ? "#" + it.id : undefined);
+    const linked = !!(href || it.onClick);
     const Tag = linked ? "a" : "div";
     return /*#__PURE__*/React.createElement("li", {
       className: "sh-index-item",
       key: it.title
     }, /*#__PURE__*/React.createElement(Tag, {
       className: "sh-index-link",
-      href: linked ? it.href || "#" : undefined,
+      "data-anchor": anchors ? "" : undefined,
+      href: linked ? href || "#" : undefined,
       onClick: it.onClick ? e => {
-        if (!it.href) e.preventDefault();
+        if (!href) e.preventDefault();
         it.onClick(e);
       } : undefined
     }, /*#__PURE__*/React.createElement(I, {
@@ -6553,7 +7922,7 @@ function IndexList({
       style: {
         margin: 0
       }
-    }, it.title), linked ? /*#__PURE__*/React.createElement("span", {
+    }, it.title), linked && !anchors ? /*#__PURE__*/React.createElement("span", {
       className: "sh-index-arrow",
       "aria-hidden": "true"
     }, /*#__PURE__*/React.createElement(Icon, {
@@ -6566,6 +7935,327 @@ function IndexList({
 }
 Object.assign(__ds_scope, { IndexList });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/IndexList.jsx", error: String((e && e.message) || e) }); }
+
+// components/sections/KeyFacts.jsx
+try { (() => {
+const { Statement } = __ds_scope;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* "At a glance" — the opening facts of a programme or condition page beside its intro: who
+   it is for, typical length, what is assessed, who supervises. Facts come from content
+   records only (content/programs, content/conditions); 3 to 6 of them, short values.
+   Phones: intro, then the Stone panel. ≥1000px: intro 7 columns, panel 5, top-aligned. */
+const CSS = `
+.sh-kf{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--stack-lg);align-items:start}
+.sh-kf-main{display:flex;flex-direction:column;gap:var(--space-5);min-width:0}
+.sh-kf-body{font:var(--type-body);color:var(--text-secondary);max-width:var(--measure-body)}
+.sh-kf-body>p{margin:0}.sh-kf-body>p+p{margin-top:1em}
+.sh-kf-panel{min-width:0;background:var(--ground-stone);padding:clamp(24px, 2vw + 16px, 40px)}
+.sh-kf-title{margin:0 0 var(--space-4);font:var(--type-label);font-size:var(--text-sm);color:var(--text-primary)}
+.sh-kf-list{margin:0;display:grid;grid-template-columns:minmax(0,1fr)}
+.sh-kf-row{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);gap:var(--space-4);padding:var(--space-4) 0;border-top:var(--border-width) solid var(--rule-color)}
+.sh-kf-row:last-child{padding-bottom:0}
+.sh-kf-row dt{font:var(--type-body-sm);color:var(--text-secondary)}
+.sh-kf-row dd{margin:0;font:var(--type-item-sm);color:var(--text-primary)}
+@media (max-width:399.98px){.sh-kf-row{grid-template-columns:minmax(0,1fr);gap:var(--space-1)}}
+@media (min-width:1000px){.sh-kf{grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:calc(var(--grid-gap) * 2)}}
+`;
+function ensure() {
+  if (typeof document === "undefined" || document.getElementById("sh-kf-css")) return;
+  const el = document.createElement("style");
+  el.id = "sh-kf-css";
+  el.textContent = CSS;
+  document.head.appendChild(el);
+}
+
+/* facts: [{ label, value }] · children: intro paragraphs */
+function KeyFacts({
+  title,
+  sub,
+  facts = [],
+  panelTitle = "At a glance",
+  action,
+  children,
+  headingLevel = 2,
+  style,
+  ...rest
+}) {
+  ensure();
+  return /*#__PURE__*/React.createElement("div", _extends({
+    "data-ds-id": "sections/KeyFacts",
+    className: "sh-kf",
+    style: style
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    className: "sh-kf-main"
+  }, title ? /*#__PURE__*/React.createElement(Statement, {
+    as: "h" + headingLevel,
+    sub: sub
+  }, title) : null, children ? /*#__PURE__*/React.createElement("div", {
+    className: "sh-kf-body"
+  }, children) : null, action ? /*#__PURE__*/React.createElement("div", null, action) : null), /*#__PURE__*/React.createElement("aside", {
+    className: "sh-kf-panel",
+    "data-ground": "stone",
+    "aria-label": panelTitle
+  }, /*#__PURE__*/React.createElement("p", {
+    className: "sh-kf-title"
+  }, panelTitle), /*#__PURE__*/React.createElement("dl", {
+    className: "sh-kf-list"
+  }, facts.map(f => /*#__PURE__*/React.createElement("div", {
+    className: "sh-kf-row",
+    key: f.label
+  }, /*#__PURE__*/React.createElement("dt", null, f.label), /*#__PURE__*/React.createElement("dd", null, f.value))))));
+}
+Object.assign(__ds_scope, { KeyFacts });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/KeyFacts.jsx", error: String((e && e.message) || e) }); }
+
+// components/sections/ListingSection.jsx
+try { (() => {
+const { Statement, Pagination, TileGrid } = __ds_scope;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* A filterable listing — the Journal index and its categories. A heading, a row of category
+   chips (one selected; "All" first), the tiles in a TileGrid, pagination, and a plain empty
+   state when a category has nothing yet. Categories come from content/articles/.
+   The chips filter in place when `onCategory` is given; give each category an `href`
+   instead for crawlable category pages.
+   Phones: chips scroll sideways in one row; tiles stack. ≥760px: chips wrap; tiles 2 across,
+   3 from 1000px (TileGrid). */
+const CSS = `
+.sh-list{display:flex;flex-direction:column;gap:var(--stack-lg)}
+.sh-list-chips{display:flex;gap:var(--space-3);margin:0;padding:0 0 var(--space-1);list-style:none;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.sh-list-chips::-webkit-scrollbar{display:none}
+.sh-list-chips>li{flex:0 0 auto}
+/* Chips match Tag (interactive): a button that filters in place, or a link to a category page. */
+.sh-list-chip{display:inline-flex;align-items:center;height:36px;padding:0 var(--space-5);border-radius:var(--radius-chip);border:var(--border-width) solid var(--border-control);background:transparent;color:var(--text-primary);font:var(--type-body-sm);white-space:nowrap;text-decoration:none;cursor:pointer;transition:var(--transition-control)}
+.sh-list-chip[aria-pressed="true"],.sh-list-chip[aria-current="page"]{background:var(--surface-brand);border-color:var(--surface-brand);color:var(--text-on-brand)}
+.sh-list-chip:focus-visible{outline:none;box-shadow:var(--ring-focus)}
+@media (hover: hover) and (pointer: fine){.sh-list-chip:not([aria-pressed="true"]):not([aria-current="page"]):hover{background:var(--surface-sunken)}}
+@media (pointer: coarse){.sh-list-chip{height:var(--tap-min)}}
+.sh-list-empty{margin:0;padding:var(--stack-lg) 0;border-block:var(--border-width) solid var(--rule-color);font:var(--type-body);color:var(--text-secondary);max-width:var(--measure-body)}
+.sh-list-foot{display:flex;justify-content:center}
+@media (max-width:759.98px){.sh-list-chips{margin-inline:calc(-1 * var(--layout-gutter));padding-inline:var(--layout-gutter)}}
+@media (min-width:760px){.sh-list-chips{flex-wrap:wrap;overflow:visible}}
+`;
+function ensure() {
+  if (typeof document === "undefined" || document.getElementById("sh-list-css")) return;
+  const el = document.createElement("style");
+  el.id = "sh-list-css";
+  el.textContent = CSS;
+  document.head.appendChild(el);
+}
+
+/* categories: [{ id, label, href? }] · children: <Tile/>s for the current page */
+function ListingSection({
+  title,
+  sub,
+  categories = [],
+  category = "all",
+  onCategory,
+  allLabel = "All",
+  page = 1,
+  pageCount = 1,
+  onPage,
+  hrefFor,
+  empty = "There is nothing in this category yet.",
+  layout = "3",
+  children,
+  style,
+  ...rest
+}) {
+  ensure();
+  const items = React.Children.toArray(children).filter(Boolean);
+  const chips = [{
+    id: "all",
+    label: allLabel
+  }, ...categories];
+  return /*#__PURE__*/React.createElement("div", _extends({
+    "data-ds-id": "sections/ListingSection",
+    className: "sh-list",
+    style: style
+  }, rest), title ? /*#__PURE__*/React.createElement(Statement, {
+    sub: sub
+  }, title) : null, categories.length ? /*#__PURE__*/React.createElement("ul", {
+    className: "sh-list-chips",
+    "aria-label": "Categories"
+  }, chips.map(c => {
+    const on = c.id === category;
+    return /*#__PURE__*/React.createElement("li", {
+      key: c.id
+    }, c.href ? /*#__PURE__*/React.createElement("a", {
+      className: "sh-list-chip",
+      href: c.href,
+      "aria-current": on ? "page" : undefined
+    }, c.label) : /*#__PURE__*/React.createElement("button", {
+      type: "button",
+      className: "sh-list-chip",
+      "aria-pressed": on,
+      onClick: onCategory ? () => onCategory(c.id) : undefined
+    }, c.label));
+  })) : null, items.length ? /*#__PURE__*/React.createElement(TileGrid, {
+    layout: layout
+  }, items) : /*#__PURE__*/React.createElement("p", {
+    className: "sh-list-empty"
+  }, empty), pageCount > 1 ? /*#__PURE__*/React.createElement("div", {
+    className: "sh-list-foot"
+  }, /*#__PURE__*/React.createElement(Pagination, {
+    page: page,
+    pageCount: pageCount,
+    onChange: onPage,
+    hrefFor: hrefFor
+  })) : null);
+}
+Object.assign(__ds_scope, { ListingSection });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/ListingSection.jsx", error: String((e && e.message) || e) }); }
+
+// components/sections/NotFoundSection.jsx
+try { (() => {
+const { Statement, Input, Button, Icon } = __ds_scope;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* The 404 page body: a plain title, one line, a search field that posts to the site search,
+   and three or four useful links (Programmes, Conditions, Book a Consultation, Contact).
+   Plain words, no jokes, no illustration. The page itself still returns HTTP 404.
+   One column at every width, held to a 36rem measure: statement, search, links one per row.
+   The field and the button sit in one row and share the 52px control height (Input md, Button lg). */
+const CSS = `
+.sh-404{display:flex;flex-direction:column;gap:var(--stack-lg);max-width:36rem;min-width:0}
+.sh-404-search{display:flex;align-items:flex-end;gap:var(--space-3);margin:0}
+.sh-404-search>.sh-field{flex:1 1 auto}
+.sh-404-search>.sh-btn{flex:0 0 auto;height:var(--control-lg);padding-block:0}
+.sh-404-links{list-style:none;margin:0;padding:0;border-top:var(--border-width) solid var(--rule-color)}
+.sh-404-links a{display:flex;align-items:center;justify-content:space-between;gap:var(--space-4);min-height:var(--tap-min);padding:var(--space-4) 0;border-bottom:var(--border-width) solid var(--rule-color);font:var(--type-item-sm);color:var(--text-primary);text-decoration:none}
+.sh-404-links a [data-icon]{color:var(--text-brand);transition:transform var(--duration-fast) var(--ease-out)}
+.sh-404-links a:focus-visible{outline:none;box-shadow:var(--ring-focus)}
+@media (hover: hover) and (pointer: fine){.sh-404-links a:hover [data-icon]{transform:translateX(3px)}}
+`;
+function ensure() {
+  if (typeof document === "undefined" || document.getElementById("sh-404-css")) return;
+  const el = document.createElement("style");
+  el.id = "sh-404-css";
+  el.textContent = CSS;
+  document.head.appendChild(el);
+}
+
+/* links: [{ label, href }] */
+function NotFoundSection({
+  title = "We couldn't find that page",
+  sub = "The page may have moved. Search the site, or start from one of these pages.",
+  searchAction = "/en/search",
+  searchLabel = "Search the site",
+  links = [],
+  headingLevel = 1,
+  style,
+  ...rest
+}) {
+  ensure();
+  return /*#__PURE__*/React.createElement("div", _extends({
+    "data-ds-id": "sections/NotFoundSection",
+    className: "sh-404",
+    style: style
+  }, rest), /*#__PURE__*/React.createElement(Statement, {
+    as: "h" + headingLevel,
+    size: "h1",
+    sub: sub,
+    measure: "20ch"
+  }, title), /*#__PURE__*/React.createElement("form", {
+    className: "sh-404-search",
+    role: "search",
+    action: searchAction,
+    method: "get"
+  }, /*#__PURE__*/React.createElement(Input, {
+    label: searchLabel,
+    name: "q",
+    type: "search",
+    startIcon: /*#__PURE__*/React.createElement(Icon, {
+      name: "search",
+      size: 18
+    })
+  }), /*#__PURE__*/React.createElement(Button, {
+    type: "submit",
+    variant: "secondary",
+    size: "lg"
+  }, "Search")), links.length ? /*#__PURE__*/React.createElement("nav", {
+    "aria-label": "Useful pages"
+  }, /*#__PURE__*/React.createElement("ul", {
+    className: "sh-404-links"
+  }, links.map(l => /*#__PURE__*/React.createElement("li", {
+    key: l.href
+  }, /*#__PURE__*/React.createElement("a", {
+    href: l.href
+  }, l.label, /*#__PURE__*/React.createElement(Icon, {
+    name: "arrow-right",
+    size: 18
+  })))))) : null);
+}
+Object.assign(__ds_scope, { NotFoundSection });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/NotFoundSection.jsx", error: String((e && e.message) || e) }); }
+
+// components/sections/NoticeBand.jsx
+try { (() => {
+const { Icon } = __ds_scope;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* A note the reader must not miss — a clinical note, a caution, a policy, a booking
+   condition. Sparing: one per screen at most, never an outcome claim, never marketing.
+   tone "note" (info) or "caution" (alert). layout "inline" sits in the flow of text with a
+   brand rule on its leading edge; "band" spans the container between hairlines.
+   Every size: icon beside the text; the link wraps under the text on phones. */
+const CSS = `
+.sh-note{display:grid;grid-template-columns:24px minmax(0,1fr);gap:var(--space-4);align-items:start;min-width:0}
+.sh-note[data-layout="inline"]{padding:var(--space-5) var(--space-5) var(--space-5) var(--space-5);border-inline-start:2px solid var(--text-brand);background:color-mix(in srgb, var(--text-primary) 4%, transparent);max-width:calc(var(--measure-body) + 4rem)}
+.sh-note[data-layout="band"]{padding:var(--space-6) 0;border-block:var(--border-width) solid var(--rule-color)}
+.sh-note>[data-icon]{margin-top:2px;color:var(--text-brand)}
+.sh-note-body{display:flex;flex-direction:column;gap:var(--space-2);min-width:0}
+.sh-note-title{margin:0;font:var(--type-item-sm);color:var(--text-primary)}
+.sh-note-text{margin:0;font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-body)}
+.sh-note-action{margin-top:var(--space-2)}
+.sh-note>.sh-note-action{grid-column:2}
+@media (min-width:760px){
+  .sh-note[data-layout="band"]{grid-template-columns:24px minmax(0,1fr) auto;align-items:center;column-gap:var(--space-5)}
+  .sh-note[data-layout="band"] .sh-note-action{margin-top:0;grid-column:3}
+}
+`;
+function ensure() {
+  if (typeof document === "undefined" || document.getElementById("sh-note-css")) return;
+  const el = document.createElement("style");
+  el.id = "sh-note-css";
+  el.textContent = CSS;
+  document.head.appendChild(el);
+}
+function NoticeBand({
+  title,
+  children,
+  tone = "note",
+  layout = "inline",
+  action,
+  headingLevel = 3,
+  role,
+  style,
+  ...rest
+}) {
+  ensure();
+  const H = "h" + headingLevel;
+  return /*#__PURE__*/React.createElement("aside", _extends({
+    "data-ds-id": "sections/NoticeBand",
+    className: "sh-note",
+    "data-layout": layout,
+    "data-tone": tone,
+    role: role,
+    "aria-label": typeof title === "string" ? title : undefined,
+    style: style
+  }, rest), /*#__PURE__*/React.createElement(Icon, {
+    name: tone === "caution" ? "alert-circle" : "info",
+    size: 22
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "sh-note-body"
+  }, title ? /*#__PURE__*/React.createElement(H, {
+    className: "sh-note-title"
+  }, title) : null, children ? /*#__PURE__*/React.createElement("p", {
+    className: "sh-note-text"
+  }, children) : null, action && layout !== "band" ? /*#__PURE__*/React.createElement("div", {
+    className: "sh-note-action"
+  }, action) : null), action && layout === "band" ? /*#__PURE__*/React.createElement("div", {
+    className: "sh-note-action"
+  }, action) : null);
+}
+Object.assign(__ds_scope, { NoticeBand });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/NoticeBand.jsx", error: String((e && e.message) || e) }); }
 
 // components/sections/NumeralsSplit.jsx
 try { (() => {
@@ -6634,7 +8324,7 @@ Object.assign(__ds_scope, { NumeralsSplit });
 
 // components/sections/PanoramaCaption.jsx
 try { (() => {
-const { Media } = __ds_scope;
+const { Media, Video } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 /* Deck slide 5. A full-width photograph with a short caption bottom-left and no button —
    the pause between dense sections. 21:9 on desktop, 4:5 on phones so the frame keeps
@@ -6645,7 +8335,10 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
 const CSS = `
 .sh-pano{position:relative;display:grid;isolation:isolate}
 .sh-pano>*{grid-area:1/1;min-width:0}
-.sh-pano>.sh-media{align-self:stretch;z-index:-1}
+.sh-pano>.sh-media,.sh-pano>.sh-pano-film{align-self:stretch;z-index:-1}
+.sh-pano-film{position:relative;display:grid}
+.sh-pano-film>*{grid-area:1/1}
+.sh-pano-film>.sh-media-scrim{position:absolute;inset:0;z-index:1;pointer-events:none;background:var(--scrim-hero)}
 .sh-pano-cap{align-self:end;width:100%;padding-block:var(--section-y-sm)}
 .sh-pano-cap .sh-container{display:flex;flex-direction:column;gap:var(--space-4)}
 .sh-pano-title{margin:0;font:var(--type-title);color:var(--text-primary);max-width:26ch}
@@ -6660,6 +8353,7 @@ function ensure() {
   document.head.appendChild(el);
 }
 function PanoramaCaption({
+  video,
   src,
   alt = "",
   position,
@@ -6679,7 +8373,16 @@ function PanoramaCaption({
     className: "sh-pano",
     "data-ground": "photo",
     style: style
-  }, rest), /*#__PURE__*/React.createElement(Media, {
+  }, rest), video ? /*#__PURE__*/React.createElement("div", {
+    className: "sh-pano-film"
+  }, /*#__PURE__*/React.createElement(Video, _extends({}, video, {
+    mode: "loop",
+    ratio: ratio,
+    mobileRatio: mobileRatio
+  })), /*#__PURE__*/React.createElement("span", {
+    className: "sh-media-scrim",
+    "aria-hidden": "true"
+  })) : /*#__PURE__*/React.createElement(Media, {
     src: src,
     alt: alt,
     ratio: ratio,
@@ -6712,6 +8415,9 @@ const CSS = `
 .sh-people-grid{display:grid;grid-template-columns:repeat(auto-fill, minmax(clamp(140px, 18vw + 70px, 280px), 1fr));gap:var(--space-8) var(--grid-gap);max-width:calc(4 * 280px + 3 * var(--grid-gap))}
 .sh-people-note{margin:0;font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-body)}
 @media (max-width:519.98px){.sh-people-grid{gap:var(--space-7) var(--space-5)}}
+/* size "sm": five to eight people (the board, a wider team) at 120→180px, up to six across. */
+.sh-people[data-size="sm"] .sh-people-grid{grid-template-columns:repeat(auto-fill, minmax(clamp(120px, 10vw + 72px, 180px), 1fr));max-width:calc(6 * 180px + 5 * var(--grid-gap));gap:var(--space-7) var(--grid-gap)}
+.sh-people[data-size="sm"] .sh-portrait-name{font-size:var(--text-base)}
 `;
 function ensure() {
   if (typeof document === "undefined" || document.getElementById("sh-people-css")) return;
@@ -6730,6 +8436,7 @@ function PeopleRow({
   people = [],
   note,
   action,
+  size = "md",
   style,
   ...rest
 }) {
@@ -6737,6 +8444,7 @@ function PeopleRow({
   return /*#__PURE__*/React.createElement("div", _extends({
     "data-ds-id": "sections/PeopleRow",
     className: "sh-people",
+    "data-size": size,
     style: style
   }, rest), title ? /*#__PURE__*/React.createElement(Statement, {
     sub: sub
@@ -6754,90 +8462,309 @@ function PeopleRow({
 Object.assign(__ds_scope, { PeopleRow });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/PeopleRow.jsx", error: String((e && e.message) || e) }); }
 
-// components/sections/TileGrid.jsx
+// components/sections/PolicySection.jsx
 try { (() => {
-const { Statement } = __ds_scope;
+const { Statement, Accordion, SpecTable } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* Deck slide 11. A heading row (statement + one text link on the right), then tiles.
-   layout "3": three across from 1000px. layout "feature": one large tile (7 columns) and
-   the rest stacked beside it (5 columns). layout "2": two across.
-   Never an uneven last row: on tablets (760–999px) an odd count makes the first tile span
-   both columns; on phones tiles stack. Keep counts to multiples of the column count. */
+/* Terms a guest agrees to — payment, cancellation, companion and stay policies — as headed
+   clauses that open one at a time. A clause holds plain sentences (`text`) and/or a small
+   table (`columns` + `rows`, a SpecTable). Structure from content/tariff.json
+   (`payment_terms`, `cancellation`) and the handbook policies; never a rate figure.
+   One column at every size, capped at 52rem; the tables turn into labelled rows on phones
+   (SpecTable). */
 const CSS = `
-.sh-tgrid{display:flex;flex-direction:column;gap:var(--stack-lg)}
-.sh-tgrid-head{display:flex;flex-direction:column;gap:var(--space-5)}
-.sh-tgrid-items{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--space-10) var(--grid-gap)}
-.sh-tgrid-foot{margin:0;font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-body)}
-@media (min-width:760px){
-  .sh-tgrid-head{flex-direction:row;align-items:flex-end;justify-content:space-between;gap:var(--grid-gap)}
-  .sh-tgrid-head>:last-child:not(:first-child){flex:0 0 auto}
-  .sh-tgrid-items{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .sh-tgrid-items[data-odd="true"]>:first-child{grid-column:1/-1}
-  /* Uniform tiles: tiles in a row share the rows photograph, title, meta, text — so a
-     two-line title or a longer description never pushes its neighbours' text out of line.
-     Each part is placed in its own row, so a tile without meta or text keeps the others. */
-  /* The parent's row gap would sit between a tile's own rows, so it is zero here and each
-     tile carries a fifth spacer row that makes the gap between rows of tiles. */
-  .sh-tgrid-items:not([data-layout="feature"]){row-gap:0;margin-bottom:calc(var(--space-10) * -1)}
-  .sh-tgrid-items:not([data-layout="feature"])>.sh-tile[data-layout="stack"]{display:grid;grid-template-rows:subgrid;grid-row:span 5;row-gap:0;align-content:start}
-  .sh-tgrid-items:not([data-layout="feature"])>.sh-tile[data-layout="stack"]::after{content:"";grid-row:5;height:var(--space-10)}
-  .sh-tgrid-items:not([data-layout="feature"])>.sh-tile[data-layout="stack"]>.sh-tile-body{display:contents}
-  .sh-tgrid-items:not([data-layout="feature"])>.sh-tile[data-layout="stack"]>.sh-media{grid-row:1}
-  .sh-tgrid-items:not([data-layout="feature"])>.sh-tile[data-layout="stack"] .sh-tile-title{grid-row:2;align-self:start;margin-top:var(--space-5)}
-  .sh-tgrid-items:not([data-layout="feature"])>.sh-tile[data-layout="stack"] .sh-tile-body>.sh-meta,
-  .sh-tgrid-items:not([data-layout="feature"])>.sh-tile[data-layout="stack"] .sh-tile-meta{grid-row:3;align-self:start;margin-top:var(--space-2)}
-  .sh-tgrid-items:not([data-layout="feature"])>.sh-tile[data-layout="stack"] .sh-tile-text{grid-row:4;align-self:start;margin-top:var(--space-3)}
-}
-@media (min-width:1000px){
-  .sh-tgrid-items[data-layout="3"]{grid-template-columns:repeat(3,minmax(0,1fr))}
-  .sh-tgrid-items[data-layout="3"][data-odd="true"]>:first-child{grid-column:auto}
-  .sh-tgrid-items[data-layout="2"][data-odd="true"]>:first-child{grid-column:1/-1}
-  .sh-tgrid-items[data-layout="feature"]{grid-template-columns:minmax(0,7fr) minmax(0,5fr);grid-auto-flow:dense}
-  .sh-tgrid-items[data-layout="feature"]>:first-child{grid-column:1;grid-row:1 / span var(--_rest,2)}
-  .sh-tgrid-items[data-layout="feature"]>:not(:first-child){grid-column:2}
-  .sh-tgrid-items[data-layout="feature"][data-odd="true"]>:first-child{grid-column:1}
-}
+.sh-policy{display:flex;flex-direction:column;gap:var(--stack-lg);max-width:52rem}
+.sh-policy-body{display:flex;flex-direction:column;gap:var(--space-5);padding-bottom:var(--space-3)}
+.sh-policy-body p{margin:0;font:var(--type-body);color:var(--text-secondary);max-width:var(--measure-body)}
+.sh-policy-foot{margin:0;font:var(--type-caption);color:var(--text-secondary)}
 `;
 function ensure() {
-  if (typeof document === "undefined" || document.getElementById("sh-tgrid-css")) return;
+  if (typeof document === "undefined" || document.getElementById("sh-policy-css")) return;
   const el = document.createElement("style");
-  el.id = "sh-tgrid-css";
+  el.id = "sh-policy-css";
   el.textContent = CSS;
   document.head.appendChild(el);
 }
-function TileGrid({
+
+/* clauses: [{ title, text?: string | string[], columns?, rows? }] */
+function PolicySection({
   title,
   sub,
-  action,
-  layout = "3",
+  clauses = [],
   footnote,
-  children,
+  defaultOpen = 0,
+  headingLevel = 2,
   style,
   ...rest
 }) {
   ensure();
-  const items = React.Children.toArray(children).filter(Boolean);
+  const items = clauses.map(c => ({
+    title: c.title,
+    content: /*#__PURE__*/React.createElement("div", {
+      className: "sh-policy-body"
+    }, [].concat(c.text || []).map(t => /*#__PURE__*/React.createElement("p", {
+      key: t
+    }, t)), c.rows ? /*#__PURE__*/React.createElement(SpecTable, {
+      columns: c.columns,
+      rows: c.rows,
+      showHeader: true,
+      caption: c.title,
+      size: "sm"
+    }) : null)
+  }));
   return /*#__PURE__*/React.createElement("div", _extends({
-    "data-ds-id": "sections/TileGrid",
-    className: "sh-tgrid",
+    "data-ds-id": "sections/PolicySection",
+    className: "sh-policy",
     style: style
-  }, rest), title || action ? /*#__PURE__*/React.createElement("div", {
-    className: "sh-tgrid-head"
-  }, title ? /*#__PURE__*/React.createElement(Statement, {
+  }, rest), title ? /*#__PURE__*/React.createElement(Statement, {
+    as: "h" + headingLevel,
+    size: "title",
     sub: sub
-  }, title) : /*#__PURE__*/React.createElement("span", null), action ? /*#__PURE__*/React.createElement("div", null, action) : null) : null, /*#__PURE__*/React.createElement("div", {
-    className: "sh-tgrid-items",
-    "data-layout": layout,
-    "data-odd": String(items.length % 2 === 1),
-    style: {
-      "--_rest": String(Math.max(1, items.length - 1))
-    }
-  }, items), footnote ? /*#__PURE__*/React.createElement("p", {
-    className: "sh-tgrid-foot"
+  }, title) : null, /*#__PURE__*/React.createElement(Accordion, {
+    items: items,
+    defaultOpen: defaultOpen
+  }), footnote ? /*#__PURE__*/React.createElement("p", {
+    className: "sh-policy-foot"
   }, footnote) : null);
 }
-Object.assign(__ds_scope, { TileGrid });
-})(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/TileGrid.jsx", error: String((e && e.message) || e) }); }
+Object.assign(__ds_scope, { PolicySection });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/PolicySection.jsx", error: String((e && e.message) || e) }); }
+
+// components/sections/ProcessSection.jsx
+try { (() => {
+const { Statement } = __ds_scope;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* "How a stay works" — the guest's own path in 3 to 5 steps: number, title, one line. Only
+   steps the guest takes or sees; never internal process ("we log your details…") and never
+   a response time that is not confirmed.
+   Phones: one column, number beside the text. ≥760px: two columns. ≥1000px: one row of
+   equal columns (as many as there are steps), numbers above a hairline. */
+const CSS = `
+.sh-proc{display:flex;flex-direction:column;gap:var(--stack-lg)}
+.sh-proc-head{display:flex;flex-direction:column;gap:var(--space-5)}
+.sh-proc-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:0 calc(var(--grid-gap) * 1.5);counter-reset:sh-proc var(--_start,0)}
+.sh-proc-step{display:grid;grid-template-columns:3.25rem minmax(0,1fr);gap:var(--space-4);align-items:baseline;padding:var(--space-6) 0;border-top:var(--border-width) solid var(--rule-color);counter-increment:sh-proc}
+.sh-proc-step::before{content:counter(sh-proc, decimal-leading-zero);font:var(--weight-light) var(--text-2xl)/1 var(--font-display);color:var(--text-brand);font-variant-numeric:tabular-nums}
+.sh-proc-title{margin:0;font:var(--type-item-sm);color:var(--text-primary)}
+.sh-proc-text{margin:var(--space-2) 0 0;font:var(--type-body-sm);color:var(--text-secondary);max-width:40ch}
+@media (min-width:760px){.sh-proc-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1000px){
+  .sh-proc-list{grid-template-columns:repeat(var(--_n,4),minmax(0,1fr))}
+  .sh-proc-step{grid-template-columns:minmax(0,1fr);gap:var(--space-5);padding-top:var(--space-5)}
+  .sh-proc-step::before{font-size:var(--text-3xl)}
+}
+`;
+function ensure() {
+  if (typeof document === "undefined" || document.getElementById("sh-proc-css")) return;
+  const el = document.createElement("style");
+  el.id = "sh-proc-css";
+  el.textContent = CSS;
+  document.head.appendChild(el);
+}
+
+/* steps: [{ title, text? }] — three to five */
+function ProcessSection({
+  title,
+  sub,
+  steps = [],
+  action,
+  headingLevel = 2,
+  style,
+  ...rest
+}) {
+  ensure();
+  const H = "h" + Math.min(6, headingLevel + 1);
+  const shown = steps.slice(0, 5);
+  return /*#__PURE__*/React.createElement("div", _extends({
+    "data-ds-id": "sections/ProcessSection",
+    className: "sh-proc",
+    style: {
+      "--_n": String(Math.max(2, shown.length)),
+      ...style
+    }
+  }, rest), title || action ? /*#__PURE__*/React.createElement("div", {
+    className: "sh-proc-head"
+  }, title ? /*#__PURE__*/React.createElement(Statement, {
+    as: "h" + headingLevel,
+    sub: sub
+  }, title) : null, action ? /*#__PURE__*/React.createElement("div", null, action) : null) : null, /*#__PURE__*/React.createElement("ol", {
+    className: "sh-proc-list"
+  }, shown.map(s => /*#__PURE__*/React.createElement("li", {
+    className: "sh-proc-step",
+    key: s.title
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(H, {
+    className: "sh-proc-title"
+  }, s.title), s.text ? /*#__PURE__*/React.createElement("p", {
+    className: "sh-proc-text"
+  }, s.text) : null)))));
+}
+Object.assign(__ds_scope, { ProcessSection });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/ProcessSection.jsx", error: String((e && e.message) || e) }); }
+
+// components/sections/ProgrammeCompare.jsx
+try { (() => {
+const { Statement, Icon } = __ds_scope;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* Programmes side by side — the Programmes index. A real <table>: programme (linked), focus,
+   who it is for, typical length. From content/programs/ (`name`, `focus`, `proposition`,
+   `durations`). Never a rate column: the one link under the table goes to the tariff page.
+   Phones (<760px): each row becomes a card — name, then labelled lines — so nothing scrolls
+   sideways. ≥760px: the table, rows ruled, the name column linked with an arrow. */
+const CSS = `
+.sh-pcmp{display:flex;flex-direction:column;gap:var(--stack-lg)}
+.sh-pcmp-table{width:100%;border-collapse:collapse;font:var(--type-body-sm);color:var(--text-secondary)}
+.sh-pcmp-table caption{text-align:start;padding-bottom:var(--space-4);font:var(--type-caption);color:var(--text-muted)}
+.sh-pcmp-table th,.sh-pcmp-table td{text-align:start;vertical-align:top;padding:var(--space-5) var(--space-5) var(--space-5) 0;border-top:var(--border-width) solid var(--rule-color)}
+.sh-pcmp-table thead th{padding-top:0;border-top:0;font:var(--type-label);color:var(--text-primary)}
+.sh-pcmp-table tbody tr:last-child>*{border-bottom:var(--border-width) solid var(--rule-color)}
+.sh-pcmp-name{font:var(--type-item-sm);color:var(--text-primary)}
+.sh-pcmp-name a{display:inline-flex;align-items:center;gap:var(--space-2);color:inherit;text-decoration:none;min-height:var(--tap-min)}
+.sh-pcmp-name a [data-icon]{color:var(--text-brand);transition:transform var(--duration-fast) var(--ease-out)}
+.sh-pcmp-name a:focus-visible{outline:none;box-shadow:var(--ring-focus)}
+@media (hover: hover) and (pointer: fine){.sh-pcmp-name a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}.sh-pcmp-name a:hover [data-icon]{transform:translateX(3px)}}
+@media (min-width:760px){.sh-pcmp-table th.sh-pcmp-name{width:13rem}}
+.sh-pcmp-len{white-space:nowrap;color:var(--text-primary);font-variant-numeric:tabular-nums}
+@media (max-width:759.98px){
+  .sh-pcmp-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  .sh-pcmp-table,.sh-pcmp-table tbody,.sh-pcmp-table tr,.sh-pcmp-table th,.sh-pcmp-table td{display:block;width:auto}
+  .sh-pcmp-table tr{padding:var(--space-5) 0;border-top:var(--border-width) solid var(--rule-color)}
+  .sh-pcmp-table tbody tr:last-child{border-bottom:var(--border-width) solid var(--rule-color)}
+  .sh-pcmp-table th,.sh-pcmp-table td{border:0 !important;padding:var(--space-1) 0}
+  .sh-pcmp-table td[data-label]{display:grid;grid-template-columns:7.5rem minmax(0,1fr);gap:var(--space-4)}
+  .sh-pcmp-table td[data-label]::before{content:attr(data-label);font:var(--type-caption);color:var(--text-muted);padding-top:2px}
+}
+`;
+function ensure() {
+  if (typeof document === "undefined" || document.getElementById("sh-pcmp-css")) return;
+  const el = document.createElement("style");
+  el.id = "sh-pcmp-css";
+  el.textContent = CSS;
+  document.head.appendChild(el);
+}
+
+/* programmes: [{ name, href?, focus, forWhom, durations }] */
+function ProgrammeCompare({
+  title,
+  sub,
+  programmes = [],
+  caption = "Programmes compared",
+  labels = {},
+  action,
+  headingLevel = 2,
+  style,
+  ...rest
+}) {
+  ensure();
+  const L = {
+    name: "Programme",
+    focus: "Focus",
+    forWhom: "Who it is for",
+    durations: "Typical length",
+    ...labels
+  };
+  return /*#__PURE__*/React.createElement("div", _extends({
+    "data-ds-id": "sections/ProgrammeCompare",
+    className: "sh-pcmp",
+    style: style
+  }, rest), title ? /*#__PURE__*/React.createElement(Statement, {
+    as: "h" + headingLevel,
+    sub: sub
+  }, title) : null, /*#__PURE__*/React.createElement("table", {
+    className: "sh-pcmp-table"
+  }, /*#__PURE__*/React.createElement("caption", null, caption), /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", {
+    scope: "col"
+  }, L.name), /*#__PURE__*/React.createElement("th", {
+    scope: "col"
+  }, L.focus), /*#__PURE__*/React.createElement("th", {
+    scope: "col"
+  }, L.forWhom), /*#__PURE__*/React.createElement("th", {
+    scope: "col"
+  }, L.durations))), /*#__PURE__*/React.createElement("tbody", null, programmes.map(p => /*#__PURE__*/React.createElement("tr", {
+    key: p.name
+  }, /*#__PURE__*/React.createElement("th", {
+    scope: "row",
+    className: "sh-pcmp-name"
+  }, p.href ? /*#__PURE__*/React.createElement("a", {
+    href: p.href
+  }, p.name, /*#__PURE__*/React.createElement(Icon, {
+    name: "arrow-right",
+    size: 16
+  })) : p.name), /*#__PURE__*/React.createElement("td", {
+    "data-label": L.focus
+  }, p.focus), /*#__PURE__*/React.createElement("td", {
+    "data-label": L.forWhom
+  }, p.forWhom), /*#__PURE__*/React.createElement("td", {
+    "data-label": L.durations,
+    className: "sh-pcmp-len"
+  }, p.durations))))), action ? /*#__PURE__*/React.createElement("div", null, action) : null);
+}
+Object.assign(__ds_scope, { ProgrammeCompare });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/ProgrammeCompare.jsx", error: String((e && e.message) || e) }); }
+
+// components/sections/ReferencesSection.jsx
+try { (() => {
+const { ReviewedBy } = __ds_scope;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* The sources under a clinical article or condition page, and the medical-review line.
+   Numbered so the text can cite [1] with a link to #ref-1; each reference names the work,
+   its publisher or journal and year, and links to the source itself. Every reference must
+   support something the page says — never decorative. `reviewer` takes ReviewedBy props
+   and follows the doctor naming rules in docs/handbook/glossary.md.
+   One column at every size, capped at the body measure; long URLs wrap. */
+const CSS = `
+.sh-refs{display:flex;flex-direction:column;gap:var(--space-6);max-width:calc(var(--measure-body) + 2rem)}
+.sh-refs-title{margin:0;font:var(--type-item-sm);color:var(--text-primary)}
+.sh-refs-list{margin:0;padding:0;list-style:none;counter-reset:sh-ref;display:flex;flex-direction:column}
+.sh-refs-item{display:grid;grid-template-columns:2rem minmax(0,1fr);gap:var(--space-3);padding:var(--space-4) 0;border-top:var(--border-width) solid var(--rule-color);counter-increment:sh-ref;font:var(--type-body-sm);color:var(--text-secondary);scroll-margin-top:calc(var(--header-h, 72px) + 24px)}
+.sh-refs-item:last-child{border-bottom:var(--border-width) solid var(--rule-color)}
+.sh-refs-item::before{content:counter(sh-ref) ".";color:var(--text-muted);font-variant-numeric:tabular-nums}
+.sh-refs-item:target{background:color-mix(in srgb, var(--text-brand) 8%, transparent)}
+.sh-refs-work{color:var(--text-primary)}
+.sh-refs-item a{color:var(--text-link);overflow-wrap:anywhere;text-underline-offset:3px}
+`;
+function ensure() {
+  if (typeof document === "undefined" || document.getElementById("sh-refs-css")) return;
+  const el = document.createElement("style");
+  el.id = "sh-refs-css";
+  el.textContent = CSS;
+  document.head.appendChild(el);
+}
+
+/* items: [{ work, source?, year?, href? }] */
+function ReferencesSection({
+  title = "References",
+  items = [],
+  reviewer,
+  idPrefix = "ref-",
+  headingLevel = 2,
+  style,
+  ...rest
+}) {
+  ensure();
+  const H = "h" + headingLevel;
+  return /*#__PURE__*/React.createElement("section", _extends({
+    "data-ds-id": "sections/ReferencesSection",
+    className: "sh-refs",
+    "aria-label": title,
+    style: style
+  }, rest), /*#__PURE__*/React.createElement(H, {
+    className: "sh-refs-title"
+  }, title), /*#__PURE__*/React.createElement("ol", {
+    className: "sh-refs-list"
+  }, items.map((r, i) => /*#__PURE__*/React.createElement("li", {
+    className: "sh-refs-item",
+    id: idPrefix + (i + 1),
+    key: r.work + i
+  }, /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("span", {
+    className: "sh-refs-work"
+  }, r.work), r.source ? /*#__PURE__*/React.createElement(React.Fragment, null, ". ", r.source) : null, r.year ? /*#__PURE__*/React.createElement(React.Fragment, null, ", ", r.year) : null, r.href ? /*#__PURE__*/React.createElement(React.Fragment, null, ". ", /*#__PURE__*/React.createElement("a", {
+    href: r.href,
+    rel: "noopener",
+    target: "_blank"
+  }, r.href.replace(/^https?:\/\//, ""))) : null)))), reviewer ? /*#__PURE__*/React.createElement(ReviewedBy, reviewer) : null);
+}
+Object.assign(__ds_scope, { ReferencesSection });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/ReferencesSection.jsx", error: String((e && e.message) || e) }); }
 
 // components/sections/RelatedArticles.jsx
 try { (() => {
@@ -6921,7 +8848,7 @@ Object.assign(__ds_scope, { Section });
 
 // components/sections/SplitSection.jsx
 try { (() => {
-const { Media } = __ds_scope;
+const { Media, Video } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 /* Deck slides 4, 6, 13. A photograph on one side that runs to the edge of the screen,
    text on the other, bottom-aligned with open space above.
@@ -6930,7 +8857,11 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
    <1000px: the photo goes first, full width at `mobileRatio`, then the text with the
    normal gutter. `bleed={false}` keeps the photo inside the container instead. */
 const CSS = `
-.sh-split{container-type:inline-size;position:relative}
+.sh-split{container-type:inline-size;position:relative;scroll-margin-top:calc(var(--header-h, 72px) + 64px)}
+.sh-split[data-bleed="true"] .sh-split-media .sh-video{aspect-ratio:var(--_mr,var(--media-ratio))}
+/* stack: text above the photograph at every width, inside the container. */
+.sh-split[data-stack="true"] .sh-split-grid{max-width:calc(var(--layout-max) + 2 * var(--layout-gutter));margin-inline:auto;padding:var(--section-y-sm) var(--layout-gutter);gap:var(--stack-lg)}
+.sh-split[data-stack="true"] .sh-split-text{order:-1;padding:0;max-width:52rem}
 .sh-split-grid{display:grid;grid-template-columns:minmax(0,1fr)}
 .sh-split-media{position:relative;min-width:0}
 .sh-split-media .sh-media{aspect-ratio:var(--_mr,var(--media-ratio))}
@@ -6945,12 +8876,16 @@ const CSS = `
   .sh-split[data-side="end"] .sh-split-media{order:2}
   .sh-split[data-side="end"][data-split="40"] .sh-split-grid{grid-template-columns:minmax(0,3fr) minmax(0,2fr)}
   .sh-split[data-side="end"][data-split="60"] .sh-split-grid{grid-template-columns:minmax(0,2fr) minmax(0,3fr)}
-  .sh-split[data-bleed="true"] .sh-split-media .sh-media{position:absolute;inset:0;aspect-ratio:auto;height:100%}
+  .sh-split[data-bleed="true"]:not([data-stack="true"]) .sh-split-media :is(.sh-media,.sh-video){position:absolute;inset:0;aspect-ratio:auto;height:100%}
+  .sh-split[data-stack="true"] .sh-split-grid{grid-template-columns:minmax(0,1fr);min-height:0;padding-block:var(--section-y)}
+  .sh-split[data-stack="true"] .sh-split-media .sh-media,.sh-split[data-stack="true"] .sh-split-media .sh-video{aspect-ratio:var(--media-ratio-wide)}
+  .sh-split[data-stack="true"] .sh-split-media{order:2}
   .sh-split-text{padding-block:var(--section-y);justify-content:var(--_align,flex-end)}
   .sh-split[data-side="start"] .sh-split-text{padding-inline:calc(var(--grid-gap) * 2.5) var(--_outer)}
   .sh-split[data-side="end"] .sh-split-text{padding-inline:var(--_outer) calc(var(--grid-gap) * 2.5)}
   .sh-split[data-bleed="false"] .sh-split-grid{min-height:0;gap:calc(var(--grid-gap) * 2.5);padding-block:var(--section-y)}
   .sh-split[data-bleed="false"] .sh-split-text{padding:0}
+  .sh-split[data-stack="true"] .sh-split-text{padding:0}
 }
 /* Sticky only when the window can show the whole block (see FormSplit). */
 @media (min-width:1000px) and (min-height:800px){.sh-split-sticky{position:sticky;top:calc(var(--space-12) + 16px)}}
@@ -6964,6 +8899,8 @@ function ensure() {
 }
 function SplitSection({
   media,
+  video,
+  stack = false,
   src,
   alt = "",
   position,
@@ -6979,11 +8916,11 @@ function SplitSection({
   ...rest
 }) {
   ensure();
-  const figure = media || /*#__PURE__*/React.createElement(Media, {
+  const figure = media || (video ? /*#__PURE__*/React.createElement(Video, video) : /*#__PURE__*/React.createElement(Media, {
     src: src,
     alt: alt,
     position: position
-  });
+  }));
   const vars = {
     "--_mr": {
       "4:3": "var(--media-ratio)",
@@ -7002,6 +8939,7 @@ function SplitSection({
     "data-side": mediaSide,
     "data-split": split,
     "data-bleed": String(bleed),
+    "data-stack": String(stack),
     style: {
       ...vars,
       ...style
@@ -7016,6 +8954,152 @@ function SplitSection({
 }
 Object.assign(__ds_scope, { SplitSection });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/SplitSection.jsx", error: String((e && e.message) || e) }); }
+
+// components/sections/TimelineSection.jsx
+try { (() => {
+const { Statement, TimeTable, Media } = __ds_scope;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* A day, or a stay, in order — A Day at Shantara, a programme's daily rhythm. A statement
+   and a TimeTable beside one photograph. Times come from the handbook day schedule (§12);
+   the doctor fills the treatment slots, so the copy never names a treatment per hour.
+   Phones: statement → photograph → table. ≥1000px: photograph 5 columns (sticky while the
+   table scrolls, tall windows only), statement and table 7; `mediaSide` swaps them. */
+const CSS = `
+.sh-tl{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--stack-lg);align-items:start}
+.sh-tl-main{display:flex;flex-direction:column;gap:var(--stack-lg);min-width:0}
+.sh-tl-media{min-width:0}
+@media (max-width:999.98px){.sh-tl{display:flex;flex-direction:column;align-items:stretch}.sh-tl-main{display:contents}.sh-tl-main>.sh-stmt{order:1}.sh-tl-media{order:2}.sh-tl-main>.sh-time{order:3}}
+@media (max-width:999.98px){.sh-tl-media .sh-media{aspect-ratio:4 / 3}}
+@media (max-width:759.98px){.sh-tl-media{margin-inline:calc(-1 * var(--layout-gutter))}}
+@media (min-width:1000px){
+  .sh-tl{grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:calc(var(--grid-gap) * 2)}
+  .sh-tl[data-side="end"]{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+  .sh-tl[data-side="end"] .sh-tl-media{order:2}
+}
+@media (min-width:1000px) and (min-height:800px){.sh-tl-media{position:sticky;top:calc(var(--header-h, 72px) + 24px)}}
+`;
+function ensure() {
+  if (typeof document === "undefined" || document.getElementById("sh-tl-css")) return;
+  const el = document.createElement("style");
+  el.id = "sh-tl-css";
+  el.textContent = CSS;
+  document.head.appendChild(el);
+}
+
+/* rows: TimeTable rows — [{ time, title, text? }] */
+function TimelineSection({
+  title,
+  sub,
+  rows = [],
+  src,
+  alt = "",
+  media,
+  ratio = "4:5",
+  mobileRatio = "4:3",
+  mediaSide = "start",
+  headingLevel = 2,
+  style,
+  ...rest
+}) {
+  ensure();
+  const figure = media || (src ? /*#__PURE__*/React.createElement(Media, {
+    src: src,
+    alt: alt,
+    ratio: ratio,
+    mobileRatio: mobileRatio
+  }) : null);
+  return /*#__PURE__*/React.createElement("div", _extends({
+    "data-ds-id": "sections/TimelineSection",
+    className: "sh-tl",
+    "data-side": mediaSide,
+    style: style
+  }, rest), figure ? /*#__PURE__*/React.createElement("div", {
+    className: "sh-tl-media"
+  }, figure) : null, /*#__PURE__*/React.createElement("div", {
+    className: "sh-tl-main"
+  }, title ? /*#__PURE__*/React.createElement(Statement, {
+    as: "h" + headingLevel,
+    sub: sub
+  }, title) : null, /*#__PURE__*/React.createElement(TimeTable, {
+    rows: rows,
+    headingLevel: Math.min(6, headingLevel + 1)
+  })));
+}
+Object.assign(__ds_scope, { TimelineSection });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/TimelineSection.jsx", error: String((e && e.message) || e) }); }
+
+// components/sections/VideoFeature.jsx
+try { (() => {
+const { Statement, Video, SplitSection } = __ds_scope;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* A film with its context — a walk through the property, a day, a therapy explained. Native
+   <video> from R2 through editorial/Video (skill-video.md): a player with controls and
+   captions, never autoplaying with sound, never YouTube, Vimeo or Stream.
+   layout "full": statement above, the frame across the container at 16:9 (4:5 on phones).
+   layout "split": the frame beside the statement at 16:9, as a SplitSection (photo side rules). */
+const CSS = `
+.sh-vfeat{display:flex;flex-direction:column;gap:var(--stack-lg)}
+.sh-vfeat-head{display:flex;flex-direction:column;gap:var(--space-5)}
+.sh-vfeat-note{margin:0;font:var(--type-caption);color:var(--text-secondary);max-width:var(--measure-body)}
+@media (min-width:760px){.sh-vfeat-head{flex-direction:row;align-items:flex-end;justify-content:space-between;gap:var(--grid-gap)}.sh-vfeat-head>:last-child:not(:first-child){flex:0 0 auto}}
+`;
+function ensure() {
+  if (typeof document === "undefined" || document.getElementById("sh-vfeat-css")) return;
+  const el = document.createElement("style");
+  el.id = "sh-vfeat-css";
+  el.textContent = CSS;
+  document.head.appendChild(el);
+}
+
+/* video: { src | sources, poster, title, captions?, transcript? } */
+function VideoFeature({
+  title,
+  sub,
+  video = {},
+  layout = "full",
+  mediaSide = "start",
+  ground = "merino",
+  note,
+  action,
+  headingLevel = 2,
+  style,
+  ...rest
+}) {
+  ensure();
+  const player = /*#__PURE__*/React.createElement(Video, _extends({}, video, {
+    ratio: "16:9",
+    mobileRatio: layout === "split" ? "16:9" : "4:5"
+  }));
+  if (layout === "split") {
+    return /*#__PURE__*/React.createElement(SplitSection, _extends({
+      "data-ds-id": "sections/VideoFeature",
+      media: player,
+      mediaSide: mediaSide,
+      bleed: false,
+      mobileRatio: "16:9",
+      ground: ground,
+      align: "center",
+      style: style
+    }, rest), /*#__PURE__*/React.createElement(Statement, {
+      as: "h" + headingLevel,
+      sub: sub
+    }, title), action ? /*#__PURE__*/React.createElement("div", null, action) : null);
+  }
+  return /*#__PURE__*/React.createElement("div", _extends({
+    "data-ds-id": "sections/VideoFeature",
+    className: "sh-vfeat",
+    style: style
+  }, rest), title || action ? /*#__PURE__*/React.createElement("div", {
+    className: "sh-vfeat-head"
+  }, title ? /*#__PURE__*/React.createElement(Statement, {
+    as: "h" + headingLevel,
+    sub: sub
+  }, title) : /*#__PURE__*/React.createElement("span", null), action ? /*#__PURE__*/React.createElement("div", null, action) : null) : null, player, note ? /*#__PURE__*/React.createElement("p", {
+    className: "sh-vfeat-note"
+  }, note) : null);
+}
+Object.assign(__ds_scope, { VideoFeature });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/VideoFeature.jsx", error: String((e && e.message) || e) }); }
 
 __ds_ns.Badge = __ds_scope.Badge;
 __ds_ns.Button = __ds_scope.Button;
@@ -7065,20 +9149,42 @@ __ds_ns.TableOfContents = __ds_scope.TableOfContents;
 __ds_ns.TextLink = __ds_scope.TextLink;
 __ds_ns.Tile = __ds_scope.Tile;
 __ds_ns.TimeTable = __ds_scope.TimeTable;
+__ds_ns.Video = __ds_scope.Video;
 __ds_ns.ArticleHeader = __ds_scope.ArticleHeader;
+__ds_ns.ArticleLayout = __ds_scope.ArticleLayout;
 __ds_ns.BandStatement = __ds_scope.BandStatement;
+__ds_ns.CatalogueSection = __ds_scope.CatalogueSection;
 __ds_ns.ClosingCTA = __ds_scope.ClosingCTA;
+__ds_ns.TileGrid = __ds_scope.TileGrid;
+__ds_ns.ConfirmationSection = __ds_scope.ConfirmationSection;
+__ds_ns.ContactLocation = __ds_scope.ContactLocation;
+__ds_ns.CredentialStrip = __ds_scope.CredentialStrip;
+__ds_ns.FaqSection = __ds_scope.FaqSection;
+__ds_ns.FeatureGrid = __ds_scope.FeatureGrid;
 __ds_ns.FormSplit = __ds_scope.FormSplit;
+__ds_ns.GalleryGrid = __ds_scope.GalleryGrid;
+__ds_ns.GuestStory = __ds_scope.GuestStory;
 __ds_ns.HeroFullBleed = __ds_scope.HeroFullBleed;
 __ds_ns.HeroSplit = __ds_scope.HeroSplit;
 __ds_ns.HeroStatement = __ds_scope.HeroStatement;
+__ds_ns.InPageNav = __ds_scope.InPageNav;
+__ds_ns.InclusionsSection = __ds_scope.InclusionsSection;
 __ds_ns.IndexList = __ds_scope.IndexList;
+__ds_ns.KeyFacts = __ds_scope.KeyFacts;
+__ds_ns.ListingSection = __ds_scope.ListingSection;
+__ds_ns.NotFoundSection = __ds_scope.NotFoundSection;
+__ds_ns.NoticeBand = __ds_scope.NoticeBand;
 __ds_ns.NumeralsSplit = __ds_scope.NumeralsSplit;
 __ds_ns.PanoramaCaption = __ds_scope.PanoramaCaption;
 __ds_ns.PeopleRow = __ds_scope.PeopleRow;
-__ds_ns.TileGrid = __ds_scope.TileGrid;
+__ds_ns.PolicySection = __ds_scope.PolicySection;
+__ds_ns.ProcessSection = __ds_scope.ProcessSection;
+__ds_ns.ProgrammeCompare = __ds_scope.ProgrammeCompare;
+__ds_ns.ReferencesSection = __ds_scope.ReferencesSection;
 __ds_ns.RelatedArticles = __ds_scope.RelatedArticles;
 __ds_ns.Section = __ds_scope.Section;
 __ds_ns.SplitSection = __ds_scope.SplitSection;
+__ds_ns.TimelineSection = __ds_scope.TimelineSection;
+__ds_ns.VideoFeature = __ds_scope.VideoFeature;
 
 })();

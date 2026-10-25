@@ -17,5 +17,7 @@ export interface PeopleRowProps extends React.HTMLAttributes<HTMLDivElement> {
   note?: React.ReactNode;
   /** One <TextLink/>. */
   action?: React.ReactNode;
+  /** "sm": five to eight people at smaller portraits. */
+  size?: "md" | "sm";
 }
 export declare function PeopleRow(props: PeopleRowProps): JSX.Element;

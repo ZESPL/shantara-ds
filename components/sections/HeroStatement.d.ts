@@ -3,6 +3,8 @@ import type { MetaItem } from "../editorial/MetaRow";
 
 export interface HeroStatementProps extends React.HTMLAttributes<HTMLElement> {
   /** The page title as a full sentence. No label above it. */
+  /** "utility": short, no band, no image — legal pages, 404, confirmation. */
+  variant?: "editorial" | "utility";
   title: React.ReactNode;
   /** One supporting line (lead size). */
   sub?: React.ReactNode;

@@ -9,6 +9,8 @@ const CSS = `
 .sh-index{display:flex;flex-direction:column;gap:var(--section-y-sm)}
 .sh-index-group{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--space-6) var(--grid-gap)}
 .sh-index-label{margin:0;font:var(--type-title);color:var(--text-primary)}
+.sh-index-count{margin-inline-start:var(--space-3);font:var(--type-body-sm);color:var(--text-muted);font-variant-numeric:tabular-nums}
+.sh-index-link[data-anchor]{grid-template-columns:minmax(0,1fr)}
 .sh-index-items{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);column-gap:var(--grid-gap)}
 .sh-index-item{border-top:var(--border-width) solid var(--rule-color)}
 .sh-index-link{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--space-2) var(--space-5);align-items:baseline;padding:var(--space-6) 0;color:inherit;text-decoration:none;min-height:var(--tap-min)}
@@ -37,7 +39,9 @@ function ensure() {
 }
 
 /* groups: [{ label, items: [{ title, text?, href?, onClick? }] }] */
-export function IndexList({ groups = [], columns = 2, headingLevel = 2, style, ...rest }) {
+/* anchors: rows link to sections on the same page (it.id → #id) and show no arrow.
+   counts: the number of rows beside each group label. */
+export function IndexList({ groups = [], columns = 2, headingLevel = 2, anchors = false, counts = false, style, ...rest }) {
   ensure();
   const H = "h" + headingLevel;
   const I = "h" + Math.min(6, headingLevel + 1);
@@ -45,16 +49,17 @@ export function IndexList({ groups = [], columns = 2, headingLevel = 2, style, .
     <div data-ds-id="sections/IndexList" className="sh-index" style={style} {...rest}>
       {groups.map((g) => (
         <section className="sh-index-group" key={g.label}>
-          <H className="sh-index-label">{g.label}</H>
+          <H className="sh-index-label">{g.label}{counts ? <span className="sh-index-count">{g.items.length}</span> : null}</H>
           <ul className="sh-index-items" data-columns={String(columns)}>
             {g.items.map((it) => {
-              const linked = !!(it.href || it.onClick);
+              const href = it.href || (anchors && it.id ? "#" + it.id : undefined);
+              const linked = !!(href || it.onClick);
               const Tag = linked ? "a" : "div";
               return (
                 <li className="sh-index-item" key={it.title}>
-                  <Tag className="sh-index-link" href={linked ? it.href || "#" : undefined} onClick={it.onClick ? (e) => { if (!it.href) e.preventDefault(); it.onClick(e); } : undefined}>
+                  <Tag className="sh-index-link" data-anchor={anchors ? "" : undefined} href={linked ? href || "#" : undefined} onClick={it.onClick ? (e) => { if (!href) e.preventDefault(); it.onClick(e); } : undefined}>
                     <I className="sh-index-title" style={{ margin: 0 }}>{it.title}</I>
-                    {linked ? <span className="sh-index-arrow" aria-hidden="true"><Icon name="arrow-right" size={18} /></span> : null}
+                    {linked && !anchors ? <span className="sh-index-arrow" aria-hidden="true"><Icon name="arrow-right" size={18} /></span> : null}
                     {it.text ? <span className="sh-index-text">{it.text}</span> : null}
                   </Tag>
                 </li>

@@ -37,6 +37,101 @@
     const NS = window.ShantaraDesignSystem_45bbe4;
     const name = new URLSearchParams(location.search).get("c") || "Button";
 
+    /* Shared demo content for the section specimens — copied from content/ and the handbook,
+       never invented (faq.json, tariff.json, therapies/, programs/, handbook §12 day). */
+    const PH = "../assets/photos/";
+    const faqGroups = [
+      { name: "Booking", faqs: [
+        { question: "Is my booking confirmed straight away?", answer: "A stay is confirmed after a preliminary consultation with our doctors. You will be asked to share a health assessment, relevant medical records and your current medication first." },
+        { question: "How long should I stay?", answer: "Duration depends on the programme and your assessment. Your doctor advises a typical duration after consultation." },
+      ] },
+      { name: "Who can stay", faqs: [
+        { question: "Who can stay?", answer: "Shantara accepts guests aged 18 to 80 with conditions that can be managed through residential naturopathy. Acute or emergency care is outside what we provide." },
+      ] },
+      { name: "During your stay", faqs: [
+        { question: "How do meals work?", answer: "Meals are planned as part of your programme, taking into account your doctor's recommendations and dietary requirements." },
+        { question: "Can I leave the property during my stay?", answer: "Guests usually remain at the retreat during the programme so meals, therapies and reviews can follow the plan. Leaving for a medical emergency is arranged with the team." },
+      ] },
+    ];
+    const tariff = {
+      includes: ["Accommodation", "The programme and treatments prescribed by your doctor", "Daily doctor consultation", "Diagnostic tests, as advised by your doctor", "All therapeutic naturopathy meals", "Entertainment and activities", "Two complimentary recreational therapies per week", "Airport and railway transfers", "Attire provided for your stay, and its laundry"],
+      excludes: ["Recreational therapies beyond the two complimentary per week", "Treatments beyond those prescribed by your doctor", "Personal laundry"],
+      supplements: [{ label: "Non-participating companion", basis: "Per person, per night" }, { label: "Extra bed or mattress", basis: "Per bed, per night" }],
+      payment_terms: [
+        { booked_before: "31 days or more before arrival", at_confirmation: "30%", balance: "70%, due 30 days before arrival" },
+        { booked_before: "30 days or less before arrival", at_confirmation: "100%", balance: "None" },
+      ],
+      cancellation: [
+        { cancelled_before: "More than 30 days before arrival", refund: "100%" },
+        { cancelled_before: "21 to 30 days before arrival", refund: "50%" },
+        { cancelled_before: "20 days or less before arrival, no-show or early departure", refund: "No refund" },
+      ],
+    };
+    const therapyEntries = [
+      { id: "yoga-therapy", title: "Yoga Therapy", meta: ["Movement", "Daily, 6:00 AM"], text: "Gentle movement and breathwork adapted to the individual.", src: PH + "activity-hall-yoga-studio-empty.jpg", alt: "The yoga hall" },
+      { id: "diet-therapy", title: "Diet Therapy", meta: ["Food"], text: "Meals planned for your programme and reviewed as your stay progresses.", src: PH + "food-spread-five-plates-restaurant-wide-landscape-3x2.jpg", alt: "Five plates of a planned meal" },
+      { id: "massage-therapy", title: "Massage Therapy", meta: ["Touch", "Prescribed after assessment"], text: "Therapeutic touch to ease muscle tension and support rest.", src: PH + "massage-foot-reflexology-therapist-side-view-landscape-3x2.jpg", alt: "A therapist's hands during foot reflexology" },
+      { id: "hydrotherapy", title: "Hydrotherapy", meta: ["Water", "Prescribed after assessment"], text: "Water at controlled temperatures to support circulation.", src: PH + "treatment-bath-corridor-cubicles.jpg", alt: "The bath corridor in the therapy wing" },
+    ];
+    const daySchedule = [
+      { time: "05:00 AM", title: "Wake up" }, { time: "05:30 AM", title: "Kriyas" }, { time: "06:00 – 07:00 AM", title: "Yoga" },
+      { time: "07:00 – 08:00 AM", title: "Reflexology, or mud or grass walking" }, { time: "08:00 – 11:00 AM", title: "Morning treatments" },
+      { time: "11:00 AM – 12:00 PM", title: "Lunch" }, { time: "12:00 – 01:00 PM", title: "Doctor visit" }, { time: "02:00 – 05:00 PM", title: "Afternoon treatments" },
+      { time: "05:00 – 06:00 PM", title: "Dinner" }, { time: "06:00 – 06:30 PM", title: "Health talk" }, { time: "07:30 – 08:00 PM", title: "Meditation" }, { time: "09:00 PM", title: "Sleep" },
+    ];
+    const programmeRows = [
+      { name: "Detox", href: "#detox", focus: "Metabolic", forWhom: "A meal plan or supervised fasting based on your assessment, with therapies as part of your programme.", durations: "7–21 nights" },
+      { name: "Stress Management", href: "#stress-management", focus: "Mind", forWhom: "Guests managing sustained stress, poor sleep or fatigue.", durations: "7–14 nights" },
+      { name: "Weight Management", href: "#weight-management", focus: "Metabolic", forWhom: "Meals, daily activity and therapies, with weight and vitals reviewed each morning.", durations: "14–21 nights" },
+      { name: "Diabetes Reversal", href: "#diabetes-reversal", focus: "Clinical", forWhom: "Diet, activity and therapies planned around blood-sugar control, with medication reviewed by a doctor.", durations: "14–28 nights" },
+    ];
+    const allDoctors = [
+      { name: "P.A. Kareem", role: "Founder, Chairman & Chief Naturopathy Consultant", src: PH + "doctor-pa-kareem-portrait-cropped.jpeg" },
+      { name: "Dr. Bahja Janu", role: "Medical Director", src: PH + "doctor-bahja-janu-portrait-cropped.jpeg" },
+      { name: "Dr. Gangrei Gangmei", role: "Resident Medical Officer", src: PH + "doctor-gangrei-gangmei-portrait-cropped.jpeg" },
+      { name: "Dr. Keerthana V S", role: "Naturopathy Physician & Yoga Therapist", src: PH + "doctor-keerthana-portrait-cropped.jpeg" },
+      { name: "Dr. Sara Shanti Alen", role: "Naturopathy Physician, Lifestyle & Nutrition", src: PH + "doctor-sara-portrait-cropped.jpeg" },
+    ];
+
+    /* A variation of an existing section, shown under its main specimen (doc § Variations). */
+    function Variation() {
+      const NSV = window.ShantaraDesignSystem_45bbe4 || {};
+      const { Button, Breadcrumbs, Input, Textarea, Statement, Tile, TextLink, Section, HeroSplit, HeroStatement, SplitSection, BandStatement, PanoramaCaption, PeopleRow, TileGrid, IndexList, ClosingCTA, FormSplit, ArticleHeader } = NSV;
+      const P = PH;
+      const Label = ({ children }) => <p style={{ margin: 0, padding: "10px var(--layout-gutter)", font: "var(--type-caption)", letterSpacing: "var(--tracking-wide)", color: "var(--text-muted)", background: "var(--surface-page)", borderBlock: "1px dashed var(--border-subtle)" }}>{children}</p>;
+      switch (name) {
+        case "HeroStatement": return <><Label><b>variant="utility"</b> · legal pages, 404, confirmation — short, no band, no image</Label>
+          <HeroStatement variant="utility" breadcrumbs={<Breadcrumbs items={[{ label: "Home", href: "#" }, "Privacy policy"]} />} title="Privacy policy" sub="How we collect, use and protect the details you share with us." meta={["Updated 20 August 2026"]} /></>;
+        case "HeroSplit": return <><Label><b>video</b> · a short muted loop in place of the photograph (poster only here: no R2 host in the design system)</Label>
+          <HeroSplit video={{ poster: P + "water-wall.jpg", title: "The water wall" }} breadcrumbs={<Breadcrumbs items={[{ label: "Therapies", href: "#" }, "Hydrotherapy"]} />} title="Hydrotherapy" meta={["Water", "Prescribed after assessment"]} sub="Water at controlled temperatures to support circulation." actions={<Button size="lg">Book a Consultation</Button>} /></>;
+        case "SplitSection": return <><Label><b>stack</b> + <b>id</b> · text above the photograph at every width; the anchor clears the sticky header</Label>
+          <SplitSection id="hijama" stack ground="stone" src={P + "treatment.jpg"} alt="A treatment room"><Statement sub="Traditional cupping, delivered under medical supervision.">Hijama</Statement></SplitSection>
+          <Label><b>video</b> · the player in the photograph's place (poster only here)</Label>
+          <SplitSection video={{ poster: P + "activity-hall-yoga-studio-empty.jpg", title: "Inside the yoga hall" }} mediaSide="end"><Statement sub="How a morning session is guided, adapted to what you can manage that day.">Inside the yoga hall</Statement></SplitSection></>;
+        case "TileGrid": return <><Label><b>layout="4"</b> · small items: therapies, amenities</Label>
+          <Section><TileGrid layout="4" title="Therapies">{therapyEntries.map((t) => <Tile key={t.id} src={t.src} alt={t.alt} ratio="4:3" title={t.title} text={t.text} href={"#" + t.id} />)}</TileGrid></Section>
+          <Label><b>layout="list"</b> · one per row, photograph beside the text from 760px</Label>
+          <Section ground="stone"><TileGrid layout="list" title="From the Journal">{[0, 1].map((i) => <Tile key={i} src={P + (i ? "grounds.jpg" : "treatment.jpg")} alt={i ? "The grounds" : "A treatment room"} ratio="3:2" title={i ? "Managing PCOS through lifestyle" : "How programme duration is decided"} meta={["Clinical Guides", (5 + i) + " min read"]} text={i ? "A programme may be planned around hormonal health, meals, activity and rest." : "Duration depends on the programme and your assessment."} href="#" />)}</TileGrid></Section></>;
+        case "PeopleRow": return <><Label><b>size="sm"</b> · five to eight people</Label>
+          <Section><PeopleRow size="sm" title="Our doctors" people={allDoctors} /></Section></>;
+        case "IndexList": return <><Label><b>anchors</b> + <b>counts</b> · same-page links, no arrow, a count per group</Label>
+          <Section ground="stone"><IndexList anchors counts groups={[{ label: "Water and earth", items: [{ title: "Hydrotherapy", id: "hydrotherapy", text: "Water at controlled temperatures to support circulation." }, { title: "Mud Therapy", id: "mud-therapy", text: "Mineral-rich earth applied to calm inflammation and ease physical tension." }] }, { label: "Touch", items: [{ title: "Massage Therapy", id: "massage-therapy", text: "Therapeutic touch to ease muscle tension and support rest." }, { title: "Hijama", id: "hijama", text: "Traditional cupping, delivered under medical supervision." }] }]} /></Section></>;
+        case "ClosingCTA": return <><Label><b>variant="whatsapp"</b> · WhatsApp first, call second</Label>
+          <ClosingCTA variant="whatsapp" title="Prefer to message us?" sub="Our team replies on WhatsApp and can arrange a call." whatsapp="https://wa.me/919553600100" phone="tel:+919553600100" phoneLabel="Call +91 9553 600 100" />
+          <Label><b>variant="tariff"</b> · the commercial close for pages that never quote a rate</Label>
+          <ClosingCTA variant="tariff" sub="Rates are per room, per night, and include all taxes." /></>;
+        case "FormSplit": return <><Label><b>compact</b> · the same form without the panel</Label>
+          <Section><FormSplit compact onSubmit={(e) => e.preventDefault()}><Statement as="h2" size="title">Send your details</Statement><Input label="Name" name="full_name" autoComplete="name" required /><Input label="Mobile / WhatsApp number" name="phone" type="tel" autoComplete="tel" required /><Textarea label="Anything you'd like us to know?" name="notes" rows={3} /><div><Button size="lg" type="submit">Send your details</Button></div></FormSplit></Section></>;
+        case "PanoramaCaption": return <><Label><b>video</b> · a muted loop under the same scrim, with a pause button (poster only here)</Label>
+          <PanoramaCaption video={{ poster: P + "valley.jpg", title: "The valley at first light" }} title="The valley at first light" /></>;
+        case "ArticleHeader": return <><Label><b>video</b> · a video article, the player in the lead photograph's place</Label>
+          <ArticleHeader breadcrumbs={<Breadcrumbs items={[{ label: "Journal", href: "#" }, "Life at Shantara"]} />} title="A day at Shantara, on film" dek="Morning yoga to evening meditation." category="Life at Shantara" date="12 August 2026" readTime="3 min watch" video={{ poster: P + "activity-hall-yoga-studio-empty.jpg", title: "A day at Shantara" }} /></>;
+        case "BandStatement": return <><Label><b>quote</b> · the page's one accent as a doctor's own words</Label>
+          <BandStatement quote={{ quote: "[Placeholder — a doctor's own words, approved for the page.]", cite: "Dr. Bahja Janu", role: "Medical Director" }} /></>;
+        default: return null;
+      }
+    }
+
     function Specimen() {
       if (!NS || !NS[name]) {
         return <p className="err">Unknown component: {name}</p>;
@@ -51,6 +146,9 @@
         Prose, ArticleFigure, AuthorCard, ReviewedBy, TableOfContents, ShareBar, Pagination,
         Section, HeroFullBleed, HeroSplit, HeroStatement, SplitSection, BandStatement, PanoramaCaption,
         PeopleRow, NumeralsSplit, TileGrid, IndexList, ClosingCTA, FormSplit, ArticleHeader, RelatedArticles,
+        FaqSection, InPageNav, CatalogueSection, InclusionsSection, ContactLocation, ArticleLayout, ListingSection,
+        KeyFacts, ProcessSection, TimelineSection, FeatureGrid, GalleryGrid, VideoFeature, ProgrammeCompare, NoticeBand,
+        ReferencesSection, CredentialStrip, GuestStory, ConfirmationSection, NotFoundSection, PolicySection, Video,
       } = NS;
       const P = "../assets/photos/";
       const doctors = [
@@ -543,8 +641,7 @@
           </>;
         case "FormSplit":
           return <Section>
-            <FormSplit onSubmit={(e) => e.preventDefault()} aside={<>
-              <PortraitFrame src={P + "doctor-bahja-janu-portrait-cropped.jpeg"} name="Dr. Bahja Janu" role="Medical Director" />
+            <FormSplit onSubmit={(e) => e.preventDefault()} src={P + "reception.jpg"} alt="The reception desk" aside={<>
               <Statement as="h3" size="title" sub="A member of the team will call you to understand what you need. A doctor then reviews whether a stay is the right next step.">We'll be in touch</Statement>
             </>}>
               <Statement as="h2" size="title" sub="Share your name and a number we can reach. Our team will contact you to arrange a consultation.">Send your details</Statement>
@@ -578,14 +675,209 @@
               { title: "How rooms are designed", href: "#", src: P + "room-twin.jpg", alt: "A twin room", category: "Life at Shantara", readTime: "3 min read" },
             ]} />
           </Section>;
+        /* ── New sections (doc: Shantara website sections — recommendations and build specs) ── */
+        case "FaqSection":
+          return <Section>
+            <FaqSection schema action={<TextLink href="#">All questions</TextLink>} groups={faqGroups} />
+          </Section>;
+        case "InPageNav":
+          /* No site header in the specimen, so the sticky offset is zero here. */
+          return <div style={{ "--header-h": "0px" }}>
+            <InPageNav items={[{ id: "ipn-overview", label: "Overview" }, { id: "ipn-includes", label: "What's included" }, { id: "ipn-day", label: "A typical day" }, { id: "ipn-faq", label: "Questions" }, { id: "ipn-next", label: "Next step" }]} />
+            {[["ipn-overview", "Overview"], ["ipn-includes", "What's included"], ["ipn-day", "A typical day"], ["ipn-faq", "Questions"], ["ipn-next", "Next step"]].map(([id, label], i) => (
+              <Section key={id} id={id} ground={i % 2 ? "stone" : "merino"} space="sm" style={{ scrollMarginTop: "calc(var(--header-h, 72px) + 64px)" }}>
+                <Statement size="title" sub="Each section on the page carries the id the bar links to.">{label}</Statement>
+              </Section>
+            ))}
+          </div>;
+        case "CatalogueSection":
+          return <Section>
+            <CatalogueSection entries={therapyEntries} />
+          </Section>;
+        case "InclusionsSection":
+          return <Section>
+            <InclusionsSection sub="Your stay is planned around your programme. Rates and room categories are on the tariff page." includes={tariff.includes} excludes={tariff.excludes} supplements={tariff.supplements} action={<TextLink href="#">View the tariff</TextLink>} />
+          </Section>;
+        case "ContactLocation":
+          return <Section>
+            <ContactLocation sub="Call or message us to plan a consultation. Our team arranges your transfer when your stay is confirmed."
+              ways={[
+                { icon: "phone", label: "Call", value: "+91 9553 600 100", href: "tel:+919553600100" },
+                { icon: "message-circle", label: "WhatsApp", value: "+91 9553 600 100", href: "https://wa.me/919553600100" },
+                { icon: "mail", label: "Email", value: "heal@shantara.life", href: "mailto:heal@shantara.life" },
+              ]}
+              address={["Shantara", "Chennamangallur, Kozhikode", "Keralam 673602, India"]}
+              directions={[
+                { icon: "plane", title: "From Calicut International Airport", text: "About 25 km, roughly 45 minutes. A shared transfer is included; share your flight details at least 48 hours ahead." },
+                { icon: "train-front", title: "From Calicut Railway Station", text: "About 30 km, roughly an hour. A shared transfer is included; share your train details at least 48 hours ahead." },
+              ]}
+              src={P + "exterior-entrance-dusk-lit-canopy.jpg"} alt="The entrance at dusk"
+              map={{ href: "https://maps.google.com/?q=Shantara+Chennamangallur+Kozhikode" }} />
+          </Section>;
+        case "ArticleLayout":
+          return <Section>
+            <ArticleLayout toc={[{ id: "how-meals-are-planned", label: "How meals are planned" }, { id: "supervised-fasting", label: "Supervised fasting" }, { id: "what-to-tell-us", label: "What to tell us before you arrive" }]} aside={<ReviewedBy name="Dr. Bahja Janu" role="Medical Director" date="20 August 2026" dateTime="2026-08-20" />}>
+              <Prose>
+                <p>Meals are planned as part of your programme, taking into account your doctor's recommendations and any dietary requirements you share before you arrive.</p>
+                <h2 id="how-meals-are-planned">How meals are planned</h2>
+                <p>Your doctor reviews your assessment and sets the pattern of your meals. The kitchen prepares them from the plan, and the plan is reviewed as your stay progresses.</p>
+                <h2 id="supervised-fasting">Supervised fasting</h2>
+                <p>Some programmes include a period of supervised fasting. It is recommended only after assessment, and your doctor reviews how you are doing each day.</p>
+                <h2 id="what-to-tell-us">What to tell us before you arrive</h2>
+                <p>Share any allergies, intolerances and the medication you take, so the plan can account for them from the first day.</p>
+              </Prose>
+            </ArticleLayout>
+          </Section>;
+        case "ListingSection": {
+          const [cat, setCat] = React.useState("all");
+          const [pg, setPg] = React.useState(1);
+          const all = [
+            { title: "How programme duration is decided", src: P + "treatment.jpg", alt: "A treatment room", category: "Clinical Guides", cat: "clinical", readTime: "5 min read" },
+            { title: "Managing PCOS through lifestyle", src: P + "grounds.jpg", alt: "The grounds", category: "Clinical Guides", cat: "clinical", readTime: "6 min read" },
+            { title: "How meals are planned during a stay", src: P + "dining-restaurant-valley-window.jpg", alt: "The dining room", category: "Food & Recipes", cat: "food", readTime: "4 min read" },
+            { title: "How rooms are designed", src: P + "room-twin.jpg", alt: "A twin room", category: "Life at Shantara", cat: "life", readTime: "3 min read" },
+            { title: "A week of monsoon light", src: P + "valley.jpg", alt: "The valley", category: "Life at Shantara", cat: "life", readTime: "4 min read" },
+            { title: "What happens at your naturopathy assessment", src: P + "consultation-doctor-at-desk-with-guest-landscape-3x2.jpg", alt: "A doctor at a consultation desk", category: "Clinical Guides", cat: "clinical", readTime: "5 min read" },
+          ];
+          const shown = all.filter((a) => cat === "all" || a.cat === cat);
+          return <Section>
+            <ListingSection title="Journal" sub="Clinical guides, food and life at Shantara, written and reviewed by our team."
+              categories={[{ id: "clinical", label: "Clinical Guides" }, { id: "food", label: "Food & Recipes" }, { id: "life", label: "Life at Shantara" }, { id: "events", label: "Events" }]}
+              category={cat} onCategory={(c) => { setCat(c); setPg(1); }} page={pg} pageCount={cat === "all" ? 3 : 1} onPage={setPg}>
+              {shown.map((a) => <Tile key={a.title} src={a.src} alt={a.alt} ratio="3:2" title={a.title} meta={[a.category, a.readTime]} href="#" />)}
+            </ListingSection>
+          </Section>;
+        }
+        case "KeyFacts":
+          return <Section>
+            <KeyFacts title="Detox" facts={[
+              { label: "Focus", value: "Metabolic" },
+              { label: "Typical length", value: "7–21 nights" },
+              { label: "Begins with", value: "Consultation and assessment" },
+              { label: "Supervision", value: "Daily doctor consultation" },
+              { label: "Meals", value: "Planned for your programme" },
+            ]} action={<TextLink href="#">What the programme includes</TextLink>}>
+              <p>Your doctor may recommend a meal plan or supervised fasting based on your assessment. Therapies may also form part of your programme.</p>
+              <p>The plan is reviewed during your stay and adjusted where necessary.</p>
+            </KeyFacts>
+          </Section>;
+        case "ProcessSection":
+          return <Section ground="stone">
+            <ProcessSection title="How a stay begins" sub="From your first message to your first morning." steps={[
+              { title: "Send your details", text: "Share your name and a number we can reach." },
+              { title: "A call from our team", text: "A member of the team calls to understand what you need." },
+              { title: "A doctor reviews", text: "A doctor reviews whether a stay is the right next step." },
+              { title: "Your stay is confirmed", text: "A stay is confirmed after a doctor has spoken with you." },
+            ]} action={<Button>Book a Consultation</Button>} />
+          </Section>;
+        case "TimelineSection":
+          return <Section>
+            <TimelineSection title="A day at Shantara" sub="Every guest follows the same daily rhythm. Your doctor prescribes the treatments that fill the morning and afternoon." rows={daySchedule} src={P + "activity-hall-yoga-studio-empty.jpg"} alt="The yoga hall in the morning" />
+          </Section>;
+        case "FeatureGrid":
+          return <Section>
+            <FeatureGrid title="Around the retreat" sub="Spaces for movement, rest and quiet, across the hilltop." items={[
+              { icon: "sun", title: "Yoga Hall", text: "Guided yoga practice, breathing sessions and meditation." },
+              { icon: "droplets", title: "Swimming Pool", text: "Gentle movement and recovery through water-based activity." },
+              { icon: "book-open", title: "Library", text: "A quiet space for reading and reflection." },
+              { icon: "sprout", title: "Organic Farm", text: "Grows produce used in daily meals." },
+              { icon: "mountain", title: "Sky Garden", text: "An elevated space for quiet walks at sunrise or in the evening." },
+              { icon: "heart-pulse", title: "24-hour Nursing Care", text: "The on-site nursing team, included for every guest." },
+            ]} />
+          </Section>;
+        case "GalleryGrid":
+          return <Section>
+            <GalleryGrid title="The rooms" items={[
+              { src: P + "room-premium.jpg", alt: "A room with a balcony over the valley", caption: "Premium Room, with a balcony over the valley." },
+              { src: P + "room-bedroom-forest-view-armchair.jpg", alt: "An armchair by the window, forest beyond", caption: "Rooms open to the surrounding hills." },
+              { src: P + "suite-living-balcony-empty.jpg", alt: "A suite living room opening to a balcony", caption: "Executive Suite living room." },
+              { src: P + "room-twin.jpg", alt: "A twin room", caption: "Single or double occupancy." },
+              { src: P + "room-bedroom-desk-balcony-view.jpg", alt: "A desk by the balcony door" },
+            ]} />
+          </Section>;
+        case "VideoFeature":
+          return <>
+            <Section>
+              <VideoFeature title="A day at Shantara" sub="Morning yoga to evening meditation, in three minutes." video={{ poster: P + "valley.jpg", title: "A day at Shantara", captions: undefined }} note="Captions available. The video does not play automatically." />
+            </Section>
+            <VideoFeature layout="split" ground="stone" title="Inside the yoga hall" sub="How a morning session is guided, adapted to what you can manage that day." video={{ poster: P + "activity-hall-yoga-studio-empty.jpg", title: "Inside the yoga hall" }} />
+          </>;
+        case "ProgrammeCompare":
+          return <Section>
+            <ProgrammeCompare title="Programmes at a glance" programmes={programmeRows} action={<TextLink href="#">Current rates are on the tariff page</TextLink>} />
+          </Section>;
+        case "NoticeBand":
+          return <Section>
+            <div style={{ display: "flex", flexDirection: "column", gap: 40 }}>
+              <NoticeBand title="Continue your medication">Do not stop or change any medication before you arrive. Your doctor reviews it with you at your consultation.</NoticeBand>
+              <NoticeBand tone="caution" layout="band" title="A stay is confirmed after a doctor has spoken with you" action={<TextLink href="#">Book a Consultation</TextLink>}>Share your health assessment and records first.</NoticeBand>
+            </div>
+          </Section>;
+        case "ReferencesSection":
+          return <Section>
+            <ReferencesSection items={[
+              { work: "[Title of the cited work]", source: "[Journal or publisher]", year: "[Year]", href: "https://example.org/the-source" },
+              { work: "[Title of the cited work]", source: "[Journal or publisher]", year: "[Year]", href: "https://example.org/another-source-with-a-long-address/that-wraps-on-phones" },
+            ]} reviewer={{ name: "Dr. Bahja Janu", role: "Medical Director", date: "20 August 2026", dateTime: "2026-08-20" }} />
+          </Section>;
+        case "CredentialStrip":
+          return <Section>
+            <CredentialStrip title="Registrations and qualifications" items={[
+              { name: "BNYS", issuer: "Rajiv Gandhi University of Health Sciences", holder: "Dr. Bahja Janu" },
+              { name: "Medical licence", issuer: "Travancore-Cochin Medical Council (TCMC), Kerala", holder: "Dr. Bahja Janu" },
+              { name: "Medical licence", issuer: "Ministry of Health, Saudi Arabia", holder: "Dr. Bahja Janu" },
+            ]} />
+          </Section>;
+        case "GuestStory":
+          return <>
+            <Section>
+              <GuestStory story={{ quote: "[Placeholder — a consented guest story, in the guest's own words.]", name: "[First name, with consent]", context: "[Programme · length of stay]", src: P + "balcony-lounge-infinity-edge-valley.jpg", alt: "The balcony lounge over the valley" }} />
+            </Section>
+            <Section ground="stone">
+              <GuestStory title="Guests in their own words" stories={[
+                { quote: "[Placeholder — a short consented quote.]", name: "[Initial]", context: "[Programme]" },
+                { quote: "[Placeholder — a short consented quote.]", name: "[Initial]", context: "[Programme]" },
+                { quote: "[Placeholder — a short consented quote.]", name: "[Initial]", context: "[Programme]" },
+              ]} />
+            </Section>
+          </>;
+        case "ConfirmationSection":
+          return <Section>
+            <ConfirmationSection autoFocus={false} sub="Thank you. We have your details."
+              next={["A member of the team will call you to understand what you need.", "A doctor then reviews whether a stay is the right next step.", "A stay is confirmed after a doctor has spoken with you."]}
+              contact={[contact[0], { icon: "message-circle", label: "WhatsApp", href: "https://wa.me/919553600100?text=" + encodeURIComponent("Hello, I have just sent my details on the Shantara website.") }, contact[1]]}
+              explore={[
+                { src: P + "dining-restaurant-valley-window.jpg", alt: "The dining room above the valley", title: "A day at Shantara", meta: ["Experience"], text: "From the first consultation to lights out.", href: "#a-day-at-shantara" },
+                { src: P + "consultation-doctor-at-desk-with-guest-landscape-3x2.jpg", alt: "A doctor in consultation with a guest", title: "Meet the doctors", meta: ["About"], text: "Who you will speak with before a stay.", href: "#our-doctors" },
+                { src: P + "balcony.jpg", alt: "A balcony over the valley", title: "Current rates and what a stay includes", meta: ["Tariff"], text: "Rooms, inclusions, payment and cancellation.", href: "#tariffs" },
+              ]}
+              actions={<Button variant="secondary">Back to home</Button>} />
+          </Section>;
+        case "NotFoundSection":
+          return <Section>
+            <NotFoundSection links={[{ label: "Programmes", href: "#programmes" }, { label: "Conditions", href: "#conditions" }, { label: "Book a Consultation", href: "#book" }, { label: "Contact", href: "#contact" }]} />
+          </Section>;
+        case "PolicySection":
+          return <Section>
+            <PolicySection title="Payment and cancellation" sub="The terms that apply to every confirmed stay." clauses={[
+              { title: "Payment", text: "The share due at confirmation depends on how far ahead you book.", columns: [{ key: "when", label: "Booked" }, { key: "now", label: "At confirmation" }, { key: "rest", label: "Balance" }], rows: tariff.payment_terms.map((t) => ({ when: t.booked_before, now: t.at_confirmation, rest: t.balance })) },
+              { title: "Cancellation", text: "Refunds depend on when a stay is cancelled.", columns: [{ key: "when", label: "Cancelled" }, { key: "refund", label: "Refund" }], rows: tariff.cancellation.map((t) => ({ when: t.cancelled_before, refund: t.refund })) },
+              { title: "Companions", text: "A companion staying in a separate room is charged separately. Our team confirms the amount." },
+            ]} />
+          </Section>;
+        case "Video":
+          return <div style={{ padding: 24, display: "grid", gap: 24, maxWidth: 960 }}>
+            <Video poster={P + "valley.jpg"} title="A day at Shantara" />
+            <div style={{ maxWidth: 480 }}><Video mode="loop" ratio="4:5" poster={P + "water-wall.jpg"} title="The water wall" /></div>
+          </div>;
         default:
           return <p className="err">No specimen for {name}</p>;
       }
     }
 
-    const SECTIONS = ["Section", "HeroFullBleed", "HeroStatement", "SplitSection", "BandStatement", "PanoramaCaption", "PeopleRow", "NumeralsSplit", "TileGrid", "IndexList", "ClosingCTA", "FormSplit", "HeroSplit", "ArticleHeader", "RelatedArticles"];
+    const SECTIONS = ["Section", "HeroFullBleed", "HeroStatement", "SplitSection", "BandStatement", "PanoramaCaption", "PeopleRow", "NumeralsSplit", "TileGrid", "IndexList", "ClosingCTA", "FormSplit", "HeroSplit", "ArticleHeader", "RelatedArticles", "FaqSection", "InPageNav", "CatalogueSection", "InclusionsSection", "ContactLocation", "ArticleLayout", "ListingSection", "KeyFacts", "ProcessSection", "TimelineSection", "FeatureGrid", "GalleryGrid", "VideoFeature", "ProgrammeCompare", "NoticeBand", "ReferencesSection", "CredentialStrip", "GuestStory", "ConfirmationSection", "NotFoundSection", "PolicySection"];
     if (SECTIONS.includes(name)) document.body.style.padding = "0";
-    ReactDOM.createRoot(document.getElementById("root")).render(<Specimen />);
+    ReactDOM.createRoot(document.getElementById("root")).render(<><Specimen /><Variation /></>);
   </script>
 </body>
 </html>

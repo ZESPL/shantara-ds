@@ -29,3 +29,5 @@ The **offer** hero: a photograph on one side, running to the screen edge and the
 | `HeroStatement` | Editorial — words lead, no photograph needed | Conditions and Programmes indexes, About, Journal index, Contact, legal pages (`ArticleHeader` for single articles) |
 
 One hero per page, always first. None of them takes a label above the title: place, category or duration go in `meta`, below it.
+
+**Variation — `video`.** `video={{ sources, poster, title }}` puts a short muted loop (editorial/Video, mode "loop") in the photograph's place, with a pause button; it never autoplays for visitors who prefer reduced motion. R2 + CDN only (skill-video.md).

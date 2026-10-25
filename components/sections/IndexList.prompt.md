@@ -17,3 +17,5 @@ A text-only index for lists too long for photographs: a group label on the left 
 **Content.** A row's line is the record's `summary` or `proposition`. Conditions still in `draft` without a summary show the name only, or are left out, until medical review.
 
 **Responsive.** Phone: the group label sits above its rows, one column of rows, each row at least 44px tall. From 760px `columns={2}` puts rows in two columns. From 1000px the label takes 3 of 12 columns on the left and the rows take the other 9. The arrow nudges 3px on hover (fine pointers) and flips under `dir="rtl"`.
+
+**Variations.** `anchors` — rows link to sections on the same page (`items[].id` → `#id`) and show no arrow: the index at the top of Therapies or Rooms. `counts` — the number of rows beside each group label.
