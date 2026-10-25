@@ -6,14 +6,13 @@
 /* Board names and roles from docs/handbook/founder.md; there is no content record for the board. */
 const ABOUT_BOARD = [
   { name: "P.A. Kareem", role: "Founder and Chairman", src: "doctor-pa-kareem-passport.jpeg" },
-  { name: "Abdulla Aboobacker", role: "Board Member", detail: "Engineer and Industrialist", src: "board-abdulla-aboobacker.jpeg" },
+  { name: "Abdulla Aboobacker", role: "Board Member", src: "board-abdulla-aboobacker.jpeg" },
 ];
 
 function aboutDoctors() {
   return (window.ShantaraContent.doctors || []).filter((d) => ["pa-kareem", "bahja-janu"].includes(d.id)).map((d) => ({
     name: d.full_name,
     role: d.role,
-    detail: [d.qualification, d.publications_note].filter(Boolean).join(". ") || undefined,
     src: d.photo_profile ? window.photoSrc(d.photo_profile) : undefined,
   }));
 }
@@ -42,7 +41,7 @@ function AboutScreen({ onNavigate }) {
           <PeopleRow
             title={t("A doctor plans your programme after consultation and reviews it during your stay.")}
             sub={t("Profiles include qualifications so you can see who is responsible for clinical guidance.")}
-            people={aboutDoctors().map((p) => ({ ...p, role: t(p.role), detail: p.detail ? t(p.detail) : undefined }))}
+            people={aboutDoctors().map((p) => ({ ...p, role: t(p.role) }))}
             action={<TextLink onClick={() => onNavigate("doctor:pa-kareem")}>{t("P.A. Kareem")}</TextLink>}
           />
         </Section>
@@ -60,7 +59,7 @@ function AboutScreen({ onNavigate }) {
         <Section>
           <PeopleRow
             title={t("Board")}
-            people={ABOUT_BOARD.map((p) => ({ ...p, role: t(p.role), detail: p.detail ? t(p.detail) : undefined, src: window.photoSrc(p.src) }))}
+            people={ABOUT_BOARD.map((p) => ({ ...p, role: t(p.role), src: window.photoSrc(p.src) }))}
           />
         </Section>
       </P>

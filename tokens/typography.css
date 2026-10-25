@@ -60,7 +60,7 @@
 --tracking-normal:0; /* @kind font */
 
 /* Line length */
---measure-statement:30ch; /* @kind other */
+--measure-statement:40ch; /* @kind other */
 --measure-title:22ch; /* @kind other */
 --measure-body:62ch; /* @kind other */
 

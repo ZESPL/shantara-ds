@@ -3,8 +3,6 @@ import * as React from "react";
 export interface Person {
   name: string;
   role?: React.ReactNode;
-  /** Qualification line — only when confirmed in content/doctors. */
-  detail?: React.ReactNode;
   /** Portrait photograph. Omit it and the frame shows initials. */
   src?: string;
   alt?: string;

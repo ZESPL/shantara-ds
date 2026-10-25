@@ -17,6 +17,8 @@ export interface HeroFullBleedProps extends React.HTMLAttributes<HTMLElement> {
   actions?: React.ReactNode;
   /** Caption-size facts under the actions, e.g. ["Kozhikode, Keralam"] (MetaRow items) or a node. */
   meta?: Array<string | import("../editorial/MetaRow").MetaItem> | React.ReactNode;
+  /** <Breadcrumbs/> above the title. Every page except the home page passes them. */
+  breadcrumbs?: React.ReactNode;
   /** `full` 100svh (560–1080px) for the home page; `tall` 72svh for inner pages; `short` 56svh. */
   height?: "full" | "tall" | "short";
   /** Heading element. Default `h1` — a page has exactly one. */

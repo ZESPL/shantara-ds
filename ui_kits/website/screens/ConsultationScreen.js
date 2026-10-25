@@ -101,7 +101,6 @@ function ConsultationScreen({ onNavigate, locale = "en", view = "booking" }) {
           name={bahja.full_name}
           role={t(bahja.role)}
           headingLevel={2}
-          style={{ maxWidth: "min(100%, 20rem)" }}
         />
       ) : null}
       <Statement size="title" as="h2">{t("We'll be in touch")}</Statement>

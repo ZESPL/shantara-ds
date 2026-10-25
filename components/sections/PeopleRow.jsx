@@ -20,14 +20,16 @@ function ensure() {
   document.head.appendChild(el);
 }
 
-/* people: [{ name, role, detail?, src? }] */
+/* people: [{ name, role, src? }] — name and role only. A third line (qualification) is
+   dropped: in a row of portraits it makes the captions uneven and nobody reads it there.
+   Qualifications belong on the doctor's own page. */
 export function PeopleRow({ title, sub, people = [], note, action, style, ...rest }) {
   ensure();
   return (
     <div data-ds-id="sections/PeopleRow" className="sh-people" style={style} {...rest}>
       {title ? <Statement sub={sub}>{title}</Statement> : null}
       <div className="sh-people-grid">
-        {people.map((p) => <PortraitFrame key={p.name} {...p} />)}
+        {people.map(({ detail, ...p }) => <PortraitFrame key={p.name} {...p} />)}
       </div>
       {note ? <p className="sh-people-note">{note}</p> : null}
       {action ? <div>{action}</div> : null}

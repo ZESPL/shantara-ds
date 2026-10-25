@@ -12,6 +12,12 @@ const CSS = `
 .sh-fsplit{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--stack-lg);align-items:start}
 .sh-fsplit-form{min-width:0;display:flex;flex-direction:column;gap:var(--space-6);margin:0}
 .sh-fsplit-aside{min-width:0;background:var(--ground-stone);padding:clamp(24px, 2.2vw + 16px, 48px);display:flex;flex-direction:column;gap:var(--space-7)}
+/* Who will call: a fixed 4:5 thumbnail beside the name and role — the same size at every
+   width, so the panel never becomes a full-height portrait (phone) or a small frame
+   stranded in a wide panel (desktop). */
+.sh-fsplit-aside>.sh-portrait{display:grid;grid-template-columns:clamp(88px, 3vw + 64px, 120px) minmax(0,1fr);align-items:end;gap:var(--space-5)}
+.sh-fsplit-aside>.sh-portrait figcaption{padding-bottom:var(--space-1)}
+.sh-fsplit-aside>.sh-portrait .sh-portrait-initials{font-size:var(--text-2xl)}
 @media (min-width:1000px){
   .sh-fsplit{grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:calc(var(--grid-gap) * 2.5)}
 }

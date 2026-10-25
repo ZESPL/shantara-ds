@@ -54,7 +54,7 @@
       } = NS;
       const P = "../assets/photos/";
       const doctors = [
-        { name: "P.A. Kareem", role: "Founder, Chairman & Chief Naturopathy Consultant", detail: "Government of India-certified Naturopathy Practitioner", src: P + "doctor-pa-kareem-passport.jpeg" },
+        { name: "P.A. Kareem", role: "Founder, Chairman & Chief Naturopathy Consultant", src: P + "doctor-pa-kareem-passport.jpeg" },
         { name: "Dr. Bahja Janu", role: "Medical Director", src: P + "doctor-bahja-janu-portrait-cropped.jpeg" },
       ];
       const programmes = [
@@ -427,12 +427,20 @@
             ))}
           </>;
         case "HeroFullBleed":
-          return <HeroFullBleed
-            src={P + "arrival-dusk.jpg"} alt="Shantara at dusk"
-            title="A doctor-led naturopathy retreat in Keralam"
-            sub="Drug-free naturopathy on a hilltop above the Chennamangallur valley. Every stay begins with a consultation, and your programme is planned by our doctors."
-            actions={<><Button size="lg">Book a Consultation</Button><TextLink href="#">View programmes</TextLink></>}
-            meta={["Kozhikode, Keralam"]} />;
+          return <>
+            <HeroFullBleed
+              src={P + "arrival-dusk.jpg"} alt="Shantara at dusk"
+              title="A doctor-led naturopathy retreat in Keralam"
+              sub="Drug-free naturopathy on a hilltop above the Chennamangallur valley. Every stay begins with a consultation, and your programme is planned by our doctors."
+              actions={<><Button size="lg">Book a Consultation</Button><TextLink href="#">View programmes</TextLink></>}
+              meta={["Kozhikode, Keralam"]} />
+            <HeroFullBleed height="tall"
+              src={P + "room-premium.jpg"} alt="A room with a balcony over the valley"
+              breadcrumbs={<Breadcrumbs items={[{ label: "Home", href: "#" }, { label: "Experience", href: "#" }, "Rooms"]} />}
+              title="Rooms that look out over the valley"
+              sub="Five room categories, each a residential stay planned around your programme."
+              actions={<Button size="lg">Book a Consultation</Button>} />
+          </>;
         case "HeroSplit":
           return <>
             <HeroSplit
@@ -536,7 +544,7 @@
         case "FormSplit":
           return <Section>
             <FormSplit onSubmit={(e) => e.preventDefault()} aside={<>
-              <PortraitFrame src={P + "doctor-bahja-janu-portrait-cropped.jpeg"} name="Dr. Bahja Janu" role="Medical Director" style={{ maxWidth: 220 }} />
+              <PortraitFrame src={P + "doctor-bahja-janu-portrait-cropped.jpeg"} name="Dr. Bahja Janu" role="Medical Director" />
               <Statement as="h3" size="title" sub="A member of the team will call you to understand what you need. A doctor then reviews whether a stay is the right next step.">We'll be in touch</Statement>
             </>}>
               <Statement as="h2" size="title" sub="Share your name and a number we can reach. Our team will contact you to arrange a consultation.">Send your details</Statement>

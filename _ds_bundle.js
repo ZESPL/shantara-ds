@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"ShantaraDesignSystem_45bbe4","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"Divider","sourcePath":"components/core/Divider.jsx"},{"name":"HnchLogo","sourcePath":"components/core/HnchLogo.jsx"},{"name":"ICON_GROUPS","sourcePath":"components/core/Icon.jsx"},{"name":"ICON_NAMES","sourcePath":"components/core/Icon.jsx"},{"name":"Icon","sourcePath":"components/core/Icon.jsx"},{"name":"IconButton","sourcePath":"components/core/IconButton.jsx"},{"name":"Logo","sourcePath":"components/core/Logo.jsx"},{"name":"PatternPanel","sourcePath":"components/core/PatternPanel.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Dialog","sourcePath":"components/feedback/Dialog.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"DateField","sourcePath":"components/forms/DateField.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"SearchList","sourcePath":"components/forms/SearchList.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Switch","sourcePath":"components/forms/Switch.jsx"},{"name":"Textarea","sourcePath":"components/forms/Textarea.jsx"},{"name":"Accordion","sourcePath":"components/navigation/Accordion.jsx"},{"name":"Breadcrumbs","sourcePath":"components/navigation/Breadcrumbs.jsx"},{"name":"LanguageSelector","sourcePath":"components/navigation/LanguageSelector.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"Media","sourcePath":"components/editorial/Media.jsx"},{"name":"ArticleFigure","sourcePath":"components/editorial/ArticleFigure.jsx"},{"name":"PortraitFrame","sourcePath":"components/editorial/PortraitFrame.jsx"},{"name":"AuthorCard","sourcePath":"components/editorial/AuthorCard.jsx"},{"name":"GroupedList","sourcePath":"components/editorial/GroupedList.jsx"},{"name":"MetaRow","sourcePath":"components/editorial/MetaRow.jsx"},{"name":"NumberedSteps","sourcePath":"components/editorial/NumberedSteps.jsx"},{"name":"Numeral","sourcePath":"components/editorial/Numeral.jsx"},{"name":"Pagination","sourcePath":"components/editorial/Pagination.jsx"},{"name":"PlainList","sourcePath":"components/editorial/PlainList.jsx"},{"name":"Prose","sourcePath":"components/editorial/Prose.jsx"},{"name":"QuoteBlock","sourcePath":"components/editorial/QuoteBlock.jsx"},{"name":"ReviewedBy","sourcePath":"components/editorial/ReviewedBy.jsx"},{"name":"ShareBar","sourcePath":"components/editorial/ShareBar.jsx"},{"name":"SpecTable","sourcePath":"components/editorial/SpecTable.jsx"},{"name":"Statement","sourcePath":"components/editorial/Statement.jsx"},{"name":"TableOfContents","sourcePath":"components/editorial/TableOfContents.jsx"},{"name":"TextLink","sourcePath":"components/editorial/TextLink.jsx"},{"name":"Tile","sourcePath":"components/editorial/Tile.jsx"},{"name":"TimeTable","sourcePath":"components/editorial/TimeTable.jsx"},{"name":"ArticleHeader","sourcePath":"components/sections/ArticleHeader.jsx"},{"name":"BandStatement","sourcePath":"components/sections/BandStatement.jsx"},{"name":"ClosingCTA","sourcePath":"components/sections/ClosingCTA.jsx"},{"name":"FormSplit","sourcePath":"components/sections/FormSplit.jsx"},{"name":"HeroFullBleed","sourcePath":"components/sections/HeroFullBleed.jsx"},{"name":"HeroSplit","sourcePath":"components/sections/HeroSplit.jsx"},{"name":"HeroStatement","sourcePath":"components/sections/HeroStatement.jsx"},{"name":"IndexList","sourcePath":"components/sections/IndexList.jsx"},{"name":"NumeralsSplit","sourcePath":"components/sections/NumeralsSplit.jsx"},{"name":"PanoramaCaption","sourcePath":"components/sections/PanoramaCaption.jsx"},{"name":"PeopleRow","sourcePath":"components/sections/PeopleRow.jsx"},{"name":"TileGrid","sourcePath":"components/sections/TileGrid.jsx"},{"name":"RelatedArticles","sourcePath":"components/sections/RelatedArticles.jsx"},{"name":"Section","sourcePath":"components/sections/Section.jsx"},{"name":"SplitSection","sourcePath":"components/sections/SplitSection.jsx"}],"sourceHashes":{"components/core/Badge.jsx":"b014d0a4d8ea","components/core/Button.jsx":"66ad8b155d36","components/core/Card.jsx":"899ecf09e977","components/core/Divider.jsx":"7841bbb870dd","components/core/HnchLogo.jsx":"3086ba9ae2ea","components/core/Icon.jsx":"7eaaf731593f","components/core/IconButton.jsx":"0746d0dc8fb3","components/core/Logo.jsx":"71651ae4093b","components/core/PatternPanel.jsx":"dd26bb639ce9","components/core/Tag.jsx":"480f3225f1d4","components/feedback/Dialog.jsx":"c1b84ed6f276","components/feedback/Spinner.jsx":"49fa70a95320","components/feedback/Toast.jsx":"c64129df2a1a","components/feedback/Tooltip.jsx":"9c7b40a94408","components/forms/Checkbox.jsx":"621ba3e2309a","components/forms/DateField.jsx":"a4fef507a824","components/forms/Input.jsx":"1321df74a451","components/forms/Radio.jsx":"861dea337cdb","components/forms/SearchList.jsx":"39137752d536","components/forms/Select.jsx":"4ebda94f9354","components/forms/Switch.jsx":"73709580dd9e","components/forms/Textarea.jsx":"e40a2c1357c6","components/navigation/Accordion.jsx":"b8870511c6fe","components/navigation/Breadcrumbs.jsx":"421f19e62be1","components/navigation/LanguageSelector.jsx":"3255d13574aa","components/navigation/Tabs.jsx":"414b48cd2f58","components/editorial/Media.jsx":"33a6b0c1bfde","components/editorial/ArticleFigure.jsx":"f7689927c7db","components/editorial/PortraitFrame.jsx":"d79181ab4681","components/editorial/AuthorCard.jsx":"e96ed75df2fb","components/editorial/GroupedList.jsx":"d8cd9e26b4bf","components/editorial/MetaRow.jsx":"8c95d79ee5e1","components/editorial/NumberedSteps.jsx":"6f2950654a05","components/editorial/Numeral.jsx":"e6b7086ade4c","components/editorial/Pagination.jsx":"893e51b7753d","components/editorial/PlainList.jsx":"2d7a0d571c4a","components/editorial/Prose.jsx":"1b1a9a3ffec2","components/editorial/QuoteBlock.jsx":"c79559f0cb83","components/editorial/ReviewedBy.jsx":"cf907ffdf4c1","components/editorial/ShareBar.jsx":"a5d673d91fb9","components/editorial/SpecTable.jsx":"097e36746780","components/editorial/Statement.jsx":"50cb58806250","components/editorial/TableOfContents.jsx":"f92f3b4de4c4","components/editorial/TextLink.jsx":"b730c74e745f","components/editorial/Tile.jsx":"4ebf341907e5","components/editorial/TimeTable.jsx":"610e5af78002","components/sections/ArticleHeader.jsx":"83ce45ae40da","components/sections/BandStatement.jsx":"28aa51447566","components/sections/ClosingCTA.jsx":"8953540b81f6","components/sections/FormSplit.jsx":"a01694b419b2","components/sections/HeroFullBleed.jsx":"e46955d68654","components/sections/HeroSplit.jsx":"e6152e6379dd","components/sections/HeroStatement.jsx":"bb964624fc4b","components/sections/IndexList.jsx":"92df51713fbc","components/sections/NumeralsSplit.jsx":"10d1fde8fd02","components/sections/PanoramaCaption.jsx":"c9f164c3675d","components/sections/PeopleRow.jsx":"fbf817dcc648","components/sections/TileGrid.jsx":"577cfcc55a90","components/sections/RelatedArticles.jsx":"8452368a277c","components/sections/Section.jsx":"eacd861e84d9","components/sections/SplitSection.jsx":"46b4d81e3a59"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":4,"namespace":"ShantaraDesignSystem_45bbe4","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"Divider","sourcePath":"components/core/Divider.jsx"},{"name":"HnchLogo","sourcePath":"components/core/HnchLogo.jsx"},{"name":"ICON_GROUPS","sourcePath":"components/core/Icon.jsx"},{"name":"ICON_NAMES","sourcePath":"components/core/Icon.jsx"},{"name":"Icon","sourcePath":"components/core/Icon.jsx"},{"name":"IconButton","sourcePath":"components/core/IconButton.jsx"},{"name":"Logo","sourcePath":"components/core/Logo.jsx"},{"name":"PatternPanel","sourcePath":"components/core/PatternPanel.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Dialog","sourcePath":"components/feedback/Dialog.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"DateField","sourcePath":"components/forms/DateField.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"SearchList","sourcePath":"components/forms/SearchList.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Switch","sourcePath":"components/forms/Switch.jsx"},{"name":"Textarea","sourcePath":"components/forms/Textarea.jsx"},{"name":"Accordion","sourcePath":"components/navigation/Accordion.jsx"},{"name":"Breadcrumbs","sourcePath":"components/navigation/Breadcrumbs.jsx"},{"name":"LanguageSelector","sourcePath":"components/navigation/LanguageSelector.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"Media","sourcePath":"components/editorial/Media.jsx"},{"name":"ArticleFigure","sourcePath":"components/editorial/ArticleFigure.jsx"},{"name":"PortraitFrame","sourcePath":"components/editorial/PortraitFrame.jsx"},{"name":"AuthorCard","sourcePath":"components/editorial/AuthorCard.jsx"},{"name":"GroupedList","sourcePath":"components/editorial/GroupedList.jsx"},{"name":"MetaRow","sourcePath":"components/editorial/MetaRow.jsx"},{"name":"NumberedSteps","sourcePath":"components/editorial/NumberedSteps.jsx"},{"name":"Numeral","sourcePath":"components/editorial/Numeral.jsx"},{"name":"Pagination","sourcePath":"components/editorial/Pagination.jsx"},{"name":"PlainList","sourcePath":"components/editorial/PlainList.jsx"},{"name":"Prose","sourcePath":"components/editorial/Prose.jsx"},{"name":"QuoteBlock","sourcePath":"components/editorial/QuoteBlock.jsx"},{"name":"ReviewedBy","sourcePath":"components/editorial/ReviewedBy.jsx"},{"name":"ShareBar","sourcePath":"components/editorial/ShareBar.jsx"},{"name":"SpecTable","sourcePath":"components/editorial/SpecTable.jsx"},{"name":"Statement","sourcePath":"components/editorial/Statement.jsx"},{"name":"TableOfContents","sourcePath":"components/editorial/TableOfContents.jsx"},{"name":"TextLink","sourcePath":"components/editorial/TextLink.jsx"},{"name":"Tile","sourcePath":"components/editorial/Tile.jsx"},{"name":"TimeTable","sourcePath":"components/editorial/TimeTable.jsx"},{"name":"ArticleHeader","sourcePath":"components/sections/ArticleHeader.jsx"},{"name":"BandStatement","sourcePath":"components/sections/BandStatement.jsx"},{"name":"ClosingCTA","sourcePath":"components/sections/ClosingCTA.jsx"},{"name":"FormSplit","sourcePath":"components/sections/FormSplit.jsx"},{"name":"HeroFullBleed","sourcePath":"components/sections/HeroFullBleed.jsx"},{"name":"HeroSplit","sourcePath":"components/sections/HeroSplit.jsx"},{"name":"HeroStatement","sourcePath":"components/sections/HeroStatement.jsx"},{"name":"IndexList","sourcePath":"components/sections/IndexList.jsx"},{"name":"NumeralsSplit","sourcePath":"components/sections/NumeralsSplit.jsx"},{"name":"PanoramaCaption","sourcePath":"components/sections/PanoramaCaption.jsx"},{"name":"PeopleRow","sourcePath":"components/sections/PeopleRow.jsx"},{"name":"TileGrid","sourcePath":"components/sections/TileGrid.jsx"},{"name":"RelatedArticles","sourcePath":"components/sections/RelatedArticles.jsx"},{"name":"Section","sourcePath":"components/sections/Section.jsx"},{"name":"SplitSection","sourcePath":"components/sections/SplitSection.jsx"}],"sourceHashes":{"components/core/Badge.jsx":"b014d0a4d8ea","components/core/Button.jsx":"66ad8b155d36","components/core/Card.jsx":"899ecf09e977","components/core/Divider.jsx":"7841bbb870dd","components/core/HnchLogo.jsx":"3086ba9ae2ea","components/core/Icon.jsx":"7eaaf731593f","components/core/IconButton.jsx":"0746d0dc8fb3","components/core/Logo.jsx":"71651ae4093b","components/core/PatternPanel.jsx":"dd26bb639ce9","components/core/Tag.jsx":"480f3225f1d4","components/feedback/Dialog.jsx":"c1b84ed6f276","components/feedback/Spinner.jsx":"49fa70a95320","components/feedback/Toast.jsx":"c64129df2a1a","components/feedback/Tooltip.jsx":"9c7b40a94408","components/forms/Checkbox.jsx":"621ba3e2309a","components/forms/DateField.jsx":"a4fef507a824","components/forms/Input.jsx":"1321df74a451","components/forms/Radio.jsx":"861dea337cdb","components/forms/SearchList.jsx":"39137752d536","components/forms/Select.jsx":"4ebda94f9354","components/forms/Switch.jsx":"73709580dd9e","components/forms/Textarea.jsx":"e40a2c1357c6","components/navigation/Accordion.jsx":"b8870511c6fe","components/navigation/Breadcrumbs.jsx":"421f19e62be1","components/navigation/LanguageSelector.jsx":"3255d13574aa","components/navigation/Tabs.jsx":"414b48cd2f58","components/editorial/Media.jsx":"33a6b0c1bfde","components/editorial/ArticleFigure.jsx":"f7689927c7db","components/editorial/PortraitFrame.jsx":"d79181ab4681","components/editorial/AuthorCard.jsx":"e96ed75df2fb","components/editorial/GroupedList.jsx":"d8cd9e26b4bf","components/editorial/MetaRow.jsx":"8c95d79ee5e1","components/editorial/NumberedSteps.jsx":"6f2950654a05","components/editorial/Numeral.jsx":"e6b7086ade4c","components/editorial/Pagination.jsx":"893e51b7753d","components/editorial/PlainList.jsx":"2d7a0d571c4a","components/editorial/Prose.jsx":"1b1a9a3ffec2","components/editorial/QuoteBlock.jsx":"c79559f0cb83","components/editorial/ReviewedBy.jsx":"cf907ffdf4c1","components/editorial/ShareBar.jsx":"a5d673d91fb9","components/editorial/SpecTable.jsx":"097e36746780","components/editorial/Statement.jsx":"50cb58806250","components/editorial/TableOfContents.jsx":"f92f3b4de4c4","components/editorial/TextLink.jsx":"b730c74e745f","components/editorial/Tile.jsx":"4ebf341907e5","components/editorial/TimeTable.jsx":"610e5af78002","components/sections/ArticleHeader.jsx":"83ce45ae40da","components/sections/BandStatement.jsx":"28aa51447566","components/sections/ClosingCTA.jsx":"8953540b81f6","components/sections/FormSplit.jsx":"de80a36c4d58","components/sections/HeroFullBleed.jsx":"020e02a3e0fd","components/sections/HeroSplit.jsx":"e6152e6379dd","components/sections/HeroStatement.jsx":"bb964624fc4b","components/sections/IndexList.jsx":"92df51713fbc","components/sections/NumeralsSplit.jsx":"10d1fde8fd02","components/sections/PanoramaCaption.jsx":"c9f164c3675d","components/sections/PeopleRow.jsx":"1c5f1b2eb3aa","components/sections/TileGrid.jsx":"76322cc24b8f","components/sections/RelatedArticles.jsx":"8452368a277c","components/sections/Section.jsx":"eacd861e84d9","components/sections/SplitSection.jsx":"46b4d81e3a59"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -6095,6 +6095,12 @@ const CSS = `
 .sh-fsplit{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--stack-lg);align-items:start}
 .sh-fsplit-form{min-width:0;display:flex;flex-direction:column;gap:var(--space-6);margin:0}
 .sh-fsplit-aside{min-width:0;background:var(--ground-stone);padding:clamp(24px, 2.2vw + 16px, 48px);display:flex;flex-direction:column;gap:var(--space-7)}
+/* Who will call: a fixed 4:5 thumbnail beside the name and role — the same size at every
+   width, so the panel never becomes a full-height portrait (phone) or a small frame
+   stranded in a wide panel (desktop). */
+.sh-fsplit-aside>.sh-portrait{display:grid;grid-template-columns:clamp(88px, 3vw + 64px, 120px) minmax(0,1fr);align-items:end;gap:var(--space-5)}
+.sh-fsplit-aside>.sh-portrait figcaption{padding-bottom:var(--space-1)}
+.sh-fsplit-aside>.sh-portrait .sh-portrait-initials{font-size:var(--text-2xl)}
 @media (min-width:1000px){
   .sh-fsplit{grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:calc(var(--grid-gap) * 2.5)}
 }
@@ -6149,7 +6155,10 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
    header sits over it, and the text block sits bottom-left inside a scrim that covers
    all of it (the frame's --scrim-hero plus the block's own --scrim-text, which follows the
    block when it wraps tall on a phone). Merino type, Light headline, one Gold primary button. No label above the headline. `height="tall"` is
-   the 72svh inner-page version with an h1-size headline. */
+   the 72svh inner-page version with an h1-size headline.
+   Breadcrumbs: every page except the home page passes `breadcrumbs`; they open the text
+   block (inside its scrim, so they read on any photograph) rather than floating at the top
+   of the frame where the scrim has faded. */
 const CSS = `
 .sh-hero{position:relative;display:flex;align-items:flex-end;min-height:clamp(560px, 100svh, 1080px);overflow:hidden;isolation:isolate}
 .sh-hero[data-height="tall"]{min-height:clamp(480px, 72svh, 820px)}
@@ -6157,6 +6166,7 @@ const CSS = `
 .sh-hero>.sh-media{position:absolute;inset:0;z-index:-1;aspect-ratio:auto;height:100%}
 .sh-hero-body{width:100%;padding-block:calc(var(--space-12) + 24px) var(--section-y-sm)}
 .sh-hero-body .sh-stmt{max-width:min(100%, 44rem)}
+.sh-hero-crumbs{margin-bottom:var(--stack-lg)}
 .sh-hero-meta{margin-top:var(--stack-md);font:var(--type-caption);color:var(--text-secondary)}
 .sh-hero-body .sh-meta{margin-top:var(--stack-md);color:var(--text-secondary)}
 `;
@@ -6177,6 +6187,7 @@ function HeroFullBleed({
   sub,
   actions,
   meta,
+  breadcrumbs,
   height = "full",
   titleAs = "h1",
   style,
@@ -6202,12 +6213,14 @@ function HeroFullBleed({
     className: "sh-hero-body sh-photo-text"
   }, /*#__PURE__*/React.createElement("div", {
     className: "sh-container"
-  }, /*#__PURE__*/React.createElement(Statement, {
+  }, breadcrumbs ? /*#__PURE__*/React.createElement("div", {
+    className: "sh-hero-crumbs"
+  }, breadcrumbs) : null, /*#__PURE__*/React.createElement(Statement, {
     as: titleAs,
     size: height === "full" ? "display" : "h1",
     sub: sub,
     actions: actions,
-    measure: "20ch"
+    measure: "24ch"
   }, title), meta ? Array.isArray(meta) ? /*#__PURE__*/React.createElement(MetaRow, {
     items: meta
   }) : /*#__PURE__*/React.createElement("p", {
@@ -6708,7 +6721,9 @@ function ensure() {
   document.head.appendChild(el);
 }
 
-/* people: [{ name, role, detail?, src? }] */
+/* people: [{ name, role, src? }] — name and role only. A third line (qualification) is
+   dropped: in a row of portraits it makes the captions uneven and nobody reads it there.
+   Qualifications belong on the doctor's own page. */
 function PeopleRow({
   title,
   sub,
@@ -6727,7 +6742,10 @@ function PeopleRow({
     sub: sub
   }, title) : null, /*#__PURE__*/React.createElement("div", {
     className: "sh-people-grid"
-  }, people.map(p => /*#__PURE__*/React.createElement(PortraitFrame, _extends({
+  }, people.map(({
+    detail,
+    ...p
+  }) => /*#__PURE__*/React.createElement(PortraitFrame, _extends({
     key: p.name
   }, p)))), note ? /*#__PURE__*/React.createElement("p", {
     className: "sh-people-note"
@@ -6755,6 +6773,20 @@ const CSS = `
   .sh-tgrid-head>:last-child:not(:first-child){flex:0 0 auto}
   .sh-tgrid-items{grid-template-columns:repeat(2,minmax(0,1fr))}
   .sh-tgrid-items[data-odd="true"]>:first-child{grid-column:1/-1}
+  /* Uniform tiles: tiles in a row share the rows photograph, title, meta, text — so a
+     two-line title or a longer description never pushes its neighbours' text out of line.
+     Each part is placed in its own row, so a tile without meta or text keeps the others. */
+  /* The parent's row gap would sit between a tile's own rows, so it is zero here and each
+     tile carries a fifth spacer row that makes the gap between rows of tiles. */
+  .sh-tgrid-items:not([data-layout="feature"]){row-gap:0;margin-bottom:calc(var(--space-10) * -1)}
+  .sh-tgrid-items:not([data-layout="feature"])>.sh-tile[data-layout="stack"]{display:grid;grid-template-rows:subgrid;grid-row:span 5;row-gap:0;align-content:start}
+  .sh-tgrid-items:not([data-layout="feature"])>.sh-tile[data-layout="stack"]::after{content:"";grid-row:5;height:var(--space-10)}
+  .sh-tgrid-items:not([data-layout="feature"])>.sh-tile[data-layout="stack"]>.sh-tile-body{display:contents}
+  .sh-tgrid-items:not([data-layout="feature"])>.sh-tile[data-layout="stack"]>.sh-media{grid-row:1}
+  .sh-tgrid-items:not([data-layout="feature"])>.sh-tile[data-layout="stack"] .sh-tile-title{grid-row:2;align-self:start;margin-top:var(--space-5)}
+  .sh-tgrid-items:not([data-layout="feature"])>.sh-tile[data-layout="stack"] .sh-tile-body>.sh-meta,
+  .sh-tgrid-items:not([data-layout="feature"])>.sh-tile[data-layout="stack"] .sh-tile-meta{grid-row:3;align-self:start;margin-top:var(--space-2)}
+  .sh-tgrid-items:not([data-layout="feature"])>.sh-tile[data-layout="stack"] .sh-tile-text{grid-row:4;align-self:start;margin-top:var(--space-3)}
 }
 @media (min-width:1000px){
   .sh-tgrid-items[data-layout="3"]{grid-template-columns:repeat(3,minmax(0,1fr))}

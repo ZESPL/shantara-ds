@@ -49,6 +49,13 @@ function Demo(){
   actions={<><Button size="lg">Book a Consultation</Button><TextLink href="#">View programmes</TextLink></>}
   meta={["Kozhikode, Keralam"]} />
 
+<Label name="HeroFullBleed" note="height tall · any other page, breadcrumbs open the text block" />
+<HeroFullBleed height="tall" src={P + "room-premium.jpg"} alt="A room with a balcony over the valley"
+  breadcrumbs={<Breadcrumbs items={[{ label: "Home", href: "#" }, { label: "Experience", href: "#" }, "Rooms"]} />}
+  title="Rooms that look out over the valley"
+  sub="Five room categories, each a residential stay planned around your programme."
+  actions={<Button size="lg">Book a Consultation</Button>} />
+
 <Label name="HeroSplit" note="offer hero · programme pages, meta below the title" />
 <HeroSplit src={P + "water-wall.jpg"} alt="The water wall court"
   breadcrumbs={<Breadcrumbs items={[{ label: "Programmes", href: "#" }, "Detox"]} />}
@@ -105,7 +112,7 @@ function Demo(){
 <Section>
   <PeopleRow title="Your programme is planned by our doctors."
     people={[
-      { name: "P.A. Kareem", role: "Founder, Chairman & Chief Naturopathy Consultant", detail: "Government of India-certified Naturopathy Practitioner", src: P + "doctor-pa-kareem-passport.jpeg" },
+      { name: "P.A. Kareem", role: "Founder, Chairman & Chief Naturopathy Consultant", src: P + "doctor-pa-kareem-passport.jpeg" },
       { name: "Dr. Bahja Janu", role: "Medical Director", src: P + "doctor-bahja-janu-portrait-cropped.jpeg" },
     ]}
     action={<TextLink href="#">About Shantara</TextLink>} />
@@ -152,7 +159,7 @@ function Demo(){
 <Label name="Section + FormSplit" note="consultation form beside the Stone panel" />
 <Section>
   <FormSplit onSubmit={(e) => e.preventDefault()} aside={<>
-    <PortraitFrame src={P + "doctor-bahja-janu-portrait-cropped.jpeg"} name="Dr. Bahja Janu" role="Medical Director" style={{ maxWidth: 220 }} />
+    <PortraitFrame src={P + "doctor-bahja-janu-portrait-cropped.jpeg"} name="Dr. Bahja Janu" role="Medical Director" />
     <Statement as="h3" size="title" sub="A member of the team will call you to understand what you need. A doctor then reviews whether a stay is the right next step.">We'll be in touch</Statement>
   </>}>
     <Statement as="h2" size="title" sub="Share your name and a number we can reach. Our team will contact you to arrange a consultation.">Send your details</Statement>
