@@ -15,6 +15,7 @@ import {
   conditionShare,
   doctorAnswerShare,
   doctorShare,
+  founderShare,
   FIXED_PAGES,
   fixedSharePage,
   imageTextIssues,
@@ -44,7 +45,8 @@ export async function designSystemPages() {
   const pages = Object.keys(FIXED_PAGES).map((key) => fixedSharePage(key));
   for (const entry of await records("programs")) pages.push(programmeShare(entry));
   for (const entry of await records("conditions")) pages.push(conditionShare(entry));
-  for (const entry of doctors.filter((d) => d.slug === "pa-kareem" || d.slug === "bahja-janu")) pages.push(doctorShare(entry));
+  for (const entry of doctors.filter((d) => d.slug === "bahja-janu")) pages.push(doctorShare(entry));
+  for (const entry of await records("leadership")) pages.push(founderShare(entry));
   for (const entry of await records("articles")) pages.push(articleShare(entry));
   for (const entry of await records("doctor-answers")) pages.push(doctorAnswerShare(entry, byId.get(entry.doctor_id)));
   pages.push({ path: "/en/journal/2", title: "Journal", description: "Page 2", noindex: true, og: { template: "editorial", title: "Notes from the retreat" } });

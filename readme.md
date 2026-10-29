@@ -46,7 +46,8 @@ Then open `http://localhost:4173`. Netlify publishes a `dist/` copy; raw `upload
 styles.css              → the single entry point consumers link (imports only)
 tokens/                 → fonts, colors, typography, spacing, radius, elevation, motion, pattern, base; layout.css (grounds, container, grid, section rhythm)
 assets/                 → wordmark and flower in 4 colourways each, pattern cell + motif, Diodrum TTFs
-assets/photos/          → property + doctor photos (flat; see assets/photos/README.md)
+assets/README.md        → index of logos, lockups, HNCH mark and pattern files
+assets/photos/          → property + doctor photos (flat; README.md = rules, shortlist, index; CATALOGUE.md = one entry per frame)
 guidelines/             → specimen cards (Brand, Foundations)
 components/             → core, forms, navigation, feedback, editorial, sections — jsx, d.ts, prompt.md; catalog pages via docs/component.html?c=
 scripts/build-bundle.mjs → rebuilds _ds_bundle.js from components/ (see its header for Babel)

@@ -10,8 +10,9 @@ function firstSentence(text) {
   return m ? m[0].trim() : String(text || "");
 }
 
+/* Every doctor in content/doctors/, the Medical Director first. The founder is not a doctor and is not listed here. */
 function homeDoctors(t) {
-  return (window.ShantaraContent.doctors || []).filter((d) => ["pa-kareem", "bahja-janu"].includes(d.id)).map((d) => ({
+  return (window.ShantaraContent.doctors || []).slice().sort((a, b) => (b.id === "bahja-janu") - (a.id === "bahja-janu")).map((d) => ({
     name: t(d.full_name),
     role: t(d.role),
     detail: d.qualification ? t(d.qualification) : undefined,

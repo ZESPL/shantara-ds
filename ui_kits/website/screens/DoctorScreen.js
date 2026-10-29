@@ -1,5 +1,7 @@
-/* Doctor profile — route #/<locale>/doctors/<slug>, or #/<locale>/pa-kareem for the founder (view "doctor").
-   Portrait, biography, then the media register on the doctor record:
+/* Profiles. Doctor — route #/<locale>/doctors/<slug> (view "doctor"), from content/doctors/.
+   Founder — route #/<locale>/pa-kareem (view "founder"), from content/leadership/. The founder
+   and chairman is not a doctor: never list him with the doctors or give him a clinical role.
+   Portrait, biography, then the media register on the record:
    press, talks, videos, social posts. Every item is an outbound link.
    Never an embedded player. */
 
@@ -14,14 +16,12 @@ function doctorLink(label, meta, url) {
   return { label, text: meta || undefined, href: url };
 }
 
-function DoctorScreen({ onNavigate, slug }) {
+function ProfileScreen({ onNavigate, d, pageType }) {
   const { t } = window.ShantaraI18n.useLocale();
   const { Breadcrumbs, Section, PortraitFrame, PlainList, GroupedList, ClosingCTA, Button } = window.ShantaraDesignSystem_45bbe4;
   const P = window.PageSlot;
   const L = window.ShantaraLocales;
   const locale = window.ShantaraI18n.currentLocaleCode();
-  const doctors = (window.ShantaraContent && window.ShantaraContent.doctors) || [];
-  const d = doctors.find((x) => x.id === slug || x.slug === slug) || doctors.find((x) => x.id === "pa-kareem");
   const home = L ? L.kitHash(locale, "home") : "#/en/";
   const about = L ? L.kitHash(locale, "about") : "#/en/about";
   const when = (value) => doctorMediaDate(value, locale);
@@ -48,7 +48,7 @@ function DoctorScreen({ onNavigate, slug }) {
 
   return (
     <main>
-      <P id="doctor/profile">
+      <P id={pageType + "/profile"}>
         <Section>
           <Breadcrumbs items={[{ label: t("Home"), href: home }, { label: t("About"), href: about }, d.full_name]} />
           <PortraitFrame
@@ -63,20 +63,20 @@ function DoctorScreen({ onNavigate, slug }) {
       </P>
 
       {groups.length ? (
-        <P id="doctor/media">
+        <P id={pageType + "/media">
           <Section ground="stone">
             <GroupedList groups={groups} columns={1} />
           </Section>
         </P>
       ) : null}
 
-      <P id="doctor/closing">
+      <P id={pageType + "/closing"}>
         <ClosingCTA
           variant="ground"
           ground="pine"
           title={t("Share your name and a number we can reach.")}
           sub={t("Our team will contact you to arrange a consultation.")}
-          action={<Button size="lg" onClick={() => { if (L) L.track("consultation_cta_click", { page_type: "doctor", content_id: d.id, content_name: d.full_name, cta_location: "closing" }); onNavigate("booking"); }}>{t("Book a Consultation")}</Button>}
+          action={<Button size="lg" onClick={() => { if (L) L.track("consultation_cta_click", { page_type: pageType, content_id: d.id, content_name: d.full_name, cta_location: "closing" }); onNavigate("booking"); }}>{t("Book a Consultation")}</Button>}
           contact={window.siteContactItems(t)}
         />
       </P>
@@ -84,4 +84,16 @@ function DoctorScreen({ onNavigate, slug }) {
   );
 }
 
-Object.assign(window, { DoctorScreen });
+function DoctorScreen({ onNavigate, slug }) {
+  const doctors = (window.ShantaraContent && window.ShantaraContent.doctors) || [];
+  const d = doctors.find((x) => x.id === slug || x.slug === slug) || doctors.find((x) => x.id === "bahja-janu");
+  return <ProfileScreen onNavigate={onNavigate} d={d} pageType="doctor" />;
+}
+
+function FounderScreen({ onNavigate }) {
+  const leadership = (window.ShantaraContent && window.ShantaraContent.leadership) || [];
+  const d = leadership.find((x) => x.id === "pa-kareem");
+  return <ProfileScreen onNavigate={onNavigate} d={d} pageType="founder" />;
+}
+
+Object.assign(window, { DoctorScreen, FounderScreen });

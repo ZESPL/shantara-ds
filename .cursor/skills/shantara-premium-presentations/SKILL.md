@@ -57,7 +57,7 @@ Set the goal before writing. Common Shantara deck types:
 
 ## Photography and visuals
 
-- Use real Shantara photography: property, rooms, treatments, food, landscape, staff. Avoid generic stock wellness images.
+- Use real Shantara photography: property, rooms, treatments, food, landscape, staff. Avoid generic stock wellness images. Choose frames from `assets/photos/README.md` (public-use status, shortlist by job, where text can sit) without opening each file. Decks shown outside Shantara use **Yes** frames only.
 - One strong image per slide. Never collage several weak images.
 - Full-bleed images for section openers and emotional moments. Keep text off busy parts of the image or place it on a clean area.
 - Crop with intent. Keep horizons level and people looking into the frame, not out of it.

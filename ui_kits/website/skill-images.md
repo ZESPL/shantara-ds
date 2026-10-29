@@ -8,6 +8,8 @@ It gathers rules that already exist elsewhere and adds the missing storage and c
 
 | Rule already recorded | Where |
 | --- | --- |
+| Which photograph to use: public-use status, shortlist by job, text space, crops, known filename errors | [`assets/photos/README.md`](../../assets/photos/README.md), with per-frame entries in [`CATALOGUE.md`](../../assets/photos/CATALOGUE.md) |
+| Which logo, lockup or pattern file to use | [`assets/README.md`](../../assets/README.md) |
 | Astro Image is the image pipeline | [skill-stack.md](skill-stack.md) |
 | AVIF or WebP, `srcset`, width and height (IMG-01) | [search-visibility/images.md](search-visibility/images.md) |
 | Hero is eager with `fetchpriority="high"`, everything else lazy (IMG-02, IMG-03) | [search-visibility/images.md](search-visibility/images.md) |

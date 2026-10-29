@@ -338,6 +338,19 @@ export function doctorShare(entry) {
   });
 }
 
+/* The founder and chairman is not a doctor. His profile is /en/pa-kareem, from content/leadership/. */
+export function founderShare(entry) {
+  const headline = entry.full_name;
+  const line = usableLine(entry.qualification, headline, SUB_MAX.programme) || usableLine(entry.role ? `${entry.role} of the retreat.` : "", headline, SUB_MAX.programme);
+  if (!line) throw new Error(`${entry.slug}: founder profile needs a qualification or role for the supporting line`);
+  return pageOf(`/en/${entry.slug}`, entry.meta_title || entry.full_name, entry.meta_description || entry.qualification || entry.role, {
+    template: "programme",
+    title: headline,
+    description: line,
+    photo: entry.photo_profile || entry.featured_image?.src,
+  });
+}
+
 export function articleShare(entry) {
   const headline = ARTICLE_HEADLINES[entry.slug] || entry.title;
   if (!ARTICLE_HEADLINES[entry.slug] && [...entry.title].length > LARGE_TYPE) {

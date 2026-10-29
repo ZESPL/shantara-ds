@@ -86,7 +86,6 @@
       { name: "Diabetes Reversal", href: "#diabetes-reversal", focus: "Clinical", forWhom: "Diet, activity and therapies planned around blood-sugar control, with medication reviewed by a doctor.", durations: "14–28 nights" },
     ];
     const allDoctors = [
-      { name: "P.A. Kareem", role: "Founder, Chairman & Chief Naturopathy Consultant", src: PH + "doctor-pa-kareem-portrait-cropped.jpeg" },
       { name: "Dr. Bahja Janu", role: "Medical Director", src: PH + "doctor-bahja-janu-portrait-cropped.jpeg" },
       { name: "Dr. Gangrei Gangmei", role: "Resident Medical Officer", src: PH + "doctor-gangrei-gangmei-portrait-cropped.jpeg" },
       { name: "Dr. Keerthana V S", role: "Naturopathy Physician & Yoga Therapist", src: PH + "doctor-keerthana-portrait-cropped.jpeg" },
@@ -152,8 +151,8 @@
       } = NS;
       const P = "../assets/photos/";
       const doctors = [
-        { name: "P.A. Kareem", role: "Founder, Chairman & Chief Naturopathy Consultant", src: P + "doctor-pa-kareem-passport.jpeg" },
         { name: "Dr. Bahja Janu", role: "Medical Director", src: P + "doctor-bahja-janu-portrait-cropped.jpeg" },
+        { name: "Dr. Gangrei Gangmei", role: "Resident Medical Officer", src: P + "doctor-gangrei-gangmei-portrait-cropped.jpeg" },
       ];
       const programmes = [
         { name: "Stress Management", focus: "Mind", durations: "7–14 nights", photo: "balcony", alt: "A balcony over the valley", text: "Doctor-led routines, therapies and rest for guests managing sustained stress, poor sleep or fatigue.", slug: "stress-management" },
@@ -488,7 +487,7 @@
         case "AuthorCard":
           return <div className="stack" style={{ maxWidth: 720, gap: 32 }}>
             <AuthorCard name="Dr. Bahja Janu" role="Medical Director" src={P + "doctor-bahja-janu-portrait-cropped.jpeg"} href="#" action={<TextLink href="#">About our doctors</TextLink>} />
-            <AuthorCard name="P.A. Kareem" role="Founder, Chairman & Chief Naturopathy Consultant" src={P + "doctor-pa-kareem-passport.jpeg"} href="#" />
+            <AuthorCard name="P.A. Kareem" role="Founder and Chairman" src={P + "founder-pa-kareem-passport.jpeg"} href="#" />
           </div>;
         case "ReviewedBy":
           return <div className="stack" style={{ maxWidth: 720, gap: 32 }}>
@@ -662,7 +661,7 @@
             category={{ label: "Food & Recipes", href: "#" }}
             date="12 August 2026" dateTime="2026-08-12" readTime="4 min read"
             author={{ name: "Dr. Bahja Janu", role: "Medical Director", src: P + "doctor-bahja-janu-portrait-cropped.jpeg", href: "#" }}
-            reviewer={{ name: "P.A. Kareem", role: "Chief Naturopathy Consultant", href: "#" }}
+            reviewer={{ name: "Dr. Gangrei Gangmei", role: "Resident Medical Officer", href: "#" }}
             updated="20 August 2026" updatedDateTime="2026-08-20"
             share={<ShareBar compact label="" url="https://shantara.life/en/journal/how-meals-are-planned" title="How meals are planned during a stay" />}
             src={P + "dining-restaurant-valley-window.jpg"} alt="The dining room by the valley window"

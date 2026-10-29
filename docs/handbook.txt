@@ -21,7 +21,7 @@ This handbook is evergreen. It does not carry room rates, stay currencies or val
 | [Glossary](handbook/glossary.md) | Nursing care and the personal attendant. Devices, work, Wi-Fi and which amenities may be published. How to write a BNYS doctor. |
 | [01 · Quick Reference](handbook/quick-reference.md) | What Shantara is, the property at a glance, and what guests should know first |
 | [02 · About Shantara](handbook/about.md) | The story, the name, the approach, and why Shantara exists |
-| [03 · Founder & Ownership](handbook/founder.md) | Founder, board, chief executive, and medical director |
+| [03 · Founder & Ownership](handbook/founder.md) | Founder and chairman (not a doctor) with his background, publications and press; board, chief executive, and medical director |
 | [04 · Medical & Wellness Team](handbook/team.md) | Doctors, credentials, publications, and therapists |
 
 ## Clinical

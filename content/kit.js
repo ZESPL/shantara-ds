@@ -54,7 +54,10 @@ window.ShantaraContent = {
       "notes"
     ],
     "schema_defaults": {
-      "type": "MedicalClinic"
+      "type": [
+        "MedicalClinic",
+        "Resort"
+      ]
     },
     "short_name": "Shantara",
     "whatsapp": "+91 9553 600 100",
@@ -1318,24 +1321,40 @@ window.ShantaraContent = {
       "status": "draft"
     },
     {
+      "id": "sara-shanti-alen",
+      "slug": "sara-shanti-alen",
+      "full_name": "Dr. Sara Shanti Alen",
+      "role": "Naturopathy Physician, Lifestyle & Nutrition",
+      "photo_profile": "doctor-sara-passport.jpeg",
+      "qualification": "Bachelor of Naturopathy and Yogic Sciences (BNYS)",
+      "licences": [],
+      "years_practice": null,
+      "publications_note": null,
+      "biography": null,
+      "areas_of_practice": [
+        "Naturopathy",
+        "Yoga therapy and mindfulness",
+        "Diet planning",
+        "Stress and sleep"
+      ],
+      "memberships": [],
+      "external_profiles": [],
+      "locale": "en",
+      "source": "resume",
+      "status": "draft"
+    }
+  ],
+  "leadership": [
+    {
       "id": "pa-kareem",
       "slug": "pa-kareem",
       "full_name": "P.A. Kareem",
-      "role": "Founder, Chairman & Chief Naturopathy Consultant",
-      "photo_profile": "doctor-pa-kareem-passport.jpeg",
+      "role": "Founder and Chairman",
+      "photo_profile": "founder-pa-kareem-passport.jpeg",
       "qualification": "Government of India-certified Naturopathy Practitioner",
-      "licences": [],
       "years_practice": "33+",
       "publications_note": "Author of 17 books and translator of 2 on naturopathy, health and nutrition (Malayalam, English, Arabic)",
       "biography": "Trained under the naturopath C. R. R. Varma, and has lectured on naturopathy across India and abroad in Malayalam, Urdu, Hindi and English. Core approach: treat the cause through ethical, drug-free naturopathy.",
-      "areas_of_practice": [
-        "Naturopathy",
-        "Fasting therapy",
-        "Diet and nutrition",
-        "Yoga",
-        "Preventive health"
-      ],
-      "memberships": [],
       "press": [
         {
           "outlet": "EduAdvice",
@@ -1388,7 +1407,7 @@ window.ShantaraContent = {
           "date": "2025-03-09"
         },
         {
-          "title": "Getting real with PA Kareem, Founder - Chief physician Hygiene Naturopathy Hospital Kerala",
+          "title": "Getting real with PA Kareem",
           "url": "https://www.youtube.com/watch?v=dvvtxKk1MCw",
           "publisher": "Mujeeb Akhtar",
           "date": "2025-02-28"
@@ -1449,32 +1468,9 @@ window.ShantaraContent = {
       "source": "handbook",
       "status": "published",
       "featured_image": {
-        "src": "doctor-pa-kareem-portrait",
+        "src": "founder-pa-kareem-portrait",
         "alt": "P.A. Kareem"
       }
-    },
-    {
-      "id": "sara-shanti-alen",
-      "slug": "sara-shanti-alen",
-      "full_name": "Dr. Sara Shanti Alen",
-      "role": "Naturopathy Physician, Lifestyle & Nutrition",
-      "photo_profile": "doctor-sara-passport.jpeg",
-      "qualification": "Bachelor of Naturopathy and Yogic Sciences (BNYS)",
-      "licences": [],
-      "years_practice": null,
-      "publications_note": null,
-      "biography": null,
-      "areas_of_practice": [
-        "Naturopathy",
-        "Yoga therapy and mindfulness",
-        "Diet planning",
-        "Stress and sleep"
-      ],
-      "memberships": [],
-      "external_profiles": [],
-      "locale": "en",
-      "source": "resume",
-      "status": "draft"
     }
   ],
   "articles": [

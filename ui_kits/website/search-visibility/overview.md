@@ -38,7 +38,7 @@ Recorded on 25 September 2026 and 23 October 2026. The rules below already follo
 | Programme type | `["Service", "MedicalTherapy"]`. Shantara practises clinical naturopathy, and `relevantSpecialty` is valid only on `MedicalTherapy`. Decided 23 October 2026. |
 | `priceRange` and `numberOfRooms` | Allowed on the organisation node on every page. `priceRange` is an indicative range, not a rate, and `numberOfRooms` is structured data, not copy. Exact rates stay on the tariff page. Decided 23 October 2026. |
 | Font preload | Every Diodrum weight the site uses is preloaded, so no text changes font after first paint. Decided 23 October 2026. |
-| Founder | P.A. Kareem is the founder, not one of the doctors. His `Person` node is `https://shantara.life/#person-pa-kareem`, the organisation's `founder` points to it, his profile is `/en/pa-kareem`, and he is not listed on Our Doctors or in `employee`. Decided 23 October 2026. |
+| Founder | P.A. Kareem is the founder and chairman, not a doctor. His `Person` node is `https://shantara.life/#person-pa-kareem`, the organisation's `founder` points to it, his profile is `/en/pa-kareem`, and he is not listed on Our Doctors or in `employee`. Decided 23 October 2026. |
 | Policy breadcrumbs | Policy pages, like Book a Consultation, emit `WebPage` + `BreadcrumbList`, because they show a breadcrumb (SCHEMA-07). Decided 23 October 2026. |
 
 ### Still open

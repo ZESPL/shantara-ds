@@ -6,7 +6,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 import { loadOgAssets, renderOgImage } from "./og-image.mjs";
-import { articleShare, doctorAnswerShare, doctorShare, FIXED_PAGES, programmeShare } from "./share-copy.mjs";
+import { articleShare, doctorAnswerShare, doctorShare, FIXED_PAGES, founderShare, programmeShare } from "./share-copy.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = join(here, "..", "..");
@@ -30,7 +30,7 @@ const article = articleShare(await record("articles/how-programme-duration-is-de
 const answer = doctorAnswerShare(await record("doctor-answers/continue-medication.json"));
 const shortAnswer = doctorAnswerShare(await record("doctor-answers/first-consultation.json"));
 const bahja = doctorShare(await record("doctors/bahja-janu.json"));
-const kareem = doctorShare(await record("doctors/pa-kareem.json"));
+const kareem = founderShare(await record("leadership/pa-kareem.json"));
 const fixed = (key) => FIXED_PAGES[key];
 
 /* Arabic type-specimen pangrams, not copy. They test shaping, joining, diacritics and
@@ -50,7 +50,7 @@ const samples = [
   card("home.jpg", fixed("home"), photo("arrival-dusk")),
   card("programme.jpg", programme, photo("balcony")),
   card("doctor.jpg", bahja, photo("doctor-bahja-janu-portrait")),
-  card("doctor-kareem.jpg", kareem, photo("doctor-pa-kareem-portrait")),
+  card("founder-kareem.jpg", kareem, photo("founder-pa-kareem-portrait")),
   card("editorial.jpg", article),
   /* Doctor Answers never carry the supporting line (og.line: false). */
   card("doctor-answer.jpg", shortAnswer),

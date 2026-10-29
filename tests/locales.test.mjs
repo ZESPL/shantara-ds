@@ -73,6 +73,11 @@ test("internal links stay in the current locale", () => {
   assert.equal(L.parseKitHash("#/en/conditions").view, "conditions");
   assert.equal(L.parseKitHash("#/").redirect, "#/en/");
   assert.equal(L.parseKitHash("#/ar/programs").redirect, "#/en/programs");
+  /* The founder is not a doctor: his profile is its own view at the locale root. */
+  assert.equal(L.kitHash("en", "founder"), "#/en/pa-kareem");
+  assert.equal(L.parseKitHash("#/en/pa-kareem").view, "founder");
+  assert.equal(L.kitHash("en", "doctor:bahja-janu"), "#/en/doctors/bahja-janu");
+  assert.equal(L.parseKitHash("#/en/doctors/bahja-janu").view, "doctor");
 });
 
 test("lang and dir come from locale architecture", () => {
@@ -257,7 +262,7 @@ test("schema URLs are locale-specific; organization @id is stable", () => {
   assert.equal(page.about["@id"], "https://shantara.life/#organization");
   const plain = L.webpageSchema({ origin: "https://shantara.life", locale: "en", path: "terms", name: "Terms" });
   assert.equal(plain.about, undefined);
-  assert.equal(L.entityId("https://shantara.life", "doctor", "kareem"), "https://shantara.life/#doctor/kareem");
+  assert.equal(L.entityId("https://shantara.life", "doctor", "bahja-janu"), "https://shantara.life/#doctor/bahja-janu");
 });
 
 test("currency is not inferred from language", () => {

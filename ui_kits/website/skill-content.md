@@ -49,7 +49,8 @@ Medical categories ([`content/medical-categories.json`](../../content/medical-ca
 | Programme | name; slug; focus; proposition; durations; suitability; inclusions; clinicians (doctors). **No prices.** | `/en/programs/[slug]` |
 | Therapy | name; slug; description; purpose; how it is used at Shantara | One `/en/therapies` page for all therapies. No page per therapy. |
 | Room | name; slug; summary; size; specification (`spec_line`); occupancy; balcony; amenities; gallery. **No prices.** | One `/en/rooms` page for all room categories. No page per room. |
-| Doctor | full name; slug; role; `photo_profile`; qualification; licences (issuing body only, never a registration number or joining date); years in practice; biography (Markdoc); areas of practice; professional memberships; publications; press; talks; videos; social posts; external profiles | Every doctor is listed on `/en/our-doctors`. Only P.A. Kareem and Dr. Bahja Janu have a profile page (`/en/doctors/[slug]`), which lists their answers, reviewed articles, programmes, press, talks, videos and social posts. No other doctor gets one. |
+| Doctor | full name; slug; role; `photo_profile`; qualification; licences (issuing body only, never a registration number or joining date); years in practice; biography (Markdoc); areas of practice; professional memberships; publications; press; talks; videos; social posts; external profiles | Every doctor is listed on `/en/our-doctors`. Only Dr. Bahja Janu has a profile page (`/en/doctors/[slug]`), which lists her answers, reviewed articles, programmes, press, talks, videos and social posts. No other doctor gets one. |
+| Leadership | full name; slug; role; `photo_profile`; qualification; years in practice; biography (Markdoc); publications; press; talks; videos; social posts; external profiles | The founder and chairman, P.A. Kareem, only (`/en/pa-kareem`). He is not a doctor: never put him in Doctor, a clinician field, a doctor answer or a medical reviewer field. Source: handbook §3. |
 | Author | name; slug; role; photo; short bio; optional link to a doctor | No page |
 | Article / Clinical Guide | title; slug; category; lead; body (Markdoc); read minutes; date published; date modified; author (required); medical reviewer (doctor, required for clinical content) | `/en/journal/[slug]` |
 | Doctor Answer | question; slug; short answer; detailed answer (Markdoc); category; read minutes; reviewed date; doctor (required) | `/en/journal/[slug]` |
@@ -70,7 +71,7 @@ Unconfirmed facts stay out of published records: keep the entry `draft` until Sh
 - `videos`: `{publisher, title, date, url}`. Other third-party films. Same outbound-link rule as talks.
 - `social_posts`: `{source, date, url}`. Outbound links only.
 
-Notes that are not page copy — one lecture carried by several outlets, a sponsored placement, a title the recording gets wrong — stay in handbook §4. The unique list for P.A. Kareem is [`docs/media-kareem.md`](../../docs/media-kareem.md). His profile lists that register.
+Notes that are not page copy — one lecture carried by several outlets, a sponsored placement, a title the recording gets wrong — stay in handbook §4 (for the founder, §3). The founder's Leadership record uses the same press, talks, videos and social posts lists. The unique list for P.A. Kareem is [`docs/media-kareem.md`](../../docs/media-kareem.md). His profile lists that register.
 
 ### Tariff
 

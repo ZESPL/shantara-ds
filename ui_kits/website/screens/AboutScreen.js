@@ -1,16 +1,17 @@
 /* About — HeroStatement (side photograph) → doctors → story → board → approach →
    editorial policy → ClosingCTA (ground, Pine Tree; the page has no other CTA).
    The practice history is stated once, in the story section.
-   Copy comes from content/ (doctors), handbook §3 (board) and the strings this screen already carried. */
+   Copy comes from content/ (doctors), handbook §3 (board) and the strings this screen already carried.
+   The founder and chairman, P.A. Kareem, is not a doctor. He appears in the story and the board, never in the doctors row. */
 
-/* Board names and roles from docs/handbook/founder.md; there is no content record for the board. */
+/* Board names and roles from docs/handbook/founder.md. The founder's profile record is content/leadership/pa-kareem.json. */
 const ABOUT_BOARD = [
-  { name: "P.A. Kareem", role: "Founder and Chairman", src: "doctor-pa-kareem-passport.jpeg" },
+  { name: "P.A. Kareem", role: "Founder and Chairman", src: "founder-pa-kareem-passport.jpeg" },
   { name: "Abdulla Aboobacker", role: "Board Member", src: "board-abdulla-aboobacker.jpeg" },
 ];
 
 function aboutDoctors() {
-  return (window.ShantaraContent.doctors || []).filter((d) => ["pa-kareem", "bahja-janu"].includes(d.id)).map((d) => ({
+  return (window.ShantaraContent.doctors || []).slice().sort((a, b) => (b.id === "bahja-janu") - (a.id === "bahja-janu")).map((d) => ({
     name: d.full_name,
     role: d.role,
     src: d.photo_profile ? window.photoSrc(d.photo_profile) : undefined,
@@ -42,7 +43,7 @@ function AboutScreen({ onNavigate }) {
             title={t("A doctor plans your programme after consultation and reviews it during your stay.")}
             sub={t("Profiles include qualifications so you can see who is responsible for clinical guidance.")}
             people={aboutDoctors().map((p) => ({ ...p, role: t(p.role) }))}
-            action={<TextLink onClick={() => onNavigate("doctor:pa-kareem")}>{t("P.A. Kareem")}</TextLink>}
+            action={<TextLink onClick={() => onNavigate("doctor:bahja-janu")}>{t("Dr. Bahja Janu")}</TextLink>}
           />
         </Section>
       </P>
@@ -60,6 +61,7 @@ function AboutScreen({ onNavigate }) {
           <PeopleRow
             title={t("Board")}
             people={ABOUT_BOARD.map((p) => ({ ...p, role: t(p.role), src: window.photoSrc(p.src) }))}
+            action={<TextLink onClick={() => onNavigate("founder")}>{t("P.A. Kareem")}</TextLink>}
           />
         </Section>
       </P>

@@ -41,7 +41,7 @@ You can also keep the folder at the repo root (as it is here) and treat `SKILL.m
 ```
 
 2. Copy or import the components you need from `components/` (`*.jsx` + `*.d.ts`). Read the matching `*.prompt.md` before using a control.
-3. Use `assets/` as shipped — logos, pattern cell, fonts, photos under `assets/photos/` (flat; kit slugs plus descriptive alternates — see that folder’s README). Do not retile `pattern-motif.png`. Do not invent a new icon set without replacing Lucide on purpose.
+3. Use `assets/` as shipped — logos, pattern cell, fonts, photos under `assets/photos/` (flat; kit slugs plus descriptive alternates — that folder’s README gives every frame’s public-use status and a shortlist by job, and `CATALOGUE.md` describes each one; `assets/README.md` indexes logos, lockups and the pattern). Do not retile `pattern-motif.png`. Do not invent a new icon set without replacing Lucide on purpose.
 4. For entity facts (programmes, rooms, NAP, tariff structure), load [`content/`](../content/) or generated `content/kit.js`. Do not keep local `PROGRAMMES` / rate arrays in app code. This folder holds no rates.
 5. For a marketing page, start from `ui_kits/website/`. Read `ui_kits/website/SKILL.md` before composing pages, forms, or SEO. For an in-stay surface, start from `ui_kits/app/`. Both kits are extrapolations; read their READMEs.
 

@@ -66,10 +66,11 @@ A doctor who holds a Bachelor of Naturopathy and Yogic Sciences (BNYS), and who 
 - Write BNYS in capitals, after a comma. Do not punctuate the letters, and do not place them before the name. Never write "B.N.Y.S.", "Dr. [Full Name] BNYS", or "BNYS Dr. [Full Name]".
 - Spell the degree in full, "Bachelor of Naturopathy and Yogic Sciences (BNYS)", only in a degree field or in a sentence that explains the qualification. The name line uses the short form.
 - Use "Dr." only when the practitioner is legally entitled to that prefix.
+- The founder and chairman, P.A. Kareem, is not a doctor. Write "P.A. Kareem", never "Dr. P.A. Kareem". Never list him with the doctors, give him a doctor profile, or name him as a clinician or medical reviewer.
 - This section sets the written form. It does not add BNYS to anyone. Publishing the credential still requires an entry in the verified credentials list below.
 
 ### Verified credentials
 - Dr. Bahja Janu: BNYS, Rajiv Gandhi University of Health Sciences. Proof: [document name]
 - Dr. Bahja Janu: licence, Travancore-Cochin Medical Council (TCMC), Kerala. Proof: [document name]
 - Dr. Bahja Janu: licence, Ministry of Health, Saudi Arabia. Proof: [document name]
-- Dr. P.A. Kareem: Government of India-certified Naturopathy Practitioner, issued by [issuing body as named on the certificate]. Proof: [document name]
+- P.A. Kareem (founder and chairman; not a doctor, so never written with "Dr."): Government of India-certified Naturopathy Practitioner, issued by [issuing body as named on the certificate]. Proof: [document name]

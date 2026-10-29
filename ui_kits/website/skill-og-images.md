@@ -80,6 +80,7 @@ Jobs are the families in [skill-ia.md](skill-ia.md). The template is still the p
 | Our Approach | `editorial` | How a stay is planned | Consultation, the stay, then going home. |
 | Our Doctors | `editorial` | The doctors at Shantara | Qualifications, practice and how to consult. |
 | Doctor profile | `programme` | The doctor's name | Qualification, or the role if there is no qualification. |
+| Founder profile (`/en/pa-kareem`) | `programme` | His name | Qualification, or the role if there is no qualification. He is not a doctor: this is not a doctor profile. |
 | Journal index | `editorial` | Notes from the retreat | Guides, doctors' answers and guest accounts. |
 | Article | `editorial` | The article title, or a shorter `og.title` when that title wraps | `lead`, or `category` when the lead is missing or is a placeholder. |
 | Doctor Answer | `editorial` | A one-line form of the question | None on the image. `og:description` says a doctor answers on the page. |
@@ -111,7 +112,7 @@ An article's `category` is the subtype (Clinical Guide, Guest Story, Food & Reci
 | Template | Mirrors | Ground | Used for |
 | --- | --- | --- | --- |
 | `default` | `HeroFullBleed` | Full-bleed photograph, `--scrim-hero` behind the text, `--scrim-header` behind the wordmark | Home; the Experience pages (`/en/therapies`, `/en/rooms`, `/en/amenities-activities`, `/en/farm-dining`, `/en/a-day-at-shantara`); any page that sets no template |
-| `programme` | `HeroSplit` | Merino text column, photograph on the right at 40% of the width | Programme and condition detail pages, profile pages (`/en/pa-kareem`, `/en/doctors/{slug}`), Tariffs, Book a Consultation |
+| `programme` | `HeroSplit` | Merino text column, photograph on the right at 40% of the width | Programme and condition detail pages, the founder's profile (`/en/pa-kareem`), doctor profiles (`/en/doctors/{slug}`), Tariffs, Book a Consultation |
 | `editorial` | `HeroStatement`, `ArticleHeader` | Merino, rosette band on the right edge | Conditions and Programmes indexes; About pages (Our Story, Our Approach, Our Doctors, Medical Editorial Policy); the Journal index; every Journal entry (articles, Clinical Guides, Evidence Notes, Doctor Answers, Guest Stories); FAQ, Contact and the policy pages |
 
 **The template follows the page's hero.** A page type not listed here uses the template that matches its hero. Do not add a fourth template; a page that seems to need one uses the closest of the three.
@@ -124,7 +125,7 @@ An article's `category` is the subtype (Clinical Guide, Guest Story, Food & Reci
 
 ![Dr. Bahja Janu. The line is the role, because no qualification is recorded.](../../templates/og-images/samples/doctor.jpg)
 
-![P.A. Kareem. The line is the qualification. The photograph is his portrait.](../../templates/og-images/samples/doctor-kareem.jpg)
+![P.A. Kareem, the founder and chairman. The line is the qualification. The photograph is his portrait.](../../templates/og-images/samples/founder-kareem.jpg)
 
 ![A Clinical Guide. The search title is longer. The picture uses a one-line headline, and the lead is the line.](../../templates/og-images/samples/editorial.jpg)
 
@@ -184,7 +185,7 @@ Share previews are small: a 1200 px image is often shown about 500 px wide. Noth
 
 - **Use the page's own photograph.** Fixed pages use their hero. Entries use `featured_image`, which is already the photograph editors choose for the page ([skill-content.md](skill-content.md#shared-fields)). Doctor profiles use `photo_profile`. Pages with no photograph use `site/valley.jpg`.
 - **Photographs always come from the English entry.** Translated files carry text only ([skill-content.md](skill-content.md#languages)), so a translated page's share image uses the same photograph as the English one.
-- **Guest privacy applies unchanged.** Prefer frames without `-guest` in the name ([`assets/photos/README.md`](../../assets/photos/README.md)). Never treatment in progress, faces in therapy or room numbers.
+- **Guest privacy applies unchanged.** Use a frame whose public use is **Yes** in [`assets/photos/README.md`](../../assets/photos/README.md). Its catalogue entry says where the quiet area is. Never treatment in progress, faces in therapy or room numbers.
 - **For the `default` template, choose a frame whose lower left is quiet and fairly dark.** The scrim protects contrast, but a bright sky or white wall behind the title still reads badly at preview size.
 - The crop is centred. If the subject falls out of a 1.9:1 or 0.76:1 crop, choose another frame.
 - Real Shantara photography only. No stock, no filters or colour grades, and no AI-generated images of the place, rooms, food, therapies, guests or doctors (IMG-06).
@@ -436,7 +437,7 @@ const FIXED_PAGES: Record<EnabledLocale, Record<FixedKey, FixedPage>> = {
       description: 'Rooms at the retreat in Keralam, for guests on a doctor-planned residential stay.',
       og: { template: 'default', title: 'Rooms for the stay', description: 'Quiet rooms at the retreat in Keralam.' },
     },
-    // faq, contact, tariff, both doctor profiles and every other fixed page: section 2
+    // faq, contact, tariff, the doctor and founder profiles and every other fixed page: section 2
     // tariff picture headline is "The tariff card", not "Tariff"
   },
 };
@@ -527,6 +528,8 @@ export const doctorPaths = async () =>
     }),
   );
 
+// founderPaths: the same shape, from leadership_${l}, at resolveRoute('founder', slug, locale). He is not a doctor.
+
 export const journalEntryPaths = async () => [
   ...toPaths(await published((l) => reader.collections[`articles_${l}`].all()), ({ locale, slug, entry, alternates }) => ({
     locale,
@@ -561,7 +564,7 @@ export const journalListPaths = () =>
 /** Every page's metadata. The image route renders one share image per indexable entry. */
 export async function getAllPageMeta(): Promise<PageMeta[]> {
   const fixed = ENABLED_LOCALES.flatMap((l) => (Object.keys(FIXED_PAGES[l]) as FixedKey[]).map((key) => fixedMeta(key, l)));
-  const entries = await Promise.all([programPaths(), conditionPaths(), doctorPaths(), journalEntryPaths()]);
+  const entries = await Promise.all([programPaths(), conditionPaths(), doctorPaths(), founderPaths(), journalEntryPaths()]);
   return [...fixed, ...entries.flat().map((p) => p.props.meta)];
 }
 ```
@@ -753,7 +756,7 @@ After a production deploy, paste a programme URL into WhatsApp (SOCIAL-01). The 
 ## 11. Changing the templates
 
 1. Edit [`templates/og-images/og-image.mjs`](../../templates/og-images/og-image.mjs) in this design system, never the copy in the website repo.
-2. Run `npm install`, `npm run samples` and `npm run check` in `templates/og-images/`. Review every sample: home, programme, both doctor profiles, editorial, Doctor Answer, the three-line layout fixture, therapies, rooms, tariff, FAQ, contact, `og-default`, and the three right-to-left tests in `samples/rtl-test/`. A change that should not touch left-to-right output leaves those JPEGs byte-identical; check with `git status`.
+2. Run `npm install`, `npm run samples` and `npm run check` in `templates/og-images/`. Review every sample: home, programme, the doctor and founder profiles, editorial, Doctor Answer, the three-line layout fixture, therapies, rooms, tariff, FAQ, contact, `og-default`, and the three right-to-left tests in `samples/rtl-test/`. A change that should not touch left-to-right output leaves those JPEGs byte-identical; check with `git status`.
 3. Update this file in the same change if a rule or value moved.
 4. Copy `og-image.mjs` and `share-copy.mjs` into the website's `src/lib/seo/og/`, `check-og.mjs` into `scripts/`, and `samples/og-default.jpg` to `public/` if it changed.
 

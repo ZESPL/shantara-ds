@@ -185,8 +185,10 @@
     tariffs: "tariffs",
     /* Single Journal article. Navigate with "article:<slug>"; bare "article" opens the sample. */
     article: "journal/how-meals-are-planned",
-    /* Doctor profile. Navigate with "doctor:<slug>"; bare "doctor" opens P.A. Kareem. */
-    doctor: "pa-kareem",
+    /* Doctor profile. Navigate with "doctor:<slug>"; bare "doctor" opens Dr. Bahja Janu. */
+    doctor: "doctors/bahja-janu",
+    /* The founder and chairman's profile. He is not a doctor, so it is not a doctor view. */
+    founder: "pa-kareem",
   };
 
   const ARTICLE_PREFIX = "journal/";
@@ -203,6 +205,7 @@
     "book-consultation": "booking",
     booking: "booking",
     tariffs: "tariffs",
+    "pa-kareem": "founder",
   };
 
   function localeRecord(code) {
@@ -769,16 +772,13 @@
     return m ? m[1] : null;
   }
 
-  /* The founder's profile sits at the locale root (/en/pa-kareem); other profiles under doctors/. */
-  const FOUNDER_SLUG = "pa-kareem";
-
+  /* Doctor profiles sit under doctors/. The founder's profile is its own view ("founder"), not a doctor. */
   function doctorPath(slug) {
-    return slug === FOUNDER_SLUG ? slug : "doctors/" + slug;
+    return "doctors/" + slug;
   }
 
   function doctorSlugFromPath(rest) {
     const key = String(rest || "").replace(/^\/+|\/+$/g, "");
-    if (key === FOUNDER_SLUG) return FOUNDER_SLUG;
     const m = key.match(/^doctors\/([a-z0-9-]+)$/);
     return m ? m[1] : null;
   }
