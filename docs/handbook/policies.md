@@ -6,7 +6,7 @@ These policies protect the clinical integrity of naturopathy treatment and creat
 
 ### Cancellation policy
 
-Cancellations must be received by email at `heal@shantara.life`. The refund tier is set by the date and time (IST) the email is received. Confirm every cancellation to the guest by email.
+Cancellations must be made in writing, through the cancellation request form at `shantara.life/en/cancellation` or by email to `heal@shantara.life`. An email must give the guest's name, booking email and arrival date. The refund tier is set by the date and time (IST) the cancellation is received. Confirm every cancellation to the guest by email. A guest with no confirmation should call or WhatsApp +91 9553 600 100.
 
 - More than 30 days before arrival: 100% refund
 - 21 to 30 days before arrival: 50% refund
@@ -23,9 +23,15 @@ Prepaid supplements (non-participating companion, extra bed or mattress) are ref
 
 If Shantara cancels, or force majeure prevents the stay, offer a free date move or credit for a stay within 12 months. Refund in full if the guest cannot use either. Shantara is not liable for the guest's travel costs.
 
+### Bookings made through an agent
+
+- Bookings made through a Shantara agent follow this same policy.
+- Refunds are paid by Shantara directly to the guest, never through the agent.
+- Agents cannot approve refunds, exceptions or date changes on Shantara's behalf.
+
 ### Date changes
 
-A stay can be postponed once at no charge, with written notice at least 21 days before arrival, subject to availability. The guest must give the new dates within 30 days, and the new stay must start within 6 months of the original arrival date. Any rate difference is payable; a lower rate is not refunded. After a date change, the booking cannot be changed again or refunded.
+A stay can be postponed once at no charge, with written notice at least 21 days before arrival, subject to availability. The guest must give the new dates within 30 days, and the new stay must start within 6 months of the original arrival date. If the new rate is higher, the guest pays the difference. If it is lower, the difference is adjusted against other charges during the stay. After a date change, the booking cannot be changed again or refunded.
 
 ### Stay duration
 
