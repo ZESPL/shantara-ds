@@ -10,7 +10,9 @@ import { Video } from "../editorial/Video.jsx";
    actions and optional facts, vertically centred.
    ≥1000px: two columns (50/50, or 40/60 with split), text aligned to the page container
    on its outer edge. <1000px: text first (clears the header), then the photograph full
-   width at `mobileRatio`; `mobileMediaFirst` reverses that. */
+   width at `mobileRatio`; `mobileMediaFirst` reverses that.
+   `bleed={false}` (≥1000px only): the photograph stays inside the page container, below the
+   header, so both columns line up with the header's logo and controls. */
 const CSS = `
 .sh-hsplit{container-type:inline-size;position:relative}
 .sh-hsplit-grid{display:grid;grid-template-columns:minmax(0,1fr)}
@@ -36,6 +38,8 @@ const CSS = `
   .sh-hsplit-text,.sh-hsplit[data-mobile-first="true"] .sh-hsplit-text{padding-block:calc(var(--space-12) + var(--section-y-sm)) var(--section-y-sm)}
   .sh-hsplit[data-side="end"] .sh-hsplit-text{padding-inline:var(--_outer) calc(var(--grid-gap) * 2.5)}
   .sh-hsplit[data-side="start"] .sh-hsplit-text{padding-inline:calc(var(--grid-gap) * 2.5) var(--_outer)}
+  .sh-hsplit[data-bleed="false"] .sh-hsplit-grid{max-width:calc(var(--layout-max) + 2 * var(--layout-gutter));margin-inline:auto;padding:calc(var(--space-12) + var(--section-y-sm)) var(--layout-gutter) var(--section-y-sm);gap:calc(var(--grid-gap) * 2.5)}
+  .sh-hsplit[data-bleed="false"] .sh-hsplit-text{padding:0}
 }
 `;
 
@@ -49,7 +53,7 @@ function ensure() {
 
 const MR = { "4:3": "var(--media-ratio)", "4:5": "var(--media-ratio-portrait)", "3:2": "3 / 2", "16:9": "var(--media-ratio-wide)", "1:1": "1 / 1" };
 
-export function HeroSplit({ media, video, src, alt = "", position, mobilePosition, title, sub, actions, meta, breadcrumbs, facts, mediaSide = "end", split = "50", ground = "merino", mobileRatio = "4:3", mobileMediaFirst = false, minHeight, size = "h1", titleAs = "h1", measure = "18ch", style, ...rest }) {
+export function HeroSplit({ media, video, src, alt = "", position, mobilePosition, title, sub, actions, meta, breadcrumbs, facts, mediaSide = "end", split = "50", ground = "merino", mobileRatio = "4:3", mobileMediaFirst = false, bleed = true, minHeight, size = "h1", titleAs = "h1", measure = "18ch", style, ...rest }) {
   ensure();
   /* `video`: a short muted loop in place of the photograph (editorial/Video, R2 only). */
   const figure = media || (video ? <Video {...video} mode="loop" ratio="4:3" /> : <Media src={src} alt={alt} ratio="4:3" position={position} mobilePosition={mobilePosition} priority />);
@@ -57,7 +61,7 @@ export function HeroSplit({ media, video, src, alt = "", position, mobilePositio
   if (minHeight) vars["--_minh"] = minHeight;
   const metaNode = meta ? (Array.isArray(meta) || typeof meta === "string" ? <MetaRow items={meta} /> : meta) : null;
   return (
-    <section data-ds-id="sections/HeroSplit" className="sh-hsplit" data-ground={ground} data-side={mediaSide} data-split={split} data-mobile-first={String(mobileMediaFirst)} style={{ ...vars, ...style }} {...rest}>
+    <section data-ds-id="sections/HeroSplit" className="sh-hsplit" data-ground={ground} data-side={mediaSide} data-split={split} data-mobile-first={String(mobileMediaFirst)} data-bleed={String(bleed)} style={{ ...vars, ...style }} {...rest}>
       <div className="sh-hsplit-grid">
         <div className="sh-hsplit-text">
           {breadcrumbs ? <div>{breadcrumbs}</div> : null}

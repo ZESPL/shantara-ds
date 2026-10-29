@@ -7,7 +7,9 @@ import { Video } from "../editorial/Video.jsx";
    its height; the caption always sits inside a bottom scrim.
    The photograph and the caption share one grid cell: the frame keeps its ratio, and a
    caption that wraps taller than the frame (narrow tablet, large text) grows the frame
-   instead of being clipped. */
+   instead of being clipped.
+   `bleed={false}` (≥1000px only): the frame sits inside the page container on a `surround`
+   ground, so its edges line up with the header's logo and controls. */
 const CSS = `
 .sh-pano{position:relative;display:grid;isolation:isolate}
 .sh-pano>*{grid-area:1/1;min-width:0}
@@ -20,6 +22,10 @@ const CSS = `
 .sh-pano-title{margin:0;font:var(--type-title);color:var(--text-primary);max-width:26ch}
 .sh-pano-sub{margin:0;font:var(--type-body-sm);color:var(--text-secondary);max-width:52ch}
 @media (min-width:1000px){.sh-pano-title{font:var(--type-statement);max-width:24ch}}
+@media (min-width:1000px){
+  .sh-pano-box{padding:var(--section-y-sm) var(--layout-gutter)}
+  .sh-pano-box>.sh-pano{max-width:var(--layout-max);margin-inline:auto}
+}
 `;
 
 function ensure() {
@@ -30,11 +36,12 @@ function ensure() {
   document.head.appendChild(el);
 }
 
-export function PanoramaCaption({ video, src, alt = "", position, mobilePosition, title, sub, ratio = "21:9", mobileRatio = "4:5", headingLevel = 2, style, ...rest }) {
+export function PanoramaCaption({ video, src, alt = "", position, mobilePosition, title, sub, ratio = "21:9", mobileRatio = "4:5", headingLevel = 2, bleed = true, surround = "merino", style, ...rest }) {
   ensure();
   const H = "h" + headingLevel;
-  return (
-    <section data-ds-id="sections/PanoramaCaption" className="sh-pano" data-ground="photo" style={style} {...rest}>
+  const Tag = bleed ? "section" : "div";
+  const frame = (
+    <Tag className="sh-pano" data-ground="photo" {...(bleed ? { "data-ds-id": "sections/PanoramaCaption", style, ...rest } : {})}>
       {/* `video`: a short muted loop (editorial/Video) under the same scrim. */}
       {video
         ? <div className="sh-pano-film"><Video {...video} mode="loop" ratio={ratio} mobileRatio={mobileRatio} /><span className="sh-media-scrim" aria-hidden="true" /></div>
@@ -47,6 +54,8 @@ export function PanoramaCaption({ video, src, alt = "", position, mobilePosition
           </div>
         </div>
       ) : null}
-    </section>
+    </Tag>
   );
+  if (bleed) return frame;
+  return <section data-ds-id="sections/PanoramaCaption" className="sh-pano-box" data-bleed="false" data-ground={surround} style={style} {...rest}>{frame}</section>;
 }

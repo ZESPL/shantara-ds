@@ -9,7 +9,7 @@ A photograph running to the edge of the screen on one side and a bottom-aligned 
 </SplitSection>
 ```
 
-**Use** for one idea with one photograph: a programme, the rooms, the dining room. Alternate `mediaSide` down a page. `split="40"` gives the text more room when it carries a `SpecTable` or `PlainList` (deck slide 13); `bleed={false}` keeps the photo inside the container when a page already has two bleeding photographs in a row.
+**Use** for one idea with one photograph: a programme, the rooms, the dining room. Alternate `mediaSide` down a page. `split="40"` gives the text more room when it carries a `SpecTable` or `PlainList` (deck slide 13); `bleed={false}` keeps the photo inside the container (at every width) — the default choice for every split after the page's first full-bleed photograph (see "Full bleed and boxed" in `ui_kits/website/skill-sections.md`).
 
 **Content.** A `Statement`, then at most one list and one link. No buttons beyond one `TextLink` — the page's primary action lives in the hero and the closing section.
 

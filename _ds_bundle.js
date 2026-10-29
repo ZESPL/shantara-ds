@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"ShantaraDesignSystem_45bbe4","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"Divider","sourcePath":"components/core/Divider.jsx"},{"name":"HnchLogo","sourcePath":"components/core/HnchLogo.jsx"},{"name":"ICON_GROUPS","sourcePath":"components/core/Icon.jsx"},{"name":"ICON_NAMES","sourcePath":"components/core/Icon.jsx"},{"name":"Icon","sourcePath":"components/core/Icon.jsx"},{"name":"IconButton","sourcePath":"components/core/IconButton.jsx"},{"name":"Logo","sourcePath":"components/core/Logo.jsx"},{"name":"PatternPanel","sourcePath":"components/core/PatternPanel.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Dialog","sourcePath":"components/feedback/Dialog.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"DateField","sourcePath":"components/forms/DateField.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"SearchList","sourcePath":"components/forms/SearchList.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Switch","sourcePath":"components/forms/Switch.jsx"},{"name":"Textarea","sourcePath":"components/forms/Textarea.jsx"},{"name":"Accordion","sourcePath":"components/navigation/Accordion.jsx"},{"name":"Breadcrumbs","sourcePath":"components/navigation/Breadcrumbs.jsx"},{"name":"LanguageSelector","sourcePath":"components/navigation/LanguageSelector.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"Media","sourcePath":"components/editorial/Media.jsx"},{"name":"ArticleFigure","sourcePath":"components/editorial/ArticleFigure.jsx"},{"name":"PortraitFrame","sourcePath":"components/editorial/PortraitFrame.jsx"},{"name":"AuthorCard","sourcePath":"components/editorial/AuthorCard.jsx"},{"name":"GroupedList","sourcePath":"components/editorial/GroupedList.jsx"},{"name":"MetaRow","sourcePath":"components/editorial/MetaRow.jsx"},{"name":"NumberedSteps","sourcePath":"components/editorial/NumberedSteps.jsx"},{"name":"Numeral","sourcePath":"components/editorial/Numeral.jsx"},{"name":"Pagination","sourcePath":"components/editorial/Pagination.jsx"},{"name":"PlainList","sourcePath":"components/editorial/PlainList.jsx"},{"name":"Prose","sourcePath":"components/editorial/Prose.jsx"},{"name":"QuoteBlock","sourcePath":"components/editorial/QuoteBlock.jsx"},{"name":"ReviewedBy","sourcePath":"components/editorial/ReviewedBy.jsx"},{"name":"ShareBar","sourcePath":"components/editorial/ShareBar.jsx"},{"name":"SpecTable","sourcePath":"components/editorial/SpecTable.jsx"},{"name":"Statement","sourcePath":"components/editorial/Statement.jsx"},{"name":"TableOfContents","sourcePath":"components/editorial/TableOfContents.jsx"},{"name":"TextLink","sourcePath":"components/editorial/TextLink.jsx"},{"name":"Tile","sourcePath":"components/editorial/Tile.jsx"},{"name":"TimeTable","sourcePath":"components/editorial/TimeTable.jsx"},{"name":"Video","sourcePath":"components/editorial/Video.jsx"},{"name":"ArticleHeader","sourcePath":"components/sections/ArticleHeader.jsx"},{"name":"ArticleLayout","sourcePath":"components/sections/ArticleLayout.jsx"},{"name":"BandStatement","sourcePath":"components/sections/BandStatement.jsx"},{"name":"CatalogueSection","sourcePath":"components/sections/CatalogueSection.jsx"},{"name":"ClosingCTA","sourcePath":"components/sections/ClosingCTA.jsx"},{"name":"TileGrid","sourcePath":"components/sections/TileGrid.jsx"},{"name":"ConfirmationSection","sourcePath":"components/sections/ConfirmationSection.jsx"},{"name":"ContactLocation","sourcePath":"components/sections/ContactLocation.jsx"},{"name":"CredentialStrip","sourcePath":"components/sections/CredentialStrip.jsx"},{"name":"FaqSection","sourcePath":"components/sections/FaqSection.jsx"},{"name":"FeatureGrid","sourcePath":"components/sections/FeatureGrid.jsx"},{"name":"FormSplit","sourcePath":"components/sections/FormSplit.jsx"},{"name":"GalleryGrid","sourcePath":"components/sections/GalleryGrid.jsx"},{"name":"GuestStory","sourcePath":"components/sections/GuestStory.jsx"},{"name":"HeroFullBleed","sourcePath":"components/sections/HeroFullBleed.jsx"},{"name":"HeroSplit","sourcePath":"components/sections/HeroSplit.jsx"},{"name":"HeroStatement","sourcePath":"components/sections/HeroStatement.jsx"},{"name":"InPageNav","sourcePath":"components/sections/InPageNav.jsx"},{"name":"InclusionsSection","sourcePath":"components/sections/InclusionsSection.jsx"},{"name":"IndexList","sourcePath":"components/sections/IndexList.jsx"},{"name":"KeyFacts","sourcePath":"components/sections/KeyFacts.jsx"},{"name":"ListingSection","sourcePath":"components/sections/ListingSection.jsx"},{"name":"NotFoundSection","sourcePath":"components/sections/NotFoundSection.jsx"},{"name":"NoticeBand","sourcePath":"components/sections/NoticeBand.jsx"},{"name":"NumeralsSplit","sourcePath":"components/sections/NumeralsSplit.jsx"},{"name":"PanoramaCaption","sourcePath":"components/sections/PanoramaCaption.jsx"},{"name":"PeopleRow","sourcePath":"components/sections/PeopleRow.jsx"},{"name":"PolicySection","sourcePath":"components/sections/PolicySection.jsx"},{"name":"ProcessSection","sourcePath":"components/sections/ProcessSection.jsx"},{"name":"ProgrammeCompare","sourcePath":"components/sections/ProgrammeCompare.jsx"},{"name":"ReferencesSection","sourcePath":"components/sections/ReferencesSection.jsx"},{"name":"RelatedArticles","sourcePath":"components/sections/RelatedArticles.jsx"},{"name":"Section","sourcePath":"components/sections/Section.jsx"},{"name":"SplitSection","sourcePath":"components/sections/SplitSection.jsx"},{"name":"TimelineSection","sourcePath":"components/sections/TimelineSection.jsx"},{"name":"VideoFeature","sourcePath":"components/sections/VideoFeature.jsx"}],"sourceHashes":{"components/core/Badge.jsx":"b014d0a4d8ea","components/core/Button.jsx":"66ad8b155d36","components/core/Card.jsx":"899ecf09e977","components/core/Divider.jsx":"7841bbb870dd","components/core/HnchLogo.jsx":"3086ba9ae2ea","components/core/Icon.jsx":"7eaaf731593f","components/core/IconButton.jsx":"0746d0dc8fb3","components/core/Logo.jsx":"71651ae4093b","components/core/PatternPanel.jsx":"dd26bb639ce9","components/core/Tag.jsx":"480f3225f1d4","components/feedback/Dialog.jsx":"c1b84ed6f276","components/feedback/Spinner.jsx":"49fa70a95320","components/feedback/Toast.jsx":"c64129df2a1a","components/feedback/Tooltip.jsx":"9c7b40a94408","components/forms/Checkbox.jsx":"621ba3e2309a","components/forms/DateField.jsx":"a4fef507a824","components/forms/Input.jsx":"1321df74a451","components/forms/Radio.jsx":"861dea337cdb","components/forms/SearchList.jsx":"39137752d536","components/forms/Select.jsx":"4ebda94f9354","components/forms/Switch.jsx":"73709580dd9e","components/forms/Textarea.jsx":"e40a2c1357c6","components/navigation/Accordion.jsx":"b8870511c6fe","components/navigation/Breadcrumbs.jsx":"421f19e62be1","components/navigation/LanguageSelector.jsx":"3255d13574aa","components/navigation/Tabs.jsx":"414b48cd2f58","components/editorial/Media.jsx":"33a6b0c1bfde","components/editorial/ArticleFigure.jsx":"f7689927c7db","components/editorial/PortraitFrame.jsx":"d79181ab4681","components/editorial/AuthorCard.jsx":"e96ed75df2fb","components/editorial/GroupedList.jsx":"d8cd9e26b4bf","components/editorial/MetaRow.jsx":"8c95d79ee5e1","components/editorial/NumberedSteps.jsx":"6f2950654a05","components/editorial/Numeral.jsx":"e6b7086ade4c","components/editorial/Pagination.jsx":"893e51b7753d","components/editorial/PlainList.jsx":"2d7a0d571c4a","components/editorial/Prose.jsx":"1b1a9a3ffec2","components/editorial/QuoteBlock.jsx":"c79559f0cb83","components/editorial/ReviewedBy.jsx":"cf907ffdf4c1","components/editorial/ShareBar.jsx":"a5d673d91fb9","components/editorial/SpecTable.jsx":"097e36746780","components/editorial/Statement.jsx":"50cb58806250","components/editorial/TableOfContents.jsx":"f92f3b4de4c4","components/editorial/TextLink.jsx":"b730c74e745f","components/editorial/Tile.jsx":"4ebf341907e5","components/editorial/TimeTable.jsx":"610e5af78002","components/editorial/Video.jsx":"e21a3629d769","components/sections/ArticleHeader.jsx":"dcbe9cde9956","components/sections/ArticleLayout.jsx":"ec0fa928583c","components/sections/BandStatement.jsx":"e9a0008b4f26","components/sections/CatalogueSection.jsx":"603b270adcd9","components/sections/ClosingCTA.jsx":"6f8f248e0564","components/sections/TileGrid.jsx":"fbb2649bbce1","components/sections/ConfirmationSection.jsx":"ae65bbbfabb7","components/sections/ContactLocation.jsx":"f14702177eb1","components/sections/CredentialStrip.jsx":"fd9f68bd56cd","components/sections/FaqSection.jsx":"b68b80cab3ab","components/sections/FeatureGrid.jsx":"d472f2fd12c4","components/sections/FormSplit.jsx":"c87831902c01","components/sections/GalleryGrid.jsx":"f9f538dc8689","components/sections/GuestStory.jsx":"06f627264128","components/sections/HeroFullBleed.jsx":"020e02a3e0fd","components/sections/HeroSplit.jsx":"4719847ea210","components/sections/HeroStatement.jsx":"d9a38016a925","components/sections/InPageNav.jsx":"9ed444571815","components/sections/InclusionsSection.jsx":"a99954de9009","components/sections/IndexList.jsx":"8b059cd6e204","components/sections/KeyFacts.jsx":"8600300421bb","components/sections/ListingSection.jsx":"73a61fe090ab","components/sections/NotFoundSection.jsx":"bfc4dc096c09","components/sections/NoticeBand.jsx":"29f4801b9cf4","components/sections/NumeralsSplit.jsx":"10d1fde8fd02","components/sections/PanoramaCaption.jsx":"8f145c35b8ac","components/sections/PeopleRow.jsx":"c64813a6b16a","components/sections/PolicySection.jsx":"57d0ba42b74a","components/sections/ProcessSection.jsx":"61b91ecfbaa9","components/sections/ProgrammeCompare.jsx":"5b81f153d44e","components/sections/ReferencesSection.jsx":"9a32b5c127ab","components/sections/RelatedArticles.jsx":"8452368a277c","components/sections/Section.jsx":"eacd861e84d9","components/sections/SplitSection.jsx":"275162930637","components/sections/TimelineSection.jsx":"ad7941ee85f3","components/sections/VideoFeature.jsx":"238e9cb6a137"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":4,"namespace":"ShantaraDesignSystem_45bbe4","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"Divider","sourcePath":"components/core/Divider.jsx"},{"name":"HnchLogo","sourcePath":"components/core/HnchLogo.jsx"},{"name":"ICON_GROUPS","sourcePath":"components/core/Icon.jsx"},{"name":"ICON_NAMES","sourcePath":"components/core/Icon.jsx"},{"name":"Icon","sourcePath":"components/core/Icon.jsx"},{"name":"IconButton","sourcePath":"components/core/IconButton.jsx"},{"name":"Logo","sourcePath":"components/core/Logo.jsx"},{"name":"PatternPanel","sourcePath":"components/core/PatternPanel.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Dialog","sourcePath":"components/feedback/Dialog.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"DateField","sourcePath":"components/forms/DateField.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"SearchList","sourcePath":"components/forms/SearchList.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Switch","sourcePath":"components/forms/Switch.jsx"},{"name":"Textarea","sourcePath":"components/forms/Textarea.jsx"},{"name":"Accordion","sourcePath":"components/navigation/Accordion.jsx"},{"name":"Breadcrumbs","sourcePath":"components/navigation/Breadcrumbs.jsx"},{"name":"LanguageSelector","sourcePath":"components/navigation/LanguageSelector.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"Media","sourcePath":"components/editorial/Media.jsx"},{"name":"ArticleFigure","sourcePath":"components/editorial/ArticleFigure.jsx"},{"name":"PortraitFrame","sourcePath":"components/editorial/PortraitFrame.jsx"},{"name":"AuthorCard","sourcePath":"components/editorial/AuthorCard.jsx"},{"name":"GroupedList","sourcePath":"components/editorial/GroupedList.jsx"},{"name":"MetaRow","sourcePath":"components/editorial/MetaRow.jsx"},{"name":"NumberedSteps","sourcePath":"components/editorial/NumberedSteps.jsx"},{"name":"Numeral","sourcePath":"components/editorial/Numeral.jsx"},{"name":"Pagination","sourcePath":"components/editorial/Pagination.jsx"},{"name":"PlainList","sourcePath":"components/editorial/PlainList.jsx"},{"name":"Prose","sourcePath":"components/editorial/Prose.jsx"},{"name":"QuoteBlock","sourcePath":"components/editorial/QuoteBlock.jsx"},{"name":"ReviewedBy","sourcePath":"components/editorial/ReviewedBy.jsx"},{"name":"ShareBar","sourcePath":"components/editorial/ShareBar.jsx"},{"name":"SpecTable","sourcePath":"components/editorial/SpecTable.jsx"},{"name":"Statement","sourcePath":"components/editorial/Statement.jsx"},{"name":"TableOfContents","sourcePath":"components/editorial/TableOfContents.jsx"},{"name":"TextLink","sourcePath":"components/editorial/TextLink.jsx"},{"name":"Tile","sourcePath":"components/editorial/Tile.jsx"},{"name":"TimeTable","sourcePath":"components/editorial/TimeTable.jsx"},{"name":"Video","sourcePath":"components/editorial/Video.jsx"},{"name":"ArticleHeader","sourcePath":"components/sections/ArticleHeader.jsx"},{"name":"ArticleLayout","sourcePath":"components/sections/ArticleLayout.jsx"},{"name":"BandStatement","sourcePath":"components/sections/BandStatement.jsx"},{"name":"CatalogueSection","sourcePath":"components/sections/CatalogueSection.jsx"},{"name":"ClosingCTA","sourcePath":"components/sections/ClosingCTA.jsx"},{"name":"TileGrid","sourcePath":"components/sections/TileGrid.jsx"},{"name":"ConfirmationSection","sourcePath":"components/sections/ConfirmationSection.jsx"},{"name":"ContactLocation","sourcePath":"components/sections/ContactLocation.jsx"},{"name":"CredentialStrip","sourcePath":"components/sections/CredentialStrip.jsx"},{"name":"FaqSection","sourcePath":"components/sections/FaqSection.jsx"},{"name":"FeatureGrid","sourcePath":"components/sections/FeatureGrid.jsx"},{"name":"FormSplit","sourcePath":"components/sections/FormSplit.jsx"},{"name":"GalleryGrid","sourcePath":"components/sections/GalleryGrid.jsx"},{"name":"GuestStory","sourcePath":"components/sections/GuestStory.jsx"},{"name":"HeroFullBleed","sourcePath":"components/sections/HeroFullBleed.jsx"},{"name":"HeroSplit","sourcePath":"components/sections/HeroSplit.jsx"},{"name":"HeroStatement","sourcePath":"components/sections/HeroStatement.jsx"},{"name":"InPageNav","sourcePath":"components/sections/InPageNav.jsx"},{"name":"InclusionsSection","sourcePath":"components/sections/InclusionsSection.jsx"},{"name":"IndexList","sourcePath":"components/sections/IndexList.jsx"},{"name":"KeyFacts","sourcePath":"components/sections/KeyFacts.jsx"},{"name":"ListingSection","sourcePath":"components/sections/ListingSection.jsx"},{"name":"NotFoundSection","sourcePath":"components/sections/NotFoundSection.jsx"},{"name":"NoticeBand","sourcePath":"components/sections/NoticeBand.jsx"},{"name":"NumeralsSplit","sourcePath":"components/sections/NumeralsSplit.jsx"},{"name":"PanoramaCaption","sourcePath":"components/sections/PanoramaCaption.jsx"},{"name":"PeopleRow","sourcePath":"components/sections/PeopleRow.jsx"},{"name":"PolicySection","sourcePath":"components/sections/PolicySection.jsx"},{"name":"ProcessSection","sourcePath":"components/sections/ProcessSection.jsx"},{"name":"ProgrammeCompare","sourcePath":"components/sections/ProgrammeCompare.jsx"},{"name":"ReferencesSection","sourcePath":"components/sections/ReferencesSection.jsx"},{"name":"RelatedArticles","sourcePath":"components/sections/RelatedArticles.jsx"},{"name":"Section","sourcePath":"components/sections/Section.jsx"},{"name":"SplitSection","sourcePath":"components/sections/SplitSection.jsx"},{"name":"TimelineSection","sourcePath":"components/sections/TimelineSection.jsx"},{"name":"VideoFeature","sourcePath":"components/sections/VideoFeature.jsx"}],"sourceHashes":{"components/core/Badge.jsx":"b014d0a4d8ea","components/core/Button.jsx":"66ad8b155d36","components/core/Card.jsx":"899ecf09e977","components/core/Divider.jsx":"7841bbb870dd","components/core/HnchLogo.jsx":"3086ba9ae2ea","components/core/Icon.jsx":"7eaaf731593f","components/core/IconButton.jsx":"0746d0dc8fb3","components/core/Logo.jsx":"71651ae4093b","components/core/PatternPanel.jsx":"dd26bb639ce9","components/core/Tag.jsx":"480f3225f1d4","components/feedback/Dialog.jsx":"c1b84ed6f276","components/feedback/Spinner.jsx":"49fa70a95320","components/feedback/Toast.jsx":"c64129df2a1a","components/feedback/Tooltip.jsx":"9c7b40a94408","components/forms/Checkbox.jsx":"621ba3e2309a","components/forms/DateField.jsx":"a4fef507a824","components/forms/Input.jsx":"1321df74a451","components/forms/Radio.jsx":"861dea337cdb","components/forms/SearchList.jsx":"39137752d536","components/forms/Select.jsx":"4ebda94f9354","components/forms/Switch.jsx":"73709580dd9e","components/forms/Textarea.jsx":"e40a2c1357c6","components/navigation/Accordion.jsx":"b8870511c6fe","components/navigation/Breadcrumbs.jsx":"421f19e62be1","components/navigation/LanguageSelector.jsx":"3255d13574aa","components/navigation/Tabs.jsx":"414b48cd2f58","components/editorial/Media.jsx":"33a6b0c1bfde","components/editorial/ArticleFigure.jsx":"f7689927c7db","components/editorial/PortraitFrame.jsx":"d79181ab4681","components/editorial/AuthorCard.jsx":"e96ed75df2fb","components/editorial/GroupedList.jsx":"d8cd9e26b4bf","components/editorial/MetaRow.jsx":"8c95d79ee5e1","components/editorial/NumberedSteps.jsx":"6f2950654a05","components/editorial/Numeral.jsx":"e6b7086ade4c","components/editorial/Pagination.jsx":"893e51b7753d","components/editorial/PlainList.jsx":"2d7a0d571c4a","components/editorial/Prose.jsx":"1b1a9a3ffec2","components/editorial/QuoteBlock.jsx":"c79559f0cb83","components/editorial/ReviewedBy.jsx":"cf907ffdf4c1","components/editorial/ShareBar.jsx":"a5d673d91fb9","components/editorial/SpecTable.jsx":"097e36746780","components/editorial/Statement.jsx":"50cb58806250","components/editorial/TableOfContents.jsx":"f92f3b4de4c4","components/editorial/TextLink.jsx":"b730c74e745f","components/editorial/Tile.jsx":"4ebf341907e5","components/editorial/TimeTable.jsx":"610e5af78002","components/editorial/Video.jsx":"e21a3629d769","components/sections/ArticleHeader.jsx":"dcbe9cde9956","components/sections/ArticleLayout.jsx":"ec0fa928583c","components/sections/BandStatement.jsx":"e9a0008b4f26","components/sections/CatalogueSection.jsx":"603b270adcd9","components/sections/ClosingCTA.jsx":"084360f0b4b5","components/sections/TileGrid.jsx":"fbb2649bbce1","components/sections/ConfirmationSection.jsx":"ae65bbbfabb7","components/sections/ContactLocation.jsx":"f14702177eb1","components/sections/CredentialStrip.jsx":"fd9f68bd56cd","components/sections/FaqSection.jsx":"b68b80cab3ab","components/sections/FeatureGrid.jsx":"d472f2fd12c4","components/sections/FormSplit.jsx":"c87831902c01","components/sections/GalleryGrid.jsx":"f9f538dc8689","components/sections/GuestStory.jsx":"06f627264128","components/sections/HeroFullBleed.jsx":"020e02a3e0fd","components/sections/HeroSplit.jsx":"20abda0bb36b","components/sections/HeroStatement.jsx":"d9a38016a925","components/sections/InPageNav.jsx":"9ed444571815","components/sections/InclusionsSection.jsx":"a99954de9009","components/sections/IndexList.jsx":"8b059cd6e204","components/sections/KeyFacts.jsx":"8600300421bb","components/sections/ListingSection.jsx":"73a61fe090ab","components/sections/NotFoundSection.jsx":"bfc4dc096c09","components/sections/NoticeBand.jsx":"29f4801b9cf4","components/sections/NumeralsSplit.jsx":"10d1fde8fd02","components/sections/PanoramaCaption.jsx":"1d13ec1defdd","components/sections/PeopleRow.jsx":"c64813a6b16a","components/sections/PolicySection.jsx":"57d0ba42b74a","components/sections/ProcessSection.jsx":"61b91ecfbaa9","components/sections/ProgrammeCompare.jsx":"5b81f153d44e","components/sections/ReferencesSection.jsx":"9a32b5c127ab","components/sections/RelatedArticles.jsx":"8452368a277c","components/sections/Section.jsx":"eacd861e84d9","components/sections/SplitSection.jsx":"275162930637","components/sections/TimelineSection.jsx":"ad7941ee85f3","components/sections/VideoFeature.jsx":"238e9cb6a137"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -6259,6 +6259,8 @@ const { Media, Statement, Icon, Button, TextLink } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 /* The closing call to action (deck slide 18) — ONLY for pages that otherwise have no CTA.
    variant "photo": a full-bleed dark photograph, 72svh, statement bottom-left.
+     `bleed={false}` (≥1000px only): the photograph sits inside the page container on a
+     `surround` ground, so its edges line up with the header and the footer's content.
    variant "ground": the same block on a flat ground (pine / himalaya / stone), content height.
    variant "compact": a single-row band — title (+ sub) on the left, actions on the right.
    Contact items render as one aligned row (every item the same 44px inline-flex box, so a
@@ -6278,6 +6280,10 @@ const CSS = `
 .sh-close-contact [data-icon]{color:var(--text-brand)}
 .sh-close-contact a:focus-visible{outline:none;box-shadow:var(--ring-focus)}
 @media (hover: hover) and (pointer: fine){.sh-close-contact a:hover{color:var(--text-primary);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}}
+@media (min-width:1000px){
+  .sh-close-box{padding:var(--section-y-sm) var(--layout-gutter)}
+  .sh-close-box>.sh-close{max-width:var(--layout-max);margin-inline:auto}
+}
 @media (max-width:519.98px){.sh-close-contact{flex-direction:column;align-items:flex-start}}
 .sh-close[data-variant="compact"] .sh-close-contact{margin-top:var(--space-6)}
 @media (min-width:760px){
@@ -6338,6 +6344,8 @@ function ClosingCTA({
   phoneLabel,
   tariffHref = "/en/tariffs",
   titleAs = "h2",
+  bleed = true,
+  surround = "merino",
   style,
   ...rest
 }) {
@@ -6374,14 +6382,18 @@ function ClosingCTA({
   }
   const acts = primary || secondary ? /*#__PURE__*/React.createElement(React.Fragment, null, primary, secondary) : null;
   const compact = v === "compact" || v === "tariff";
-  return /*#__PURE__*/React.createElement("section", _extends({
-    "data-ds-id": "sections/ClosingCTA",
+  const boxed = v === "photo" && !bleed;
+  const Tag = boxed ? "div" : "section";
+  const block = /*#__PURE__*/React.createElement(Tag, _extends({
     className: "sh-close",
     "data-variant": compact ? "compact" : v === "whatsapp" ? "ground" : v,
     "data-kind": v,
-    "data-ground": g,
-    style: style
-  }, rest), v === "photo" && src ? /*#__PURE__*/React.createElement(Media, {
+    "data-ground": g
+  }, boxed ? {} : {
+    "data-ds-id": "sections/ClosingCTA",
+    style,
+    ...rest
+  }), v === "photo" && src ? /*#__PURE__*/React.createElement(Media, {
     src: src,
     alt: alt,
     ratio: "fill",
@@ -6404,6 +6416,14 @@ function ClosingCTA({
   }, acts) : null), /*#__PURE__*/React.createElement(Contact, {
     contact: contact
   }))));
+  if (!boxed) return block;
+  return /*#__PURE__*/React.createElement("section", _extends({
+    "data-ds-id": "sections/ClosingCTA",
+    className: "sh-close-box",
+    "data-bleed": "false",
+    "data-ground": surround,
+    style: style
+  }, rest), block);
 }
 Object.assign(__ds_scope, { ClosingCTA });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/ClosingCTA.jsx", error: String((e && e.message) || e) }); }
@@ -7368,7 +7388,9 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
    actions and optional facts, vertically centred.
    ≥1000px: two columns (50/50, or 40/60 with split), text aligned to the page container
    on its outer edge. <1000px: text first (clears the header), then the photograph full
-   width at `mobileRatio`; `mobileMediaFirst` reverses that. */
+   width at `mobileRatio`; `mobileMediaFirst` reverses that.
+   `bleed={false}` (≥1000px only): the photograph stays inside the page container, below the
+   header, so both columns line up with the header's logo and controls. */
 const CSS = `
 .sh-hsplit{container-type:inline-size;position:relative}
 .sh-hsplit-grid{display:grid;grid-template-columns:minmax(0,1fr)}
@@ -7394,6 +7416,8 @@ const CSS = `
   .sh-hsplit-text,.sh-hsplit[data-mobile-first="true"] .sh-hsplit-text{padding-block:calc(var(--space-12) + var(--section-y-sm)) var(--section-y-sm)}
   .sh-hsplit[data-side="end"] .sh-hsplit-text{padding-inline:var(--_outer) calc(var(--grid-gap) * 2.5)}
   .sh-hsplit[data-side="start"] .sh-hsplit-text{padding-inline:calc(var(--grid-gap) * 2.5) var(--_outer)}
+  .sh-hsplit[data-bleed="false"] .sh-hsplit-grid{max-width:calc(var(--layout-max) + 2 * var(--layout-gutter));margin-inline:auto;padding:calc(var(--space-12) + var(--section-y-sm)) var(--layout-gutter) var(--section-y-sm);gap:calc(var(--grid-gap) * 2.5)}
+  .sh-hsplit[data-bleed="false"] .sh-hsplit-text{padding:0}
 }
 `;
 function ensure() {
@@ -7428,6 +7452,7 @@ function HeroSplit({
   ground = "merino",
   mobileRatio = "4:3",
   mobileMediaFirst = false,
+  bleed = true,
   minHeight,
   size = "h1",
   titleAs = "h1",
@@ -7462,6 +7487,7 @@ function HeroSplit({
     "data-side": mediaSide,
     "data-split": split,
     "data-mobile-first": String(mobileMediaFirst),
+    "data-bleed": String(bleed),
     style: {
       ...vars,
       ...style
@@ -8331,7 +8357,9 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
    its height; the caption always sits inside a bottom scrim.
    The photograph and the caption share one grid cell: the frame keeps its ratio, and a
    caption that wraps taller than the frame (narrow tablet, large text) grows the frame
-   instead of being clipped. */
+   instead of being clipped.
+   `bleed={false}` (≥1000px only): the frame sits inside the page container on a `surround`
+   ground, so its edges line up with the header's logo and controls. */
 const CSS = `
 .sh-pano{position:relative;display:grid;isolation:isolate}
 .sh-pano>*{grid-area:1/1;min-width:0}
@@ -8344,6 +8372,10 @@ const CSS = `
 .sh-pano-title{margin:0;font:var(--type-title);color:var(--text-primary);max-width:26ch}
 .sh-pano-sub{margin:0;font:var(--type-body-sm);color:var(--text-secondary);max-width:52ch}
 @media (min-width:1000px){.sh-pano-title{font:var(--type-statement);max-width:24ch}}
+@media (min-width:1000px){
+  .sh-pano-box{padding:var(--section-y-sm) var(--layout-gutter)}
+  .sh-pano-box>.sh-pano{max-width:var(--layout-max);margin-inline:auto}
+}
 `;
 function ensure() {
   if (typeof document === "undefined" || document.getElementById("sh-pano-css")) return;
@@ -8363,17 +8395,22 @@ function PanoramaCaption({
   ratio = "21:9",
   mobileRatio = "4:5",
   headingLevel = 2,
+  bleed = true,
+  surround = "merino",
   style,
   ...rest
 }) {
   ensure();
   const H = "h" + headingLevel;
-  return /*#__PURE__*/React.createElement("section", _extends({
-    "data-ds-id": "sections/PanoramaCaption",
+  const Tag = bleed ? "section" : "div";
+  const frame = /*#__PURE__*/React.createElement(Tag, _extends({
     className: "sh-pano",
-    "data-ground": "photo",
-    style: style
-  }, rest), video ? /*#__PURE__*/React.createElement("div", {
+    "data-ground": "photo"
+  }, bleed ? {
+    "data-ds-id": "sections/PanoramaCaption",
+    style,
+    ...rest
+  } : {}), video ? /*#__PURE__*/React.createElement("div", {
     className: "sh-pano-film"
   }, /*#__PURE__*/React.createElement(Video, _extends({}, video, {
     mode: "loop",
@@ -8399,6 +8436,14 @@ function PanoramaCaption({
   }, title) : null, sub ? /*#__PURE__*/React.createElement("p", {
     className: "sh-pano-sub"
   }, sub) : null)) : null);
+  if (bleed) return frame;
+  return /*#__PURE__*/React.createElement("section", _extends({
+    "data-ds-id": "sections/PanoramaCaption",
+    className: "sh-pano-box",
+    "data-bleed": "false",
+    "data-ground": surround,
+    style: style
+  }, rest), frame);
 }
 Object.assign(__ds_scope, { PanoramaCaption });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/sections/PanoramaCaption.jsx", error: String((e && e.message) || e) }); }

@@ -7,6 +7,8 @@ import { TextLink } from "../editorial/TextLink.jsx";
 
 /* The closing call to action (deck slide 18) — ONLY for pages that otherwise have no CTA.
    variant "photo": a full-bleed dark photograph, 72svh, statement bottom-left.
+     `bleed={false}` (≥1000px only): the photograph sits inside the page container on a
+     `surround` ground, so its edges line up with the header and the footer's content.
    variant "ground": the same block on a flat ground (pine / himalaya / stone), content height.
    variant "compact": a single-row band — title (+ sub) on the left, actions on the right.
    Contact items render as one aligned row (every item the same 44px inline-flex box, so a
@@ -26,6 +28,10 @@ const CSS = `
 .sh-close-contact [data-icon]{color:var(--text-brand)}
 .sh-close-contact a:focus-visible{outline:none;box-shadow:var(--ring-focus)}
 @media (hover: hover) and (pointer: fine){.sh-close-contact a:hover{color:var(--text-primary);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}}
+@media (min-width:1000px){
+  .sh-close-box{padding:var(--section-y-sm) var(--layout-gutter)}
+  .sh-close-box>.sh-close{max-width:var(--layout-max);margin-inline:auto}
+}
 @media (max-width:519.98px){.sh-close-contact{flex-direction:column;align-items:flex-start}}
 .sh-close[data-variant="compact"] .sh-close-contact{margin-top:var(--space-6)}
 @media (min-width:760px){
@@ -61,7 +67,7 @@ function Contact({ contact }) {
    the second (pass `whatsapp` — a wa.me URL — and `phone`, a tel: URL, from content/site.json).
    variant "tariff": a compact band that sends the reader to the tariff page (`tariffHref`):
    programme and room pages never quote a rate, so this is their commercial close. */
-export function ClosingCTA({ variant, ground = "pine", src, alt = "", position, title, sub, action, secondaryAction, contact, whatsapp, phone, phoneLabel, tariffHref = "/en/tariffs", titleAs = "h2", style, ...rest }) {
+export function ClosingCTA({ variant, ground = "pine", src, alt = "", position, title, sub, action, secondaryAction, contact, whatsapp, phone, phoneLabel, tariffHref = "/en/tariffs", titleAs = "h2", bleed = true, surround = "merino", style, ...rest }) {
   ensure();
   const v = variant || (src ? "photo" : "ground");
   const g = v === "photo" ? "photo" : v === "tariff" && ground === "pine" ? "stone" : ground;
@@ -76,8 +82,10 @@ export function ClosingCTA({ variant, ground = "pine", src, alt = "", position, 
   }
   const acts = primary || secondary ? <>{primary}{secondary}</> : null;
   const compact = v === "compact" || v === "tariff";
-  return (
-    <section data-ds-id="sections/ClosingCTA" className="sh-close" data-variant={compact ? "compact" : v === "whatsapp" ? "ground" : v} data-kind={v} data-ground={g} style={style} {...rest}>
+  const boxed = v === "photo" && !bleed;
+  const Tag = boxed ? "div" : "section";
+  const block = (
+    <Tag className="sh-close" data-variant={compact ? "compact" : v === "whatsapp" ? "ground" : v} data-kind={v} data-ground={g} {...(boxed ? {} : { "data-ds-id": "sections/ClosingCTA", style, ...rest })}>
       {v === "photo" && src ? <Media src={src} alt={alt} ratio="fill" scrim="hero" position={position} /> : null}
       <div className={"sh-close-body" + (v === "photo" ? " sh-photo-text" : "")}>
         <div className="sh-container">
@@ -88,6 +96,8 @@ export function ClosingCTA({ variant, ground = "pine", src, alt = "", position, 
           <Contact contact={contact} />
         </div>
       </div>
-    </section>
+    </Tag>
   );
+  if (!boxed) return block;
+  return <section data-ds-id="sections/ClosingCTA" className="sh-close-box" data-bleed="false" data-ground={surround} style={style} {...rest}>{block}</section>;
 }

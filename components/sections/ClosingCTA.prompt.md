@@ -31,4 +31,6 @@ The closing call to action (deck slide 18). **Use ClosingCTA only on pages that 
 
 **Responsive.** Photo: content height with a 520px floor on phones, 72svh (520–860px) on desktop, statement bottom-left inside a full scrim. Ground: content height, section padding. Compact: stacks under 760px (actions full width under 520px), one row from 760px.
 
+**Boxed photo — `bleed={false}`.** Variant `photo` only. From 1000px the dark photograph sits inside the page container (1240px) on a `surround` ground (`merino` by default, or `stone`), so its edges line up with the header and with the footer's content below it. Same height, scrim and ink. Use it when the page already opens with a full-bleed hero. Under 1000px nothing changes.
+
 **Variations.** `variant="whatsapp"` — the ground layout with "Message us on WhatsApp" as the primary action and a call as the second; pass `whatsapp` (a wa.me URL) and `phone` (a tel: URL) from content/site.json, and `phoneLabel`. `variant="tariff"` — a compact Stone band, "Current rates and what a stay includes", with one link to the tariff page (`tariffHref`): the commercial close for programme and room pages, which never quote a rate.

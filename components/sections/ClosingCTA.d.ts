@@ -29,6 +29,11 @@ export interface ClosingCTAProps extends React.HTMLAttributes<HTMLElement> {
   /** Optional contact row: items (aligned, 44px each, stack under 520px) or a node. */
   contact?: Array<string | ContactItem> | React.ReactNode;
   titleAs?: "h2" | "h3";
+  /** Variant "photo" only. false: from 1000px the photograph sits inside the page container
+   *  (1240px) instead of running to the screen edge. Under 1000px nothing changes. Default true. */
+  bleed?: boolean;
+  /** Ground around the boxed photograph (`bleed={false}` only). Default "merino". */
+  surround?: "merino" | "stone";
   /** variant also takes "whatsapp" and "tariff". */
   whatsapp?: string;
   phone?: string;

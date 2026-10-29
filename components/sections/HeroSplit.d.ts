@@ -32,6 +32,9 @@ export interface HeroSplitProps extends React.HTMLAttributes<HTMLElement> {
   mobileRatio?: "4:3" | "4:5" | "3:2" | "16:9" | "1:1";
   /** Phones/tablets: photo above the text instead of below. */
   mobileMediaFirst?: boolean;
+  /** false: from 1000px the photograph stays inside the page container, below the header,
+   *  instead of running to the screen edge. Under 1000px nothing changes. Default true. */
+  bleed?: boolean;
   /** Desktop min-height. Default clamp(600px, 88svh, 920px). */
   minHeight?: string;
   size?: "display" | "h1" | "statement";

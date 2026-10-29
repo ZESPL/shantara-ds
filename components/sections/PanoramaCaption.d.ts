@@ -16,6 +16,11 @@ export interface PanoramaCaptionProps extends React.HTMLAttributes<HTMLElement> 
   /** Ratio under 760px. Default `4:5`. */
   mobileRatio?: string;
   headingLevel?: 2 | 3;
+  /** false: from 1000px the frame sits inside the page container (1240px) instead of
+   *  running to the screen edge. Under 1000px nothing changes. Default true. */
+  bleed?: boolean;
+  /** Ground around the boxed frame (`bleed={false}` only). Default "merino". */
+  surround?: "merino" | "stone";
   /** A muted loop in place of the photograph — editorial/Video props. */
   video?: import("../editorial/Video").VideoProps;
 }

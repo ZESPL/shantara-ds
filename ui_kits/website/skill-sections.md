@@ -163,6 +163,17 @@ Editors should select **what the section means**, not manually recreate layout m
 | FAQ | `Accordion` |
 | Lead / Consultation CTA | `ClosingCTA` (page end), `FormSplit` (the form) |
 
+### Full bleed and boxed
+
+The header's logo and controls sit in the page container (1240px plus the 20→48px gutter). A ground that runs edge to edge — Stone, Pine, the Himalaya `BandStatement` — keeps its text on those same lines, so it never breaks the grid. A **photograph** that runs to the screen edge does: on wide screens it passes the edge the logo sits on. One such plane gives a page its scale; several in a row make it feel unanchored.
+
+- **One full-bleed photograph per page, two at most.** Normally that is the hero (`HeroFullBleed` or `HeroSplit`). Every later photograph section uses its boxed form.
+- **Boxed forms** use `bleed={false}`: `SplitSection`, `HeroSplit`, `PanoramaCaption` and `ClosingCTA` (variant `photo`). `PanoramaCaption` and `ClosingCTA` take a `surround` ground (`merino` or `stone`) around the frame.
+- **Boxed means the default container** (1240px), never `wide` (1440px), so the frame's edges match the logo and the header's controls.
+- **Phones keep the edge-to-edge photograph.** The `HeroSplit`, `PanoramaCaption` and `ClosingCTA` boxed forms change nothing under 1000px; `SplitSection`'s keeps the gutter at every width.
+- **Boxed frames stay square-cut**, like every photograph: no radius, no shadow, no border.
+- `HeroFullBleed` has no boxed form. If the opening should not be immersive, use `HeroStatement` or a boxed `HeroSplit`.
+
 ### Section Intro
 
 Heading; short introduction (no eyebrow). Do not use it as a substitute for long content.
@@ -177,13 +188,13 @@ When text and media need equal emphasis. Limited variants: media at **inline sta
 
 Fields: title; optional meta row; content; image/video; optional CTA.
 
-Component: `SplitSection`. From 1000px the photograph runs to the screen edge on one side (`mediaSide` start or end; `split` 50/50 or 40/60). Under 1000px the photograph goes first, full width at `mobileRatio`, then the text.
+Component: `SplitSection`. From 1000px the photograph runs to the screen edge on one side (`mediaSide` start or end; `split` 50/50 or 40/60), or stays inside the container with `bleed={false}` (see [Full bleed and boxed](#full-bleed-and-boxed)). Under 1000px the photograph goes first, full width at `mobileRatio`, then the text.
 
 ### Full-width Media
 
 Retreat photography; facility visual; landscape; meaningful video. May optionally include a short caption.
 
-Component: `PanoramaCaption`. 21:9 on desktop, `mobileRatio` (default 4:5) on phones. Caption bottom-left inside a scrim. No button.
+Component: `PanoramaCaption`. 21:9 on desktop, `mobileRatio` (default 4:5) on phones. Caption bottom-left inside a scrim. No button. `bleed={false}` boxes the frame in the container from 1000px (see [Full bleed and boxed](#full-bleed-and-boxed)).
 
 ### Card Collection
 
