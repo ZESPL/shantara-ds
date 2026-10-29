@@ -78,13 +78,14 @@ Set the goal before writing. Common Shantara deck types:
 
 ## Typography
 
-- Use the same typefaces as the Shantara website design system: one refined serif for headlines, one clean sans-serif for body text and labels.
-- Maximum two typefaces in any deck.
+- Use the design system's one typeface: **Diodrum** for headlines, body, labels and numbers (`guidelines/type.html`). Display and body are the same family at different sizes and weights. Do not add a serif or any second face for headlines.
+- Every headline 24px or larger is Diodrum Light. Medium only for small item titles. Body is Regular, never Light.
+- Install or embed Diodrum from `assets/fonts/` in PowerPoint, Keynote or Canva. If a tool cannot use it, flag that rather than substituting another typeface.
 - Clear size hierarchy: headline, subhead, body, caption. Keep sizes consistent from slide to slide.
 - Body text large enough to read on a phone and on a projector. Avoid tiny footnote-sized text except for sources.
 - Left-align body text. Centre only short headlines on opener or quote slides.
 - No text in all capitals except very short labels.
-- For Arabic versions, use a proper Arabic typeface pairing and mirror the layout right-to-left. Do not just translate the text into an English layout.
+- For Arabic versions, use **IBM Plex Sans Arabic** (the design system's Arabic counterpart, `tokens/rtl.css`) and mirror the layout right-to-left. Do not just translate the text into an English layout.
 
 ## Layout and whitespace
 
@@ -153,7 +154,7 @@ Before sharing any deck, check:
 - [ ] Every headline is a full, direct, literal sentence.
 - [ ] One idea per slide, one visual, one focal point and at most one accent. Backup detail is in the appendix.
 - [ ] Only real Shantara photography, consistent in mood.
-- [ ] Maximum two typefaces, matching the website design system.
+- [ ] Diodrum only (IBM Plex Sans Arabic for Arabic); headlines in Light; no serif or second face.
 - [ ] Consistent grid, margins and headline position.
 - [ ] Every number has a source, a period and a comparison. Currency is labelled.
 - [ ] No "cure" or "treat" claims. Health slides are flagged for review.
