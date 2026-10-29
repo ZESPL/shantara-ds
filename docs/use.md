@@ -81,15 +81,16 @@ You can also keep the folder at the repo root (as it is here) and treat `SKILL.m
 ## What an agent should read
 
 1. `AGENTS.md` — short index and bans
-2. `SKILL.md` — the five non-obvious rules
-3. `content/` — entity facts before inventing programmes, rooms, or contact
-4. `readme.md` — orientation, file map, caveats, on-record corrections
-5. `ui_kits/website/SKILL.md` when the work is the public marketing website
-6. `.cursor/skills/shantara-premium-presentations/SKILL.md` when the work is any presentation or deck (HTML brand deck: `templates/brand-deck/`)
-7. The `*.prompt.md` next to the component being used (or the catalog component page)
-8. `docs/handbook.txt`, then the section file under `docs/handbook/`, for policies, conflicts, and `[TO CONFIRM]` — not for inventing public copy
-9. `docs/icp.md` when the work is audience, SEO, campaigns, CRM, or content strategy — internal only; do not paste ICP names into public copy
-10. `guidelines/accessibility.html` before changing a colour token
+2. `SKILL.md` — the six non-obvious rules
+3. `docs/rule-of-one.md` — one reader, one idea, one focal point, one next step on every surface; the brief to write first and the checklist to run last
+4. `content/` — entity facts before inventing programmes, rooms, or contact
+5. `readme.md` — orientation, file map, caveats, on-record corrections
+6. `ui_kits/website/SKILL.md` when the work is the public marketing website
+7. `.cursor/skills/shantara-premium-presentations/SKILL.md` when the work is any presentation or deck (HTML brand deck: `templates/brand-deck/`)
+8. The `*.prompt.md` next to the component being used (or the catalog component page)
+9. `docs/handbook.txt`, then the section file under `docs/handbook/`, for policies, conflicts, and `[TO CONFIRM]` — not for inventing public copy
+10. `docs/icp.md` when the work is audience, SEO, campaigns, CRM, or content strategy — internal only; do not paste ICP names into public copy
+11. `guidelines/accessibility.html` before changing a colour token
 
 ## What this folder is not
 

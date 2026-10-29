@@ -23,6 +23,8 @@ The **editorial** hero: words lead, no full photograph (deck slide 2). A large L
 
 **Content.** One full-sentence title, no label above it. `sub` is one line.
 
+**One job.** One title stating the page's one idea, one line beneath it, and at most one primary action ([rule of one](../../docs/rule-of-one.md)). The band, side image or meta row add presence, never a second message.
+
 **Responsive.** Phone: crumbs → title → sub → actions → image/aside → hairline → meta; the band is gone; fluid top padding clears the header. `tall` (default) keeps a 440–760px floor and sits the text low. From 760px a side image/aside takes a 4-column column beside the title (7/4), bottom-aligned. The headline wraps at 22ch.
 
 ## Choosing a hero (exactly three)

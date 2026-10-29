@@ -18,6 +18,8 @@ The top of a single Journal article: breadcrumbs → h1 → dek → meta row (ca
 
 **Content.** Title as a plain statement or question. Dek is the article's `lead`. Author and reviewer only from `content/doctors/` and only when the article record names them (`author`, `medical_reviewer` are null on kit samples — leave the byline out rather than invent one). Date in "12 August 2026" form.
 
+**One job.** An article answers one question or makes one point, and the title states it ([rule of one](../../docs/rule-of-one.md)). If the title needs "and", it is two articles.
+
 **Responsive.** One column; the text block caps at 52rem and the title at 24ch. The byline wraps; `share` drops under the names on phones. The photograph is full-bleed under 760px (4:3), container width above (16:9).
 
 **Variation — `video`.** A video article: `video={{ sources, poster, title, captions, transcript }}` puts the player (editorial/Video) in the lead photograph's place, same ratios. Captions and a transcript are required when the video has speech; the read time becomes a watch time ("3 min watch").

@@ -234,6 +234,7 @@
     "claim-governance.md": "icp-claim-governance.html",
     "research-and-sources.md": "icp-research-and-sources.html",
     "use.md": "use.html",
+    "rule-of-one.md": "rule-of-one.html",
     "sources.md": "sources.html",
     "media-kareem.md": "media-kareem.html",
     "handbook.txt": "handbook.html",

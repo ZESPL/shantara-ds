@@ -8,7 +8,9 @@ When adding or rebuilding a page, follow this sequence.
 
 ### Step 1 — Define the page job
 
-Write down: audience (the health need, using the IDs in [SKILL.md §5](SKILL.md#section-5) — planning labels, not stored on records); search/user intent; one primary action; page type; main proof needed.
+Write down: audience (the health need, using the IDs in [SKILL.md §5](SKILL.md#section-5) — planning labels, not stored on records); search/user intent; the page's one idea, as one sentence; one primary action; page type; main proof needed; what was left out and where it went. This is the one-sentence brief in [`docs/rule-of-one.md`](../../docs/rule-of-one.md#the-one-sentence-brief). The idea sentence is a planning note, not page copy.
+
+If the idea needs two sentences joined by "and", the page has two jobs. Split it, or move one job to the page it belongs on and link to it.
 
 Do not treat a programme name as the audience.
 
@@ -23,6 +25,8 @@ Do not create a new component just because a design mockup looks slightly differ
 Work backward from the visitor’s decision.
 
 Ask: What must they understand first? What must they trust before the CTA? What objections remain?
+
+Each section answers one of those questions, with one point. A section that answers none of them does not belong on this page.
 
 ### Step 4 — Build content
 
@@ -58,8 +62,10 @@ Match the checks to the change. A new or rebuilt page runs every checklist below
 
 Before publishing a new or rebuilt page:
 
-- [ ] Page has a clear purpose.
+- [ ] Page has a clear purpose: its one idea can be stated in one sentence ([rule of one](../../docs/rule-of-one.md#checklist)).
 - [ ] Exactly one dominant next action is obvious.
+- [ ] Every section serves the page's one idea and makes one point; no section heading joins two unrelated ideas with "and".
+- [ ] Each view has one focal point: one dominant headline or photograph, one primary button (the header's is the frame and does not count), one rosette band.
 - [ ] H1 is unique and descriptive.
 - [ ] Hero variant fits the page job.
 - [ ] First screen communicates useful information.
@@ -175,7 +181,8 @@ Before publishing recurring content:
 - [ ] Is it more useful than a generic search result?
 - [ ] Are claims supported?
 - [ ] Does it connect to a relevant core page?
-- [ ] Does it have an appropriate next action?
+- [ ] Does it answer one question or make one point, stated in its title?
+- [ ] Does it have one appropriate next action?
 - [ ] Is there a reason to keep it updated?
 
 If the answer is mostly “we need more SEO content”, do not publish it.
@@ -191,6 +198,7 @@ Do not introduce these without a demonstrated need:
 - individual room pages by default;
 - multiple consultation forms;
 - multiple synonymous primary CTAs;
+- pages or sections with two jobs, or several equally weighted actions in one view ([rule of one](../../docs/rule-of-one.md));
 - generic drag-and-drop rows/columns/spacers;
 - one universal card with dozens of props;
 - one universal hero with dozens of props;
@@ -232,6 +240,7 @@ Because Welnez is the former name:
 A website change is complete only when, for everything it touches, it is:
 
 - visually integrated with the design system;
+- focused: one idea and one next step per page, one point per section ([rule of one](../../docs/rule-of-one.md));
 - mobile-responsive;
 - accessible;
 - performant;

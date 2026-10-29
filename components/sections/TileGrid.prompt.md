@@ -16,6 +16,8 @@ A heading row with one text link on the right, then tiles in a grid that never l
 
 **Content.** Programme names, focus and durations from `content/programs/`; one photograph per job, never repeated on the same page. No prices on tiles.
 
+**One job.** One grid lists one kind of thing (programmes, rooms, articles) under one heading, with at most one link ([rule of one](../../docs/rule-of-one.md)). Mixed kinds are two grids or two sections.
+
 **Responsive.** Phone (<760px): tiles stack in one column and the link sits under the heading. Tablet (760–999px): two columns with the link right of the heading; an odd count makes the first tile span both columns so the last row is never half empty. Desktop (≥1000px): `3` goes three across, `feature` becomes 7/5 columns with the first tile spanning the height of the stack beside it.
 
 **Variations.** `layout="4"` — four across from 1000px (two from 760px) for small items: therapies, amenities. `layout="list"` — one tile per row with the photograph beside the text from 760px (each Tile is switched to `layout="row"`), ruled apart: article and room lists.

@@ -17,11 +17,22 @@ Story × Photography × Typography × Layout × Evidence
 
 If one is weak, the deck feels cheap. Decoration, effects and extra slides cannot fix a weak one.
 
+## Rule of one
+
+Every deck follows the design system's [rule of one](../../../docs/rule-of-one.md): one reader, one idea, one focal point, one next step.
+
+- **Deck:** one audience and one goal. An investor deck and a guest presentation are two decks, never one deck with two halves.
+- **Slide:** one idea, stated as the headline. One visual: one photograph, one chart or one number.
+- **View:** one focal point and one accent, marking the single most important thing on the slide.
+- **Close:** one next step on the final slide: a decision, an action, or a contact.
+
+Before designing, write the brief from the rule of one: reader, the deck's one idea, the proof it needs, the one next step, and what goes to the appendix.
+
 ## Build order (required)
 
 Work in this order. Do not move to a later step while an earlier one is undecided.
 
-1. Audience and goal (who is reading, what decision or action the deck should produce)
+1. Audience and goal (who is reading, the one idea they should leave with, and the one decision or action the deck should produce)
 2. Storyline (the sequence of slide headlines, written before any design)
 3. Evidence (numbers, sources, proof for each claim)
 4. Photography and visuals
@@ -43,7 +54,7 @@ Set the goal before writing. Common Shantara deck types:
 
 ## Storyline rules
 
-- One idea per slide.
+- One idea per slide. If a headline needs "and" to join two unrelated points, it is two slides.
 - Every slide headline is a full sentence that states the point, not a topic label.
   - Good: "Occupancy reached 48% in September, up from 31% in August"
   - Good: "Our 14-day programme is designed for guests managing stress and poor sleep"
@@ -77,7 +88,7 @@ Set the goal before writing. Common Shantara deck types:
 
 ## Layout and whitespace
 
-- Fewer elements per slide: usually one headline, one visual, and a short supporting point or number.
+- Fewer elements per slide: usually one headline, one visual, and a short supporting point or number. One focal point per slide; if two elements compete for the eye, remove or demote one.
 - Whitespace is a design choice, not wasted space. Do not fill empty areas.
 - Use a consistent grid and consistent margins on every slide.
 - Keep the headline in the same position on every content slide.
@@ -127,6 +138,8 @@ Set the goal before writing. Common Shantara deck types:
 - Stock images of generic spas, stones, bamboo or lotus flowers
 - Word art, clip art, 3D charts, emoji
 - Multiple accent colours on one slide
+- Two ideas, two charts or two hero images on one slide
+- Decks that serve two audiences or two goals
 - Logo on every slide
 - Decorative animation or transitions
 - Unsourced numbers
@@ -135,10 +148,10 @@ Set the goal before writing. Common Shantara deck types:
 
 Before sharing any deck, check:
 
-- [ ] The audience and the single goal are clear.
+- [ ] The audience and the single goal are clear, and the deck's one idea can be stated in a sentence ([rule of one](../../../docs/rule-of-one.md#checklist)).
 - [ ] Reading only the headlines tells the full story in order.
 - [ ] Every headline is a full, direct, literal sentence.
-- [ ] One idea per slide. Backup detail is in the appendix.
+- [ ] One idea per slide, one visual, one focal point and at most one accent. Backup detail is in the appendix.
 - [ ] Only real Shantara photography, consistent in mood.
 - [ ] Maximum two typefaces, matching the website design system.
 - [ ] Consistent grid, margins and headline position.

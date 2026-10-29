@@ -30,6 +30,8 @@ Full-screen photographic hero with the statement bottom-left inside a scrim and 
 
 **Scrim.** The frame's hero scrim plus a scrim behind the text block itself (`--scrim-text`), so the headline stays protected when the block wraps tall on a phone. Sub, meta and links over the photograph are solid Merino.
 
+**One job.** The hero states the page's one idea in one sentence, over one photograph, with one primary button ([rule of one](../../docs/rule-of-one.md)). Nothing else competes in the first view: no second headline, no badge, no second filled button.
+
 **Responsive.** Phone (<520px): at least 560px tall (100svh up to 1080px), the headline wraps at 24ch in the fluid display size, actions stack full width. Tablet: same layout, the scrim still covers the whole text block. Desktop: the statement caps at 44rem inside the container, bottom-left. Pass `mobilePosition` when the subject of the photograph moves out of a portrait crop.
 
 ## Choosing a hero (exactly three)

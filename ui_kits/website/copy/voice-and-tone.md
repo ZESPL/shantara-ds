@@ -388,6 +388,12 @@ If the photography, styling and paragraph disappeared, would the heading still e
 
 If not, rewrite it.
 
+### One-idea test
+
+Does this paragraph, section or page say one thing? Does each heading state one point, without "and" joining two unrelated ideas? Is there one call to action, not several competing ones?
+
+If not, split it or move the extra idea to where it belongs. See [rule of one](../../../docs/rule-of-one.md).
+
 ### Brand test
 
 Does the sentence provide information, or does it merely make Shantara sound like a wellness brand?

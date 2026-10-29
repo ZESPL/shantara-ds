@@ -18,6 +18,8 @@ The consultation form on Merino beside a Stone panel — a photograph of the pla
 
 **Content.** Fields follow `content/site.json` `form_field_keys`; the button reads “Send your details”. The panel says in plain sentences what happens next, as the consultation screen does; a doctor it names comes from `content/doctors/`. Do not narrate internal process as a numbered list (“1. We receive your details…”), and never promise a response time that is not confirmed.
 
+**One job.** One form, one purpose, one submit button ([rule of one](../../docs/rule-of-one.md)). The panel reassures; it carries no second button or competing action.
+
 **Responsive.** Under 1000px the form comes first at full width and the Stone panel follows it. From 1000px the form takes 7 of 12 columns and the panel 5. The panel is sticky below the header while the form scrolls only when the window is at least 800px tall; in a shorter window (a 720px laptop, or large guest text) it stays in the flow so its lower half is never hidden. The panel's padding is fluid (24→48px).
 
 **Panel photograph.** `src` / `alt` (or `media`) — a photograph of the place across the top of the Stone panel at 4:3, edge to edge: `reception.jpg` in the demos (the reception desk, no guests). Never a doctor thumbnail; a doctor named in the panel copy comes from content/doctors/.

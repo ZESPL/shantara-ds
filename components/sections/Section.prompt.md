@@ -14,4 +14,6 @@ The shell every website section sits in: one ground, the fluid section rhythm an
 
 **Rule.** Nothing on a page paints its own background or side padding. If a block needs a colour or a margin, it needs a `Section`.
 
+**One job.** One section makes one point that serves the page's one idea ([rule of one](../../docs/rule-of-one.md)). If its heading needs "and" to join two unrelated ideas, use two sections.
+
 **Responsive.** No breakpoints of its own: vertical padding is fluid (`md` 80→160px, `sm` 56→96px) and the gutter is fluid (20px on a 360px phone, 48px from about 1200px). The container caps at 1240px (`wide` 1440, `narrow` 720); `width="full"` and `bleed` drop the gutter for edge-to-edge children.

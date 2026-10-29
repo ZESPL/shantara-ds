@@ -11,6 +11,8 @@ A full-width photograph with a short caption bottom-left and no button — the p
 
 **Content.** A place or a moment, in a few words. Only frames with no identifiable guests.
 
+**One job.** One place or one moment, one frame ([rule of one](../../docs/rule-of-one.md)).
+
 **Responsive.** The frame keeps its ratio, but a caption that wraps taller than the frame (narrow tablet, large guest text) grows the frame instead of being clipped; the caption carries its own scrim on top of the frame's. Desktop and tablet (≥760px): 21:9, full width, the caption inside a bottom scrim and aligned to the page container; the title is statement size from 1000px, title size below. Phone (<760px): the frame switches to 4:5 so it keeps its height instead of becoming a sliver — pass `mobilePosition` to choose which part of the panorama survives the crop.
 
 **Variation — `bleed={false}`.** From 1000px the 21:9 frame sits inside the page container (1240px) on a `surround` ground (`merino` by default, or `stone`), with the section's short rhythm above and below. Its edges line up with the header, so it reads as part of the page rather than a break in it. Use it whenever the page already has a full-bleed hero or another bleeding photograph. Under 1000px nothing changes. Square-cut like every photograph: no radius, no shadow.

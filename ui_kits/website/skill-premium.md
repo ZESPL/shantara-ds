@@ -20,11 +20,22 @@ Photography × Typography × Layout × Copy × Performance
 
 If any one of these is weak, the whole site feels cheap. Motion cannot fix a weak one. Copy and information structure matter as much as visuals here, because visitors are judging a health-related stay, not just a pretty resort.
 
+### Rule of one
+
+Restraint has a rule: **one reader, one idea, one focal point, one next step** — the standard is [`docs/rule-of-one.md`](../../docs/rule-of-one.md). On the website it means:
+
+- **Page:** one idea and one primary action, decided in build step 1 before any layout.
+- **Section:** one point, one heading, one photograph (or one row of tiles), at most one action.
+- **View:** one dominant element (one Display or Statement headline, or one hero photograph), one primary button, one rosette band, one accent. The header's Book a Consultation button is the frame and does not count against the view.
+- **Element:** one label per action and one name per thing.
+
+When a second idea, image or action competes, move it to its own section or page, or demote it (a `TextLink`, a meta row). Do not shrink both to fit.
+
 ## Build order (project rule)
 
 Work in this order. Do not start a later step while an earlier one is still undecided.
 
-1. Content architecture (pages, collections, hierarchy, what each page must answer)
+1. Content architecture (pages, collections, hierarchy, what each page must answer, and each page's one idea and one action)
 2. Photography and video (selection, cropping, art direction)
 3. Typography (typefaces, scale, line height, measure)
 4. Layout and whitespace
@@ -68,7 +79,7 @@ Shantara ships **one typeface for Latin/Cyrillic: Diodrum** (weights via design-
 
 ## Layout and whitespace
 
-- Fewer elements per section: typically one image, one heading, a short paragraph, one action.
+- Fewer elements per section: typically one image, one heading, a short paragraph, one action ([rule of one](../../docs/rule-of-one.md)). Many middle sections need no action at all; the hero and the close carry the page's one next step.
 - Use whitespace to create pacing. Do not fill space because it is empty.
 - Keep a consistent spacing scale from design tokens / Tailwind mapped to those tokens. No one-off magic numbers.
 - Build every layout to work in right-to-left for `/ar/` using logical properties and Tailwind `rtl:` variants.
@@ -271,6 +282,7 @@ Primary visitor-facing CTA remains **Book a Consultation**. When choosing betwee
 Before marking any page or component done, check the items the change could affect. The viewport widths apply when layout, type or chrome changed; a new or rebuilt page runs the whole list.
 
 - [ ] The build order was followed. Motion was not added before layout and typography were settled.
+- [ ] Rule of one ([checklist](../../docs/rule-of-one.md#checklist)): the page's one idea and one action can be stated; each section makes one point; each view has one focal point, one primary button and one accent.
 - [ ] No new animation or UI component library was added.
 - [ ] Headings and buttons are direct and literal ([skill-copy.md](skill-copy.md)).
 - [ ] No health claim says “cure” or guarantees an outcome. Health pages are flagged for review.

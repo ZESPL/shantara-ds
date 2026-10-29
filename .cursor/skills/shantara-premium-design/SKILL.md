@@ -22,4 +22,6 @@ Motion comes last in the build order. Stack locks (no animation libraries, no UI
 
 Typography uses the design-system face (**Diodrum**; **IBM Plex Sans Arabic** for RTL). Do not invent a separate display serif. Every heading at 24px or larger is Light. Design-system rules from the brand deck (grounds, square shape, buttons, tiles, component map, responsive rules) are in the same file.
 
+Composition follows the rule of one — one idea and one action per page, one point per section, one focal point and one primary button per view: `docs/rule-of-one.md`.
+
 For information architecture or page composition, see `ui_kits/website/SKILL.md`.

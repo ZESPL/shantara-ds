@@ -75,12 +75,15 @@ Determine:
 
 1. **Audience:** Who is this page for? When it serves a health need, name the need using the IDs in [SKILL.md §5](SKILL.md#section-5) — planning labels, not stored on records. Do not use a programme name as the audience.
 2. **Intent:** What are they trying to understand or decide?
-3. **Primary action:** What should they do next?
-4. **Proof:** What must they see before trusting the page?
-5. **Objections/questions:** What may stop them?
-6. **Information priority:** What must appear before they scroll far?
+3. **One idea:** What is the one sentence they should come away with? This is a planning note, not copy ([rule of one](../../docs/rule-of-one.md#the-one-sentence-brief)).
+4. **Primary action:** What one thing should they do next?
+5. **Proof:** What must they see before trusting the page?
+6. **Objections/questions:** What may stop them?
+7. **Information priority:** What must appear before they scroll far?
 
 Then choose sections. Do not start by copying another page layout.
+
+Each section makes **one point** that serves the page's one idea, with one heading, one photograph (or one row of tiles) and at most one action. If a section heading needs "and" to join two unrelated ideas, it is two sections. If a section serves none of the answers above, it does not belong on this page.
 
 ## Hero component family
 
@@ -376,7 +379,7 @@ In this kit, tiles are samples of the semantic jobs, not a production card libra
 
 ## Example page compositions
 
-These are examples, not templates.
+These are examples, not templates. Each one starts from the page's one idea and one action ([rule of one](../../docs/rule-of-one.md)), then lists only the sections that serve them. Write the brief first, then choose; do not copy a list and fill it.
 
 ### Diabetes
 
@@ -549,5 +552,7 @@ When a new design requirement appears:
 3. Only then create a new section.
 
 Create a new section when the semantic job is genuinely different, it will likely recur, and forcing it into an existing section creates confusing fields or conditionals.
+
+A new section has one semantic job. If its description needs "and" to join two jobs, it is two sections or an existing one plus a variant.
 
 Do not create a new section when spacing is slightly different, one page wants an image on the opposite side, the heading is shorter, or one designer wants a novel decorative treatment.

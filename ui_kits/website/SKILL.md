@@ -35,6 +35,8 @@ Internal audience strategy (need-led ICPs, CRM IDs, agency requirements) lives i
 
 The brand rules in the root `SKILL.md` apply here too. Check them before inventing visual or clinical language.
 
+**The rule of one applies to every page, section and view.** One reader, one idea, one focal point, one next step. The standard, the brief to write first and the checklist live in [`docs/rule-of-one.md`](../../docs/rule-of-one.md); the sibling files apply it to their own scope.
+
 **Multilingual is architectural for the public website.** Central config: `locales.js`. Planned languages: English (`en`, source, currently published), Arabic (`ar`, first future localisation, RTL ready now), then German, French, Russian, Hindi, Malayalam. Malayalam is conditional — see [`docs/icp.md`](../../docs/icp.md). Do not translate the site in this kit. The design-system catalog, guidelines, and component docs stay English — do not localise them. Read [§15 Multilingual Architecture](#section-15) before adding a route, string, or content type.
 
 ## 1. Purpose
@@ -70,7 +72,8 @@ Rates, currency amounts, “from …” figures, and stay totals appear **only**
 2. **Page type describes meaning, not layout.** Types: home, condition, program, experience, doctor, about, article, contact, consultation, policy. Use them for CMS, schema, analytics, breadcrumbs, indexing — not to force a fixed template. A Diabetes page and an Arthritis page may use different sections.
 3. **Flexible pages, constrained sections.** Editors pick semantic sections (Process, FAQ, Expert, Gallery, Pricing, Feature Grid, Timeline) — not Spacer, Row, Column, Heading, Paragraph, Button, or 50/50 layout.
 4. **One system wherever possible.** One consultation form, one lead entity, one analytics abstraction, one SEO metadata system, one schema generator, one type system, one spacing system, one section library, **one locale architecture**. Same components, sections, content models, tokens, analytics, schema, and lead form for every locale. Do not create `HomeEn` / `HomeAr`.
-5. **Evidence close to claims.** Medical claim → expert + source. Clinical process → doctor explanation. Program claim → inclusions/process. Guest experience → real photography/testimonial. Accreditation → exact credential. Facility claim → real facility photography.
+5. **One job at every scale ([rule of one](../../docs/rule-of-one.md)).** A page has one idea and one primary action. A section makes one point with one photograph and at most one action. A view has one focal point and one primary button. If a page needs two ideas, it is two pages; if a section heading needs "and", it is two sections.
+6. **Evidence close to claims.** Medical claim → expert + source. Clinical process → doctor explanation. Program claim → inclusions/process. Guest experience → real photography/testimonial. Accreditation → exact credential. Facility claim → real facility photography.
 
 ## 3. Mental model
 
@@ -238,7 +241,7 @@ The website accessibility standard is [search-visibility/accessibility.md](searc
 
 ## 11. Page workflow
 
-1. Define the page job (audience, intent, one primary action, page type, proof). When the page serves a health need, name the need (IDs in §5). Do not organise the sitemap as one URL per ICP.
+1. Define the page job (audience, intent, one idea, one primary action, page type, proof) — the one-sentence brief in [`docs/rule-of-one.md`](../../docs/rule-of-one.md#the-one-sentence-brief). When the page serves a health need, name the need (IDs in §5). Do not organise the sitemap as one URL per ICP.
 2. Reuse existing semantic sections.
 3. Order content from the visitor’s decision backward.
 4. Use real, verified Shantara information; flag gaps.
@@ -271,7 +274,8 @@ When asked to modify Shantara’s website:
 11. Test responsive behavior when layout, chrome or type changed.
 12. Verify no health/PII data is sent to analytics.
 13. Prefer clear implementation over clever implementation.
-14. If requirements conflict, prioritize: factual/clinical safety → user clarity → conversion simplicity → maintainability → design consistency → implementation elegance.
+14. When adding a section, block or action to a page, check it serves the page's one idea ([rule of one](../../docs/rule-of-one.md)). If it does not, propose where it belongs instead of adding it.
+15. If requirements conflict, prioritize: factual/clinical safety → user clarity → conversion simplicity → maintainability → design consistency → implementation elegance.
 
 Definition of done and how far to verify: [skill-qa.md](skill-qa.md#definition-of-done). Scale the checks to the change — a copy edit is not a full page audit. “Code compiles” is not done.
 

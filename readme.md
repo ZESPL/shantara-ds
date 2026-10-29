@@ -51,7 +51,7 @@ assets/photos/          → property + doctor photos (flat; README.md = rules, s
 guidelines/             → specimen cards (Brand, Foundations)
 components/             → core, forms, navigation, feedback, editorial, sections — jsx, d.ts, prompt.md; catalog pages via docs/component.html?c=
 scripts/build-bundle.mjs → rebuilds _ds_bundle.js from components/ (see its header for Babel)
-docs/                   → use, orientation, skill wrappers, handbook, ICP, sources
+docs/                   → use, orientation, skill wrappers, rule of one (rule-of-one.md), handbook, ICP, sources
 scraps/                 → working extracts (not published)
 uploads/                → original boards, handbook .docx, raw shoot (local; not published)
 ui_kits/website/        → marketing site kit + website skill (`SKILL.md`) and copy skill (`skill-copy.md`); locales.js

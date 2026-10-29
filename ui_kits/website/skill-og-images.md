@@ -31,6 +31,8 @@ Every share image carries the same three things, and nothing else:
 
 The text sits on the bottom of the safe area in all three templates, so a feed of Shantara links reads as one family.
 
+This is the [rule of one](../../docs/rule-of-one.md) at 1200 × 630: one idea (the page's), one focal point (the title), and no action on the image.
+
 ## 2. What the preview must say
 
 The information architecture in [skill-ia.md](skill-ia.md) says what each URL is for. The share preview has to say that in the picture, because X and iMessage often hide `og:description`. WhatsApp, Facebook and LinkedIn print `og:title` again under the image, so the supporting line must add a fact the title does not already say.

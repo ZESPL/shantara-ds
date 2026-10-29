@@ -303,6 +303,8 @@ There is no need to explain why the rates are located there.
 
 Headings should work even if all supporting copy disappears.
 
+One heading states one point. If a heading needs "and" to join two unrelated ideas, the section is doing two jobs; split it ([rule of one](../../../docs/rule-of-one.md)). "Meals during your stay" is one point; "Meals, rooms and activities" is three sections.
+
 Good headings:
 
 > Naturopathy programmes
@@ -405,7 +407,9 @@ Avoid:
 * Take the first step
 * Take the first step towards healing
 
-The CTA should describe an action rather than promise an outcome. Keep labels short. Do not use Badge or static Tag as decorative pills next to actions.
+The CTA should describe an action rather than promise an outcome. Keep labels short.
+
+One label per action, everywhere: the consultation action is always **Book a Consultation**, never a different synonym on a different page. One view carries one primary action; any other action is a quieter link ([rule of one](../../../docs/rule-of-one.md)). Do not use Badge or static Tag as decorative pills next to actions.
 
 ---
 

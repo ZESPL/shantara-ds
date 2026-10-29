@@ -182,8 +182,8 @@
     ],
   };
   const GROUPS = [
-    { key: "Start", label: "Start", blurb: "How to browse this folder, how to drop it into another repo, the agent skill and the ID scheme",
-      order: ["docs/use.html", "docs/skill.html", "docs/readme.html", "docs/copy-ids.html"] },
+    { key: "Start", label: "Start", blurb: "How to browse this folder, how to drop it into another repo, the agent skill, the rule of one and the ID scheme",
+      order: ["docs/use.html", "docs/skill.html", "docs/rule-of-one.html", "docs/readme.html", "docs/copy-ids.html"] },
     { key: "Brand", label: "Brand", blurb: "Colour, type, logo, pattern, imagery and print",
       order: ["guidelines/colors.html", "guidelines/type.html", "guidelines/logo.html", "guidelines/hnch-logo.html", "guidelines/brand-pattern.html", "guidelines/brand-imagery.html", "guidelines/brand-protection.html", "guidelines/brand-applications.html"] },
     { key: "Foundations", label: "Foundations", blurb: "Scale, rhythm, radius, borders, elevation, motion and accessibility",

@@ -15,4 +15,6 @@ A film with its context: a statement and a native video player, full width or be
 
 **Content.** A player never autoplays. Video with speech needs `captions` (WebVTT) and a `transcript`. The poster is a real frame; specimens here show only the poster because the design system has no R2 host.
 
+**One job.** One subject per film and one video per section ([rule of one](../../docs/rule-of-one.md)). Any action sits outside the frame.
+
 **Responsive.** `full`: the frame across the container at 16:9, 4:5 on phones. `split`: a SplitSection — frame 4:5 beside the statement from 1000px, 16:9 above it on phones.

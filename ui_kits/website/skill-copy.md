@@ -36,6 +36,7 @@ These are enforced everywhere; the linked part has the full rule.
 * **Nursing care and the personal attendant are different services.** Before writing about nursing, nurses, attendants, bystanders or helpers, read `docs/handbook/glossary.md` and follow the naming rules exactly.
 * **Policy pages use formal policy language**, not the spoken-formal site voice, and rewording never changes a commitment. See [policy language](copy/policy-language.md).
 * **BNYS doctors.** A doctor who holds a BNYS, and who is legally entitled to "Dr.", is written "Dr. [Full Name], BNYS" or "Dr. [Full Name]". Follow the naming rules in `docs/handbook/glossary.md`.
+* **One idea, one action.** Each page says one thing and asks for one next step; each heading states one point; each action has one label everywhere. See [rule of one](../../docs/rule-of-one.md).
 * **No outcome guarantees** (cure, reverse, heal, medication-free, guaranteed weight loss). See [health claims and compliance](copy/health-claims-and-compliance.md#clinical-claims).
 
 ## Do not narrate the website to the visitor

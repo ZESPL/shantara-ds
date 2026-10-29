@@ -13,6 +13,8 @@ This file is the video standard for the design system and for shantara.life. Com
 3. Use native HTML5 `<video>` only. No third-party players, iframes, or embeds. YouTube, Vimeo, Cloudflare Stream, Mux and similar services are forbidden.
 4. Every public video must be fully optimized for both traditional search engines and AI systems.
 
+Composition follows the [rule of one](../../docs/rule-of-one.md): one subject per film, one video per section, and no call to action burned into the picture. The page around the video carries the action.
+
 A footer or social-profile link to Shantara’s own YouTube channel is not a video embed. It does not satisfy this standard and it does not replace a native `<video>`.
 
 ## Hosting

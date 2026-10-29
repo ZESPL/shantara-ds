@@ -20,4 +20,6 @@ Read that file before writing, rewriting, reviewing, or approving any public-fac
 
 The Website Kit sample screens in `ui_kits/website/` must follow this skill. Internal implementation notes belong in the other website skill files, never in rendered copy. Internal ICP names from `docs/icp.md` are strategy labels, not website headings.
 
+Copy follows the rule of one: each page says one thing, each heading states one point, each action has one label everywhere (`docs/rule-of-one.md`).
+
 Also read `ui_kits/website/SKILL.md` when the task involves information architecture or page composition. Rates appear only on dedicated tariff surfaces.
