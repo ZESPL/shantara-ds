@@ -125,7 +125,7 @@ An article's `category` is the subtype (Clinical Guide, Guest Story, Food & Reci
 
 ![Dr. Bahja Janu. The line is the role, because no qualification is recorded.](../../templates/og-images/samples/doctor.jpg)
 
-![P.A. Kareem, the founder and chairman. The line is the qualification. The photograph is his portrait.](../../templates/og-images/samples/founder-kareem.jpg)
+![P.A. Kareem, the founder and chairman. The line is the qualification. The photograph is his passport photo, his only photograph.](../../templates/og-images/samples/founder-kareem.jpg)
 
 ![A Clinical Guide. The search title is longer. The picture uses a one-line headline, and the lead is the line.](../../templates/og-images/samples/editorial.jpg)
 

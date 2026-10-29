@@ -1466,11 +1466,7 @@ window.ShantaraContent = {
       "external_profiles": [],
       "locale": "en",
       "source": "handbook",
-      "status": "published",
-      "featured_image": {
-        "src": "founder-pa-kareem-portrait",
-        "alt": "P.A. Kareem"
-      }
+      "status": "published"
     }
   ],
   "articles": [

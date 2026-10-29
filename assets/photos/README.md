@@ -66,7 +66,6 @@ These were found by looking at every frame. Trust the catalogue over the filenam
 | `valley.jpg` | An interior lounge looking through a window at the valley, not an open landscape |
 | `yoga-meditation-aerial-cobblestone-circle-knees-up-guest-landscape-3x2.jpg` | The person sits hugging her knees. It is not a meditation posture |
 | `food-*-overhead-*` | Several are a high angle, not true top-down |
-| `founder-pa-kareem-portrait.jpg`, `founder-pa-kareem-portrait-cropped.jpeg` | 1086×1448 and 903×903. Keep to card or column size, not a full-bleed hero. He is the founder and chairman, not a doctor, so he wears a white shirt, not a coat and stethoscope. His passport photo is a different sitting (white backdrop, suit) |
 | `board-abdulla-aboobacker.jpeg` | 1014×1280, office backdrop. Does not match the grey studio set |
 | Legible brand names | `treatment.jpg` (a tissue box), `consultation-doctor-at-desk-with-guest-landscape-3x2.jpg` (a monitor logo), `physiotherapy-electrotherapy-session-treatment-table-guest-landscape-3x2.jpg` (a gel bottle label). Crop or avoid in large use |
 
@@ -97,7 +96,7 @@ The founder and chairman's portraits (`founder-*`) and board portraits (`board-*
 
 | Portrait | Who |
 | --- | --- |
-| `founder-pa-kareem-passport.jpeg` (`photo_profile`), `founder-pa-kareem-portrait` (`featured_image`), `founder-pa-kareem-portrait-cropped.jpeg` | P.A. Kareem, Founder and Chairman. `leadership/pa-kareem`. Smaller files (see [Known issues](#known-issues)) |
+| `founder-pa-kareem-passport.jpeg` (`photo_profile`) | P.A. Kareem, Founder and Chairman. `leadership/pa-kareem`. His only photograph: white backdrop, suit, a different sitting from the grey-backdrop set |
 | `board-abdulla-aboobacker.jpeg` | Abdulla Aboobacker, Board Member |
 
 ## Filenames
@@ -258,8 +257,6 @@ Shape is the file's own orientation and ratio. Public is the status explained [a
 | Name | Shape | Public | Setting | Light | Best for |
 | --- | --- | --- | --- | --- | --- |
 | `founder-pa-kareem-passport.jpeg` | portrait 5:6 | Yes | studio backdrop (plain white) | flat frontal light, neutral to cool | avatar, credential or document use |
-| `founder-pa-kareem-portrait-cropped.jpeg` | square 1:1 | Yes | studio backdrop (grey gradient) | soft studio light, neutral | board row, avatar |
-| `founder-pa-kareem-portrait` | portrait 3:4 | Yes | studio backdrop (grey gradient) | soft studio light, neutral | the founder's profile page, split-section half |
 | `board-abdulla-aboobacker.jpeg` | portrait 4:5 | Yes | office interior (corporate portrait) | bright window daylight, neutral to cool | board row on the About page, avatar |
 
 ### Consultation

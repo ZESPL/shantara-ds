@@ -50,7 +50,7 @@ const samples = [
   card("home.jpg", fixed("home"), photo("arrival-dusk")),
   card("programme.jpg", programme, photo("balcony")),
   card("doctor.jpg", bahja, photo("doctor-bahja-janu-portrait")),
-  card("founder-kareem.jpg", kareem, photo("founder-pa-kareem-portrait")),
+  card("founder-kareem.jpg", kareem, asset("photos/founder-pa-kareem-passport.jpeg")),
   card("editorial.jpg", article),
   /* Doctor Answers never carry the supporting line (og.line: false). */
   card("doctor-answer.jpg", shortAnswer),

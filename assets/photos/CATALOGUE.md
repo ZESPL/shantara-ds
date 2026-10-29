@@ -846,37 +846,8 @@ Each entry gives:
 - **Crops:** 5:6 native, 4:5, 1:1 at object-position 50% 35%; circle avatar
 - **Mood:** formal, official
 - **Best for:** avatar, credential or document use
-- **Cautions:** a different shoot from his other two portraits (white backdrop, suit and tie, not smiling), so it does not match his grey-backdrop portraits; flat ID-photo look
+- **Cautions:** his only photograph in the set; white backdrop, suit and tie, not smiling, so it does not match the grey-backdrop doctor portraits; flat ID-photo look
 - **Used by:** `leadership/pa-kareem` (photo_profile)
-
-#### founder-pa-kareem-portrait-cropped.jpeg
-
-- `founder-pa-kareem-portrait-cropped.jpeg` · 903×903 · square 1:1 · 44 KB
-- **Public use:** **Yes**, as the named person's portrait (About board row, his profile page `/en/pa-kareem`). Name and role from `content/leadership/` or handbook §3. He is the founder and chairman, not a doctor.
-- **Shows:** The same man framed from the chest up, smiling, in a white shirt with a pen in the pocket and glasses.
-- **Setting:** studio backdrop (grey gradient)
-- **People:** founder and chairman portrait (not a doctor)
-- **Light:** soft studio light, neutral; palette: white, grey, charcoal
-- **Composition:** subject centre, head in the upper third; text space: grey backdrop at the left and right; scrim: not needed
-- **Crops:** 1:1 native; circle avatar at object-position 50% 30%
-- **Mood:** warm, approachable
-- **Best for:** board row, avatar
-- **Cautions:** a square crop of founder-pa-kareem-portrait.jpg; low resolution (903x903), so keep it at card or avatar size
-
-#### founder-pa-kareem-portrait.jpg
-
-- `founder-pa-kareem-portrait` · 1086×1448 · portrait 3:4 · 100 KB
-- **Public use:** **Yes**, as the named person's portrait (About board row, his profile page `/en/pa-kareem`). Name and role from `content/leadership/` or handbook §3. He is the founder and chairman, not a doctor.
-- **Shows:** A seated portrait of the founder on a grey chair, legs crossed, hands clasped, smiling, in a white shirt with a pen in the pocket and charcoal trousers.
-- **Setting:** studio backdrop (grey gradient)
-- **People:** founder and chairman portrait (not a doctor)
-- **Light:** soft studio light, neutral; palette: white, grey, charcoal
-- **Composition:** subject centre, head in the upper third; text space: grey backdrop above the head and at the sides; scrim: not needed
-- **Crops:** 3:4 native, 4:5, 2:3 at object-position 50% 30%
-- **Mood:** warm, relaxed, approachable
-- **Best for:** the founder's profile page, split-section half, 4:5 social post
-- **Cautions:** low resolution (1086x1448) for large hero use; he is not a doctor (no coat or stethoscope), so never place it in a doctors row; the foot is cut at the bottom left
-- **Used by:** `leadership/pa-kareem` (featured_image)
 
 #### board-abdulla-aboobacker.jpeg
 
