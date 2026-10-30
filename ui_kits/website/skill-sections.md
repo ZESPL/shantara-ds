@@ -97,7 +97,7 @@ Do not create a single Hero with 30 props. Do not create 12 hero variants.
 | --- | --- |
 | Immersive (Home, Experience) | `HeroFullBleed` (Display headline, one primary button, `meta` caption row) |
 | Offer (Programme, Tariffs) | `HeroSplit` (photo one side, title + meta + one line + button) + a booking panel directly below |
-| Editorial / Utility (Conditions, About, Journal, Contact, Book a Consultation) | `HeroStatement` with a rosette band (`pattern`) or a side image — never a bare statement |
+| Editorial / Utility (Conditions, About, Journal, Contact, Book a Consultation) | `HeroStatement` with a side image, a Stone ground or a meta row — never a bare statement |
 | Article | `ArticleHeader` |
 
 The header overlays every page. On `HeroStatement` it sits on the Merino/Stone ground.

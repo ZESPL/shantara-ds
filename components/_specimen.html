@@ -99,7 +99,7 @@
       const P = PH;
       const Label = ({ children }) => <p style={{ margin: 0, padding: "10px var(--layout-gutter)", font: "var(--type-caption)", letterSpacing: "var(--tracking-wide)", color: "var(--text-muted)", background: "var(--surface-page)", borderBlock: "1px dashed var(--border-subtle)" }}>{children}</p>;
       switch (name) {
-        case "HeroStatement": return <><Label><b>variant="utility"</b> · legal pages, 404, confirmation — short, no band, no image</Label>
+        case "HeroStatement": return <><Label><b>variant="utility"</b> · legal pages, 404, confirmation — short, no image</Label>
           <HeroStatement variant="utility" breadcrumbs={<Breadcrumbs items={[{ label: "Home", href: "#" }, "Privacy policy"]} />} title="Privacy policy" sub="How we collect, use and protect the details you share with us." meta={["Updated 20 August 2026"]} /></>;
         case "HeroSplit": return <><Label><b>video</b> · a short muted loop in place of the photograph (poster only here: no R2 host in the design system)</Label>
           <HeroSplit video={{ poster: P + "water-wall.jpg", title: "The water wall" }} breadcrumbs={<Breadcrumbs items={[{ label: "Therapies", href: "#" }, "Hydrotherapy"]} />} title="Hydrotherapy" meta={["Water", "Prescribed after assessment"]} sub="Water at controlled temperatures to support circulation." actions={<Button size="lg">Book a Consultation</Button>} /></>;
@@ -569,7 +569,6 @@
               title="Conditions we commonly see"
               sub="Our doctors see guests with a range of long-standing conditions. Programmes are planned after consultation and assessment."
               actions={<Button size="lg">Book a Consultation</Button>}
-              pattern
               meta={["Reviewed by Dr. Bahja Janu, Medical Director", "Updated August 2026"]} />
             <HeroStatement ground="stone" tall={false}
               breadcrumbs={<Breadcrumbs items={[{ label: "Home", href: "#" }, "About"]} />}

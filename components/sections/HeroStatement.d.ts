@@ -3,7 +3,7 @@ import type { MetaItem } from "../editorial/MetaRow";
 
 export interface HeroStatementProps extends React.HTMLAttributes<HTMLElement> {
   /** The page title as a full sentence. No label above it. */
-  /** "utility": short, no band, no image — legal pages, 404, confirmation. */
+  /** "utility": short, no image — legal pages, 404, confirmation. */
   variant?: "editorial" | "utility";
   title: React.ReactNode;
   /** One supporting line (lead size). */
@@ -15,8 +15,6 @@ export interface HeroStatementProps extends React.HTMLAttributes<HTMLElement> {
   meta?: Array<string | MetaItem> | React.ReactNode;
   /** Closing hairline across the container (default true). */
   rule?: boolean;
-  /** Rosette band on one edge (30% of the hero). `true` = "end". Drops under 880px of hero width. */
-  pattern?: boolean | "end" | "start";
   /** Small image in the side column (≥1000px: 4 of 11 columns; stacks on phones). Or pass `media`. */
   src?: string;
   alt?: string;

@@ -1,4 +1,4 @@
-/* Journal index — HeroStatement (rosette band) → category Tabs → a 3-up Tile grid →
+/* Journal index — HeroStatement → category Tabs → a 3-up Tile grid →
    Pagination → ClosingCTA (compact; the page has no other CTA).
    Recipe: components/editorial/Pagination.prompt.md. Tiles open the Article view. */
 
@@ -38,7 +38,6 @@ function JournalScreen({ onNavigate }) {
       <P id="journal/hero">
         <HeroStatement
           tall={false}
-          pattern="start"
           title={t("Articles from our doctors and team")}
           sub={t("Clinical guides, meals and guest stories from Shantara.")}
         />

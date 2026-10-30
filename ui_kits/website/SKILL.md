@@ -147,7 +147,7 @@ Heroes are a **family**, not one universal Hero with 30 props, and not 12 varian
 | --- | --- | --- | --- |
 | Immersive | Place, emotion, photography | Home, Experience | `HeroFullBleed` |
 | Offer | Commercial page, high intent | Programme pages, Rooms and tariffs (duration/options, suitability, Book a Consultation — **no invented price**) | `HeroSplit` + booking panel |
-| Editorial / utility | Topic + readability | Conditions, About, Journal, Contact, Book a Consultation | `HeroStatement` with a rosette band (`pattern`) or a side image — never "naked" |
+| Editorial / utility | Topic + readability | Conditions, About, Journal, Contact, Book a Consultation | `HeroStatement` with a side image, a Stone ground or a meta row — never "naked" |
 | Article | One Journal article | `/en/journal/<slug>` | `ArticleHeader` |
 
 No eyebrows anywhere: no small uppercase label above a hero, section or card title. Category, duration or place goes in a caption meta row **below** the title (`meta` prop / `MetaRow`).

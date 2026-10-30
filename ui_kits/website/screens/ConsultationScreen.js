@@ -1,4 +1,4 @@
-/* Book a consultation — HeroStatement (rosette band) → the form beside a Stone panel (who
+/* Book a consultation — HeroStatement → the form beside a Stone panel (who
    calls, what happens next). Dialog confirm, Spinner, success state and Toast are kept.
    No ClosingCTA: the form is the page's CTA (#35). */
 
@@ -75,7 +75,6 @@ function ConsultationScreen({ onNavigate, locale = "en", view = "booking" }) {
         <P id="booking/done">
         <HeroStatement
           tall={false}
-          pattern="end"
           meta={[t("Book a Consultation")]}
           title={t("Consultation request received")}
           sub={t("Our team will contact you to understand your requirements and guide you on the appropriate next step.")}
@@ -114,7 +113,6 @@ function ConsultationScreen({ onNavigate, locale = "en", view = "booking" }) {
       <P id="booking/hero">
         <HeroStatement
           tall={false}
-          pattern="end"
           title={t("Book a Consultation")}
           sub={t("Share your name and a number we can reach. Our team will contact you to arrange a consultation.")}
         />

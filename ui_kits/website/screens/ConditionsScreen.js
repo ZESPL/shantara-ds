@@ -1,4 +1,4 @@
-/* Conditions — HeroStatement (rosette band) → text index of conditions by group → a quiet
+/* Conditions — HeroStatement → text index of conditions by group → a quiet
    panorama → the rest of the index → ClosingCTA (photo; the page has no other CTA).
    No photographs in the list: a condition is not a room or a meal. */
 
@@ -30,7 +30,6 @@ function ConditionsScreen({ onNavigate }) {
     <main>
       <P id="conditions/hero">
         <HeroStatement
-          pattern="end"
           breadcrumbs={<Breadcrumbs items={[{ label: t("Home"), href: home }, t("Conditions")]} />}
           title={t("Conditions we commonly see")}
           sub={t("Our doctors see guests with a range of long-standing conditions. Programmes are planned after consultation and assessment.")}

@@ -163,7 +163,7 @@ Dark grounds re-point the ink tokens. Inside `himalaya`, `pine` and `photo` the 
 | --- | --- |
 | Home or immersive page opening | `HeroFullBleed` |
 | Programme / tariffs page opening | `HeroSplit` + booking panel below |
-| Inner page opening without a full photograph | `HeroStatement` with `pattern` or a side image |
+| Inner page opening without a full photograph | `HeroStatement` with a side image, a Stone ground or a meta row |
 | Section heading block | `Statement` (headline → optional meta row → one line) |
 | Text beside a photograph | `SplitSection` |
 | The page's single accent statement | `BandStatement` (Himalaya + rosette band) |
