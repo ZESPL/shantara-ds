@@ -74,9 +74,9 @@ Rooms are designed with restraint, so comfort feels subtle rather than excessive
 | Dining Hall | Hall where meals are served. |
 | Air Conditioning | Air conditioning in the room. |
 | Electronic Safe | A safe in the room. |
-| Tea and Coffee Maker | A tea and coffee maker in the room. |
+| Kettle | A kettle in the room. |
 | Private Bathroom with Rain Shower | A private bathroom with a rain shower. |
 
-Naturopathy Treatment Rooms, Meditation Space, Doctor Consultation Rooms, On-site Laboratory, Dining Hall, Air Conditioning, Electronic Safe, Tea and Coffee Maker, and Private Bathroom with Rain Shower are from the Shantara agent agreement (Retreat Amenities and Facilities, and Room Facilities).
+Naturopathy Treatment Rooms, Meditation Space, Doctor Consultation Rooms, On-site Laboratory, Dining Hall, Air Conditioning, Electronic Safe, Kettle, and Private Bathroom with Rain Shower are from the Shantara agent agreement (Retreat Amenities and Facilities, and Room Facilities). The agreement lists a Tea and Coffee Maker; the owner replaced it with Kettle on 30 Oct 2026 because tea and coffee are not permitted on the premises.
 
 [TO CONFIRM] Accessibility information for guests with mobility needs.
