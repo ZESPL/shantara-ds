@@ -35,7 +35,7 @@ A stay can be postponed once at no charge, with written notice at least 21 days 
 
 ### Stay duration
 
-Most programmes are designed around a week or longer so naturopathy protocols have time to take effect. That is typical duration, not a mandatory floor for every stay: shorter stays may be offered where clinically and commercially appropriate. The guest's doctor recommends the optimal programme duration at the preliminary consultation. Early departure by choice does not entitle a refund for unused nights of the booked stay; a doctor-certified medical departure does — see the cancellation policy above. Do not quote rates here; they live on the tariff surface.
+The minimum stay for any programme is 3 nights. Most programmes are designed around a week or longer so naturopathy protocols have time to take effect; that is typical duration, not the minimum. The guest's doctor recommends the optimal programme duration at the preliminary consultation. Early departure by choice does not entitle a refund for unused nights of the booked stay; a doctor-certified medical departure does — see the cancellation policy above. Do not quote rates here; they live on the tariff surface.
 
 ### Non-participating companions
 
@@ -59,7 +59,7 @@ Alcohol, packed food, non-vegetarian food, non-pharmaceutical drugs, cigarettes,
 
 ### Movement during stay
 
-Leaving the premises during the stay is not permitted. This restriction supports treatment efficacy and guest safety, since the body is in various stages of detoxification and healing that require continuous monitoring, a controlled diet, and a structured routine. In a genuine emergency requiring a guest to leave, they must be accompanied by a doctor or a designated team member.
+Leaving the premises during the stay is not permitted. This restriction supports treatment efficacy and guest safety, since the body is in various stages of detoxification and healing that require continuous monitoring, a controlled diet, and a structured routine. In a genuine emergency requiring a guest to leave, they must be accompanied by a designated team member.
 
 ### Digital detox
 
@@ -71,7 +71,7 @@ Guests are asked to follow their prescribed treatment schedule, respect quiet ho
 
 ### Visitor policy
 
-Once a guest is admitted, visitors are not allowed, to preserve an undisturbed healing environment for all guests.
+Guests are asked to avoid visitors during their stay, to preserve an undisturbed healing environment for all guests. Where a visit is necessary, visitors are allowed only from 17:00 to 18:00.
 
 ### Pet policy
 
@@ -83,7 +83,7 @@ Shantara is a smoke-free, alcohol-free, and drug-free facility. Possession or us
 
 ### Treatment protocol disclaimer
 
-All treatments and therapies follow the doctor's prescription, and package inclusions and exclusions are specified at the time of booking. Additional therapies are available at extra cost, only after doctor's approval. Individual results vary based on health condition and adherence to the program. Naturopathy is a complementary approach and not a substitute for emergency medical care.
+All treatments and therapies follow the doctor's prescription, and package inclusions and exclusions are specified at the time of booking. Additional therapies and services are available at extra cost, only after doctor's approval. Packages cannot be customised, and the rate stays the same whatever the guest's food intake or treatment frequency. Individual results vary based on health condition and adherence to the program. Naturopathy is a complementary approach and not a substitute for emergency medical care.
 
 ### Post-stay support
 

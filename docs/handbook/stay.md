@@ -14,12 +14,13 @@ Part of the [property handbook](../handbook.txt).
 ### Pre-arrival requirements
 
 - A completed medical screening questionnaire and relevant medical records, as requested by the doctors during the preliminary consultation (see [section 5](admission.md#section-5)).
-- A valid photo ID: Passport, Aadhar Card, Driving License, or Voter ID. Foreign nationals must also submit passport and visa documents on arrival.
+- A valid photo ID: Passport, Aadhar Card, Driving License, or Voter ID. Foreign nationals must also submit their passport and e-Ayush visa on arrival.
 - Tea and coffee: [Food & Dining](food.md#tea-and-coffee).
 
 ### Check-in & check-out
 
-- Check-in: 14:00 hrs. Check-out: 11:00 hrs. Guests are asked to have lunch before departure.
+- Check-in: 14:00 hrs. Check-out: 12:00 hrs. Guests are asked to have lunch before departure.
+- Early check-in or late check-out of up to 4 hours is complimentary, subject to room availability. Beyond 4 hours, an extra charge applies.
 
 ### Daily routine
 
@@ -45,10 +46,10 @@ Every guest follows this daily routine. The doctor prescribes which treatments f
 | 07:30 PM – 08:00 PM | Meditation |
 | 09:00 PM | Sleep |
 
-### Airport & railway transfer
+### Airport transfer
 
-- Complimentary shared transfer from Calicut International Airport (about 25 km, roughly 45 minutes) and Calicut Railway Station (about 30 km, roughly 1 hour).
-- Guests should share their flight or train details at least 48 hours in advance.
+- Complimentary shared transfer from Calicut International Airport (about 25 km, roughly 45 minutes). There is no railway station transfer.
+- Guests should share their flight details at least 48 hours in advance.
 
 ### Attire & laundry
 

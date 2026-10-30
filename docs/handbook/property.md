@@ -40,7 +40,7 @@ Rooms are designed with restraint, so comfort feels subtle rather than excessive
 - All therapeutic naturopathy meals
 - Entertainment and activities
 - Two complimentary recreational therapies per week
-- Airport and railway transfers (see [section 12](stay.md#section-12))
+- Airport transfer (see [section 12](stay.md#section-12))
 - Attire provided for the stay, and its laundry
 
 **What a stay does not include**

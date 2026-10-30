@@ -10,7 +10,7 @@ The on-site organic farm grows fruits, vegetables, and herbs that are used direc
 
 Shantara serves a 100% vegetarian, plant-based diet, customised to each guest's body constitution and health condition. All meals are included in the package. Guests are required to strictly follow the diet prescribed by their naturopathy doctor. It is a critical component of the treatment protocol, not a preference, so staff should never suggest substitutions without checking with the doctor.
 
-In-room dining is available only on a doctor's recommendation.
+In-room dining is not available.
 
 ### Tea and coffee
 
