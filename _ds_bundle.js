@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"ShantaraDesignSystem_45bbe4","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"Divider","sourcePath":"components/core/Divider.jsx"},{"name":"HnchLogo","sourcePath":"components/core/HnchLogo.jsx"},{"name":"ICON_GROUPS","sourcePath":"components/core/Icon.jsx"},{"name":"ICON_NAMES","sourcePath":"components/core/Icon.jsx"},{"name":"Icon","sourcePath":"components/core/Icon.jsx"},{"name":"IconButton","sourcePath":"components/core/IconButton.jsx"},{"name":"Logo","sourcePath":"components/core/Logo.jsx"},{"name":"PatternPanel","sourcePath":"components/core/PatternPanel.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Dialog","sourcePath":"components/feedback/Dialog.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"DateField","sourcePath":"components/forms/DateField.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"SearchList","sourcePath":"components/forms/SearchList.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Switch","sourcePath":"components/forms/Switch.jsx"},{"name":"Textarea","sourcePath":"components/forms/Textarea.jsx"},{"name":"Accordion","sourcePath":"components/navigation/Accordion.jsx"},{"name":"AnnouncementBar","sourcePath":"components/navigation/AnnouncementBar.jsx"},{"name":"Breadcrumbs","sourcePath":"components/navigation/Breadcrumbs.jsx"},{"name":"LanguageSelector","sourcePath":"components/navigation/LanguageSelector.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"Media","sourcePath":"components/editorial/Media.jsx"},{"name":"ArticleFigure","sourcePath":"components/editorial/ArticleFigure.jsx"},{"name":"PortraitFrame","sourcePath":"components/editorial/PortraitFrame.jsx"},{"name":"AuthorCard","sourcePath":"components/editorial/AuthorCard.jsx"},{"name":"GroupedList","sourcePath":"components/editorial/GroupedList.jsx"},{"name":"MetaRow","sourcePath":"components/editorial/MetaRow.jsx"},{"name":"NumberedSteps","sourcePath":"components/editorial/NumberedSteps.jsx"},{"name":"Numeral","sourcePath":"components/editorial/Numeral.jsx"},{"name":"Pagination","sourcePath":"components/editorial/Pagination.jsx"},{"name":"PlainList","sourcePath":"components/editorial/PlainList.jsx"},{"name":"Prose","sourcePath":"components/editorial/Prose.jsx"},{"name":"QuoteBlock","sourcePath":"components/editorial/QuoteBlock.jsx"},{"name":"ReviewedBy","sourcePath":"components/editorial/ReviewedBy.jsx"},{"name":"ShareBar","sourcePath":"components/editorial/ShareBar.jsx"},{"name":"SpecTable","sourcePath":"components/editorial/SpecTable.jsx"},{"name":"Statement","sourcePath":"components/editorial/Statement.jsx"},{"name":"TableOfContents","sourcePath":"components/editorial/TableOfContents.jsx"},{"name":"TextLink","sourcePath":"components/editorial/TextLink.jsx"},{"name":"Tile","sourcePath":"components/editorial/Tile.jsx"},{"name":"TimeTable","sourcePath":"components/editorial/TimeTable.jsx"},{"name":"Video","sourcePath":"components/editorial/Video.jsx"},{"name":"ArticleHeader","sourcePath":"components/sections/ArticleHeader.jsx"},{"name":"ArticleLayout","sourcePath":"components/sections/ArticleLayout.jsx"},{"name":"BandStatement","sourcePath":"components/sections/BandStatement.jsx"},{"name":"CatalogueSection","sourcePath":"components/sections/CatalogueSection.jsx"},{"name":"ClosingCTA","sourcePath":"components/sections/ClosingCTA.jsx"},{"name":"TileGrid","sourcePath":"components/sections/TileGrid.jsx"},{"name":"ConfirmationSection","sourcePath":"components/sections/ConfirmationSection.jsx"},{"name":"ContactLocation","sourcePath":"components/sections/ContactLocation.jsx"},{"name":"CredentialStrip","sourcePath":"components/sections/CredentialStrip.jsx"},{"name":"FaqSection","sourcePath":"components/sections/FaqSection.jsx"},{"name":"FeatureGrid","sourcePath":"components/sections/FeatureGrid.jsx"},{"name":"FormSplit","sourcePath":"components/sections/FormSplit.jsx"},{"name":"GalleryGrid","sourcePath":"components/sections/GalleryGrid.jsx"},{"name":"GuestStory","sourcePath":"components/sections/GuestStory.jsx"},{"name":"HeroFullBleed","sourcePath":"components/sections/HeroFullBleed.jsx"},{"name":"HeroSplit","sourcePath":"components/sections/HeroSplit.jsx"},{"name":"HeroStatement","sourcePath":"components/sections/HeroStatement.jsx"},{"name":"InPageNav","sourcePath":"components/sections/InPageNav.jsx"},{"name":"InclusionsSection","sourcePath":"components/sections/InclusionsSection.jsx"},{"name":"IndexList","sourcePath":"components/sections/IndexList.jsx"},{"name":"KeyFacts","sourcePath":"components/sections/KeyFacts.jsx"},{"name":"ListingSection","sourcePath":"components/sections/ListingSection.jsx"},{"name":"NotFoundSection","sourcePath":"components/sections/NotFoundSection.jsx"},{"name":"NoticeBand","sourcePath":"components/sections/NoticeBand.jsx"},{"name":"NumeralsSplit","sourcePath":"components/sections/NumeralsSplit.jsx"},{"name":"PanoramaCaption","sourcePath":"components/sections/PanoramaCaption.jsx"},{"name":"PeopleRow","sourcePath":"components/sections/PeopleRow.jsx"},{"name":"PolicySection","sourcePath":"components/sections/PolicySection.jsx"},{"name":"ProcessSection","sourcePath":"components/sections/ProcessSection.jsx"},{"name":"ProgrammeCompare","sourcePath":"components/sections/ProgrammeCompare.jsx"},{"name":"ReferencesSection","sourcePath":"components/sections/ReferencesSection.jsx"},{"name":"RelatedArticles","sourcePath":"components/sections/RelatedArticles.jsx"},{"name":"Section","sourcePath":"components/sections/Section.jsx"},{"name":"SplitSection","sourcePath":"components/sections/SplitSection.jsx"},{"name":"TimelineSection","sourcePath":"components/sections/TimelineSection.jsx"},{"name":"VideoFeature","sourcePath":"components/sections/VideoFeature.jsx"}],"sourceHashes":{"components/core/Badge.jsx":"b014d0a4d8ea","components/core/Button.jsx":"66ad8b155d36","components/core/Card.jsx":"899ecf09e977","components/core/Divider.jsx":"7841bbb870dd","components/core/HnchLogo.jsx":"3086ba9ae2ea","components/core/Icon.jsx":"7eaaf731593f","components/core/IconButton.jsx":"0746d0dc8fb3","components/core/Logo.jsx":"71651ae4093b","components/core/PatternPanel.jsx":"dd26bb639ce9","components/core/Tag.jsx":"480f3225f1d4","components/feedback/Dialog.jsx":"c1b84ed6f276","components/feedback/Spinner.jsx":"49fa70a95320","components/feedback/Toast.jsx":"c64129df2a1a","components/feedback/Tooltip.jsx":"9c7b40a94408","components/forms/Checkbox.jsx":"621ba3e2309a","components/forms/DateField.jsx":"a4fef507a824","components/forms/Input.jsx":"1321df74a451","components/forms/Radio.jsx":"861dea337cdb","components/forms/SearchList.jsx":"39137752d536","components/forms/Select.jsx":"4ebda94f9354","components/forms/Switch.jsx":"73709580dd9e","components/forms/Textarea.jsx":"e40a2c1357c6","components/navigation/Accordion.jsx":"b8870511c6fe","components/navigation/AnnouncementBar.jsx":"52373b869de1","components/navigation/Breadcrumbs.jsx":"421f19e62be1","components/navigation/LanguageSelector.jsx":"3255d13574aa","components/navigation/Tabs.jsx":"414b48cd2f58","components/editorial/Media.jsx":"33a6b0c1bfde","components/editorial/ArticleFigure.jsx":"f7689927c7db","components/editorial/PortraitFrame.jsx":"d79181ab4681","components/editorial/AuthorCard.jsx":"e96ed75df2fb","components/editorial/GroupedList.jsx":"d8cd9e26b4bf","components/editorial/MetaRow.jsx":"8c95d79ee5e1","components/editorial/NumberedSteps.jsx":"6f2950654a05","components/editorial/Numeral.jsx":"e6b7086ade4c","components/editorial/Pagination.jsx":"893e51b7753d","components/editorial/PlainList.jsx":"2d7a0d571c4a","components/editorial/Prose.jsx":"1b1a9a3ffec2","components/editorial/QuoteBlock.jsx":"c79559f0cb83","components/editorial/ReviewedBy.jsx":"cf907ffdf4c1","components/editorial/ShareBar.jsx":"a5d673d91fb9","components/editorial/SpecTable.jsx":"097e36746780","components/editorial/Statement.jsx":"50cb58806250","components/editorial/TableOfContents.jsx":"e7a40c6c066e","components/editorial/TextLink.jsx":"b730c74e745f","components/editorial/Tile.jsx":"4ebf341907e5","components/editorial/TimeTable.jsx":"610e5af78002","components/editorial/Video.jsx":"e21a3629d769","components/sections/ArticleHeader.jsx":"dcbe9cde9956","components/sections/ArticleLayout.jsx":"ec0fa928583c","components/sections/BandStatement.jsx":"e9a0008b4f26","components/sections/CatalogueSection.jsx":"603b270adcd9","components/sections/ClosingCTA.jsx":"084360f0b4b5","components/sections/TileGrid.jsx":"fbb2649bbce1","components/sections/ConfirmationSection.jsx":"5c24f96cf468","components/sections/ContactLocation.jsx":"f14702177eb1","components/sections/CredentialStrip.jsx":"fd9f68bd56cd","components/sections/FaqSection.jsx":"b68b80cab3ab","components/sections/FeatureGrid.jsx":"d472f2fd12c4","components/sections/FormSplit.jsx":"c87831902c01","components/sections/GalleryGrid.jsx":"f9f538dc8689","components/sections/GuestStory.jsx":"06f627264128","components/sections/HeroFullBleed.jsx":"020e02a3e0fd","components/sections/HeroSplit.jsx":"20abda0bb36b","components/sections/HeroStatement.jsx":"48d362395264","components/sections/InPageNav.jsx":"9ed444571815","components/sections/InclusionsSection.jsx":"a99954de9009","components/sections/IndexList.jsx":"8b059cd6e204","components/sections/KeyFacts.jsx":"8600300421bb","components/sections/ListingSection.jsx":"73a61fe090ab","components/sections/NotFoundSection.jsx":"75a872ab4cab","components/sections/NoticeBand.jsx":"29f4801b9cf4","components/sections/NumeralsSplit.jsx":"10d1fde8fd02","components/sections/PanoramaCaption.jsx":"1d13ec1defdd","components/sections/PeopleRow.jsx":"c64813a6b16a","components/sections/PolicySection.jsx":"57d0ba42b74a","components/sections/ProcessSection.jsx":"61b91ecfbaa9","components/sections/ProgrammeCompare.jsx":"5b81f153d44e","components/sections/ReferencesSection.jsx":"9a32b5c127ab","components/sections/RelatedArticles.jsx":"8452368a277c","components/sections/Section.jsx":"eacd861e84d9","components/sections/SplitSection.jsx":"275162930637","components/sections/TimelineSection.jsx":"ad7941ee85f3","components/sections/VideoFeature.jsx":"238e9cb6a137"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":4,"namespace":"ShantaraDesignSystem_45bbe4","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"Divider","sourcePath":"components/core/Divider.jsx"},{"name":"HnchLogo","sourcePath":"components/core/HnchLogo.jsx"},{"name":"ICON_GROUPS","sourcePath":"components/core/Icon.jsx"},{"name":"ICON_NAMES","sourcePath":"components/core/Icon.jsx"},{"name":"Icon","sourcePath":"components/core/Icon.jsx"},{"name":"IconButton","sourcePath":"components/core/IconButton.jsx"},{"name":"Logo","sourcePath":"components/core/Logo.jsx"},{"name":"PatternPanel","sourcePath":"components/core/PatternPanel.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Dialog","sourcePath":"components/feedback/Dialog.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"DateField","sourcePath":"components/forms/DateField.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"SearchList","sourcePath":"components/forms/SearchList.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Switch","sourcePath":"components/forms/Switch.jsx"},{"name":"Textarea","sourcePath":"components/forms/Textarea.jsx"},{"name":"Accordion","sourcePath":"components/navigation/Accordion.jsx"},{"name":"AnnouncementBar","sourcePath":"components/navigation/AnnouncementBar.jsx"},{"name":"Breadcrumbs","sourcePath":"components/navigation/Breadcrumbs.jsx"},{"name":"LanguageSelector","sourcePath":"components/navigation/LanguageSelector.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"Media","sourcePath":"components/editorial/Media.jsx"},{"name":"ArticleFigure","sourcePath":"components/editorial/ArticleFigure.jsx"},{"name":"PortraitFrame","sourcePath":"components/editorial/PortraitFrame.jsx"},{"name":"AuthorCard","sourcePath":"components/editorial/AuthorCard.jsx"},{"name":"GroupedList","sourcePath":"components/editorial/GroupedList.jsx"},{"name":"MetaRow","sourcePath":"components/editorial/MetaRow.jsx"},{"name":"NumberedSteps","sourcePath":"components/editorial/NumberedSteps.jsx"},{"name":"Numeral","sourcePath":"components/editorial/Numeral.jsx"},{"name":"Pagination","sourcePath":"components/editorial/Pagination.jsx"},{"name":"PlainList","sourcePath":"components/editorial/PlainList.jsx"},{"name":"Prose","sourcePath":"components/editorial/Prose.jsx"},{"name":"QuoteBlock","sourcePath":"components/editorial/QuoteBlock.jsx"},{"name":"ReviewedBy","sourcePath":"components/editorial/ReviewedBy.jsx"},{"name":"ShareBar","sourcePath":"components/editorial/ShareBar.jsx"},{"name":"SpecTable","sourcePath":"components/editorial/SpecTable.jsx"},{"name":"Statement","sourcePath":"components/editorial/Statement.jsx"},{"name":"TableOfContents","sourcePath":"components/editorial/TableOfContents.jsx"},{"name":"TextLink","sourcePath":"components/editorial/TextLink.jsx"},{"name":"Tile","sourcePath":"components/editorial/Tile.jsx"},{"name":"TimeTable","sourcePath":"components/editorial/TimeTable.jsx"},{"name":"Video","sourcePath":"components/editorial/Video.jsx"},{"name":"ArticleHeader","sourcePath":"components/sections/ArticleHeader.jsx"},{"name":"ArticleLayout","sourcePath":"components/sections/ArticleLayout.jsx"},{"name":"BandStatement","sourcePath":"components/sections/BandStatement.jsx"},{"name":"CatalogueSection","sourcePath":"components/sections/CatalogueSection.jsx"},{"name":"ClosingCTA","sourcePath":"components/sections/ClosingCTA.jsx"},{"name":"TileGrid","sourcePath":"components/sections/TileGrid.jsx"},{"name":"ConfirmationSection","sourcePath":"components/sections/ConfirmationSection.jsx"},{"name":"ContactLocation","sourcePath":"components/sections/ContactLocation.jsx"},{"name":"CredentialStrip","sourcePath":"components/sections/CredentialStrip.jsx"},{"name":"FaqSection","sourcePath":"components/sections/FaqSection.jsx"},{"name":"FeatureGrid","sourcePath":"components/sections/FeatureGrid.jsx"},{"name":"FormSplit","sourcePath":"components/sections/FormSplit.jsx"},{"name":"GalleryGrid","sourcePath":"components/sections/GalleryGrid.jsx"},{"name":"GuestStory","sourcePath":"components/sections/GuestStory.jsx"},{"name":"HeroFullBleed","sourcePath":"components/sections/HeroFullBleed.jsx"},{"name":"HeroSplit","sourcePath":"components/sections/HeroSplit.jsx"},{"name":"HeroStatement","sourcePath":"components/sections/HeroStatement.jsx"},{"name":"InPageNav","sourcePath":"components/sections/InPageNav.jsx"},{"name":"InclusionsSection","sourcePath":"components/sections/InclusionsSection.jsx"},{"name":"IndexList","sourcePath":"components/sections/IndexList.jsx"},{"name":"KeyFacts","sourcePath":"components/sections/KeyFacts.jsx"},{"name":"ListingSection","sourcePath":"components/sections/ListingSection.jsx"},{"name":"NotFoundSection","sourcePath":"components/sections/NotFoundSection.jsx"},{"name":"NoticeBand","sourcePath":"components/sections/NoticeBand.jsx"},{"name":"NumeralsSplit","sourcePath":"components/sections/NumeralsSplit.jsx"},{"name":"PanoramaCaption","sourcePath":"components/sections/PanoramaCaption.jsx"},{"name":"PeopleRow","sourcePath":"components/sections/PeopleRow.jsx"},{"name":"PolicySection","sourcePath":"components/sections/PolicySection.jsx"},{"name":"ProcessSection","sourcePath":"components/sections/ProcessSection.jsx"},{"name":"ProgrammeCompare","sourcePath":"components/sections/ProgrammeCompare.jsx"},{"name":"ReferencesSection","sourcePath":"components/sections/ReferencesSection.jsx"},{"name":"RelatedArticles","sourcePath":"components/sections/RelatedArticles.jsx"},{"name":"Section","sourcePath":"components/sections/Section.jsx"},{"name":"SplitSection","sourcePath":"components/sections/SplitSection.jsx"},{"name":"TimelineSection","sourcePath":"components/sections/TimelineSection.jsx"},{"name":"VideoFeature","sourcePath":"components/sections/VideoFeature.jsx"}],"sourceHashes":{"components/core/Badge.jsx":"b014d0a4d8ea","components/core/Button.jsx":"66ad8b155d36","components/core/Card.jsx":"899ecf09e977","components/core/Divider.jsx":"7841bbb870dd","components/core/HnchLogo.jsx":"3086ba9ae2ea","components/core/Icon.jsx":"7eaaf731593f","components/core/IconButton.jsx":"0746d0dc8fb3","components/core/Logo.jsx":"71651ae4093b","components/core/PatternPanel.jsx":"dd26bb639ce9","components/core/Tag.jsx":"480f3225f1d4","components/feedback/Dialog.jsx":"c1b84ed6f276","components/feedback/Spinner.jsx":"49fa70a95320","components/feedback/Toast.jsx":"c64129df2a1a","components/feedback/Tooltip.jsx":"9c7b40a94408","components/forms/Checkbox.jsx":"621ba3e2309a","components/forms/DateField.jsx":"a4fef507a824","components/forms/Input.jsx":"1321df74a451","components/forms/Radio.jsx":"861dea337cdb","components/forms/SearchList.jsx":"39137752d536","components/forms/Select.jsx":"4ebda94f9354","components/forms/Switch.jsx":"73709580dd9e","components/forms/Textarea.jsx":"e40a2c1357c6","components/navigation/Accordion.jsx":"b8870511c6fe","components/navigation/AnnouncementBar.jsx":"52373b869de1","components/navigation/Breadcrumbs.jsx":"421f19e62be1","components/navigation/LanguageSelector.jsx":"3255d13574aa","components/navigation/Tabs.jsx":"414b48cd2f58","components/editorial/Media.jsx":"33a6b0c1bfde","components/editorial/ArticleFigure.jsx":"f7689927c7db","components/editorial/PortraitFrame.jsx":"d79181ab4681","components/editorial/AuthorCard.jsx":"e96ed75df2fb","components/editorial/GroupedList.jsx":"d8cd9e26b4bf","components/editorial/MetaRow.jsx":"8c95d79ee5e1","components/editorial/NumberedSteps.jsx":"6f2950654a05","components/editorial/Numeral.jsx":"e6b7086ade4c","components/editorial/Pagination.jsx":"893e51b7753d","components/editorial/PlainList.jsx":"2d7a0d571c4a","components/editorial/Prose.jsx":"1b1a9a3ffec2","components/editorial/QuoteBlock.jsx":"c79559f0cb83","components/editorial/ReviewedBy.jsx":"cf907ffdf4c1","components/editorial/ShareBar.jsx":"a5d673d91fb9","components/editorial/SpecTable.jsx":"097e36746780","components/editorial/Statement.jsx":"9801ab9ee07c","components/editorial/TableOfContents.jsx":"e7a40c6c066e","components/editorial/TextLink.jsx":"b730c74e745f","components/editorial/Tile.jsx":"4ebf341907e5","components/editorial/TimeTable.jsx":"610e5af78002","components/editorial/Video.jsx":"e21a3629d769","components/sections/ArticleHeader.jsx":"dcbe9cde9956","components/sections/ArticleLayout.jsx":"ec0fa928583c","components/sections/BandStatement.jsx":"e9a0008b4f26","components/sections/CatalogueSection.jsx":"603b270adcd9","components/sections/ClosingCTA.jsx":"084360f0b4b5","components/sections/TileGrid.jsx":"fbb2649bbce1","components/sections/ConfirmationSection.jsx":"5c24f96cf468","components/sections/ContactLocation.jsx":"f14702177eb1","components/sections/CredentialStrip.jsx":"fd9f68bd56cd","components/sections/FaqSection.jsx":"b68b80cab3ab","components/sections/FeatureGrid.jsx":"d472f2fd12c4","components/sections/FormSplit.jsx":"c87831902c01","components/sections/GalleryGrid.jsx":"f9f538dc8689","components/sections/GuestStory.jsx":"06f627264128","components/sections/HeroFullBleed.jsx":"63fda9954b4f","components/sections/HeroSplit.jsx":"4bf05c27c995","components/sections/HeroStatement.jsx":"0d91a6c56cf8","components/sections/InPageNav.jsx":"9ed444571815","components/sections/InclusionsSection.jsx":"a99954de9009","components/sections/IndexList.jsx":"8b059cd6e204","components/sections/KeyFacts.jsx":"8600300421bb","components/sections/ListingSection.jsx":"73a61fe090ab","components/sections/NotFoundSection.jsx":"75a872ab4cab","components/sections/NoticeBand.jsx":"29f4801b9cf4","components/sections/NumeralsSplit.jsx":"10d1fde8fd02","components/sections/PanoramaCaption.jsx":"1d13ec1defdd","components/sections/PeopleRow.jsx":"c64813a6b16a","components/sections/PolicySection.jsx":"57d0ba42b74a","components/sections/ProcessSection.jsx":"61b91ecfbaa9","components/sections/ProgrammeCompare.jsx":"5b81f153d44e","components/sections/ReferencesSection.jsx":"9a32b5c127ab","components/sections/RelatedArticles.jsx":"8452368a277c","components/sections/Section.jsx":"eacd861e84d9","components/sections/SplitSection.jsx":"275162930637","components/sections/TimelineSection.jsx":"ad7941ee85f3","components/sections/VideoFeature.jsx":"238e9cb6a137"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -5552,8 +5552,10 @@ Object.assign(__ds_scope, { SpecTable });
 try { (() => {
 const { MetaRow } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* Full-sentence headline → optional meta row → one quiet supporting line → actions.
-   The deck's heading block, with no label above it: the heading leads. Sizes are fluid
+/* Optional breadcrumbs → full-sentence headline → optional meta row → one quiet supporting
+   line → actions. The deck's heading block, with no label above it: the heading leads.
+   Heroes pass their breadcrumbs here, so the trail sits the same --stack-lg above the title
+   on every page. Sizes are fluid
    (tokens/typography.css) so the same block never overflows a phone. */
 const SIZE = {
   display: "var(--type-display)",
@@ -5566,6 +5568,7 @@ const SIZE = {
 };
 const CSS = `
 .sh-stmt{display:flex;flex-direction:column;gap:var(--stack-md);min-width:0}
+.sh-stmt-crumbs{margin-bottom:calc(var(--stack-lg) - var(--stack-md))}
 .sh-stmt-title{margin:0;max-width:var(--_m,var(--measure-statement));color:var(--text-primary);text-wrap:balance}
 .sh-stmt-sub{margin:0;max-width:var(--measure-body);font:var(--type-body);color:var(--text-secondary)}
 .sh-stmt[data-size="display"] .sh-stmt-sub,.sh-stmt[data-size="h1"] .sh-stmt-sub{font:var(--type-lead)}
@@ -5580,6 +5583,7 @@ function ensure() {
 }
 function Statement({
   children,
+  breadcrumbs,
   meta,
   sub,
   actions,
@@ -5596,7 +5600,9 @@ function Statement({
     className: "sh-stmt" + (className ? " " + className : ""),
     "data-size": size,
     style: style
-  }, rest), /*#__PURE__*/React.createElement(Tag, {
+  }, rest), breadcrumbs ? /*#__PURE__*/React.createElement("div", {
+    className: "sh-stmt-crumbs"
+  }, breadcrumbs) : null, /*#__PURE__*/React.createElement(Tag, {
     className: "sh-stmt-title",
     style: {
       font: SIZE[size] || SIZE.statement,
@@ -7444,8 +7450,8 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
    all of it (the frame's --scrim-hero plus the block's own --scrim-text, which follows the
    block when it wraps tall on a phone). Merino type, Light headline, one Gold primary button. No label above the headline. `height="tall"` is
    the 72svh inner-page version with an h1-size headline.
-   Breadcrumbs: every page except the home page passes `breadcrumbs`; they open the text
-   block (inside its scrim, so they read on any photograph) rather than floating at the top
+   Breadcrumbs: every page except the home page passes `breadcrumbs`; the Statement places
+   them above its title, opening the text block (inside its scrim, so they read on any photograph) rather than floating at the top
    of the frame where the scrim has faded. */
 const CSS = `
 .sh-hero{position:relative;display:flex;align-items:flex-end;min-height:clamp(560px, 100svh, 1080px);overflow:hidden;isolation:isolate}
@@ -7454,7 +7460,6 @@ const CSS = `
 .sh-hero>.sh-media{position:absolute;inset:0;z-index:-1;aspect-ratio:auto;height:100%}
 .sh-hero-body{width:100%;padding-block:calc(var(--space-12) + 24px) var(--section-y-sm)}
 .sh-hero-body .sh-stmt{max-width:min(100%, 44rem)}
-.sh-hero-crumbs{margin-bottom:var(--stack-lg)}
 .sh-hero-meta{margin-top:var(--stack-md);font:var(--type-caption);color:var(--text-secondary)}
 .sh-hero-body .sh-meta{margin-top:var(--stack-md);color:var(--text-secondary)}
 `;
@@ -7501,13 +7506,12 @@ function HeroFullBleed({
     className: "sh-hero-body sh-photo-text"
   }, /*#__PURE__*/React.createElement("div", {
     className: "sh-container"
-  }, breadcrumbs ? /*#__PURE__*/React.createElement("div", {
-    className: "sh-hero-crumbs"
-  }, breadcrumbs) : null, /*#__PURE__*/React.createElement(Statement, {
+  }, /*#__PURE__*/React.createElement(Statement, {
     as: titleAs,
     size: height === "full" ? "display" : "h1",
     sub: sub,
     actions: actions,
+    breadcrumbs: breadcrumbs,
     measure: "24ch"
   }, title), meta ? Array.isArray(meta) ? /*#__PURE__*/React.createElement(MetaRow, {
     items: meta
@@ -7524,7 +7528,7 @@ const { Media, Statement, MetaRow, Video } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 /* The OFFER hero, for programme and other detail pages. A photograph on one side that
    runs to the screen edge and the full hero height; on the other side, on a flat ground,
-   breadcrumbs at the top and the h1, meta row (category · duration), one supporting line,
+   the Statement (breadcrumbs just above the h1), meta row (category · duration), one supporting line,
    actions and optional facts, vertically centred.
    ≥1000px: two columns (50/50, or 40/60 with split), text aligned to the page container
    on its outer edge. <1000px: text first (clears the header), then the photograph full
@@ -7636,7 +7640,7 @@ function HeroSplit({
     className: "sh-hsplit-grid"
   }, /*#__PURE__*/React.createElement("div", {
     className: "sh-hsplit-text"
-  }, breadcrumbs ? /*#__PURE__*/React.createElement("div", null, breadcrumbs) : null, /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
     className: "sh-hsplit-main"
   }, /*#__PURE__*/React.createElement(Statement, {
     as: titleAs,
@@ -7644,6 +7648,7 @@ function HeroSplit({
     meta: metaNode,
     sub: sub,
     actions: actions,
+    breadcrumbs: breadcrumbs,
     measure: measure
   }, title), facts ? /*#__PURE__*/React.createElement("div", {
     className: "sh-hsplit-facts"
@@ -7659,21 +7664,18 @@ try { (() => {
 const { Statement, MetaRow, Media } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 /* The EDITORIAL hero (deck slide 2). Words lead; no full photograph. A Merino or Stone
-   ground, breadcrumbs, a large Light h1 placed low with open space above, one supporting
-   line and actions — closed by a hairline with an optional meta row beneath it
-   ("Reviewed by … · Updated …"). Presence without a label above the title: a Stone
+   ground, a Statement (its breadcrumbs, then a large Light h1 placed low with open space
+   above, one supporting line and actions) — closed by a hairline with an optional meta row beneath it
+   ("Reviewed by … · Updated …"). Policy, legal, 404 and confirmation pages use this same
+   hero: there is no utility variant. Presence without a label above the title: a Stone
    ground, the meta row, or (src / aside) a small 4:5 image or a short fact list in a
    4-column side column (≥760px).
    Stacks on phones: crumbs → title → sub → actions → image/aside → rule → meta. */
 const CSS = `
 .sh-hstmt{position:relative;display:flex;flex-direction:column}
 .sh-hstmt[data-tall="true"]{min-height:clamp(440px, 64svh, 760px)}
-/* variant "utility": legal pages, 404, confirmation — short, no image, no rule. */
-.sh-hstmt[data-variant="utility"] .sh-hstmt-inner{padding-block:calc(var(--header-h, 72px) + var(--space-10)) var(--space-8)}
 .sh-hstmt-inner{flex:1 1 auto;display:flex;flex-direction:column;justify-content:flex-end;padding-block:calc(var(--space-12) + var(--section-y-sm)) var(--section-y-sm)}
 .sh-hstmt-inner>.sh-container{width:100%;flex:1 1 auto;display:flex;flex-direction:column;justify-content:flex-end}
-.sh-hstmt-crumbs{margin-bottom:auto;padding-bottom:var(--stack-lg)}
-.sh-hstmt[data-tall="false"] .sh-hstmt-crumbs{margin-bottom:0}
 .sh-hstmt-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--stack-lg);align-items:end}
 .sh-hstmt-side{display:flex;flex-direction:column;gap:var(--space-6);min-width:0}
 .sh-hstmt-side>.sh-media{max-width:min(100%, 360px)}
@@ -7695,7 +7697,6 @@ function ensure() {
   document.head.appendChild(el);
 }
 function HeroStatement({
-  variant = "editorial",
   title,
   sub,
   actions,
@@ -7716,11 +7717,6 @@ function HeroStatement({
   ...rest
 }) {
   ensure();
-  const utility = variant === "utility";
-  if (utility) {
-    tall = false;
-    rule = !!meta;
-  }
   const figure = media || (src ? /*#__PURE__*/React.createElement(Media, {
     src: src,
     alt: alt,
@@ -7736,15 +7732,12 @@ function HeroStatement({
     className: "sh-hstmt",
     "data-ground": ground,
     "data-tall": String(tall),
-    "data-variant": utility ? "utility" : undefined,
     style: style
   }, rest), /*#__PURE__*/React.createElement("div", {
     className: "sh-hstmt-inner"
   }, /*#__PURE__*/React.createElement("div", {
     className: "sh-container"
-  }, breadcrumbs ? /*#__PURE__*/React.createElement("div", {
-    className: "sh-hstmt-crumbs"
-  }, breadcrumbs) : null, /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
     className: "sh-hstmt-grid",
     "data-aside": hasSide ? "true" : "false"
   }, /*#__PURE__*/React.createElement(Statement, {
@@ -7752,6 +7745,7 @@ function HeroStatement({
     size: size,
     sub: sub,
     actions: actions,
+    breadcrumbs: breadcrumbs,
     measure: measure
   }, title), hasSide ? /*#__PURE__*/React.createElement("div", {
     className: "sh-hstmt-side"

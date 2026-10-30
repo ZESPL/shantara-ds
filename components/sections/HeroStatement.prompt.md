@@ -23,6 +23,8 @@ The **editorial** hero: words lead, no full photograph (deck slide 2). A large L
 
 **One job.** One title stating the page's one idea, one line beneath it, and at most one primary action ([rule of one](../../docs/rule-of-one.md)). The ground, side image or meta row add presence, never a second message.
 
+**Breadcrumbs.** Passed to the Statement, so they sit just above the title, as on every hero.
+
 **Responsive.** Phone: crumbs → title → sub → actions → image/aside → hairline → meta; fluid top padding clears the header. `tall` (default) keeps a 440–760px floor and sits the text low. From 760px a side image/aside takes a 4-column column beside the title (7/4), bottom-aligned. The headline wraps at 22ch.
 
 ## Choosing a hero (exactly three)
@@ -31,8 +33,8 @@ The **editorial** hero: words lead, no full photograph (deck slide 2). A large L
 | --- | --- | --- |
 | `HeroFullBleed` | Immersive — the place carries the message | Home (`height="full"`), Experience, one flagship inner page (`tall`) |
 | `HeroSplit` | Offer — a photograph beside the title, facts and the action | Programme and condition detail pages, Tariffs, Book a Consultation |
-| `HeroStatement` | Editorial — words lead, no photograph needed | Conditions and Programmes indexes, About, Journal index, Contact, legal pages (`ArticleHeader` for single articles) |
+| `HeroStatement` | Editorial — words lead, no photograph needed | Conditions and Programmes indexes, About, Journal index, Contact, policy and legal pages, 404, confirmation pages (`ArticleHeader` for single articles) |
 
 One hero per page, always first. None of them takes a label above the title: place, category or duration go in `meta`, below it.
 
-**Variation — `variant="utility"`.** For legal pages, the 404 page, confirmation and the editorial policy: short (no 440px floor), no side image; the closing rule shows only when there is `meta` ("Updated 20 August 2026"). Pair it with `ArticleLayout` for the page body.
+**One hero for every words-led page.** There is no utility variant: policy, legal, 404 and confirmation pages use this same hero, with the same height, padding and closing hairline as an editorial page. On a policy page put "Updated …" in `meta` and pair it with `ArticleLayout` for the page body.

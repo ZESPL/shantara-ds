@@ -4,21 +4,18 @@ import { MetaRow } from "../editorial/MetaRow.jsx";
 import { Media } from "../editorial/Media.jsx";
 
 /* The EDITORIAL hero (deck slide 2). Words lead; no full photograph. A Merino or Stone
-   ground, breadcrumbs, a large Light h1 placed low with open space above, one supporting
-   line and actions — closed by a hairline with an optional meta row beneath it
-   ("Reviewed by … · Updated …"). Presence without a label above the title: a Stone
+   ground, a Statement (its breadcrumbs, then a large Light h1 placed low with open space
+   above, one supporting line and actions) — closed by a hairline with an optional meta row beneath it
+   ("Reviewed by … · Updated …"). Policy, legal, 404 and confirmation pages use this same
+   hero: there is no utility variant. Presence without a label above the title: a Stone
    ground, the meta row, or (src / aside) a small 4:5 image or a short fact list in a
    4-column side column (≥760px).
    Stacks on phones: crumbs → title → sub → actions → image/aside → rule → meta. */
 const CSS = `
 .sh-hstmt{position:relative;display:flex;flex-direction:column}
 .sh-hstmt[data-tall="true"]{min-height:clamp(440px, 64svh, 760px)}
-/* variant "utility": legal pages, 404, confirmation — short, no image, no rule. */
-.sh-hstmt[data-variant="utility"] .sh-hstmt-inner{padding-block:calc(var(--header-h, 72px) + var(--space-10)) var(--space-8)}
 .sh-hstmt-inner{flex:1 1 auto;display:flex;flex-direction:column;justify-content:flex-end;padding-block:calc(var(--space-12) + var(--section-y-sm)) var(--section-y-sm)}
 .sh-hstmt-inner>.sh-container{width:100%;flex:1 1 auto;display:flex;flex-direction:column;justify-content:flex-end}
-.sh-hstmt-crumbs{margin-bottom:auto;padding-bottom:var(--stack-lg)}
-.sh-hstmt[data-tall="false"] .sh-hstmt-crumbs{margin-bottom:0}
 .sh-hstmt-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--stack-lg);align-items:end}
 .sh-hstmt-side{display:flex;flex-direction:column;gap:var(--space-6);min-width:0}
 .sh-hstmt-side>.sh-media{max-width:min(100%, 360px)}
@@ -41,20 +38,17 @@ function ensure() {
   document.head.appendChild(el);
 }
 
-export function HeroStatement({ variant = "editorial", title, sub, actions, breadcrumbs, meta, rule = true, aside, media, src, alt = "", ratio = "4:5", ground = "merino", tall = true, size = "h1", titleAs = "h1", measure = "22ch", style, ...rest }) {
+export function HeroStatement({ title, sub, actions, breadcrumbs, meta, rule = true, aside, media, src, alt = "", ratio = "4:5", ground = "merino", tall = true, size = "h1", titleAs = "h1", measure = "22ch", style, ...rest }) {
   ensure();
-  const utility = variant === "utility";
-  if (utility) { tall = false; rule = !!meta; }
   const figure = media || (src ? <Media src={src} alt={alt} ratio={ratio} priority /> : null);
   const hasSide = !!(figure || aside);
   const metaNode = meta ? (Array.isArray(meta) || typeof meta === "string" ? <MetaRow items={meta} /> : meta) : null;
   return (
-    <section data-ds-id="sections/HeroStatement" className="sh-hstmt" data-ground={ground} data-tall={String(tall)} data-variant={utility ? "utility" : undefined} style={style} {...rest}>
+    <section data-ds-id="sections/HeroStatement" className="sh-hstmt" data-ground={ground} data-tall={String(tall)} style={style} {...rest}>
       <div className="sh-hstmt-inner">
         <div className="sh-container">
-          {breadcrumbs ? <div className="sh-hstmt-crumbs">{breadcrumbs}</div> : null}
           <div className="sh-hstmt-grid" data-aside={hasSide ? "true" : "false"}>
-            <Statement as={titleAs} size={size} sub={sub} actions={actions} measure={measure}>{title}</Statement>
+            <Statement as={titleAs} size={size} sub={sub} actions={actions} breadcrumbs={breadcrumbs} measure={measure}>{title}</Statement>
             {hasSide ? <div className="sh-hstmt-side">{figure}{aside}</div> : null}
           </div>
           {rule || metaNode ? <div className="sh-hstmt-foot" style={rule ? undefined : { borderTop: 0 }}>{metaNode}</div> : null}

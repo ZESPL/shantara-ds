@@ -6,7 +6,7 @@ import { Video } from "../editorial/Video.jsx";
 
 /* The OFFER hero, for programme and other detail pages. A photograph on one side that
    runs to the screen edge and the full hero height; on the other side, on a flat ground,
-   breadcrumbs at the top and the h1, meta row (category · duration), one supporting line,
+   the Statement (breadcrumbs just above the h1), meta row (category · duration), one supporting line,
    actions and optional facts, vertically centred.
    ≥1000px: two columns (50/50, or 40/60 with split), text aligned to the page container
    on its outer edge. <1000px: text first (clears the header), then the photograph full
@@ -64,9 +64,8 @@ export function HeroSplit({ media, video, src, alt = "", position, mobilePositio
     <section data-ds-id="sections/HeroSplit" className="sh-hsplit" data-ground={ground} data-side={mediaSide} data-split={split} data-mobile-first={String(mobileMediaFirst)} data-bleed={String(bleed)} style={{ ...vars, ...style }} {...rest}>
       <div className="sh-hsplit-grid">
         <div className="sh-hsplit-text">
-          {breadcrumbs ? <div>{breadcrumbs}</div> : null}
           <div className="sh-hsplit-main">
-            <Statement as={titleAs} size={size} meta={metaNode} sub={sub} actions={actions} measure={measure}>{title}</Statement>
+            <Statement as={titleAs} size={size} meta={metaNode} sub={sub} actions={actions} breadcrumbs={breadcrumbs} measure={measure}>{title}</Statement>
             {facts ? <div className="sh-hsplit-facts">{facts}</div> : null}
           </div>
         </div>

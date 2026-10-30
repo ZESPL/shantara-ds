@@ -136,6 +136,8 @@ Typical uses: Contact; Policies; Blog listing; utility pages; simple directory/l
 
 Typical fields: title; optional short description; optional breadcrumb.
 
+Build it with `HeroStatement`, the same hero as editorial pages. There is no utility variant.
+
 ## Reusable section library
 
 Build a curated library. Add a new section only when a recurring need cannot be met cleanly by the existing library.

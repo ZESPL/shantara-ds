@@ -4,6 +4,8 @@ import type { MetaItem } from "./MetaRow";
 export interface StatementProps extends React.HTMLAttributes<HTMLDivElement> {
   /** The headline — one full sentence. The heading leads: there is no label above it. */
   children: React.ReactNode;
+  /** A <Breadcrumbs/> node, above the headline. Heroes pass theirs here. */
+  breadcrumbs?: React.ReactNode;
   /** Caption facts BELOW the headline (MetaRow items), or any small node. */
   meta?: Array<string | MetaItem> | React.ReactNode;
   /** One quiet supporting line in body size (lead size for display/h1). */

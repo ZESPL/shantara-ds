@@ -3,13 +3,11 @@ import type { MetaItem } from "../editorial/MetaRow";
 
 export interface HeroStatementProps extends React.HTMLAttributes<HTMLElement> {
   /** The page title as a full sentence. No label above it. */
-  /** "utility": short, no image — legal pages, 404, confirmation. */
-  variant?: "editorial" | "utility";
   title: React.ReactNode;
   /** One supporting line (lead size). */
   sub?: React.ReactNode;
   actions?: React.ReactNode;
-  /** A <Breadcrumbs/> node, top of the hero. */
+  /** A <Breadcrumbs/> node, passed to the Statement: just above the title. */
   breadcrumbs?: React.ReactNode;
   /** Caption row under the closing hairline, e.g. ["Reviewed by Dr. Bahja Janu", "Updated 12 August 2026"]. */
   meta?: Array<string | MetaItem> | React.ReactNode;

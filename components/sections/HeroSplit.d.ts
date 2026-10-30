@@ -19,7 +19,7 @@ export interface HeroSplitProps extends React.HTMLAttributes<HTMLElement> {
   sub?: React.ReactNode;
   /** One primary Button, optionally one TextLink. Stack full width under 520px. */
   actions?: React.ReactNode;
-  /** A <Breadcrumbs/> node at the top of the text column. */
+  /** A <Breadcrumbs/> node, passed to the Statement: just above the title. */
   breadcrumbs?: React.ReactNode;
   /** Optional short facts under the actions on a hairline — a PlainList of 2–4 items. */
   facts?: React.ReactNode;

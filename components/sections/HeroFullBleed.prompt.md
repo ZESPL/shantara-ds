@@ -24,7 +24,7 @@ Full-screen photographic hero with the statement bottom-left inside a scrim and 
 
 **Use** once per page, first. `height="full"` for the home page (display-size headline); `height="tall"` for inner pages that earn a photograph (experience) with an h1-size headline; `short` for secondary pages. The transparent site header sits over it.
 
-**Breadcrumbs.** The home page has none. Every other page that uses this hero passes `breadcrumbs` (a `<Breadcrumbs/>`); they open the text block, above the title and inside its scrim, so they read on any photograph. Breadcrumbs are navigation, not an eyebrow — the no-label-above-the-title rule still holds.
+**Breadcrumbs.** The home page has none. Every other page that uses this hero passes `breadcrumbs` (a `<Breadcrumbs/>`); the hero hands them to its Statement, so they open the text block, just above the title and inside its scrim, so they read on any photograph. Breadcrumbs are navigation, not an eyebrow — the no-label-above-the-title rule still holds.
 
 **Content.** No eyebrow. The headline is one sentence and leads with what Shantara is — never “not a spa” or “wellness retreat”. Place, if wanted, goes in `meta` below the actions. Do not put a year there. One primary button; a second action is a `TextLink`, not a second filled button. The photograph is the LCP image, so the hero passes `priority` for you; choose a frame with dark, quiet space bottom-left.
 

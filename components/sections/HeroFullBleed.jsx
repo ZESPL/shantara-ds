@@ -8,8 +8,8 @@ import { MetaRow } from "../editorial/MetaRow.jsx";
    all of it (the frame's --scrim-hero plus the block's own --scrim-text, which follows the
    block when it wraps tall on a phone). Merino type, Light headline, one Gold primary button. No label above the headline. `height="tall"` is
    the 72svh inner-page version with an h1-size headline.
-   Breadcrumbs: every page except the home page passes `breadcrumbs`; they open the text
-   block (inside its scrim, so they read on any photograph) rather than floating at the top
+   Breadcrumbs: every page except the home page passes `breadcrumbs`; the Statement places
+   them above its title, opening the text block (inside its scrim, so they read on any photograph) rather than floating at the top
    of the frame where the scrim has faded. */
 const CSS = `
 .sh-hero{position:relative;display:flex;align-items:flex-end;min-height:clamp(560px, 100svh, 1080px);overflow:hidden;isolation:isolate}
@@ -18,7 +18,6 @@ const CSS = `
 .sh-hero>.sh-media{position:absolute;inset:0;z-index:-1;aspect-ratio:auto;height:100%}
 .sh-hero-body{width:100%;padding-block:calc(var(--space-12) + 24px) var(--section-y-sm)}
 .sh-hero-body .sh-stmt{max-width:min(100%, 44rem)}
-.sh-hero-crumbs{margin-bottom:var(--stack-lg)}
 .sh-hero-meta{margin-top:var(--stack-md);font:var(--type-caption);color:var(--text-secondary)}
 .sh-hero-body .sh-meta{margin-top:var(--stack-md);color:var(--text-secondary)}
 `;
@@ -39,8 +38,7 @@ export function HeroFullBleed({ media, src, alt = "", position, mobilePosition, 
       {figure}
       <div className="sh-hero-body sh-photo-text">
         <div className="sh-container">
-          {breadcrumbs ? <div className="sh-hero-crumbs">{breadcrumbs}</div> : null}
-          <Statement as={titleAs} size={height === "full" ? "display" : "h1"} sub={sub} actions={actions} measure="24ch">{title}</Statement>
+          <Statement as={titleAs} size={height === "full" ? "display" : "h1"} sub={sub} actions={actions} breadcrumbs={breadcrumbs} measure="24ch">{title}</Statement>
           {meta ? (Array.isArray(meta) ? <MetaRow items={meta} /> : <p className="sh-hero-meta">{meta}</p>) : null}
         </div>
       </div>

@@ -9,7 +9,7 @@ The body of a long read: the text in 8 columns and a sticky "On this page" list 
 </Section>
 ```
 
-**Use** after `ArticleHeader` on Journal articles, and on legal pages and the editorial policy (after `HeroStatement variant="utility"`).
+**Use** after `ArticleHeader` on Journal articles, and on legal pages and the editorial policy (after `HeroStatement`).
 
 **Content.** `toc` comes from the article's h2s; each h2 carries the matching `id`. `aside` holds one block (ReviewedBy, ShareBar).
 
