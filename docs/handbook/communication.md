@@ -23,7 +23,7 @@ Do not quote the 30-second line on this page, or use “patients” / “wellnes
 
 - That it is a spa or resort with optional wellness add-ons. It is the reverse: wellness is the core, and hospitality supports it.
 - That they may leave the property during the stay. They may not, except for a genuine medical emergency escorted by a designated team member.
-- That a site-wide 7-night minimum applies to every stay. It does not. The minimum stay is 3 nights; beyond that, duration is advised following consultation, and most programmes are typically designed around a week or longer.
+- That a programme can be booked for fewer than 7 nights. It cannot. The minimum stay for any programme is 7 nights; beyond that, duration is advised following consultation.
 
 ### When to refer a question elsewhere
 

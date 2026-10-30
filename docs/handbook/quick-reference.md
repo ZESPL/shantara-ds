@@ -16,8 +16,8 @@ Part of the [property handbook](../handbook.txt).
 | Built-up wellness infrastructure | 56,000 sq. ft. |
 | Number of rooms | 52 |
 | Founder | P.A. Kareem, Government of India-certified Naturopathy Practitioner |
-| Minimum stay | 3 nights for any programme |
-| Typical stay length | Most programmes are designed around a week or longer so protocols have time to take effect. This is typical, not the minimum. |
+| Minimum stay | 7 nights for any programme |
+| Stay length | 7 nights at minimum. The doctor recommends any longer duration at the preliminary consultation. |
 | Monthly booking cap | 100 bookings per month, to preserve personalised care and attention |
 | Phone | +91 9553 600 100 |
 | Email | heal@shantara.life |
@@ -27,6 +27,6 @@ Part of the [property handbook](../handbook.txt).
 
 - Shantara is a naturopathy-based retreat rather than a medical hospital in the conventional sense. Treatment is drug-free, root-cause focused, and doctor-guided.
 - Every guest journey begins with a doctor consultation, and treatments and diet are personalised to the individual rather than standardised.
-- The minimum stay for any programme is 3 nights. Most programmes are designed around a week or longer so naturopathy protocols have time to take effect; that is typical duration, not the minimum. The doctor recommends duration at the preliminary consultation. See [Guest Policies & House Rules](policies.md#section-13) for cancellation and stay-duration terms.
+- The minimum stay for any programme is 7 nights, so naturopathy protocols have time to take effect. The doctor recommends any longer duration at the preliminary consultation. See [Guest Policies & House Rules](policies.md#section-13) for cancellation and stay-duration terms.
 - Guests may not leave the property once admitted, except for a genuine medical emergency escorted by a designated team member. This surprises first-time guests, so staff should mention it early rather than let a guest discover it mid-stay. See [section 13](policies.md#section-13).
 - Meals are part of the treatment, not a restaurant menu. Guests should not expect an a-la-carte experience or request outside food.

@@ -9,7 +9,7 @@ Back to the [ICP index](../icp.md).
 | CRM key | `short_reset` |
 | Strategic role | {Secondary} |
 | Validation | {Hypothesis} |
-| Typical duration | May be materially shorter than main residential programmes. {Approved} (management): **7 nights is not a mandatory site-wide floor.** Do not invent a typical night count for this segment. Programme duration is advised following consultation unless a specific programme has a confirmed duration. Stay-commitment analytics bands remain overlays, not ICPs. |
+| Typical duration | Shorter than main residential programmes, but never below the minimum. {Approved} (management): **the minimum stay for any programme is 7 nights, and it is mandatory** ([handbook §13](../handbook/policies.md)). Do not invent a typical night count above that for this segment. Programme duration is advised following consultation unless a specific programme has a confirmed duration. Stay-commitment analytics bands remain overlays, not ICPs. |
 
 ### Motivations
 

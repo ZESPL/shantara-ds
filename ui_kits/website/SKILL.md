@@ -229,7 +229,7 @@ Health content is an architectural requirement, not a badge.
 - Testimonials describe experience, stay, food, service, how the guest felt — never clinical efficacy.
 - Avoid “cures diabetes”, “guarantees reversal”, “eliminates hypertension”, “permanent cure”, guaranteed detox claims. The programme name **Diabetes Reversal** is approved for catalogue use; do not present reversal as a guaranteed outcome or invent rates.
 
-**All public-facing language follows [skill-copy.md](skill-copy.md).** Clarity first, warmth second, brand expression third. Write for a prospective guest. Do not narrate information architecture, invent booking restrictions or site-wide minimum stays, scatter prices, or convert design rationale into page copy.
+**All public-facing language follows [skill-copy.md](skill-copy.md).** Clarity first, warmth second, brand expression third. Write for a prospective guest. Do not narrate information architecture, invent booking restrictions (the minimum stay is 7 nights; see [copy/health-claims-and-compliance.md](copy/health-claims-and-compliance.md)), scatter prices, or convert design rationale into page copy.
 
 Do not invent content, credentials, prices, medical facts, or program details. Flag missing facts.
 

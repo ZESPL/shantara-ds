@@ -43,9 +43,9 @@ Solo; couple; guest + companion; family-supported (guest travels, family organis
 
 ### Stay-commitment analytics bands
 
-Use for reporting, not as ICPs: 3–7 days; 8–14 days; 15–21 days; 22–28+ days.
+Use for reporting, not as ICPs: 7 nights; 8–14 nights; 15–21 nights; 22–28+ nights.
 
-These bands are overlays only. They are not a mandatory 7-night floor. Do not turn a band into a public minimum stay. Programme duration is advised following consultation unless a specific programme has a confirmed duration.
+These bands are overlays only. The minimum stay for any programme is 7 nights ([handbook §13](../handbook/policies.md)), so no band starts below it. Do not turn a band into a public minimum stay. Programme duration beyond 7 nights is advised following consultation unless a specific programme has a confirmed duration.
 
 ### Buying role
 

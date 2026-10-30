@@ -120,27 +120,21 @@ Only mention an actual booking restriction when:
 
 ---
 
-## Do not invent global minimum stays
+## The minimum stay is 7 nights
 
-Do not enforce a universal minimum number of nights across Shantara.
+The minimum stay for any programme is 7 nights. This is a confirmed, mandatory rule. See [`docs/handbook/policies.md`](../../../docs/handbook/policies.md) §13.
 
-Programme duration depends on the programme and the guest.
+State it where it matters to the visitor: the retreat policies page, the arrival date on the booking form, and an answer about length of stay.
 
-Some programmes may be short.
+Never write or imply a shorter stay, such as a 3-night stay, a weekend stay or a short break of fewer than 7 nights. The only exception belongs to hosted stays, and it appears only on hosted-stays pages ([`special-pages/hosted-stays.md`](../special-pages/hosted-stays.md)).
 
-Others may require longer residential stays.
-
-A basic detox programme, for example, may not require the same duration as a programme designed for a longer-term health objective.
-
-A site-wide 7-night minimum is **not** an approved rule. See [`docs/icp.md`](../../../docs/icp.md). Typical or recommended duration for a named programme is still allowed when Shantara has defined it.
+Do not invent a longer minimum either. Programme duration beyond 7 nights depends on the programme and the guest.
 
 Therefore, never automatically write:
 
-> Minimum stay 7 nights
-
 > All programmes require at least 14 nights
 
-> Guests must stay a minimum of 7 nights
+> Detox requires a minimum of 21 nights
 
 unless the statement is factually confirmed for that specific programme.
 

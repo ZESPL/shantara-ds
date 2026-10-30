@@ -5,7 +5,7 @@ Part of the [property handbook](../handbook.txt).
 | Guest question | How to answer |
 | --- | --- |
 | Is this a hospital or a resort? | Shantara is a doctor-led naturopathy retreat. Every stay is doctor-guided. The setting is a retreat rather than a clinical ward. |
-| How long do I need to stay? | The minimum stay is 3 nights. Beyond that, duration is advised following consultation. Most programmes are designed around a week or longer so protocols have time to take effect. Typical duration is a clinical recommendation, not a sales policy. |
+| How long do I need to stay? | The minimum stay for any programme is 7 nights, so protocols have time to take effect. Beyond that, duration is advised following consultation. A longer duration is a clinical recommendation, not a sales policy. |
 | Can I choose my own meals? | Meals are personalised by the doctor based on your condition and program, so it is best to think of food as part of treatment rather than a restaurant menu. |
 | Can I bring my own medication? | Yes, but it must be declared at the preliminary consultation and again at admission. Self-medication is not permitted during the stay; ongoing prescriptions continue only under the doctors' supervision. |
 | Do you treat [specific condition]? | Check the medical programme categories in [section 9](programmes.md#section-9), and the admission criteria in [section 5](admission.md#section-5). If unsure, say "let me check with the doctor" rather than confirming or denying. |

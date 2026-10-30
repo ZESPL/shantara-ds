@@ -35,7 +35,7 @@ A stay can be postponed once at no charge, with written notice at least 21 days 
 
 ### Stay duration
 
-The minimum stay for any programme is 3 nights. Most programmes are designed around a week or longer so naturopathy protocols have time to take effect; that is typical duration, not the minimum. The guest's doctor recommends the optimal programme duration at the preliminary consultation. Early departure by choice does not entitle a refund for unused nights of the booked stay; a doctor-certified medical departure does — see the cancellation policy above. Do not quote rates here; they live on the tariff surface.
+The minimum stay for any programme is 7 nights. Beyond the minimum, the guest's doctor recommends the optimal programme duration at the preliminary consultation, so naturopathy protocols have time to take effect. Early departure by choice does not entitle a refund for unused nights of the booked stay; a doctor-certified medical departure does — see the cancellation policy above. Do not quote rates here; they live on the tariff surface.
 
 ### Non-participating companions
 
