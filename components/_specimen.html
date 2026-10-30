@@ -138,7 +138,7 @@
       const {
         Button, IconButton, Icon, Logo, Card, Badge, Tag, Divider, PatternPanel,
         Input, Textarea, Select, Checkbox, Radio, Switch,
-        Tabs, Breadcrumbs, Accordion, LanguageSelector,
+        Tabs, Breadcrumbs, Accordion, LanguageSelector, AnnouncementBar,
         Dialog, Toast, Tooltip, Spinner,
         Media, MetaRow, Statement, Numeral, TextLink, Tile, NumberedSteps, PlainList,
         GroupedList, SpecTable, TimeTable, QuoteBlock, PortraitFrame,
@@ -363,6 +363,13 @@
           return <Tabs items={["Overview", "Therapies", "Rooms"]} />;
         case "Breadcrumbs":
           return <Breadcrumbs items={[{ label: "Programmes", href: "#" }, { label: "Wellness", href: "#" }, "Detox"]} />;
+        case "AnnouncementBar":
+          return <div style={{ display: "grid", gap: 32 }}>
+            {[["himalaya", 'ground="himalaya" (default) · with a link'], ["pine", 'ground="pine" · dismissible'], ["stone", 'ground="stone" · dismissible']].map(([g, l]) => <div key={g}>
+              <p className="shantara-usage-label" style={{ padding: "0 var(--layout-gutter)" }}>{l}</p>
+              <AnnouncementBar ground={g} href={g === "himalaya" ? "#" : undefined} linkLabel="Book a Consultation" dismissible={g !== "himalaya"}>A stay is confirmed after a doctor has spoken with you.</AnnouncementBar>
+            </div>)}
+          </div>;
         case "Accordion":
           return <Accordion items={[{ title: "How long should I stay?", content: "Duration depends on the programme and your assessment." }]} />;
         case "LanguageSelector":
@@ -495,10 +502,10 @@
             <ReviewedBy boxed name="Dr. Bahja Janu" role="Medical Director" href="#" date="12 August 2026" dateTime="2026-08-12" nextReview="August 2027" note="General information, not a diagnosis. Speak to a doctor about your own health." />
           </div>;
         case "TableOfContents":
-          return <div style={{ display: "grid", gap: "var(--grid-gap)", gridTemplateColumns: "minmax(0,1fr)", maxWidth: 1100 }} className="spec-article">
-            <style>{"@media (min-width:1000px){.spec-article{grid-template-columns:minmax(0,8fr) minmax(0,3fr)!important;column-gap:calc(var(--grid-gap)*2)!important}.spec-article>nav{order:2}}"}</style>
-            <TableOfContents items={tocItems} />
-            <Prose>{articleBody}</Prose>
+          return <div style={{ display: "grid", gap: 48, gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))", maxWidth: 1100 }}>
+            <div><p className="shantara-usage-label">variant="rail" (default)</p><TableOfContents sticky={false} track={false} defaultOpen items={tocItems} /></div>
+            <div><p className="shantara-usage-label">variant="numbered"</p><TableOfContents variant="numbered" sticky={false} track={false} defaultOpen items={tocItems} /></div>
+            <div><p className="shantara-usage-label">variant="panel"</p><TableOfContents variant="panel" sticky={false} track={false} defaultOpen items={tocItems} /></div>
           </div>;
         case "ShareBar":
           return <div className="stack" style={{ maxWidth: 720, gap: 24 }}>
@@ -874,7 +881,7 @@
       }
     }
 
-    const SECTIONS = ["Section", "HeroFullBleed", "HeroStatement", "SplitSection", "BandStatement", "PanoramaCaption", "PeopleRow", "NumeralsSplit", "TileGrid", "IndexList", "ClosingCTA", "FormSplit", "HeroSplit", "ArticleHeader", "RelatedArticles", "FaqSection", "InPageNav", "CatalogueSection", "InclusionsSection", "ContactLocation", "ArticleLayout", "ListingSection", "KeyFacts", "ProcessSection", "TimelineSection", "FeatureGrid", "GalleryGrid", "VideoFeature", "ProgrammeCompare", "NoticeBand", "ReferencesSection", "CredentialStrip", "GuestStory", "ConfirmationSection", "NotFoundSection", "PolicySection"];
+    const SECTIONS = ["AnnouncementBar", "Section", "HeroFullBleed", "HeroStatement", "SplitSection", "BandStatement", "PanoramaCaption", "PeopleRow", "NumeralsSplit", "TileGrid", "IndexList", "ClosingCTA", "FormSplit", "HeroSplit", "ArticleHeader", "RelatedArticles", "FaqSection", "InPageNav", "CatalogueSection", "InclusionsSection", "ContactLocation", "ArticleLayout", "ListingSection", "KeyFacts", "ProcessSection", "TimelineSection", "FeatureGrid", "GalleryGrid", "VideoFeature", "ProgrammeCompare", "NoticeBand", "ReferencesSection", "CredentialStrip", "GuestStory", "ConfirmationSection", "NotFoundSection", "PolicySection"];
     if (SECTIONS.includes(name)) document.body.style.padding = "0";
     ReactDOM.createRoot(document.getElementById("root")).render(<><Specimen /><Variation /></>);
   </script>

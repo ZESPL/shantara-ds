@@ -11,6 +11,10 @@ export interface TableOfContentsProps extends React.HTMLAttributes<HTMLElement> 
   items: TocItem[];
   /** Default "On this page". */
   title?: string;
+  /** "rail" (default): hairline rail, brand bar on the current section.
+   *  "numbered": two-digit numerals, entries divided by rules.
+   *  "panel": a raised box, entries divided by rules. */
+  variant?: "rail" | "numbered" | "panel";
   /** Controlled current section id. Omit to let `track` follow the scroll. */
   activeId?: string;
   /** Mark the section in view with IntersectionObserver (default true). */

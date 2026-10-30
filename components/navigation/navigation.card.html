@@ -1,4 +1,4 @@
-<!-- @dsCard group="Components" viewport="700x820" name="Navigation & disclosure" subtitle="Tabs, breadcrumbs, accordion, language selector" -->
+<!-- @dsCard group="Components" viewport="700x820" name="Navigation & disclosure" subtitle="Announcement bar, tabs, breadcrumbs, accordion, language selector" -->
 <!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
 <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
@@ -7,10 +7,11 @@
 <script src="../../i18n.js"></script>
 <style>body{padding:20px;background:var(--surface-page)}.stack{display:flex;flex-direction:column;gap:var(--space-6)}.pair{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-6)}</style></head><body><div id="root"></div>
 <script type="text/babel">
-const { Tabs, Breadcrumbs, Accordion } = window.ShantaraDesignSystem_45bbe4;
+const { AnnouncementBar, Tabs, Breadcrumbs, Accordion } = window.ShantaraDesignSystem_45bbe4;
 function Demo(){
   const {t,ar}=window.ShantaraI18n.useLocale();
   return (<div className="stack">
+<div style={{margin:"-20px -20px 0"}}><AnnouncementBar href="#" linkLabel={t("Book a Consultation")}>{t("A stay is confirmed after a doctor has spoken with you.")}</AnnouncementBar></div>
 <Breadcrumbs items={[{label:t("Programmes"),href:"#"},{label:t("Wellness"),href:"#"},t("Detox")]}/>
 <Tabs items={[t("Overview"),t("Therapies"),t("Rooms"),t("Journal")]}/>
 <Tabs variant="pill" items={[{value:"all",label:t("All"),count:13},{value:"therapies",label:t("Therapies")},{value:"diet",label:t("Diet")}]}/>

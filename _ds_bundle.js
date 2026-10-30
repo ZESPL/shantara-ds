@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"ShantaraDesignSystem_45bbe4","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"Divider","sourcePath":"components/core/Divider.jsx"},{"name":"HnchLogo","sourcePath":"components/core/HnchLogo.jsx"},{"name":"ICON_GROUPS","sourcePath":"components/core/Icon.jsx"},{"name":"ICON_NAMES","sourcePath":"components/core/Icon.jsx"},{"name":"Icon","sourcePath":"components/core/Icon.jsx"},{"name":"IconButton","sourcePath":"components/core/IconButton.jsx"},{"name":"Logo","sourcePath":"components/core/Logo.jsx"},{"name":"PatternPanel","sourcePath":"components/core/PatternPanel.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Dialog","sourcePath":"components/feedback/Dialog.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"DateField","sourcePath":"components/forms/DateField.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"SearchList","sourcePath":"components/forms/SearchList.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Switch","sourcePath":"components/forms/Switch.jsx"},{"name":"Textarea","sourcePath":"components/forms/Textarea.jsx"},{"name":"Accordion","sourcePath":"components/navigation/Accordion.jsx"},{"name":"Breadcrumbs","sourcePath":"components/navigation/Breadcrumbs.jsx"},{"name":"LanguageSelector","sourcePath":"components/navigation/LanguageSelector.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"Media","sourcePath":"components/editorial/Media.jsx"},{"name":"ArticleFigure","sourcePath":"components/editorial/ArticleFigure.jsx"},{"name":"PortraitFrame","sourcePath":"components/editorial/PortraitFrame.jsx"},{"name":"AuthorCard","sourcePath":"components/editorial/AuthorCard.jsx"},{"name":"GroupedList","sourcePath":"components/editorial/GroupedList.jsx"},{"name":"MetaRow","sourcePath":"components/editorial/MetaRow.jsx"},{"name":"NumberedSteps","sourcePath":"components/editorial/NumberedSteps.jsx"},{"name":"Numeral","sourcePath":"components/editorial/Numeral.jsx"},{"name":"Pagination","sourcePath":"components/editorial/Pagination.jsx"},{"name":"PlainList","sourcePath":"components/editorial/PlainList.jsx"},{"name":"Prose","sourcePath":"components/editorial/Prose.jsx"},{"name":"QuoteBlock","sourcePath":"components/editorial/QuoteBlock.jsx"},{"name":"ReviewedBy","sourcePath":"components/editorial/ReviewedBy.jsx"},{"name":"ShareBar","sourcePath":"components/editorial/ShareBar.jsx"},{"name":"SpecTable","sourcePath":"components/editorial/SpecTable.jsx"},{"name":"Statement","sourcePath":"components/editorial/Statement.jsx"},{"name":"TableOfContents","sourcePath":"components/editorial/TableOfContents.jsx"},{"name":"TextLink","sourcePath":"components/editorial/TextLink.jsx"},{"name":"Tile","sourcePath":"components/editorial/Tile.jsx"},{"name":"TimeTable","sourcePath":"components/editorial/TimeTable.jsx"},{"name":"Video","sourcePath":"components/editorial/Video.jsx"},{"name":"ArticleHeader","sourcePath":"components/sections/ArticleHeader.jsx"},{"name":"ArticleLayout","sourcePath":"components/sections/ArticleLayout.jsx"},{"name":"BandStatement","sourcePath":"components/sections/BandStatement.jsx"},{"name":"CatalogueSection","sourcePath":"components/sections/CatalogueSection.jsx"},{"name":"ClosingCTA","sourcePath":"components/sections/ClosingCTA.jsx"},{"name":"TileGrid","sourcePath":"components/sections/TileGrid.jsx"},{"name":"ConfirmationSection","sourcePath":"components/sections/ConfirmationSection.jsx"},{"name":"ContactLocation","sourcePath":"components/sections/ContactLocation.jsx"},{"name":"CredentialStrip","sourcePath":"components/sections/CredentialStrip.jsx"},{"name":"FaqSection","sourcePath":"components/sections/FaqSection.jsx"},{"name":"FeatureGrid","sourcePath":"components/sections/FeatureGrid.jsx"},{"name":"FormSplit","sourcePath":"components/sections/FormSplit.jsx"},{"name":"GalleryGrid","sourcePath":"components/sections/GalleryGrid.jsx"},{"name":"GuestStory","sourcePath":"components/sections/GuestStory.jsx"},{"name":"HeroFullBleed","sourcePath":"components/sections/HeroFullBleed.jsx"},{"name":"HeroSplit","sourcePath":"components/sections/HeroSplit.jsx"},{"name":"HeroStatement","sourcePath":"components/sections/HeroStatement.jsx"},{"name":"InPageNav","sourcePath":"components/sections/InPageNav.jsx"},{"name":"InclusionsSection","sourcePath":"components/sections/InclusionsSection.jsx"},{"name":"IndexList","sourcePath":"components/sections/IndexList.jsx"},{"name":"KeyFacts","sourcePath":"components/sections/KeyFacts.jsx"},{"name":"ListingSection","sourcePath":"components/sections/ListingSection.jsx"},{"name":"NotFoundSection","sourcePath":"components/sections/NotFoundSection.jsx"},{"name":"NoticeBand","sourcePath":"components/sections/NoticeBand.jsx"},{"name":"NumeralsSplit","sourcePath":"components/sections/NumeralsSplit.jsx"},{"name":"PanoramaCaption","sourcePath":"components/sections/PanoramaCaption.jsx"},{"name":"PeopleRow","sourcePath":"components/sections/PeopleRow.jsx"},{"name":"PolicySection","sourcePath":"components/sections/PolicySection.jsx"},{"name":"ProcessSection","sourcePath":"components/sections/ProcessSection.jsx"},{"name":"ProgrammeCompare","sourcePath":"components/sections/ProgrammeCompare.jsx"},{"name":"ReferencesSection","sourcePath":"components/sections/ReferencesSection.jsx"},{"name":"RelatedArticles","sourcePath":"components/sections/RelatedArticles.jsx"},{"name":"Section","sourcePath":"components/sections/Section.jsx"},{"name":"SplitSection","sourcePath":"components/sections/SplitSection.jsx"},{"name":"TimelineSection","sourcePath":"components/sections/TimelineSection.jsx"},{"name":"VideoFeature","sourcePath":"components/sections/VideoFeature.jsx"}],"sourceHashes":{"components/core/Badge.jsx":"b014d0a4d8ea","components/core/Button.jsx":"66ad8b155d36","components/core/Card.jsx":"899ecf09e977","components/core/Divider.jsx":"7841bbb870dd","components/core/HnchLogo.jsx":"3086ba9ae2ea","components/core/Icon.jsx":"7eaaf731593f","components/core/IconButton.jsx":"0746d0dc8fb3","components/core/Logo.jsx":"71651ae4093b","components/core/PatternPanel.jsx":"dd26bb639ce9","components/core/Tag.jsx":"480f3225f1d4","components/feedback/Dialog.jsx":"c1b84ed6f276","components/feedback/Spinner.jsx":"49fa70a95320","components/feedback/Toast.jsx":"c64129df2a1a","components/feedback/Tooltip.jsx":"9c7b40a94408","components/forms/Checkbox.jsx":"621ba3e2309a","components/forms/DateField.jsx":"a4fef507a824","components/forms/Input.jsx":"1321df74a451","components/forms/Radio.jsx":"861dea337cdb","components/forms/SearchList.jsx":"39137752d536","components/forms/Select.jsx":"4ebda94f9354","components/forms/Switch.jsx":"73709580dd9e","components/forms/Textarea.jsx":"e40a2c1357c6","components/navigation/Accordion.jsx":"b8870511c6fe","components/navigation/Breadcrumbs.jsx":"421f19e62be1","components/navigation/LanguageSelector.jsx":"3255d13574aa","components/navigation/Tabs.jsx":"414b48cd2f58","components/editorial/Media.jsx":"33a6b0c1bfde","components/editorial/ArticleFigure.jsx":"f7689927c7db","components/editorial/PortraitFrame.jsx":"d79181ab4681","components/editorial/AuthorCard.jsx":"e96ed75df2fb","components/editorial/GroupedList.jsx":"d8cd9e26b4bf","components/editorial/MetaRow.jsx":"8c95d79ee5e1","components/editorial/NumberedSteps.jsx":"6f2950654a05","components/editorial/Numeral.jsx":"e6b7086ade4c","components/editorial/Pagination.jsx":"893e51b7753d","components/editorial/PlainList.jsx":"2d7a0d571c4a","components/editorial/Prose.jsx":"1b1a9a3ffec2","components/editorial/QuoteBlock.jsx":"c79559f0cb83","components/editorial/ReviewedBy.jsx":"cf907ffdf4c1","components/editorial/ShareBar.jsx":"a5d673d91fb9","components/editorial/SpecTable.jsx":"097e36746780","components/editorial/Statement.jsx":"50cb58806250","components/editorial/TableOfContents.jsx":"f92f3b4de4c4","components/editorial/TextLink.jsx":"b730c74e745f","components/editorial/Tile.jsx":"4ebf341907e5","components/editorial/TimeTable.jsx":"610e5af78002","components/editorial/Video.jsx":"e21a3629d769","components/sections/ArticleHeader.jsx":"dcbe9cde9956","components/sections/ArticleLayout.jsx":"ec0fa928583c","components/sections/BandStatement.jsx":"e9a0008b4f26","components/sections/CatalogueSection.jsx":"603b270adcd9","components/sections/ClosingCTA.jsx":"084360f0b4b5","components/sections/TileGrid.jsx":"fbb2649bbce1","components/sections/ConfirmationSection.jsx":"ae65bbbfabb7","components/sections/ContactLocation.jsx":"f14702177eb1","components/sections/CredentialStrip.jsx":"fd9f68bd56cd","components/sections/FaqSection.jsx":"b68b80cab3ab","components/sections/FeatureGrid.jsx":"d472f2fd12c4","components/sections/FormSplit.jsx":"c87831902c01","components/sections/GalleryGrid.jsx":"f9f538dc8689","components/sections/GuestStory.jsx":"06f627264128","components/sections/HeroFullBleed.jsx":"020e02a3e0fd","components/sections/HeroSplit.jsx":"20abda0bb36b","components/sections/HeroStatement.jsx":"d9a38016a925","components/sections/InPageNav.jsx":"9ed444571815","components/sections/InclusionsSection.jsx":"a99954de9009","components/sections/IndexList.jsx":"8b059cd6e204","components/sections/KeyFacts.jsx":"8600300421bb","components/sections/ListingSection.jsx":"73a61fe090ab","components/sections/NotFoundSection.jsx":"bfc4dc096c09","components/sections/NoticeBand.jsx":"29f4801b9cf4","components/sections/NumeralsSplit.jsx":"10d1fde8fd02","components/sections/PanoramaCaption.jsx":"1d13ec1defdd","components/sections/PeopleRow.jsx":"c64813a6b16a","components/sections/PolicySection.jsx":"57d0ba42b74a","components/sections/ProcessSection.jsx":"61b91ecfbaa9","components/sections/ProgrammeCompare.jsx":"5b81f153d44e","components/sections/ReferencesSection.jsx":"9a32b5c127ab","components/sections/RelatedArticles.jsx":"8452368a277c","components/sections/Section.jsx":"eacd861e84d9","components/sections/SplitSection.jsx":"275162930637","components/sections/TimelineSection.jsx":"ad7941ee85f3","components/sections/VideoFeature.jsx":"238e9cb6a137"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":4,"namespace":"ShantaraDesignSystem_45bbe4","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"Divider","sourcePath":"components/core/Divider.jsx"},{"name":"HnchLogo","sourcePath":"components/core/HnchLogo.jsx"},{"name":"ICON_GROUPS","sourcePath":"components/core/Icon.jsx"},{"name":"ICON_NAMES","sourcePath":"components/core/Icon.jsx"},{"name":"Icon","sourcePath":"components/core/Icon.jsx"},{"name":"IconButton","sourcePath":"components/core/IconButton.jsx"},{"name":"Logo","sourcePath":"components/core/Logo.jsx"},{"name":"PatternPanel","sourcePath":"components/core/PatternPanel.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Dialog","sourcePath":"components/feedback/Dialog.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"DateField","sourcePath":"components/forms/DateField.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"SearchList","sourcePath":"components/forms/SearchList.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Switch","sourcePath":"components/forms/Switch.jsx"},{"name":"Textarea","sourcePath":"components/forms/Textarea.jsx"},{"name":"Accordion","sourcePath":"components/navigation/Accordion.jsx"},{"name":"AnnouncementBar","sourcePath":"components/navigation/AnnouncementBar.jsx"},{"name":"Breadcrumbs","sourcePath":"components/navigation/Breadcrumbs.jsx"},{"name":"LanguageSelector","sourcePath":"components/navigation/LanguageSelector.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"Media","sourcePath":"components/editorial/Media.jsx"},{"name":"ArticleFigure","sourcePath":"components/editorial/ArticleFigure.jsx"},{"name":"PortraitFrame","sourcePath":"components/editorial/PortraitFrame.jsx"},{"name":"AuthorCard","sourcePath":"components/editorial/AuthorCard.jsx"},{"name":"GroupedList","sourcePath":"components/editorial/GroupedList.jsx"},{"name":"MetaRow","sourcePath":"components/editorial/MetaRow.jsx"},{"name":"NumberedSteps","sourcePath":"components/editorial/NumberedSteps.jsx"},{"name":"Numeral","sourcePath":"components/editorial/Numeral.jsx"},{"name":"Pagination","sourcePath":"components/editorial/Pagination.jsx"},{"name":"PlainList","sourcePath":"components/editorial/PlainList.jsx"},{"name":"Prose","sourcePath":"components/editorial/Prose.jsx"},{"name":"QuoteBlock","sourcePath":"components/editorial/QuoteBlock.jsx"},{"name":"ReviewedBy","sourcePath":"components/editorial/ReviewedBy.jsx"},{"name":"ShareBar","sourcePath":"components/editorial/ShareBar.jsx"},{"name":"SpecTable","sourcePath":"components/editorial/SpecTable.jsx"},{"name":"Statement","sourcePath":"components/editorial/Statement.jsx"},{"name":"TableOfContents","sourcePath":"components/editorial/TableOfContents.jsx"},{"name":"TextLink","sourcePath":"components/editorial/TextLink.jsx"},{"name":"Tile","sourcePath":"components/editorial/Tile.jsx"},{"name":"TimeTable","sourcePath":"components/editorial/TimeTable.jsx"},{"name":"Video","sourcePath":"components/editorial/Video.jsx"},{"name":"ArticleHeader","sourcePath":"components/sections/ArticleHeader.jsx"},{"name":"ArticleLayout","sourcePath":"components/sections/ArticleLayout.jsx"},{"name":"BandStatement","sourcePath":"components/sections/BandStatement.jsx"},{"name":"CatalogueSection","sourcePath":"components/sections/CatalogueSection.jsx"},{"name":"ClosingCTA","sourcePath":"components/sections/ClosingCTA.jsx"},{"name":"TileGrid","sourcePath":"components/sections/TileGrid.jsx"},{"name":"ConfirmationSection","sourcePath":"components/sections/ConfirmationSection.jsx"},{"name":"ContactLocation","sourcePath":"components/sections/ContactLocation.jsx"},{"name":"CredentialStrip","sourcePath":"components/sections/CredentialStrip.jsx"},{"name":"FaqSection","sourcePath":"components/sections/FaqSection.jsx"},{"name":"FeatureGrid","sourcePath":"components/sections/FeatureGrid.jsx"},{"name":"FormSplit","sourcePath":"components/sections/FormSplit.jsx"},{"name":"GalleryGrid","sourcePath":"components/sections/GalleryGrid.jsx"},{"name":"GuestStory","sourcePath":"components/sections/GuestStory.jsx"},{"name":"HeroFullBleed","sourcePath":"components/sections/HeroFullBleed.jsx"},{"name":"HeroSplit","sourcePath":"components/sections/HeroSplit.jsx"},{"name":"HeroStatement","sourcePath":"components/sections/HeroStatement.jsx"},{"name":"InPageNav","sourcePath":"components/sections/InPageNav.jsx"},{"name":"InclusionsSection","sourcePath":"components/sections/InclusionsSection.jsx"},{"name":"IndexList","sourcePath":"components/sections/IndexList.jsx"},{"name":"KeyFacts","sourcePath":"components/sections/KeyFacts.jsx"},{"name":"ListingSection","sourcePath":"components/sections/ListingSection.jsx"},{"name":"NotFoundSection","sourcePath":"components/sections/NotFoundSection.jsx"},{"name":"NoticeBand","sourcePath":"components/sections/NoticeBand.jsx"},{"name":"NumeralsSplit","sourcePath":"components/sections/NumeralsSplit.jsx"},{"name":"PanoramaCaption","sourcePath":"components/sections/PanoramaCaption.jsx"},{"name":"PeopleRow","sourcePath":"components/sections/PeopleRow.jsx"},{"name":"PolicySection","sourcePath":"components/sections/PolicySection.jsx"},{"name":"ProcessSection","sourcePath":"components/sections/ProcessSection.jsx"},{"name":"ProgrammeCompare","sourcePath":"components/sections/ProgrammeCompare.jsx"},{"name":"ReferencesSection","sourcePath":"components/sections/ReferencesSection.jsx"},{"name":"RelatedArticles","sourcePath":"components/sections/RelatedArticles.jsx"},{"name":"Section","sourcePath":"components/sections/Section.jsx"},{"name":"SplitSection","sourcePath":"components/sections/SplitSection.jsx"},{"name":"TimelineSection","sourcePath":"components/sections/TimelineSection.jsx"},{"name":"VideoFeature","sourcePath":"components/sections/VideoFeature.jsx"}],"sourceHashes":{"components/core/Badge.jsx":"b014d0a4d8ea","components/core/Button.jsx":"66ad8b155d36","components/core/Card.jsx":"899ecf09e977","components/core/Divider.jsx":"7841bbb870dd","components/core/HnchLogo.jsx":"3086ba9ae2ea","components/core/Icon.jsx":"7eaaf731593f","components/core/IconButton.jsx":"0746d0dc8fb3","components/core/Logo.jsx":"71651ae4093b","components/core/PatternPanel.jsx":"dd26bb639ce9","components/core/Tag.jsx":"480f3225f1d4","components/feedback/Dialog.jsx":"c1b84ed6f276","components/feedback/Spinner.jsx":"49fa70a95320","components/feedback/Toast.jsx":"c64129df2a1a","components/feedback/Tooltip.jsx":"9c7b40a94408","components/forms/Checkbox.jsx":"621ba3e2309a","components/forms/DateField.jsx":"a4fef507a824","components/forms/Input.jsx":"1321df74a451","components/forms/Radio.jsx":"861dea337cdb","components/forms/SearchList.jsx":"39137752d536","components/forms/Select.jsx":"4ebda94f9354","components/forms/Switch.jsx":"73709580dd9e","components/forms/Textarea.jsx":"e40a2c1357c6","components/navigation/Accordion.jsx":"b8870511c6fe","components/navigation/AnnouncementBar.jsx":"52373b869de1","components/navigation/Breadcrumbs.jsx":"421f19e62be1","components/navigation/LanguageSelector.jsx":"3255d13574aa","components/navigation/Tabs.jsx":"414b48cd2f58","components/editorial/Media.jsx":"33a6b0c1bfde","components/editorial/ArticleFigure.jsx":"f7689927c7db","components/editorial/PortraitFrame.jsx":"d79181ab4681","components/editorial/AuthorCard.jsx":"e96ed75df2fb","components/editorial/GroupedList.jsx":"d8cd9e26b4bf","components/editorial/MetaRow.jsx":"8c95d79ee5e1","components/editorial/NumberedSteps.jsx":"6f2950654a05","components/editorial/Numeral.jsx":"e6b7086ade4c","components/editorial/Pagination.jsx":"893e51b7753d","components/editorial/PlainList.jsx":"2d7a0d571c4a","components/editorial/Prose.jsx":"1b1a9a3ffec2","components/editorial/QuoteBlock.jsx":"c79559f0cb83","components/editorial/ReviewedBy.jsx":"cf907ffdf4c1","components/editorial/ShareBar.jsx":"a5d673d91fb9","components/editorial/SpecTable.jsx":"097e36746780","components/editorial/Statement.jsx":"50cb58806250","components/editorial/TableOfContents.jsx":"0092a6f843c1","components/editorial/TextLink.jsx":"b730c74e745f","components/editorial/Tile.jsx":"4ebf341907e5","components/editorial/TimeTable.jsx":"610e5af78002","components/editorial/Video.jsx":"e21a3629d769","components/sections/ArticleHeader.jsx":"dcbe9cde9956","components/sections/ArticleLayout.jsx":"ec0fa928583c","components/sections/BandStatement.jsx":"e9a0008b4f26","components/sections/CatalogueSection.jsx":"603b270adcd9","components/sections/ClosingCTA.jsx":"084360f0b4b5","components/sections/TileGrid.jsx":"fbb2649bbce1","components/sections/ConfirmationSection.jsx":"ae65bbbfabb7","components/sections/ContactLocation.jsx":"f14702177eb1","components/sections/CredentialStrip.jsx":"fd9f68bd56cd","components/sections/FaqSection.jsx":"b68b80cab3ab","components/sections/FeatureGrid.jsx":"d472f2fd12c4","components/sections/FormSplit.jsx":"c87831902c01","components/sections/GalleryGrid.jsx":"f9f538dc8689","components/sections/GuestStory.jsx":"06f627264128","components/sections/HeroFullBleed.jsx":"020e02a3e0fd","components/sections/HeroSplit.jsx":"20abda0bb36b","components/sections/HeroStatement.jsx":"d9a38016a925","components/sections/InPageNav.jsx":"9ed444571815","components/sections/InclusionsSection.jsx":"a99954de9009","components/sections/IndexList.jsx":"8b059cd6e204","components/sections/KeyFacts.jsx":"8600300421bb","components/sections/ListingSection.jsx":"73a61fe090ab","components/sections/NotFoundSection.jsx":"bfc4dc096c09","components/sections/NoticeBand.jsx":"29f4801b9cf4","components/sections/NumeralsSplit.jsx":"10d1fde8fd02","components/sections/PanoramaCaption.jsx":"1d13ec1defdd","components/sections/PeopleRow.jsx":"c64813a6b16a","components/sections/PolicySection.jsx":"57d0ba42b74a","components/sections/ProcessSection.jsx":"61b91ecfbaa9","components/sections/ProgrammeCompare.jsx":"5b81f153d44e","components/sections/ReferencesSection.jsx":"9a32b5c127ab","components/sections/RelatedArticles.jsx":"8452368a277c","components/sections/Section.jsx":"eacd861e84d9","components/sections/SplitSection.jsx":"275162930637","components/sections/TimelineSection.jsx":"ad7941ee85f3","components/sections/VideoFeature.jsx":"238e9cb6a137"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -3952,6 +3952,107 @@ function Accordion({
 Object.assign(__ds_scope, { Accordion });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/navigation/Accordion.jsx", error: String((e && e.message) || e) }); }
 
+// components/navigation/AnnouncementBar.jsx
+try { (() => {
+const { Icon } = __ds_scope;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* A one-line strip above the site header for one site-wide message: a change to how stays
+   are booked, a closure, a new programme. One message, at most one link, never a promotion.
+   ground "himalaya" (default) or "pine" re-point ink like any dark ground; "stone" is light.
+   Not sticky — it scrolls away with the page. dismissible adds a close button; storageKey
+   keeps it closed for that visitor until the key changes (use a new key for a new message). */
+const CSS = `
+.sh-announce{font:var(--type-body-sm);color:var(--text-primary)}
+.sh-announce-inner{display:grid;grid-template-columns:minmax(0,1fr);align-items:center;column-gap:var(--space-4);min-height:var(--tap-min);padding-block:var(--space-3)}
+.sh-announce[data-dismissible="true"] .sh-announce-inner{grid-template-columns:minmax(0,1fr) auto;padding-inline-end:calc(var(--layout-gutter) - 12px)}
+.sh-announce-msg{margin:0;display:flex;flex-wrap:wrap;justify-content:center;align-items:baseline;column-gap:var(--space-5);row-gap:var(--space-1);text-align:center;text-wrap:balance}
+.sh-announce-link{display:inline-flex;align-items:center;gap:var(--space-2);color:var(--text-primary);font-weight:var(--weight-medium);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;white-space:nowrap}
+.sh-announce-link [data-icon]{transition:transform var(--duration-fast) var(--ease-out)}
+.sh-announce-link:focus-visible{outline:none;box-shadow:var(--ring-focus);border-radius:var(--radius-xs)}
+[dir="rtl"] .sh-announce-link [data-icon]{transform:scaleX(-1)}
+.sh-announce-x{display:grid;place-items:center;width:var(--tap-min);height:var(--tap-min);margin-block:calc(var(--space-3) * -1);padding:0;border:0;border-radius:var(--radius-xs);background:transparent;color:inherit;opacity:.72;cursor:pointer;transition:opacity var(--duration-fast) var(--ease-standard),background-color var(--duration-fast) var(--ease-standard)}
+.sh-announce-x:focus-visible{outline:none;opacity:1;box-shadow:var(--ring-focus)}
+@media (hover: hover) and (pointer: fine){
+  .sh-announce-link:hover{color:var(--text-link-hover)}
+  .sh-announce-link:hover [data-icon]{transform:translateX(3px)}
+  [dir="rtl"] .sh-announce-link:hover [data-icon]{transform:translateX(-3px) scaleX(-1)}
+  .sh-announce-x:hover{opacity:1;background:color-mix(in srgb, currentColor 12%, transparent)}
+}
+@media (max-width:519.98px){.sh-announce-msg{justify-content:flex-start;text-align:start}}
+`;
+function ensure() {
+  if (typeof document === "undefined" || document.getElementById("sh-announce-css")) return;
+  const el = document.createElement("style");
+  el.id = "sh-announce-css";
+  el.textContent = CSS;
+  document.head.appendChild(el);
+}
+function readClosed(key) {
+  if (!key) return false;
+  try {
+    return window.localStorage.getItem("sh-announce:" + key) === "closed";
+  } catch (err) {
+    return false;
+  }
+}
+function AnnouncementBar({
+  children,
+  href,
+  linkLabel,
+  ground = "himalaya",
+  dismissible = false,
+  storageKey,
+  onDismiss,
+  closeLabel = "Close announcement",
+  label = "Announcement",
+  style,
+  ...rest
+}) {
+  ensure();
+  const [closed, setClosed] = React.useState(false);
+  React.useEffect(() => {
+    if (readClosed(storageKey)) setClosed(true);
+  }, [storageKey]);
+  if (closed) return null;
+  const close = () => {
+    setClosed(true);
+    if (storageKey) {
+      try {
+        window.localStorage.setItem("sh-announce:" + storageKey, "closed");
+      } catch (err) {/* private mode */}
+    }
+    if (onDismiss) onDismiss();
+  };
+  return /*#__PURE__*/React.createElement("aside", _extends({
+    "data-ds-id": "navigation/AnnouncementBar",
+    className: "sh-announce",
+    "data-ground": ground,
+    "data-dismissible": String(dismissible),
+    "aria-label": label,
+    style: style
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    className: "sh-container sh-announce-inner"
+  }, /*#__PURE__*/React.createElement("p", {
+    className: "sh-announce-msg"
+  }, /*#__PURE__*/React.createElement("span", null, children), href && linkLabel ? /*#__PURE__*/React.createElement("a", {
+    className: "sh-announce-link",
+    href: href
+  }, linkLabel, /*#__PURE__*/React.createElement(Icon, {
+    name: "arrow-right",
+    size: 14
+  })) : null), dismissible ? /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    className: "sh-announce-x",
+    "aria-label": closeLabel,
+    onClick: close
+  }, /*#__PURE__*/React.createElement(Icon, {
+    name: "x",
+    size: 18
+  })) : null));
+}
+Object.assign(__ds_scope, { AnnouncementBar });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/navigation/AnnouncementBar.jsx", error: String((e && e.message) || e) }); }
+
 // components/navigation/Breadcrumbs.jsx
 try { (() => {
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
@@ -5519,12 +5620,16 @@ Object.assign(__ds_scope, { Statement });
 try { (() => {
 const { Icon } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* "On this page" for long articles. Desktop (≥1000px): a sticky list on a hairline rail
-   in the article's side column; the section in view is marked with a 1px brand bar.
+/* "On this page" for long articles. Three variants share one list, one toggle and one
+   scroll tracker:
+   - rail (default): a sticky list on a hairline rail; the section in view takes a 2px brand bar.
+   - numbered: each entry carries its two-digit numeral, entries are divided by rules.
+   - panel: the list set in a raised box, entries divided by rules.
+   Desktop (≥1000px): shown open in the article's side column, sticky by default.
    Phones and tablets: a collapsed row ("On this page" + chevron) above the body that opens
    the same list. items come from the article's h2s (each h2 needs an id). */
 const CSS = `
-.sh-toc{min-width:0;font:var(--type-body-sm)}
+.sh-toc{min-width:0;font:var(--type-body-sm);color:var(--text-primary)}
 .sh-toc[data-sticky="true"]{position:sticky;top:calc(var(--space-12) + 24px)}
 .sh-toc-toggle{appearance:none;display:flex;width:100%;align-items:center;justify-content:space-between;gap:var(--space-4);min-height:var(--tap-min);padding:var(--space-3) 0;background:transparent;border:0;border-block:var(--border-width) solid var(--rule-color);font:var(--type-label);font-size:var(--text-sm);color:var(--text-primary);cursor:pointer;text-align:start}
 .sh-toc-toggle [data-icon]{transition:transform var(--duration-base) var(--ease-out)}
@@ -5533,17 +5638,47 @@ const CSS = `
 .sh-toc-title{display:none;margin:0 0 var(--space-4);font:var(--type-label);font-size:var(--text-sm);color:var(--text-primary)}
 .sh-toc-list{list-style:none;margin:0;padding:var(--space-3) 0 var(--space-4);display:flex;flex-direction:column}
 .sh-toc[data-open="false"] .sh-toc-list{display:none}
-.sh-toc-list a{display:block;padding:var(--space-2) 0 var(--space-2) var(--space-4);margin-inline-start:-1px;border-inline-start:1px solid transparent;color:var(--text-secondary);text-decoration:none;line-height:1.4}
+.sh-toc-list a{display:block;padding:var(--space-2) 0 var(--space-2) var(--space-4);margin-inline-start:-1px;border-inline-start:2px solid transparent;color:var(--text-secondary);text-decoration:none;line-height:1.4}
 .sh-toc-list li[data-level="3"] a{padding-inline-start:var(--space-7);font-size:var(--text-xs)}
-.sh-toc-list a[aria-current="true"]{color:var(--text-primary);border-inline-start-color:var(--text-brand)}
+.sh-toc-list a[aria-current="true"]{color:var(--text-primary);font-weight:var(--weight-medium);border-inline-start-color:var(--text-brand)}
 .sh-toc-list a:focus-visible{outline:none;box-shadow:var(--ring-focus)}
 @media (hover: hover) and (pointer: fine){.sh-toc-list a:hover{color:var(--text-primary)}}
-@media (max-width:999.98px){.sh-toc[data-sticky="true"]{position:static}.sh-toc-list{border-inline-start:1px solid var(--rule-color);margin-top:var(--space-3);padding-block:0}}
+
+/* numbered */
+.sh-toc[data-variant="numbered"] .sh-toc-list{counter-reset:sh-toc;border-inline-start:0!important;padding-block:0}
+.sh-toc[data-variant="numbered"] .sh-toc-list li{border-block-end:var(--border-width) solid var(--rule-color)}
+.sh-toc[data-variant="numbered"] .sh-toc-list li:first-child{border-block-start:var(--border-width) solid var(--rule-color)}
+.sh-toc[data-variant="numbered"] .sh-toc-list li[data-level="2"]{counter-increment:sh-toc}
+.sh-toc[data-variant="numbered"] .sh-toc-list a{display:grid;grid-template-columns:2.25em minmax(0,1fr);gap:var(--space-4);align-items:baseline;margin:0;padding:var(--space-3) 0;border:0;font:var(--type-body-sm);color:var(--text-secondary)}
+.sh-toc[data-variant="numbered"] .sh-toc-list li[data-level="2"] a::before{content:counter(sh-toc, decimal-leading-zero);font:var(--weight-light) var(--text-base)/1 var(--font-display);font-variant-numeric:tabular-nums;color:var(--text-brand)}
+.sh-toc[data-variant="numbered"] .sh-toc-list li[data-level="3"] a{padding-block:var(--space-2);padding-inline-start:calc(2.25em + var(--space-4));display:block;font-size:var(--text-xs)}
+.sh-toc[data-variant="numbered"] .sh-toc-list a[aria-current="true"]{color:var(--text-primary)}
+.sh-toc[data-variant="numbered"] .sh-toc-list a[aria-current="true"]::before{font-weight:var(--weight-regular)}
+
+/* panel */
+.sh-toc[data-variant="panel"]{background:var(--surface-raised);border-radius:var(--radius-card);padding:0 var(--space-6)}
+.sh-toc[data-variant="panel"] .sh-toc-toggle{border:0}
+.sh-toc[data-variant="panel"] .sh-toc-title{margin-block-end:var(--space-4)}
+.sh-toc[data-variant="panel"] .sh-toc-list{border-inline-start:0!important;padding:0 0 var(--space-6)}
+.sh-toc[data-variant="panel"] .sh-toc-list li+li{border-block-start:var(--border-width) solid var(--rule-color)}
+.sh-toc[data-variant="panel"] .sh-toc-list a{display:flex;align-items:center;justify-content:space-between;gap:var(--space-4);margin:0;padding:var(--space-3) 0;border:0;color:var(--text-primary)}
+.sh-toc[data-variant="panel"] .sh-toc-list a [data-icon]{flex:none;color:var(--text-secondary);transition:transform var(--duration-fast) var(--ease-out)}
+.sh-toc[data-variant="panel"] .sh-toc-list a[aria-current="true"]{color:var(--text-brand)}
+.sh-toc[data-variant="panel"] .sh-toc-list a[aria-current="true"] [data-icon]{color:var(--text-brand)}
+@media (hover: hover) and (pointer: fine){.sh-toc[data-variant="panel"] .sh-toc-list a:hover{color:var(--text-brand)}.sh-toc[data-variant="panel"] .sh-toc-list a:hover [data-icon]{transform:translateY(2px)}}
+
+@media (max-width:999.98px){
+  .sh-toc[data-sticky="true"]{position:static}
+  .sh-toc[data-variant="rail"] .sh-toc-list{border-inline-start:1px solid var(--rule-color);margin-top:var(--space-3);padding-block:0}
+  .sh-toc[data-variant="numbered"] .sh-toc-toggle{border-block-end:0}
+}
 @media (min-width:1000px){
   .sh-toc-toggle{display:none}
   .sh-toc-title{display:block}
   .sh-toc[data-open="false"] .sh-toc-list{display:flex}
-  .sh-toc-list{padding:0;border-inline-start:1px solid var(--rule-color)}
+  .sh-toc[data-variant="rail"] .sh-toc-list{padding:0;border-inline-start:1px solid var(--rule-color)}
+  .sh-toc[data-variant="panel"]{padding:var(--space-7) var(--space-7) var(--space-2)}
+  .sh-toc[data-variant="panel"] .sh-toc-list{padding-block-end:var(--space-4)}
 }
 `;
 function ensure() {
@@ -5556,6 +5691,7 @@ function ensure() {
 function TableOfContents({
   items = [],
   title = "On this page",
+  variant = "rail",
   activeId,
   track = true,
   sticky = true,
@@ -5586,6 +5722,7 @@ function TableOfContents({
     "data-ds-id": "editorial/TableOfContents",
     className: "sh-toc",
     "aria-label": title,
+    "data-variant": variant,
     "data-open": String(open),
     "data-sticky": String(sticky),
     style: style
@@ -5614,7 +5751,10 @@ function TableOfContents({
       setSeen(it.id);
       if (onNavigate) onNavigate(it.id, e);
     }
-  }, it.label)))));
+  }, /*#__PURE__*/React.createElement("span", null, it.label), variant === "panel" ? /*#__PURE__*/React.createElement(Icon, {
+    name: "arrow-down",
+    size: 14
+  }) : null)))));
 }
 Object.assign(__ds_scope, { TableOfContents });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/editorial/TableOfContents.jsx", error: String((e && e.message) || e) }); }
@@ -9171,6 +9311,7 @@ __ds_ns.Select = __ds_scope.Select;
 __ds_ns.Switch = __ds_scope.Switch;
 __ds_ns.Textarea = __ds_scope.Textarea;
 __ds_ns.Accordion = __ds_scope.Accordion;
+__ds_ns.AnnouncementBar = __ds_scope.AnnouncementBar;
 __ds_ns.Breadcrumbs = __ds_scope.Breadcrumbs;
 __ds_ns.LanguageSelector = __ds_scope.LanguageSelector;
 __ds_ns.Tabs = __ds_scope.Tabs;
