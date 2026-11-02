@@ -6,7 +6,7 @@ import { SpecTable } from "../editorial/SpecTable.jsx";
 /* Terms a guest agrees to (payment, cancellation, companion and stay policies) as headed
    clauses that open one at a time. A clause holds plain sentences (`text`) and/or a small
    table (`columns` + `rows`, a SpecTable). Structure from content/tariff.json
-   (`payment_terms`, `cancellation`) and the handbook policies; never a rate figure.
+   (`payment_terms`, `cancellation`) and the handbook policies; never a rate figure, charge or percentage.
    One column at every size, capped at 52rem; the tables turn into labelled rows on phones
    (SpecTable). */
 const CSS = `

@@ -11,19 +11,18 @@ They do not appear on home, programme, enquiry, journal, app, component demos, t
 
 ## Allowed
 
-- `ui_kits/website/screens/TariffScreen.js` (the website tariff card)
+- `ui_kits/website/screens/TariffScreen.js` (the website tariff card), which in this design system shows the structure with “—” only. No real figure is stored in this repo.
 - Brand-deck slides whose subject *is* rooms & tariffs
 - The Property Handbook tariff section
-- `docs/handbook/glossary.md`: the personal attendant's daily charge only, so it is not described as nursing care. Do not copy it onto any other page.
 - A future page whose filename/title is clearly a price list / tariff / pricing document
 
 ## Not allowed
 
 ```jsx
 // ❌ BAD — price on a programme, card, or home teaser
-<p>90 min · from $210</p>
+<p>90 min · from {price}</p>
 <span>₹{room.single} / night</span>
-<div>₹{(16000 * nights).toLocaleString("en-IN")}</div>
+<div>₹{(room.single * nights).toLocaleString("en-IN")}</div>
 
 // ✅ GOOD — point at the tariff card
 <Button onClick={() => onNavigate("tariffs")}>View the tariff card</Button>

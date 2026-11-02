@@ -12,6 +12,6 @@ Terms a guest agrees to (payment, cancellation, companions) as headed clauses th
 
 **Use** on the Tariff page and legal pages.
 
-**Content.** Structure from `content/tariff.json` (`payment_terms`, `cancellation`) and the handbook policies, as written. Percentages of a booking are terms, not rates; never a rate figure or currency.
+**Content.** Structure from `content/tariff.json` (`payment_terms`, `cancellation`) and the handbook policies, as written. The design system holds no amounts, percentages or windows (`tariff.json` shows “—”); the site supplies real terms from its published policies. Never a rate figure, charge, percentage or currency here.
 
 **Responsive.** One column at every size, capped at 52rem. Clause tables become labelled rows on phones (SpecTable).

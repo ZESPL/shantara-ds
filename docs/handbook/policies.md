@@ -8,12 +8,10 @@ These policies protect the clinical integrity of naturopathy treatment and creat
 
 Cancellations must be made in writing, through the cancellation request form at `shantara.life/en/cancellation` or by email to `heal@shantara.life`. An email must give the guest's name, booking email and arrival date. The refund tier is set by the date and time (IST) the cancellation is received. Confirm every cancellation to the guest by email. A guest with no confirmation should call or WhatsApp +91 9553 600 100.
 
-- More than 30 days before arrival: 100% refund
-- 21 to 30 days before arrival: 50% refund
-- 20 days or less before arrival, or no-show: no refund
+- Refund tiers by notice period, and for a no-show: as set in the published Cancellation and Refund Policy (`shantara.life/en/cancellation`). Do not restate the tiers, windows or percentages here.
 - Early departure by choice: no refund for unused nights
 - Early departure on medical grounds, certified by a Shantara doctor (emergency, hospital transfer, or doctor-advised stop): unused nights refunded in cash
-- Admission declined by a Shantara doctor before arrival: 100% refund, whatever the date
+- Admission declined by a Shantara doctor before arrival: full refund, whatever the date
 - Admission declined by a Shantara doctor on arrival: full refund less the nights and services already used
 - Disciplinary discharge of the guest or companion: no refund, including prepaid supplements
 

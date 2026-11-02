@@ -266,8 +266,8 @@ test("schema URLs are locale-specific; organization @id is stable", () => {
 });
 
 test("currency is not inferred from language", () => {
-  assert.throws(() => L.formatCurrency(16000, null, "en"));
-  assert.match(L.formatCurrency(16000, "INR", "en", { maximumFractionDigits: 0 }), /16/);
+  assert.throws(() => L.formatCurrency(1000, null, "en"));
+  assert.match(L.formatCurrency(1000, "INR", "en", { maximumFractionDigits: 0 }), /1,000/);
 });
 
 test("stale translations and independent publish statuses", () => {

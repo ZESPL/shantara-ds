@@ -97,28 +97,15 @@ window.ShantaraContent = {
     ],
     "payment_terms": [
       {
-        "booked_before": "31 days or more before arrival",
-        "at_confirmation": "30%",
-        "balance": "70%, due 30 days before arrival"
-      },
-      {
-        "booked_before": "30 days or less before arrival",
-        "at_confirmation": "100%",
-        "balance": "None"
+        "booked_before": "—",
+        "at_confirmation": "—",
+        "balance": "—"
       }
     ],
     "cancellation": [
       {
-        "cancelled_before": "More than 30 days before arrival",
-        "refund": "100%"
-      },
-      {
-        "cancelled_before": "21 to 30 days before arrival",
-        "refund": "50%"
-      },
-      {
-        "cancelled_before": "20 days or less before arrival, no-show or early departure",
-        "refund": "No refund"
+        "cancelled_before": "—",
+        "refund": "—"
       }
     ],
     "public_notes": [
@@ -1354,7 +1341,7 @@ window.ShantaraContent = {
       "qualification": "Government of India-certified Naturopathy Practitioner",
       "years_practice": "33+",
       "publications_note": "Author of 17 books and translator of 2 on naturopathy, health and nutrition (Malayalam, English, Arabic)",
-      "biography": "Trained under the naturopath C. R. R. Varma, and has lectured on naturopathy across India and abroad in Malayalam, Urdu, Hindi and English. Core approach: treat the cause through ethical, drug-free naturopathy.",
+      "biography": "Trained under the naturopath C. R. R. Varma, and has lectured on naturopathy across India and abroad in Malayalam, Urdu, Hindi and English. His approach is to treat the cause through ethical, drug-free naturopathy.",
       "press": [
         {
           "outlet": "EduAdvice",

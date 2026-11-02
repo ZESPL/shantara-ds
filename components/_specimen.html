@@ -58,13 +58,10 @@
       excludes: ["Recreational therapies beyond the two complimentary per week", "Treatments beyond those prescribed by your doctor", "Personal laundry"],
       supplements: [{ label: "Non-participating companion", basis: "Per person, per night" }, { label: "Extra bed or mattress", basis: "Per bed, per night" }],
       payment_terms: [
-        { booked_before: "31 days or more before arrival", at_confirmation: "30%", balance: "70%, due 30 days before arrival" },
-        { booked_before: "30 days or less before arrival", at_confirmation: "100%", balance: "None" },
+        { booked_before: "—", at_confirmation: "—", balance: "—" },
       ],
       cancellation: [
-        { cancelled_before: "More than 30 days before arrival", refund: "100%" },
-        { cancelled_before: "21 to 30 days before arrival", refund: "50%" },
-        { cancelled_before: "20 days or less before arrival, no-show or early departure", refund: "No refund" },
+        { cancelled_before: "—", refund: "—" },
       ],
     };
     const therapyEntries = [

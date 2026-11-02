@@ -16,7 +16,7 @@ These are two separate services. Never merge them, and never describe one using 
 - What it is: one attendant assigned to stay with one guest throughout their stay, for guests who need continuous one-to-one help.
 - Who gets it: only guests whose doctor recommends it.
 - How to get it: requested and approved during the preliminary consultation.
-- Cost: ₹2,000 per day, charged in addition to the tariff.
+- Cost: a daily charge in addition to the tariff. The team confirms the amount; never quote a figure.
 - It does not replace the nursing team. Guests with an attendant still receive 24-hour nursing care.
 
 ### Naming rules

@@ -4,8 +4,7 @@ Part of the [property handbook](../handbook.txt).
 
 ### Booking & payment
 
-- Booked 31 days or more before arrival: 30% at confirmation, and the remaining 70% is due 30 days before arrival.
-- Booked 30 days or less before arrival: 100% at confirmation.
+- The share due at confirmation and when the balance is due: as set in the published Terms and Conditions and on the current tariff. Do not restate the percentages or windows here.
 - Reservations are subject to room availability.
 - Guests can be quoted and pay in any currency shown on the current tariff.
 - Accepted payment methods: bank transfer, UPI, and credit/debit cards.
