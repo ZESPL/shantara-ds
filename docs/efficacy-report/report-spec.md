@@ -120,7 +120,7 @@ The first edition is meant to cover the past 3 months of clinical data. The hand
 - The approach depends on prescribed diets, structured routines, little outside disruption, and continuous monitoring. The handbook does not define what is monitored. `docs/handbook/about.md`
 - Longevity includes "a measurable reassessment of what to continue at home". The measures are not named. `docs/handbook/programmes.md`
 - Diet is prescribed by the naturopathy doctor. In-room dining is only on a doctor's recommendation. `docs/handbook/food.md`
-- After a completed programme, doctors remain available through online follow-up appointments, and guests update the team on their progress. What is written down in that follow-up is not described. `docs/handbook/policies.md`
+- After a completed programme, a discharge summary and online follow-up consultations with the doctors are included, and guests update the team on their progress. What is written down in that follow-up is not described. `docs/handbook/policies.md`
 
 **Gaps**
 
@@ -196,7 +196,7 @@ The first edition is meant to cover the past 3 months of clinical data. The hand
 
 **Found in handbook**
 
-- Guests who complete a programme can book online follow-up appointments with the doctors. Guests update the team on their progress. `docs/handbook/policies.md`
+- Online follow-up consultations with the doctors are included after a completed programme. Guests update the team on their progress. `docs/handbook/policies.md`
 - The day includes a health talk (06:00 PM to 06:30 PM) and a social gathering (07:00 PM to 07:30 PM). These are routine items, not a feedback process. `docs/handbook/stay.md`
 - Corporate programmes mention morale, communication, and connection as what groups typically notice. No review method is described. `docs/handbook/programmes.md`
 - Privacy rules ban discussing a guest's condition or presence with anyone outside the care team, and ban photos or recordings without consent. A public report cannot use named stories, guest images, or dates that identify someone. `docs/handbook/privacy.md`
@@ -296,7 +296,7 @@ The first edition is meant to cover the past 3 months of clinical data. The hand
   - Herbal Medicine. Plant-based formulations for the individual, used with other therapies.
   - Manual Therapy. Hands-on work for joint mobility, stiffness, and tension.
   - Mind-Body Therapy. Guided practices for stress and emotional balance.
-- A stay also includes two complimentary recreational therapies per week. They are not named. Further recreational therapies and treatments beyond the prescription cost extra and need a doctor's approval. `docs/handbook/property.md`, `docs/handbook/policies.md`
+- A stay also includes a set number of signature therapies per week, chosen by the guest; the names, the kind and the weekly number are in the website's Therapies collection and Tariff terms (`docs/handbook/therapies.md`). Further signature therapies and treatments beyond the prescription cost extra and need a doctor's approval. `docs/handbook/property.md`, `docs/handbook/policies.md`
 - Daily routine items that are not in the therapy table. The doctor still sets treatments and diet. `docs/handbook/stay.md`, `docs/handbook/food.md`
   - 05:30 AM kriyas
   - 06:00 AM to 07:00 AM yoga
@@ -320,7 +320,7 @@ The first edition is meant to cover the past 3 months of clinical data. The hand
 **Gaps**
 
 - A grouping of therapies by programme: Not found in handbook.
-- The names of the recreational therapies: Not found in handbook.
+- The names of the signature therapies: in the website's Therapies collection, not in the handbook.
 - Which routine items (kriyas, reflexology, grass walking, meditation) are prescribed treatments: Not found in handbook. They appear only on the day plan.
 
 **Ask this person**

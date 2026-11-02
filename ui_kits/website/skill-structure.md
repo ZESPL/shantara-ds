@@ -17,7 +17,7 @@ This file sets the folder layout, routes and data sources for the **shantara.lif
 | 5 | **Keystatic is the only schema. There is no Zod** | `keystatic.config.ts` defines every field. Pages read content through the Keystatic reader, which is typed from that config. There is no `content.config.ts`, no Astro Content Collections and no Zod. Staff do not edit in Keystatic, so it runs in `local` mode and the `/keystatic` admin loads only in development. Medical categories are not modelled. |
 | 6 | **Authors and testimonials are added now** | Add `authors/en/` and `testimonials/en/`. Testimonials publish only when `consent_status` is `recorded`. |
 | 7 | **Keys and analytics IDs are environment variables** | Keys and IDs never go in `src/content/`. Keep them in Netlify environment variables and document them in `.env.example`. |
-| 8 | **Singletons are per language** | Singletons use `site/{locale}.json`, `tariff/{locale}.json` and `faq/{locale}.json`. English is the master copy. |
+| 8 | **Singletons are per language** | Singletons use `site/{locale}.json`, `tariff-terms/{locale}.json` and `faq/{locale}.json`. English is the master copy. |
 | 9 | **Doctors are `Person` nodes, and pages carry a `BreadcrumbList`** | Use `Person`, never `Physician`, which Schema.org defines as a medical business ([SCHEMA-09](search-visibility/schema.md)). Programmes use `["Service", "MedicalTherapy"]` with no `offers` ([SCHEMA-10](search-visibility/schema.md)). |
 | 10 | **Code says `program`, copy says programme** | Folder names, URLs, collection names, `related_pages` types, TypeScript types and schema `@id` values all use `program`. Only visible copy says "programme". |
 | 11 | **One page lists the doctors, and only one doctor gets a profile page** | `/en/our-doctors` lists every practising doctor, each with an anchor section. Dr. Bahja Janu (`/en/doctors/bahja-janu`) is the only doctor with a profile page. The allowlist `DOCTOR_PROFILES` in `lib/routes.ts` controls this. No other doctor gets a page. The founder and chairman, P.A. Kareem, is not a doctor. His record is in the `leadership` collection, never in `doctors`, and his profile is `/en/pa-kareem`. He never appears on Our Doctors, in a doctors row, or as a clinician, author-doctor or medical reviewer. |
@@ -41,7 +41,11 @@ src/
     doctor-answers/en/{slug}.mdoc
     testimonials/en/{id}.json
     site/en.json                  ← singleton: name, NAP, social, map, CTA labels, schema defaults, share defaults
-    tariff/en.json                ← singleton: the ONLY place rates live
+    tariffs/{code}.json           ← one entry per currency: the ONLY place money is typed
+    room-categories/{slug}.json   ← room facts only (no rates, no count)
+    supplements/{slug}.json       ← each charge defined once; amounts live in tariffs/
+    therapies/{slug}.json         ← prescribed treatments and signature therapies
+    tariff-terms/en.json          ← singleton: the words around the rates, no amounts
     faq/en.json                   ← singleton: general FAQ, grouped by category
   copy/en/                    ← fixed-page copy, written in code, typed, not in Keystatic
     home.ts
@@ -97,7 +101,7 @@ tests/                Playwright: 4–5 smoke tests only
 - **Collections** use `{collection}/{locale}/{slug}.{json|mdoc}`. The filename is the entry ID, so the same filename in `ar/` is the same entry.
 - **Singletons** use `{singleton}/{locale}.json`.
 - **File format.** An entry with a long-form Markdoc body is `.mdoc`, with its other fields in frontmatter. Everything else is `.json`. Field names match the design-system records in [`content/`](../../content/).
-- **English is the master.** A translated file holds only translatable text. Images, video, related pages, featured flags and every price come from English ([Languages](skill-content.md#languages)). This covers `tariff/{locale}.json` too: a translation may carry labels, terms and notes, never amounts.
+- **English is the master.** A translated file holds only translatable text. Images, video, related pages, featured flags and every price come from English ([Languages](skill-content.md#languages)). This covers `tariff-terms/{locale}.json` too: a translation may carry labels, terms and notes, never amounts.
 - **`related_pages` types** are `condition`, `program`, `therapy`, `room`, `doctor`, `article`, `doctor_answer` and `page`. A `page` ID is a fixed-route key from `lib/routes.ts`, such as `our-approach`.
 
 ## Route table
@@ -123,7 +127,9 @@ Every URL carries a locale prefix, and `check-routes.mjs` enforces it ([Build ch
 | `/en/doctors/bahja-janu` | `doctors/[slug].astro`, whose paths come from `DOCTOR_PROFILES` only | doctor, plus their answers, reviewed articles, programmes, press, talks, videos and social posts | `ProfilePage` + `Person` + `BreadcrumbList` |
 | `/en/journal` and `/en/journal/{n}` | `journal/[...page].astro` | articles and doctor answers, newest first | `CollectionPage` + `ItemList` + `BreadcrumbList` |
 | `/en/journal/{slug}` | `journal/[slug].astro` | article or doctor answer | `Article` + `BreadcrumbList`, with `MedicalWebPage` fields when medical |
-| `/en/tariff` | `tariff.astro` | `tariff/en.json` | `WebPage` + `BreadcrumbList`, with `Offer` only for visible rates |
+| `/en/tariff` | none: an edge-function 302 to one currency's page ([skill-ia.md](skill-ia.md#tariff)) | — | — |
+| `/en/tariff/{code}` | `tariff/[code].astro`, one path per Tariffs entry | `tariffs/{code}.json`, room categories, supplements, therapies, `tariff-terms/en.json`, Site settings | `WebPage` + `BreadcrumbList` + one `Offer` per room and occupancy, in that currency |
+| `/en/tariff/{code}/card` | `tariff/[code]/card.astro` (noindex; printed to PDF) | the same records | none |
 | `/en/faq` | `faq.astro` | `faq/en.json` | `WebPage` + `BreadcrumbList` (`FAQPage` optional) |
 | `/en/contact` | `contact.astro` | `site/en.json` | `ContactPage` |
 | `/en/book-consultation` | `book-consultation.astro` | `ConsultationForm` | `WebPage` + `BreadcrumbList` |
@@ -134,14 +140,14 @@ Every URL carries a locale prefix, and `check-routes.mjs` enforces it ([Build ch
 | `/en/feedback-and-complaints` | `feedback-and-complaints.astro` | `copy/en/policies/feedback-and-complaints.md` | `WebPage` + `BreadcrumbList` |
 | `/en/accessibility` | `accessibility.astro` | `copy/en/policies/accessibility.md` | `WebPage` + `BreadcrumbList` |
 | `/en/terms` | `terms.astro` | `copy/en/policies/terms.md` | `WebPage` + `BreadcrumbList` |
-| `/en/cancellation` | `cancellation.astro` | `tariff/en.json` → `cancellation`, `payment_terms` | `WebPage` + `BreadcrumbList` |
+| `/en/cancellation` | `cancellation.astro` | `tariff-terms/en.json` → `cancellation`, `postponement` | `WebPage` + `BreadcrumbList` |
 | `/en/privacy-policy` | `privacy-policy.astro` | `copy/en/policies/privacy-policy.md` | `WebPage` + `BreadcrumbList` |
 | `/en/ethics` | `ethics.astro` | `copy/en/policies/ethics.md` | `WebPage` + `BreadcrumbList` |
 | `/en/diversity` | `diversity.astro` | `copy/en/policies/diversity.md` | `WebPage` + `BreadcrumbList` |
 | `/en/accreditations` | `accreditations.astro` | `copy/en/policies/accreditations.md` | `WebPage` + `BreadcrumbList` |
 | `/en/sustainability` | `sustainability.astro` | `copy/en/policies/sustainability.md` | `WebPage` + `BreadcrumbList` |
 
-The cancellation policy has no copy file of its own. It renders from the tariff singleton, so the policy and the tariff page can never disagree.
+The cancellation policy has no copy file of its own. Its refund schedule and postponement render from the Tariff terms singleton, so the policy and the tariff pages can never disagree.
 
 ### Links to things with or without a page
 
@@ -182,10 +188,10 @@ import { createReader } from '@keystatic/core/reader';
 import config from '../../keystatic.config';
 
 export const reader = createReader(process.cwd(), config);
-// reader.collections.programs_en.all(), reader.singletons.tariff_en.read(), …
+// reader.collections.programs_en.all(), reader.singletons.tariffTerms.read(), …
 ```
 
-- **Collections per language.** One helper builds each collection once per locale (`programs_en`, later `programs_ar`) with the path `src/content/programs/{locale}/*`. Singletons follow the same pattern with the path `src/content/tariff/{locale}`, which Keystatic writes as `tariff/{locale}.json`.
+- **Collections per language.** One helper builds each collection once per locale (`programs_en`, later `programs_ar`) with the path `src/content/programs/{locale}/*`. Singletons follow the same pattern with the path `src/content/tariff-terms/{locale}`, which Keystatic writes as `tariff-terms/{locale}.json`.
 - **Types** come from the config (`Entry<typeof config.collections.programs_en>`). `astro check` covers them.
 - **Validation.** The reader parses each entry against its field definitions (required fields, selects, images) and throws on invalid data, so a bad file stops the build. Confirm this in the first spike: hand-edit an entry to remove a required field, and check that `astro build` fails.
 - **References.** `doctor`, `author` and `medical reviewer` use `fields.relationship`. `related_pages` stays `{type, id}`. Keystatic checks neither at build time, because nobody uses its admin, so `check-content.ts` does.
@@ -218,6 +224,6 @@ Set these in Netlify. `.env.example` lists the names with no values.
 - **Slugs.** Slugs are lowercase with hyphens. They are unique across articles and doctor answers (they share `/en/journal/`), and they are never purely numeric, which keeps them clear of pagination.
 - **Entries.** Every entry in every collection and singleton reads without error.
 - **References.** Every `related_pages`, `author`, `doctor` and `medical reviewer` ID resolves. No published entry links to a draft.
-- **Tariff.** The rules come from [skill-content.md § Tariff](skill-content.md#tariff): every row has a price for every currency, every published room has rates, `valid_to` has not passed, and translated tariff files carry no amounts.
+- **Tariff.** The rules come from [skill-content.md § Tariff](skill-content.md#tariff): every code is valid and matches its slug, exactly one entry is the default, every tariff has each room category and each published supplement once, and translated tariff terms carry no amounts.
 - **Consent.** A testimonial publishes only when `consent_status` is `recorded`.
 - **No keys in content.** Anything under `src/content/` that looks like a key or ID pattern (`G-`, `AW-`, a UUID in a `*_id`/`*_key` field) fails the check.

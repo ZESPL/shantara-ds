@@ -2,7 +2,7 @@
 
 Back to the [website skill](../SKILL.md).
 
-Version 1.13. Updated 2 November 2026. Adapted for **shantara.life** from the Zarnik Marketplace checklist "Search and AI Visibility" version 6.2.
+Version 1.14. Updated 2 November 2026. Adapted for **shantara.life** from the Zarnik Marketplace checklist "Search and AI Visibility" version 6.2.
 
 This is the checkable rule list for search engines, AI answer engines (ChatGPT, Perplexity, Claude, Gemini, Google AI Overviews), AI browsing agents and accessibility on Shantara's public website. The reasoning and the locked decisions stay in [skill-technical.md](../skill-technical.md), [skill-ia.md](../skill-ia.md), [SKILL.md §15](../SKILL.md#section-15) and [skill-stack.md](../skill-stack.md). These files turn them into rules with IDs and checks. They do not replace them.
 
@@ -60,7 +60,7 @@ Recorded on 25 September 2026 and 23 October 2026. The rules below already follo
 | [Migration from the current site (MIG)](migration.md) | MIG-01 to MIG-05 | Crawl of the old site, legacy redirects, top pages, external listings, post-launch checks |
 | [Pages (PAGE)](pages.md) | PAGE-01 to PAGE-08 | Titles and descriptions, breadcrumbs, orphan pages, internal-only facts, original copy, trust pages |
 | [Medical content (MED)](medical.md) | MED-01 to MED-05 | Doctor review, sources, claim words in metadata, testimonials, honest dates |
-| [Rates (RATE)](rates.md) | RATE-01 to RATE-05 | Rates only on the tariff page, currency labels, same default for everyone, Offer schema, no rate-sheet internals |
+| [Rates (RATE)](rates.md) | RATE-01 to RATE-05 | Rates only on the per-currency tariff pages, currency labels, the `/en/tariff` redirect, Offer schema, no rate-sheet internals |
 | [Structured data (SCHEMA)](schema.md) | SCHEMA-01 to SCHEMA-16 | JSON-LD graph, `@id` values, MedicalClinic, page nodes, doctors, programmes, articles, FAQ, VideoObject, schema map |
 | [Link previews (SOCIAL)](social.md) | SOCIAL-01 to SOCIAL-04 | Open Graph tags, share images, Twitter card |
 | [Images (IMG)](images.md) | IMG-01 to IMG-06 | Astro Image, hero loading, lazy loading, alt text, filenames, real photography |
@@ -74,6 +74,7 @@ Recorded on 25 September 2026 and 23 October 2026. The rules below already follo
 
 ## Change log
 
+- **1.14, 2 November 2026.** Tariff pages, adopted from the website's D-62 to D-73. The tariff is one page per currency at `/en/tariff/{code}`; `/en/tariff` is a redirect by cookie, then country, then the default (RATE-03 changed); RATE-01's check matches codes, symbols and `Offer` nodes outside `/en/tariff/*`, not bare figures, and skips the `llms.txt` links to each currency's Markdown twin; RATE-04 Offers are per room and occupancy. DATA-04 and skill-content.md list the renamed Site settings stay fields, the ages and `paymentAccepted`. skill-content.md, skill-ia.md and skill-structure.md describe the Tariffs, Room Categories, Supplements and Therapies collections and the Tariff terms singleton; validity dates are dropped.
 - **1.13, 2 November 2026.** Stay times, adopted from the website's D-61. DATA-04 and the Site settings list in skill-content.md: check-in and check-out times, the early check-in and late check-out window and its policy statement are stored once in the site record, and no page, copy file or policy body types them. The handbook (stay.md) points to it.
 - **1.12, 2 November 2026.** Agent access, adopted from the website's D-60. AI-12: `Content-Signal: search=yes, ai-input=yes, ai-train=yes` in the robots.txt `*` group (CRAWL-04 points to it). AI-13: every indexable page has a Markdown twin at its path plus `.md`, converted from the built `<main>`. AI-14: `<link>` and `Link` headers name each representation from the other, with `Vary: Accept`. AI-15: one Netlify Edge Function serves HTML or Markdown by `Accept` q-values, with 406 when neither is acceptable. AI-16: the same function writes the AI access log. AI-08: `llms.txt` and `llms-full.txt` are generated from the twins. skill-stack.md lists the edge function, skill-technical.md says a twin is not an "AI version", and do-not.md refuses User-Agent switching and AI-only files and tags.
 - **1.11, 30 October 2026.** The minimum stay for any programme is 7 nights, and it is mandatory (website D-55). The handbook, copy/health-claims-and-compliance.md, both SKILL.md files, the efficacy report spec and the ICP notes now say so. A shorter stay appears only on hosted-stays pages.

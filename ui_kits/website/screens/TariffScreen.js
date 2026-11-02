@@ -1,5 +1,6 @@
-/* Rates, currencies and validity dates are not stored in this design system. The production
-   site reads them from its Keystatic tariff; this sample shows the structure with "—" cells. */
+/* Rates and currencies are not stored in this design system. The production site reads them
+   from its Keystatic Tariffs collection, one page per currency at /en/tariff/{code}
+   (/en/tariff redirects to one of them); this sample shows the structure with "—" cells. */
 const TARIFF_ROOM_ORDER = ["executive-suite", "junior-suite", "premium-room", "superior-room", "standard-room"];
 
 function tariffRooms() {
@@ -22,14 +23,18 @@ const TARIFF_ROOM_PHOTOS = {
 
 /* Rooms and tariffs: HeroSplit → rate table beside the booking panel → supplements, payment
    and cancellation → room tiles. The booking panel is the page's CTA, so there is no
-   ClosingCTA (#35). The one mention of the room count on the whole site sits in the body line
-   under the table (#8). */
+   ClosingCTA (#35). The tariff never shows the room count. Currencies are a row of plain links,
+   one per Tariffs entry; each carries ?set=1 so the edge remembers the choice (skill-ia.md#tariff). */
 function TariffScreen({ onNavigate }) {
   const { t } = window.ShantaraI18n.useLocale();
-  const { Button, Breadcrumbs, HeroSplit, Section, FormSplit, SpecTable, Statement, PlainList, TileGrid, Tile, Media, Select } = window.ShantaraDesignSystem_45bbe4;
+  const { Button, Breadcrumbs, HeroSplit, Section, FormSplit, SpecTable, Statement, PlainList, TileGrid, Tile, Media, TextLink } = window.ShantaraDesignSystem_45bbe4;
   const P = window.PageSlot;
   const L = window.ShantaraLocales;
   const home = L ? L.kitHash(window.ShantaraI18n.currentLocaleCode(), "home") : "#/en/";
+  const cancellation = L ? L.kitHash(window.ShantaraI18n.currentLocaleCode(), "cancellation") : "#/en/cancellation";
+  /* Production: one link per Tariffs entry, in `order`, the current one marked aria-current.
+     The sample holds no currencies, so it shows one placeholder. */
+  const currencies = [{ code: "—", href: "#", current: true }];
   const rooms = tariffRooms();
   const tariff = tariffRecord();
   const book = (where) => () => { if (L) L.track("consultation_cta_click", { page_type: "tariffs", content_id: "tariffs", content_name: "Rooms and tariffs", cta_location: where }); onNavigate("booking"); };
@@ -57,7 +62,12 @@ function TariffScreen({ onNavigate }) {
               <Button fullWidth size="lg" onClick={book("inline")}>{t("Book a Consultation")}</Button>
             </>}
           >
-            <Select label={t("Currency")} placeholder={t("Currencies come from the production tariff")} options={[]} disabled />
+            <nav aria-label={t("Show rates in")} style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "0 var(--space-5)" }}>
+              <span style={{ font: "var(--type-body)", color: "var(--text-secondary)" }}>{t("Show rates in")}</span>
+              {currencies.map((c) => (
+                <a key={c.code} href={c.href} aria-current={c.current ? "page" : undefined} style={{ font: "var(--type-body)", minHeight: "var(--tap-min)", display: "inline-flex", alignItems: "center", color: c.current ? "var(--text-primary)" : "var(--text-link)" }}>{c.code}</a>
+              ))}
+            </nav>
             <SpecTable
               size="lg"
               showHeader
@@ -75,7 +85,7 @@ function TariffScreen({ onNavigate }) {
                 size: t(r.spec_line || r.size),
               }))}
             />
-            <p style={note}>{t("Shantara has 52 rooms across five accommodation categories.")} {(tariff.public_notes || []).map((line) => t(line)).join(" ")}</p>
+            <p style={note}>{(tariff.publicNotes || []).map((line) => t(line)).join(" ")}</p>
           </FormSplit>
         </Section>
       </P>
@@ -108,19 +118,20 @@ function TariffScreen({ onNavigate }) {
                   { key: "now", label: t("At confirmation"), mobileLabel: true },
                   { key: "balance", label: t("Balance"), mobileLabel: true },
                 ]}
-                rows={(tariff.payment_terms || []).map((p) => ({ booked: t(p.booked_before), now: p.at_confirmation, balance: t(p.balance) }))}
+                rows={(tariff.paymentTerms || []).map((p) => ({ booked: t(p.bookedBefore), now: p.atConfirmation, balance: t(p.balance) }))}
               />
             </div>
             <div style={stack}>
-              <Statement as="h2" size="h4">{t("Cancellation policy")}</Statement>
+              <Statement as="h2" size="h4">{t("Cancellation and date changes")}</Statement>
               <SpecTable
                 showHeader
                 columns={[
                   { key: "when", label: t("When you cancel") },
                   { key: "refund", label: t("Refund"), mobileLabel: true },
                 ]}
-                rows={(tariff.cancellation || []).map((c) => ({ when: t(c.cancelled_before), refund: t(c.refund) }))}
+                rows={(tariff.cancellation || []).map((c) => ({ when: t(c.cancelledBefore), refund: t(c.refund) }))}
               />
+              <div><TextLink href={cancellation}>{t("Read the full cancellation policy")}</TextLink></div>
             </div>
           </div>
         </Section>
