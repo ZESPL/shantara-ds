@@ -22,7 +22,7 @@ const TARIFF_ROOM_PHOTOS = {
 };
 
 /* Tariff: HeroFullBleed → rates (currency links, rate table, notes) → what the rate includes
-   and the therapies, then the one action → supplements and exclusions → payment →
+   with a link to Therapies and treatments, then the one action → supplements and exclusions → payment →
    cancellation and date changes → room tiles. The production H1 is "All-inclusive package
    rates · {currency}", for example "· Indian rupee (INR)", with no meta row. The action
    follows the inclusions, so there is no ClosingCTA (#35). The tariff never shows the room
@@ -39,6 +39,7 @@ function TariffScreen({ onNavigate }) {
   const L = window.ShantaraLocales;
   const home = L ? L.kitHash(window.ShantaraI18n.currentLocaleCode(), "home") : "#/en/";
   const cancellation = L ? L.kitHash(window.ShantaraI18n.currentLocaleCode(), "cancellation") : "#/en/cancellation";
+  const therapies = L ? L.kitHash(window.ShantaraI18n.currentLocaleCode(), "therapies") : "#/en/therapies";
   /* Production: one link per Tariffs entry, in `order`, the current one marked aria-current.
      The sample holds no currencies, so it shows one placeholder. */
   const currencies = [{ code: "—", href: "#", current: true }];
@@ -95,6 +96,8 @@ function TariffScreen({ onNavigate }) {
             <div style={group}>
               <Statement as="h2">{t("What the nightly rate includes")}</Statement>
               <PlainList columns={1} items={(tariff.includes || []).map((line) => t(line))} />
+              {/* The therapies have their own page; the tariff links to it and never lists them. */}
+              <div><TextLink href={therapies}>{t("See all therapies and treatments")}</TextLink></div>
             </div>
             <div><Button size="lg" onClick={book("inline")}>{t("Book Consultation")}</Button></div>
           </div>

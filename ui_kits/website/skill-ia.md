@@ -125,6 +125,8 @@ Pages:
 /en/a-day-at-shantara
 ```
 
+The therapies page is titled **Therapies and treatments**, with two sections, **Naturopathy treatments** (the Therapies collection's prescribed treatments) and **Signature therapies**, each listing its therapies from the collection with the therapy's slug as its anchor. The tariff links to it under its inclusions and does not list the therapies itself.
+
 Therapies and rooms each have **one page**. Do not create individual pages for a therapy or a room category. Links to a single therapy or room point to its section on that page (for example `/en/therapies#hijama`).
 
 ## Tariff
