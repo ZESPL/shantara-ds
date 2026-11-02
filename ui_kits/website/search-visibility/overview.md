@@ -2,7 +2,7 @@
 
 Back to the [website skill](../SKILL.md).
 
-Version 1.10. Updated 29 October 2026. Adapted for **shantara.life** from the Zarnik Marketplace checklist "Search and AI Visibility" version 6.2.
+Version 1.12. Updated 2 November 2026. Adapted for **shantara.life** from the Zarnik Marketplace checklist "Search and AI Visibility" version 6.2.
 
 This is the checkable rule list for search engines, AI answer engines (ChatGPT, Perplexity, Claude, Gemini, Google AI Overviews), AI browsing agents and accessibility on Shantara's public website. The reasoning and the locked decisions stay in [skill-technical.md](../skill-technical.md), [skill-ia.md](../skill-ia.md), [SKILL.md §15](../SKILL.md#section-15) and [skill-stack.md](../skill-stack.md). These files turn them into rules with IDs and checks. They do not replace them.
 
@@ -14,7 +14,7 @@ This is the checkable rule list for search engines, AI answer engines (ChatGPT, 
 - **P1** is done within 30 days of launch. **P2** is done once P0 and P1 are stable.
 - Owner tags say who builds or maintains the rule. **[Build]** is the Astro website code: templates, metadata and JSON-LD generators, sitemap, robots.txt, redirect file and tests. **[Infra]** is Netlify and DNS: domains, HTTPS, headers and deploy contexts. **[Content]** is Keystatic records, copy, photography and alt text. **[Clinical]** is a named Shantara doctor who reviews medical content. **[Ops]** is Search Console, Bing Webmaster Tools, Google Business Profile, OpenPanel, Google Tag and OpenSEO.
 - Every rule ends with a **Check**. A rule without a way to check it is not finished.
-- Shantara has no backend, no shop, no cart and no product feed. Rules that only exist because of those were left out. Site search runs in the browser on a static index built after the site (Pagefind), and the results page `/en/search` is noindex.
+- Shantara has no backend, no shop, no cart and no product feed. Rules that only exist because of those were left out. Site search runs in the browser on a static index built after the site (Pagefind), and the results page `/en/search` is noindex. The only code that runs per request is one edge function that chooses between build outputs (AI-15).
 - Change a rule only when a real problem on the site, or a documented change by Google, Bing or a browser, requires it. Record every change in the [change log](#change-log).
 
 ## Decisions
@@ -68,12 +68,13 @@ Recorded on 25 September 2026 and 23 October 2026. The rules below already follo
 | [Accessibility (ACC)](accessibility.md) | ACC-01 to ACC-21 | Native HTML, landmarks, keyboard, dialogs, forms, tables, contrast, zoom, motion, time limits, link text, CAPTCHA, media, axe tests |
 | [Performance (PERF)](performance.md) | PERF-01 to PERF-06 | Core Web Vitals, CDN, fonts, pop-ups, back/forward cache, prefetch |
 | [Security and hosts (SEC)](security.md) | SEC-01 to SEC-04 | HTTPS, HSTS, exposed files, Content-Security-Policy |
-| [AI answers, AI agents and local presence (AI)](ai.md) | AI-01 to AI-11 | Answer-first writing, facts, name and address consistency, Google Business Profile, AI agents, llms.txt |
+| [AI answers, AI agents and local presence (AI)](ai.md) | AI-01 to AI-16 | Answer-first writing, facts, name and address consistency, Google Business Profile, AI agents, llms.txt, Content-Signal, Markdown twins, `Accept` negotiation, AI access log |
 | [Measurement (MEAS)](measurement.md) | MEAS-01 to MEAS-07 | Search Console, Bing, launch events, analytics privacy, AI assistant referrals, alerts |
 | [Do not do this](do-not.md) | — | Outdated or wrong SEO advice to ignore |
 
 ## Change log
 
+- **1.12, 2 November 2026.** Agent access, adopted from the website's D-60. AI-12: `Content-Signal: search=yes, ai-input=yes, ai-train=yes` in the robots.txt `*` group (CRAWL-04 points to it). AI-13: every indexable page has a Markdown twin at its path plus `.md`, converted from the built `<main>`. AI-14: `<link>` and `Link` headers name each representation from the other, with `Vary: Accept`. AI-15: one Netlify Edge Function serves HTML or Markdown by `Accept` q-values, with 406 when neither is acceptable. AI-16: the same function writes the AI access log. AI-08: `llms.txt` and `llms-full.txt` are generated from the twins. skill-stack.md lists the edge function, skill-technical.md says a twin is not an "AI version", and do-not.md refuses User-Agent switching and AI-only files and tags.
 - **1.11, 30 October 2026.** The minimum stay for any programme is 7 nights, and it is mandatory (website D-55). The handbook, copy/health-claims-and-compliance.md, both SKILL.md files, the efficacy report spec and the ICP notes now say so. A shorter stay appears only on hosted-stays pages.
 - **1.10, 29 October 2026.** The site has site search: a Pagefind index of every indexable page, queried in the browser on `/en/search`, which is noindex. The 404 page's search field sends `q` there. SCHEMA-04 still declares no `SearchAction`.
 - **1.9, 23 October 2026.** Brought into line with the website's recorded decisions. URL-02, LANG-01 and every `/en/` home reference: the locale home is `/en`, with no trailing slash. CRAWL-01, CRAWL-06 and CRAWL-10: the sitemap index is `/sitemap.xml`, and the video sitemap is listed in the index only. SCHEMA-03: the organisation is `["MedicalClinic", "Resort"]`, which settles the lodging companion, and its full graph is on every page, with `priceRange` and `numberOfRooms` allowed. SCHEMA-05: only `AboutPage` and `ContactPage` carry `about` pointing to the organisation. SCHEMA-06 and the schema map: Book a Consultation also emits `BreadcrumbList`. SCHEMA-09: doctors' `Person` nodes are part of the organisation graph. SCHEMA-10: programmes are `["Service", "MedicalTherapy"]`. RATE-01 and PAGE-04 exempt the organisation's `priceRange` and `numberOfRooms`. PERF-03: preload every Diodrum weight the site uses. SCHEMA-02, SCHEMA-03, SCHEMA-09 and URL-01: P.A. Kareem is the founder (`#person-pa-kareem`, profile at `/en/pa-kareem`), not one of the doctors. Schema map: policy pages also emit `BreadcrumbList`. The cancellation policy is `/en/cancellation`.

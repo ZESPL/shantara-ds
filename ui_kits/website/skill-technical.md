@@ -314,7 +314,7 @@ Do not reintroduce legacy or parallel product strings (“Shantara Life Naturopa
 
 ### Avoid pseudo-GEO hacks
 
-Do not prioritize: special “AI versions” of pages; dozens of micro-Q&A pages; artificial content chunking; keyword-generated location pages; `llms.txt` as a major SEO project.
+Do not prioritize: special “AI versions” of pages (a page's Markdown twin, converted from the page itself and served by `Accept`, is the same page in another format: [AI-13](search-visibility/ai.md)); dozens of micro-Q&A pages; artificial content chunking; keyword-generated location pages; `llms.txt` as a major SEO project.
 
 Build a clear, crawlable, trustworthy website first.
 

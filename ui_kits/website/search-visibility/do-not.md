@@ -25,4 +25,6 @@ Some SEO tools and older guides still recommend these. Do not follow them.
 - Do not lazy-load the hero image.
 - Do not use `<div>` or `<span>` as buttons, or `role="menu"` for site navigation.
 - Do not treat `llms.txt` as an SEO or AI citation lever.
+- Do not serve Markdown, or any other content, by User-Agent. Agents that want Markdown ask with `Accept` (AI-15).
+- Do not add `ai.txt`, AI meta tags, HTML comments or visually hidden hints "for AI", human/AI toggle buttons, dedicated AI info pages, or JSON-LD added for language models. No AI provider reads them.
 - Do not set word-count targets.

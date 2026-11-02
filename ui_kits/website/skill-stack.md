@@ -37,6 +37,7 @@ This design-system Website Kit (`ui_kits/website/`) remains a composition previe
 | **CI checks** | **GitHub Actions** | Run checks/tests only; **do not deploy** |
 | **Deployment** | **Netlify Git integration** | Netlify builds and deploys directly from GitHub |
 | **Hosting/CDN** | **Netlify** | Production hosting, previews and CDN |
+| **Agent access** | **One Netlify Edge Function (`agent-access`)** | Serves a page as HTML or as its build-time Markdown twin by the `Accept` header, and logs AI access. It chooses between build outputs and renders nothing at request time (see [search-visibility/ai.md](search-visibility/ai.md), AI-13 to AI-16) |
 | **Component libraries** | **None** | No SmoothUI, Amicro, Bencho, MUI, Chakra, etc. |
 | **Advanced animation** | **None initially** | No Motion or GSAP until a concrete requirement justifies it |
 | **State management** | **None** | No Redux/Zustand |
