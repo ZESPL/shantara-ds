@@ -12,4 +12,4 @@ Part of the [property handbook](../handbook.txt).
 | Can I step out during my stay? | No. Guests may not leave the property once admitted, except for a genuine medical emergency escorted by a designated team member. This maintains the controlled therapeutic environment naturopathy treatment depends on. |
 | What if I need to leave early? | Per the cancellation policy, early departure does not entitle a refund for unused nights of the booked stay. |
 | Is alcohol or smoking allowed? | No. Shantara is a smoke-free, alcohol-free, and drug-free facility, and any violation results in immediate discharge without refund. |
-| Can family visit me during my stay? | Guests are asked to avoid visitors, to preserve an undisturbed healing environment. Where a visit is necessary, it is allowed only from 5 pm to 6 pm. A companion may stay with the guest if approved in advance as a non-participating companion. |
+| Can family visit me during my stay? | Yes. Visitors may meet guests in the lobby. Visitors are not permitted in guest rooms and must not bring outside food. A companion may stay with the guest if approved in advance as a non-participating companion. |

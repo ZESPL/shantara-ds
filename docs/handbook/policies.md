@@ -67,11 +67,11 @@ Guests are strongly advised to minimise use of mobile phones, laptops, and other
 
 ### Retreat conduct
 
-Guests are asked to follow their prescribed treatment schedule, respect quiet hours and shared spaces, converse in a low tone, and be considerate of other guests' healing journeys.
+Guests must follow their prescribed treatment schedule and respect quiet hours and shared spaces. Guests are asked to converse in a low tone and be considerate of other guests' healing journeys.
 
 ### Visitor policy
 
-Guests are asked to avoid visitors during their stay, to preserve an undisturbed healing environment for all guests. Where a visit is necessary, visitors are allowed only from 17:00 to 18:00.
+Visitors are not permitted in guest rooms. Visitors may meet guests in the lobby. Visitors must not bring outside food for guests or anyone else. There are no set visiting hours.
 
 ### Pet policy
 

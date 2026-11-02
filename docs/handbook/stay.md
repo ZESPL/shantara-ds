@@ -49,7 +49,7 @@ Every guest follows this daily routine. The doctor prescribes which treatments f
 ### Airport transfer
 
 - Complimentary shared transfer from Calicut International Airport (about 25 km, roughly 45 minutes). There is no railway station transfer.
-- Guests should share their flight details at least 48 hours in advance.
+- Guests must share their flight details at least 48 hours in advance.
 
 ### Attire & laundry
 
