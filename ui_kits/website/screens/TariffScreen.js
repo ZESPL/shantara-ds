@@ -21,13 +21,20 @@ const TARIFF_ROOM_PHOTOS = {
   "standard-room": "room-twin",
 };
 
-/* Rooms and tariffs: HeroSplit → rate table beside the booking panel → supplements, payment
-   and cancellation → room tiles. The booking panel is the page's CTA, so there is no
-   ClosingCTA (#35). The tariff never shows the room count. Currencies are a row of plain links,
-   one per Tariffs entry; each carries ?set=1 so the edge remembers the choice (skill-ia.md#tariff). */
+/* Tariff: HeroFullBleed → rates (currency links, rate table, notes) → what the rate includes
+   and the therapies, then the one action → supplements and exclusions → payment →
+   cancellation and date changes → room tiles. The production H1 is "All-inclusive package
+   rates · {currency}", for example "· Indian rupee (INR)", with no meta row. The action
+   follows the inclusions, so there is no ClosingCTA (#35). The tariff never shows the room
+   count. Currencies are a row of plain links, one per Tariffs entry; each carries ?set=1 so
+   the edge remembers the choice (skill-ia.md#tariff).
+   Everything stacks in one reading column, one group per row: no aside, no FormSplit (it
+   holds the consultation form only), no list in columns, every table in one type size
+   (skill-sections.md, "One piece of information per row"). A room's size and features sit on
+   its tile, not in the rate table. */
 function TariffScreen({ onNavigate }) {
   const { t } = window.ShantaraI18n.useLocale();
-  const { Button, Breadcrumbs, HeroSplit, Section, FormSplit, SpecTable, Statement, PlainList, TileGrid, Tile, Media, TextLink } = window.ShantaraDesignSystem_45bbe4;
+  const { Button, Breadcrumbs, HeroFullBleed, Section, SpecTable, Statement, PlainList, TileGrid, Tile, Media, TextLink } = window.ShantaraDesignSystem_45bbe4;
   const P = window.PageSlot;
   const L = window.ShantaraLocales;
   const home = L ? L.kitHash(window.ShantaraI18n.currentLocaleCode(), "home") : "#/en/";
@@ -37,80 +44,91 @@ function TariffScreen({ onNavigate }) {
   const currencies = [{ code: "—", href: "#", current: true }];
   const rooms = tariffRooms();
   const tariff = tariffRecord();
-  const book = (where) => () => { if (L) L.track("consultation_cta_click", { page_type: "tariffs", content_id: "tariffs", content_name: "Rooms and tariffs", cta_location: where }); onNavigate("booking"); };
-  const note = { margin: 0, font: "var(--type-body-sm)", color: "var(--text-secondary)", maxWidth: "var(--measure-body)" };
-  const stack = { display: "flex", flexDirection: "column", gap: "var(--stack-md)" };
+  const book = (where) => () => { if (L) L.track("consultation_cta_click", { page_type: "tariff", content_id: "tariff", content_name: "All-inclusive package rates", cta_location: where }); onNavigate("booking"); };
+  const note = { margin: 0, font: "var(--type-body)", color: "var(--text-secondary)", maxWidth: "var(--measure-body)" };
+  const column = { maxWidth: "var(--layout-narrow)", display: "flex", flexDirection: "column", gap: "var(--section-y-sm)" };
+  const group = { display: "flex", flexDirection: "column", gap: "var(--stack-lg)" };
   return (
     <main>
-      <P id="tariffs/hero">
-        <HeroSplit
+      <P id="tariff/hero">
+        <HeroFullBleed
+          height="tall"
           src={window.photoSrc("room-bedroom-desk-balcony-view")}
           alt={t("A bedroom with a desk and a balcony view")}
-          breadcrumbs={<Breadcrumbs items={[{ label: t("Home"), href: home }, t("Rooms and tariffs")]} />}
-          title={t("Rooms and tariffs")}
-          meta={[t("Five room categories"), t("Rates per night")]}
-          sub={t("Quiet rooms for resting between treatments. Reservations are confirmed after a preliminary consultation.")}
+          breadcrumbs={<Breadcrumbs items={[{ label: t("Home"), href: home }, t("Tariff")]} />}
+          title={t("All-inclusive package rates") + " · —"}
+          sub={t("One nightly rate covers your room, meals, daily consultations and the treatments your doctor prescribes.")}
         />
       </P>
 
-      <P id="tariffs/rates">
+      <P id="tariff/rates">
         <Section>
-          <FormSplit
-            aside={<>
-              <Statement as="h2" size="h4">{t("What the nightly rate includes")}</Statement>
-              <PlainList columns={1} rules items={(tariff.includes || []).map((line) => t(line))} />
-              <Button fullWidth size="lg" onClick={book("inline")}>{t("Book a Consultation")}</Button>
-            </>}
-          >
-            <nav aria-label={t("Show rates in")} style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "0 var(--space-5)" }}>
-              <span style={{ font: "var(--type-body)", color: "var(--text-secondary)" }}>{t("Show rates in")}</span>
-              {currencies.map((c) => (
-                <a key={c.code} href={c.href} aria-current={c.current ? "page" : undefined} style={{ font: "var(--type-body)", minHeight: "var(--tap-min)", display: "inline-flex", alignItems: "center", color: c.current ? "var(--text-primary)" : "var(--text-link)" }}>{c.code}</a>
-              ))}
-            </nav>
-            <SpecTable
-              size="lg"
-              showHeader
-              caption={t("Rooms and tariffs")}
-              columns={[
-                { key: "name", label: t("Room") },
-                { key: "single", label: t("Single / night"), accent: true, mobileLabel: true },
-                { key: "double", label: t("Double / night"), mobileLabel: true },
-                { key: "size", label: t("Size"), mobileLabel: true },
-              ]}
-              rows={rooms.map((r) => ({
-                name: t(r.name),
-                single: "—",
-                double: "—",
-                size: t(r.spec_line || r.size),
-              }))}
-            />
-            <p style={note}>{(tariff.publicNotes || []).map((line) => t(line)).join(" ")}</p>
-          </FormSplit>
+          <div style={column}>
+            <div style={group}>
+              <nav aria-label={t("Show rates in")} style={{ display: "flex", flexDirection: "column", gap: "var(--space-3)" }}>
+                <span style={{ font: "var(--type-body)", color: "var(--text-secondary)" }}>{t("Show rates in")}</span>
+                <span style={{ display: "flex", flexWrap: "wrap", gap: "0 var(--space-5)" }}>
+                  {currencies.map((c) => (
+                    <a key={c.code} href={c.href} aria-current={c.current ? "page" : undefined} style={{ font: "var(--type-body)", minHeight: "var(--tap-min)", display: "inline-flex", alignItems: "center", color: c.current ? "var(--text-primary)" : "var(--text-link)" }}>{c.code}</a>
+                  ))}
+                </span>
+              </nav>
+              <SpecTable
+                showHeader
+                caption={t("Nightly rates, per room, including all taxes")}
+                columns={[
+                  { key: "name", label: t("Room") },
+                  { key: "single", label: t("Single"), accent: true, mobileLabel: true },
+                  { key: "double", label: t("Double"), accent: true, mobileLabel: true },
+                ]}
+                rows={rooms.map((r) => ({ name: t(r.name), single: "—", double: "—" }))}
+              />
+              {(tariff.publicNotes || []).map((line, i) => <p key={i} style={note}>{t(line)}</p>)}
+            </div>
+          </div>
         </Section>
       </P>
 
-      <P id="tariffs/terms">
+      <P id="tariff/includes">
         <Section space="bottom">
-          <div style={{ ...stack, gap: "var(--section-y-sm)" }}>
-            <div style={stack}>
-              <Statement as="h2" size="h4">{t("Supplements")}</Statement>
+          <div style={column}>
+            <div style={group}>
+              <Statement as="h2">{t("What the nightly rate includes")}</Statement>
+              <PlainList columns={1} items={(tariff.includes || []).map((line) => t(line))} />
+            </div>
+            <div><Button size="lg" onClick={book("inline")}>{t("Book Consultation")}</Button></div>
+          </div>
+        </Section>
+      </P>
+
+      <P id="tariff/charges">
+        <Section space="bottom">
+          <div style={column}>
+            <div style={group}>
+              <Statement as="h2">{t("Additional charges")}</Statement>
               <SpecTable
                 showHeader
                 columns={[
-                  { key: "label", label: t("Supplement") },
+                  { key: "label", label: t("Charge") },
                   { key: "basis", label: t("Charged"), mobileLabel: true },
-                  { key: "amount", label: t("Rate"), mobileLabel: true },
+                  { key: "amount", label: t("Amount"), accent: true, mobileLabel: true },
                 ]}
                 rows={(tariff.supplements || []).map((s) => ({ label: t(s.label), basis: t(s.basis), amount: "—" }))}
               />
             </div>
-            <div style={stack}>
-              <Statement as="h2" size="h4">{t("Not included in the rate")}</Statement>
-              <PlainList columns={1} rules items={(tariff.excludes || []).map((line) => t(line))} />
+            <div style={group}>
+              <Statement as="h3" size="title">{t("Not included in the rate")}</Statement>
+              <PlainList columns={1} items={(tariff.excludes || []).map((line) => t(line))} />
             </div>
-            <div style={stack}>
-              <Statement as="h2" size="h4">{t("Payment terms")}</Statement>
+          </div>
+        </Section>
+      </P>
+
+      <P id="tariff/payment">
+        <Section space="bottom">
+          <div style={column}>
+            <div style={group}>
+              <Statement as="h2">{t("Payment")}</Statement>
               <SpecTable
                 showHeader
                 columns={[
@@ -121,8 +139,15 @@ function TariffScreen({ onNavigate }) {
                 rows={(tariff.paymentTerms || []).map((p) => ({ booked: t(p.bookedBefore), now: p.atConfirmation, balance: t(p.balance) }))}
               />
             </div>
-            <div style={stack}>
-              <Statement as="h2" size="h4">{t("Cancellation and date changes")}</Statement>
+          </div>
+        </Section>
+      </P>
+
+      <P id="tariff/cancellation">
+        <Section space="bottom">
+          <div style={column}>
+            <div style={group}>
+              <Statement as="h2">{t("Cancellation and date changes")}</Statement>
               <SpecTable
                 showHeader
                 columns={[
@@ -137,11 +162,11 @@ function TariffScreen({ onNavigate }) {
         </Section>
       </P>
 
-      <P id="tariffs/rooms">
+      <P id="tariff/rooms">
         <Section space="bottom">
           {/* Five categories: layout "2" puts the first across the full width and the other
               four in two even rows, so no row is left half empty. */}
-          <TileGrid layout="2">
+          <TileGrid layout="2" title={t("The rooms")}>
             {rooms.map((r, i) => (
               <Tile key={r.id} media={<Media src={window.photoSrc(TARIFF_ROOM_PHOTOS[r.id] || "room-twin")} alt="" ratio={i === 0 && rooms.length % 2 === 1 ? "21:9" : "4:3"} mobileRatio="4:3" />} title={t(r.name)} meta={t(r.spec_line)} />
             ))}
