@@ -21,6 +21,7 @@ Part of the [property handbook](../handbook.txt).
 
 - Check-in: 14:00 hrs. Check-out: 12:00 hrs. Guests are asked to have lunch before departure.
 - Early check-in or late check-out of up to 4 hours is complimentary, subject to room availability. Beyond 4 hours, an extra charge applies.
+- On the website these four facts (both times, the window and the policy statement) are set once, in Keystatic Site settings, and every page reads them from there ([DATA-04](../../ui_kits/website/search-visibility/data.md)). When they change, change this list and Site settings together.
 
 ### Daily routine
 

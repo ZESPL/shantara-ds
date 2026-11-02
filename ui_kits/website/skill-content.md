@@ -106,7 +106,7 @@ src/content/conditions/ar/diabetes.json   ← only the text fields
 
 ## Site settings
 
-Centralize, one file per language (`site/{locale}.json`): business name; contact information; physical address; social links; Google Maps/location data; primary CTA labels; consultation form settings; global SEO defaults; Organization/LocalBusiness schema data. Share images have no settings here: the default image and templates live in code ([skill-og-images.md](skill-og-images.md)).
+Centralize, one file per language (`site/{locale}.json`): business name; contact information; physical address; social links; Google Maps/location data; check-in and check-out times, the early check-in and late check-out window, and that window's policy statement (never typed in a page, copy file or policy body; [DATA-04](search-visibility/data.md)); primary CTA labels; consultation form settings; global SEO defaults; Organization/LocalBusiness schema data. Share images have no settings here: the default image and templates live in code ([skill-og-images.md](skill-og-images.md)).
 
 Analytics IDs and service keys are not content. They live in Netlify environment variables ([skill-structure.md](skill-structure.md#environment-variables)).
 
