@@ -2,7 +2,7 @@ import React from "react";
 import { Media } from "../editorial/Media.jsx";
 
 /* The consultation form on Merino with square fields, beside a Stone panel that says what
-   happens next. The panel opens with a photograph of the place — `src`/`alt` (or `media`) —
+   happens next. The panel opens with a photograph of the place (`src`/`alt` or `media`)
    running edge to edge across its top at 4:3; reception.jpg by default in the demos. Not a
    doctor thumbnail: the panel copy says a member of the team calls first.
    The left column is a real <form>: Enter submits, `required` fields are checked by the
@@ -11,7 +11,7 @@ import { Media } from "../editorial/Media.jsx";
    Phones: form first, then the panel (photograph on top). ≥1000px: form 7 columns, panel 5,
    sticky while the form scrolls in windows at least 800px tall.
    `compact`: the same form without the panel, capped at 44rem; name and phone fields sit
-   side by side from 760px — for Hosted visits or the end of a condition page. */
+   side by side from 760px, for Hosted visits or the end of a condition page. */
 const CSS = `
 .sh-fsplit{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--stack-lg);align-items:start}
 .sh-fsplit-form{min-width:0;display:flex;flex-direction:column;gap:var(--space-6);margin:0}

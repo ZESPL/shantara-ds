@@ -1,4 +1,4 @@
-/* Website chrome — header, phone dropdown, menu sheet, footer, and two helpers the screens
+/* Website chrome: header, phone dropdown, menu sheet, footer, and two helpers the screens
    share (PageSlot, siteContactItems). Composition sample, not the production site. */
 
 /* Five items, no more (owner decision #6). Contact lives in the phone dropdown and the footer. */
@@ -84,7 +84,7 @@ function PageSlot({ id, children }) {
 }
 
 /* The header is a size container, so its breakpoints follow the width it actually lays out
-   at — with html zoom (text size lg/xl) a 390px phone lays out at 347 / 312px, which media
+   at. With html zoom (text size lg/xl) a 390px phone lays out at 347 / 312px, which media
    queries would not see. The header overlays every page (negative bottom margin); heroes
    pad their tops for it. */
 const CHROME_CSS = `
@@ -144,7 +144,7 @@ const CHROME_CSS = `
 .sh-menu-contact a{display:inline-flex;align-items:center;gap:var(--space-3);min-height:var(--tap-min);color:inherit;text-decoration:none}
 .sh-menu-lang{display:flex;align-items:center;justify-content:space-between;gap:var(--space-5);padding-top:var(--space-5);border-top:var(--border-width) solid var(--rule-color);font:var(--type-body-sm);color:var(--text-secondary)}
 
-/* FOOTER — Pine Tree ground, a rosette strip across the top, cream wordmark + three link
+/* FOOTER: Pine Tree ground, a rosette strip across the top, cream wordmark + three link
    columns, bottom bar with the text-size control. A size container like the header. */
 .sh-foot{position:relative;container:sh-foot / inline-size;overflow:hidden;--foot-band:clamp(132px, 20vw, 264px)}
 .sh-foot-band{position:absolute;inset:0 0 auto 0;height:var(--foot-band);border-bottom:var(--border-width) solid var(--pattern-rule-dark);pointer-events:none}

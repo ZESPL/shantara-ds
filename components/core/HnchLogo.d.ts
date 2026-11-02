@@ -2,7 +2,7 @@ import * as React from "react";
 
 /**
  * The Hygiene Nature Cure mark. One single-colour artwork in placement tones.
- * Not the Shantara lockup — use Logo for Shantara.
+ * Not the Shantara lockup. Use Logo for Shantara.
  */
 export interface HnchLogoProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   /** `full` = wordmark plus Nature Cure. `hygiene` = that lockup without Nature Cure. `icon` = the mark that stands in for the letter I. */

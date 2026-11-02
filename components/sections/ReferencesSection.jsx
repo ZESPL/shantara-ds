@@ -4,7 +4,7 @@ import { ReviewedBy } from "../editorial/ReviewedBy.jsx";
 /* The sources under a clinical article or condition page, and the medical-review line.
    Numbered so the text can cite [1] with a link to #ref-1; each reference names the work,
    its publisher or journal and year, and links to the source itself. Every reference must
-   support something the page says — never decorative. `reviewer` takes ReviewedBy props
+   support something the page says, never decorative. `reviewer` takes ReviewedBy props
    and follows the doctor naming rules in docs/handbook/glossary.md.
    One column at every size, capped at the body measure; long URLs wrap. */
 const CSS = `

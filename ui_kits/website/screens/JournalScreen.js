@@ -1,4 +1,4 @@
-/* Journal index — HeroStatement → category Tabs → a 3-up Tile grid →
+/* Journal index: HeroStatement → category Tabs → a 3-up Tile grid →
    Pagination → ClosingCTA (compact; the page has no other CTA).
    Recipe: components/editorial/Pagination.prompt.md. Tiles open the Article view. */
 

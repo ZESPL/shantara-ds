@@ -1,4 +1,4 @@
-Terms a guest agrees to — payment, cancellation, companions — as headed clauses that open one at a time.
+Terms a guest agrees to (payment, cancellation, companions) as headed clauses that open one at a time.
 
 ```jsx
 <Section>

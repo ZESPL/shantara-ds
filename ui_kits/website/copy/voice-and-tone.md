@@ -10,7 +10,7 @@ Warmth comes second.
 
 Brand expression comes third.
 
-Shantara is a naturopathy retreat — a doctor-led residential clinic guests stay at.
+Shantara is a naturopathy retreat: a doctor-led residential clinic guests stay at.
 
 Internally, treat it as a **clinical hotel**: a good hotel that happens to have a clinic, not a clinic that borrowed a restaurant, and not a hospital. **Clinical hotel** is the working model. It is not a public product name, H1, title fragment, or schema type. Do not call Shantara a hospital. Do not call it a hotel without the clinical frame.
 
@@ -237,7 +237,7 @@ Use:
 
 ## Do not personify systems, protocols or processes
 
-Do not extend this ban to “the body.” “Reconnect with your body's ability to heal” is a bad *claim*, not a personification error — see [words to avoid](words-to-avoid.md).
+Do not extend this ban to “the body.” “Reconnect with your body's ability to heal” is a bad *claim*, not a personification error. See [words to avoid](words-to-avoid.md).
 
 Bad:
 
@@ -291,7 +291,7 @@ Use a single clear heading instead.
 
 Colons may still be used where grammatically functional in tables, form labels, structured data or other utility interfaces.
 
-**No eyebrows.** Never place a small uppercase tracked label above a section or a title (no overlines) anywhere in the design system or on the website — not above a hero, a card, a specimen, or a portal page. Category, duration or other meta information goes in a meta line **below** the title, in normal case, caption type.
+**No eyebrows.** Never place a small uppercase tracked label above a section or a title (no overlines) anywhere in the design system or on the website: not above a hero, a card, a specimen, or a portal page. Category, duration or other meta information goes in a meta line **below** the title, in normal case, caption type.
 
 ---
 
@@ -325,8 +325,6 @@ It should never feel like:
 * A spiritual wellness advertisement
 
 The visitor should understand the retreat without noticing the content system behind it.
-
-That is the standard.
 
 ---
 

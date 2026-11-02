@@ -4,8 +4,8 @@ import React from "react";
    horizontal (default): muted 01–04 numerals in a FIXED-width column, so every title and
    description starts on the same line whatever the number's width; the number sits on
    the title's baseline. One column on phones, two from 760px, `columns` from 1000px
-   (at 4 columns the number moves above the title — still one shared left edge).
-   vertical: a timeline — numbers in a column of hairline circles joined by a 1px line,
+   (at 4 columns the number moves above the title, still on one shared left edge).
+   vertical: a timeline, with numbers in a column of hairline circles joined by a 1px line,
    content to the right. Same on every width; the circles shrink on phones. */
 const CSS = `
 .sh-steps{--_nw:2.75rem;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:var(--space-8) var(--grid-gap)}

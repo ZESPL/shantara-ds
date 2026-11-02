@@ -5,7 +5,7 @@ export interface MetaItem {
   /** Lucide name via core Icon, e.g. "clock", "calendar-days", "tag", "stethoscope". */
   icon?: string;
   href?: string;
-  /** ISO date — wraps the label in <time dateTime>. */
+  /** ISO date. Wraps the label in <time dateTime>. */
   dateTime?: string;
 }
 

@@ -2,7 +2,7 @@ import * as React from "react";
 import type { MetaItem } from "../editorial/MetaRow";
 
 export interface HeroSplitProps extends React.HTMLAttributes<HTMLElement> {
-  /** A ready <Media/> node, or pass `src` + `alt` (loaded with priority — it is the LCP image). */
+  /** A ready <Media/> node, or pass `src` + `alt` (loaded with priority; it is the LCP image). */
   media?: React.ReactNode;
   src?: string;
   alt?: string;
@@ -10,7 +10,7 @@ export interface HeroSplitProps extends React.HTMLAttributes<HTMLElement> {
   position?: string;
   mobilePosition?: string;
   /** The page title (h1). No label above it. */
-  /** A short muted loop in place of the photograph — editorial/Video props (R2 URLs only). */
+  /** A short muted loop in place of the photograph, with editorial/Video props (R2 URLs only). */
   video?: import("../editorial/Video").VideoProps;
   title: React.ReactNode;
   /** Caption facts directly under the title, e.g. ["Metabolic", "7–21 nights"] or icon items. */
@@ -21,7 +21,7 @@ export interface HeroSplitProps extends React.HTMLAttributes<HTMLElement> {
   actions?: React.ReactNode;
   /** A <Breadcrumbs/> node, passed to the Statement: just above the title. */
   breadcrumbs?: React.ReactNode;
-  /** Optional short facts under the actions on a hairline — a PlainList of 2–4 items. */
+  /** Optional short facts under the actions on a hairline: a PlainList of 2–4 items. */
   facts?: React.ReactNode;
   /** Side the photograph sits on from 1000px. Default "end". */
   mediaSide?: "start" | "end";

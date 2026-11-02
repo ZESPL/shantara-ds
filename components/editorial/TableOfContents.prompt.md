@@ -26,7 +26,7 @@
 
 **Desktop (≥1000px).** A sticky list on a hairline rail in the side column (start side, 3 of 12 columns, or end side after the body). The section in view is marked (brand bar, numeral or colour, by variant); `track` follows the scroll with IntersectionObserver, or pass `activeId`.
 
-**Smooth scroll — implement it on the page.** The component renders plain `#id` links and does not scroll by itself. The page must scroll smoothly to the heading, through `onNavigate`:
+**Smooth scroll: implement it on the page.** The component renders plain `#id` links and does not scroll by itself. The page must scroll smoothly to the heading, through `onNavigate`:
 
 ```jsx
 <TableOfContents items={toc} onNavigate={(id, e) => {

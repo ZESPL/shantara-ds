@@ -2,7 +2,7 @@ import React from "react";
 
 /* Three variants, one shape. Colour follows the ground (tokens/layout.css):
    on Merino/Stone the primary is Himalaya olive; inside a himalaya, pine or photo
-   ground it becomes Gold with Pine ink — the brand deck's closing-slide button.
+   ground it becomes Gold with Pine ink, the brand deck's closing-slide button.
    `accent`, `ghost` and `inverse` survive as aliases for the app kit only. */
 const CSS = `
 .sh-btn{--_bg:var(--btn-primary-bg);--_fg:var(--btn-primary-fg);--_bd:transparent;display:inline-flex;align-items:center;justify-content:center;gap:var(--space-3);max-width:100%;font-family:var(--font-body);font-weight:var(--weight-medium);letter-spacing:var(--tracking-wide);line-height:1.2;text-align:center;text-decoration:none;white-space:nowrap;border:var(--border-width) solid var(--_bd);border-radius:var(--radius-control);background:var(--_bg);color:var(--_fg);cursor:pointer;transition:var(--transition-control)}
@@ -18,7 +18,7 @@ const CSS = `
 @media (pointer: coarse){.sh-btn[data-size="sm"]{min-height:var(--tap-min)}}
 @media (max-width:519.98px){.sh-btn{white-space:normal;padding-block:var(--space-3)}.sh-btn[data-size="lg"]{padding-inline:var(--space-7)}}
 .sh-btn[data-variant="secondary"]{--_bg:transparent;--_fg:var(--text-primary);--_bd:var(--border-control)}
-/* link — text with a hairline and an arrow; zero inline padding so it sits on the grid. */
+/* link: text with a hairline and an arrow; zero inline padding so it sits on the grid. */
 .sh-btn[data-variant="link"],.sh-btn[data-variant="ghost"]{--_bg:transparent;--_fg:var(--text-link);padding-inline:0!important;min-height:var(--tap-min);border:0;gap:var(--space-3);letter-spacing:var(--tracking-wide)}
 .sh-btn[data-variant="link"]>span,.sh-btn[data-variant="ghost"]>span{background:linear-gradient(currentColor,currentColor) 0 100% / 100% 1px no-repeat;padding-bottom:3px}
 .sh-btn[data-variant="link"] [data-icon],.sh-btn[data-variant="ghost"] [data-icon]{transition:transform var(--duration-fast) var(--ease-out)}

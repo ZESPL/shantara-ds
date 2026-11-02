@@ -15,4 +15,4 @@ A statement, then two to four doctors in the same 4:5 portrait framing (deck sli
 
 **Responsive.** Portraits auto-fill at a fixed width (about 150px on a 360px phone, growing to 280px), so two doctors sit side by side on a phone and stay portrait-sized on a desktop instead of stretching; three or four wrap onto a second row only when the screen is too narrow. The row caps at four portraits wide. The statement sits above at every size.
 
-**Variation — `size="sm"`.** Five to eight people — all the doctors, the board — at 120→180px portraits, up to six across, the name a step smaller. Name and role only, as always.
+**Variation: `size="sm"`.** Five to eight people (all the doctors, the board) at 120→180px portraits, up to six across, the name a step smaller. Name and role only, as always.

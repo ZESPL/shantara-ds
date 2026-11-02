@@ -17,6 +17,6 @@ How to reach Shantara: call, WhatsApp, email, the address, a photograph of the a
 
 **Use** on Contact, Hosted visits and confirmation pages.
 
-**Content.** Numbers, email and address from `content/site.json`; distances and the transfer from handbook §12 (complimentary shared transfer; share flight or train details 48 hours ahead). No embedded map — it is heavy, tracks visitors and is hard to use with a keyboard; link out instead.
+**Content.** Numbers, email and address from `content/site.json`; distances and the transfer from handbook §12 (complimentary shared transfer; share flight or train details 48 hours ahead). No embedded map. It is heavy, tracks visitors and is hard to use with a keyboard; link out instead.
 
 **Responsive.** Phones: ways to get in touch (44px rows) → address → directions → photograph. From 760px the contact rows sit two across. From 1000px: details 7 columns, photograph 5 (4:5).

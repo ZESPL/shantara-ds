@@ -63,12 +63,12 @@ Do not reposition Shantara as a spa, weekend getaway, beauty retreat, generic re
 
 | Working area | Status | Record |
 | --- | --- | --- |
-| Market Research | {Validated} 20 Sep 2026 | Phase B contaminants + Phase C hydrate `weekend rejuvenation`, `7 day retreat india`. Expansion of `7 day retreat india` flooded meditation/spiritual/yoga retreat ideas — discarded as contamination. |
+| Market Research | {Validated} 20 Sep 2026 | Phase B contaminants + Phase C hydrate `weekend rejuvenation`, `7 day retreat india`. Expansion of `7 day retreat india` flooded meditation/spiritual/yoga retreat ideas, discarded as contamination. |
 | Priority Countries | {Validated} 20 Sep 2026 | Same acquisition markets; short reset stays secondary. Do not lead India spend with short-reset phrases. |
-| Search Demand | {Validated} 20 Sep 2026 | **Phase B contaminants:** India `detox retreat india` 170; `wellness retreat india` 880 — not Shantara demand. **Phase C:** `weekend rejuvenation` — / failed mid-expansion (DataForSEO daily cost limit); `7 day retreat india` ideas = meditation/spiritual contamination (e.g. yoga retreat rishikesh 1900) — not Short Health Reset demand. |
+| Search Demand | {Validated} 20 Sep 2026 | **Phase B contaminants:** India `detox retreat india` 170; `wellness retreat india` 880, not Shantara demand. **Phase C:** `weekend rejuvenation` — / failed mid-expansion (DataForSEO daily cost limit); `7 day retreat india` ideas = meditation/spiritual contamination (e.g. yoga retreat rishikesh 1900), not Short Health Reset demand. |
 | Validated Customer Language | {Validated} 20 Sep 2026 | Do not lead with weekend wellness / rejuvenation / 7-day meditation retreat as the brand acquisition phrase. |
 | Keyword Clusters | {Validated} 20 Sep 2026 | Detox/wellness/meditation-retreat clusters are contaminants for this secondary path. |
-| Competitor / SERP Findings | {Validated} 20 Sep 2026 | Zero-volume dedicated short-reset SERP skipped. Expansion SERPs would be meditation/spa — not pulled. |
+| Competitor / SERP Findings | {Validated} 20 Sep 2026 | Zero-volume dedicated short-reset SERP skipped. Expansion SERPs would be meditation/spa, so they were not pulled. |
 | Recommended Landing Pages | {Validated} 20 Sep 2026 | Programme page when real; Experience hub. No wellness/detox doorway. |
 | Paid Campaign Opportunities | {Validated} 20 Sep 2026 | Default negatives: weekend wellness, rejuvenation, detox spa, meditation/yoga retreat as primary acquisition (see operational paid exclusions). |
 | Content Opportunities | {Validated} 20 Sep 2026 | Honest short-stay scope only; do not outrank core ICP education. |

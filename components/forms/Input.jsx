@@ -1,7 +1,7 @@
 import React from "react";
 import { ENGLISH_HINT, acceptsEnglish, keepEnglish, rejectForeignInsert, stripForeignInput } from "./englishText.mjs";
 
-/* Shared field chrome — identical in Input, Textarea and Select (one <style id="sh-field-css">). */
+/* Shared field chrome: identical in Input, Textarea and Select (one <style id="sh-field-css">). */
 const FIELD_CSS = `
 .sh-field{display:flex;flex-direction:column;gap:var(--space-3);min-width:0;font-family:var(--font-body)}
 .sh-field-label{display:flex;align-items:baseline;gap:var(--space-2);font:var(--weight-medium) var(--text-sm)/1.3 var(--font-body);color:var(--text-primary)}
@@ -52,7 +52,7 @@ function FieldMessage({ id, error, hint, live }) {
   return null;
 }
 
-/* Input — 52px, 2px radius, 17px text (never zooms on iOS), calm 3px brand-soft focus halo. */
+/* Input: 52px, 2px radius, 17px text (never zooms on iOS), calm 3px brand-soft focus halo. */
 const CSS = `
 .sh-input-wrap{display:flex;align-items:center;gap:var(--space-3);height:var(--control-lg);padding:0 var(--space-5)}
 .sh-input-wrap[data-size="sm"]{height:var(--control-md)}

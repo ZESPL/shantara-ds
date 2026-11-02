@@ -27,4 +27,4 @@ Second substitution note: Lucide has deprecated its brand icons and has no X log
 
 **Motion.** Icons inherit `currentColor`, so they ride the parent control's 160ms colour shift. They do not bounce, spin or swap on their own.
 
-**RTL.** Directional slugs (`arrow-*`, `chevron-left` / `chevron-right`) flip with `scaleX(-1)` under `dir="rtl"`. Symmetric marks — leaf, plus, heart, search — do not.
+**RTL.** Directional slugs (`arrow-*`, `chevron-left` / `chevron-right`) flip with `scaleX(-1)` under `dir="rtl"`. Symmetric marks (leaf, plus, heart, search) do not.

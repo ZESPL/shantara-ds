@@ -45,14 +45,14 @@ function Demo(){
 <Tag selected={picked.includes("Hydrotherapy")} onClick={()=>toggle("Hydrotherapy")}>{t("Hydrotherapy")}</Tag>
 <Tag selected={picked.includes("Mud therapy")} onClick={()=>toggle("Mud therapy")}>{t("Mud therapy")}</Tag>
 </div>
-<p className="shantara-note" style={{marginBottom:"var(--space-5)"}}>Labels and chips never share a look. Badge and static Tag are flat 20–24px tints with 2px corners, no border and no hover — they cannot be mistaken for buttons. Only a Tag with onClick becomes a chip: pill outline, 36px, hover, press, a tick when selected.</p>
+<p className="shantara-note" style={{marginBottom:"var(--space-5)"}}>Labels and chips never share a look. Badge and static Tag are flat 20–24px tints with 2px corners, no border and no hover, so they cannot be mistaken for buttons. Only a Tag with onClick becomes a chip: pill outline, 36px, hover, press, a tick when selected.</p>
 <div className="grid">
 <Card interactive onClick={()=>{}} padding="sm"><h4 style={{font:'var(--type-h4)',fontSize:'var(--text-lg)'}}>{t("Mud therapy")}</h4><p style={{margin:"4px 0 0",font:"var(--type-caption)",color:"var(--text-secondary)"}}>{t("Prescribed therapy")}</p><p style={{margin:0,color:'var(--text-secondary)',fontSize:'var(--text-xs)'}}>{t("90 min · prescribed")}</p></Card>
 <Card tone="raised" padding="sm"><Logo mark="icon" tone="olive" height={28}/><p style={{margin:'var(--space-3) 0 0',fontSize:'var(--text-xs)',color:'var(--text-secondary)'}}>{t("Pearl Bush panel, no shadow")}</p></Card>
 <Card interactive onClick={()=>{}} media="../../assets/photos/treatment.jpg" mediaAlt={t("Therapy wing")} padding="sm"><h4 style={{font:'var(--type-h4)',fontSize:'var(--text-lg)'}}>{t("Therapy wing")}</h4><p style={{margin:"4px 0 0",font:"var(--type-caption)",color:"var(--text-secondary)"}}>{t("The property")}</p></Card>
 </div>
-<p className="shantara-note" style={{margin:"var(--space-4) 0 0"}}>Cards are 4px. Listing photography is flush at 3/2 — never a small inset crop. Interactive cards lift 4px into --shadow-lg over 240ms. The card never scales; only the photograph crops in 1.03. Logo, Divider and PatternPanel stay still.</p>
-<PatternPanel tone="olive" edge="top" band="132px" scale="132px" radius="var(--radius-card)" style={{marginTop:'var(--space-5)'}}><div style={{padding:'var(--space-5)'}}><Logo mark="wordmark" tone="cream" height={16}/><p style={{margin:'var(--space-3) 0 0',fontSize:'var(--text-xs)',opacity:.8}}>Rosette strip, top edge — shown as a detail at actual size. Cell = band / 2, floor 130px, so a real band needs a surface ≥880px.</p></div></PatternPanel>
+<p className="shantara-note" style={{margin:"var(--space-4) 0 0"}}>Cards are 4px. Listing photography is flush at 3/2, never a small inset crop. Interactive cards lift 4px into --shadow-lg over 240ms. The card never scales; only the photograph crops in 1.03. Logo, Divider and PatternPanel stay still.</p>
+<PatternPanel tone="olive" edge="top" band="132px" scale="132px" radius="var(--radius-card)" style={{marginTop:'var(--space-5)'}}><div style={{padding:'var(--space-5)'}}><Logo mark="wordmark" tone="cream" height={16}/><p style={{margin:'var(--space-3) 0 0',fontSize:'var(--text-xs)',opacity:.8}}>Rosette strip, top edge, shown as a detail at actual size. Cell = band / 2, floor 130px, so a real band needs a surface ≥880px.</p></div></PatternPanel>
 <div className="pair">
 <div dir="ltr" lang="en">
 <p className="shantara-usage-label">LTR</p>

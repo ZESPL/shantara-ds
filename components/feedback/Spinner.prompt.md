@@ -1,4 +1,4 @@
-Loading state as three dots breathing in sequence — a calm wave, never a rotating ring.
+Loading state as three dots breathing in sequence: a calm wave, never a rotating ring.
 
 ```jsx
 <Spinner />

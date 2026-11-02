@@ -43,8 +43,8 @@ One form. The two visit lengths are choices in it, not two pages.
 
 **Which visit are you requesting?**
 
-- Hosted stay — 7 nights in a Premium Room, with one companion.
-- Press visit — Up to 3 nights in a Premium Room, with one companion.
+- Hosted stay: 7 nights in a Premium Room, with one companion.
+- Press visit: up to 3 nights in a Premium Room, with one companion.
 
 **About you**
 
@@ -52,21 +52,21 @@ One form. The two visit lengths are choices in it, not two pages.
 - Email
 - Mobile / WhatsApp number
 - Country of residence
-- Role — journalist, editor, creator, photographer, or other
+- Role: journalist, editor, creator, photographer, or other
 - Outlet or channel
 - Link to your main profile or publication
 - Where your audience is, and its approximate size
 - Links to two or three relevant pieces
-- Link to a media kit — optional
+- Link to a media kit (optional)
 
 **The visit**
 
-- Arrival date — at least 30 days ahead; an earlier date cannot be sent
-- Companion’s name — write N/A if travelling alone
-- Anyone else travelling — optional
+- Arrival date: at least 30 days ahead; an earlier date cannot be sent
+- Companion’s name (write N/A if travelling alone)
+- Anyone else travelling (optional)
 - Why Shantara
 - What you would like to create, where it will appear, and when
-- May Shantara reuse your photographs of the property? — yes or no
+- May Shantara reuse your photographs of the property? Yes or no.
 
 **Before you send**
 

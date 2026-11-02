@@ -12,15 +12,15 @@ export interface SplitSectionProps extends React.HTMLAttributes<HTMLElement> {
   split?: "50" | "40" | "60";
   /** `true` (default): the photo runs to the screen edge and fills the column height. `false`: the photo stays inside the container. */
   bleed?: boolean;
-  /** Vertical alignment of the text column from 1000px. Default `end` — open space above. */
+  /** Vertical alignment of the text column from 1000px. Default `end`: open space above. */
   align?: "start" | "center" | "end";
   /** Photo ratio under 1000px. Default `4:3`. */
   mobileRatio?: "4:3" | "4:5" | "3:4" | "16:9" | "1:1" | string;
   /** Row min-height from 1000px. Default clamp(560px, 48vw, 820px). */
   minHeight?: string;
   ground?: "merino" | "stone" | "himalaya" | "pine";
-  /** The text column — usually a <Statement/> and one list or link. */
-  /** A player in the photograph's place — editorial/Video props. */
+  /** The text column, usually a <Statement/> and one list or link. */
+  /** A player in the photograph's place, with editorial/Video props. */
   video?: import("../editorial/Video").VideoProps;
   /** Text above the photograph at every width. */
   stack?: boolean;

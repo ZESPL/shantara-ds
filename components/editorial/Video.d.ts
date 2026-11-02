@@ -6,7 +6,7 @@ export interface VideoProps extends React.HTMLAttributes<HTMLElement> {
   poster?: string;
   /** Accessible name of the video. */
   title?: string;
-  /** WebVTT URL — required when the video has speech. */
+  /** WebVTT URL, required when the video has speech. */
   captions?: string;
   transcript?: string;
   mode?: "player" | "loop";

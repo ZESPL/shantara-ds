@@ -2,7 +2,7 @@
   "id": "medical-categories",
   "locale": "en",
   "source": "handbook",
-  "note": "Eleven handbook clinical groupings — staff routing aid, not public IA.",
+  "note": "Eleven handbook clinical groupings: a staff routing aid, not public IA.",
   "categories": [
     {
       "id": "metabolic-lifestyle",

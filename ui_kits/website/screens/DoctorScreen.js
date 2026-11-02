@@ -1,5 +1,5 @@
-/* Profiles. Doctor — route #/<locale>/doctors/<slug> (view "doctor"), from content/doctors/.
-   Founder — route #/<locale>/pa-kareem (view "founder"), from content/leadership/. The founder
+/* Profiles. Doctor: route #/<locale>/doctors/<slug> (view "doctor"), from content/doctors/.
+   Founder: route #/<locale>/pa-kareem (view "founder"), from content/leadership/. The founder
    and chairman is not a doctor: never list him with the doctors or give him a clinical role.
    Portrait, biography, then the media register on the record:
    press, talks, videos, social posts. Every item is an outbound link.
@@ -63,7 +63,7 @@ function ProfileScreen({ onNavigate, d, pageType }) {
       </P>
 
       {groups.length ? (
-        <P id={pageType + "/media">
+        <P id={pageType + "/media"}>
           <Section ground="stone">
             <GroupedList groups={groups} columns={1} />
           </Section>

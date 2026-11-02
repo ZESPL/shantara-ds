@@ -1,4 +1,4 @@
-/* Conditions — HeroStatement → text index of conditions by group → a quiet
+/* Conditions: HeroStatement → text index of conditions by group → a quiet
    panorama → the rest of the index → ClosingCTA (photo; the page has no other CTA).
    No photographs in the list: a condition is not a room or a meal. */
 

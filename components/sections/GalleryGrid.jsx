@@ -2,11 +2,11 @@ import React from "react";
 import { Statement } from "../editorial/Statement.jsx";
 import { Media } from "../editorial/Media.jsx";
 
-/* Photographs of a place — Rooms, Dining, Amenities, Hosted visits. A fixed rhythm of wide
+/* Photographs of a place: Rooms, Dining, Amenities, Hosted visits. A fixed rhythm of wide
    and tall frames that repeats every five photographs, each with an optional caption. No
    carousel, no lightbox, no thumbnail strip (skill-sections: one photograph per job).
    Frames without guests; every photograph needs real alt text.
-   ≥1000px (6 columns): [wide 4 + tall 2] then [three at 2] — the tall frame stretches to
+   ≥1000px (6 columns): [wide 4 + tall 2] then [three at 2]; the tall frame stretches to
    the wide frame's height. 760–999px: one wide across, then pairs. Phones: one column. */
 const CSS = `
 .sh-gal{display:flex;flex-direction:column;gap:var(--stack-lg)}
@@ -39,7 +39,7 @@ function ensure() {
   document.head.appendChild(el);
 }
 
-/* items: [{ src, alt, caption?, position? }] — five or ten read best */
+/* items: [{ src, alt, caption?, position? }]. Five or ten read best */
 export function GalleryGrid({ title, sub, items = [], action, headingLevel = 2, style, ...rest }) {
   ensure();
   return (

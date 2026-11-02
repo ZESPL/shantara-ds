@@ -11,10 +11,10 @@ Candidate markets to **validate**, not a ranked priority list:
 | Overlay value | Notes |
 | --- | --- |
 | India | Property is in Kozhikode. That is an operational fact, not automatic proof that India is the first acquisition priority. Hindi (`hi`) and Malayalam (`ml`) are planned website languages; Malayalam is conditional. Language order is not a spend ranking. |
-| GCC | UAE English condition/stay metrics measured 20 Sep 2026 (low retreat volumes; `naturopathy dubai` 140 is day-clinic). **Saudi English keyword metrics are tool-unavailable:** country code **2682** accepts Arabic (`ar`) only — English languageCode is rejected. Phase C Arabic probe (20 Sep 2026): `weight loss retreat` 10; `diabetes reversal` —. Do not treat tool-unavailable as zero demand. Arabic is the first planned website localisation after English (`locales.js`), which is architecture, not proven paid-search demand. |
-| United Kingdom | English condition/stay metrics measured 20 Sep 2026 — weight-loss and burnout retreat volumes are real but spa-contaminated. Phase C: `longevity retreat` 40; `men's health retreat` 20. |
+| GCC | UAE English condition/stay metrics measured 20 Sep 2026 (low retreat volumes; `naturopathy dubai` 140 is day-clinic). **Saudi English keyword metrics are tool-unavailable:** country code **2682** accepts Arabic (`ar`) only; English languageCode is rejected. Phase C Arabic probe (20 Sep 2026): `weight loss retreat` 10; `diabetes reversal` —. Do not treat tool-unavailable as zero demand. Arabic is the first planned website localisation after English (`locales.js`), which is architecture, not proven paid-search demand. |
+| United Kingdom | English condition/stay metrics measured 20 Sep 2026. Weight-loss and burnout retreat volumes are real but spa-contaminated. Phase C: `longevity retreat` 40; `men's health retreat` 20. |
 | Germany / DACH | `de` planned website language. Category noun `Naturheilkunde` measured 3,600/mo (DE 2276) on 20 Sep 2026; “strong fit” for Shantara remains {Hypothesis}. |
-| France | Phase C (20 Sep 2026): country code **2250** accepts French (`fr`) only — English languageCode rejected. FR hydrate: `retraite perte de poids` 20; `men's health retreat` 10; English stay seeds mostly —. Remains localisation-planned, not spend-ranked from this thin cluster. |
+| France | Phase C (20 Sep 2026): country code **2250** accepts French (`fr`) only; English languageCode rejected. FR hydrate: `retraite perte de poids` 20; `men's health retreat` 10; English stay seeds mostly —. Remains localisation-planned, not spend-ranked from this thin cluster. |
 | Other Europe | {Not researched}. `ru` is a planned website language, not a live market brief. Italian and Spanish are not current marketing-localisation priorities. |
 | Other priority international | Do not mark a country priority without research. Geography spend (India / GCC / UK / DACH / France) remains unranked here. |
 
@@ -22,7 +22,7 @@ Investigation unit: **ICP × Geography × Language × Intent**. Do not merge cou
 
 ### Financial capacity
 
-{Approved} affordability overlay — **who can buy**, not a seventh ICP.
+{Approved} affordability overlay: **who can buy**, not a seventh ICP.
 
 Every residential stay is treated as **HNI-affordable**. That is the capacity band for who can purchase a doctor-led multi-day stay. Campaigns still run as **ICP × need × geo × intent** among that capacity. Do **not**:
 
@@ -63,7 +63,7 @@ How people **type the place type**, not which conditions to publish first. Condi
 | UAE | People type **Ayurveda** first; local “naturopathy Dubai” is often a day clinic (SERP confirmed 20 Sep). Wellness / yoga retreat is small and spa-like. Condition retreat seeds are low (weight loss retreat 20). | Comparison explainer required. Do not buy day-clinic “naturopathy Dubai” as if it were a Keralam stay. |
 | UK / US | **Yoga retreat**, **wellness retreat**, **Ayurveda**. **Naturopathy** parses as a US-style ND clinic (UK SERP = CNM / councils). Weight-loss and burnout retreat volumes are real but spa/fitness SERPs. | Explain what a residential stay is (Experience + FAQ). Do not advertise as an ND office or UK spa camp. |
 
-Relative demand across ICP 01–06 cores remains **unranked for reordering IDs**. Operational India stay-intent page/spend sequence (comparable stay compounds only) is recorded in [§26](research-and-sources.md). India condition-page launch order among existing money slugs remains obesity → pcos → diabetes — that ranks **pages**, not ICP cores.
+Relative demand across ICP 01–06 cores remains **unranked for reordering IDs**. Operational India stay-intent page/spend sequence (comparable stay compounds only) is recorded in [§26](research-and-sources.md). India condition-page launch order among existing money slugs remains obesity → pcos → diabetes; that ranks **pages**, not ICP cores.
 
 ### Competitive set (overlays, not ICPs)
 
@@ -85,6 +85,6 @@ Section 16 already forbids “general wellness” as a strategy. Treat these as 
 - US-style naturopathic (ND) clinic
 - Detox spa
 - Weekend wellness / rejuvenation as primary acquisition for Short Health Reset (**high-contamination**)
-- “Tulah-like HNI sanctuary” as an audience or ICP — **forbidden**
+- “Tulah-like HNI sanctuary” as an audience or ICP (**forbidden**)
 
 ---

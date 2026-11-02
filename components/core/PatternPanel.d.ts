@@ -1,7 +1,7 @@
 import * as React from "react";
 
 /**
- * Surface carrying the brand's rosette as a BAND flush to one edge — never a
+ * Surface carrying the brand's rosette as a BAND flush to one edge, never a
  * wash across the whole surface, never a field behind type. One band per
  * surface, ruled with a 1px hairline on its inner side. The cell is square
  * (native 530px), `scale` applies to both axes, and its default is proportional:
@@ -25,7 +25,7 @@ export interface PatternPanelProps extends React.HTMLAttributes<HTMLDivElement> 
   ink?: string;
   /** Colour of the 1px hairline on the band's inner edge. */
   rule?: string;
-  /** Pad the content clear of the band. Default true — turn off only when the
+  /** Pad the content clear of the band. Default true. Turn off only when the
    *  children are already positioned away from that edge. */
   reserve?: boolean;
   radius?: string;

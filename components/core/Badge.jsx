@@ -1,7 +1,7 @@
 import React from "react";
 
 /* A Badge is a label, never a control. Small, flat, square-cornered, sentence case:
-   a 2px-radius tint at 20px — half a control's height — with no border and no pill,
+   a 2px-radius tint at 20px (half a control's height) with no border and no pill,
    so it can never be mistaken for a button. `outline` is a dot plus text with no box. */
 const CSS = `
 .sh-badge{display:inline-flex;align-items:center;gap:6px;height:20px;padding:0 6px;border:0;border-radius:var(--radius-xs);font-family:var(--font-body);font-size:var(--text-2xs);font-weight:var(--weight-medium);line-height:1;letter-spacing:0.01em;text-transform:none;background:color-mix(in srgb, var(--text-primary) 7%, transparent);color:var(--text-secondary);white-space:nowrap;vertical-align:middle;cursor:default;user-select:none;transition:background-color var(--duration-fast) var(--ease-standard),color var(--duration-fast) var(--ease-standard)}

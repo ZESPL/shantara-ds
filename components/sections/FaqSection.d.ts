@@ -7,7 +7,7 @@ export interface FaqSectionProps extends React.HTMLAttributes<HTMLDivElement> {
   action?: React.ReactNode;
   /** A single list. */
   items?: FaqItem[];
-  /** Named groups — content/faq.json `categories`. */
+  /** Named groups: content/faq.json `categories`. */
   groups?: { name: string; faqs: FaqItem[] }[];
   /** Emit FAQPage JSON-LD from the plain-text answers. */
   schema?: boolean;

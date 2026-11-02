@@ -1,7 +1,7 @@
 import React from "react";
 import { Statement } from "../editorial/Statement.jsx";
 
-/* "At a glance" — the opening facts of a programme or condition page beside its intro: who
+/* "At a glance": the opening facts of a programme or condition page beside its intro: who
    it is for, typical length, what is assessed, who supervises. Facts come from content
    records only (content/programs, content/conditions); 3 to 6 of them, short values.
    Phones: intro, then the Stone panel. ≥1000px: intro 7 columns, panel 5, top-aligned. */

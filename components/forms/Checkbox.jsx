@@ -1,6 +1,6 @@
 import React from "react";
 
-/* Checkbox — 20px box, 2px radius, 1.5px border. The tick is an inline SVG drawn on a
+/* Checkbox: 20px box, 2px radius, 1.5px border. The tick is an inline SVG drawn on a
    20×20 grid and centred with place-items:center, so it sits dead centre at any zoom. */
 const CSS = `
 .sh-check{position:relative;display:flex;width:fit-content;max-width:100%;flex-direction:column;gap:var(--space-2);font-family:var(--font-body)}

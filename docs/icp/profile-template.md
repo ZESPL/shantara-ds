@@ -27,6 +27,6 @@ Every core ICP uses this structure. The catalog wraps each profile in a reusable
 
 **Agency working areas** (required at the end of every profile, including Short Health Reset): Market Research; Priority Countries; Search Demand; Validated Customer Language; Keyword Clusters; Competitor / SERP Findings; Recommended Landing Pages; Paid Campaign Opportunities; Content Opportunities; Negative Keywords / Poor-fit Traffic; Evidence Gaps; Performance Findings.
 
-Each working area starts as {Not researched} / “To be researched/updated”. Status may move to {In progress}, {Validated}, or {Not applicable}. Do not fill Search Demand with invented numbers. {Not applicable} is for closed non-applicable rows (for example Performance / Search Console when no live property exists) — not a substitute for inventing demand.
+Each working area starts as {Not researched} / “To be researched/updated”. Status may move to {In progress}, {Validated}, or {Not applicable}. Do not fill Search Demand with invented numbers. {Not applicable} is for closed non-applicable rows (for example Performance / Search Console when no live property exists), not a substitute for inventing demand.
 
 ---

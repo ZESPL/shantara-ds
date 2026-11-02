@@ -23,7 +23,7 @@ function ensure() {
   document.head.appendChild(el);
 }
 
-/* people: [{ name, role, src? }] — name and role only. A third line (qualification) is
+/* people: [{ name, role, src? }]: name and role only. A third line (qualification) is
    dropped: in a row of portraits it makes the captions uneven and nobody reads it there.
    Qualifications belong on the doctor's own page. */
 export function PeopleRow({ title, sub, people = [], note, action, size = "md", style, ...rest }) {

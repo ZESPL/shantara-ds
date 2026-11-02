@@ -1,4 +1,4 @@
-Shantara's action control — three variants, one near-square shape (`--radius-control`, 2px), taken from the brand deck's closing slide.
+Shantara's action control: three variants, one near-square shape (`--radius-control`, 2px), taken from the brand deck's closing slide.
 
 ```jsx
 <Button size="lg">Book a Consultation</Button>
@@ -12,9 +12,9 @@ Shantara's action control — three variants, one near-square shape (`--radius-c
 
 **Sizes.** `md` (44px) and `lg` (52px) on the website; `sm` (36px) only in dense chrome, and it grows to 44px on touch screens.
 
-**Responsive.** Under 520px labels may wrap instead of overflowing. Put button rows in `.sh-actions` — add `data-stack="mobile"` to stack them full width on phones.
+**Responsive.** Under 520px labels may wrap instead of overflowing. Put button rows in `.sh-actions`. Add `data-stack="mobile"` to stack them full width on phones.
 
-Labels stay short — about one action, roughly 20 characters in English.
+Labels stay short: about one action, roughly 20 characters in English.
 
 **Motion.** Hover is a one-step fill or hairline shift at `--duration-fast`, fine pointers only; the link arrow moves 3px. Press is `scale(var(--press-scale))`, except `link`, which does not move. Focus is the 2+2px ring (Gold on dark grounds).
 

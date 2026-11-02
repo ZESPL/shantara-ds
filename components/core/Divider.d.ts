@@ -1,6 +1,6 @@
 import * as React from "react";
 
-/** Hairline rule. Shantara separates with air first, a 1px warm rule second — never with heavy lines. */
+/** Hairline rule. Shantara separates with air first, a 1px warm rule second, never with heavy lines. */
 export interface DividerProps extends React.HTMLAttributes<HTMLElement> {
   tone?: "subtle" | "default" | "strong";
   /** CSS length applied as the cross-axis margin. */

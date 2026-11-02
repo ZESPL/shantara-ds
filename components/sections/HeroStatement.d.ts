@@ -19,7 +19,7 @@ export interface HeroStatementProps extends React.HTMLAttributes<HTMLElement> {
   /** Ratio of the side image, default "4:5". */
   ratio?: "4:5" | "4:3" | "1:1" | "3:4";
   media?: React.ReactNode;
-  /** Side-column content — a short fact list or a link; renders under the image if both. */
+  /** Side-column content: a short fact list or a link; renders under the image if both. */
   aside?: React.ReactNode;
   /** Light grounds only. */
   ground?: "merino" | "stone";

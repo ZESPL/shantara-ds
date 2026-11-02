@@ -3,7 +3,7 @@ import { Statement } from "../editorial/Statement.jsx";
 import { TimeTable } from "../editorial/TimeTable.jsx";
 import { Media } from "../editorial/Media.jsx";
 
-/* A day, or a stay, in order — A Day at Shantara, a programme's daily rhythm. A statement
+/* A day, or a stay, in order: A Day at Shantara, a programme's daily rhythm. A statement
    and a TimeTable beside one photograph. Times come from the handbook day schedule (§12);
    the doctor fills the treatment slots, so the copy never names a treatment per hour.
    Phones: statement → photograph → table. ≥1000px: photograph 5 columns (sticky while the
@@ -31,7 +31,7 @@ function ensure() {
   document.head.appendChild(el);
 }
 
-/* rows: TimeTable rows — [{ time, title, text? }] */
+/* rows: TimeTable rows: [{ time, title, text? }] */
 export function TimelineSection({ title, sub, rows = [], src, alt = "", media, ratio = "4:5", mobileRatio = "4:3", mediaSide = "start", headingLevel = 2, style, ...rest }) {
   ensure();
   const figure = media || (src ? <Media src={src} alt={alt} ratio={ratio} mobileRatio={mobileRatio} /> : null);

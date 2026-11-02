@@ -25,7 +25,7 @@ Step out of an unsustainable pattern long enough to sleep, be assessed, and leav
 | Kind | Examples (not claims) |
 | --- | --- |
 | Symptoms | Insomnia, unrefreshing sleep, fatigue, irritability, racing thoughts, tension, headaches |
-| Diagnosed conditions | Insomnia, burnout (as used in ordinary language or occupational health), mild anxiety, stress-related hypertension, migraine — only where a clinician has named them |
+| Diagnosed conditions | Insomnia, burnout (as used in ordinary language or occupational health), mild anxiety, stress-related hypertension, migraine, only where a clinician has named them |
 | Functional problems | Cannot switch off, declining work quality, relationship strain, reliance on stimulants or alcohol to cope, dread of the working week |
 | Goals | Sleep through the night, feel capable again, reset before a breakdown, protect long-term health |
 
@@ -119,10 +119,10 @@ Marketing poor-fit: party weekends, spa-only, people seeking psychiatric crisis 
 | --- | --- | --- |
 | Market Research | {Validated} 20 Sep 2026 | Phase B `burnout retreat` UAE/UK/IN + Germany DE. Phase C did not re-buy those seeds. |
 | Priority Countries | {Validated} 20 Sep 2026 | UK shows the largest burnout-retreat volumes; India stay signal weak. Do not reorder cores. UAE/UK remain comparison + stay-explainer markets. |
-| Search Demand | {Validated} 20 Sep 2026 | **UK:** `burnout retreat` 170; `burnout retreats uk` 140; `stress retreats uk` 30. **UAE:** `burnout retreat` / `executive burnout retreat` 10. **India:** `burnout treatment` 140 (informational, KD 85 — not stay); `burnout retreat` not in shortlist hits. **Germany DE:** `burnout retreat` 50. |
+| Search Demand | {Validated} 20 Sep 2026 | **UK:** `burnout retreat` 170; `burnout retreats uk` 140; `stress retreats uk` 30. **UAE:** `burnout retreat` / `executive burnout retreat` 10. **India:** `burnout treatment` 140 (informational, KD 85, not stay); `burnout retreat` not in shortlist hits. **Germany DE:** `burnout retreat` 50. |
 | Validated Customer Language | {Validated} 20 Sep 2026 | UK customers type burnout retreat / burnout retreats uk. That language is real; fit for a doctor-led Keralam clinic is a separate question. |
 | Keyword Clusters | {Validated} 20 Sep 2026 | Burnout-retreat cluster (UK-led). Contaminants: spa mindfulness, couples therapy retreats, mental-health rehab branding. |
-| Competitor / SERP Findings | {Validated} 20 Sep 2026 | UK `burnout retreat` SERP: Lacrisalida, Retreat to the Barn, Sharpham mindfulness, BookRetreats exhaustion lists, CN Traveller spa features — wellness/spa pattern, not naturopathy clinic. |
+| Competitor / SERP Findings | {Validated} 20 Sep 2026 | UK `burnout retreat` SERP: Lacrisalida, Retreat to the Barn, Sharpham mindfulness, BookRetreats exhaustion lists, CN Traveller spa features: wellness/spa pattern, not naturopathy clinic. |
 | Recommended Landing Pages | {Validated} 20 Sep 2026 | Experience + FAQ (what a residential stay is) and programme pages when clinical content exists. No new burnout hub URL. Do not invent `/en/conditions/burnout` from UK spa volumes alone. |
 | Paid Campaign Opportunities | {Validated} 20 Sep 2026 | UK burnout-retreat inventory is high-contamination for Shantara. Prefer qualified comparison / stay explainers over buying spa burnout SERPs. |
 | Content Opportunities | {Validated} 20 Sep 2026 | Stay-explainer; stress/sleep education under existing families with medical review. |

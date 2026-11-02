@@ -2,7 +2,7 @@ import React from "react";
 
 const BASE = "https://unpkg.com/lucide-static@0.544.0/icons/";
 
-/* The curated Shantara icon registry — every Lucide slug the brand uses, grouped by job.
+/* The curated Shantara icon registry: every Lucide slug the brand uses, grouped by job.
    Any other Lucide slug still renders, but new names should be added here first so the
    set stays small and consistent. WhatsApp has no Lucide glyph: `message-circle` stands in. */
 export const ICON_GROUPS = {

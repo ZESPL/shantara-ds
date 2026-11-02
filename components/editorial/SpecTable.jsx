@@ -1,6 +1,6 @@
 import React from "react";
 
-/* Name, figure, attributes — no borders, the accent column in olive (deck slide 13).
+/* Name, figure, attributes: no borders, the accent column in olive (deck slide 13).
    A real <table> for screen readers. Under 520px each row becomes a small block:
    the name on its own line, the other cells inline beneath it with their labels. */
 const CSS = `
@@ -34,7 +34,7 @@ function ensure() {
   document.head.appendChild(el);
 }
 
-/* columns: [{ key, label, accent?, align? }] — the first column is the row header. */
+/* columns: [{ key, label, accent?, align? }]. The first column is the row header. */
 export function SpecTable({ columns = [], rows = [], caption, showHeader = false, rules = true, size = "md", style, ...rest }) {
   ensure();
   const [head, ...cells] = columns;

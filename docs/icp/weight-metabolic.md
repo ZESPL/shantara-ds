@@ -81,7 +81,7 @@ All examples {Seed terms requiring research}. Validate per country and language.
 
 **Branded / comparison intent:** Shantara, Shantara diabetes, Shantara weight; named competitor retreats; “best diabetes retreat India” style queries.
 
-**Required comparison path (GCC / West):** Ayurveda vs naturopathy is a **required medically reviewed explainer** — one article/guide inside existing Journal families, not a keyword to rank by becoming Ayurveda, and not an Ayurveda service page. Intercept Ayurveda and wellness-retreat intent honestly. See [Overlays — venue language](overlays.md#venue-language-by-market-measured-20-sep-2026) and [skill-ia.md](../../ui_kits/website/skill-ia.md).
+**Required comparison path (GCC / West):** Ayurveda vs naturopathy is a **required medically reviewed explainer**: one article/guide inside existing Journal families, not a keyword to rank by becoming Ayurveda, and not an Ayurveda service page. Intercept Ayurveda and wellness-retreat intent honestly. See [Overlays: venue language](overlays.md#venue-language-by-market-measured-20-sep-2026) and [skill-ia.md](../../ui_kits/website/skill-ia.md).
 
 Internal name “Weight & Metabolic Health” is **not** a keyword target.
 
@@ -131,17 +131,17 @@ Marketing poor-fit: crash-diet shoppers, cosmetic-only weight loss, spa slimming
 
 | Working area | Status | Record |
 | --- | --- | --- |
-| Market Research | {Validated} 20 Sep 2026 | Phase B + Phase C. Hydrated UAE 2784, UK 2826, India 2356; France 2250 (`fr`); Saudi 2682 (`ar` only — English tool-unavailable). |
+| Market Research | {Validated} 20 Sep 2026 | Phase B + Phase C. Hydrated UAE 2784, UK 2826, India 2356; France 2250 (`fr`); Saudi 2682 (`ar` only; English tool-unavailable). |
 | Priority Countries | {Validated} 20 Sep 2026 | India = commercial condition + stay spine. UAE/UK = comparison + stay-explainer. France localisation-planned (thin FR stay cluster). Saudi English metrics unavailable in tool. |
 | Search Demand | {Validated} 20 Sep 2026 | **India (Phase B):** `naturopathy for weight loss` / `weight loss naturopathy` 210; `weight loss retreat india` 140; `weight loss retreat` 110; Keralam variants 30; `diabetes retreat india` 10. **Phase C name check:** `diabetes reversal` / `diabetes reversal india` —. **UK:** `weight loss retreat` 390; `weight loss retreat uk` 320. **UAE:** `weight loss retreat` 20. **France FR:** `retraite perte de poids` 20. **Saudi AR probe:** `weight loss retreat` 10. Countries not merged. |
 | Validated Customer Language | {Validated} 20 Sep 2026 | Stay language that measured: weight loss retreat (+ india / keralam); naturopathy for weight loss. Diabetes retreat / diabetes reversal language near-floor. Do not H1 “Weight & Metabolic Health”. |
-| Keyword Clusters | {Validated} 20 Sep 2026 | (1) Weight-loss residential stay — India primary. (2) Diabetes residential stay — weak measured retreat volume; reversal name search —. (3) Comparison — see overlays / Journal. Contaminants: wellness/detox/spa weight-loss SERPs (esp. UK/UAE). |
+| Keyword Clusters | {Validated} 20 Sep 2026 | (1) Weight-loss residential stay: India primary. (2) Diabetes residential stay: weak measured retreat volume; reversal name search —. (3) Comparison: see overlays / Journal. Contaminants: wellness/detox/spa weight-loss SERPs (esp. UK/UAE). |
 | Competitor / SERP Findings | {Validated} 20 Sep 2026 | UAE `weight loss retreat` SERP: bookretreats, spa lists, Canyon Ranch-style. Not Keralam naturopathy clinic SERPs. |
 | Recommended Landing Pages | {Validated} 20 Sep 2026 | `/en/conditions/obesity` first among money slugs; `/en/conditions/diabetes` when content-ready (low retreat volume). Journal comparison + Experience for GCC/West. No new URLs. |
 | Paid Campaign Opportunities | {Validated} 20 Sep 2026 | India weight-loss + naturopathy stay terms are the strongest measured commercial cluster across cores. Do not buy UK spa weight-loss retreat inventory as if it were Shantara. |
-| Content Opportunities | {Validated} 20 Sep 2026 | Obesity condition page; diabetes condition page (clinical bar, not volume chase); comparison guide already required. Diabetes Reversal programme name approved — no guarantee copy. |
+| Content Opportunities | {Validated} 20 Sep 2026 | Obesity condition page; diabetes condition page (clinical bar, not volume chase); comparison guide already required. Diabetes Reversal programme name approved; no guarantee copy. |
 | Negative Keywords / Poor-fit Traffic | {Validated} 20 Sep 2026 | Spa / fitness weight-loss camps; detox spa; luxury Thailand/Bali weight-loss packages; crash-diet / boot-camp language; NHS weight-loss camp (UK). |
-| Evidence Gaps | {Validated} 20 Sep 2026 | Saudi English volumes tool-unavailable (not zero). Search Console {Not applicable}. Operational India stay sequence written in §26 — does not reorder ICP IDs. |
+| Evidence Gaps | {Validated} 20 Sep 2026 | Saudi English volumes tool-unavailable (not zero). Search Console {Not applicable}. Operational India stay sequence written in §26; it does not reorder ICP IDs. |
 | Performance Findings | {Not applicable} | No live property / Search Console. Do not invent conversion rates. |
 
 ---

@@ -21,7 +21,7 @@ const CSS = `
   .sh-tgrid-head>:last-child:not(:first-child){flex:0 0 auto}
   .sh-tgrid-items{grid-template-columns:repeat(2,minmax(0,1fr))}
   .sh-tgrid-items[data-odd="true"]>:first-child{grid-column:1/-1}
-  /* Uniform tiles: tiles in a row share the rows photograph, title, meta, text — so a
+  /* Uniform tiles: tiles in a row share the rows photograph, title, meta, text, so a
      two-line title or a longer description never pushes its neighbours' text out of line.
      Each part is placed in its own row, so a tile without meta or text keeps the others. */
   /* The parent's row gap would sit between a tile's own rows, so it is zero here and each

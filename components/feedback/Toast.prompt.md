@@ -6,7 +6,7 @@ Short-lived confirmation, Pine Tree by default.
 
 One toast at a time, 4–6 seconds, past tense, no exclamation marks.
 
-The dismiss control (`onClose`) is a 44×44 target with a 20px × — never a bare glyph.
+The dismiss control (`onClose`) is a 44×44 target with a 20px ×, never a bare glyph.
 
 **Motion.** Enters from its own height (`translateY(100%)`) over 420ms with `ease`, via `@starting-style`, so rapid toasts retarget instead of restarting. Exit uses the same path. The dismiss control fades to full opacity on hover. Do not stack a slide from the side or a bounce.
 

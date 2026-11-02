@@ -1,4 +1,4 @@
-Plain text in columns — no bullets, icons or ticks.
+Plain text in columns, with no bullets, icons or ticks.
 
 ```jsx
 <PlainList columns={2} items={["Food and nutrition", "Yoga and breathing", "Rest and sleep"]} />

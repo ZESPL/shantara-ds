@@ -9,7 +9,7 @@ A sticky "On this page" bar of jump links that marks the section in view.
 ]} />
 ```
 
-**Use** on long pages — programme detail, Therapies, Rooms, legal pages — directly after the hero. Every target needs an `id`; `CatalogueSection` entries and `SplitSection id` already reserve the header offset (`scroll-margin-top`). For a single article use `ArticleLayout` (side table of contents) instead.
+**Use** on long pages (programme detail, Therapies, Rooms, legal pages), directly after the hero. Every target needs an `id`; `CatalogueSection` entries and `SplitSection id` already reserve the header offset (`scroll-margin-top`). For a single article use `ArticleLayout` (side table of contents) instead.
 
 **Content.** Labels are the section headings, shortened to two or three words. Four to seven links.
 

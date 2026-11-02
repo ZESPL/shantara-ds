@@ -30,12 +30,12 @@ const rooms = [
 function Demo(){
   return (<div>
 <div className="blk">
-  <L>Statement · MetaRow — the heading leads; facts sit below it, never above</L>
+  <L>Statement · MetaRow: the heading leads; facts sit below it, never above</L>
   <Statement sub="The clinical team plans your programme and adjusts it where necessary during your stay.">Your programme is planned after consultation and assessment.</Statement>
   <MetaRow items={[{ icon: "tag", label: "Food & Recipes" }, { icon: "calendar-days", label: "12 August 2026" }, { icon: "clock", label: "4 min read" }]} />
 </div>
 <div className="blk">
-  <L>Media — square-cut, ratio tokens, 21:9 becomes 4:3 on phones</L>
+  <L>Media: square-cut, ratio tokens, 21:9 becomes 4:3 on phones</L>
   <div className="three">
     <Media src={P + "balcony.jpg"} alt="A balcony over the valley" ratio="4:3" />
     <Media src={P + "water-wall.jpg"} alt="The water wall court" ratio="4:5" />
@@ -44,7 +44,7 @@ function Demo(){
   <Media src={P + "valley.jpg"} alt="The Chennamangallur valley from the hilltop" ratio="21:9" mobileRatio="4:3" />
 </div>
 <div className="blk">
-  <L>Tile — photograph, title, then the meta row; hover scales the photo to 1.02</L>
+  <L>Tile: photograph, title, then the meta row; hover scales the photo to 1.02</L>
   <div className="three">
     <Tile href="#" src={P + "balcony.jpg"} alt="" title="Stress Management" meta={["Mind", "7–14 nights"]} text="Doctor-led routines, therapies and rest for guests managing sustained stress, poor sleep or fatigue." />
     <Tile href="#" src={P + "water-wall.jpg"} alt="" title="Detox" meta={["Metabolic", "7–21 nights"]} text="Your doctor may recommend a meal plan or supervised fasting based on your assessment." />
@@ -65,14 +65,14 @@ function Demo(){
   </div>
 </div>
 <div className="blk">
-  <L>NumberedSteps — the care model</L>
+  <L>NumberedSteps: the care model</L>
   <NumberedSteps columns={4} items={[
     { title: "Consultation and assessment", text: "Our doctors consider your medical history, current health, lifestyle and goals." },
     { title: "A plan for you", text: "They then plan your treatments, meals, activity and rest." },
     { title: "Therapies and daily routines", text: "Your doctor may recommend therapies based on your assessment and programme." },
     { title: "Progress reviewed", text: "The plan is reviewed during your stay and adjusted where necessary." },
   ]} />
-  <L>NumberedSteps orientation="vertical" — a timeline</L>
+  <L>NumberedSteps orientation="vertical": a timeline</L>
   <NumberedSteps orientation="vertical" items={[
     { title: "Consultation and assessment", text: "Our doctors consider your medical history, current health, lifestyle and goals." },
     { title: "A plan for you", text: "They then plan your treatments, meals, activity and rest." },
@@ -82,11 +82,11 @@ function Demo(){
 <div className="blk">
   <div className="two">
     <div style={{ display: "flex", flexDirection: "column", gap: "var(--space-6)" }}>
-      <L>PlainList — no bullets, no ticks</L>
+      <L>PlainList: no bullets, no ticks</L>
       <PlainList columns={2} size="sm" items={["En-suite bathroom with rain shower", "Individually controlled central air-conditioning", "Orthopaedic mattress", "Electronic safe, Wi-Fi"]} />
     </div>
     <div style={{ display: "flex", flexDirection: "column", gap: "var(--space-6)" }}>
-      <L>GroupedList — Medium group headings, one item per line</L>
+      <L>GroupedList: Medium group headings, one item per line</L>
       <GroupedList columns={2} groups={[
         { label: "Metabolic", items: ["Detox", "Weight Management"] },
         { label: "Clinical", items: ["Diabetes Reversal", "Longevity", "Men's Vitality"] },
@@ -99,11 +99,11 @@ function Demo(){
 <div className="blk">
   <div className="two">
     <div style={{ display: "flex", flexDirection: "column", gap: "var(--space-6)" }}>
-      <L>SpecTable — rooms, no rates</L>
+      <L>SpecTable: rooms, no rates</L>
       <SpecTable caption="Room categories" showHeader columns={[{ key: "name", label: "Room" }, { key: "size", label: "Size", accent: true, mobileLabel: true }, { key: "occ", label: "Occupancy", mobileLabel: true }]} rows={rooms} />
     </div>
     <div style={{ display: "flex", flexDirection: "column", gap: "var(--space-6)" }}>
-      <L>TimeTable — a typical day may include</L>
+      <L>TimeTable: a typical day may include</L>
       <TimeTable rows={[
         { time: "Morning", title: "Vitals and doctor review", text: "Then yoga therapy in the hall, adapted to what you can manage that day." },
         { time: "Midday", title: "Therapies", text: "Sessions sequenced by the clinical team." },
@@ -115,12 +115,12 @@ function Demo(){
 <div className="blk">
   <div className="two">
     <div style={{ display: "flex", flexDirection: "column", gap: "var(--space-6)" }}>
-      <L>QuoteBlock — brand statements only until consented words exist</L>
+      <L>QuoteBlock: brand statements only until consented words exist</L>
       <QuoteBlock quote="Naturopathy treats the causes of a condition through diet, activity, therapies and rest rather than through medication." cite="Shantara Naturopathy Retreat" role="Our approach to care"
         facts={[{ label: "The setting", text: "A hilltop above the Chennamangallur valley." }]} />
     </div>
     <div style={{ display: "flex", flexDirection: "column", gap: "var(--space-6)" }}>
-      <L>PortraitFrame — 4:5 from content/doctors</L>
+      <L>PortraitFrame: 4:5 from content/doctors</L>
       <div className="portraits">
         <PortraitFrame src={P + "doctor-bahja-janu-portrait-cropped.jpeg"} name="Dr. Bahja Janu" role="Medical Director" />
         <PortraitFrame src={P + "doctor-gangrei-gangmei-portrait-cropped.jpeg"} name="Dr. Gangrei Gangmei" role="Resident Medical Officer" />
@@ -129,7 +129,7 @@ function Demo(){
   </div>
 </div>
 <div className="blk">
-  <L>Journal — ReviewedBy · Prose · ArticleFigure · TableOfContents</L>
+  <L>Journal: ReviewedBy · Prose · ArticleFigure · TableOfContents</L>
   <div className="art">
     <div style={{ display: "flex", flexDirection: "column", gap: "var(--space-7)", minWidth: 0 }}>
       <ReviewedBy name="Dr. Bahja Janu" role="Medical Director" href="#" date="12 August 2026" dateTime="2026-08-12" />
@@ -152,7 +152,7 @@ function Demo(){
   <Pagination page={3} pageCount={8} onChange={() => {}} />
 </div>
 <div className="blk">
-  <L>On a dark ground — ink, rules and links re-point; no tone props</L>
+  <L>On a dark ground: ink, rules and links re-point; no tone props</L>
   <div className="dark" data-ground="himalaya">
     <div className="two" style={{ alignItems: "end" }}>
       <Statement size="title">Your programme is planned after consultation and assessment.</Statement>

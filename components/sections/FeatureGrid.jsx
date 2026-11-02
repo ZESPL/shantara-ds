@@ -2,9 +2,9 @@ import React from "react";
 import { Statement } from "../editorial/Statement.jsx";
 import { Icon } from "../core/Icon.jsx";
 
-/* Facilities at a glance — an icon, a short label and one line, in a grid. Only amenities
+/* Facilities at a glance: an icon, a short label and one line, in a grid. Only amenities
    named in the handbook amenities section (docs/handbook/property.md); never add one. The
-   workstations are an exception to the device policy, not a feature — leave them out of a
+   workstations are an exception to the device policy, not a feature, so leave them out of a
    marketing grid. Icons from the curated Lucide registry (core/Icon).
    Phones: one column, icon beside the text. ≥520px: two. ≥1000px: `columns` (3 or 4). */
 const CSS = `

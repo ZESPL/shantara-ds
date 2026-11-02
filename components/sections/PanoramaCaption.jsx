@@ -2,7 +2,7 @@ import React from "react";
 import { Media } from "../editorial/Media.jsx";
 import { Video } from "../editorial/Video.jsx";
 
-/* Deck slide 5. A full-width photograph with a short caption bottom-left and no button —
+/* Deck slide 5. A full-width photograph with a short caption bottom-left and no button:
    the pause between dense sections. 21:9 on desktop, 4:5 on phones so the frame keeps
    its height; the caption always sits inside a bottom scrim.
    The photograph and the caption share one grid cell: the frame keeps its ratio, and a

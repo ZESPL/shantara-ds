@@ -1,4 +1,4 @@
-/* Contact — HeroStatement → address (NAP), distances and direct lines
+/* Contact: HeroStatement → address (NAP), distances and direct lines
    beside the entrance photograph → ClosingCTA (ground, Himalaya; the page has no other CTA). */
 
 const CONTACT_DISTANCES = [

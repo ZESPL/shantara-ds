@@ -1,4 +1,4 @@
-/* About — HeroStatement (side photograph) → doctors → story → board → approach →
+/* About: HeroStatement (side photograph) → doctors → story → board → approach →
    editorial policy → ClosingCTA (ground, Pine Tree; the page has no other CTA).
    The practice history is stated once, in the story section.
    Copy comes from content/ (doctors), handbook §3 (board) and the strings this screen already carried.
@@ -69,7 +69,7 @@ function AboutScreen({ onNavigate }) {
       <P id="about/approach">
         <SplitSection src={window.photoSrc("library")} alt={t("The library at Shantara")} mediaSide="end" ground="merino">
           <Statement size="title" sub={t("Treatment is drug-free. Plans are reviewed during the stay and adjusted where needed.")}>
-            {t("Doctors set the daily plan — treatments, meals, activity and rest.")}
+            {t("Doctors set the daily plan: treatments, meals, activity and rest.")}
           </Statement>
           <div>
             <TextLink onClick={() => onNavigate("programme")}>{t("Programmes")}</TextLink>

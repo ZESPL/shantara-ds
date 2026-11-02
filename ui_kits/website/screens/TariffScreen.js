@@ -20,7 +20,7 @@ const TARIFF_ROOM_PHOTOS = {
   "standard-room": "room-twin",
 };
 
-/* Rooms and tariffs — HeroSplit → rate table beside the booking panel → supplements, payment
+/* Rooms and tariffs: HeroSplit → rate table beside the booking panel → supplements, payment
    and cancellation → room tiles. The booking panel is the page's CTA, so there is no
    ClosingCTA (#35). The one mention of the room count on the whole site sits in the body line
    under the table (#8). */

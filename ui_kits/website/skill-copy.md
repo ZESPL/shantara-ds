@@ -4,7 +4,7 @@ Back to the [website skill](SKILL.md).
 
 This skill governs all public-facing language written for the Shantara website: page copy, headings, hero sections, programme/condition/treatment/accommodation/doctor/about/editorial pages, FAQs, navigation labels, calls to action, cards, forms, and any other supporting or informational text visible to visitors.
 
-The objective is simple: a visitor should understand Shantara without having to understand Shantara's website architecture, internal processes, clinical terminology, content system or business rules. Public copy must sound like it was written for a prospective guest, not for the team building the website.
+A visitor should understand Shantara without having to understand Shantara's website architecture, internal processes, clinical terminology, content system or business rules. Public copy must sound like it was written for a prospective guest, not for the team building the website.
 
 **Core principle: clarity first, warmth second, brand expression third.**
 
@@ -41,6 +41,6 @@ These are enforced everywhere; the linked part has the full rule.
 
 ## Do not narrate the website to the visitor
 
-Never write public copy from the perspective of the website team, developer, designer, content strategist or CMS. The visitor should never be told how the website itself is organised, why a page does or doesn't exist, or where information is stored. Simply present the information that is useful to the visitor. Full patterns and rewrite examples: [page copy patterns](copy/page-copy-patterns.md).
+Never write public copy from the perspective of the website team, developer, designer, content strategist or CMS. The visitor should never be told how the website itself is organised, why a page does or doesn't exist, or where information is stored. Present the information that is useful to the visitor. Full patterns and rewrite examples: [page copy patterns](copy/page-copy-patterns.md).
 
 Internal ICP names, strategy labels, and internal-only audience research (`docs/icp.md`) never become public headings, keywords, or ad copy without validation.

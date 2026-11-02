@@ -1,4 +1,4 @@
-# `assets/` — agent index
+# `assets/`: agent index
 
 Every image file in this design system, and which one to pick, without opening it. Photographs have their own catalogue in [`photos/README.md`](photos/README.md), with one entry per frame. Fonts are in `fonts/` and are not described here.
 

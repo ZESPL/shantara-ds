@@ -1,4 +1,4 @@
-/* Home — composition sample (not the production site). Content from window.ShantaraContent. */
+/* Home: composition sample (not the production site). Content from window.ShantaraContent. */
 
 /* The three programmes shown with photographs; the rest go in the text index below them. */
 const HOME_TILE_PROGRAMMES = ["detox", "diabetes-reversal", "stress-management"];

@@ -1,6 +1,6 @@
 import React from "react";
 
-/* Switch — 44×26 track, 20px knob travelling 18px over 240ms. Label at the same
+/* Switch: 44×26 track, 20px knob travelling 18px over 240ms. Label at the same
    17px as Checkbox/Radio; whole row is a 44px target. */
 const CSS = `
 .sh-switch{position:relative;display:flex;width:fit-content;max-width:100%;align-items:center;gap:var(--space-4);min-height:var(--tap-min);font:var(--weight-regular) var(--text-base)/1.4 var(--font-body);color:var(--text-primary);cursor:pointer}

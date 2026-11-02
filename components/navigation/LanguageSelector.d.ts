@@ -8,7 +8,7 @@ export interface LanguageSelectorOption {
   current: boolean;
   href: string | null;
   available: boolean;
-  /** Planned but not yet enabled — listed disabled with "Coming soon". */
+  /** Planned but not yet enabled. Listed disabled with "Coming soon". */
   comingSoon?: boolean;
 }
 

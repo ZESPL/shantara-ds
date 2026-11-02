@@ -2,7 +2,7 @@ import React from "react";
 import { Media } from "../editorial/Media.jsx";
 import { MetaRow } from "../editorial/MetaRow.jsx";
 
-/* One page, many entries — Therapies, Rooms, Farm & Dining. The IA gives each family one
+/* One page, many entries: Therapies, Rooms, Farm & Dining. The IA gives each family one
    page, so a link to a single therapy or room is `/en/therapies#hijama`: every entry carries
    that `id`, and its anchor clears the sticky header plus an InPageNav.
    Entry: photograph → name (h3) → meta row → one paragraph → optional facts (SpecTable /

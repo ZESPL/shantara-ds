@@ -17,4 +17,4 @@ A film with its context: a statement and a native video player, full width or be
 
 **One job.** One subject per film and one video per section ([rule of one](../../docs/rule-of-one.md)). Any action sits outside the frame.
 
-**Responsive.** `full`: the frame across the container at 16:9, 4:5 on phones. `split`: a SplitSection — frame 4:5 beside the statement from 1000px, 16:9 above it on phones.
+**Responsive.** `full`: the frame across the container at 16:9, 4:5 on phones. `split`: a SplitSection, frame 4:5 beside the statement from 1000px, 16:9 above it on phones.

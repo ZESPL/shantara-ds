@@ -21,7 +21,7 @@ export interface TableOfContentsProps extends React.HTMLAttributes<HTMLElement> 
   track?: boolean;
   /** Sticky in the side column from 1000px (default true). */
   sticky?: boolean;
-  /** Phones/tablets: start expanded (default false — collapsed). */
+  /** Phones/tablets: start expanded (default false: collapsed). */
   defaultOpen?: boolean;
   onNavigate?: (id: string, e: React.MouseEvent) => void;
 }

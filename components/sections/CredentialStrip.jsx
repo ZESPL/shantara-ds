@@ -2,7 +2,7 @@ import React from "react";
 import { Statement } from "../editorial/Statement.jsx";
 import { Icon } from "../core/Icon.jsx";
 
-/* Credentials, spelled out — About and doctor profiles. Each item is the credential's exact
+/* Credentials, spelled out, for About and doctor profiles. Each item is the credential's exact
    name, who issued it, the number where appropriate and whose it is. Only entries on the
    verified credentials list in docs/handbook/glossary.md, and never one shown as a bare
    logo. An entry whose issuer or proof is still "[…]" in that list is left out until it

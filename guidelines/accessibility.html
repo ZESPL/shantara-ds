@@ -19,7 +19,7 @@ li{margin-bottom:2px}
 <div>
 <span class="shantara-eyebrow">Target</span>
 <h2 style="font:var(--type-h3);font-size:var(--text-2xl);margin:var(--space-3) 0 var(--space-3)">WCAG 2.2 Level AA</h2>
-<p style="font-size:var(--text-sm);color:var(--text-secondary);margin:0;max-width:80ch">Text at 4.5:1, large text (24px+, or 19px+ Semibold) at 3:1, control boundaries and focus indicators at 3:1. This resolves every semantic token — including the <code>oklch()</code> ramp and the <code>color-mix()</code> transparencies — and measures them on render, so it fails visibly if a token is ever changed.</p>
+<p style="font-size:var(--text-sm);color:var(--text-secondary);margin:0;max-width:80ch">Text at 4.5:1, large text (24px+, or 19px+ Semibold) at 3:1, control boundaries and focus indicators at 3:1. This resolves every semantic token (including the <code>oklch()</code> ramp and the <code>color-mix()</code> transparencies) and measures them on render, so it fails visibly if a token is ever changed.</p>
 </div>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-8);align-items:start">
 <table id="tblA"><thead><tr><th>Pair</th><th>Fg</th><th>Bg</th><th class="n">Ratio</th><th class="n">Needs</th><th>AA</th></tr></thead><tbody></tbody></table>
@@ -29,12 +29,12 @@ li{margin-bottom:2px}
 
 <div>
 <span class="shantara-eyebrow">The contract</span>
-<h2 style="font:var(--type-h3);font-size:var(--text-2xl);margin:var(--space-3) 0 var(--space-6)">Built in, not bolted on</h2>
+<h2 style="font:var(--type-h3);font-size:var(--text-2xl);margin:var(--space-3) 0 var(--space-6)">Built into every component</h2>
 <div style="display:grid;grid-template-columns:1fr 1.15fr;gap:var(--space-6);align-items:start">
 <div class="card">
-<h3>Deliberately below 3:1 — never load-bearing</h3>
+<h3>Deliberately below 3:1, never load-bearing</h3>
 <ul>
-<li><code>--border-subtle</code> (1.2) and <code>--border-default</code> (1.6–1.8): decorative hairlines only — dividers, card edges, table rules. Controls use <code>--border-control</code>, which clears 3:1 on every light ground.</li>
+<li><code>--border-subtle</code> (1.2) and <code>--border-default</code> (1.6–1.8): decorative hairlines only (dividers, card edges, table rules). Controls use <code>--border-control</code>, which clears 3:1 on every light ground.</li>
 <li><code>--surface-accent</code> against the page (1.4): the Gold Crayola button carries a <code>--color-gold-800</code> hairline so its boundary, not its fill, does the work.</li>
 <li><code>--surface-brand-soft</code> focus halo (1.2): a soft echo behind the 2&nbsp;+&nbsp;2px Himalaya focus ring, which is the actual indicator.</li>
 <li>Gold Crayola and the six accents are <strong>never text colours on light grounds</strong>. They are large calm areas, and the audit records the prohibition rather than hiding it.</li>
@@ -43,28 +43,28 @@ li{margin-bottom:2px}
 <div class="card">
 <h3>Component contract</h3>
 <ul>
-<li><strong>Focus</strong> — every control shows <code>--ring-focus</code> (2px page-colour offset + 2px Himalaya, 7.4:1); <code>--ring-focus-inverse</code> on dark and over photography.</li>
-<li><strong>Names</strong> — <code>IconButton</code> requires <code>label</code>; <code>Tag</code>'s remove is <code>aria-label="Remove"</code>; <code>Logo</code> ships real <code>alt</code>; decorative photography is <code>alt=""</code>.</li>
-<li><strong>Keyboard</strong> — <code>Tabs</code> follows the ARIA tablist contract (arrows select, Home/End, roving tabindex). <code>Accordion</code> exposes <code>aria-expanded</code>. <code>Dialog</code> takes focus on open, traps Tab, closes on Escape and restores focus.</li>
-<li><strong>Targets</strong> — 2.5.8 minimum 24×24 everywhere: <code>--control-sm</code> is 32px, checkbox and radio rows are floored at 24px, the tag remove is a 24px target around a 16px glyph. Mobile surfaces use <code>--tap-min</code> 44px.</li>
-<li><strong>Status</strong> — <code>Toast</code> is <code>role="status"</code>; <code>Spinner</code> carries an accessible label. Colour never carries meaning alone: badges pair tone with a word.</li>
-<li><strong>Hover content</strong> — <code>Tooltip</code> is dismissible with Escape and linked by <code>aria-describedby</code> (1.4.13). Never put essential information there.</li>
-<li><strong>Motion</strong> — no parallax, no autoplay, nothing above 420ms except the 1200ms breathing Spinner. Hover styles sit behind <code>(hover: hover) and (pointer: fine)</code>. <code>prefers-reduced-motion: reduce</code> keeps colour and opacity, drops movement, and freezes the Spinner (2.3.3).</li>
-<li><strong>Type on photography</strong> — always on a scrim or glass capsule. Contrast is judged against the <strong>scrimmed photograph</strong>, not a flat Himalaya/Pine swatch: body/lead 4.5:1, large display 3:1. Use solid Merino / <code>--text-on-inverse</code> for overlay body. Eyebrows on photography are Merino; Gold eyebrows sit on flat dark grounds only (<code>data-ground</code> sets both) — do not use gold for body copy on photos. Do not fade lead with Merino 82–88% mixes over a photo. <code>--scrim-hero</code> covers the whole text block and tapers clear above it (<code>--scrim-bottom</code> protects a short caption) — unaudited overlays are prohibited.</li>
-<li><strong>Rosette</strong> — never a field behind type. Below ~880px drop the band; <code>reserve</code> stays on.</li>
-<li><strong>RTL</strong> — set <code>dir="rtl"</code> on the document or a region. Controls use logical properties. Directional icons flip; the logo, the rosette motif and the check mark do not. <code>Tabs</code> arrows follow reading direction. <code>left</code> / <code>right</code> on Tooltip and PatternPanel stay physical — use <code>start</code> / <code>end</code> when the side should travel with the script.</li>
+<li><strong>Focus</strong>: Every control shows <code>--ring-focus</code> (2px page-colour offset + 2px Himalaya, 7.4:1); <code>--ring-focus-inverse</code> on dark and over photography.</li>
+<li><strong>Names</strong>: <code>IconButton</code> requires <code>label</code>; <code>Tag</code>'s remove is <code>aria-label="Remove"</code>; <code>Logo</code> ships real <code>alt</code>; decorative photography is <code>alt=""</code>.</li>
+<li><strong>Keyboard</strong>: <code>Tabs</code> follows the ARIA tablist contract (arrows select, Home/End, roving tabindex). <code>Accordion</code> exposes <code>aria-expanded</code>. <code>Dialog</code> takes focus on open, traps Tab, closes on Escape and restores focus.</li>
+<li><strong>Targets</strong>: 2.5.8 minimum 24×24 everywhere: <code>--control-sm</code> is 32px, checkbox and radio rows are floored at 24px, the tag remove is a 24px target around a 16px glyph. Mobile surfaces use <code>--tap-min</code> 44px.</li>
+<li><strong>Status</strong>: <code>Toast</code> is <code>role="status"</code>; <code>Spinner</code> carries an accessible label. Colour never carries meaning alone: badges pair tone with a word.</li>
+<li><strong>Hover content</strong>: <code>Tooltip</code> is dismissible with Escape and linked by <code>aria-describedby</code> (1.4.13). Never put essential information there.</li>
+<li><strong>Motion</strong>: No parallax, no autoplay, nothing above 420ms except the 1200ms breathing Spinner. Hover styles sit behind <code>(hover: hover) and (pointer: fine)</code>. <code>prefers-reduced-motion: reduce</code> keeps colour and opacity, drops movement, and freezes the Spinner (2.3.3).</li>
+<li><strong>Type on photography</strong>: Always on a scrim or glass capsule. Contrast is judged against the <strong>scrimmed photograph</strong>, not a flat Himalaya/Pine swatch: body/lead 4.5:1, large display 3:1. Use solid Merino / <code>--text-on-inverse</code> for overlay body. Eyebrows on photography are Merino; Gold eyebrows sit on flat dark grounds only (<code>data-ground</code> sets both). Do not use gold for body copy on photos. Do not fade lead with Merino 82–88% mixes over a photo. <code>--scrim-hero</code> covers the whole text block and tapers clear above it (<code>--scrim-bottom</code> protects a short caption). Unaudited overlays are prohibited.</li>
+<li><strong>Rosette</strong>: Never a field behind type. Below ~880px drop the band; <code>reserve</code> stays on.</li>
+<li><strong>RTL</strong>: Set <code>dir="rtl"</code> on the document or a region. Controls use logical properties. Directional icons flip; the logo, the rosette motif and the check mark do not. <code>Tabs</code> arrows follow reading direction. <code>left</code> / <code>right</code> on Tooltip and PatternPanel stay physical. Use <code>start</code> / <code>end</code> when the side should travel with the script.</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="card">
-<h3>Known gaps, honestly</h3>
+<h3>Known gaps</h3>
 <ul>
-<li><strong>1.4.10 Reflow</strong> — the UI kits are desktop compositions with a responsive override layer down to 320px. A production build should carry real breakpoints rather than <code>!important</code> overrides.</li>
-<li><strong>1.4.4 Resize text</strong> — the website kit offers an in-page text-size control (<code>html[data-text-size]</code> → <code>--text-scale</code> at 1 / 1.125 / 1.25). That is a convenience. WCAG AA still requires browser zoom to 200% without loss of content or function.</li>
-<li><strong>2.5.5 Target Size (AAA)</strong> — <code>--control-sm</code> at 32px meets AA's 24px but not AAA's 44px. Deliberate, for dense desktop toolbars; mobile never uses it.</li>
-<li><strong>3.3.x</strong> — the consultation form validates on submit in the kit only. Real error identification, suggestion and prevention (3.3.1/3.3.3/3.3.4) belong to the implementation.</li>
-<li><strong>Screen-reader testing</strong> — this audit is programmatic. Nothing here substitutes for a pass with NVDA, JAWS and VoiceOver.</li>
+<li><strong>1.4.10 Reflow</strong>: The UI kits are desktop compositions with a responsive override layer down to 320px. A production build should carry real breakpoints rather than <code>!important</code> overrides.</li>
+<li><strong>1.4.4 Resize text</strong>: The website kit offers an in-page text-size control (<code>html[data-text-size]</code> → <code>--text-scale</code> at 1 / 1.125 / 1.25). That is a convenience. WCAG AA still requires browser zoom to 200% without loss of content or function.</li>
+<li><strong>2.5.5 Target Size (AAA)</strong>: <code>--control-sm</code> at 32px meets AA's 24px but not AAA's 44px. Deliberate, for dense desktop toolbars; mobile never uses it.</li>
+<li><strong>3.3.x</strong>: The consultation form validates on submit in the kit only. Real error identification, suggestion and prevention (3.3.1/3.3.3/3.3.4) belong to the implementation.</li>
+<li><strong>Screen-reader testing</strong>: This audit is programmatic. Nothing here substitutes for a pass with NVDA, JAWS and VoiceOver.</li>
 </ul>
 </div>
 

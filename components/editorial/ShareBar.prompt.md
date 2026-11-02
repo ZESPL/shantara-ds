@@ -1,4 +1,4 @@
-Share an article: **Copy link**, **WhatsApp**, **Email** — outline chips with a core Icon (`link`, `message-circle`, `mail`) and a word.
+Share an article: **Copy link**, **WhatsApp**, **Email**, as outline chips with a core Icon (`link`, `message-circle`, `mail`) and a word.
 
 ```jsx
 <ShareBar url="https://shantara.life/en/journal/how-meals-are-planned" title="How meals are planned during a stay" />

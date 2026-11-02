@@ -2,7 +2,7 @@ import React from "react";
 import { filterOptions, highlightParts, normalizeOptions, pointerMovesHighlight } from "./fieldLogic.mjs";
 import { ENGLISH_HINT, rejectForeignInsert, stripForeignInput } from "./englishText.mjs";
 
-/* Shared field chrome — same rules and style id as Input, Textarea and Select. */
+/* Shared field chrome: same rules and style id as Input, Textarea and Select. */
 const FIELD_CSS = `
 .sh-field{display:flex;flex-direction:column;gap:var(--space-3);min-width:0;font-family:var(--font-body)}
 .sh-field-label{display:flex;align-items:baseline;gap:var(--space-2);font:var(--weight-medium) var(--text-sm)/1.3 var(--font-body);color:var(--text-primary)}

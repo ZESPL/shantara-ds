@@ -1,4 +1,4 @@
-# `assets/photos/` — catalogue
+# `assets/photos/`: catalogue
 
 One entry per photograph, written by looking at each frame. Start from [`README.md`](README.md): it has the rules, the public-use statuses, a shortlist by job and a compact index. Search this file for `#### <filename>` rather than reading it whole.
 

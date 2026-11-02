@@ -11,7 +11,7 @@ export interface SectionProps extends React.HTMLAttributes<HTMLElement> {
   width?: "default" | "wide" | "narrow" | "full";
   /** Element to render. Default `section`. */
   as?: React.ElementType;
-  /** Skip the inner `.sh-container` — the children run edge to edge. */
+  /** Skip the inner `.sh-container`; the children run edge to edge. */
   bleed?: boolean;
   children?: React.ReactNode;
 }

@@ -3,12 +3,12 @@ import { Statement } from "../editorial/Statement.jsx";
 import { Media } from "../editorial/Media.jsx";
 
 /* A guest's own words. Only real stories with written consent (content/guest-stories,
-   content/testimonials — both empty today, so nothing ships until they are not). A name only
+   content/testimonials, both empty today, so nothing ships until they are not). A name only
    when the guest agreed to it; otherwise a first initial and the context of the stay. Never
    a health result or a claim the clinical team would not make; never a face in therapy.
-   `story` — one story: a large quote, the attribution and the context of the stay, with an
+   `story`: one story, a large quote, the attribution and the context of the stay, with an
    optional photograph of the place (not the guest) beside it from 1000px.
-   `stories` — two or three short quotes side by side from 1000px, stacked below. No carousel. */
+   `stories`: two or three short quotes side by side from 1000px, stacked below. No carousel. */
 const CSS = `
 .sh-story{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--stack-lg);align-items:center}
 .sh-story-quote{margin:0;display:flex;flex-direction:column;gap:var(--space-6);min-width:0}

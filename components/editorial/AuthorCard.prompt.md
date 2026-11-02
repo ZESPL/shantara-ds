@@ -7,6 +7,6 @@ The author's byline card at the end of an article: 4:5 portrait (initials until 
 
 **Use** once per article, after the body and before `RelatedArticles`. The byline at the top lives in `ArticleHeader`; the medical reviewer gets `ReviewedBy`.
 
-**Content.** Bio only from confirmed fields in `content/doctors/` (qualifications and biographies are still `[TO CONFIRM]` — leave `bio` out until they exist). Never a stock face.
+**Content.** Bio only from confirmed fields in `content/doctors/` (qualifications and biographies are still `[TO CONFIRM]`, so leave `bio` out until they exist). Never a stock face.
 
 **Responsive.** Portrait beside the text at every width (84px on a phone → 128px on desktop), hairlines above and below, max 68ch to match `Prose`.

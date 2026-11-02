@@ -29,7 +29,7 @@ Spend a residential period under a doctor who will look at hormones, metabolism,
 | Kind | Examples (not claims) |
 | --- | --- |
 | Symptoms | Irregular cycles, hot flushes, low energy, sleep change, central weight gain, low mood, reduced stamina |
-| Diagnosed conditions | PCOS, thyroid dysfunction (handbook), perimenopause, menstrual irregularity, hormone-related infertility investigations — only as the guest’s clinician has named them |
+| Diagnosed conditions | PCOS, thyroid dysfunction (handbook), perimenopause, menstrual irregularity, hormone-related infertility investigations, only as the guest’s clinician has named them |
 | Functional problems | Unpredictable months, stalled weight loss, feeling older than they are, training that no longer works |
 | Goals | Steadier cycles or menopause transition, energy, body composition, a preventive men’s check-in |
 
@@ -99,7 +99,7 @@ Clinician review; doctor credentials; protocol explanation; safety / eligibility
 
 ### M. Programme associations
 
-Indicative: Hormonal & Endocrine Balance; Men’s Vitality (named handbook wellness programme); Weight Management; Reproductive & Fertility Optimization where appropriate. Men’s Vitality is a programme name, not a seventh ICP — ICP 05 still owns the need. A guest may be placed on a different programme after assessment.
+Indicative: Hormonal & Endocrine Balance; Men’s Vitality (named handbook wellness programme); Weight Management; Reproductive & Fertility Optimization where appropriate. Men’s Vitality is a programme name, not a seventh ICP; ICP 05 still owns the need. A guest may be placed on a different programme after assessment.
 
 ### N. Appropriate CTA
 
@@ -119,12 +119,12 @@ Marketing poor-fit: beauty-retreat traffic, anti-ageing injectables audience, gu
 | --- | --- | --- |
 | Market Research | {Validated} 20 Sep 2026 | Phase B PCOS/menopause + Phase C hydrate `men's vitality retreat`, `men's health retreat`, `pcos retreat` (IN/UAE/UK). Men’s Vitality is now a named handbook programme (not a new ICP). |
 | Priority Countries | {Validated} 20 Sep 2026 | India has measurable PCOS treatment language; retreat compounds thin. Men’s health retreat floor-level in IN/UK/UAE. |
-| Search Demand | {Validated} 20 Sep 2026 | **Phase B:** India `pcos treatment holistic` 480; `pcos treatment india` 30; `pcos retreat` / `pcos naturopathy` —; `menopause retreat` 10. UK menopause retreat 50; PCOS retreat —. **Phase C:** India/UAE/UK `men's health retreat` 10 / 10 / 20; `men's vitality retreat` —; `pcos retreat` —. Expansion of vitality seed flooded spa/massage/bodybuilding — discarded. |
-| Validated Customer Language | {Validated} 20 Sep 2026 | PCOS treatment (holistic / india) measured; PCOS retreat largely —. Menopause retreat low but real in UK (50). Men’s health retreat exists at floor volumes — do not H1 “Hormonal & Vitality Health” or “HNI”. |
-| Keyword Clusters | {Validated} 20 Sep 2026 | (1) PCOS treatment — India 480 may be local-clinic intent. (2) Menopause retreat — UK-led, small. (3) Men’s health retreat — floor. Contaminants: beauty/spa; massage retreats; bodybuilding. |
-| Competitor / SERP Findings | {Validated} 20 Sep 2026 | **UK `men's health retreat`:** men’s work / wellness retreats (Both Sides, Unmasked Man, Bali mental-fitness) — not Keralam naturopathy clinic. PCOS-retreat SERP skipped (volume —). |
-| Recommended Landing Pages | {Validated} 20 Sep 2026 | `/en/conditions/pcos` second in India launch inventory after obesity. Menopause slug when content-ready. Programme page for Men’s Vitality when catalogue content exists — not a new ICP hub. |
-| Paid Campaign Opportunities | {Validated} 20 Sep 2026 | Treat `pcos treatment holistic` cautiously — may not mean Keralam residential stay. Do not buy men’s spa/massage retreat inventory. |
+| Search Demand | {Validated} 20 Sep 2026 | **Phase B:** India `pcos treatment holistic` 480; `pcos treatment india` 30; `pcos retreat` / `pcos naturopathy` —; `menopause retreat` 10. UK menopause retreat 50; PCOS retreat —. **Phase C:** India/UAE/UK `men's health retreat` 10 / 10 / 20; `men's vitality retreat` —; `pcos retreat` —. Expansion of vitality seed flooded spa/massage/bodybuilding and was discarded. |
+| Validated Customer Language | {Validated} 20 Sep 2026 | PCOS treatment (holistic / india) measured; PCOS retreat largely —. Menopause retreat low but real in UK (50). Men’s health retreat exists at floor volumes; do not H1 “Hormonal & Vitality Health” or “HNI”. |
+| Keyword Clusters | {Validated} 20 Sep 2026 | (1) PCOS treatment: India 480 may be local-clinic intent. (2) Menopause retreat: UK-led, small. (3) Men’s health retreat: floor. Contaminants: beauty/spa; massage retreats; bodybuilding. |
+| Competitor / SERP Findings | {Validated} 20 Sep 2026 | **UK `men's health retreat`:** men’s work / wellness retreats (Both Sides, Unmasked Man, Bali mental-fitness), not Keralam naturopathy clinic. PCOS-retreat SERP skipped (volume —). |
+| Recommended Landing Pages | {Validated} 20 Sep 2026 | `/en/conditions/pcos` second in India launch inventory after obesity. Menopause slug when content-ready. Programme page for Men’s Vitality when catalogue content exists, not a new ICP hub. |
+| Paid Campaign Opportunities | {Validated} 20 Sep 2026 | Treat `pcos treatment holistic` cautiously; it may not mean Keralam residential stay. Do not buy men’s spa/massage retreat inventory. |
 | Content Opportunities | {Validated} 20 Sep 2026 | PCOS condition page when clinical bar met; menopause education; Men’s Vitality programme copy after assessment-led framing. |
 | Negative Keywords / Poor-fit Traffic | {Validated} 20 Sep 2026 | Beauty retreat; injectables; guaranteed fertility; spa “hormone holiday”; massage retreat; bodybuilding. |
 | Evidence Gaps | {Validated} 20 Sep 2026 | India PCOS holistic volume still ambiguous (stay vs outpatient). Search Console {Not applicable}. |

@@ -12,3 +12,6 @@ node_modules/
 .netlify/
 .DS_Store
 Thumbs.db
+
+# Local agent links created by `npx skills` (absolute symlinks). The skill itself is in .agents/skills.
+.claude/skills/

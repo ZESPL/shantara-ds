@@ -1,7 +1,7 @@
 import React from "react";
 import { Icon } from "../core/Icon.jsx";
 
-/* Share an article: copy link, WhatsApp, email — the three ways guests actually pass a
+/* Share an article: copy link, WhatsApp, email: the three ways guests actually pass a
    page on. Quiet outline chips with a glyph and a word; "Copy link" confirms with
    "Link copied" for two seconds (announced politely). Wraps on phones. */
 const CSS = `

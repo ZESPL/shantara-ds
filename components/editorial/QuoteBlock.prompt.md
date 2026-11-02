@@ -7,7 +7,7 @@ A large Light quote, left-aligned, closed by an attribution line (short brand ru
   facts={[{ label: "The setting", text: "A hilltop above the Chennamangallur valley." }]} />
 ```
 
-**Content rule.** Only consented, recorded words, or the organisation's own stated position attributed to the organisation. `content/testimonials/` is empty, so the kit uses this block for brand statements only — never a composed testimonial, never words put in a doctor's mouth. Always give an attribution; a quote without one looks unfinished.
+**Content rule.** Only consented, recorded words, or the organisation's own stated position attributed to the organisation. `content/testimonials/` is empty, so the kit uses this block for brand statements only: never a composed testimonial, never words put in a doctor's mouth. Always give an attribution; a quote without one looks unfinished.
 
 **Facts.** 1–3; the label is a short normal-case phrase (Medium), never an uppercase overline.
 

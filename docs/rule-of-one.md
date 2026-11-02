@@ -4,7 +4,7 @@ Every Shantara surface has **one reader, one idea, one focal point and one next 
 
 This applies to anything this design system produces: website pages and sections, heroes, share images, decks and slides, posters, print ads, brochures, guest documents, stationery, emails, WhatsApp messages, social posts, video, app screens and forms. It is the composition rule behind several rules that already exist here (one primary button per view, one rosette band per view, one idea per slide, one consultation form). This file is the single place it is stated. Other files link here and keep only their own medium's specifics.
 
-## Why this matters for Shantara
+## Why Shantara uses it
 
 A prospective guest is weighing a health decision and a costly stay, often on a phone. A surface that says one thing clearly reads as clinical confidence. A surface that says five things reads as a sales pitch, which is the opposite of the calm, factual register in [`ui_kits/website/skill-copy.md`](../ui_kits/website/skill-copy.md). The rule of one also keeps the system small: when every block has one job, fewer components, variants and exceptions are needed.
 
@@ -31,7 +31,7 @@ Next step:   the one action (for the website, Book a Consultation unless the sur
 Not here:    what was cut or moved, and where it went
 ```
 
-On the website this is the "page job" in [`ui_kits/website/SKILL.md` §11](../ui_kits/website/SKILL.md#section-11) and [`skill-qa.md` step 1](../ui_kits/website/skill-qa.md#step-1--define-the-page-job), with the idea line added. Audience is described by need and intent; internal ICP labels from `docs/icp.md` may appear in a planning brief but never on the surface or on a content record.
+On the website this is the "page job" in [`ui_kits/website/SKILL.md` §11](../ui_kits/website/SKILL.md#section-11) and [`skill-qa.md` step 1](../ui_kits/website/skill-qa.md#step-1-define-the-page-job), with the idea line added. Audience is described by need and intent; internal ICP labels from `docs/icp.md` may appear in a planning brief but never on the surface or on a content record.
 
 ## Levels
 

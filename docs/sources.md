@@ -6,14 +6,14 @@ The original brand pack lives in `uploads/`. Claude Design read it, curated what
 
 | Source | What it is | What the system took |
 | --- | --- | --- |
-| `uploads/Compressed/Frame 1–5.jpg` | Five photographed guideline spreads | Voice, pattern, palette, type, colourways, print, imagery — written into `readme.md` and the guideline cards |
+| `uploads/Compressed/Frame 1–5.jpg` | Five photographed guideline spreads | Voice, pattern, palette, type, colourways, print, imagery, written into `readme.md` and the guideline cards |
 | `uploads/Shantara_Brand Guidelines HQ.pdf` | Full guideline PDF | Not parsed. The Frame images superseded it |
 | `uploads/Compressed/TRD*.jpg` | Property shoot, 45 frames | Merged into flat `assets/photos/` (kit slugs + descriptive alternates, ~2880px long edge) |
 | `uploads/Primary Colors.jpg` | Primary colour board | Himalaya, Gold Crayola |
 | `uploads/colors secondary.jpg` | Neutral board | Pine Tree through Merino |
-| `uploads/accent colors.jpg` | Accent board | Sand, Ocean, Clay, Forest, Sky, Lavender — three hexes sampled, not read |
+| `uploads/accent colors.jpg` | Accent board | Sand, Ocean, Clay, Forest, Sky, Lavender (three hexes sampled, not read) |
 | `uploads/Shantara - Full logo / Icon / wordmark` | SVG ×4 each, plus PDF | Wordmark and flower recoloured into `assets/`. The stacked file is not used. |
-| `uploads/Pattern Single Tile.png` | Single rosette motif | `assets/pattern-motif.png` — ornament only, never tiled |
+| `uploads/Pattern Single Tile.png` | Single rosette motif | `assets/pattern-motif.png`: ornament only, never tiled |
 | `uploads/Pattern Seamless_SCALE ACCORDINGLY.png` | Seamless repeat | Measured; `assets/pattern-unit.png` is the 530×530 cell |
 | `uploads/pattern LOW Q White/Black.png` | Low-resolution pattern proofs | Reference only |
 | `uploads/DiodrumCyrillic-*.ttf` | Six weights | `assets/fonts/` as shipped |
@@ -29,7 +29,7 @@ On this machine the pack was about **575MB**, almost all of it the raw `TRD` fra
 
 ## Photos (`assets/photos/`)
 
-Flat folder — see [`assets/photos/README.md`](../assets/photos/README.md).
+Flat folder; see [`assets/photos/README.md`](../assets/photos/README.md).
 
 **Kit defaults:** `arrival-dusk` · `valley` · `courtyard` · `treatment` · `room-premium` · `room-twin` · `balcony` · `dining` · `water-wall` · `library` · `grounds` · `lobby` · `exterior-day` · `reception` · `corridor` · `lounge`
 

@@ -30,7 +30,7 @@ export function weekStart(locale = "en-GB") {
     const info = new Intl.Locale(locale).weekInfo;
     if (info && info.firstDay >= 1 && info.firstDay <= 7) return info.firstDay;
   } catch {
-    /* Locale or weekInfo missing — Monday. */
+    /* Locale or weekInfo missing: Monday. */
   }
   return 1;
 }
@@ -175,7 +175,7 @@ export function filterOptions(options, query) {
 }
 
 /** A real pointer move should retarget the highlight. Touch and a stationary
- *  pointer (the list scrolled underneath it) must not — otherwise the highlight
+ *  pointer (the list scrolled underneath it) must not, otherwise the highlight
  *  scroll chases the cursor to the top or the bottom. */
 export function pointerMovesHighlight(event) {
   if (!event || event.pointerType === "touch") return false;

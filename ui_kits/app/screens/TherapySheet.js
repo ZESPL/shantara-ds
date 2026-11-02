@@ -29,7 +29,7 @@ function TherapySheet({ onClose }) {
           <Divider spacing="var(--space-6)" />
           <span className="shantara-eyebrow">{t("Before you come")}</span>
           <div style={{ display: "flex", flexDirection: "column", gap: "var(--space-4)", marginTop: "var(--space-4)" }}>
-            {[["shirt", "Wear the wellness attire in your room"], ["droplet", "Rinse in the changing wing first"], ["clock", "Arrive five minutes early — sessions start on the hour"]].map(([ic, line]) => (
+            {[["shirt", "Wear the wellness attire in your room"], ["droplet", "Rinse in the changing wing first"], ["clock", "Arrive five minutes early, as sessions start on the hour"]].map(([ic, line]) => (
               <div key={line} style={{ display: "flex", gap: "var(--space-4)", alignItems: "flex-start" }}>
                 <Icon name={ic} size={17} color="var(--text-brand)" />
                 <span style={{ fontSize: "var(--text-sm)", flex: 1 }}>{t(line)}</span>
@@ -39,7 +39,7 @@ function TherapySheet({ onClose }) {
           <Divider spacing="var(--space-6)" />
           <Accordion defaultOpen={null} items={[
             { title: t("What it feels like"), content: t("Cool at first, then warm as the application settles. The session ends with ten minutes of rest before you rinse.") },
-            { title: t("If something feels wrong"), content: t("Tell your therapist immediately. Any symptom, pain or discomfort during a session is escalated to a doctor — never waited out.") },
+            { title: t("If something feels wrong"), content: t("Tell your therapist immediately. Any symptom, pain or discomfort during a session is escalated to a doctor, never waited out.") },
             { title: t("Changing your protocol"), content: t("Requests to stop, extend or modify a therapy go to your doctor rather than the therapy team.") },
           ]} />
         </div>
@@ -81,7 +81,7 @@ function ProfileScreen() {
       <div>
         <span className="shantara-eyebrow">{t("On your file")}</span>
         <div style={{ display: "flex", gap: "var(--space-3)", flexWrap: "wrap", marginTop: "var(--space-4)" }}>
-          {["Type 2 diabetes", "Low back pain", "No dairy", "Left knee — no deep pressure"].map((key) => <Tag key={key} selected>{t(key)}</Tag>)}
+          {["Type 2 diabetes", "Low back pain", "No dairy", "Left knee: no deep pressure"].map((key) => <Tag key={key} selected>{t(key)}</Tag>)}
         </div>
         <p style={{ fontSize: "var(--text-2xs)", color: "var(--text-muted)", marginTop: "var(--space-4)" }}>{t("Visible to your care team only. Ask a doctor to change anything here.")}</p>
       </div>
@@ -112,7 +112,7 @@ function NotesScreen() {
   const vitals = [["Weight", "71.4 kg", "−1.8 since day 1"], ["Fasting glucose", "112 mg/dL", "−26 since day 1"], ["Blood pressure", "128 / 82", "steady"], ["Sleep", "7h 10m", "+1h 20m"]];
   const entries = [
     ["Day 5", "Woke before the alarm for the first time. The 6:30 session felt easier on the knees."],
-    ["Day 3", "Headache through the afternoon — mentioned it to Dr. Janu, who adjusted the evening meal."],
+    ["Day 3", "Headache through the afternoon. Mentioned it to Dr. Janu, who adjusted the evening meal."],
     ["Day 1", "Long drive up. The valley is louder than I expected: birds, not traffic."],
   ];
   return (

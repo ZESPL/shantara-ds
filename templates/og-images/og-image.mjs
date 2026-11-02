@@ -1,4 +1,4 @@
-/* Shantara share image renderer — reference implementation.
+/* Shantara share image renderer: reference implementation.
    The specification is ui_kits/website/skill-og-images.md. If this file and that
    document disagree, the document wins and this file is corrected.
 

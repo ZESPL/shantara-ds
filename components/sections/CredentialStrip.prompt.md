@@ -1,4 +1,4 @@
-Credentials spelled out — name, issuer, holder, number — never a bare logo.
+Credentials spelled out (name, issuer, holder, number), never a bare logo.
 
 ```jsx
 <Section>

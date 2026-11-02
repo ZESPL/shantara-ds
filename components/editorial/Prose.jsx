@@ -1,7 +1,7 @@
 import React from "react";
 
-/* Long-form article text. Styles the plain HTML a CMS or Markdown renderer produces —
-   h2/h3/h4, p, ul/ol, blockquote, figure + figcaption, table, hr, links, strong/em, code —
+/* Long-form article text. Styles the plain HTML a CMS or Markdown renderer produces
+   (h2/h3/h4, p, ul/ol, blockquote, figure + figcaption, table, hr, links, strong/em, code)
    at a 68ch measure with the body rhythm. Wide children (figure[data-width="wide"],
    tables) may break out of the measure up to the container. */
 const CSS = `

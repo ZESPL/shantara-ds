@@ -1,4 +1,4 @@
-A note the reader must not miss — a clinical note, a caution, a policy or a booking condition.
+A note the reader must not miss: a clinical note, a caution, a policy or a booking condition.
 
 ```jsx
 <NoticeBand title="Continue your medication">

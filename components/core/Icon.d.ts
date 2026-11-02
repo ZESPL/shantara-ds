@@ -21,7 +21,7 @@ export type ShantaraIconName =
   | "instagram" | "facebook" | "linkedin" | "youtube" | "x-social";
 
 /**
- * Lucide glyph wrapper — intentional addition (the brand package ships no icon set).
+ * Lucide glyph wrapper, an intentional addition (the brand package ships no icon set).
  * Renders the glyph as a CSS mask so it takes `currentColor`.
  */
 export interface IconProps extends React.HTMLAttributes<HTMLSpanElement> {
@@ -29,7 +29,7 @@ export interface IconProps extends React.HTMLAttributes<HTMLSpanElement> {
   name: ShantaraIconName | (string & {});
   /** Box size in px (default 20). */
   size?: number | string;
-  /** Ignored — kept for API parity; Lucide masks carry their own stroke. */
+  /** Ignored, kept for API parity; Lucide masks carry their own stroke. */
   strokeWidth?: number;
   color?: string;
   /** Accessible name. Omit for decorative icons (aria-hidden). */

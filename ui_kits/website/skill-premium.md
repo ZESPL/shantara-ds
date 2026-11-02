@@ -4,7 +4,7 @@ Back to the [website skill](SKILL.md).
 
 Design and motion rules for the Shantara public marketing website (Astro + Tailwind). Use this whenever building, styling, reviewing, or changing any page, component, layout, image treatment, typography, animation, hover state, transition, or “premium feel.” Also use it when anyone asks to make the site feel more premium, luxurious, polished, or high-end, or suggests adding an animation library, UI component library, scroll effect, parallax, carousel, or preloader. Apply it even if the request only mentions one small component.
 
-Shantara is a **52-room naturopathy retreat** — a doctor-led residential clinic guests stay at in Kozhikode. Visitors are deciding whether to trust Shantara with their health and a costly stay, often from the Gulf and often on a phone. The site must feel calm, confident, and trustworthy before it feels impressive.
+Shantara is a **52-room naturopathy retreat**: a doctor-led residential clinic guests stay at in Kozhikode. Visitors are deciding whether to trust Shantara with their health and a costly stay, often from the Gulf and often on a phone. The site must feel calm, confident, and trustworthy before it feels impressive.
 
 **Wellness** is a discovery gloss in some markets; it is not the product type. Public naming follows [skill-copy.md](skill-copy.md). Do not describe the product as a “wellness retreat” in heroes, titles, or schema.
 
@@ -18,11 +18,11 @@ Premium feel is a product of five things working together:
 
 Photography × Typography × Layout × Copy × Performance
 
-If any one of these is weak, the whole site feels cheap. Motion cannot fix a weak one. Copy and information structure matter as much as visuals here, because visitors are judging a health-related stay, not just a pretty resort.
+If any one of these is weak, the whole site feels cheap. Motion cannot fix a weak one. Copy and information structure matter as much as visuals here, because visitors are judging a health-related stay.
 
 ### Rule of one
 
-Restraint has a rule: **one reader, one idea, one focal point, one next step** — the standard is [`docs/rule-of-one.md`](../../docs/rule-of-one.md). On the website it means:
+The rule of restraint is **one reader, one idea, one focal point, one next step**. The standard is [`docs/rule-of-one.md`](../../docs/rule-of-one.md). On the website it means:
 
 - **Page:** one idea and one primary action, decided in build step 1 before any layout.
 - **Section:** one point, one heading, one photograph (or one row of tiles), at most one action.
@@ -62,7 +62,7 @@ Full stack table: [skill-stack.md](skill-stack.md).
 ## Photography and video
 
 - Real property, treatments, food, people, and landscape. Avoid generic stock wellness imagery.
-- Prefer frames without identifiable guests where public marketing allows; never show faces in therapy or room numbers (guest privacy — root `SKILL.md`).
+- Prefer frames without identifiable guests where public marketing allows; never show faces in therapy or room numbers (guest privacy: root `SKILL.md`).
 - One strong image per section beats a grid of weak ones.
 - Always use Astro Image with correct `sizes`, width and height set, and modern formats. Storage and compression rules: [skill-images.md](skill-images.md).
 - Hero video: optional, short (10 to 15 seconds), muted, looped, compressed, with a still poster image that loads first. Never autoplay audio. Hosting, the native `<video>` element, schema and the video sitemap: [skill-video.md](skill-video.md).
@@ -70,11 +70,11 @@ Full stack table: [skill-stack.md](skill-stack.md).
 
 ## Typography
 
-Shantara ships **one typeface for Latin/Cyrillic: Diodrum** (weights via design-system tokens). Display and body are the same family at different sizes and weights — do **not** introduce a separate “premium serif” for headings.
+Shantara ships **one typeface for Latin/Cyrillic: Diodrum** (weights via design-system tokens). Display and body are the same family at different sizes and weights. Do **not** introduce a separate “premium serif” for headings.
 
 - Self-host fonts. Subset them. Use `font-display: swap` (already set on Diodrum faces).
 - Generous heading sizes, body line height 1.6, body measure `--measure-body` (62ch), headlines `--measure-statement` (30ch).
-- Use type tokens (`--type-display`, `--type-statement`, `--type-body`, …) and the spacing/type scale — no one-off font stacks in components. Voices and weights: [Design system rules](#design-system-rules-from-the-brand-deck).
+- Use type tokens (`--type-display`, `--type-statement`, `--type-body`, …) and the spacing/type scale. No one-off font stacks in components. Voices and weights: [Design system rules](#design-system-rules-from-the-brand-deck).
 - Arabic: **IBM Plex Sans Arabic** pairing under `[dir=rtl]` (see `tokens/rtl.css`). Do not use a system fallback as the Arabic display face.
 
 ## Layout and whitespace
@@ -87,10 +87,10 @@ Shantara ships **one typeface for Latin/Cyrillic: Diodrum** (weights via design-
 
 ## Colour and material
 
-- Use the design-system palette: deep olive / gold primary pair, stone and linen neutrals, landscape accents — defined once as tokens. No hard-coded hex values in components.
+- Use the design-system palette: deep olive / gold primary pair, stone and linen neutrals, landscape accents, defined once as tokens. No hard-coded hex values in components.
 - The rosette is a **band on one edge**, never a page wash (root `SKILL.md`).
 - Subtle texture is allowed only if it does not hurt contrast or performance.
-- Meet WCAG AA contrast for all text. Type on photography sits inside a scrim that covers the whole text block (`--scrim-hero`) and is set in solid Merino — see accessibility guidelines.
+- Meet WCAG AA contrast for all text. Type on photography sits inside a scrim that covers the whole text block (`--scrim-hero`) and is set in solid Merino (see accessibility guidelines).
 
 ## Design system rules (from the brand deck)
 
@@ -106,7 +106,7 @@ The website is the brand deck carried to a scrolling page. The deck rules that a
 | Item | `--type-item` (= h4) | 20 | Medium | Step, list and table item titles |
 | Numeral | `--type-numeral` | 48 → 84 | Light | Two or three figures in `NumeralsSplit` |
 
-- **The Light rule:** every heading at 24px or larger is Diodrum Light. Medium is only for item titles at 20px or smaller. Body is Regular 17/1.6 — never Light.
+- **The Light rule:** every heading at 24px or larger is Diodrum Light. Medium is only for item titles at 20px or smaller. Body is Regular 17/1.6, never Light.
 - `--type-lead` is deprecated. Use body, or a `Statement` with a `sub` line.
 - Headlines are left-aligned and wrap at `--measure-statement` (30ch). Body wraps at `--measure-body` (62ch).
 
@@ -122,7 +122,7 @@ A section paints one of five grounds with `data-ground` (use `Section`; nothing 
 | `pine` | `ClosingCTA` without a photograph, footer. |
 | `photo` | Heroes, `PanoramaCaption`, `ClosingCTA` with a photograph. |
 
-Dark grounds re-point the ink tokens. Inside `himalaya`, `pine` and `photo` the primary button becomes Gold with Pine ink, text becomes Merino, Do not pass tone props or hard-code colours to get this.
+Dark grounds re-point the ink tokens. Inside `himalaya`, `pine` and `photo` the primary button becomes Gold with Pine ink, text becomes Merino. Do not pass tone props or hard-code colours to get this.
 
 ### Shape
 
@@ -135,7 +135,7 @@ Dark grounds re-point the ink tokens. Inside `himalaya`, `pine` and `photo` the 
 
 - `Button` has three variants: `primary`, `secondary`, `link`. `accent`, `ghost` and `inverse` are deprecated aliases kept for the app kit. Do not use them on the website.
 - One primary button per view. On light grounds it is Himalaya; on dark grounds it is Gold automatically.
-- "More" links are `TextLink` (hairline and arrow), aligned to the grid — not a second button.
+- "More" links are `TextLink` (hairline and arrow), aligned to the grid, not a second button.
 - Sizes 36 / 44 / 52px (`--control-sm/md/lg`). Every size reaches 44px on touch.
 
 ### Tiles, not cards
@@ -154,7 +154,7 @@ Dark grounds re-point the ink tokens. Inside `himalaya`, `pine` and `photo` the 
 
 ### No eyebrows
 
-- Owner decision: no small uppercase tracked label above a hero, section, card or column title — anywhere. The `Eyebrow` component is deleted.
+- Owner decision: no small uppercase tracked label above a hero, section, card or column title, anywhere. The `Eyebrow` component is deleted.
 - Category, duration, place or date goes in a caption meta row **below** the title, in normal case (`meta` prop on heroes, `Statement`, `Tile`; `MetaRow` elsewhere).
 
 ### Component map
@@ -205,7 +205,7 @@ Headings, labels, navigation, and buttons are direct and literal. A visitor scan
 
 Calm, specific, factual tone. No hype.
 
-**All public-facing language follows [skill-copy.md](skill-copy.md).** Do not invent parallel voice rules here. Health content must not claim cures or guaranteed outcomes; prefer careful wording such as “supports” or “may help”; flag medical pages for human review before publishing. India’s Drugs and Magic Remedies (Objectionable Advertisements) Act, 1954 applies. The programme name **Diabetes Reversal** is approved for catalogue use — do not present reversal as a guaranteed outcome.
+**All public-facing language follows [skill-copy.md](skill-copy.md).** Do not invent parallel voice rules here. Health content must not claim cures or guaranteed outcomes; prefer careful wording such as “supports” or “may help”; flag medical pages for human review before publishing. India’s Drugs and Magic Remedies (Objectionable Advertisements) Act, 1954 applies. The programme name **Diabetes Reversal** is approved for catalogue use; do not present reversal as a guaranteed outcome.
 
 ## Motion vocabulary
 

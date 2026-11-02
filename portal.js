@@ -1,4 +1,4 @@
-/* Shantara design-system portal — one shared shell for index.html and every docs page.
+/* Shantara design-system portal: one shared shell for index.html and every docs page.
    Top bar (search), left sidebar (IA from _ds_manifest.json), breadcrumbs, page ID,
    prev/next, heading Copy-ID buttons, and the preview stage (ground + screen toggles).
 
@@ -188,7 +188,7 @@
       order: ["guidelines/colors.html", "guidelines/type.html", "guidelines/logo.html", "guidelines/hnch-logo.html", "guidelines/brand-pattern.html", "guidelines/brand-imagery.html", "guidelines/brand-protection.html", "guidelines/brand-applications.html"] },
     { key: "Foundations", label: "Foundations", blurb: "Scale, rhythm, radius, borders, elevation, motion and accessibility",
       order: ["guidelines/spacing-scale.html", "guidelines/spacing-inuse.html", "guidelines/radius.html", "guidelines/borders.html", "guidelines/elevation.html", "guidelines/motion.html", "guidelines/accessibility.html"] },
-    { key: "Components", label: "Components", blurb: "Core, forms, navigation, feedback, editorial and sections — family overviews and one page per component", families: true },
+    { key: "Components", label: "Components", blurb: "Core, forms, navigation, feedback, editorial and sections, with family overviews and one page per component", families: true },
     { key: "Website", label: "Website kit", blurb: "Sample site, builder skill, IA, sections, copy, ICP, stack and QA",
       order: [
         "ui_kits/website/index.html", "docs/website-kit.html", "docs/website-skill.html", "docs/website-ia.html",
@@ -220,7 +220,7 @@
         ] },
         "docs/website-qa.html",
       ] },
-    { key: "App", label: "App kit", blurb: "In-stay guest companion — schedule, protocol, notes",
+    { key: "App", label: "App kit", blurb: "In-stay guest companion: schedule, protocol, notes",
       order: ["ui_kits/app/index.html", "docs/app-kit.html"] },
     { key: "Templates", label: "Templates", blurb: "Brand deck layouts and the presentation skill",
       order: ["templates/brand-deck/BrandDeck.dc.html", "docs/presentations-skill.html"] },
@@ -541,7 +541,7 @@
   }
 
   /* Keep the sidebar where the reader left it: docs pages are full page loads, so restore
-     the saved scroll first, and only move it when the current page would be out of view —
+     the saved scroll first, and only move it when the current page would be out of view,
      then bring the item into view together with its family heading, not cut under the top. */
   function placeSidebar() {
     const side = els.side;

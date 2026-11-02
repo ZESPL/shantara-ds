@@ -9,27 +9,27 @@ description: >
 
 # Shantara Website Skill
 
-This is the website-building skill. The Website Kit (`ui_kits/website/`) is the place humans and agents read it. Sample screens here illustrate composition — they are **not** a production website.
+This is the website-building skill. The Website Kit (`ui_kits/website/`) is the place humans and agents read it. Sample screens here illustrate composition. They are **not** a production website.
 
-Entity facts for programmes, rooms, conditions, NAP, and tariff live in [`content/`](../../content/). Prefer those records over inventing local arrays. Use [`docs/handbook.txt`](../../docs/handbook.txt) as the index, then the section file under [`docs/handbook/`](../../docs/handbook/), for policies and `[TO CONFIRM]` flags — not for hero copy. Never quote handbook §15 as public language. Start from root [`AGENTS.md`](../../AGENTS.md).
+Entity facts for programmes, rooms, conditions, NAP, and tariff live in [`content/`](../../content/). Prefer those records over inventing local arrays. Use [`docs/handbook.txt`](../../docs/handbook.txt) as the index, then the section file under [`docs/handbook/`](../../docs/handbook/), for policies and `[TO CONFIRM]` flags. Do not use them for hero copy. Never quote handbook §15 as public language. Start from root [`AGENTS.md`](../../AGENTS.md).
 
 Read this file first. Open a sibling reference only when the task needs that inventory:
 
-- [Production stack](skill-stack.md) — Astro, Keystatic, Tailwind, Netlify, analytics/SEO services; locked defaults for shantara.life
-- [Folder structure](skill-structure.md) — folder layout, route table, data sources, Keystatic scope and build checks for the shantara.life Astro repo
-- [Images](skill-images.md) — where image files go in the Astro repo, preparing files before commit, widths and formats, build checks
-- [Share images](skill-og-images.md) — Open Graph and Twitter card images: three templates, page metadata and fallbacks, Astro build-time generation, manual overrides, checks
-- [Icons](skill-icons.md) — favicon, iOS touch icon, Android home-screen icons, web manifest and browser theme colour: the seven files, `<head>` tags, rebuild and checks
-- [Video](skill-video.md) — Cloudflare R2 + CDN only, native `<video>`, VideoObject, video sitemap, no committed files and no third-party players
-- [Premium design](skill-premium.md) — build order, design-system rules from the brand deck (type voices, grounds, shape, buttons, tiles, component map, responsive rules), motion vocabulary
-- [Information architecture](skill-ia.md) — nav, URLs, page inventory, publishing families
-- [Sections and composition](skill-sections.md) — heroes, section library → components, tiles, example pages
-- [Content and leads](skill-content.md) — CMS entities, publishing, E-E-A-T, consultation form
-- [Language and copywriting](skill-copy.md) — public-facing website language
-- [Technical](skill-technical.md) — analytics, SEO, schema, AEO/GEO, performance, accessibility
-- [Search and AI visibility rules](search-visibility/overview.md) — checkable rules with IDs, priorities and owners for SEO, AI answers, schema, languages and accessibility; read the overview, then only the section file you need
-- [QA and workflow](skill-qa.md) — page workflow, checklists, what not to build, agent rules
-- [Special pages](special-pages.md) — public URLs sent by link, indexable, with no kit sample. Hosted visits is the first.
+- [Production stack](skill-stack.md): Astro, Keystatic, Tailwind, Netlify, analytics/SEO services; locked defaults for shantara.life
+- [Folder structure](skill-structure.md): folder layout, route table, data sources, Keystatic scope and build checks for the shantara.life Astro repo
+- [Images](skill-images.md): where image files go in the Astro repo, preparing files before commit, widths and formats, build checks
+- [Share images](skill-og-images.md): Open Graph and Twitter card images: three templates, page metadata and fallbacks, Astro build-time generation, manual overrides, checks
+- [Icons](skill-icons.md): favicon, iOS touch icon, Android home-screen icons, web manifest and browser theme colour: the seven files, `<head>` tags, rebuild and checks
+- [Video](skill-video.md): Cloudflare R2 + CDN only, native `<video>`, VideoObject, video sitemap, no committed files and no third-party players
+- [Premium design](skill-premium.md): build order, design-system rules from the brand deck (type voices, grounds, shape, buttons, tiles, component map, responsive rules), motion vocabulary
+- [Information architecture](skill-ia.md): nav, URLs, page inventory, publishing families
+- [Sections and composition](skill-sections.md): heroes, section library → components, tiles, example pages
+- [Content and leads](skill-content.md): CMS entities, publishing, E-E-A-T, consultation form
+- [Language and copywriting](skill-copy.md): public-facing website language
+- [Technical](skill-technical.md): analytics, SEO, schema, AEO/GEO, performance, accessibility
+- [Search and AI visibility rules](search-visibility/overview.md): checkable rules with IDs, priorities and owners for SEO, AI answers, schema, languages and accessibility; read the overview, then only the section file you need
+- [QA and workflow](skill-qa.md): page workflow, checklists, what not to build, agent rules
+- [Special pages](special-pages.md): public URLs sent by link, indexable, with no kit sample. Hosted visits is the first.
 
 Internal audience strategy (need-led ICPs, CRM IDs, agency requirements) lives in [`docs/icp.md`](../../docs/icp.md). Do not duplicate those definitions here. Do not use internal ICP names as website headings or keywords unless search research supports that language.
 
@@ -37,11 +37,11 @@ The brand rules in the root `SKILL.md` apply here too. Check them before inventi
 
 **The rule of one applies to every page, section and view.** One reader, one idea, one focal point, one next step. The standard, the brief to write first and the checklist live in [`docs/rule-of-one.md`](../../docs/rule-of-one.md); the sibling files apply it to their own scope.
 
-**Multilingual is architectural for the public website.** Central config: `locales.js`. Planned languages: English (`en`, source, currently published), Arabic (`ar`, first future localisation, RTL ready now), then German, French, Russian, Hindi, Malayalam. Malayalam is conditional — see [`docs/icp.md`](../../docs/icp.md). Do not translate the site in this kit. The design-system catalog, guidelines, and component docs stay English — do not localise them. Read [§15 Multilingual Architecture](#section-15) before adding a route, string, or content type.
+**Multilingual is architectural for the public website.** Central config: `locales.js`. Planned languages: English (`en`, source, currently published), Arabic (`ar`, first future localisation, RTL ready now), then German, French, Russian, Hindi, Malayalam. Malayalam is conditional (see [`docs/icp.md`](../../docs/icp.md)). Do not translate the site in this kit. The design-system catalog, guidelines, and component docs stay English. Do not localise them. Read [§15 Multilingual Architecture](#section-15) before adding a route, string, or content type.
 
 ## 1. Purpose
 
-Shantara is a **naturopathy retreat** — a doctor-led residential clinic guests stay at in Kozhikode. Internally, treat it as a **clinical hotel**: a good hotel that has a clinic, not a hospital. That phrase is not a public product name. Do not describe the product line as a “naturopathy and wellness retreat.” **Wellness** is a discovery gloss only (how some markets type intent); it is not the product type. Public naming: [skill-copy.md](skill-copy.md). Schema / titles: [skill-technical.md](skill-technical.md).
+Shantara is a **naturopathy retreat**: a doctor-led residential clinic guests stay at in Kozhikode. Internally, treat it as a **clinical hotel**: a good hotel that has a clinic, not a hospital. That phrase is not a public product name. Do not describe the product line as a “naturopathy and wellness retreat.” **Wellness** is a discovery gloss only (how some markets type intent); it is not the product type. Public naming: [skill-copy.md](skill-copy.md). Schema / titles: [skill-technical.md](skill-technical.md).
 
 **Welnez is the former name; use Shantara as the current brand name.** Do not introduce "Welnez" into new public-facing copy unless the task explicitly concerns legacy content, redirects, historical references, or migration.
 
@@ -64,13 +64,13 @@ Primary business action, in visitor-facing language:
 
 Form chrome may use **Send your details**. Make the action easy without becoming aggressive, cluttered, or sales-heavy. Do not invent parallel primary CTAs. Do not use **Enquire about a stay** or **Request a consultation** as visitor-facing primary CTAs.
 
-Rates, currency amounts, “from …” figures, and stay totals appear **only** on the production tariff page, read from the Keystatic tariff. This design system and its documentation hold no rates, currencies or validity dates — the kit tariff screen and brand-deck tariff slides show the structure with “—”. Program, condition, enquiry, and home pages **link** to the tariff page. Do not invent prices.
+Rates, currency amounts, “from …” figures, and stay totals appear **only** on the production tariff page, read from the Keystatic tariff. This design system and its documentation hold no rates, currencies or validity dates. The kit tariff screen and brand-deck tariff slides show the structure with “—”. Program, condition, enquiry, and home pages **link** to the tariff page. Do not invent prices.
 
 ## 2. Operating principles
 
 1. **Keep the architecture simple.** No generic page builder, no large backend for a marketing site, no CRM “just in case”, no dozens of analytics events, no hundreds of SEO landing pages, no parallel lead-capture flows, no one-component-per-page, no universal component with dozens of switches.
-2. **Page type describes meaning, not layout.** Types: home, condition, program, experience, doctor, about, article, contact, consultation, policy. Use them for CMS, schema, analytics, breadcrumbs, indexing — not to force a fixed template. A Diabetes page and an Arthritis page may use different sections.
-3. **Flexible pages, constrained sections.** Editors pick semantic sections (Process, FAQ, Expert, Gallery, Pricing, Feature Grid, Timeline) — not Spacer, Row, Column, Heading, Paragraph, Button, or 50/50 layout.
+2. **Page type describes meaning, not layout.** Types: home, condition, program, experience, doctor, about, article, contact, consultation, policy. Use them for CMS, schema, analytics, breadcrumbs, indexing, not to force a fixed template. A Diabetes page and an Arthritis page may use different sections.
+3. **Flexible pages, constrained sections.** Editors pick semantic sections (Process, FAQ, Expert, Gallery, Pricing, Feature Grid, Timeline), not Spacer, Row, Column, Heading, Paragraph, Button, or 50/50 layout.
 4. **One system wherever possible.** One consultation form, one lead entity, one analytics abstraction, one SEO metadata system, one schema generator, one type system, one spacing system, one section library, **one locale architecture**. Same components, sections, content models, tokens, analytics, schema, and lead form for every locale. Do not create `HomeEn` / `HomeAr`.
 5. **One job at every scale ([rule of one](../../docs/rule-of-one.md)).** A page has one idea and one primary action. A section makes one point with one photograph and at most one action. A view has one focal point and one primary button. If a page needs two ideas, it is two pages; if a section heading needs "and", it is two sections.
 6. **Evidence close to claims.** Medical claim → expert + source. Clinical process → doctor explanation. Program claim → inclusions/process. Guest experience → real photography/testimonial. Accreditation → exact credential. Facility claim → real facility photography.
@@ -93,7 +93,7 @@ Primitives are developer-level (Container, Heading, Button, Form Field, Accordio
 
 ## 4. Information architecture
 
-Top-level navigation — **five items, no more**, centred between the logo and the actions on desktop:
+Top-level navigation has **five items, no more**, centred between the logo and the actions on desktop:
 
 - Programmes
 - Conditions
@@ -132,7 +132,7 @@ Every flexible content page conceptually contains title, slug, `page_type`, navi
 
 Before composing:
 
-1. Audience — when the page is for a health need, name the need: `weight_metabolic`, `pain_mobility`, `stress_sleep_burnout`, `digestive_inflammatory`, `hormonal_vitality`, `healthy_ageing_longevity`, or secondary `short_reset`. Audience is the need, not the programme name. These IDs are planning labels only — never stored on content records or shown on the page. Open [`docs/icp.md`](../../docs/icp.md) only for audience-strategy work.
+1. Audience: when the page is for a health need, name the need: `weight_metabolic`, `pain_mobility`, `stress_sleep_burnout`, `digestive_inflammatory`, `hormonal_vitality`, `healthy_ageing_longevity`, or secondary `short_reset`. Audience is the need, not the programme name. These IDs are planning labels only. They are never stored on content records or shown on the page. Open [`docs/icp.md`](../../docs/icp.md) only for audience-strategy work.
 2. Intent
 3. Primary action
 4. Proof required
@@ -146,8 +146,8 @@ Heroes are a **family**, not one universal Hero with 30 props, and not 12 varian
 | Hero | Job | Typical uses | Component |
 | --- | --- | --- | --- |
 | Immersive | Place, emotion, photography | Home, Experience | `HeroFullBleed` |
-| Offer | Commercial page, high intent | Programme pages, Rooms and tariffs (duration/options, suitability, Book a Consultation — **no invented price**) | `HeroSplit` + booking panel |
-| Editorial / utility | Topic + readability | Conditions, About, Journal, Contact, Book a Consultation | `HeroStatement` with a side image, a Stone ground or a meta row — never "naked" |
+| Offer | Commercial page, high intent | Programme pages, Rooms and tariffs (duration/options, suitability, Book a Consultation; **no invented price**) | `HeroSplit` + booking panel |
+| Editorial / utility | Topic + readability | Conditions, About, Journal, Contact, Book a Consultation | `HeroStatement` with a side image, a Stone ground or a meta row, never "naked" |
 | Article | One Journal article | `/en/journal/<slug>` | `ArticleHeader` |
 
 No eyebrows anywhere: no small uppercase label above a hero, section or card title. Category, duration or place goes in a caption meta row **below** the title (`meta` prop / `MetaRow`).
@@ -156,7 +156,7 @@ No eyebrows anywhere: no small uppercase label above a hero, section or card tit
 
 Section library and example compositions: [skill-sections.md](skill-sections.md).
 
-Sections are built from `components/sections/` (inside `Section`, which sets one of five grounds) and `components/editorial/`. Listings use `Tile`, not `Card` (`Card` is forms and dialogs only). Semantic cards — `ConditionCard`, `ProgramCard`, `TherapyCard`, `RoomCard`, `DoctorCard`, `ArticleCard`, `GuestStoryCard`, `EventCard` — are `Tile` configurations sharing type, square-cut photographs, hover and focus. Do not make one component with dozens of conditional fields.
+Sections are built from `components/sections/` (inside `Section`, which sets one of five grounds) and `components/editorial/`. Listings use `Tile`, not `Card` (`Card` is forms and dialogs only). Semantic cards (`ConditionCard`, `ProgramCard`, `TherapyCard`, `RoomCard`, `DoctorCard`, `ArticleCard`, `GuestStoryCard`, `EventCard`) are `Tile` configurations sharing type, square-cut photographs, hover and focus. Do not make one component with dozens of conditional fields.
 
 Visual direction: calm, premium, natural, clinically credible, spacious, human, restrained. Prefer real Shantara photography. Avoid crowded cards, excessive badges/gradients, decorative animation, wellness clichés, unrelated stock, and oversized “premium” chrome. Full premium / motion rules: [skill-premium.md](skill-premium.md).
 
@@ -170,13 +170,13 @@ Recommended fields:
 
 - Name
 - Mobile / WhatsApp number
-- Email — optional
+- Email (optional)
 - Country
-- Anything you'd like us to know? — optional
+- Anything you'd like us to know? (optional)
 
 Do not turn first contact into a medical intake. Do not ask questions merely because a CRM has fields. Do not calculate stay totals on this form. Privacy consent on every form is specified in [skill-content.md](skill-content.md#privacy-consent-on-forms).
 
-Automatically attach locale, source URL, page type, content id/name, program/condition context, landing page, referrer, UTMs, timestamp. If the visitor submits from `/en/conditions/diabetes`, do not ask “Which condition?”. Field **keys** stay `full_name`, `phone`, `email`, `country`, `notes` in every language — labels translate, keys do not.
+Automatically attach locale, source URL, page type, content id/name, program/condition context, landing page, referrer, UTMs, timestamp. If the visitor submits from `/en/conditions/diabetes`, do not ask “Which condition?”. Field **keys** stay `full_name`, `phone`, `email`, `country`, `notes` in every language. Labels translate; keys do not.
 
 Same form may appear as `/en/book-consultation`, modal, drawer, or inline panel. WhatsApp is a secondary channel, not a second lead architecture.
 
@@ -213,7 +213,7 @@ SEO is part of the page system. Every **published localized** page: own URL, loc
 
 Prefer `/en/conditions/diabetes` and `/en/programs/weight-management`. Avoid keyword-variation pages and invented hub depth. Do not canonicalize a translation back to English.
 
-Generate schema from visible entity data. One Shantara organization `@id` across locales. Doctor and program identities stay stable; names may translate. Do not add invisible claims. Do not ask editors to write JSON-LD. `Offer` only where real visible commercial information exists — in this repo, that means the tariff card, not invented program prices.
+Generate schema from visible entity data. One Shantara organization `@id` across locales. Doctor and program identities stay stable; names may translate. Do not add invisible claims. Do not ask editors to write JSON-LD. `Offer` only where real visible commercial information exists. In this repo, that means the tariff card, not invented program prices.
 
 Do not create separate “AEO pages” or “GEO pages”. Answer real questions first, then expand. Prefer first-party facts over generic wellness copy. Do not treat `llms.txt` as a major SEO project.
 
@@ -226,7 +226,7 @@ Health content is an architectural requirement, not a badge.
 - Identify author/reviewer, qualifications, last medically reviewed date, and references on medical pages. English medical review does **not** make a translation trustworthy. A translated page must not imply that the English medical reviewer reviewed the translation unless that is true.
 - Maintain a public Medical Editorial Policy.
 - Do not fake freshness by changing dates on every deploy.
-- Testimonials describe experience, stay, food, service, how the guest felt — never clinical efficacy.
+- Testimonials describe experience, stay, food, service, how the guest felt. They never describe clinical efficacy.
 - Avoid “cures diabetes”, “guarantees reversal”, “eliminates hypertension”, “permanent cure”, guaranteed detox claims. The programme name **Diabetes Reversal** is approved for catalogue use; do not present reversal as a guaranteed outcome or invent rates.
 
 **All public-facing language follows [skill-copy.md](skill-copy.md).** Clarity first, warmth second, brand expression third. Write for a prospective guest. Do not narrate information architecture, invent booking restrictions (the minimum stay is 7 nights; see [copy/health-claims-and-compliance.md](copy/health-claims-and-compliance.md)), scatter prices, or convert design rationale into page copy.
@@ -241,7 +241,7 @@ The website accessibility standard is [search-visibility/accessibility.md](searc
 
 ## 11. Page workflow
 
-1. Define the page job (audience, intent, one idea, one primary action, page type, proof) — the one-sentence brief in [`docs/rule-of-one.md`](../../docs/rule-of-one.md#the-one-sentence-brief). When the page serves a health need, name the need (IDs in §5). Do not organise the sitemap as one URL per ICP.
+1. Define the page job (audience, intent, one idea, one primary action, page type, proof). This is the one-sentence brief in [`docs/rule-of-one.md`](../../docs/rule-of-one.md#the-one-sentence-brief). When the page serves a health need, name the need (IDs in §5). Do not organise the sitemap as one URL per ICP.
 2. Reuse existing semantic sections.
 3. Order content from the visitor’s decision backward.
 4. Use real, verified Shantara information; flag gaps.
@@ -277,7 +277,7 @@ When asked to modify Shantara’s website:
 14. When adding a section, block or action to a page, check it serves the page's one idea ([rule of one](../../docs/rule-of-one.md)). If it does not, propose where it belongs instead of adding it.
 15. If requirements conflict, prioritize: factual/clinical safety → user clarity → conversion simplicity → maintainability → design consistency → implementation elegance.
 
-Definition of done and how far to verify: [skill-qa.md](skill-qa.md#definition-of-done). Scale the checks to the change — a copy edit is not a full page audit. “Code compiles” is not done.
+Definition of done and how far to verify: [skill-qa.md](skill-qa.md#definition-of-done). Scale the checks to the change: a copy edit is not a full page audit. “Code compiles” is not done.
 
 ## 14. Sample kit map
 
@@ -286,9 +286,9 @@ These files are **previews** of the skill, not the live site:
 | Sample | Skill page type | Notes |
 | --- | --- | --- |
 | `screens/HomeScreen.js` | home | `HeroFullBleed`, approach, doctors, programme tiles + roomy index, therapies, rooms, journal, FAQ |
-| `screens/ConditionsScreen.js` | condition listing | Visual grouping only — no category URLs |
+| `screens/ConditionsScreen.js` | condition listing | Visual grouping only; no category URLs |
 | `screens/ProgrammeScreen.js` | program | `HeroSplit` + booking panel; tariff link, no rates |
-| `screens/ExperienceScreen.js` | experience hub | Therapies, rooms, farm, a day — not one page per room |
+| `screens/ExperienceScreen.js` | experience hub | Therapies, rooms, farm, a day; not one page per room |
 | `screens/AboutScreen.js` | about hub | Story, approach, doctors, editorial policy |
 | `screens/JournalScreen.js` | article listing | `HeroStatement` → `Tabs` → `TileGrid` → `Pagination` |
 | `screens/ArticleScreen.js` | article | `#/en/journal/<slug>`: `ArticleHeader`, `Prose`, `TableOfContents`, `ReviewedBy`, `ShareBar`, `AuthorCard`, `RelatedArticles` (kit body is a marked sample) |
@@ -352,7 +352,7 @@ It always renders (globe + current code + chevron); planned locales that are not
 
 Page / entity → source record → localized records per locale. Same section composition. Only English is populated initially.
 
-Each language is a folder of files with the same filenames as English, holding only the translatable text. The only publishing field is `status` (`draft` / `published`). There are no translation review fields: the build warns when the English file was committed after its translation. A translation publishes independently — it must not block English. Full model: [skill-content.md](skill-content.md#languages).
+Each language is a folder of files with the same filenames as English, holding only the translatable text. The only publishing field is `status` (`draft` / `published`). There are no translation review fields: the build warns when the English file was committed after its translation. A translation publishes independently. It must not block English. Full model: [skill-content.md](skill-content.md#languages).
 
 **Medical workflow (documented, not a workflow engine):** English source → clinical/medical review of the source → translation → language review → medical terminology / localized clinical review where required → localized publication.
 
@@ -384,7 +384,7 @@ Schema: one Organization `@id`. WebPage `url` and `inLanguage` follow the locale
 
 ### This kit vs production
 
-Sample screens illustrate the skill. They are not a production website. The kit uses hash routes (`#/en/`, `#/en/programs`) that map to the production URL families above. Catalog LTR/RTL and `ui_kits/website/?fixture=rtl` are **development fixtures** for visual QA — they are not published Arabic pages.
+Sample screens illustrate the skill. They are not a production website. The kit uses hash routes (`#/en/`, `#/en/programs`) that map to the production URL families above. Catalog LTR/RTL and `ui_kits/website/?fixture=rtl` are **development fixtures** for visual QA. They are not published Arabic pages.
 
-Initial build in this system: English samples, locale-aware routing, central config, LanguageSelector (always rendered; other locales "Coming soon"), RTL-ready components, Arabic type tokens, localized metadata helpers, hreflang/sitemap/schema/analytics helpers, documentation. Not a translated website.
+Initial build in this system: English samples, locale-aware routing, central config, LanguageSelector (always rendered; other locales "Coming soon"), RTL-ready components, Arabic type tokens, localized metadata helpers, hreflang/sitemap/schema/analytics helpers, documentation. It is not a translated website.
 

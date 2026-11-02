@@ -1,6 +1,6 @@
 import React from "react";
 
-/* Shared field chrome — identical in Input, Textarea and Select (one <style id="sh-field-css">). */
+/* Shared field chrome: identical in Input, Textarea and Select (one <style id="sh-field-css">). */
 const FIELD_CSS = `
 .sh-field{display:flex;flex-direction:column;gap:var(--space-3);min-width:0;font-family:var(--font-body)}
 .sh-field-label{display:flex;align-items:baseline;gap:var(--space-2);font:var(--weight-medium) var(--text-sm)/1.3 var(--font-body);color:var(--text-primary)}
@@ -51,7 +51,7 @@ function FieldMessage({ id, error, hint }) {
   return null;
 }
 
-/* Select — native <select> (best on phones) in Input's chrome, with a 16px chevron centred
+/* Select: native <select> (best on phones) in Input's chrome, with a 16px chevron centred
    on the field's midline at the inline end. */
 const CSS = `
 .sh-sel-box{position:relative;display:block}

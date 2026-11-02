@@ -1,6 +1,6 @@
-**Scope (2026 refactor).** Card is for forms, dialogs and in-stay app surfaces only. Marketing pages do not use white cards on linen — use `Tile` (image and text directly on the ground, no border, shadow or radius) and the section components in `components/sections/`. Radius is `--radius-card` (4px); padding is fluid (`md` 20→28px, `lg` 24→40px).
+**Scope (2026 refactor).** Card is for forms, dialogs and in-stay app surfaces only. Marketing pages do not use white cards on linen. Use `Tile` (image and text directly on the ground, no border, shadow or radius) and the section components in `components/sections/`. Radius is `--radius-card` (4px); padding is fluid (`md` 20→28px, `lg` 24→40px).
 
-The in-stay content container — treatments, retreats, journal entries, booking summaries.
+The in-stay content container for treatments, retreats, journal entries, booking summaries.
 
 ```jsx
 <Card media="/assets/photos/treatment.jpg" mediaAlt="Therapy room" interactive onClick={open}>
@@ -9,7 +9,7 @@ The in-stay content container — treatments, retreats, journal entries, booking
 </Card>
 ```
 
-Tones: `default` (white on Merino pages), `raised` (Pearl Bush, no shadow — for grouped panels), `sunken` (Sand), `outline`, `brand` (Himalaya), `inverse` (Pine Tree). `interactive` adds a 4px lift and the large shadow; never combine it with an interactive child button.
+Tones: `default` (white on Merino pages), `raised` (Pearl Bush, no shadow, for grouped panels), `sunken` (Sand), `outline`, `brand` (Himalaya), `inverse` (Pine Tree). `interactive` adds a 4px lift and the large shadow; never combine it with an interactive child button.
 
 `interactive` + `onClick` makes the whole card a button: it gets `role="button"`, enters the tab order, and fires on Enter and Space. Give `media` a real `mediaAlt` unless the image is decorative.
 

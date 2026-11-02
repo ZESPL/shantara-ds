@@ -1,7 +1,7 @@
 import React from "react";
 import { TableOfContents } from "../editorial/TableOfContents.jsx";
 
-/* The body of a long read — a Journal article, a legal page, the editorial policy. The
+/* The body of a long read: a Journal article, a legal page, the editorial policy. The
    article recipe as one section: the text (children, usually <Prose>) in 8 of 12 columns
    and a sticky "On this page" list in the last 3. `toc` comes from the article's h2s (each
    needs an id); `aside` adds a block under the list (ReviewedBy, ShareBar).

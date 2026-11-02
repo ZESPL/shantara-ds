@@ -1,4 +1,4 @@
-Searchable single-choice list. Type to filter, then pick a row — for countries, conditions and other long lists. Shorter lists stay on `Select` or `Radio`.
+Searchable single-choice list. Type to filter, then pick a row. Use it for countries, conditions and other long lists. Shorter lists stay on `Select` or `Radio`.
 
 ```jsx
 <SearchList label="Country of residence" required name="country" placeholder="Search countries" options={countries} value={country} onChange={setCountry} />

@@ -18,10 +18,10 @@ Canonical skill lives with the Website Kit so humans and agents read the same fi
 
 Read that file before building, styling, reviewing, or changing visual design, layout, imagery, typography, motion, hover states, or transitions on the Shantara website. Also read it when asked to make anything feel more premium, or when a dependency such as Motion, GSAP, Lenis, a carousel, parallax, a preloader, or a UI component library is proposed.
 
-Motion comes last in the build order. Stack locks (no animation libraries, no UI kits) are reinforced in `ui_kits/website/skill-stack.md`. Public copy remains governed by `ui_kits/website/skill-copy.md` — this skill does not replace it.
+Motion comes last in the build order. Stack locks (no animation libraries, no UI kits) are reinforced in `ui_kits/website/skill-stack.md`. Public copy remains governed by `ui_kits/website/skill-copy.md`; this skill does not replace it.
 
 Typography uses the design-system face (**Diodrum**; **IBM Plex Sans Arabic** for RTL). Do not invent a separate display serif. Every heading at 24px or larger is Light. Design-system rules from the brand deck (grounds, square shape, buttons, tiles, component map, responsive rules) are in the same file.
 
-Composition follows the rule of one — one idea and one action per page, one point per section, one focal point and one primary button per view: `docs/rule-of-one.md`.
+Composition follows the rule of one (one idea and one action per page, one point per section, one focal point and one primary button per view): `docs/rule-of-one.md`.
 
 For information architecture or page composition, see `ui_kits/website/SKILL.md`.

@@ -3,7 +3,7 @@ import * as React from "react";
 export interface FormSplitProps extends Omit<React.HTMLAttributes<HTMLDivElement>, "onSubmit"> {
   /** The form: fields, consent and one primary button (`type="submit"`). Rendered inside a real <form>. Always first. */
   children?: React.ReactNode;
-  /** The Stone panel copy — what happens next, under the photograph. Sticky from 1000px when the window is at least 800px tall. */
+  /** The Stone panel copy (what happens next), under the photograph. Sticky from 1000px when the window is at least 800px tall. */
   aside?: React.ReactNode;
   /** Photograph of the place across the top of the panel (4:3). */
   src?: string;

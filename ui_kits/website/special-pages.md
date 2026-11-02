@@ -8,4 +8,4 @@ Do not build a kit sample or a mockup. The page is specified here. Production us
 
 ## Pages
 
-- [Hosted visits](special-pages/hosted-stays.md) — `/en/hosted-stays`
+- [Hosted visits](special-pages/hosted-stays.md): `/en/hosted-stays`

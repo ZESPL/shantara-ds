@@ -1,4 +1,4 @@
-The deck's heading block: optional breadcrumbs → full-sentence headline → optional meta row → one quiet supporting line → actions. **No eyebrow** — nothing small and uppercase sits above the heading. Category or duration goes in `meta`, below the title.
+The deck's heading block: optional breadcrumbs → full-sentence headline → optional meta row → one quiet supporting line → actions. **No eyebrow**: nothing small and uppercase sits above the heading. Category or duration goes in `meta`, below the title.
 
 ```jsx
 <Statement sub="Progress is reviewed through the stay.">
@@ -9,7 +9,7 @@ The deck's heading block: optional breadcrumbs → full-sentence headline → op
 
 **Breadcrumbs.** A page's trail belongs to its title, so it is a child of the Statement: pass `breadcrumbs={<Breadcrumbs …/>}` and it sits a `--stack-lg` above the headline. Every hero (`HeroFullBleed`, `HeroSplit`, `HeroStatement`) passes its `breadcrumbs` through to its Statement; never place the trail beside or above a Statement yourself, or it behaves differently from page to page.
 
-**Type.** Sizes map onto the type roles (display, h1, h2/statement, h3/title, h4); all shrink on narrow screens via clamp. The supporting line is body size (lead size under display/h1) — never a second headline. Always left-aligned.
+**Type.** Sizes map onto the type roles (display, h1, h2/statement, h3/title, h4); all shrink on narrow screens via clamp. The supporting line is body size (lead size under display/h1), never a second headline. Always left-aligned.
 
 **Which size.** Pick by where the heading sits, not by how important it feels, so the same kind of section looks the same on every page:
 

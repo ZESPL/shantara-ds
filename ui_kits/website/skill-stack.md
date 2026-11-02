@@ -30,7 +30,7 @@ This design-system Website Kit (`ui_kits/website/`) remains a composition previe
 | **Technical SEO** | **Native Astro implementation** | Metadata, canonical URLs, hreflang, robots, internal linking, redirects, etc. remain in code |
 | **Structured data** | **Custom JSON-LD components** | Schema.org markup appropriate to Shantara's actual content |
 | **Sitemap** | **`@astrojs/sitemap`** | Generate sitemap(s), including multilingual URLs |
-| **Share images** | **`satori` + `sharp` at build** | Open Graph JPEGs from three templates in a static endpoint; no runtime function — see [skill-og-images.md](skill-og-images.md) |
+| **Share images** | **`satori` + `sharp` at build** | Open Graph JPEGs from three templates in a static endpoint; no runtime function (see [skill-og-images.md](skill-og-images.md)) |
 | **Testing** | **Playwright** | Only ~4–5 critical smoke tests |
 | **Static/type checking** | **Astro Check + TypeScript** | Required before merging |
 | **Source control** | **GitHub** | Repository and pull-request workflow |
@@ -48,7 +48,7 @@ This design-system Website Kit (`ui_kits/website/`) remains a composition previe
 | Service | Where | Notes |
 | --- | --- | --- |
 | **Production site** | `https://shantara.life` | Public marketing domain |
-| **OpenPanel** | `https://openpanel.zescloud.net/` | Product analytics; use the shared `track()` abstraction — see [skill-technical.md](skill-technical.md) |
+| **OpenPanel** | `https://openpanel.zescloud.net/` | Product analytics; use the shared `track()` abstraction (see [skill-technical.md](skill-technical.md)) |
 | **OpenSEO** | `https://openseo.zescloud.net/` | SEO audit and opportunity monitoring; not runtime page code |
 | **DataForSEO** | Research tooling (API / MCP) | Keyword and SERP research for SEO work; not a site dependency |
 | **Google Analytics / Tag** | Via Google Tag / GA4 | Attribution and Ads conversion; forward through the same `track()` abstraction |
@@ -58,7 +58,7 @@ This design-system Website Kit (`ui_kits/website/`) remains a composition previe
 
 ## Rules of engagement
 
-1. **Static-first.** Prefer Astro prerender. Hydrate only forms, navigation, gallery, accordion, modal/drawer, analytics, and video — same bar as [skill-technical.md](skill-technical.md).
+1. **Static-first.** Prefer Astro prerender. Hydrate only forms, navigation, gallery, accordion, modal/drawer, analytics, and video, the same bar as [skill-technical.md](skill-technical.md).
 2. **No UI kit besides Shantara + Tailwind.** Tokens and components come from this design system. Do not add MUI, Chakra, shadcn-as-product-UI, SmoothUI, or similar.
 3. **React is exceptional.** Ordinary sections and chrome stay Astro/HTML. Introduce a React island only when interactivity cannot be done with Astro + light client script.
 4. **Content path.** `keystatic.config.ts` is the only content schema. Pages read entries through the Keystatic reader (`createReader`); long-form fields are Markdoc, rendered by the site's own Markdoc renderer. Folder layout and routes: [skill-structure.md](skill-structure.md). The Keystatic singletons, collections, shared fields and language folders are defined in [skill-content.md](skill-content.md#cms--content-model). No page builder. Keep entity facts aligned with [`content/`](../../content/) in this repo where records already exist. Rates are entered only in the production Keystatic tariff.

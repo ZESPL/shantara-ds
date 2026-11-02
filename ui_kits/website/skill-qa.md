@@ -6,21 +6,21 @@ Back to the [website skill](SKILL.md).
 
 When adding or rebuilding a page, follow this sequence.
 
-### Step 1 — Define the page job
+### Step 1: Define the page job
 
-Write down: audience (the health need, using the IDs in [SKILL.md §5](SKILL.md#section-5) — planning labels, not stored on records); search/user intent; the page's one idea, as one sentence; one primary action; page type; main proof needed; what was left out and where it went. This is the one-sentence brief in [`docs/rule-of-one.md`](../../docs/rule-of-one.md#the-one-sentence-brief). The idea sentence is a planning note, not page copy.
+Write down: audience (the health need, using the IDs in [SKILL.md §5](SKILL.md#section-5), which are planning labels, not stored on records); search/user intent; the page's one idea, as one sentence; one primary action; page type; main proof needed; what was left out and where it went. This is the one-sentence brief in [`docs/rule-of-one.md`](../../docs/rule-of-one.md#the-one-sentence-brief). The idea sentence is a planning note, not page copy.
 
 If the idea needs two sentences joined by "and", the page has two jobs. Split it, or move one job to the page it belongs on and link to it.
 
 Do not treat a programme name as the audience.
 
-### Step 2 — Check existing components
+### Step 2: Check existing components
 
 Use existing semantic sections first.
 
 Do not create a new component just because a design mockup looks slightly different.
 
-### Step 3 — Decide content order
+### Step 3: Decide content order
 
 Work backward from the visitor’s decision.
 
@@ -28,37 +28,37 @@ Ask: What must they understand first? What must they trust before the CTA? What 
 
 Each section answers one of those questions, with one point. A section that answers none of them does not belong on this page.
 
-### Step 4 — Build content
+### Step 4: Build content
 
 Use real, verified Shantara information.
 
 Flag missing facts instead of inventing them.
 
-### Step 5 — Add medical governance if required
+### Step 5: Add medical governance if required
 
 For health/condition content ensure: reviewer; date; evidence; safe claims; author where appropriate.
 
-### Step 6 — Add SEO metadata
+### Step 6: Add SEO metadata
 
 Check: title; description; canonical; H1; OG; internal links. Rule IDs and checks: [search-visibility/overview.md](search-visibility/overview.md).
 
-### Step 7 — Verify schema
+### Step 7: Verify schema
 
 Validate that generated schema: matches visible content; references correct entities; contains no invented values.
 
-### Step 8 — Verify analytics
+### Step 8: Verify analytics
 
 Only meaningful interactions should fire custom events.
 
-### Step 9 — QA
+### Step 9: QA
 
 Complete the checklists below.
 
 ## Scope
 
-Match the checks to the change. A new or rebuilt page runs every checklist below that applies to it. A smaller change — a copy edit, one component, a style fix — runs only the items that change could affect: a copy edit checks copy, claims, naming and rates, not viewport layout or schema. Viewport checks (390 / 390 xl / 1440) apply when layout, chrome or type changed.
+Match the checks to the change. A new or rebuilt page runs every checklist below that applies to it. A smaller change (a copy edit, one component, a style fix) runs only the items that change could affect: a copy edit checks copy, claims, naming and rates, not viewport layout or schema. Viewport checks (390 / 390 xl / 1440) apply when layout, chrome or type changed.
 
-## QA Checklist — Every page
+## QA checklist: every page
 
 Before publishing a new or rebuilt page:
 
@@ -94,16 +94,16 @@ Before publishing a new or rebuilt page:
 - [ ] No broken links.
 - [ ] No legacy “Welnez” branding remains accidentally.
 - [ ] No rates, “from …” amounts, or stay totals appear except on a dedicated tariff surface.
-- [ ] Photographs are square-cut and go through `Media`. Listing tiles 4:3; wide editorial 16:9; doctors 4:5; tall architecture 3:4; 21:9 only via `PanoramaCaption` with `mobileRatio`. Heroes use a height, not a ratio. Tiles hover with a 1.02 media scale and title underline — no lift, no shadow. Design and responsive checks: [skill-premium.md](skill-premium.md#review-checklist).
-- [ ] Type on photography sits inside `--scrim-hero`, which covers the whole text block, in solid Merino — photo still readable above the type; no faded Merino mixes, no double scrims.
-- [ ] Accordions expand with visible body (Programme “What to expect”, Home FAQ). After editing `components/**`, rebuild `_ds_bundle.js` with `node scripts/build-bundle.mjs` (components only — never kit copy). After editing entity facts, edit `content/` and run `node scripts/write-content-kit.mjs`. Run `node scripts/check-bundle.mjs` before shipping.
+- [ ] Photographs are square-cut and go through `Media`. Listing tiles 4:3; wide editorial 16:9; doctors 4:5; tall architecture 3:4; 21:9 only via `PanoramaCaption` with `mobileRatio`. Heroes use a height, not a ratio. Tiles hover with a 1.02 media scale and title underline, with no lift and no shadow. Design and responsive checks: [skill-premium.md](skill-premium.md#review-checklist).
+- [ ] Type on photography sits inside `--scrim-hero`, which covers the whole text block, in solid Merino; photo still readable above the type; no faded Merino mixes, no double scrims.
+- [ ] Accordions expand with visible body (Programme “What to expect”, Home FAQ). After editing `components/**`, rebuild `_ds_bundle.js` with `node scripts/build-bundle.mjs` (components only, never kit copy). After editing entity facts, edit `content/` and run `node scripts/write-content-kit.mjs`. Run `node scripts/check-bundle.mjs` before shipping.
 - [ ] At most one `BandStatement` (Himalaya + rosette band) per page. Other large grounds are Merino or Stone; Pine for `ClosingCTA` without a photograph and the footer.
 - [ ] Type never sits on the rosette band; narrow surfaces drop the band.
 - [ ] CTAs are short; no decorative Badge/Tag pills next to actions; no 2xs helper essays.
 - [ ] Text-size control (if present) works at Larger without breaking layout.
 - [ ] The footer links to every published page in the For guests, Policies, and About Shantara lists in [skill-ia.md](skill-ia.md#utility-pages), plus Our Story, Our Approach, Our Doctors, Medical Editorial Policy, and Contact ([PAGE-08](search-visibility/pages.md)). Privacy and Terms are links to `/en/privacy-policy` and `/en/terms`.
 
-## QA Checklist — Medical / condition content
+## QA checklist: medical / condition content
 
 Additionally verify:
 
@@ -118,7 +118,7 @@ Additionally verify:
 - [ ] Schema correctly links reviewer/condition/page.
 - [ ] Content is educational, not disguised advertising.
 
-## QA Checklist — Program pages
+## QA checklist: program pages
 
 Verify:
 
@@ -127,7 +127,7 @@ Verify:
 - [ ] Audience is a health need where relevant, not only a programme name.
 - [ ] Duration/options are clear.
 - [ ] Inclusions are clear.
-- [ ] Pricing is clear if the business has chosen to publish it — **via the tariff card, not copied onto the program page**.
+- [ ] Pricing is clear if the business has chosen to publish it, **via the tariff card, not copied onto the program page**.
 - [ ] Clinical oversight is explained.
 - [ ] Stay/experience is tangible.
 - [ ] Relevant conditions/therapies are linked appropriately.
@@ -135,7 +135,7 @@ Verify:
 - [ ] Book a Consultation is the primary action.
 - [ ] No clinical result is guaranteed.
 
-## QA Checklist — Lead capture
+## QA checklist: lead capture
 
 Verify:
 
@@ -153,7 +153,7 @@ Verify:
 - [ ] Success state tells the visitor what happens next.
 - [ ] No stay totals are calculated on the form.
 
-## QA Checklist — Analytics
+## QA checklist: analytics
 
 Verify event naming exactly:
 
@@ -170,7 +170,7 @@ Do not create `consultation_cta_click_ar` or send translated medical free text.
 
 Do not create new event names unless the event will answer a real business question.
 
-## QA Checklist — Publishing
+## QA checklist: publishing
 
 Before publishing recurring content:
 
@@ -218,7 +218,7 @@ Do not introduce these without a demonstrated need:
 - a complete production website inside this design-system kit;
 - a translation platform, runtime MT, IP geolocation, a second Arabic frontend, or placeholder pages for unpublished locales;
 - stack substitutes forbidden in [skill-stack.md](skill-stack.md): third-party component libraries; Motion/GSAP by default; Redux/Zustand; Postgres/Supabase/Prisma or a separate API; custom forms backend instead of Web3Forms; GitHub Actions that deploy (Netlify owns deploy);
-- video files in the repository, local video paths, or YouTube, Vimeo, Cloudflare Stream, Mux or iframe players — native `<video>` on Cloudflare R2 only ([skill-video.md](skill-video.md));
+- video files in the repository, local video paths, or YouTube, Vimeo, Cloudflare Stream, Mux or iframe players (native `<video>` on Cloudflare R2 only; [skill-video.md](skill-video.md));
 - motion or “premium” chrome that breaks [skill-premium.md](skill-premium.md): preloaders, homepage carousels, scroll hijacking, letter-scramble text, animation on every section.
 
 ## Migration / legacy brand rules

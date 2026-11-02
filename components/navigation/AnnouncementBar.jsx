@@ -4,7 +4,7 @@ import { Icon } from "../core/Icon.jsx";
 /* A one-line strip above the site header for one site-wide message: a change to how stays
    are booked, a closure, a new programme. One message, at most one link, never a promotion.
    ground "himalaya" (default) or "pine" re-point ink like any dark ground; "stone" is light.
-   Not sticky — it scrolls away with the page. dismissible adds a close button; storageKey
+   Not sticky: it scrolls away with the page. dismissible adds a close button; storageKey
    keeps it closed for that visitor until the key changes (use a new key for a new message). */
 const CSS = `
 .sh-announce{font:var(--type-body-sm);color:var(--text-primary)}

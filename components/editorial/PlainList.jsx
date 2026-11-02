@@ -1,6 +1,6 @@
 import React from "react";
 
-/* Plain text in columns — no bullets, no icons, no ticks (the deck's list style).
+/* Plain text in columns, with no bullets, no icons, no ticks (the deck's list style).
    Items are strings, or { title, text } pairs. One column under 520px. */
 const CSS = `
 .sh-plist{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:var(--space-5) var(--grid-gap)}

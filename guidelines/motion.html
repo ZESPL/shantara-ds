@@ -19,12 +19,12 @@ h3{margin:0 0 var(--space-4);font:var(--type-h4);font-size:var(--text-base)}
 <div class="row"><span style="width:170px">--duration-fast 160ms</span><span class="dot" style="animation:drift 1.6s var(--ease-standard) infinite"></span><span>controls · hover, press, tooltip</span></div>
 <div class="row"><span style="width:170px">--duration-base 240ms</span><span class="dot" style="animation:drift 2.4s var(--ease-out) infinite"></span><span>surfaces · lift, switch, tab rule, accordion</span></div>
 <div class="row"><span style="width:170px">--duration-slow 420ms</span><span class="dot" style="animation:drift 4.2s var(--ease-out) infinite"></span><span>entrances · dialog, toast, drawer</span></div>
-<div class="row"><span style="width:170px">--duration-ambient 1200ms</span><span style="display:flex;gap:6px"><span class="dot" style="animation:breathe 1.2s var(--ease-breath) infinite"></span><span class="dot" style="animation:breathe 1.2s var(--ease-breath) .18s infinite"></span><span class="dot" style="animation:breathe 1.2s var(--ease-breath) .36s infinite"></span></span><span>Spinner only — never a second loop</span></div>
+<div class="row"><span style="width:170px">--duration-ambient 1200ms</span><span style="display:flex;gap:6px"><span class="dot" style="animation:breathe 1.2s var(--ease-breath) infinite"></span><span class="dot" style="animation:breathe 1.2s var(--ease-breath) .18s infinite"></span><span class="dot" style="animation:breathe 1.2s var(--ease-breath) .36s infinite"></span></span><span>Spinner only, never a second loop</span></div>
 </div>
 
 <div>
 <h3>The contract</h3>
-<p class="note" style="margin-bottom:var(--space-5)">No bounce, no overshoot, no spin, no <code>ease-in</code> on UI. Press is <code>scale(0.96)</code>. Hover is a one-step colour, an underline, or — on a website <code>Tile</code> — the photograph scaling to 1.02 inside its frame (<code>--tile-media-scale</code>); the 4px lift is for app-kit cards only. Hover is gated to fine pointers so it never sticks after a tap. Editorial image reveals use <code>--duration-reveal</code> (640ms), one or two per page. Catalog tiles stagger on first paint. Website pages and app tab panels enter with <code>sh-enter-up</code>. Enter uses <code>--ease-out</code> (<code>cubic-bezier(0.23, 1, 0.32, 1)</code>) and never starts from <code>scale(0)</code>. <code>prefers-reduced-motion: reduce</code> keeps colour and opacity, drops movement, and freezes the Spinner.</p>
+<p class="note" style="margin-bottom:var(--space-5)">No bounce, no overshoot, no spin, no <code>ease-in</code> on UI. Press is <code>scale(0.96)</code>. Hover is a one-step colour, an underline, or (on a website <code>Tile</code>) the photograph scaling to 1.02 inside its frame (<code>--tile-media-scale</code>); the 4px lift is for app-kit cards only. Hover is gated to fine pointers so it never sticks after a tap. Editorial image reveals use <code>--duration-reveal</code> (640ms), one or two per page. Catalog tiles stagger on first paint. Website pages and app tab panels enter with <code>sh-enter-up</code>. Enter uses <code>--ease-out</code> (<code>cubic-bezier(0.23, 1, 0.32, 1)</code>) and never starts from <code>scale(0)</code>. <code>prefers-reduced-motion: reduce</code> keeps colour and opacity, drops movement, and freezes the Spinner.</p>
 <table>
 <thead><tr><th>Element</th><th>What moves</th><th>Token</th></tr></thead>
 <tbody>
@@ -32,7 +32,7 @@ h3{margin:0 0 var(--space-4);font:var(--type-h4);font-size:var(--text-base)}
 <tr><td>Tag</td><td>Fill on hover and selected; press scale; remove fades in</td><td>--duration-fast</td></tr>
 <tr><td>Tile (website)</td><td>Photograph scales to 1.02 inside its square frame; title takes a hairline underline. No lift, no shadow</td><td>--duration-base · --tile-media-scale</td></tr>
 <tr><td>Card interactive (app kit)</td><td>Lifts 4px into --shadow-lg; card itself never scales</td><td>--duration-base · --lift-hover</td></tr>
-<tr><td>Badge</td><td>Tone changes only — not a control, no hover or press</td><td>--</td></tr>
+<tr><td>Badge</td><td>Tone changes only; not a control, so no hover or press</td><td>--</td></tr>
 <tr><td>Input, Textarea, Select</td><td>Border to --border-strong on hover, Himalaya + soft halo on focus; error rises 8px</td><td>--duration-fast / --duration-base</td></tr>
 <tr><td>Checkbox, Radio</td><td>Tick / inner dot scale from 0.5 with opacity; box press; radio card fill</td><td>--duration-fast · --ease-out</td></tr>
 <tr><td>Switch</td><td>Knob travels 18px; track fills Himalaya; hover darkens the off track</td><td>--duration-base</td></tr>
@@ -49,6 +49,6 @@ h3{margin:0 0 var(--space-4);font:var(--type-h4);font-size:var(--text-base)}
 </table>
 </div>
 
-<p class="note">Never add a second ambient loop, a bounce easing, a colour flash on press, a rotating spinner, or motion on a keyboard shortcut. Catalog search, tab switches in the app bar, and daily list browsing stay still. If the styling disappeared, the motion should still feel like a breath — not a notification.</p>
+<p class="note">Never add a second ambient loop, a bounce easing, a colour flash on press, a rotating spinner, or motion on a keyboard shortcut. Catalog search, tab switches in the app bar, and daily list browsing stay still. If the styling disappeared, the motion should still feel like a breath, not a notification.</p>
 </div>
 </body></html>

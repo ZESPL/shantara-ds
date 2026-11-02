@@ -6,7 +6,7 @@ Reference renderer and samples for the three Shantara share-image templates: `de
 
 | File | What it is |
 | --- | --- |
-| `og-image.mjs` | `renderOgImage()` — copied unchanged into the website's `src/lib/seo/og/` |
+| `og-image.mjs` | `renderOgImage()`, copied unchanged into the website's `src/lib/seo/og/` |
 | `render-samples.mjs` | Renders `samples/` from `content/` records and `assets/` |
 | `samples/` | Design references. `og-default.jpg` is also the website's `public/og-default.jpg` |
 | `share-copy.mjs` | Picture headlines, supporting lines and `auditSharePage` |

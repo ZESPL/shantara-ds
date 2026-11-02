@@ -4,7 +4,7 @@ import { QuoteBlock } from "../editorial/QuoteBlock.jsx";
 
 /* Deck slide 3. Solid Himalaya with the rosette band on one edge (30% of the surface,
    cell = 15cqw so it is always band/2 and never under 130px). Merino Light statement
-   (no label above it), optional plain list. One per page at most — it is the page's accent.
+   (no label above it), optional plain list. One per page at most: it is the page's accent.
    Under 880px the band disappears (PatternPanel's container query). */
 const CSS = `
 .sh-band-body{padding-block:var(--section-y)}
@@ -21,7 +21,7 @@ function ensure() {
 }
 
 /* `quote`: the page's one accent can be a doctor's or the founder's own words instead of a
-   statement — { quote, cite, role }. Real words only (QuoteBlock rules). */
+   statement: { quote, cite, role }. Real words only (QuoteBlock rules). */
 export function BandStatement({ edge = "end", ground = "himalaya", quote, children, style, ...rest }) {
   ensure();
   return (

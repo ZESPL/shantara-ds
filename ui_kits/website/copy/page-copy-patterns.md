@@ -44,7 +44,7 @@ Internal ICP names (for example “Weight & Metabolic Health”, “Short Health
 
 Do not explain why something is or is not displayed on the website.
 
-Simply present the information that is useful to the visitor.
+Present the information that is useful to the visitor.
 
 ---
 
@@ -85,7 +85,7 @@ Bad:
 
 Better:
 
-Simply display the relevant conditions with an appropriate heading.
+Display the relevant conditions with an appropriate heading.
 
 No explanatory sentence is required.
 
@@ -115,11 +115,11 @@ Better:
 
 ## Calls to action stay short
 
-Button labels describe one action — roughly 20 characters in English. Extra meaning lives in nearby text or on the destination page. Buttons may wrap; they must not become captions. Prefer **View tariffs** and **Read what to expect** over longer caption-buttons. The full preferred / avoid lists are under [Calls to action](#calls-to-action) below.
+Button labels describe one action, roughly 20 characters in English. Extra meaning lives in nearby text or on the destination page. Buttons may wrap; they must not become captions. Prefer **View tariffs** and **Read what to expect** over longer caption-buttons. The full preferred / avoid lists are under [Calls to action](#calls-to-action) below.
 
-Do not use Badge or static Tag as decorative pills next to actions. Interactive filter Tags stay — those are controls.
+Do not use Badge or static Tag as decorative pills next to actions. Interactive filter Tags stay, because they are controls.
 
-`--text-2xs` / `--text-3xs` are for catalog specimen notes only (never for eyebrows — eyebrows are banned everywhere, see [voice and tone](voice-and-tone.md#punctuation)). Guest-readable helper copy is at least `--text-sm` (`--text-xs` only for true captions). Field hints stay short (“Optional”), never essay paragraphs.
+`--text-2xs` / `--text-3xs` are for catalog specimen notes only (never for eyebrows, which are banned everywhere; see [voice and tone](voice-and-tone.md#punctuation)). Guest-readable helper copy is at least `--text-sm` (`--text-xs` only for true captions). Field hints stay short (“Optional”), never essay paragraphs.
 
 ---
 
@@ -341,7 +341,7 @@ Avoid:
 
 > Where nature restores
 
-Headings never carry an eyebrow or overline above them — see [voice and tone](voice-and-tone.md#punctuation).
+Headings never carry an eyebrow or overline above them. See [voice and tone](voice-and-tone.md#punctuation).
 
 ---
 

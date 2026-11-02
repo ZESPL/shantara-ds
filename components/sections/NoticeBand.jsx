@@ -1,7 +1,7 @@
 import React from "react";
 import { Icon } from "../core/Icon.jsx";
 
-/* A note the reader must not miss — a clinical note, a caution, a policy, a booking
+/* A note the reader must not miss: a clinical note, a caution, a policy, a booking
    condition. Sparing: one per screen at most, never an outcome claim, never marketing.
    tone "note" (info) or "caution" (alert). layout "inline" sits in the flow of text with a
    brand rule on its leading edge; "band" spans the container between hairlines.

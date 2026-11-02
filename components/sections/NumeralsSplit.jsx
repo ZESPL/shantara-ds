@@ -32,7 +32,7 @@ function ensure() {
   document.head.appendChild(el);
 }
 
-/* numerals: [{ value, label }] — one to three. */
+/* numerals: [{ value, label }], one to three. */
 export function NumeralsSplit({ title, sub, numerals = [], footnote, style, ...rest }) {
   ensure();
   const shown = numerals.slice(0, 3);

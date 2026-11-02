@@ -1,4 +1,4 @@
-/* Book a consultation — HeroStatement → the form beside a Stone panel (who
+/* Book a consultation: HeroStatement → the form beside a Stone panel (who
    calls, what happens next). Dialog confirm, Spinner, success state and Toast are kept.
    No ClosingCTA: the form is the page's CTA (#35). */
 

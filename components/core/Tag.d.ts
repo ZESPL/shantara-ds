@@ -1,7 +1,7 @@
 import * as React from "react";
 
 /**
- * Label or selectable chip — the look follows behaviour.
+ * Label or selectable chip. The look follows behaviour.
  * With `onClick`: interactive chip (pill outline, 36px / 44px on touch, hover, press, aria-pressed).
  * Without `onClick`: flat static label (24px, 2px radius, tint, no border) that never reads as a button.
  */

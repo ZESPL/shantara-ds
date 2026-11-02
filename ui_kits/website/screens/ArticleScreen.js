@@ -1,4 +1,4 @@
-/* Journal article — route #/<locale>/journal/<slug> (view "article").
+/* Journal article: route #/<locale>/journal/<slug> (view "article").
    ArticleHeader → TableOfContents (collapsed above the text on phones, sticky beside it from
    1000px) + Prose → ReviewedBy → ShareBar → AuthorCard → RelatedArticles →
    ClosingCTA (compact; the article has no other CTA).
@@ -25,7 +25,7 @@ function ensureArticleCss() {
   document.head.appendChild(el);
 }
 
-/* SAMPLE BODY — kit only. content/articles has no `body` for the kit samples (body: null),
+/* SAMPLE BODY, kit only. content/articles has no `body` for the kit samples (body: null),
    so the mockup shows this short, neutral block to demonstrate Prose + TableOfContents.
    Every sentence restates copy already used elsewhere on the site; it makes no medical claim.
    Production renders the article's own body (Keystatic Markdown → Prose html). */
@@ -42,7 +42,7 @@ const SAMPLE_SECTIONS = [
   ] },
 ];
 
-/* SAMPLE ATTRIBUTION — kit only. The article records have author: null and
+/* SAMPLE ATTRIBUTION, kit only. The article records have author: null and
    medical_reviewer: null. The mockup names the clinical team as author and the Medical
    Director (content/doctors) as reviewer to show where ReviewedBy and AuthorCard sit.
    Production shows ReviewedBy only when the record names a reviewer. */

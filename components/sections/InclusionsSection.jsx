@@ -2,7 +2,7 @@ import React from "react";
 import { Statement } from "../editorial/Statement.jsx";
 import { Icon } from "../core/Icon.jsx";
 
-/* What a stay includes — read from the structure in content/tariff.json: `includes`,
+/* What a stay includes, read from the structure in content/tariff.json: `includes`,
    `excludes` and `supplements` (label + basis). Never a figure, currency or "from" price:
    the one link goes to the tariff page, where the rates live.
    Phones: one column. ≥760px: Included beside Not included; supplements under both.

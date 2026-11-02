@@ -2,10 +2,10 @@ import React from "react";
 import { Statement } from "../editorial/Statement.jsx";
 import { Icon } from "../core/Icon.jsx";
 
-/* Programmes side by side — the Programmes index. A real <table>: programme (linked), focus,
+/* Programmes side by side on the Programmes index. A real <table>: programme (linked), focus,
    who it is for, typical length. From content/programs/ (`name`, `focus`, `proposition`,
    `durations`). Never a rate column: the one link under the table goes to the tariff page.
-   Phones (<760px): each row becomes a card — name, then labelled lines — so nothing scrolls
+   Phones (<760px): each row becomes a card (name, then labelled lines) so nothing scrolls
    sideways. ≥760px: the table, rows ruled, the name column linked with an arrow. */
 const CSS = `
 .sh-pcmp{display:flex;flex-direction:column;gap:var(--stack-lg)}

@@ -2,7 +2,7 @@
    One config. Seven planned languages, in approved marketing-localisation
    order: en, ar, de, fr, ru, hi, ml.
    English is the source and the only enabled locale until a localisation
-   project publishes another. Malayalam (ml) is conditional — see docs/icp.md.
+   project publishes another. Malayalam (ml) is conditional (see docs/icp.md).
    Italian and Spanish are not current marketing-localisation priorities.
 
    Browser: window.ShantaraLocales

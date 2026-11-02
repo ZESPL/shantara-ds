@@ -8,7 +8,7 @@ export interface AuthorCardProps extends React.HTMLAttributes<HTMLElement> {
   src?: string;
   /** Small normal-case line above the name inside the card. Default "Written by". */
   label?: React.ReactNode;
-  /** One short paragraph — only confirmed facts from content/doctors. */
+  /** One short paragraph, only confirmed facts from content/doctors. */
   bio?: React.ReactNode;
   /** Profile URL; makes the name a link. */
   href?: string;

@@ -11,7 +11,7 @@ Do not use these as product type, H1, title fragment, or primary CTA:
 * Nature cure (except accurate historical parent naming on About, e.g. Hygiene Nature Cure Hospital)
 * Begin your wellness journey
 
-Also keep existing bans on luxury-sanctuary clichés and spa repositioning. Internal negatives (“not a spa”, “not a hospital”, “not an Ayurveda resort”, “not a US naturopathic office”, “not Hygiene Nature Cure Hospital”) and the clinical-hotel model live in this skill, ICP, ad exclusions, and brand cards — not as visitor-facing argument copy.
+Also keep existing bans on luxury-sanctuary clichés and spa repositioning. Internal negatives (“not a spa”, “not a hospital”, “not an Ayurveda resort”, “not a US naturopathic office”, “not Hygiene Nature Cure Hospital”) and the clinical-hotel model live in this skill, ICP, ad exclusions, and brand cards. They are not visitor-facing argument copy.
 
 ---
 
@@ -82,7 +82,7 @@ Words requiring caution include:
 
 These words are not automatically prohibited.
 
-They simply cannot substitute for information. A sentence may use one of them only if it still tells the visitor something useful after the word is removed. Do not use them as the heading or the point of the section.
+They cannot substitute for information. A sentence may use one of them only if it still tells the visitor something useful after the word is removed. Do not use them as the heading or the point of the section.
 
 Bad:
 

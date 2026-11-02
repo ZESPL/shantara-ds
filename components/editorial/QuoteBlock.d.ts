@@ -2,7 +2,7 @@ import * as React from "react";
 
 export interface QuoteFact { label: string; text: React.ReactNode }
 export interface QuoteBlockProps extends React.HTMLAttributes<HTMLElement> {
-  /** The words only — curly quotes are added. */
+  /** The words only. Curly quotes are added. */
   quote: React.ReactNode;
   /** Who said it (Medium). */
   cite?: React.ReactNode;

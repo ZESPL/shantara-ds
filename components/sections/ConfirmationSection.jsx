@@ -6,10 +6,10 @@ import { TileGrid } from "./TileGrid.jsx";
 
 /* What a visitor sees after sending a form: that it arrived, what happens next in plain
    sentences, how to reach the team meanwhile (call, WhatsApp, email), a way back, and then
-   up to three cards to keep exploring. Which form decides the copy and the links — the
+   up to three cards to keep exploring. Which form decides the copy and the links; the
    standard is in ui_kits/website/skill-content.md#confirmation-screens. Never a promised
    response time that is not confirmed, never internal process. Rendered in place of the
-   form — focus moves to the title so a screen reader announces it (`autoFocus`), and the
+   form: focus moves to the title so a screen reader announces it (`autoFocus`), and the
    page scrolls to it.
    The message is one column capped at 44rem; the cards below it use the full container,
    three across from 1000px (TileGrid). Phones: actions stack full width; contact one per
@@ -40,7 +40,7 @@ function ensure() {
 }
 
 /* next: string[] · contact: [{ icon, label, href? }] ·
-   explore: [{ title, text?, meta?, src?, alt?, href }] — three cards (only the first three render).
+   explore: [{ title, text?, meta?, src?, alt?, href }]: three cards (only the first three render).
    An http(s) href opens in a new tab. */
 export function ConfirmationSection({ title = "Consultation request received", sub, next = [], nextLabel = "What happens next", contact = [], contactLabel = "If you need us sooner", explore = [], exploreLabel = "Keep exploring", exploreLayout = "3", actions, autoFocus = true, headingLevel = 1, style, ...rest }) {
   ensure();

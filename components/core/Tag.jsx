@@ -1,8 +1,8 @@
 import React from "react";
 
-/* Two looks, decided by behaviour — never by prop choice alone:
-   · Interactive (onClick): a selectable chip — pill outline, 36px, hover, press, focus ring.
-   · Static (no onClick): a flat label like Badge — no border, no pill, no hover,
+/* Two looks, decided by behaviour, never by prop choice alone:
+   · Interactive (onClick): a selectable chip with pill outline, 36px, hover, press, focus ring.
+   · Static (no onClick): a flat label like Badge, with no border, no pill, no hover,
      so it never reads as a button. `onRemove` adds a 24px remove control to either. */
 const CSS = `
 .sh-tag{display:inline-flex;align-items:center;gap:var(--space-3);font-family:var(--font-body);white-space:nowrap;vertical-align:middle}

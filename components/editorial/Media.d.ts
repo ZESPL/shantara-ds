@@ -7,7 +7,7 @@ export interface MediaProps extends React.HTMLAttributes<HTMLElement> {
   alt?: string;
   /** Aspect ratio token. `fill` covers a positioned parent (heroes, bleeding split halves). */
   ratio?: MediaRatio | string;
-  /** Ratio under 760px — e.g. a 21:9 panorama becomes 4:3 on phones. */
+  /** Ratio under 760px, e.g. a 21:9 panorama becomes 4:3 on phones. */
   mobileRatio?: MediaRatio | string;
   /** object-position; `mobilePosition` overrides it under 760px. */
   position?: string;

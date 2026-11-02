@@ -1,6 +1,6 @@
 import React from "react";
 
-/* Radio — 20px ring, 1.5px border; the 8px dot is a grid child centred with
+/* Radio: 20px ring, 1.5px border; the 8px dot is a grid child centred with
    place-items:center (no offsets), so it stays centred at every zoom level. */
 const CSS = `
 .sh-radio{position:relative;display:flex;width:fit-content;max-width:100%;box-sizing:border-box;align-items:flex-start;gap:var(--space-4);min-height:var(--tap-min);padding-block:10px;font:var(--weight-regular) var(--text-base)/1.4 var(--font-body);color:var(--text-primary);cursor:pointer}

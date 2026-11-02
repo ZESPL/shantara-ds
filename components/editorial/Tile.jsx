@@ -2,8 +2,8 @@ import React from "react";
 import { Media } from "./Media.jsx";
 import { MetaRow } from "./MetaRow.jsx";
 
-/* Replaces the white card on linen. Photograph and text sit directly on the ground —
-   no border, shadow or radius. Order: photograph → title → meta row → text. Category and
+/* Replaces the white card on linen. Photograph and text sit directly on the ground,
+   with no border, shadow or radius. Order: photograph → title → meta row → text. Category and
    duration live in the meta row BELOW the title, never above it. Hover: the photograph
    scales to 1.02 inside its frame and the title takes a hairline underline. */
 const CSS = `
@@ -23,7 +23,7 @@ const CSS = `
   .sh-tile[data-href]:hover .sh-media>img{transform:scale(var(--tile-media-scale))}
   .sh-tile[data-href]:hover .sh-tile-title>span{background-size:100% 1px}
 }
-/* layout="row": photograph beside text from 760px — for lists of articles or rooms. */
+/* layout="row": photograph beside text from 760px, for lists of articles or rooms. */
 @media (min-width:760px){
   .sh-tile[data-layout="row"]{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:var(--grid-gap);align-items:center}
 }

@@ -884,7 +884,7 @@
     const btn = meta.querySelector("[data-copy-md]");
     btn.addEventListener("click", async () => {
       const ok = await copyMarkdown(text);
-      btn.textContent = ok ? "Copied" : "Copy failed — use View markdown";
+      btn.textContent = ok ? "Copied" : "Copy failed. Use View markdown";
       btn.classList.toggle("is-copied", ok);
       clearTimeout(btn._mdTimer);
       btn._mdTimer = setTimeout(() => {

@@ -3,7 +3,7 @@ import { Statement } from "../editorial/Statement.jsx";
 import { Pagination } from "../editorial/Pagination.jsx";
 import { TileGrid } from "./TileGrid.jsx";
 
-/* A filterable listing — the Journal index and its categories. A heading, a row of category
+/* A filterable listing for the Journal index and its categories. A heading, a row of category
    chips (one selected; "All" first), the tiles in a TileGrid, pagination, and a plain empty
    state when a category has nothing yet. Categories come from content/articles/.
    The chips filter in place when `onCategory` is given; give each category an `href`

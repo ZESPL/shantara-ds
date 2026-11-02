@@ -6,7 +6,7 @@ Back to the [copy index](../skill-copy.md).
 
 Use three layers. Do not flatten them into one slogan or one H1 pattern.
 
-### Layer 1 — Entity (lead with this)
+### Layer 1: Entity (lead with this)
 
 What Shantara **is**, in public language:
 
@@ -18,17 +18,17 @@ Public pages lead with this positive clause. Do not open heroes with “not a sp
 
 Hospitality leads the brand half of the voice. Belonging follows. Rejuvenation is not a voice word.
 
-### Layer 2 — Need language
+### Layer 2: Need language
 
-What people come for: validated condition, symptom, and stay language from research — not internal ICP names as H1s. Condition URLs and copy stay need-led (`diabetes`, `PCOS`, and so on). See [`docs/icp.md`](../../../docs/icp.md).
+What people come for: validated condition, symptom, and stay language from research. Do not use internal ICP names as H1s. Condition URLs and copy stay need-led (`diabetes`, `PCOS`, and so on). See [`docs/icp.md`](../../../docs/icp.md).
 
-**How a stay works** (care model — explain when the page job is the stay or programme path; not a slogan or hero tagline):
+**How a stay works** is the care model. Explain it when the page's job is the stay or programme path. It is not a slogan or hero tagline:
 
 > Assessment → personalised plan → therapies and routines → measurable reassessment.
 
 Public copy may describe that loop in plain language (consultation and assessment, a plan for this guest, treatments and daily routines, then reviewing progress). Do not turn it into a campaign slogan, a seventh audience, or a promise of specific clinical numbers.
 
-### Layer 3 — Comparison / interception (GCC and West)
+### Layer 3: Comparison / interception (GCC and West)
 
 In UAE, UK, and US discovery, people often type Ayurveda, wellness retreat, or yoga retreat. Intercept that intent with an honest medically reviewed **Ayurveda vs naturopathy** article/guide and Experience / FAQ copy that explains a residential Keralam stay. Do **not** become an Ayurveda resort, wellness resort, or US ND clinic to win the query.
 
@@ -39,7 +39,7 @@ In UAE, UK, and US discovery, people often type Ayurveda, wellness retreat, or y
 The business (trading) name is **Shantara Naturopathy Retreat**. Use it in full in NAP fields, schema `name` / `og:site_name`, and anywhere a formal business name is expected.
 
 * **Shantara** alone is fine standalone, in running copy, headings, and casual references.
-* Never use **“Shantara Naturopathy”** on its own as the name — either say **Shantara**, or say the full **Shantara Naturopathy Retreat**. “Shantara Naturopathy” without “Retreat” is not a valid form of the name.
+* Never use **“Shantara Naturopathy”** on its own as the name. Say either **Shantara** or the full **Shantara Naturopathy Retreat**. “Shantara Naturopathy” without “Retreat” is not a valid form of the name.
 * Do not invent other short forms (no “Shantara Retreat”, no “Shantara Clinic” as the business name).
 
 **Legal entity.** **Metropolis Forward LLP** is the registered legal entity (`legal_name` in `content/site.json`, schema `legalName`). Use it only for the copyright line (“© {year} Metropolis Forward LLP”) and legal notices such as the privacy policy and terms. Never use it as the trading name.
@@ -58,7 +58,7 @@ Never write **“four acres”**, **“4 acres”**, or **“four hilltop acres�
 
 ## Rooms
 
-Shantara has 52 rooms across five accommodation categories. **“52 rooms” may be stated at most once on the whole website**, and never prominently — no stat tile, no numeral treatment, no heading, no hero. If it appears, it belongs in ordinary body copy on the accommodation page. The organisation's `numberOfRooms` in JSON-LD is structured data, not copy, and does not count towards this limit ([SCHEMA-03](../search-visibility/schema.md)).
+Shantara has 52 rooms across five accommodation categories. **“52 rooms” may be stated at most once on the whole website**, and never prominently: no stat tile, no numeral treatment, no heading, no hero. If it appears, it belongs in ordinary body copy on the accommodation page. The organisation's `numberOfRooms` in JSON-LD is structured data, not copy, and does not count towards this limit ([SCHEMA-03](../search-visibility/schema.md)).
 
 ## One contact number
 

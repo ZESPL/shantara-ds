@@ -21,7 +21,7 @@ export interface HeroFullBleedProps extends React.HTMLAttributes<HTMLElement> {
   breadcrumbs?: React.ReactNode;
   /** `full` 100svh (560–1080px) for the home page; `tall` 72svh for inner pages; `short` 56svh. */
   height?: "full" | "tall" | "short";
-  /** Heading element. Default `h1` — a page has exactly one. */
+  /** Heading element. Default `h1`; a page has exactly one. */
   titleAs?: "h1" | "h2";
 }
 export declare function HeroFullBleed(props: HeroFullBleedProps): JSX.Element;

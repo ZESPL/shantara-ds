@@ -225,7 +225,7 @@ Use one Organization with a stable canonical `@id` across every locale. Its full
 
 - **`name`:** `Shantara Naturopathy Retreat` (same as the frozen NAP / `og:site_name`).
 - **Type:** `["MedicalClinic", "Resort"]` on the one organisation node. `MedicalClinic` comes first. `Resort` is the lodging companion and carries `numberOfRooms`, check-in and check-out times, amenities, `priceRange` and `currenciesAccepted`. Do not add a second, competing Organization. Decided 23 October 2026.
-- **Do not use** `Hospital`, spa types, or `HealthAndBeautyBusiness` — those mis-state the entity (hospital is the wrong local entity; spa framing is paid-exclusion territory).
+- **Do not use** `Hospital`, spa types, or `HealthAndBeautyBusiness`: those mis-state the entity (hospital is the wrong local entity; spa framing is paid-exclusion territory).
 - Do not choose a medical schema type merely because it sounds advantageous; `MedicalClinic` is allowed here because the offer is a doctor-led residential clinic stay, not a beauty business.
 
 Localized web pages have a locale-specific `url` and `inLanguage`. Doctor and program identities stay on the same `@id` when their names are translated.
@@ -356,7 +356,7 @@ In production, use **Astro Image**. Where files go, how to compress them and whi
 - use sensible fallbacks;
 - avoid layout shift.
 
-This system ships Diodrum Cyrillic for Latin and Cyrillic. IBM Plex Sans Arabic is the Arabic counterpart under `[dir=rtl]` — not a second display face for English. Do not add further families.
+This system ships Diodrum Cyrillic for Latin and Cyrillic. IBM Plex Sans Arabic is the Arabic counterpart under `[dir=rtl]`, not a second display face for English. Do not add further families.
 
 ### Third-party scripts
 

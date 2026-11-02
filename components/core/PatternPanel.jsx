@@ -30,7 +30,7 @@ const BG = {
   none: "transparent",
 };
 
-/* The rosette never washes a whole surface — it is a BAND flush to one edge,
+/* The rosette never washes a whole surface. It is a BAND flush to one edge,
    bleeding off on three sides, ruled with a hairline on its inner side, with the
    content kept clear of it. `scale` sets one square cell edge (applied to both
    axes, so the geometry can never be stretched) and is PROPORTIONAL to the band:

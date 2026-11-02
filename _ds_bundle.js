@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"ShantaraDesignSystem_45bbe4","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"Divider","sourcePath":"components/core/Divider.jsx"},{"name":"HnchLogo","sourcePath":"components/core/HnchLogo.jsx"},{"name":"ICON_GROUPS","sourcePath":"components/core/Icon.jsx"},{"name":"ICON_NAMES","sourcePath":"components/core/Icon.jsx"},{"name":"Icon","sourcePath":"components/core/Icon.jsx"},{"name":"IconButton","sourcePath":"components/core/IconButton.jsx"},{"name":"Logo","sourcePath":"components/core/Logo.jsx"},{"name":"PatternPanel","sourcePath":"components/core/PatternPanel.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Dialog","sourcePath":"components/feedback/Dialog.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"DateField","sourcePath":"components/forms/DateField.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"SearchList","sourcePath":"components/forms/SearchList.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Switch","sourcePath":"components/forms/Switch.jsx"},{"name":"Textarea","sourcePath":"components/forms/Textarea.jsx"},{"name":"Accordion","sourcePath":"components/navigation/Accordion.jsx"},{"name":"AnnouncementBar","sourcePath":"components/navigation/AnnouncementBar.jsx"},{"name":"Breadcrumbs","sourcePath":"components/navigation/Breadcrumbs.jsx"},{"name":"LanguageSelector","sourcePath":"components/navigation/LanguageSelector.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"Media","sourcePath":"components/editorial/Media.jsx"},{"name":"ArticleFigure","sourcePath":"components/editorial/ArticleFigure.jsx"},{"name":"PortraitFrame","sourcePath":"components/editorial/PortraitFrame.jsx"},{"name":"AuthorCard","sourcePath":"components/editorial/AuthorCard.jsx"},{"name":"GroupedList","sourcePath":"components/editorial/GroupedList.jsx"},{"name":"MetaRow","sourcePath":"components/editorial/MetaRow.jsx"},{"name":"NumberedSteps","sourcePath":"components/editorial/NumberedSteps.jsx"},{"name":"Numeral","sourcePath":"components/editorial/Numeral.jsx"},{"name":"Pagination","sourcePath":"components/editorial/Pagination.jsx"},{"name":"PlainList","sourcePath":"components/editorial/PlainList.jsx"},{"name":"Prose","sourcePath":"components/editorial/Prose.jsx"},{"name":"QuoteBlock","sourcePath":"components/editorial/QuoteBlock.jsx"},{"name":"ReviewedBy","sourcePath":"components/editorial/ReviewedBy.jsx"},{"name":"ShareBar","sourcePath":"components/editorial/ShareBar.jsx"},{"name":"SpecTable","sourcePath":"components/editorial/SpecTable.jsx"},{"name":"Statement","sourcePath":"components/editorial/Statement.jsx"},{"name":"TableOfContents","sourcePath":"components/editorial/TableOfContents.jsx"},{"name":"TextLink","sourcePath":"components/editorial/TextLink.jsx"},{"name":"Tile","sourcePath":"components/editorial/Tile.jsx"},{"name":"TimeTable","sourcePath":"components/editorial/TimeTable.jsx"},{"name":"Video","sourcePath":"components/editorial/Video.jsx"},{"name":"ArticleHeader","sourcePath":"components/sections/ArticleHeader.jsx"},{"name":"ArticleLayout","sourcePath":"components/sections/ArticleLayout.jsx"},{"name":"BandStatement","sourcePath":"components/sections/BandStatement.jsx"},{"name":"CatalogueSection","sourcePath":"components/sections/CatalogueSection.jsx"},{"name":"ClosingCTA","sourcePath":"components/sections/ClosingCTA.jsx"},{"name":"TileGrid","sourcePath":"components/sections/TileGrid.jsx"},{"name":"ConfirmationSection","sourcePath":"components/sections/ConfirmationSection.jsx"},{"name":"ContactLocation","sourcePath":"components/sections/ContactLocation.jsx"},{"name":"CredentialStrip","sourcePath":"components/sections/CredentialStrip.jsx"},{"name":"FaqSection","sourcePath":"components/sections/FaqSection.jsx"},{"name":"FeatureGrid","sourcePath":"components/sections/FeatureGrid.jsx"},{"name":"FormSplit","sourcePath":"components/sections/FormSplit.jsx"},{"name":"GalleryGrid","sourcePath":"components/sections/GalleryGrid.jsx"},{"name":"GuestStory","sourcePath":"components/sections/GuestStory.jsx"},{"name":"HeroFullBleed","sourcePath":"components/sections/HeroFullBleed.jsx"},{"name":"HeroSplit","sourcePath":"components/sections/HeroSplit.jsx"},{"name":"HeroStatement","sourcePath":"components/sections/HeroStatement.jsx"},{"name":"InPageNav","sourcePath":"components/sections/InPageNav.jsx"},{"name":"InclusionsSection","sourcePath":"components/sections/InclusionsSection.jsx"},{"name":"IndexList","sourcePath":"components/sections/IndexList.jsx"},{"name":"KeyFacts","sourcePath":"components/sections/KeyFacts.jsx"},{"name":"ListingSection","sourcePath":"components/sections/ListingSection.jsx"},{"name":"NotFoundSection","sourcePath":"components/sections/NotFoundSection.jsx"},{"name":"NoticeBand","sourcePath":"components/sections/NoticeBand.jsx"},{"name":"NumeralsSplit","sourcePath":"components/sections/NumeralsSplit.jsx"},{"name":"PanoramaCaption","sourcePath":"components/sections/PanoramaCaption.jsx"},{"name":"PeopleRow","sourcePath":"components/sections/PeopleRow.jsx"},{"name":"PolicySection","sourcePath":"components/sections/PolicySection.jsx"},{"name":"ProcessSection","sourcePath":"components/sections/ProcessSection.jsx"},{"name":"ProgrammeCompare","sourcePath":"components/sections/ProgrammeCompare.jsx"},{"name":"ReferencesSection","sourcePath":"components/sections/ReferencesSection.jsx"},{"name":"RelatedArticles","sourcePath":"components/sections/RelatedArticles.jsx"},{"name":"Section","sourcePath":"components/sections/Section.jsx"},{"name":"SplitSection","sourcePath":"components/sections/SplitSection.jsx"},{"name":"TimelineSection","sourcePath":"components/sections/TimelineSection.jsx"},{"name":"VideoFeature","sourcePath":"components/sections/VideoFeature.jsx"}],"sourceHashes":{"components/core/Badge.jsx":"b014d0a4d8ea","components/core/Button.jsx":"66ad8b155d36","components/core/Card.jsx":"899ecf09e977","components/core/Divider.jsx":"7841bbb870dd","components/core/HnchLogo.jsx":"3086ba9ae2ea","components/core/Icon.jsx":"7eaaf731593f","components/core/IconButton.jsx":"0746d0dc8fb3","components/core/Logo.jsx":"71651ae4093b","components/core/PatternPanel.jsx":"dd26bb639ce9","components/core/Tag.jsx":"480f3225f1d4","components/feedback/Dialog.jsx":"c1b84ed6f276","components/feedback/Spinner.jsx":"49fa70a95320","components/feedback/Toast.jsx":"c64129df2a1a","components/feedback/Tooltip.jsx":"9c7b40a94408","components/forms/Checkbox.jsx":"621ba3e2309a","components/forms/DateField.jsx":"a4fef507a824","components/forms/Input.jsx":"1321df74a451","components/forms/Radio.jsx":"861dea337cdb","components/forms/SearchList.jsx":"39137752d536","components/forms/Select.jsx":"4ebda94f9354","components/forms/Switch.jsx":"73709580dd9e","components/forms/Textarea.jsx":"e40a2c1357c6","components/navigation/Accordion.jsx":"b8870511c6fe","components/navigation/AnnouncementBar.jsx":"52373b869de1","components/navigation/Breadcrumbs.jsx":"421f19e62be1","components/navigation/LanguageSelector.jsx":"3255d13574aa","components/navigation/Tabs.jsx":"414b48cd2f58","components/editorial/Media.jsx":"33a6b0c1bfde","components/editorial/ArticleFigure.jsx":"f7689927c7db","components/editorial/PortraitFrame.jsx":"d79181ab4681","components/editorial/AuthorCard.jsx":"e96ed75df2fb","components/editorial/GroupedList.jsx":"d8cd9e26b4bf","components/editorial/MetaRow.jsx":"8c95d79ee5e1","components/editorial/NumberedSteps.jsx":"6f2950654a05","components/editorial/Numeral.jsx":"e6b7086ade4c","components/editorial/Pagination.jsx":"893e51b7753d","components/editorial/PlainList.jsx":"2d7a0d571c4a","components/editorial/Prose.jsx":"1b1a9a3ffec2","components/editorial/QuoteBlock.jsx":"c79559f0cb83","components/editorial/ReviewedBy.jsx":"cf907ffdf4c1","components/editorial/ShareBar.jsx":"a5d673d91fb9","components/editorial/SpecTable.jsx":"097e36746780","components/editorial/Statement.jsx":"9801ab9ee07c","components/editorial/TableOfContents.jsx":"e7a40c6c066e","components/editorial/TextLink.jsx":"b730c74e745f","components/editorial/Tile.jsx":"4ebf341907e5","components/editorial/TimeTable.jsx":"610e5af78002","components/editorial/Video.jsx":"e21a3629d769","components/sections/ArticleHeader.jsx":"dcbe9cde9956","components/sections/ArticleLayout.jsx":"ec0fa928583c","components/sections/BandStatement.jsx":"e9a0008b4f26","components/sections/CatalogueSection.jsx":"603b270adcd9","components/sections/ClosingCTA.jsx":"084360f0b4b5","components/sections/TileGrid.jsx":"fbb2649bbce1","components/sections/ConfirmationSection.jsx":"5c24f96cf468","components/sections/ContactLocation.jsx":"f14702177eb1","components/sections/CredentialStrip.jsx":"fd9f68bd56cd","components/sections/FaqSection.jsx":"b68b80cab3ab","components/sections/FeatureGrid.jsx":"d472f2fd12c4","components/sections/FormSplit.jsx":"c87831902c01","components/sections/GalleryGrid.jsx":"f9f538dc8689","components/sections/GuestStory.jsx":"06f627264128","components/sections/HeroFullBleed.jsx":"63fda9954b4f","components/sections/HeroSplit.jsx":"4bf05c27c995","components/sections/HeroStatement.jsx":"0d91a6c56cf8","components/sections/InPageNav.jsx":"9ed444571815","components/sections/InclusionsSection.jsx":"a99954de9009","components/sections/IndexList.jsx":"8b059cd6e204","components/sections/KeyFacts.jsx":"8600300421bb","components/sections/ListingSection.jsx":"73a61fe090ab","components/sections/NotFoundSection.jsx":"75a872ab4cab","components/sections/NoticeBand.jsx":"29f4801b9cf4","components/sections/NumeralsSplit.jsx":"10d1fde8fd02","components/sections/PanoramaCaption.jsx":"1d13ec1defdd","components/sections/PeopleRow.jsx":"c64813a6b16a","components/sections/PolicySection.jsx":"57d0ba42b74a","components/sections/ProcessSection.jsx":"61b91ecfbaa9","components/sections/ProgrammeCompare.jsx":"5b81f153d44e","components/sections/ReferencesSection.jsx":"9a32b5c127ab","components/sections/RelatedArticles.jsx":"8452368a277c","components/sections/Section.jsx":"eacd861e84d9","components/sections/SplitSection.jsx":"275162930637","components/sections/TimelineSection.jsx":"ad7941ee85f3","components/sections/VideoFeature.jsx":"238e9cb6a137"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":4,"namespace":"ShantaraDesignSystem_45bbe4","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"Divider","sourcePath":"components/core/Divider.jsx"},{"name":"HnchLogo","sourcePath":"components/core/HnchLogo.jsx"},{"name":"ICON_GROUPS","sourcePath":"components/core/Icon.jsx"},{"name":"ICON_NAMES","sourcePath":"components/core/Icon.jsx"},{"name":"Icon","sourcePath":"components/core/Icon.jsx"},{"name":"IconButton","sourcePath":"components/core/IconButton.jsx"},{"name":"Logo","sourcePath":"components/core/Logo.jsx"},{"name":"PatternPanel","sourcePath":"components/core/PatternPanel.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Dialog","sourcePath":"components/feedback/Dialog.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"DateField","sourcePath":"components/forms/DateField.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"SearchList","sourcePath":"components/forms/SearchList.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Switch","sourcePath":"components/forms/Switch.jsx"},{"name":"Textarea","sourcePath":"components/forms/Textarea.jsx"},{"name":"Accordion","sourcePath":"components/navigation/Accordion.jsx"},{"name":"AnnouncementBar","sourcePath":"components/navigation/AnnouncementBar.jsx"},{"name":"Breadcrumbs","sourcePath":"components/navigation/Breadcrumbs.jsx"},{"name":"LanguageSelector","sourcePath":"components/navigation/LanguageSelector.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"Media","sourcePath":"components/editorial/Media.jsx"},{"name":"ArticleFigure","sourcePath":"components/editorial/ArticleFigure.jsx"},{"name":"PortraitFrame","sourcePath":"components/editorial/PortraitFrame.jsx"},{"name":"AuthorCard","sourcePath":"components/editorial/AuthorCard.jsx"},{"name":"GroupedList","sourcePath":"components/editorial/GroupedList.jsx"},{"name":"MetaRow","sourcePath":"components/editorial/MetaRow.jsx"},{"name":"NumberedSteps","sourcePath":"components/editorial/NumberedSteps.jsx"},{"name":"Numeral","sourcePath":"components/editorial/Numeral.jsx"},{"name":"Pagination","sourcePath":"components/editorial/Pagination.jsx"},{"name":"PlainList","sourcePath":"components/editorial/PlainList.jsx"},{"name":"Prose","sourcePath":"components/editorial/Prose.jsx"},{"name":"QuoteBlock","sourcePath":"components/editorial/QuoteBlock.jsx"},{"name":"ReviewedBy","sourcePath":"components/editorial/ReviewedBy.jsx"},{"name":"ShareBar","sourcePath":"components/editorial/ShareBar.jsx"},{"name":"SpecTable","sourcePath":"components/editorial/SpecTable.jsx"},{"name":"Statement","sourcePath":"components/editorial/Statement.jsx"},{"name":"TableOfContents","sourcePath":"components/editorial/TableOfContents.jsx"},{"name":"TextLink","sourcePath":"components/editorial/TextLink.jsx"},{"name":"Tile","sourcePath":"components/editorial/Tile.jsx"},{"name":"TimeTable","sourcePath":"components/editorial/TimeTable.jsx"},{"name":"Video","sourcePath":"components/editorial/Video.jsx"},{"name":"ArticleHeader","sourcePath":"components/sections/ArticleHeader.jsx"},{"name":"ArticleLayout","sourcePath":"components/sections/ArticleLayout.jsx"},{"name":"BandStatement","sourcePath":"components/sections/BandStatement.jsx"},{"name":"CatalogueSection","sourcePath":"components/sections/CatalogueSection.jsx"},{"name":"ClosingCTA","sourcePath":"components/sections/ClosingCTA.jsx"},{"name":"TileGrid","sourcePath":"components/sections/TileGrid.jsx"},{"name":"ConfirmationSection","sourcePath":"components/sections/ConfirmationSection.jsx"},{"name":"ContactLocation","sourcePath":"components/sections/ContactLocation.jsx"},{"name":"CredentialStrip","sourcePath":"components/sections/CredentialStrip.jsx"},{"name":"FaqSection","sourcePath":"components/sections/FaqSection.jsx"},{"name":"FeatureGrid","sourcePath":"components/sections/FeatureGrid.jsx"},{"name":"FormSplit","sourcePath":"components/sections/FormSplit.jsx"},{"name":"GalleryGrid","sourcePath":"components/sections/GalleryGrid.jsx"},{"name":"GuestStory","sourcePath":"components/sections/GuestStory.jsx"},{"name":"HeroFullBleed","sourcePath":"components/sections/HeroFullBleed.jsx"},{"name":"HeroSplit","sourcePath":"components/sections/HeroSplit.jsx"},{"name":"HeroStatement","sourcePath":"components/sections/HeroStatement.jsx"},{"name":"InPageNav","sourcePath":"components/sections/InPageNav.jsx"},{"name":"InclusionsSection","sourcePath":"components/sections/InclusionsSection.jsx"},{"name":"IndexList","sourcePath":"components/sections/IndexList.jsx"},{"name":"KeyFacts","sourcePath":"components/sections/KeyFacts.jsx"},{"name":"ListingSection","sourcePath":"components/sections/ListingSection.jsx"},{"name":"NotFoundSection","sourcePath":"components/sections/NotFoundSection.jsx"},{"name":"NoticeBand","sourcePath":"components/sections/NoticeBand.jsx"},{"name":"NumeralsSplit","sourcePath":"components/sections/NumeralsSplit.jsx"},{"name":"PanoramaCaption","sourcePath":"components/sections/PanoramaCaption.jsx"},{"name":"PeopleRow","sourcePath":"components/sections/PeopleRow.jsx"},{"name":"PolicySection","sourcePath":"components/sections/PolicySection.jsx"},{"name":"ProcessSection","sourcePath":"components/sections/ProcessSection.jsx"},{"name":"ProgrammeCompare","sourcePath":"components/sections/ProgrammeCompare.jsx"},{"name":"ReferencesSection","sourcePath":"components/sections/ReferencesSection.jsx"},{"name":"RelatedArticles","sourcePath":"components/sections/RelatedArticles.jsx"},{"name":"Section","sourcePath":"components/sections/Section.jsx"},{"name":"SplitSection","sourcePath":"components/sections/SplitSection.jsx"},{"name":"TimelineSection","sourcePath":"components/sections/TimelineSection.jsx"},{"name":"VideoFeature","sourcePath":"components/sections/VideoFeature.jsx"}],"sourceHashes":{"components/core/Badge.jsx":"6f87d9186fb4","components/core/Button.jsx":"fb2a139d1a82","components/core/Card.jsx":"899ecf09e977","components/core/Divider.jsx":"7841bbb870dd","components/core/HnchLogo.jsx":"3086ba9ae2ea","components/core/Icon.jsx":"cc8205da0659","components/core/IconButton.jsx":"0746d0dc8fb3","components/core/Logo.jsx":"71651ae4093b","components/core/PatternPanel.jsx":"bdd8ba344adf","components/core/Tag.jsx":"d29c1738558d","components/feedback/Dialog.jsx":"c1b84ed6f276","components/feedback/Spinner.jsx":"be5f4c801431","components/feedback/Toast.jsx":"c64129df2a1a","components/feedback/Tooltip.jsx":"9c7b40a94408","components/forms/Checkbox.jsx":"94f59a9c424c","components/forms/DateField.jsx":"913a3ce5a07e","components/forms/Input.jsx":"110473e90c03","components/forms/Radio.jsx":"617d02dde15d","components/forms/SearchList.jsx":"96bf0845eb74","components/forms/Select.jsx":"523766e2901d","components/forms/Switch.jsx":"6e7c22faf1b3","components/forms/Textarea.jsx":"ec0634e59eff","components/navigation/Accordion.jsx":"b8870511c6fe","components/navigation/AnnouncementBar.jsx":"a08f25f34e41","components/navigation/Breadcrumbs.jsx":"421f19e62be1","components/navigation/LanguageSelector.jsx":"54d901688c06","components/navigation/Tabs.jsx":"414b48cd2f58","components/editorial/Media.jsx":"33a6b0c1bfde","components/editorial/ArticleFigure.jsx":"f7689927c7db","components/editorial/PortraitFrame.jsx":"63f0b6155a5a","components/editorial/AuthorCard.jsx":"e96ed75df2fb","components/editorial/GroupedList.jsx":"238e19136bf2","components/editorial/MetaRow.jsx":"b7244fdce96c","components/editorial/NumberedSteps.jsx":"eb66c47b1dc9","components/editorial/Numeral.jsx":"e6b7086ade4c","components/editorial/Pagination.jsx":"893e51b7753d","components/editorial/PlainList.jsx":"8f21a3d5bda3","components/editorial/Prose.jsx":"5c8e1ce636ea","components/editorial/QuoteBlock.jsx":"b64d5a6a05d1","components/editorial/ReviewedBy.jsx":"cf907ffdf4c1","components/editorial/ShareBar.jsx":"a296f19b8e8f","components/editorial/SpecTable.jsx":"d8fe7d17da64","components/editorial/Statement.jsx":"9801ab9ee07c","components/editorial/TableOfContents.jsx":"e7a40c6c066e","components/editorial/TextLink.jsx":"5b739608f549","components/editorial/Tile.jsx":"e584181492e2","components/editorial/TimeTable.jsx":"610e5af78002","components/editorial/Video.jsx":"e21a3629d769","components/sections/ArticleHeader.jsx":"08192c93c062","components/sections/ArticleLayout.jsx":"393bf3aed56f","components/sections/BandStatement.jsx":"e4d406f97423","components/sections/CatalogueSection.jsx":"15c306e02e48","components/sections/ClosingCTA.jsx":"8416ad13bf31","components/sections/TileGrid.jsx":"c56cebd60494","components/sections/ConfirmationSection.jsx":"383f86a4f205","components/sections/ContactLocation.jsx":"391cc9e11360","components/sections/CredentialStrip.jsx":"a913e464373e","components/sections/FaqSection.jsx":"b68b80cab3ab","components/sections/FeatureGrid.jsx":"30cc440755ad","components/sections/FormSplit.jsx":"c44c5555c7b4","components/sections/GalleryGrid.jsx":"615715125816","components/sections/GuestStory.jsx":"4ee5f343575b","components/sections/HeroFullBleed.jsx":"63fda9954b4f","components/sections/HeroSplit.jsx":"4bf05c27c995","components/sections/HeroStatement.jsx":"a01a4e27a8ae","components/sections/InPageNav.jsx":"eb3f79ab105e","components/sections/InclusionsSection.jsx":"8702adc09664","components/sections/IndexList.jsx":"8b059cd6e204","components/sections/KeyFacts.jsx":"04addc7ec64f","components/sections/ListingSection.jsx":"57c590d8c480","components/sections/NotFoundSection.jsx":"75a872ab4cab","components/sections/NoticeBand.jsx":"e7e738549007","components/sections/NumeralsSplit.jsx":"5051d50226ad","components/sections/PanoramaCaption.jsx":"9066fc95a5fa","components/sections/PeopleRow.jsx":"b52173733918","components/sections/PolicySection.jsx":"69edb3ea2077","components/sections/ProcessSection.jsx":"1fa9cb2bbf8d","components/sections/ProgrammeCompare.jsx":"3d2cb3c0d938","components/sections/ReferencesSection.jsx":"d71e2cc1c769","components/sections/RelatedArticles.jsx":"035f4a14648b","components/sections/Section.jsx":"704bd382cde3","components/sections/SplitSection.jsx":"275162930637","components/sections/TimelineSection.jsx":"4e441b5ea5ef","components/sections/VideoFeature.jsx":"bea56a65b40c"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -12,7 +12,7 @@ const __ds_scope = {};
 try { (() => {
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 /* A Badge is a label, never a control. Small, flat, square-cornered, sentence case:
-   a 2px-radius tint at 20px — half a control's height — with no border and no pill,
+   a 2px-radius tint at 20px (half a control's height) with no border and no pill,
    so it can never be mistaken for a button. `outline` is a dot plus text with no box. */
 const CSS = `
 .sh-badge{display:inline-flex;align-items:center;gap:6px;height:20px;padding:0 6px;border:0;border-radius:var(--radius-xs);font-family:var(--font-body);font-size:var(--text-2xs);font-weight:var(--weight-medium);line-height:1;letter-spacing:0.01em;text-transform:none;background:color-mix(in srgb, var(--text-primary) 7%, transparent);color:var(--text-secondary);white-space:nowrap;vertical-align:middle;cursor:default;user-select:none;transition:background-color var(--duration-fast) var(--ease-standard),color var(--duration-fast) var(--ease-standard)}
@@ -59,7 +59,7 @@ try { (() => {
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 /* Three variants, one shape. Colour follows the ground (tokens/layout.css):
    on Merino/Stone the primary is Himalaya olive; inside a himalaya, pine or photo
-   ground it becomes Gold with Pine ink — the brand deck's closing-slide button.
+   ground it becomes Gold with Pine ink, the brand deck's closing-slide button.
    `accent`, `ghost` and `inverse` survive as aliases for the app kit only. */
 const CSS = `
 .sh-btn{--_bg:var(--btn-primary-bg);--_fg:var(--btn-primary-fg);--_bd:transparent;display:inline-flex;align-items:center;justify-content:center;gap:var(--space-3);max-width:100%;font-family:var(--font-body);font-weight:var(--weight-medium);letter-spacing:var(--tracking-wide);line-height:1.2;text-align:center;text-decoration:none;white-space:nowrap;border:var(--border-width) solid var(--_bd);border-radius:var(--radius-control);background:var(--_bg);color:var(--_fg);cursor:pointer;transition:var(--transition-control)}
@@ -75,7 +75,7 @@ const CSS = `
 @media (pointer: coarse){.sh-btn[data-size="sm"]{min-height:var(--tap-min)}}
 @media (max-width:519.98px){.sh-btn{white-space:normal;padding-block:var(--space-3)}.sh-btn[data-size="lg"]{padding-inline:var(--space-7)}}
 .sh-btn[data-variant="secondary"]{--_bg:transparent;--_fg:var(--text-primary);--_bd:var(--border-control)}
-/* link — text with a hairline and an arrow; zero inline padding so it sits on the grid. */
+/* link: text with a hairline and an arrow; zero inline padding so it sits on the grid. */
 .sh-btn[data-variant="link"],.sh-btn[data-variant="ghost"]{--_bg:transparent;--_fg:var(--text-link);padding-inline:0!important;min-height:var(--tap-min);border:0;gap:var(--space-3);letter-spacing:var(--tracking-wide)}
 .sh-btn[data-variant="link"]>span,.sh-btn[data-variant="ghost"]>span{background:linear-gradient(currentColor,currentColor) 0 100% / 100% 1px no-repeat;padding-bottom:3px}
 .sh-btn[data-variant="link"] [data-icon],.sh-btn[data-variant="ghost"] [data-icon]{transition:transform var(--duration-fast) var(--ease-out)}
@@ -330,7 +330,7 @@ try { (() => {
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 const BASE = "https://unpkg.com/lucide-static@0.544.0/icons/";
 
-/* The curated Shantara icon registry — every Lucide slug the brand uses, grouped by job.
+/* The curated Shantara icon registry: every Lucide slug the brand uses, grouped by job.
    Any other Lucide slug still renders, but new names should be added here first so the
    set stays small and consistent. WhatsApp has no Lucide glyph: `message-circle` stands in. */
 const ICON_GROUPS = {
@@ -526,7 +526,7 @@ const BG = {
   none: "transparent"
 };
 
-/* The rosette never washes a whole surface — it is a BAND flush to one edge,
+/* The rosette never washes a whole surface. It is a BAND flush to one edge,
    bleeding off on three sides, ruled with a hairline on its inner side, with the
    content kept clear of it. `scale` sets one square cell edge (applied to both
    axes, so the geometry can never be stretched) and is PROPORTIONAL to the band:
@@ -677,9 +677,9 @@ Object.assign(__ds_scope, { PatternPanel });
 // components/core/Tag.jsx
 try { (() => {
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* Two looks, decided by behaviour — never by prop choice alone:
-   · Interactive (onClick): a selectable chip — pill outline, 36px, hover, press, focus ring.
-   · Static (no onClick): a flat label like Badge — no border, no pill, no hover,
+/* Two looks, decided by behaviour, never by prop choice alone:
+   · Interactive (onClick): a selectable chip with pill outline, 36px, hover, press, focus ring.
+   · Static (no onClick): a flat label like Badge, with no border, no pill, no hover,
      so it never reads as a button. `onRemove` adds a 24px remove control to either. */
 const CSS = `
 .sh-tag{display:inline-flex;align-items:center;gap:var(--space-3);font-family:var(--font-body);white-space:nowrap;vertical-align:middle}
@@ -948,7 +948,7 @@ Object.assign(__ds_scope, { Dialog });
 // components/feedback/Spinner.jsx
 try { (() => {
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* Spinner — three dots breathing in sequence, the brand's only loader (never a rotating
+/* Spinner: three dots breathing in sequence, the brand's only loader (never a rotating
    ring). Each dot swells and brightens on a slow 1400ms wave, staggered by a third of a
    cycle, so the row reads as one calm breath travelling left to right.
    Reduced motion: the dots hold still at three quiet opacities and the label carries it. */
@@ -1206,7 +1206,7 @@ Object.assign(__ds_scope, { Tooltip });
 // components/forms/Checkbox.jsx
 try { (() => {
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* Checkbox — 20px box, 2px radius, 1.5px border. The tick is an inline SVG drawn on a
+/* Checkbox: 20px box, 2px radius, 1.5px border. The tick is an inline SVG drawn on a
    20×20 grid and centred with place-items:center, so it sits dead centre at any zoom. */
 const CSS = `
 .sh-check{position:relative;display:flex;width:fit-content;max-width:100%;flex-direction:column;gap:var(--space-2);font-family:var(--font-body)}
@@ -1370,7 +1370,7 @@ function weekStart(locale = "en-GB") {
     const info = new Intl.Locale(locale).weekInfo;
     if (info && info.firstDay >= 1 && info.firstDay <= 7) return info.firstDay;
   } catch {
-    /* Locale or weekInfo missing — Monday. */
+    /* Locale or weekInfo missing: Monday. */
   }
   return 1;
 }
@@ -1542,7 +1542,7 @@ function filterOptions(options, query) {
 }
 
 /** A real pointer move should retarget the highlight. Touch and a stationary
- *  pointer (the list scrolled underneath it) must not — otherwise the highlight
+ *  pointer (the list scrolled underneath it) must not, otherwise the highlight
  *  scroll chases the cursor to the top or the bottom. */
 function pointerMovesHighlight(event) {
   if (!event || event.pointerType === "touch") return false;
@@ -1572,7 +1572,7 @@ function highlightParts(label, query) {
   }].filter(part => part.text);
 }
 
-/* Shared field chrome — same rules and style id as Input, Textarea and Select. */
+/* Shared field chrome: same rules and style id as Input, Textarea and Select. */
 const FIELD_CSS = `
 .sh-field{display:flex;flex-direction:column;gap:var(--space-3);min-width:0;font-family:var(--font-body)}
 .sh-field-label{display:flex;align-items:baseline;gap:var(--space-2);font:var(--weight-medium) var(--text-sm)/1.3 var(--font-body);color:var(--text-primary)}
@@ -2382,7 +2382,7 @@ function stripForeignInput(event) {
   return true;
 }
 
-/* Shared field chrome — identical in Input, Textarea and Select (one <style id="sh-field-css">). */
+/* Shared field chrome: identical in Input, Textarea and Select (one <style id="sh-field-css">). */
 const FIELD_CSS = `
 .sh-field{display:flex;flex-direction:column;gap:var(--space-3);min-width:0;font-family:var(--font-body)}
 .sh-field-label{display:flex;align-items:baseline;gap:var(--space-2);font:var(--weight-medium) var(--text-sm)/1.3 var(--font-body);color:var(--text-primary)}
@@ -2469,7 +2469,7 @@ function FieldMessage({
   return null;
 }
 
-/* Input — 52px, 2px radius, 17px text (never zooms on iOS), calm 3px brand-soft focus halo. */
+/* Input: 52px, 2px radius, 17px text (never zooms on iOS), calm 3px brand-soft focus halo. */
 const CSS = `
 .sh-input-wrap{display:flex;align-items:center;gap:var(--space-3);height:var(--control-lg);padding:0 var(--space-5)}
 .sh-input-wrap[data-size="sm"]{height:var(--control-md)}
@@ -2581,7 +2581,7 @@ Object.assign(__ds_scope, { Input });
 // components/forms/Radio.jsx
 try { (() => {
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* Radio — 20px ring, 1.5px border; the 8px dot is a grid child centred with
+/* Radio: 20px ring, 1.5px border; the 8px dot is a grid child centred with
    place-items:center (no offsets), so it stays centred at every zoom level. */
 const CSS = `
 .sh-radio{position:relative;display:flex;width:fit-content;max-width:100%;box-sizing:border-box;align-items:flex-start;gap:var(--space-4);min-height:var(--tap-min);padding-block:10px;font:var(--weight-regular) var(--text-base)/1.4 var(--font-body);color:var(--text-primary);cursor:pointer}
@@ -2676,7 +2676,7 @@ function weekStart(locale = "en-GB") {
     const info = new Intl.Locale(locale).weekInfo;
     if (info && info.firstDay >= 1 && info.firstDay <= 7) return info.firstDay;
   } catch {
-    /* Locale or weekInfo missing — Monday. */
+    /* Locale or weekInfo missing: Monday. */
   }
   return 1;
 }
@@ -2848,7 +2848,7 @@ function filterOptions(options, query) {
 }
 
 /** A real pointer move should retarget the highlight. Touch and a stationary
- *  pointer (the list scrolled underneath it) must not — otherwise the highlight
+ *  pointer (the list scrolled underneath it) must not, otherwise the highlight
  *  scroll chases the cursor to the top or the bottom. */
 function pointerMovesHighlight(event) {
   if (!event || event.pointerType === "touch") return false;
@@ -2913,7 +2913,7 @@ function stripForeignInput(event) {
   return true;
 }
 
-/* Shared field chrome — same rules and style id as Input, Textarea and Select. */
+/* Shared field chrome: same rules and style id as Input, Textarea and Select. */
 const FIELD_CSS = `
 .sh-field{display:flex;flex-direction:column;gap:var(--space-3);min-width:0;font-family:var(--font-body)}
 .sh-field-label{display:flex;align-items:baseline;gap:var(--space-2);font:var(--weight-medium) var(--text-sm)/1.3 var(--font-body);color:var(--text-primary)}
@@ -3400,7 +3400,7 @@ Object.assign(__ds_scope, { SearchList });
 // components/forms/Select.jsx
 try { (() => {
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* Shared field chrome — identical in Input, Textarea and Select (one <style id="sh-field-css">). */
+/* Shared field chrome: identical in Input, Textarea and Select (one <style id="sh-field-css">). */
 const FIELD_CSS = `
 .sh-field{display:flex;flex-direction:column;gap:var(--space-3);min-width:0;font-family:var(--font-body)}
 .sh-field-label{display:flex;align-items:baseline;gap:var(--space-2);font:var(--weight-medium) var(--text-sm)/1.3 var(--font-body);color:var(--text-primary)}
@@ -3485,7 +3485,7 @@ function FieldMessage({
   return null;
 }
 
-/* Select — native <select> (best on phones) in Input's chrome, with a 16px chevron centred
+/* Select: native <select> (best on phones) in Input's chrome, with a 16px chevron centred
    on the field's midline at the inline end. */
 const CSS = `
 .sh-sel-box{position:relative;display:block}
@@ -3592,7 +3592,7 @@ Object.assign(__ds_scope, { Select });
 // components/forms/Switch.jsx
 try { (() => {
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* Switch — 44×26 track, 20px knob travelling 18px over 240ms. Label at the same
+/* Switch: 44×26 track, 20px knob travelling 18px over 240ms. Label at the same
    17px as Checkbox/Radio; whole row is a 44px target. */
 const CSS = `
 .sh-switch{position:relative;display:flex;width:fit-content;max-width:100%;align-items:center;gap:var(--space-4);min-height:var(--tap-min);font:var(--weight-regular) var(--text-base)/1.4 var(--font-body);color:var(--text-primary);cursor:pointer}
@@ -3685,7 +3685,7 @@ function stripForeignInput(event) {
   return true;
 }
 
-/* Shared field chrome — identical in Input, Textarea and Select (one <style id="sh-field-css">). */
+/* Shared field chrome: identical in Input, Textarea and Select (one <style id="sh-field-css">). */
 const FIELD_CSS = `
 .sh-field{display:flex;flex-direction:column;gap:var(--space-3);min-width:0;font-family:var(--font-body)}
 .sh-field-label{display:flex;align-items:baseline;gap:var(--space-2);font:var(--weight-medium) var(--text-sm)/1.3 var(--font-body);color:var(--text-primary)}
@@ -3772,7 +3772,7 @@ function FieldMessage({
   return null;
 }
 
-/* Textarea — same chrome as Input; resizes vertically only. */
+/* Textarea: same chrome as Input; resizes vertically only. */
 const CSS = `
 .sh-ta{display:block;min-height:136px;padding:14px var(--space-5);line-height:var(--leading-normal);resize:vertical}
 `;
@@ -3959,7 +3959,7 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
 /* A one-line strip above the site header for one site-wide message: a change to how stays
    are booked, a closure, a new programme. One message, at most one link, never a promotion.
    ground "himalaya" (default) or "pine" re-point ink like any dark ground; "stone" is light.
-   Not sticky — it scrolls away with the page. dismissible adds a close button; storageKey
+   Not sticky: it scrolls away with the page. dismissible adds a close button; storageKey
    keeps it closed for that visitor until the key changes (use a new key for a new message). */
 const CSS = `
 .sh-announce{font:var(--type-body-sm);color:var(--text-primary)}
@@ -4150,7 +4150,7 @@ function ensure() {
 }
 
 /* Planned site languages (ui_kits/website/locales.js). Used only when locales.js is not
-   loaded — e.g. in the catalog — so the control can always be seen. */
+   loaded (e.g. in the catalog), so the control can always be seen. */
 const PLANNED = [{
   code: "en",
   nativeName: "English",
@@ -4607,7 +4607,7 @@ const { Media } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 /* One framing for every doctor: 4:5, neutral ground, same crop, then name (Regular),
    role (small) and an optional qualification line. With no photograph yet it shows the
-   person's initials on the same ground — never a stock face, never an empty box. */
+   person's initials on the same ground, never a stock face, never an empty box. */
 const CSS = `
 .sh-portrait{display:flex;flex-direction:column;gap:var(--space-5);min-width:0;margin:0}
 .sh-portrait-empty{position:relative;aspect-ratio:var(--media-ratio-portrait);background:color-mix(in srgb, var(--color-pearl-bush) 82%, var(--color-pine-tree));display:grid;place-items:center}
@@ -4748,7 +4748,7 @@ Object.assign(__ds_scope, { AuthorCard });
 try { (() => {
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 /* Groups of short items (programmes by focus, therapies by kind). Each group has a small
-   Medium heading in normal case, then its items as a clean vertical list on hairlines —
+   Medium heading in normal case, then its items as a clean vertical list on hairlines:
    one item per line, never a middot run-on. Groups stack on phones and sit in columns
    from 760px with generous space between them. */
 const CSS = `
@@ -4821,7 +4821,7 @@ Object.assign(__ds_scope, { GroupedList });
 try { (() => {
 const { Icon } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* The one place category, duration, date and read time are shown — a caption-size row
+/* The one place category, duration, date and read time are shown: a caption-size row
    BELOW a title, in normal case. Never above a heading (the system has no eyebrows).
    items: strings, or { label, icon?, href?, dateTime? }. Without icons the items are
    separated by a middot; with icons each item leads with its 14px glyph instead. */
@@ -4890,8 +4890,8 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
    horizontal (default): muted 01–04 numerals in a FIXED-width column, so every title and
    description starts on the same line whatever the number's width; the number sits on
    the title's baseline. One column on phones, two from 760px, `columns` from 1000px
-   (at 4 columns the number moves above the title — still one shared left edge).
-   vertical: a timeline — numbers in a column of hairline circles joined by a 1px line,
+   (at 4 columns the number moves above the title, still on one shared left edge).
+   vertical: a timeline, with numbers in a column of hairline circles joined by a 1px line,
    content to the right. Same on every width; the circles shrink on phones. */
 const CSS = `
 .sh-steps{--_nw:2.75rem;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:var(--space-8) var(--grid-gap)}
@@ -5125,7 +5125,7 @@ Object.assign(__ds_scope, { Pagination });
 // components/editorial/PlainList.jsx
 try { (() => {
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* Plain text in columns — no bullets, no icons, no ticks (the deck's list style).
+/* Plain text in columns, with no bullets, no icons, no ticks (the deck's list style).
    Items are strings, or { title, text } pairs. One column under 520px. */
 const CSS = `
 .sh-plist{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:var(--space-5) var(--grid-gap)}
@@ -5174,8 +5174,8 @@ Object.assign(__ds_scope, { PlainList });
 // components/editorial/Prose.jsx
 try { (() => {
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* Long-form article text. Styles the plain HTML a CMS or Markdown renderer produces —
-   h2/h3/h4, p, ul/ol, blockquote, figure + figcaption, table, hr, links, strong/em, code —
+/* Long-form article text. Styles the plain HTML a CMS or Markdown renderer produces
+   (h2/h3/h4, p, ul/ol, blockquote, figure + figcaption, table, hr, links, strong/em, code)
    at a 68ch measure with the body rhythm. Wide children (figure[data-width="wide"],
    tables) may break out of the measure up to the container. */
 const CSS = `
@@ -5253,7 +5253,7 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
 /* A large Light quote, left-aligned, closed by an attribution line (a short rule, the
    speaker in Medium, their role in secondary type) and optional labelled facts beneath
    on a hairline (deck slides 16–17). Only real, consented words or the organisation's
-   own statements go here — never a composed testimonial. */
+   own statements go here, never a composed testimonial. */
 const CSS = `
 .sh-quote{margin:0;display:flex;flex-direction:column;gap:var(--space-7);min-width:0}
 .sh-quote-text{margin:0;font:var(--type-statement);color:var(--text-primary);max-width:var(--measure-statement);text-wrap:pretty}
@@ -5379,7 +5379,7 @@ Object.assign(__ds_scope, { ReviewedBy });
 try { (() => {
 const { Icon } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* Share an article: copy link, WhatsApp, email — the three ways guests actually pass a
+/* Share an article: copy link, WhatsApp, email: the three ways guests actually pass a
    page on. Quiet outline chips with a glyph and a word; "Copy link" confirms with
    "Link copied" for two seconds (announced politely). Wraps on phones. */
 const CSS = `
@@ -5468,7 +5468,7 @@ Object.assign(__ds_scope, { ShareBar });
 // components/editorial/SpecTable.jsx
 try { (() => {
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* Name, figure, attributes — no borders, the accent column in olive (deck slide 13).
+/* Name, figure, attributes: no borders, the accent column in olive (deck slide 13).
    A real <table> for screen readers. Under 520px each row becomes a small block:
    the name on its own line, the other cells inline beneath it with their labels. */
 const CSS = `
@@ -5501,7 +5501,7 @@ function ensure() {
   document.head.appendChild(el);
 }
 
-/* columns: [{ key, label, accent?, align? }] — the first column is the row header. */
+/* columns: [{ key, label, accent?, align? }]. The first column is the row header. */
 function SpecTable({
   columns = [],
   rows = [],
@@ -5769,7 +5769,7 @@ Object.assign(__ds_scope, { TableOfContents });
 try { (() => {
 const { Button, Icon } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* A grid-aligned text link with a hairline and an arrow — the only "more" link on the
+/* A grid-aligned text link with a hairline and an arrow, the only "more" link on the
    website. It is Button variant="link" with the arrow built in. */
 function TextLink({
   children,
@@ -5792,8 +5792,8 @@ Object.assign(__ds_scope, { TextLink });
 try { (() => {
 const { Media, MetaRow } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* Replaces the white card on linen. Photograph and text sit directly on the ground —
-   no border, shadow or radius. Order: photograph → title → meta row → text. Category and
+/* Replaces the white card on linen. Photograph and text sit directly on the ground,
+   with no border, shadow or radius. Order: photograph → title → meta row → text. Category and
    duration live in the meta row BELOW the title, never above it. Hover: the photograph
    scales to 1.02 inside its frame and the title takes a hairline underline. */
 const CSS = `
@@ -5813,7 +5813,7 @@ const CSS = `
   .sh-tile[data-href]:hover .sh-media>img{transform:scale(var(--tile-media-scale))}
   .sh-tile[data-href]:hover .sh-tile-title>span{background-size:100% 1px}
 }
-/* layout="row": photograph beside text from 760px — for lists of articles or rooms. */
+/* layout="row": photograph beside text from 760px, for lists of articles or rooms. */
 @media (min-width:760px){
   .sh-tile[data-layout="row"]{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:var(--grid-gap);align-items:center}
 }
@@ -6140,7 +6140,7 @@ function ArticleHeader({
     label: date,
     dateTime
   } : null, readTime || null];
-  /* `video`: a video article — the player (with captions) takes the lead photograph's place. */
+  /* `video`: a video article. The player (with captions) takes the lead photograph's place. */
   const figure = media || (video ? /*#__PURE__*/React.createElement(Video, _extends({}, video, {
     ratio: ratio,
     mobileRatio: mobileRatio
@@ -6206,7 +6206,7 @@ Object.assign(__ds_scope, { ArticleHeader });
 try { (() => {
 const { TableOfContents } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* The body of a long read — a Journal article, a legal page, the editorial policy. The
+/* The body of a long read: a Journal article, a legal page, the editorial policy. The
    article recipe as one section: the text (children, usually <Prose>) in 8 of 12 columns
    and a sticky "On this page" list in the last 3. `toc` comes from the article's h2s (each
    needs an id); `aside` adds a block under the list (ReviewedBy, ShareBar).
@@ -6271,7 +6271,7 @@ const { PatternPanel, QuoteBlock } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 /* Deck slide 3. Solid Himalaya with the rosette band on one edge (30% of the surface,
    cell = 15cqw so it is always band/2 and never under 130px). Merino Light statement
-   (no label above it), optional plain list. One per page at most — it is the page's accent.
+   (no label above it), optional plain list. One per page at most: it is the page's accent.
    Under 880px the band disappears (PatternPanel's container query). */
 const CSS = `
 .sh-band-body{padding-block:var(--section-y)}
@@ -6287,7 +6287,7 @@ function ensure() {
 }
 
 /* `quote`: the page's one accent can be a doctor's or the founder's own words instead of a
-   statement — { quote, cite, role }. Real words only (QuoteBlock rules). */
+   statement: { quote, cite, role }. Real words only (QuoteBlock rules). */
 function BandStatement({
   edge = "end",
   ground = "himalaya",
@@ -6322,7 +6322,7 @@ Object.assign(__ds_scope, { BandStatement });
 try { (() => {
 const { Media, MetaRow } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* One page, many entries — Therapies, Rooms, Farm & Dining. The IA gives each family one
+/* One page, many entries: Therapies, Rooms, Farm & Dining. The IA gives each family one
    page, so a link to a single therapy or room is `/en/therapies#hijama`: every entry carries
    that `id`, and its anchor clears the sticky header plus an InPageNav.
    Entry: photograph → name (h3) → meta row → one paragraph → optional facts (SpecTable /
@@ -6403,12 +6403,12 @@ Object.assign(__ds_scope, { CatalogueSection });
 try { (() => {
 const { Media, Statement, Icon, Button, TextLink } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* The closing call to action (deck slide 18) — ONLY for pages that otherwise have no CTA.
+/* The closing call to action (deck slide 18), ONLY for pages that otherwise have no CTA.
    variant "photo": a full-bleed dark photograph, 72svh, statement bottom-left.
      `bleed={false}` (≥1000px only): the photograph sits inside the page container on a
      `surround` ground, so its edges line up with the header and the footer's content.
    variant "ground": the same block on a flat ground (pine / himalaya / stone), content height.
-   variant "compact": a single-row band — title (+ sub) on the left, actions on the right.
+   variant "compact": a single-row band, title (+ sub) on the left, actions on the right.
    Contact items render as one aligned row (every item the same 44px inline-flex box, so a
    link and plain text share a baseline); they stack one per line under 520px. */
 const CSS = `
@@ -6471,7 +6471,7 @@ function Contact({
 }
 
 /* variant "whatsapp": the ground layout with WhatsApp as the primary action and a call as
-   the second (pass `whatsapp` — a wa.me URL — and `phone`, a tel: URL, from content/site.json).
+   the second (pass `whatsapp`, a wa.me URL, and `phone`, a tel: URL, from content/site.json).
    variant "tariff": a compact band that sends the reader to the tariff page (`tariffHref`):
    programme and room pages never quote a rate, so this is their commercial close. */
 function ClosingCTA({
@@ -6598,7 +6598,7 @@ const CSS = `
   .sh-tgrid-head>:last-child:not(:first-child){flex:0 0 auto}
   .sh-tgrid-items{grid-template-columns:repeat(2,minmax(0,1fr))}
   .sh-tgrid-items[data-odd="true"]>:first-child{grid-column:1/-1}
-  /* Uniform tiles: tiles in a row share the rows photograph, title, meta, text — so a
+  /* Uniform tiles: tiles in a row share the rows photograph, title, meta, text, so a
      two-line title or a longer description never pushes its neighbours' text out of line.
      Each part is placed in its own row, so a tile without meta or text keeps the others. */
   /* The parent's row gap would sit between a tile's own rows, so it is zero here and each
@@ -6675,10 +6675,10 @@ const { Statement, Icon, Tile, TileGrid } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 /* What a visitor sees after sending a form: that it arrived, what happens next in plain
    sentences, how to reach the team meanwhile (call, WhatsApp, email), a way back, and then
-   up to three cards to keep exploring. Which form decides the copy and the links — the
+   up to three cards to keep exploring. Which form decides the copy and the links; the
    standard is in ui_kits/website/skill-content.md#confirmation-screens. Never a promised
    response time that is not confirmed, never internal process. Rendered in place of the
-   form — focus moves to the title so a screen reader announces it (`autoFocus`), and the
+   form: focus moves to the title so a screen reader announces it (`autoFocus`), and the
    page scrolls to it.
    The message is one column capped at 44rem; the cards below it use the full container,
    three across from 1000px (TileGrid). Phones: actions stack full width; contact one per
@@ -6708,7 +6708,7 @@ function ensure() {
 }
 
 /* next: string[] · contact: [{ icon, label, href? }] ·
-   explore: [{ title, text?, meta?, src?, alt?, href }] — three cards (only the first three render).
+   explore: [{ title, text?, meta?, src?, alt?, href }]: three cards (only the first three render).
    An http(s) href opens in a new tab. */
 function ConfirmationSection({
   title = "Consultation request received",
@@ -6812,7 +6812,7 @@ try { (() => {
 const { Statement, Media, Icon, TextLink } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 /* How to reach Shantara: the ways to get in touch (call, WhatsApp, email), the address,
-   a photograph of the arrival with an "Open in Maps" link (no embedded map — it is heavy,
+   a photograph of the arrival with an "Open in Maps" link (no embedded map: it is heavy,
    tracks visitors and is hard to use with a keyboard), and directions from the airport and
    railway station. Numbers and address from content/site.json; distances from handbook §12.
    Phones: contact → address → photograph → directions. ≥1000px: contact, address and
@@ -6946,7 +6946,7 @@ Object.assign(__ds_scope, { ContactLocation });
 try { (() => {
 const { Statement, Icon } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* Credentials, spelled out — About and doctor profiles. Each item is the credential's exact
+/* Credentials, spelled out, for About and doctor profiles. Each item is the credential's exact
    name, who issued it, the number where appropriate and whose it is. Only entries on the
    verified credentials list in docs/handbook/glossary.md, and never one shown as a bare
    logo. An entry whose issuer or proof is still "[…]" in that list is left out until it
@@ -7111,9 +7111,9 @@ Object.assign(__ds_scope, { FaqSection });
 try { (() => {
 const { Statement, Icon } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* Facilities at a glance — an icon, a short label and one line, in a grid. Only amenities
+/* Facilities at a glance: an icon, a short label and one line, in a grid. Only amenities
    named in the handbook amenities section (docs/handbook/property.md); never add one. The
-   workstations are an exception to the device policy, not a feature — leave them out of a
+   workstations are an exception to the device policy, not a feature, so leave them out of a
    marketing grid. Icons from the curated Lucide registry (core/Icon).
    Phones: one column, icon beside the text. ≥520px: two. ≥1000px: `columns` (3 or 4). */
 const CSS = `
@@ -7182,7 +7182,7 @@ try { (() => {
 const { Media } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 /* The consultation form on Merino with square fields, beside a Stone panel that says what
-   happens next. The panel opens with a photograph of the place — `src`/`alt` (or `media`) —
+   happens next. The panel opens with a photograph of the place (`src`/`alt` or `media`)
    running edge to edge across its top at 4:3; reception.jpg by default in the demos. Not a
    doctor thumbnail: the panel copy says a member of the team calls first.
    The left column is a real <form>: Enter submits, `required` fields are checked by the
@@ -7191,7 +7191,7 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
    Phones: form first, then the panel (photograph on top). ≥1000px: form 7 columns, panel 5,
    sticky while the form scrolls in windows at least 800px tall.
    `compact`: the same form without the panel, capped at 44rem; name and phone fields sit
-   side by side from 760px — for Hosted visits or the end of a condition page. */
+   side by side from 760px, for Hosted visits or the end of a condition page. */
 const CSS = `
 .sh-fsplit{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--stack-lg);align-items:start}
 .sh-fsplit-form{min-width:0;display:flex;flex-direction:column;gap:var(--space-6);margin:0}
@@ -7271,11 +7271,11 @@ Object.assign(__ds_scope, { FormSplit });
 try { (() => {
 const { Statement, Media } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* Photographs of a place — Rooms, Dining, Amenities, Hosted visits. A fixed rhythm of wide
+/* Photographs of a place: Rooms, Dining, Amenities, Hosted visits. A fixed rhythm of wide
    and tall frames that repeats every five photographs, each with an optional caption. No
    carousel, no lightbox, no thumbnail strip (skill-sections: one photograph per job).
    Frames without guests; every photograph needs real alt text.
-   ≥1000px (6 columns): [wide 4 + tall 2] then [three at 2] — the tall frame stretches to
+   ≥1000px (6 columns): [wide 4 + tall 2] then [three at 2]; the tall frame stretches to
    the wide frame's height. 760–999px: one wide across, then pairs. Phones: one column. */
 const CSS = `
 .sh-gal{display:flex;flex-direction:column;gap:var(--stack-lg)}
@@ -7307,7 +7307,7 @@ function ensure() {
   document.head.appendChild(el);
 }
 
-/* items: [{ src, alt, caption?, position? }] — five or ten read best */
+/* items: [{ src, alt, caption?, position? }]. Five or ten read best */
 function GalleryGrid({
   title,
   sub,
@@ -7347,12 +7347,12 @@ try { (() => {
 const { Statement, Media } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 /* A guest's own words. Only real stories with written consent (content/guest-stories,
-   content/testimonials — both empty today, so nothing ships until they are not). A name only
+   content/testimonials, both empty today, so nothing ships until they are not). A name only
    when the guest agreed to it; otherwise a first initial and the context of the stay. Never
    a health result or a claim the clinical team would not make; never a face in therapy.
-   `story` — one story: a large quote, the attribution and the context of the stay, with an
+   `story`: one story, a large quote, the attribution and the context of the stay, with an
    optional photograph of the place (not the guest) beside it from 1000px.
-   `stories` — two or three short quotes side by side from 1000px, stacked below. No carousel. */
+   `stories`: two or three short quotes side by side from 1000px, stacked below. No carousel. */
 const CSS = `
 .sh-story{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--stack-lg);align-items:center}
 .sh-story-quote{margin:0;display:flex;flex-direction:column;gap:var(--space-6);min-width:0}
@@ -7665,7 +7665,7 @@ const { Statement, MetaRow, Media } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 /* The EDITORIAL hero (deck slide 2). Words lead; no full photograph. A Merino or Stone
    ground, a Statement (its breadcrumbs, then a large Light h1 placed low with open space
-   above, one supporting line and actions) — closed by a hairline with an optional meta row beneath it
+   above, one supporting line and actions), closed by a hairline with an optional meta row beneath it
    ("Reviewed by … · Updated …"). Policy, legal, 404 and confirmation pages use this same
    hero: there is no utility variant. Presence without a label above the title: a Stone
    ground, the meta row, or (src / aside) a small 4:5 image or a short fact list in a
@@ -7762,7 +7762,7 @@ Object.assign(__ds_scope, { HeroStatement });
 // components/sections/InPageNav.jsx
 try { (() => {
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* "On this page" — a sticky bar of jump links for long pages (programme detail, Therapies,
+/* "On this page": a sticky bar of jump links for long pages (programme detail, Therapies,
    Rooms, legal). It sits under the site header, marks the section in view, and scrolls
    sideways on phones instead of wrapping. Each target needs an `id`; CatalogueSection and
    SplitSection (`id`) already reserve the header offset on their anchors. */
@@ -7857,7 +7857,7 @@ Object.assign(__ds_scope, { InPageNav });
 try { (() => {
 const { Statement, Icon } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* What a stay includes — read from the structure in content/tariff.json: `includes`,
+/* What a stay includes, read from the structure in content/tariff.json: `includes`,
    `excludes` and `supplements` (label + basis). Never a figure, currency or "from" price:
    the one link goes to the tariff page, where the rates live.
    Phones: one column. ≥760px: Included beside Not included; supplements under both.
@@ -8082,7 +8082,7 @@ Object.assign(__ds_scope, { IndexList });
 try { (() => {
 const { Statement } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* "At a glance" — the opening facts of a programme or condition page beside its intro: who
+/* "At a glance": the opening facts of a programme or condition page beside its intro: who
    it is for, typical length, what is assessed, who supervises. Facts come from content
    records only (content/programs, content/conditions); 3 to 6 of them, short values.
    Phones: intro, then the Stone panel. ≥1000px: intro 7 columns, panel 5, top-aligned. */
@@ -8153,7 +8153,7 @@ Object.assign(__ds_scope, { KeyFacts });
 try { (() => {
 const { Statement, Pagination, TileGrid } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* A filterable listing — the Journal index and its categories. A heading, a row of category
+/* A filterable listing for the Journal index and its categories. A heading, a row of category
    chips (one selected; "All" first), the tiles in a TileGrid, pagination, and a plain empty
    state when a category has nothing yet. Categories come from content/articles/.
    The chips filter in place when `onCategory` is given; give each category an `href`
@@ -8333,7 +8333,7 @@ Object.assign(__ds_scope, { NotFoundSection });
 try { (() => {
 const { Icon } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* A note the reader must not miss — a clinical note, a caution, a policy, a booking
+/* A note the reader must not miss: a clinical note, a caution, a policy, a booking
    condition. Sparing: one per screen at most, never an outcome claim, never marketing.
    tone "note" (info) or "caution" (alert). layout "inline" sits in the flow of text with a
    brand rule on its leading edge; "band" spans the container between hairlines.
@@ -8432,7 +8432,7 @@ function ensure() {
   document.head.appendChild(el);
 }
 
-/* numerals: [{ value, label }] — one to three. */
+/* numerals: [{ value, label }], one to three. */
 function NumeralsSplit({
   title,
   sub,
@@ -8468,7 +8468,7 @@ Object.assign(__ds_scope, { NumeralsSplit });
 try { (() => {
 const { Media, Video } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* Deck slide 5. A full-width photograph with a short caption bottom-left and no button —
+/* Deck slide 5. A full-width photograph with a short caption bottom-left and no button:
    the pause between dense sections. 21:9 on desktop, 4:5 on phones so the frame keeps
    its height; the caption always sits inside a bottom scrim.
    The photograph and the caption share one grid cell: the frame keeps its ratio, and a
@@ -8588,7 +8588,7 @@ function ensure() {
   document.head.appendChild(el);
 }
 
-/* people: [{ name, role, src? }] — name and role only. A third line (qualification) is
+/* people: [{ name, role, src? }]: name and role only. A third line (qualification) is
    dropped: in a row of portraits it makes the captions uneven and nobody reads it there.
    Qualifications belong on the doctor's own page. */
 function PeopleRow({
@@ -8627,7 +8627,7 @@ Object.assign(__ds_scope, { PeopleRow });
 try { (() => {
 const { Statement, Accordion, SpecTable } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* Terms a guest agrees to — payment, cancellation, companion and stay policies — as headed
+/* Terms a guest agrees to (payment, cancellation, companion and stay policies) as headed
    clauses that open one at a time. A clause holds plain sentences (`text`) and/or a small
    table (`columns` + `rows`, a SpecTable). Structure from content/tariff.json
    (`payment_terms`, `cancellation`) and the handbook policies; never a rate figure.
@@ -8695,7 +8695,7 @@ Object.assign(__ds_scope, { PolicySection });
 try { (() => {
 const { Statement } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* "How a stay works" — the guest's own path in 3 to 5 steps: number, title, one line. Only
+/* "How a stay works": the guest's own path in 3 to 5 steps: number, title, one line. Only
    steps the guest takes or sees; never internal process ("we log your details…") and never
    a response time that is not confirmed.
    Phones: one column, number beside the text. ≥760px: two columns. ≥1000px: one row of
@@ -8723,7 +8723,7 @@ function ensure() {
   document.head.appendChild(el);
 }
 
-/* steps: [{ title, text? }] — three to five */
+/* steps: [{ title, text? }], three to five */
 function ProcessSection({
   title,
   sub,
@@ -8766,10 +8766,10 @@ Object.assign(__ds_scope, { ProcessSection });
 try { (() => {
 const { Statement, Icon } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* Programmes side by side — the Programmes index. A real <table>: programme (linked), focus,
+/* Programmes side by side on the Programmes index. A real <table>: programme (linked), focus,
    who it is for, typical length. From content/programs/ (`name`, `focus`, `proposition`,
    `durations`). Never a rate column: the one link under the table goes to the tariff page.
-   Phones (<760px): each row becomes a card — name, then labelled lines — so nothing scrolls
+   Phones (<760px): each row becomes a card (name, then labelled lines) so nothing scrolls
    sideways. ≥760px: the table, rows ruled, the name column linked with an arrow. */
 const CSS = `
 .sh-pcmp{display:flex;flex-direction:column;gap:var(--stack-lg)}
@@ -8869,7 +8869,7 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
 /* The sources under a clinical article or condition page, and the medical-review line.
    Numbered so the text can cite [1] with a link to #ref-1; each reference names the work,
    its publisher or journal and year, and links to the source itself. Every reference must
-   support something the page says — never decorative. `reviewer` takes ReviewedBy props
+   support something the page says, never decorative. `reviewer` takes ReviewedBy props
    and follows the doctor naming rules in docs/handbook/glossary.md.
    One column at every size, capped at the body measure; long URLs wrap. */
 const CSS = `
@@ -8933,7 +8933,7 @@ const { TileGrid, Tile } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 /* A TileGrid preset for the end of an article (and the Journal index "latest" row):
    a heading, up to three article tiles with category · read time below each title, and
-   one link to the index. Two or three items — never one. */
+   one link to the index. Two or three items, never one. */
 function RelatedArticles({
   title = "Related reading",
   articles = [],
@@ -8981,7 +8981,7 @@ try { (() => {
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 /* The shell every website section sits in: one ground, the fluid section rhythm and the
    centred container with a fluid 20→48px gutter. Nothing on a page paints its own
-   background or side padding — it chooses a Section. */
+   background or side padding; it chooses a Section. */
 function Section({
   ground = "merino",
   space = "md",
@@ -9120,7 +9120,7 @@ Object.assign(__ds_scope, { SplitSection });
 try { (() => {
 const { Statement, TimeTable, Media } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* A day, or a stay, in order — A Day at Shantara, a programme's daily rhythm. A statement
+/* A day, or a stay, in order: A Day at Shantara, a programme's daily rhythm. A statement
    and a TimeTable beside one photograph. Times come from the handbook day schedule (§12);
    the doctor fills the treatment slots, so the copy never names a treatment per hour.
    Phones: statement → photograph → table. ≥1000px: photograph 5 columns (sticky while the
@@ -9147,7 +9147,7 @@ function ensure() {
   document.head.appendChild(el);
 }
 
-/* rows: TimeTable rows — [{ time, title, text? }] */
+/* rows: TimeTable rows: [{ time, title, text? }] */
 function TimelineSection({
   title,
   sub,
@@ -9193,7 +9193,7 @@ Object.assign(__ds_scope, { TimelineSection });
 try { (() => {
 const { Statement, Video, SplitSection } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-/* A film with its context — a walk through the property, a day, a therapy explained. Native
+/* A film with its context: a walk through the property, a day, a therapy explained. Native
    <video> from R2 through editorial/Video (skill-video.md): a player with controls and
    captions, never autoplaying with sound, never YouTube, Vimeo or Stream.
    layout "full": statement above, the frame across the container at 16:9 (4:5 on phones).

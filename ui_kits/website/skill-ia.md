@@ -46,9 +46,9 @@ Ranked from **India English** (`locationCode` 2356) residential / travel-intent 
 | 2 | `pcos` | `pcos treatment holistic` 480; `pcos treatment india` 30; `pcos retreat` / `pcos naturopathy` unmeasured or — | Holistic-treatment demand may be local clinic, not a Keralam stay. Publish when original content exists; do not treat 480 as proven retreat intent. |
 | 3 | `diabetes` | `diabetes retreat india` 10; `diabetes naturopathy` / treatment compounds —; Phase C `diabetes reversal` / `diabetes reversal india` — | Floor-level retreat signal. Programme name Diabetes Reversal is approved; do not invent rates or guarantee copy. Resource when clinical content is ready, not because volume is high. |
 
-**Operational India stay-intent sequence** (comparable stay compounds for pages/spend; does **not** reorder ICP 01–06 IDs): (1) ICP 01 weight/metabolic stay — strongest; (2) ICP 04 digestive stay — thin (`naturopathy for ibs` 20, `ibs retreat` 10); (3) ICP 05 / 06 floor (`men's health retreat` / `longevity retreat` 10); (4) ICP 02 pain stay — Phase C compounds —; (5) ICP 03 India stay weak vs UK spa burnout; (6) Short Health Reset — secondary; do not lead with weekend wellness. Full write-up: [`docs/icp.md`](../../docs/icp.md) §26.
+**Operational India stay-intent sequence** (comparable stay compounds for pages/spend; does **not** reorder ICP 01–06 IDs): (1) ICP 01 weight/metabolic stay: strongest; (2) ICP 04 digestive stay: thin (`naturopathy for ibs` 20, `ibs retreat` 10); (3) ICP 05 / 06 floor (`men's health retreat` / `longevity retreat` 10); (4) ICP 02 pain stay: Phase C compounds —; (5) ICP 03 India stay weak vs UK spa burnout; (6) Short Health Reset: secondary; do not lead with weekend wellness. Full write-up: [`docs/icp.md`](../../docs/icp.md) §26.
 
-Other named needs (`fatty-liver`, `back-pain`, `menopause`, and similar) remain unranked for India money-slug launch ahead of the three above. Phase C closed pain stay compounds as —; IBS stay language is thin but measured — publish `/en/conditions/ibs` only when the content bar is met, not as a volume chase.
+Other named needs (`fatty-liver`, `back-pain`, `menopause`, and similar) remain unranked for India money-slug launch ahead of the three above. Phase C closed pain stay compounds as —; IBS stay language is thin but measured. Publish `/en/conditions/ibs` only when the content bar is met, not as a volume chase.
 
 **Structure reference:** Prakriti Shakti–style named condition cards (homepage cards, conditions-treated listing, treatment-programmes) are a useful pattern for how condition pages sit next to programmes. Copy structure, not copy, NAP scatter, or a holistic-wellness ICP.
 
@@ -56,10 +56,10 @@ Other named needs (`fatty-liver`, `back-pain`, `menopause`, and similar) remain 
 
 **GCC / West content jobs** (no new URL families):
 
-- Comparison article — medically reviewed Ayurveda vs naturopathy under Journal (IN comparison cluster measurable; UAE/UK comparison seeds ~10/mo each — still resource for interception)
-- Experience hub + FAQ — what a residential stay is (UK `naturopathy uk` SERP is ND college/clinic; UAE `naturopathy dubai` SERP is day clinic)
-- About — entity sentence + HNCH / parent history only
-- Do **not** buy UK `weight loss retreat` / `burnout retreat` or UAE `naturopathy dubai` as primary paid keywords for Shantara — SERPs are spa / fitness / local clinic
+- Comparison article: medically reviewed Ayurveda vs naturopathy under Journal (IN comparison cluster measurable; UAE/UK comparison seeds ~10/mo each, still resource for interception)
+- Experience hub + FAQ: what a residential stay is (UK `naturopathy uk` SERP is ND college/clinic; UAE `naturopathy dubai` SERP is day clinic)
+- About: entity sentence + HNCH / parent history only
+- Do **not** buy UK `weight loss retreat` / `burnout retreat` or UAE `naturopathy dubai` as primary paid keywords for Shantara. Their SERPs are spa / fitness / local clinic
 
 ## Conditions
 
@@ -110,7 +110,7 @@ Program pages are commercially important and should explain:
 - inclusions;
 - clinical supervision;
 - experience;
-- a link to the tariff page — **never quote, invent or copy rates**; rates live only in the production Keystatic tariff;
+- a link to the tariff page (**never quote, invent or copy rates**; rates live only in the production Keystatic tariff);
 - next step.
 
 ## Experience
@@ -145,7 +145,8 @@ Accreditations and Sustainability are standing pages. Their URLs are under [Util
 
 `/en/our-doctors` lists every practising doctor with a photo, name, qualification, areas of practice and a **Book a Consultation** button. The founder and chairman, P.A. Kareem, is not a doctor and is not listed there: he appears on Our Story, in the board, and on his own page, `/en/pa-kareem`, which lists his press, talks, videos and social posts. Dr. Bahja Janu (`/en/doctors/bahja-janu`) is the only doctor with a profile page. A doctor profile lists the doctor's answers, the articles they reviewed, their programmes, and any press, talks, videos and social posts on the doctor record. Those lists are outbound links. A YouTube recording is a link, never an embedded player. Do not create a profile page for any other doctor; link to their section on `/en/our-doctors` instead (for example `/en/our-doctors#{slug}`).
 
-Entity and parent history (including Hygiene Nature Cure Hospital / HNCH) belong here — not on condition or programme pages, and not as a hospital product pitch.
+Entity and parent history (including Hygiene Nature Cure Hospital / HNCH) belong here, not on condition or programme pages, and not as a hospital product pitch.
+
 ## Publishing families
 
 Articles and Doctor Answers publish under one Journal family:
@@ -182,12 +183,12 @@ Traditional blog articles may continue to exist, but do not make generic blog pr
 
 - Book a Consultation (`/en/book-consultation`)
 - Contact (`/en/contact`)
-- Hosted visits (`/en/hosted-stays`) — a special page. Specified in [special-pages/hosted-stays.md](special-pages/hosted-stays.md). Indexable. Not linked from the guest journey. No kit sample.
+- Hosted visits (`/en/hosted-stays`): a special page. Specified in [special-pages/hosted-stays.md](special-pages/hosted-stays.md). Indexable. Not linked from the guest journey. No kit sample.
 - Frequently asked questions (`/en/faq`, grouped by category)
 
 The pages below are top-level. Each one is published only at its locale-prefixed URL, for example `/en/house-rules`. An unprefixed path is not a route. Do not add them to the five-item header. Footer linking is [PAGE-08](search-visibility/pages.md).
 
-Each of these pages shows a **Last updated** date — the date its text last changed, not the deploy date — and a contact for questions. The contact is the public email and phone on the site record. Do not invent a second address.
+Each of these pages shows a **Last updated** date (the date its text last changed, not the deploy date) and a contact for questions. The contact is the public email and phone on the site record. Do not invent a second address.
 
 Do not invent the text. A page with no fact source below stays unpublished until Shantara supplies it. Guest and policy pages use the page type `policy`. Accreditations and Sustainability use `about`.
 
@@ -271,7 +272,7 @@ Create meaningful relationships:
 - Doctor Answer → deeper Guide
 - Article → relevant core page
 
-Links are stored once, in `related_pages`, and the reverse direction is generated — see [skill-content.md](skill-content.md#shared-fields). Content records carry no ICP IDs.
+Links are stored once, in `related_pages`, and the reverse direction is generated (see [skill-content.md](skill-content.md#shared-fields)). Content records carry no ICP IDs.
 
 Do not insert links solely for keyword density.
 
@@ -291,6 +292,6 @@ The Website Kit shows **one thin sample per family**, not every URL above.
 | `/en/book-consultation` | `ConsultationScreen.js` |
 | Tariff / pricing | `TariffScreen.js` |
 
-The kit maps those families to hash routes (`#/en/`, `#/en/programs`). Production uses the real prefixed paths. Navigation labels come from the locale dictionary — do not hard-code English in reusable nav. Footer contact data (phone, email, place) is globally stable; only the labels translate. Breadcrumb URLs stay in the current locale.
+The kit maps those families to hash routes (`#/en/`, `#/en/programs`). Production uses the real prefixed paths. Navigation labels come from the locale dictionary. Do not hard-code English in reusable nav. Footer contact data (phone, email, place) is globally stable; only the labels translate. Breadcrumb URLs stay in the current locale.
 
 Do not expand the kit into the full production sitemap.

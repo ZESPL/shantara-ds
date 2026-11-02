@@ -6,7 +6,7 @@ The medical-review strip: who reviewed the article, their role, and when.
   note="General information, not a diagnosis. Speak to a doctor about your own health." />
 ```
 
-**Use** on every clinical or condition article (Clinical Guides, Doctor Answers): once near the top (ArticleHeader's `reviewer` renders the short form) and/or `boxed` at the end of the body. Omit entirely until a real reviewer and date exist — `medical_reviewer` in `content/articles/` is null for kit samples; never invent one for a live page.
+**Use** on every clinical or condition article (Clinical Guides, Doctor Answers): once near the top (ArticleHeader's `reviewer` renders the short form) and/or `boxed` at the end of the body. Omit entirely until a real reviewer and date exist. `medical_reviewer` in `content/articles/` is null for kit samples; never invent one for a live page.
 
 **Content.** Name as in `content/doctors/`. Date in "12 August 2026" form with an ISO `dateTime`. The note is one caption line, plain.
 

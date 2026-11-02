@@ -27,9 +27,9 @@ export interface ArticleHeaderProps extends React.HTMLAttributes<HTMLElement> {
   /** e.g. "6 min read". */
   readTime?: string;
   author?: ArticlePerson;
-  /** Medical reviewer — clinical articles only, real reviewer only. */
+  /** Medical reviewer: clinical articles only, real reviewer only. */
   reviewer?: ArticlePerson;
-  /** Right end of the byline row — usually <ShareBar compact label="" />. */
+  /** Right end of the byline row, usually <ShareBar compact label="" />. */
   share?: React.ReactNode;
   /** Lead photograph: `src` + `alt`, or a ready node in `media`. */
   src?: string;
@@ -42,7 +42,7 @@ export interface ArticleHeaderProps extends React.HTMLAttributes<HTMLElement> {
   mobileRatio?: string;
   ground?: "merino" | "stone";
   titleAs?: "h1" | "h2";
-  /** A player in the lead photograph's place — editorial/Video props. */
+  /** A player in the lead photograph's place, with editorial/Video props. */
   video?: import("../editorial/Video").VideoProps;
 }
 export declare function ArticleHeader(props: ArticleHeaderProps): JSX.Element;

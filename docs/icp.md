@@ -16,7 +16,7 @@ Public language remains governed by [skill-copy.md](../ui_kits/website/skill-cop
 - Do not put rates, currency amounts, or "from …" figures here. Point at the tariff card.
 - Internal warnings such as "not a spa" stay internal to this system. They must not become visitor-facing sentences. See [skill-copy.md](../ui_kits/website/skill-copy.md).
 - Do not reorder ICP 01–06 cores without comparable measured stay demand across cores.
-- Do not add a wellness traveller or "international" ICP. Geography remains an [overlay](icp/overlays.md). Financial capacity is an Approved HNI affordability overlay (who can buy), not a seventh ICP — see [Financial capacity](icp/overlays.md#financial-capacity).
+- Do not add a wellness traveller or "international" ICP. Geography remains an [overlay](icp/overlays.md). Financial capacity is an Approved HNI affordability overlay (who can buy), not a seventh ICP. See [Financial capacity](icp/overlays.md#financial-capacity).
 
 ## How to use this document
 

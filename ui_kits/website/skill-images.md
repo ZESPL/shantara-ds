@@ -53,7 +53,7 @@ public/
 Point every Keystatic image field at `src/assets/images/<collection>/` and store the path from the project root. There is no Zod schema: pages read entries through the Keystatic reader ([skill-structure.md](skill-structure.md#reading-content)), and `lib/images.ts` turns each stored path into an Astro image.
 
 ```ts
-// keystatic.config.ts — one shared field, reused by every collection
+// keystatic.config.ts: one shared field, reused by every collection
 const featuredImage = (collection: string) =>
   fields.object({
     src: fields.image({
@@ -67,7 +67,7 @@ const featuredImage = (collection: string) =>
 ```
 
 ```ts
-// src/lib/images.ts — every stored path must resolve, or the build stops
+// src/lib/images.ts: every stored path must resolve, or the build stops
 const files = import.meta.glob<{ default: ImageMetadata }>(
   '/src/assets/images/**/*.{jpg,jpeg,png}', { eager: true });
 

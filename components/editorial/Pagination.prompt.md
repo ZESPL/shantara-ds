@@ -10,7 +10,7 @@ Previous / numbered pages / next, under the article grid on the Journal index.
 
 ## Journal index recipe (CategoryFilter)
 
-There is no separate filter component — use **`Tabs`** (navigation) as the category filter:
+There is no separate filter component. Use **`Tabs`** (navigation) as the category filter:
 
 ```jsx
 <Tabs items={["All", "Clinical Guides", "Food & Recipes", "Doctor Answers", "Life at Shantara"]} value={cat} onChange={setCat} />
@@ -18,6 +18,6 @@ There is no separate filter component — use **`Tabs`** (navigation) as the cat
 <Pagination page={page} pageCount={count} hrefFor={pageHref} />
 ```
 
-- Categories come from `content/articles/*.category`; "All" first; at most 6 tabs (Tabs scrolls sideways on phones — never wrap to two lines).
+- Categories come from `content/articles/*.category`; "All" first; at most 6 tabs (Tabs scrolls sideways on phones; never wrap to two lines).
 - On the static site each tab is a link to its own URL (`/en/journal/category/clinical-guides`), so `value` is the current category and `onChange` navigates.
 - Tabs sit directly above the grid, below the page's `HeroStatement`; no heading between them. Reset to page 1 when the category changes.

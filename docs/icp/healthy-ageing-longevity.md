@@ -30,7 +30,7 @@ Use a residential, doctor-guided stay as a concentrated investment in remaining 
 | Kind | Examples (not claims) |
 | --- | --- |
 | Symptoms | Gradual stiffness, reduced stamina, milder metabolic drift, recovery that takes longer |
-| Diagnosed conditions | Stable hypertension, prior cardiac event now medically stable, osteopenia mentioned by their clinician, type 2 diabetes already managed — often overlapping other ICPs |
+| Diagnosed conditions | Stable hypertension, prior cardiac event now medically stable, osteopenia mentioned by their clinician, type 2 diabetes already managed, often overlapping other ICPs |
 | Functional problems | Fear of losing independence, wanting to travel and play with grandchildren, athletic performance plateau |
 | Goals | Stay strong and steady, understand their numbers, build a sustainable routine, age well |
 
@@ -104,7 +104,7 @@ Clinician review; doctor credentials; facility capability; safety / eligibility 
 
 ### M. Programme associations
 
-Indicative: Longevity (named handbook wellness programme); Complete Healing; Weight Management; Detox; Heart & Circulatory Health for medically stable guests. Longevity is a programme name, not a seventh ICP — ICP 06 still owns the need. Do not market it as sanctuary / longevity-medicine / biohacking.
+Indicative: Longevity (named handbook wellness programme); Complete Healing; Weight Management; Detox; Heart & Circulatory Health for medically stable guests. Longevity is a programme name, not a seventh ICP; ICP 06 still owns the need. Do not market it as sanctuary / longevity-medicine / biohacking.
 
 ### N. Appropriate CTA
 
@@ -124,10 +124,10 @@ Marketing poor-fit: biohacking tourists expecting gadget protocols Shantara does
 | --- | --- | --- |
 | Market Research | {Validated} 20 Sep 2026 | Phase C hydrate of longevity / healthy ageing / preventive health retreat phrases (IN/UAE/UK) + UK SERP. Longevity is now a named handbook programme (not a new ICP). tulåh remains local copy-risk peer. |
 | Priority Countries | {Validated} 20 Sep 2026 | UK leads measured `longevity retreat` (40). India floor (10). UAE —. Not a spend-ranked longevity market for Shantara. |
-| Search Demand | {Validated} 20 Sep 2026 | **India:** `longevity retreat` 10; `longevity retreat india` / `healthy ageing retreat` / `healthy aging retreat` / `preventive health retreat` —. **UK:** `longevity retreat` 40. **UAE:** —. Further longevity expansion blocked mid-wave by DataForSEO daily cost limit — hydrate is enough to close. |
+| Search Demand | {Validated} 20 Sep 2026 | **India:** `longevity retreat` 10; `longevity retreat india` / `healthy ageing retreat` / `healthy aging retreat` / `preventive health retreat` —. **UK:** `longevity retreat` 40. **UAE:** —. Further longevity expansion blocked mid-wave by DataForSEO daily cost limit; hydrate is enough to close. |
 | Validated Customer Language | {Validated} 20 Sep 2026 | Customers type longevity retreat (UK-led). Still avoid sanctuary / clinical wellness / longevity-medicine public language (tulåh overlay). Do not H1 “Healthy Ageing, Prevention & Longevity”. |
 | Keyword Clusters | {Validated} 20 Sep 2026 | Longevity-retreat cluster (UK-led, spa/biohacking-contaminated). No India commercial longevity-stay cluster. |
-| Competitor / SERP Findings | {Validated} 20 Sep 2026 | **UK `longevity retreat`:** Goodwood, BookRetreats, biohacking lists, Detox Barn, Healing Holidays — luxury wellness / anti-ageing pattern, not Keralam naturopathy. tulåh remains the local copy-risk peer. |
+| Competitor / SERP Findings | {Validated} 20 Sep 2026 | **UK `longevity retreat`:** Goodwood, BookRetreats, biohacking lists, Detox Barn, Healing Holidays: luxury wellness / anti-ageing pattern, not Keralam naturopathy. tulåh remains the local copy-risk peer. |
 | Recommended Landing Pages | {Validated} 20 Sep 2026 | About + Experience for entity and stay clarity. Longevity programme page when catalogue content exists. No longevity hub URL / no HNI sanctuary landing. |
 | Paid Campaign Opportunities | {Validated} 20 Sep 2026 | Do not buy “Tulah-like HNI sanctuary” or UK biohacking longevity inventories as Shantara. |
 | Content Opportunities | {Validated} 20 Sep 2026 | Prevention education only with claim governance; Longevity programme copy as assessment-led catalogue; no biohacking menu. |

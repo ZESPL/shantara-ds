@@ -5,7 +5,7 @@ import { Icon } from "../core/Icon.jsx";
 import { TextLink } from "../editorial/TextLink.jsx";
 
 /* How to reach Shantara: the ways to get in touch (call, WhatsApp, email), the address,
-   a photograph of the arrival with an "Open in Maps" link (no embedded map — it is heavy,
+   a photograph of the arrival with an "Open in Maps" link (no embedded map: it is heavy,
    tracks visitors and is hard to use with a keyboard), and directions from the airport and
    railway station. Numbers and address from content/site.json; distances from handbook §12.
    Phones: contact → address → photograph → directions. ≥1000px: contact, address and

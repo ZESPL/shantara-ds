@@ -54,7 +54,7 @@ export function ArticleHeader({ title, dek, breadcrumbs, category, date, dateTim
     date ? { label: date, dateTime } : null,
     readTime || null,
   ];
-  /* `video`: a video article — the player (with captions) takes the lead photograph's place. */
+  /* `video`: a video article. The player (with captions) takes the lead photograph's place. */
   const figure = media || (video ? <Video {...video} ratio={ratio} mobileRatio={mobileRatio} /> : src ? <Media src={src} alt={alt} ratio={ratio} mobileRatio={mobileRatio} priority /> : null);
   const H = titleAs;
   return (

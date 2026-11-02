@@ -4,7 +4,7 @@ Back to the [website skill](SKILL.md).
 
 ## CMS / content model
 
-**Production CMS:** Keystatic (git-based) with Markdoc for long-form. `keystatic.config.ts` is the only schema, and pages read it through the Keystatic reader — see [skill-stack.md](skill-stack.md) and [skill-structure.md](skill-structure.md). Staff do not edit in Keystatic.
+**Production CMS:** Keystatic (git-based) with Markdoc for long-form. `keystatic.config.ts` is the only schema, and pages read it through the Keystatic reader (see [skill-stack.md](skill-stack.md) and [skill-structure.md](skill-structure.md)). Staff do not edit in Keystatic.
 
 This model is instantiated in [`content/`](../../content/) for the design-system kit. Empty folders (`guest-stories/`, `events/`, `testimonials/`) mean the entity is not ready. Do not invent records to fill them. Stub conditions stay `draft` with empty clinical bodies until medical review exists.
 
@@ -19,7 +19,7 @@ Define each group once and reuse it.
 | Status | `status`: `draft` or `published` | Every entry |
 | Featured image | `featured_image`: image and required `alt` | Conditions, programmes, therapies, rooms, doctors, articles, doctor answers. It is also the photograph in the page's share image ([skill-og-images.md](skill-og-images.md)). Authors and testimonials use `photo`. |
 | Featured | `featured`: true or false | Programmes, therapies, rooms, articles, doctor answers, testimonials |
-| Video | `video`: R2/CDN URLs only — `sources` (WebM and MP4), `poster`, optional `captions`; text `title`, `description`, `uploadDate`, `duration` (both ISO 8601), `transcript`; optional `chapters`, `creator`. Standard: [skill-video.md](skill-video.md). | Conditions, programmes, doctor answers, testimonials. Store links, never the file. No YouTube, Vimeo, Cloudflare Stream or Mux. |
+| Video | `video`: R2/CDN URLs only: `sources` (WebM and MP4), `poster`, optional `captions`; text `title`, `description`, `uploadDate`, `duration` (both ISO 8601), `transcript`; optional `chapters`, `creator`. Standard: [skill-video.md](skill-video.md). | Conditions, programmes, doctor answers, testimonials. Store links, never the file. No YouTube, Vimeo, Cloudflare Stream or Mux. |
 | External references | `external_references`: list of `{title, url}` | Optional on conditions, programmes, therapies, articles, doctor answers |
 | Related pages | `related_pages`: list of `{type, id}` | Conditions, programmes, therapies, articles, doctor answers, doctors |
 | FAQs | `faqs`: list of `{question, answer}` | Conditions, programmes |
@@ -71,7 +71,7 @@ Unconfirmed facts stay out of published records: keep the entry `draft` until Sh
 - `videos`: `{publisher, title, date, url}`. Other third-party films. Same outbound-link rule as talks.
 - `social_posts`: `{source, date, url}`. Outbound links only.
 
-Notes that are not page copy — one lecture carried by several outlets, a sponsored placement, a title the recording gets wrong — stay in handbook §4 (for the founder, §3). The founder's Leadership record uses the same press, talks, videos and social posts lists. The unique list for P.A. Kareem is [`docs/media-kareem.md`](../../docs/media-kareem.md). His profile lists that register.
+Notes that are not page copy (one lecture carried by several outlets, a sponsored placement, a title the recording gets wrong) stay in handbook §4 (for the founder, §3). The founder's Leadership record uses the same press, talks, videos and social posts lists. The unique list for P.A. Kareem is [`docs/media-kareem.md`](../../docs/media-kareem.md). His profile lists that register.
 
 ### Tariff
 
@@ -80,14 +80,14 @@ Rates, currencies and validity dates are **not stored in this design system or i
 Production tariff fields:
 
 - `valid_from`, `valid_to`
-- `currencies`: list of `{code, label}` — any number, in any order; the first is the default in the currency selector
-- `room_rates`: list of `{room, occupancy, prices: [{currency, amount}]}` — occupancy is a row, so new occupancies need no schema change
+- `currencies`: list of `{code, label}`, in any number and any order; the first is the default in the currency selector
+- `room_rates`: list of `{room, occupancy, prices: [{currency, amount}]}`; occupancy is a row, so new occupancies need no schema change
 - `supplements`: list of `{label, basis, prices: [{currency, amount}]}`
 - `includes`, `excludes`, `payment_terms`, `cancellation`, `public_notes`
 
 Show amounts exactly as entered, next to their ISO code. Build checks confirm completeness only: every rate and supplement row has a price for every listed currency, every code is valid, every published room has rates, and `valid_to` has not passed.
 
-Internal rate-sheet content never enters Keystatic, the design system, documentation or the front end — anything Shantara's rate sheet marks internal, and its internal controls. Only the public all-inclusive rates, supplements, inclusions, exclusions, payment terms and cancellation policy are published.
+Internal rate-sheet content never enters Keystatic, the design system, documentation or the front end. That covers anything Shantara's rate sheet marks internal, and its internal controls. Only the public all-inclusive rates, supplements, inclusions, exclusions, payment terms and cancellation policy are published.
 
 ### Languages
 
@@ -112,9 +112,9 @@ Analytics IDs and service keys are not content. They live in Netlify environment
 
 ## Unified lead capture
 
-Shantara should have **one lead-capture system**. In production, submit via **Web3Forms** — no custom forms backend ([skill-stack.md](skill-stack.md)).
+Shantara should have **one lead-capture system**. In production, submit via **Web3Forms**, with no custom forms backend ([skill-stack.md](skill-stack.md)).
 
-The Ask the Doctor question form is not lead capture and sits outside this rule — see [Doctor Answers](#doctor-answers).
+The Ask the Doctor question form is not lead capture and sits outside this rule (see [Doctor Answers](#doctor-answers)).
 
 ### Privacy consent on forms
 
@@ -138,9 +138,9 @@ Recommended fields:
 
 - Name
 - Mobile / WhatsApp number
-- Email — optional
+- Email (optional)
 - Country
-- Anything you'd like us to know? — optional
+- Anything you'd like us to know? (optional)
 
 Do not turn first contact into a full medical intake form.
 
@@ -426,4 +426,4 @@ Generate structured data from fields already required for the visible site.
 
 Medical review fields (`medical_reviewer`, `last_medically_reviewed`) should generate visible attribution and the appropriate schema relationship.
 
-Program pricing fields should power both visible pricing and `Offer` data where appropriate — **one source of truth, and in this repo that source is the tariff card.**
+Program pricing fields should power both visible pricing and `Offer` data where appropriate: **one source of truth, and in this repo that source is the tariff card.**

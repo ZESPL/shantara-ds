@@ -3,7 +3,7 @@ import { Statement } from "../editorial/Statement.jsx";
 import { Video } from "../editorial/Video.jsx";
 import { SplitSection } from "./SplitSection.jsx";
 
-/* A film with its context — a walk through the property, a day, a therapy explained. Native
+/* A film with its context: a walk through the property, a day, a therapy explained. Native
    <video> from R2 through editorial/Video (skill-video.md): a player with controls and
    captions, never autoplaying with sound, never YouTube, Vimeo or Stream.
    layout "full": statement above, the frame across the container at 16:9 (4:5 on phones).

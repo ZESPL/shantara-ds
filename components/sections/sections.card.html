@@ -7,10 +7,10 @@
 <script src="../../i18n.js"></script>
 <style>
 body{margin:0;background:var(--ground-merino)}
-/* A thin label strip between sections — catalog chrome, not part of any section. */
+/* A thin label strip between sections: catalog chrome, not part of any section. */
 .lbl{margin:0;max-width:none;padding:10px var(--layout-gutter);font:var(--type-caption);letter-spacing:var(--tracking-wide);color:var(--text-muted);background:var(--surface-page);border-block:1px dashed var(--border-subtle)}
 .lbl b{font-weight:var(--weight-medium);color:var(--text-primary)}
-/* A group heading between runs of sections — same order as the sidebar. */
+/* A group heading between runs of sections, in the same order as the sidebar. */
 .grp{margin:0;padding:48px var(--layout-gutter) 16px;background:var(--surface-page);border-top:1px solid var(--border-subtle)}
 .grp h2{margin:0;font:var(--type-title);color:var(--text-primary)}
 .grp p{margin:6px 0 0;font:var(--type-body-sm);color:var(--text-secondary)}
@@ -31,16 +31,16 @@ const rooms = [
 ];
 function Demo(){
   return (<div>
-<Group id="shell" name="Shell" note="Section — the ground and rhythm every block sits in" />
+<Group id="shell" name="Shell" note="Section: the ground and rhythm every block sits in" />
 
 <Label name="Section" note="the shell · one ground per section, fluid rhythm and gutter" />
-{[["merino", "Merino — the page"], ["stone", "Stone — a quiet change of room"], ["himalaya", "Himalaya — dark, ink re-pointed"], ["pine", "Pine — dark, ink re-pointed"]].map(([gr, label]) => (
+{[["merino", "Merino: the page"], ["stone", "Stone: a quiet change of room"], ["himalaya", "Himalaya: dark, ink re-pointed"], ["pine", "Pine: dark, ink re-pointed"]].map(([gr, label]) => (
   <Section key={gr} ground={gr} space="sm">
     <Statement size="title" sub={label}>Your programme is planned after consultation and assessment.</Statement>
   </Section>
 ))}
 
-<Group id="heroes" name="Heroes" note="one per page, always first — immersive, offer, editorial, article" />
+<Group id="heroes" name="Heroes" note="one per page, always first: immersive, offer, editorial, article" />
 
 <Label name="HeroFullBleed" note="deck slide 1 · photo ground, Gold primary" />
 <HeroFullBleed src={P + "arrival-dusk.jpg"} alt="Shantara at dusk"

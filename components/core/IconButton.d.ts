@@ -4,7 +4,7 @@ import * as React from "react";
 export interface IconButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "ghost" | "solid" | "outline" | "glass" | "inverse";
   size?: "sm" | "md" | "lg";
-  /** Required accessible name — also used as the tooltip title. */
+  /** Required accessible name, also used as the tooltip title. */
   label: string;
   children?: React.ReactNode;
 }

@@ -12,7 +12,7 @@ npx --yes serve -l 4173
 
 Open `http://localhost:4173`. The catalog lists every guideline card, component family, UI kit, the brand deck, and these notes.
 
-Cards also open as their own pages — `guidelines/colors.html`, `ui_kits/website/index.html`, `docs/readme.html`. Opening the folder as a `file://` path will not work; the catalog and the markdown notes need http.
+Cards also open as their own pages: `guidelines/colors.html`, `ui_kits/website/index.html`, `docs/readme.html`. Opening the folder as a `file://` path will not work; the catalog and the markdown notes need http.
 
 Netlify publishes a `dist/` copy. Raw `uploads/` (boards, handbook `.docx`, full shoot) stay off the public site because they are large and internal. They remain in this folder locally; the [Sources](sources.html) page lists them and links any file that is present.
 
@@ -41,7 +41,7 @@ You can also keep the folder at the repo root (as it is here) and treat `SKILL.m
 ```
 
 2. Copy or import the components you need from `components/` (`*.jsx` + `*.d.ts`). Read the matching `*.prompt.md` before using a control.
-3. Use `assets/` as shipped — logos, pattern cell, fonts, photos under `assets/photos/` (flat; kit slugs plus descriptive alternates — that folder’s README gives every frame’s public-use status and a shortlist by job, and `CATALOGUE.md` describes each one; `assets/README.md` indexes logos, lockups and the pattern). Do not retile `pattern-motif.png`. Do not invent a new icon set without replacing Lucide on purpose.
+3. Use `assets/` as shipped: logos, pattern cell, fonts, photos under `assets/photos/` (flat, with kit slugs plus descriptive alternates; that folder’s README gives every frame’s public-use status and a shortlist by job, and `CATALOGUE.md` describes each one; `assets/README.md` indexes logos, lockups and the pattern). Do not retile `pattern-motif.png`. Do not invent a new icon set without replacing Lucide on purpose.
 4. For entity facts (programmes, rooms, NAP, tariff structure), load [`content/`](../content/) or generated `content/kit.js`. Do not keep local `PROGRAMMES` / rate arrays in app code. This folder holds no rates.
 5. For a marketing page, start from `ui_kits/website/`. Read `ui_kits/website/SKILL.md` before composing pages, forms, or SEO. For an in-stay surface, start from `ui_kits/app/`. Both kits are extrapolations; read their READMEs.
 
@@ -49,8 +49,8 @@ You can also keep the folder at the repo root (as it is here) and treat `SKILL.m
 
 | Take | Leave unless you need it |
 | --- | --- |
-| `styles.css`, `tokens/` (including `tokens/layout.css` — grounds, container, grid), `assets/` | `uploads/` (raw boards and shoot) |
-| `components/` — including `components/editorial/` and `components/sections/` for website pages | `catalog.js`, `index.html` (browse-only chrome) |
+| `styles.css`, `tokens/` (including `tokens/layout.css`: grounds, container, grid), `assets/` | `uploads/` (raw boards and shoot) |
+| `components/`, including `components/editorial/` and `components/sections/` for website pages | `catalog.js`, `index.html` (browse-only chrome) |
 | `content/` (entity facts; generate `kit.js` via `scripts/write-content-kit.mjs`) | `_ds_bundle.js` for copy, programmes, or rates (components only) |
 | `AGENTS.md`, `SKILL.md`, `readme.md`, `*.prompt.md`, `ui_kits/website/SKILL.md`, `ui_kits/website/skill-copy.md`, `.cursor/skills/shantara-premium-presentations/SKILL.md` | |
 | `ui_kits/` if you are shipping those surfaces | `scraps/`, `dist/`, `.netlify/` |
@@ -76,20 +76,20 @@ You can also keep the folder at the repo root (as it is here) and treat `SKILL.m
 | Video | [`ui_kits/website/skill-video.md`](../ui_kits/website/skill-video.md) | `skill-content.md`, `skill-images.md`, `search-visibility/schema.md`, `search-visibility/crawling.md` (they point to it) |
 | Audience | `docs/icp.md` (internal) | public page copy |
 | Policies / `[TO CONFIRM]` | `docs/handbook.txt` and `docs/handbook/` | hero copy; never quote §15 publicly |
-| Tea and coffee | [Food & Dining](handbook/food.md#tea-and-coffee) | anywhere else — link to that section |
+| Tea and coffee | [Food & Dining](handbook/food.md#tea-and-coffee) | anywhere else; link to that section |
 
 ## What an agent should read
 
-1. `AGENTS.md` — short index and bans
-2. `SKILL.md` — the six non-obvious rules
-3. `docs/rule-of-one.md` — one reader, one idea, one focal point, one next step on every surface; the brief to write first and the checklist to run last
-4. `content/` — entity facts before inventing programmes, rooms, or contact
-5. `readme.md` — orientation, file map, caveats, on-record corrections
+1. `AGENTS.md`: short index and bans
+2. `SKILL.md`: the six non-obvious rules
+3. `docs/rule-of-one.md`: one reader, one idea, one focal point, one next step on every surface; the brief to write first and the checklist to run last
+4. `content/`: entity facts before inventing programmes, rooms, or contact
+5. `readme.md`: orientation, file map, caveats, on-record corrections
 6. `ui_kits/website/SKILL.md` when the work is the public marketing website
 7. `.cursor/skills/shantara-premium-presentations/SKILL.md` when the work is any presentation or deck (HTML brand deck: `templates/brand-deck/`)
 8. The `*.prompt.md` next to the component being used (or the catalog component page)
-9. `docs/handbook.txt`, then the section file under `docs/handbook/`, for policies, conflicts, and `[TO CONFIRM]` — not for inventing public copy
-10. `docs/icp.md` when the work is audience, SEO, campaigns, CRM, or content strategy — internal only; do not paste ICP names into public copy
+9. `docs/handbook.txt`, then the section file under `docs/handbook/`, for policies, conflicts, and `[TO CONFIRM]`, not for inventing public copy
+10. `docs/icp.md` when the work is audience, SEO, campaigns, CRM, or content strategy (internal only; do not paste ICP names into public copy)
 11. `guidelines/accessibility.html` before changing a colour token
 
 ## What this folder is not

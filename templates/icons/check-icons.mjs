@@ -20,10 +20,10 @@ for (const name of ["favicon.ico", "favicon.svg", "manifest.webmanifest", ...Obj
 
 if (existsSync(file("favicon.svg"))) {
   const svg = readFileSync(file("favicon.svg"), "utf8");
-  if (statSync(file("favicon.svg")).size > 3 * 1024) fail("favicon.svg: over 3 KB — strip metadata and editor markup");
+  if (statSync(file("favicon.svg")).size > 3 * 1024) fail("favicon.svg: over 3 KB; strip metadata and editor markup");
   if (/<metadata|c2pa|<\?xml|id="Layer/.test(svg)) fail("favicon.svg: contains metadata or editor markup");
-  if (/<rect\b/.test(svg)) fail("favicon.svg: has a background shape — the tab icon is the bare mark on a transparent background");
-  if (!/prefers-color-scheme:\s*dark/.test(svg)) fail("favicon.svg: no dark-mode colour — a Himalaya mark disappears on dark tabs");
+  if (/<rect\b/.test(svg)) fail("favicon.svg: has a background shape; the tab icon is the bare mark on a transparent background");
+  if (!/prefers-color-scheme:\s*dark/.test(svg)) fail("favicon.svg: no dark-mode colour; a Himalaya mark disappears on dark tabs");
   const vb = /viewBox="([^"]+)"/.exec(svg)?.[1].split(/\s+/).map(Number);
   if (!vb || vb[2] !== vb[3]) fail("favicon.svg: viewBox is not square");
 }
@@ -40,7 +40,7 @@ for (const [name, size] of Object.entries(PNGS)) {
   const { width, height, format } = await sharp(file(name)).metadata();
   if (format !== "png" || width !== size || height !== size) fail(`${name}: expected ${size} × ${size} PNG, got ${width} × ${height} ${format}`);
   const { isOpaque } = await sharp(file(name)).stats();
-  if (!isOpaque) fail(`${name}: has transparent pixels — iOS and Android fill them with black or white`);
+  if (!isOpaque) fail(`${name}: has transparent pixels; iOS and Android fill them with black or white`);
 }
 
 // Maskable safe zone: everything outside the central circle (radius 40% of the width) is plain background.
@@ -73,7 +73,7 @@ if (existsSync(file("manifest.webmanifest"))) {
     const icons = m.icons || [];
     for (const icon of icons) {
       if (!existsSync(file(icon.src.replace(/^\//, "")))) fail(`manifest.webmanifest: ${icon.src} does not exist`);
-      if (/any\s+maskable|maskable\s+any/.test(icon.purpose || "")) fail(`manifest.webmanifest: ${icon.src} combines "any maskable" — use separate entries`);
+      if (/any\s+maskable|maskable\s+any/.test(icon.purpose || "")) fail(`manifest.webmanifest: ${icon.src} combines "any maskable"; use separate entries`);
     }
     for (const size of ["192x192", "512x512"]) {
       if (!icons.some((i) => i.sizes === size && !i.purpose)) fail(`manifest.webmanifest: no ${size} icon`);
@@ -126,7 +126,7 @@ if (site) {
     }
     for (const [key, count] of Object.entries(COUNTED)) {
       const n = tags.filter((t) => (t.rel || "").toLowerCase() === key || (t.name || "").toLowerCase() === key).length;
-      if (n > count) fail(`${name}: ${n} "${key}" declarations, expected ${count} — remove duplicates outside Head.astro`);
+      if (n > count) fail(`${name}: ${n} "${key}" declarations, expected ${count}; remove duplicates outside Head.astro`);
     }
     for (const rel of BANNED_RELS) {
       if (tags.some((t) => (t.rel || "").toLowerCase() === rel)) fail(`${name}: obsolete <link rel="${rel}">`);

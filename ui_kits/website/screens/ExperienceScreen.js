@@ -1,4 +1,4 @@
-/* Experience — composition sample (not the production site).
+/* Experience: composition sample (not the production site).
    HeroFullBleed → what a day may include → a typical day → the setting → parts of a stay →
    ClosingCTA (photo; the page has no other CTA). */
 
@@ -15,11 +15,11 @@ const DAY_STEPS = [
   { title: "Evening", text: "Programme meals, quiet time, and an early night" },
 ];
 
-/* Day rhythm for this page — shorter leads than the programme detail timetable. */
+/* Day rhythm for this page, with shorter leads than the programme detail timetable. */
 const DAY_TIMES = [
   { time: "Morning", text: "Vitals, a short doctor review, then movement in the yoga hall adapted to that day." },
   { time: "Midday", text: "Mud, hydrotherapy, massage or acupuncture when your doctor has planned them." },
-  { time: "Afternoon", text: "Sunlight, a walk on the grounds, or quiet time in the library — as your plan allows." },
+  { time: "Afternoon", text: "Sunlight, a walk on the grounds, or quiet time in the library, as your plan allows." },
   { time: "Evening", text: "A programme meal, a mind-body session when scheduled, then rest." },
 ];
 
@@ -37,7 +37,7 @@ function ExperienceScreen({ onNavigate }) {
           mobilePosition="center"
           alt={t("The planted courtyard")}
           title={t("A day at Shantara")}
-          sub={t("Consultations, therapies, meals, movement and rest — reviewed each morning by your doctor.")}
+          sub={t("Consultations, therapies, meals, movement and rest, all reviewed each morning by your doctor.")}
         />
       </P>
 

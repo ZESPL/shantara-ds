@@ -5,4 +5,4 @@ One framing for every portrait (the doctors, the founder, the board): 4:5 on a n
 <PortraitFrame src="/assets/photos/founder-pa-kareem-passport.jpeg" name="P.A. Kareem" role="Founder and Chairman" />
 ```
 
-**No photograph yet?** It shows the person's initials on the same ground — never a stock face or an empty box. **Detail** only from `content/doctors/` or, for the founder, `content/leadership/`; leave it out while a field is `[TO CONFIRM]`. Put portraits in `PeopleRow`.
+**No photograph yet?** It shows the person's initials on the same ground, never a stock face or an empty box. **Detail** only from `content/doctors/` or, for the founder, `content/leadership/`; leave it out while a field is `[TO CONFIRM]`. Put portraits in `PeopleRow`.

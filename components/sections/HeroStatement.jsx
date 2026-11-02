@@ -5,7 +5,7 @@ import { Media } from "../editorial/Media.jsx";
 
 /* The EDITORIAL hero (deck slide 2). Words lead; no full photograph. A Merino or Stone
    ground, a Statement (its breadcrumbs, then a large Light h1 placed low with open space
-   above, one supporting line and actions) — closed by a hairline with an optional meta row beneath it
+   above, one supporting line and actions), closed by a hairline with an optional meta row beneath it
    ("Reviewed by … · Updated …"). Policy, legal, 404 and confirmation pages use this same
    hero: there is no utility variant. Presence without a label above the title: a Stone
    ground, the meta row, or (src / aside) a small 4:5 image or a short fact list in a

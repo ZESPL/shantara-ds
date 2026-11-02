@@ -1,4 +1,4 @@
-The **editorial** hero: words lead, no full photograph (deck slide 2). A large Light h1 placed low on Merino or Stone, closed by a hairline with an optional meta row — and, for presence, a Stone ground and/or a small side image.
+The **editorial** hero: words lead, no full photograph (deck slide 2). A large Light h1 placed low on Merino or Stone, closed by a hairline with an optional meta row and, for presence, a Stone ground and/or a small side image.
 
 ```jsx
 <HeroStatement
@@ -12,12 +12,12 @@ The **editorial** hero: words lead, no full photograph (deck slide 2). A large L
   src="/assets/photos/courtyard.jpg" alt="The courtyard" />
 ```
 
-**Use** for index and inner pages that do not need a big picture — conditions, programmes index, about, journal index, contact. For a single article use `ArticleHeader`; for an offer page with a photograph use `HeroSplit`.
+**Use** for index and inner pages that do not need a big picture: conditions, programmes index, about, journal index, contact. For a single article use `ArticleHeader`; for an offer page with a photograph use `HeroSplit`.
 
 **Presence (no eyebrow).** Pick one or two. The hero takes no rosette band; on the website the pattern lives in `BandStatement`.
-- `ground="stone"` — a quiet change of room from the Merino page below.
-- `rule` (default on) + `meta` — the closing hairline with facts beneath: "Reviewed by … · Updated …", "12 conditions · 4 categories".
-- `src` / `aside` — a small 4:5 image or two or three plain facts in a side column. Never a form or a second heading.
+- `ground="stone"`: a quiet change of room from the Merino page below.
+- `rule` (default on) + `meta`: the closing hairline with facts beneath: "Reviewed by … · Updated …", "12 conditions · 4 categories".
+- `src` / `aside`: a small 4:5 image or two or three plain facts in a side column. Never a form or a second heading.
 
 **Content.** One full-sentence title, no label above it. `sub` is one line.
 
@@ -31,9 +31,9 @@ The **editorial** hero: words lead, no full photograph (deck slide 2). A large L
 
 | Hero | Purpose | Use on |
 | --- | --- | --- |
-| `HeroFullBleed` | Immersive — the place carries the message | Home (`height="full"`), Experience, one flagship inner page (`tall`) |
-| `HeroSplit` | Offer — a photograph beside the title, facts and the action | Programme and condition detail pages, Tariffs, Book a Consultation |
-| `HeroStatement` | Editorial — words lead, no photograph needed | Conditions and Programmes indexes, About, Journal index, Contact, policy and legal pages, 404, confirmation pages (`ArticleHeader` for single articles) |
+| `HeroFullBleed` | Immersive: the place carries the message | Home (`height="full"`), Experience, one flagship inner page (`tall`) |
+| `HeroSplit` | Offer: a photograph beside the title, facts and the action | Programme and condition detail pages, Tariffs, Book a Consultation |
+| `HeroStatement` | Editorial: words lead, no photograph needed | Conditions and Programmes indexes, About, Journal index, Contact, policy and legal pages, 404, confirmation pages (`ArticleHeader` for single articles) |
 
 One hero per page, always first. None of them takes a label above the title: place, category or duration go in `meta`, below it.
 

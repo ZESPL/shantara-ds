@@ -9,7 +9,7 @@ export interface TooltipProps extends React.HTMLAttributes<HTMLSpanElement> {
   side?: "top" | "bottom" | "left" | "right" | "start" | "end";
   /** Controlled open state. When set, hover/focus no longer toggle it. */
   open?: boolean;
-  /** Initial open state (uncontrolled) — for specimens and onboarding hints. */
+  /** Initial open state (uncontrolled), for specimens and onboarding hints. */
   defaultOpen?: boolean;
   children?: React.ReactNode;
 }

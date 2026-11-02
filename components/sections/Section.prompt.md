@@ -10,7 +10,7 @@ The shell every website section sits in: one ground, the fluid section rhythm an
 <Section space="none" bleed><PanoramaCaption … /></Section>
 ```
 
-**Grounds.** `merino` (the page), `stone` (a quiet change of room), `himalaya` and `pine` (dark, at most one or two per page), `photo` (set by the photographic sections themselves). A dark ground re-points `--text-primary`, `--rule-color` and the button tokens for everything inside it, so nothing inside takes a tone prop. Never alternate grounds on every section — let two Merino sections run together when the content allows.
+**Grounds.** `merino` (the page), `stone` (a quiet change of room), `himalaya` and `pine` (dark, at most one or two per page), `photo` (set by the photographic sections themselves). A dark ground re-points `--text-primary`, `--rule-color` and the button tokens for everything inside it, so nothing inside takes a tone prop. Never alternate grounds on every section. Let two Merino sections run together when the content allows.
 
 **Rule.** Nothing on a page paints its own background or side padding. If a block needs a colour or a margin, it needs a `Section`.
 

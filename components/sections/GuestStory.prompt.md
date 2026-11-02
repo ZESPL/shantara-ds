@@ -7,7 +7,7 @@ A guest's own words: one story with an optional photograph of the place, or two 
 <GuestStory title="Guests in their own words" stories={[…]} />
 ```
 
-**Use** when `content/guest-stories` or `content/testimonials` holds consented records — both are empty today, so nothing ships yet. The specimen shows marked placeholders.
+**Use** when `content/guest-stories` or `content/testimonials` holds consented records. Both are empty today, so nothing ships yet. The specimen shows marked placeholders.
 
 **Content.** Real words with written consent; a name only when the guest agreed, otherwise an initial and the context of the stay. Never a health result or a claim the clinical team would not make. The photograph shows the place, never the guest in therapy.
 

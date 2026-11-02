@@ -1,6 +1,6 @@
 import React from "react";
 
-/* Spinner — three dots breathing in sequence, the brand's only loader (never a rotating
+/* Spinner: three dots breathing in sequence, the brand's only loader (never a rotating
    ring). Each dot swells and brightens on a slow 1400ms wave, staggered by a third of a
    cycle, so the row reads as one calm breath travelling left to right.
    Reduced motion: the dots hold still at three quiet opacities and the label carries it. */

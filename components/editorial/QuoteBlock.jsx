@@ -3,7 +3,7 @@ import React from "react";
 /* A large Light quote, left-aligned, closed by an attribution line (a short rule, the
    speaker in Medium, their role in secondary type) and optional labelled facts beneath
    on a hairline (deck slides 16–17). Only real, consented words or the organisation's
-   own statements go here — never a composed testimonial. */
+   own statements go here, never a composed testimonial. */
 const CSS = `
 .sh-quote{margin:0;display:flex;flex-direction:column;gap:var(--space-7);min-width:0}
 .sh-quote-text{margin:0;font:var(--type-statement);color:var(--text-primary);max-width:var(--measure-statement);text-wrap:pretty}

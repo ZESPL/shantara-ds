@@ -1,7 +1,7 @@
 import React from "react";
 
 /* Groups of short items (programmes by focus, therapies by kind). Each group has a small
-   Medium heading in normal case, then its items as a clean vertical list on hairlines —
+   Medium heading in normal case, then its items as a clean vertical list on hairlines:
    one item per line, never a middot run-on. Groups stack on phones and sit in columns
    from 760px with generous space between them. */
 const CSS = `

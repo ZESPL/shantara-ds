@@ -37,7 +37,7 @@
     const NS = window.ShantaraDesignSystem_45bbe4;
     const name = new URLSearchParams(location.search).get("c") || "Button";
 
-    /* Shared demo content for the section specimens — copied from content/ and the handbook,
+    /* Shared demo content for the section specimens, copied from content/ and the handbook,
        never invented (faq.json, tariff.json, therapies/, programs/, handbook §12 day). */
     const PH = "../assets/photos/";
     const faqGroups = [
@@ -126,7 +126,7 @@
         case "ArticleHeader": return <><Label><b>video</b> · a video article, the player in the lead photograph's place</Label>
           <ArticleHeader breadcrumbs={<Breadcrumbs items={[{ label: "Journal", href: "#" }, "Life at Shantara"]} />} title="A day at Shantara, on film" dek="Morning yoga to evening meditation." category="Life at Shantara" date="12 August 2026" readTime="3 min watch" video={{ poster: P + "activity-hall-yoga-studio-empty.jpg", title: "A day at Shantara" }} /></>;
         case "BandStatement": return <><Label><b>quote</b> · the page's one accent as a doctor's own words</Label>
-          <BandStatement quote={{ quote: "[Placeholder — a doctor's own words, approved for the page.]", cite: "Dr. Bahja Janu", role: "Medical Director" }} /></>;
+          <BandStatement quote={{ quote: "[Placeholder: a doctor's own words, approved for the page.]", cite: "Dr. Bahja Janu", role: "Medical Director" }} /></>;
         default: return null;
       }
     }
@@ -520,7 +520,7 @@
         /* ── Sections (full width: the body padding is removed below) ── */
         case "Section":
           return <>
-            {[["merino", "Merino — the page"], ["stone", "Stone — a quiet change of room"], ["himalaya", "Himalaya — dark, ink re-pointed"], ["pine", "Pine — dark, ink re-pointed"]].map(([g, label]) => (
+            {[["merino", "Merino: the page"], ["stone", "Stone: a quiet change of room"], ["himalaya", "Himalaya: dark, ink re-pointed"], ["pine", "Pine: dark, ink re-pointed"]].map(([g, label]) => (
               <Section key={g} ground={g} space="sm">
                 <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
                   <p style={{ margin: 0, font: "var(--type-caption)", color: "var(--text-muted)" }}>{label}</p>
@@ -836,13 +836,13 @@
         case "GuestStory":
           return <>
             <Section>
-              <GuestStory story={{ quote: "[Placeholder — a consented guest story, in the guest's own words.]", name: "[First name, with consent]", context: "[Programme · length of stay]", src: P + "balcony-lounge-infinity-edge-valley.jpg", alt: "The balcony lounge over the valley" }} />
+              <GuestStory story={{ quote: "[Placeholder: a consented guest story, in the guest's own words.]", name: "[First name, with consent]", context: "[Programme · length of stay]", src: P + "balcony-lounge-infinity-edge-valley.jpg", alt: "The balcony lounge over the valley" }} />
             </Section>
             <Section ground="stone">
               <GuestStory title="Guests in their own words" stories={[
-                { quote: "[Placeholder — a short consented quote.]", name: "[Initial]", context: "[Programme]" },
-                { quote: "[Placeholder — a short consented quote.]", name: "[Initial]", context: "[Programme]" },
-                { quote: "[Placeholder — a short consented quote.]", name: "[Initial]", context: "[Programme]" },
+                { quote: "[Placeholder: a short consented quote.]", name: "[Initial]", context: "[Programme]" },
+                { quote: "[Placeholder: a short consented quote.]", name: "[Initial]", context: "[Programme]" },
+                { quote: "[Placeholder: a short consented quote.]", name: "[Initial]", context: "[Programme]" },
               ]} />
             </Section>
           </>;

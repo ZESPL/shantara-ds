@@ -1,4 +1,4 @@
-The website's only "more" link — text, hairline underline, arrow, zero inline padding so it sits on the grid.
+The website's only "more" link: text, hairline underline, arrow, zero inline padding so it sits on the grid.
 
 ```jsx
 <TextLink href="/en/conditions">View conditions</TextLink>

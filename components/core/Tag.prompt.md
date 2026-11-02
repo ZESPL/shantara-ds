@@ -10,7 +10,7 @@ Filter chip or static label. The look is decided by behaviour so a non-interacti
 - **Static** (no `onClick`): 24px flat tint, 2px radius, no border, no hover, no press, `cursor: default`. `selected` on a static tag only tints it brand-soft.
 - `onRemove` adds a 24px × control at the inline end (name via `removeLabel`).
 
-For read-only status (Confirmed, Waitlist) prefer `Badge`. Do not use static Tags as decorative pills next to CTAs — write a sentence instead.
+For read-only status (Confirmed, Waitlist) prefer `Badge`. Do not use static Tags as decorative pills next to CTAs. Write a sentence instead.
 
 **Motion.** Interactive chips: hover darkens the outline at 160ms on fine pointers; press is `scale(var(--press-scale))`. Static tags do not move.
 

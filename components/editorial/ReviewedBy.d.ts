@@ -16,7 +16,7 @@ export interface ReviewedByProps extends React.HTMLAttributes<HTMLDivElement> {
   label?: React.ReactNode;
   /** One caption line, e.g. "This article is general information, not a diagnosis." */
   note?: React.ReactNode;
-  /** Stone box instead of hairlines — for the end of an article. */
+  /** Stone box instead of hairlines, for the end of an article. */
   boxed?: boolean;
 }
 export declare function ReviewedBy(props: ReviewedByProps): JSX.Element;

@@ -1,7 +1,7 @@
 import React from "react";
 import { Statement } from "../editorial/Statement.jsx";
 
-/* "How a stay works" — the guest's own path in 3 to 5 steps: number, title, one line. Only
+/* "How a stay works": the guest's own path in 3 to 5 steps: number, title, one line. Only
    steps the guest takes or sees; never internal process ("we log your details…") and never
    a response time that is not confirmed.
    Phones: one column, number beside the text. ≥760px: two columns. ≥1000px: one row of
@@ -30,7 +30,7 @@ function ensure() {
   document.head.appendChild(el);
 }
 
-/* steps: [{ title, text? }] — three to five */
+/* steps: [{ title, text? }], three to five */
 export function ProcessSection({ title, sub, steps = [], action, headingLevel = 2, style, ...rest }) {
   ensure();
   const H = "h" + Math.min(6, headingLevel + 1);

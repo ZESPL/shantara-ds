@@ -1,6 +1,6 @@
 import React from "react";
 
-/* "On this page" — a sticky bar of jump links for long pages (programme detail, Therapies,
+/* "On this page": a sticky bar of jump links for long pages (programme detail, Therapies,
    Rooms, legal). It sits under the site header, marks the section in view, and scrolls
    sideways on phones instead of wrapping. Each target needs an `id`; CatalogueSection and
    SplitSection (`id`) already reserve the header offset on their anchors. */

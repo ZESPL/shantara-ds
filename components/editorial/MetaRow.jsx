@@ -1,7 +1,7 @@
 import React from "react";
 import { Icon } from "../core/Icon.jsx";
 
-/* The one place category, duration, date and read time are shown — a caption-size row
+/* The one place category, duration, date and read time are shown: a caption-size row
    BELOW a title, in normal case. Never above a heading (the system has no eyebrows).
    items: strings, or { label, icon?, href?, dateTime? }. Without icons the items are
    separated by a middot; with icons each item leads with its 14px glyph instead. */

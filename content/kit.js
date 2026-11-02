@@ -131,7 +131,7 @@ window.ShantaraContent = {
     "id": "medical-categories",
     "locale": "en",
     "source": "handbook",
-    "note": "Eleven handbook clinical groupings — staff routing aid, not public IA.",
+    "note": "Eleven handbook clinical groupings: a staff routing aid, not public IA.",
     "categories": [
       {
         "id": "metabolic-lifestyle",
@@ -879,7 +879,7 @@ window.ShantaraContent = {
       "last_medically_reviewed": null,
       "locale": "en",
       "source": "kit",
-      "note": "Launch slug for /en/conditions/obesity — not a kit listing card (weight-management need card covers the sample).",
+      "note": "Launch slug for /en/conditions/obesity, not a kit listing card (the weight-management need card covers the sample).",
       "related_pages": [
         {
           "type": "programme",
@@ -1533,7 +1533,7 @@ window.ShantaraContent = {
       "title": "Managing PCOS Through Lifestyle Change",
       "category": "Clinical Guides",
       "read_minutes": null,
-      "lead": "Educational guide placeholder — body pending medical review.",
+      "lead": "Educational guide placeholder. Body pending medical review.",
       "body": null,
       "author": null,
       "medical_reviewer": null,
@@ -1552,7 +1552,7 @@ window.ShantaraContent = {
       "title": "What Happens During a Naturopathy Assessment?",
       "category": "Clinical Guides",
       "read_minutes": null,
-      "lead": "Educational guide placeholder — body pending medical review.",
+      "lead": "Educational guide placeholder. Body pending medical review.",
       "body": null,
       "author": null,
       "medical_reviewer": null,
@@ -1571,7 +1571,7 @@ window.ShantaraContent = {
       "title": "Understanding Insulin Resistance",
       "category": "Clinical Guides",
       "read_minutes": null,
-      "lead": "Educational guide placeholder — body pending medical review.",
+      "lead": "Educational guide placeholder. Body pending medical review.",
       "body": null,
       "author": null,
       "medical_reviewer": null,

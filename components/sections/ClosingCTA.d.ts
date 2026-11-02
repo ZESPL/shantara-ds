@@ -10,7 +10,7 @@ export interface ContactItem {
 export interface ClosingCTAProps extends React.HTMLAttributes<HTMLElement> {
   /** "photo" (default when `src`): full-bleed dark photograph, 72svh.
    *  "ground" (default without `src`): same block on a flat ground, content height.
-   *  "compact": one row band — title (+ sub) left, actions right. */
+   *  "compact": one row band, title (+ sub) left, actions right. */
   variant?: "photo" | "ground" | "compact";
   /** Ground for "ground" / "compact". Default "pine". */
   ground?: "pine" | "himalaya" | "stone";
@@ -24,7 +24,7 @@ export interface ClosingCTAProps extends React.HTMLAttributes<HTMLElement> {
   sub?: React.ReactNode;
   /** ONE primary Button. */
   action?: React.ReactNode;
-  /** Optional second action — a secondary Button or TextLink, never a second primary. */
+  /** Optional second action: a secondary Button or TextLink, never a second primary. */
   secondaryAction?: React.ReactNode;
   /** Optional contact row: items (aligned, 44px each, stack under 520px) or a node. */
   contact?: Array<string | ContactItem> | React.ReactNode;

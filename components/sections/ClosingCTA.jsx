@@ -5,12 +5,12 @@ import { Icon } from "../core/Icon.jsx";
 import { Button } from "../core/Button.jsx";
 import { TextLink } from "../editorial/TextLink.jsx";
 
-/* The closing call to action (deck slide 18) — ONLY for pages that otherwise have no CTA.
+/* The closing call to action (deck slide 18), ONLY for pages that otherwise have no CTA.
    variant "photo": a full-bleed dark photograph, 72svh, statement bottom-left.
      `bleed={false}` (≥1000px only): the photograph sits inside the page container on a
      `surround` ground, so its edges line up with the header and the footer's content.
    variant "ground": the same block on a flat ground (pine / himalaya / stone), content height.
-   variant "compact": a single-row band — title (+ sub) on the left, actions on the right.
+   variant "compact": a single-row band, title (+ sub) on the left, actions on the right.
    Contact items render as one aligned row (every item the same 44px inline-flex box, so a
    link and plain text share a baseline); they stack one per line under 520px. */
 const CSS = `
@@ -64,7 +64,7 @@ function Contact({ contact }) {
 }
 
 /* variant "whatsapp": the ground layout with WhatsApp as the primary action and a call as
-   the second (pass `whatsapp` — a wa.me URL — and `phone`, a tel: URL, from content/site.json).
+   the second (pass `whatsapp`, a wa.me URL, and `phone`, a tel: URL, from content/site.json).
    variant "tariff": a compact band that sends the reader to the tariff page (`tariffHref`):
    programme and room pages never quote a rate, so this is their commercial close. */
 export function ClosingCTA({ variant, ground = "pine", src, alt = "", position, title, sub, action, secondaryAction, contact, whatsapp, phone, phoneLabel, tariffHref = "/en/tariffs", titleAs = "h2", bleed = true, surround = "merino", style, ...rest }) {

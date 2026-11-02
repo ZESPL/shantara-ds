@@ -1,4 +1,4 @@
-# `assets/photos/` — agent index
+# `assets/photos/`: agent index
 
 Every photograph in this folder has been looked at and described, so you can choose one **without opening the image**. Logos, lockups and the rosette pattern are indexed in [`../README.md`](../README.md).
 

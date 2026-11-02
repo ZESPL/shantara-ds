@@ -42,7 +42,7 @@ function ensure() {
 }
 
 /* Planned site languages (ui_kits/website/locales.js). Used only when locales.js is not
-   loaded — e.g. in the catalog — so the control can always be seen. */
+   loaded (e.g. in the catalog), so the control can always be seen. */
 const PLANNED = [
   { code: "en", nativeName: "English", compact: "EN", direction: "ltr", enabled: true },
   { code: "ar", nativeName: "العربية", compact: "AR", direction: "rtl", enabled: false },

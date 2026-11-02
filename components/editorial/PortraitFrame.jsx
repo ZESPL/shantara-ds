@@ -3,7 +3,7 @@ import { Media } from "./Media.jsx";
 
 /* One framing for every doctor: 4:5, neutral ground, same crop, then name (Regular),
    role (small) and an optional qualification line. With no photograph yet it shows the
-   person's initials on the same ground — never a stock face, never an empty box. */
+   person's initials on the same ground, never a stock face, never an empty box. */
 const CSS = `
 .sh-portrait{display:flex;flex-direction:column;gap:var(--space-5);min-width:0;margin:0}
 .sh-portrait-empty{position:relative;aspect-ratio:var(--media-ratio-portrait);background:color-mix(in srgb, var(--color-pearl-bush) 82%, var(--color-pine-tree));display:grid;place-items:center}

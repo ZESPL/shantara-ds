@@ -1,4 +1,4 @@
-Every photograph on the website — square-cut, cover-fit, lazy by default, with an optional scrim for type on top.
+Every photograph on the website: square-cut, cover-fit, lazy by default, with an optional scrim for type on top.
 
 ```jsx
 <Media src="/assets/photos/balcony.jpg" alt="Balcony over the valley" ratio="4:3" />
@@ -6,7 +6,7 @@ Every photograph on the website — square-cut, cover-fit, lazy by default, with
 <Media src={pano} alt="The grounds" ratio="21:9" mobileRatio="4:3" />
 ```
 
-**Shape.** `--radius-media` is 0 — the deck never rounds a photograph. **Ratios** come from tokens: 4:3 listings, 16:9 wide, 4:5 portraits, 3:4 tall architecture, 21:9 panoramas (desktop only — always pair with `mobileRatio`).
+**Shape.** `--radius-media` is 0. The deck never rounds a photograph. **Ratios** come from tokens: 4:3 listings, 16:9 wide, 4:5 portraits, 3:4 tall architecture, 21:9 panoramas (desktop only; always pair with `mobileRatio`).
 
 **Responsive.** `mobileRatio` and `mobilePosition` switch under 760px, so one crop decision per breakpoint and never a sliver on a phone. Pass `srcSet` + `sizes` in production (Astro Image does this).
 

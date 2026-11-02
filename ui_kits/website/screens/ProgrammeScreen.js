@@ -1,4 +1,4 @@
-/* Programme detail — Detox sample (not the production site).
+/* Programme detail: Detox sample (not the production site).
    HeroSplit → overview beside the booking panel → what to expect → doctors.
    The booking panel is the page's CTA, so there is no ClosingCTA (#35). */
 

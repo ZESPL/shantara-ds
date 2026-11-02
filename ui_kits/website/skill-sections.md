@@ -73,7 +73,7 @@ Do not make fixed condition/program/experience/story/contact templates.
 
 Determine:
 
-1. **Audience:** Who is this page for? When it serves a health need, name the need using the IDs in [SKILL.md §5](SKILL.md#section-5) — planning labels, not stored on records. Do not use a programme name as the audience.
+1. **Audience:** Who is this page for? When it serves a health need, name the need using the IDs in [SKILL.md §5](SKILL.md#section-5) (planning labels, not stored on records). Do not use a programme name as the audience.
 2. **Intent:** What are they trying to understand or decide?
 3. **One idea:** What is the one sentence they should come away with? This is a planning note, not copy ([rule of one](../../docs/rule-of-one.md#the-one-sentence-brief)).
 4. **Primary action:** What one thing should they do next?
@@ -97,7 +97,7 @@ Do not create a single Hero with 30 props. Do not create 12 hero variants.
 | --- | --- |
 | Immersive (Home, Experience) | `HeroFullBleed` (Display headline, one primary button, `meta` caption row) |
 | Offer (Programme, Tariffs) | `HeroSplit` (photo one side, title + meta + one line + button) + a booking panel directly below |
-| Editorial / Utility (Conditions, About, Journal, Contact, Book a Consultation) | `HeroStatement` with a side image, a Stone ground or a meta row — never a bare statement |
+| Editorial / Utility (Conditions, About, Journal, Contact, Book a Consultation) | `HeroStatement` with a side image, a Stone ground or a meta row, never a bare statement |
 | Article | `ArticleHeader` |
 
 The header overlays every page. On `HeroStatement` it sits on the Merino/Stone ground.
@@ -124,7 +124,7 @@ Typical fields: title; category in the meta row below it; summary; optional imag
 
 Purpose: immediately explain a commercial program; communicate high-intent information.
 
-Typical fields: program title; concise proposition; optional image; duration/options; optional starting price (**only if already published on the tariff card — never invent**); short suitability statement; Book a Consultation CTA.
+Typical fields: program title; concise proposition; optional image; duration/options; optional starting price (**only if already published on the tariff card; never invent**); short suitability statement; Book a Consultation CTA.
 
 Do not require every field if it is not relevant.
 
@@ -155,7 +155,7 @@ Editors should select **what the section means**, not manually recreate layout m
 | Section Intro | `Statement` inside `Section` |
 | Media + Content | `SplitSection` |
 | Full-width Media | `PanoramaCaption` |
-| Statement band | `BandStatement` — at most one per page |
+| Statement band | `BandStatement` (at most one per page) |
 | Card Collection | `TileGrid` / `Tile` |
 | A listing too long for photographs | `IndexList` |
 | Feature Grid, Key Facts | `PlainList`, `GroupedList` |
@@ -170,7 +170,7 @@ Editors should select **what the section means**, not manually recreate layout m
 
 ### Full bleed and boxed
 
-The header's logo and controls sit in the page container (1240px plus the 20→48px gutter). A ground that runs edge to edge — Stone, Pine, the Himalaya `BandStatement` — keeps its text on those same lines, so it never breaks the grid. A **photograph** that runs to the screen edge does: on wide screens it passes the edge the logo sits on. One such plane gives a page its scale; several in a row make it feel unanchored.
+The header's logo and controls sit in the page container (1240px plus the 20→48px gutter). A ground that runs edge to edge (Stone, Pine, the Himalaya `BandStatement`) keeps its text on those same lines, so it never breaks the grid. A **photograph** that runs to the screen edge does: on wide screens it passes the edge the logo sits on. One such plane gives a page its scale; several in a row make it feel unanchored.
 
 - **One full-bleed photograph per page, two at most.** Normally that is the hero (`HeroFullBleed` or `HeroSplit`). Every later photograph section uses its boxed form.
 - **Boxed forms** use `bleed={false}`: `SplitSection`, `HeroSplit`, `PanoramaCaption` and `ClosingCTA` (variant `photo`). `PanoramaCaption` and `ClosingCTA` take a `surround` ground (`merino` or `stone`) around the frame.
@@ -189,7 +189,7 @@ Long-form text; headings; lists; quotes; inline links; simple inline media. Must
 
 ### Media + Content
 
-When text and media need equal emphasis. Limited variants: media at **inline start**; media at **inline end**; media top on mobile. Do not invent a second Media+Content component per language. Cards, heroes, process, timeline, tables, galleries, FAQs, doctor blocks, and CTAs are locale-aware — they reflow and follow `dir`, they are not duplicated.
+When text and media need equal emphasis. Limited variants: media at **inline start**; media at **inline end**; media top on mobile. Do not invent a second Media+Content component per language. Cards, heroes, process, timeline, tables, galleries, FAQs, doctor blocks, and CTAs are locale-aware: they reflow and follow `dir` and are not duplicated.
 
 Fields: title; optional meta row; content; image/video; optional CTA.
 
@@ -207,7 +207,7 @@ Collections of entities: conditions; programs; therapies; rooms; doctors; articl
 
 The section controls heading, introduction, selected items or a controlled query, and layout. Entity-specific cards remain separate configurations of `Tile`.
 
-Component: `TileGrid` — layout `3` (three across from 1000px), `2`, or `feature` (one large tile beside the rest). Choose the layout by count, not by page type. When the list is too long for a photograph per item (all conditions, the full programme list), use `IndexList`.
+Component: `TileGrid`, with layout `3` (three across from 1000px), `2`, or `feature` (one large tile beside the rest). Choose the layout by count, not by page type. When the list is too long for a photograph per item (all conditions, the full programme list), use `IndexList`.
 
 ### Feature Grid
 
@@ -221,19 +221,19 @@ Program inclusions; facilities; amenities; principles; benefits; capabilities. K
 
 Concrete, verifiable numbers or credentials. Do not use invented or unverified metrics.
 
-Component: `NumeralsSplit` — a statement beside two (at most three) `Numeral`s. Never four.
+Component: `NumeralsSplit`, a statement beside two (at most three) `Numeral`s. Never four.
 
 ### Process / Steps
 
 Sequential processes: inquiry → consultation → assessment → plan → stay → follow-up; arrival process; booking process. Keep steps concise.
 
-Component: `NumberedSteps` — muted 01–04 numerals, a Medium item title and one line each.
+Component: `NumberedSteps`, with muted 01–04 numerals, a Medium item title and one line each.
 
 ### Timeline
 
 Chronological content: A Day at Shantara; company history; guest journey; program schedule. Do not build a separate schedule component when Timeline can do the job.
 
-Component: `TimeTable` — time column in olive, then a title and a line. Under 760px the time sits above the title.
+Component: `TimeTable`, with the time column in olive, then a title and a line. Under 760px the time sits above the title.
 
 ### Table
 
@@ -241,7 +241,7 @@ One general controlled table section for: room comparison; program comparison; s
 
 Display modes may include: standard; comparison; schedule. Do not create a new component for every table use case.
 
-Component: `SpecTable` — no borders, accent column in olive, a real `<table>`. Under 520px each row becomes a block. Schedules use `TimeTable`.
+Component: `SpecTable`, with no borders, an accent column in olive and a real `<table>`. Under 520px each row becomes a block. Schedules use `TimeTable`.
 
 ### Pricing / Package Options
 
@@ -347,13 +347,13 @@ Semantic cards (configurations, not separate visual systems):
 
 Do not create one component with dozens of conditional fields. Each configuration picks the fields its entity needs.
 
-All tiles share: typography (Light title, Regular body); square-cut photographs; hover (photograph scales to 1.02 inside its frame, `--tile-media-scale`, and the title takes a hairline underline — no lift, no shadow); focus ring; the whole tile is one link.
+All tiles share: typography (Light title, Regular body); square-cut photographs; hover (photograph scales to 1.02 inside its frame, `--tile-media-scale`, and the title takes a hairline underline; no lift, no shadow); focus ring; the whole tile is one link.
 
-Ratios: listing tiles **4:3** (`--card-media-ratio`). Wide editorial frames **16:9**; doctors **4:5**; tall architecture **3:4**. **21:9** only through `PanoramaCaption`, with `mobileRatio` for phones. Heroes use a height (100svh / 72svh), not a ratio. `layout="row"` puts the photograph beside the text from 760px — for lists of articles or rooms.
+Ratios: listing tiles **4:3** (`--card-media-ratio`). Wide editorial frames **16:9**; doctors **4:5**; tall architecture **3:4**. **21:9** only through `PanoramaCaption`, with `mobileRatio` for phones. Heroes use a height (100svh / 72svh), not a ratio. `layout="row"` puts the photograph beside the text from 760px, for lists of articles or rooms.
 
-**Grids:** `TileGrid` layout follows the count — 3 across, 2 across, or `feature` (one large, the rest beside it). Never an uneven last row. A listing too long for a photograph per item uses `IndexList`.
+**Grids:** `TileGrid` layout follows the count: 3 across, 2 across, or `feature` (one large, the rest beside it). Never an uneven last row. A listing too long for a photograph per item uses `IndexList`.
 
-**Grounds:** large content grounds are Merino or Stone. At most **one** `BandStatement` (Himalaya + rosette band) per page — it is the page's accent. Pine is for `ClosingCTA` without a photograph and the footer. Photography grounds are heroes, `PanoramaCaption` and `ClosingCTA`.
+**Grounds:** large content grounds are Merino or Stone. At most **one** `BandStatement` (Himalaya + rosette band) per page; it is the page's accent. Pine is for `ClosingCTA` without a photograph and the footer. Photography grounds are heroes, `PanoramaCaption` and `ClosingCTA`.
 
 Condition listing tiles: title + supporting sentence only. Do not repeat the group heading as a Badge, and do not add nights or decorative chips on that listing. Programme tiles may carry one focus label and a duration when those are not duplicated by a group heading.
 
