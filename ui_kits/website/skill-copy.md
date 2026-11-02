@@ -14,7 +14,7 @@ This skill is split into focused files under [`copy/`](copy/). Read the one rele
 
 | Part | Covers |
 | --- | --- |
-| [Voice and tone](copy/voice-and-tone.md) | Core principle, the voice, register, sentence-level habits, final review checklist |
+| [Voice and tone](copy/voice-and-tone.md) | Core principle, the voice, register, sentence-level habits, direct and natural language, final review checklist |
 | [Naming and NAP](copy/naming-and-nap.md) | Entity naming layers, business name, hilltop/acreage, room count, phone number, ownership, former names |
 | [Health claims and compliance](copy/health-claims-and-compliance.md) | Clinical claims, treatments, meals, booking/duration restrictions, pricing governance, AI authoring rules |
 | [Page copy patterns](copy/page-copy-patterns.md) | Headings, CTAs, forms, information-architecture leakage, rewrite patterns, public vs internal copy |
@@ -31,6 +31,7 @@ These are enforced everywhere; the linked part has the full rule.
 * **Never "four acres" / "4 acres" / "four hilltop acres".** "Hilltop" alone is fine. See [naming and NAP](copy/naming-and-nap.md#site-hilltop-not-acreage).
 * **"52 rooms"** at most once per site, never prominently (no stat tile, heading, or hero). See [naming and NAP](copy/naming-and-nap.md#rooms).
 * **Phone and WhatsApp**: stored as separate fields, both currently **+91 9553 600 100**. Email **heal@shantara.life**. See [naming and NAP](copy/naming-and-nap.md#one-contact-number).
+* **Plain and direct.** State facts and limitations explicitly. No softening, no "not every" when "some" says it, no words added to sound polished. See [voice and tone](copy/voice-and-tone.md#direct-and-natural-language).
 * **Guest**, not "patient" or "client", on public pages. See [voice and tone](copy/voice-and-tone.md#voice).
 * **No isolated prices** outside the tariff surface. See [health claims and compliance](copy/health-claims-and-compliance.md#pricing-must-remain-controlled).
 * **Nursing care and the personal attendant are different services.** Before writing about nursing, nurses, attendants, bystanders or helpers, read `docs/handbook/glossary.md` and follow the naming rules exactly.

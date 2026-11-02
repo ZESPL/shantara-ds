@@ -140,6 +140,33 @@ Aim for natural spoken English.
 
 ---
 
+## Direct and natural language
+
+Write in plain, direct English. State facts and limitations explicitly.
+
+* Prefer direct statements over indirect or softened constructions.
+* Avoid negative framing such as "not every", "not all", "not entirely" when a simpler sentence communicates the same fact.
+* Do not soften limitations to sound polite or reassuring.
+* Use short, natural sentences. Avoid unnecessarily elaborate phrasing.
+* Prefer specific facts over vague descriptions.
+* Do not add words merely to make sentences sound polished or professional.
+
+| Preferred | Avoid |
+| --- | --- |
+| Some areas are not wheelchair-accessible. | Not every area is wheelchair-accessible. |
+| The retreat has 52 rooms. | A total of 52 rooms are available at the retreat. |
+| Staff are available to assist guests. | Guests can be assured that assistance is available from our staff. |
+| The property has no lift. | Lift facilities are currently unavailable. |
+| Guests must inform us about mobility requirements before arrival. | We kindly request guests to let us know in advance if they have any mobility-related requirements. |
+
+The examples show sentence shape only. They are not approved facts: check every fact against `content/` and the handbook, and the room count still follows [naming and NAP](naming-and-nap.md#rooms).
+
+Write as a knowledgeable hospitality professional speaking plainly to a guest, not as a marketing copywriter.
+
+When choosing between two grammatically correct sentences, prefer the shorter, clearer and more direct one.
+
+---
+
 ## Inform before persuading
 
 Practical information should appear before promotional language.
@@ -403,3 +430,9 @@ If it only creates atmosphere, cut it or make it specific.
 Can this be said more directly with fewer words?
 
 If yes, simplify it.
+
+### Directness test
+
+Does the sentence soften a limitation, hedge with "not every" or "not all", or add words only to sound polished?
+
+If yes, state the fact plainly. See [direct and natural language](#direct-and-natural-language).
