@@ -159,7 +159,7 @@
         { name: "Detox", focus: "Metabolic", durations: "7–21 nights", photo: "water-wall", alt: "The water wall court", text: "Your doctor may recommend a meal plan or supervised fasting based on your assessment. Therapies may also form part of your programme.", slug: "detox" },
         { name: "Weight Management", focus: "Metabolic", durations: "14–21 nights", photo: "grounds", alt: "The grounds", text: "Meals, daily activity and therapies, with weight and vitals reviewed by a doctor each morning.", slug: "weight-management" },
       ];
-      const tiles = programmes.map((p) => <Tile key={p.slug} src={P + p.photo + ".jpg"} alt={p.alt} title={p.name} meta={[p.focus, p.durations]} text={p.text} href={"#/en/programs/" + p.slug} />);
+      const tiles = programmes.map((p) => <Tile key={p.slug} src={P + p.photo + ".jpg"} alt={p.alt} title={p.name} meta={[p.focus, p.durations]} text={p.text} href={"#/en/programmes/" + p.slug} />);
       const careSteps = [
         { title: "Consultation and assessment", text: "Our doctors consider your medical history, current health, lifestyle and goals." },
         { title: "A plan for you", text: "They then plan your treatments, meals, activity and rest." },
@@ -451,7 +451,7 @@
               {tiles[0]}
               <Tile src={P + "dining.jpg"} alt="The dining room" title="How meals are planned during a stay" meta={[{ icon: "tag", label: "Food & Recipes" }, { icon: "clock", label: "4 min read" }]} href="#/en/journal/how-meals-are-planned" />
             </div>
-            <Tile layout="row" src={P + "courtyard.jpg"} alt="The courtyard" meta={["Immersive", "21–28 nights"]} title="Complete Healing" text="For guests managing several long-standing conditions at once, across metabolic, musculoskeletal and mental health." href="#/en/programs/complete-healing" />
+            <Tile layout="row" src={P + "courtyard.jpg"} alt="The courtyard" meta={["Immersive", "21–28 nights"]} title="Complete Healing" text="For guests managing several long-standing conditions at once, across metabolic, musculoskeletal and mental health." href="#/en/programmes/complete-healing" />
           </div>;
         case "NumberedSteps":
           return <div className="stack" style={{ maxWidth: "none", gap: 64 }}>

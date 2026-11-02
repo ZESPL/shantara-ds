@@ -153,7 +153,7 @@ Frozen public Organization / NAP name: **Shantara Naturopathy Retreat**.
 
 Use short, stable, human-readable URLs.
 
-Prefer `/en/conditions/diabetes` and `/en/programs/weight-management`.
+Prefer `/en/conditions/diabetes` and `/en/programmes/weight-management`.
 
 Do not create ICP-named hubs or synonym doorway pages. Keyword and landing-page architecture for agencies is specified in [`docs/icp.md`](../../docs/icp.md); it does not override these URL rules.
 
@@ -187,7 +187,7 @@ Do not guess legacy URL mappings. Inspect the actual existing site before migrat
 
 ### Internal linking
 
-Create meaningful relationships: Condition → relevant Program; Program → Condition; Program → Therapy; Clinical Guide → Condition/Program; Doctor Answer → deeper Guide; Article → relevant core page.
+Create meaningful relationships: Condition → relevant Programme; Programme → Condition; Programme → Therapy; Clinical Guide → Condition/Programme; Doctor Answer → deeper Guide; Article → relevant core page.
 
 Editors set each link once, in `related_pages`; the build generates the reverse links. Therapy and room links point to their section on the single `/en/therapies` or `/en/rooms` page.
 
@@ -228,7 +228,7 @@ Use one Organization with a stable canonical `@id` across every locale. Its full
 - **Do not use** `Hospital`, spa types, or `HealthAndBeautyBusiness`: those mis-state the entity (hospital is the wrong local entity; spa framing is paid-exclusion territory).
 - Do not choose a medical schema type merely because it sounds advantageous; `MedicalClinic` is allowed here because the offer is a doctor-led residential clinic stay, not a beauty business.
 
-Localized web pages have a locale-specific `url` and `inLanguage`. Doctor and program identities stay on the same `@id` when their names are translated.
+Localized web pages have a locale-specific `url` and `inLanguage`. Doctor and programme identities stay on the same `@id` when their names are translated.
 
 Typical data: name; URL; logo; telephone; email; address; geo; opening hours; sameAs; contactPoint; lodging facts from the site record ([SCHEMA-03](search-visibility/schema.md)).
 
@@ -236,7 +236,7 @@ Typical data: name; URL; logo; telephone; email; address; geo; opening hours; sa
 
 Where appropriate: `MedicalWebPage`; `MedicalCondition`; `BreadcrumbList`; reviewer/author relationships; `lastReviewed`.
 
-### Programs
+### Programmes
 
 Where appropriate: `WebPage`; one node typed `["Service", "MedicalTherapy"]` with `relevantSpecialty` ([SCHEMA-10](search-visibility/schema.md)); `Offer` only where real visible commercial information exists; `BreadcrumbList`.
 
@@ -288,7 +288,7 @@ Can I continue my medication during a naturopathy stay?
 
 Prefer:
 
-> The 14-night program includes an initial doctor consultation, accommodation, prescribed therapies, meals according to the program plan, yoga sessions, and periodic review.
+> The 14-night programme includes an initial doctor consultation, accommodation, prescribed therapies, meals according to the programme plan, yoga sessions, and periodic review.
 
 over:
 
@@ -300,15 +300,15 @@ Do not invent the facts in that example if they have not been verified.
 
 ### Prioritize first-party information
 
-Strong content includes: actual program structure; actual clinicians; actual therapies; actual equipment; real sample schedules; real room categories; real dietary practices; real guest journeys; real travel information.
+Strong content includes: actual programme structure; actual clinicians; actual therapies; actual equipment; real sample schedules; real room categories; real dietary practices; real guest journeys; real travel information.
 
 Avoid generic AI-written wellness content that could belong to any retreat.
 
 ### Entity consistency
 
-Use consistent names for: **Shantara Naturopathy Retreat** (Organization); doctors; programs; therapies; locations; credentials.
+Use consistent names for: **Shantara Naturopathy Retreat** (Organization); doctors; programmes; therapies; locations; credentials.
 
-Do not rename the same program or doctor differently across pages without reason.
+Do not rename the same programme or doctor differently across pages without reason.
 
 Do not reintroduce legacy or parallel product strings (“Shantara Life Naturopathy”, “naturopathy and wellness retreat”, sanctuary / clinical-wellness product labels) in metadata or schema.
 

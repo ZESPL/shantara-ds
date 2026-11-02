@@ -142,7 +142,7 @@ export const FIXED_PAGES = {
       description: "Your doctor plans the stay after consultation.",
     },
   },
-  programs: {
+  programmes: {
     title: "Programmes for a residential stay",
     description: "Residential programmes at Shantara. Each one follows a doctor's consultation.",
     og: {
@@ -302,7 +302,7 @@ export function programmeShare(entry) {
     throw new Error(`${entry.slug}: programme name cannot be the picture headline; add it to PROGRAMME_HEADLINES`);
   }
   const line = usableLine(entry.proposition, headline, SUB_MAX.programme) || RESIDENTIAL;
-  return pageOf(`/en/programs/${entry.slug}`, entry.meta_title || entry.name, entry.meta_description || entry.proposition, {
+  return pageOf(`/en/programmes/${entry.slug}`, entry.meta_title || entry.name, entry.meta_description || entry.proposition, {
     template: "programme",
     title: headline,
     description: line,

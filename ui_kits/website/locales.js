@@ -174,8 +174,8 @@
   const KIT_VIEWS = {
     home: "",
     conditions: "conditions",
-    programme: "programs",
-    programs: "programs",
+    programme: "programmes",
+    programs: "programmes",
     experience: "experience",
     about: "about",
     journal: "journal",
@@ -196,7 +196,6 @@
   const VIEW_FROM_PATH = {
     "": "home",
     conditions: "conditions",
-    programs: "programme",
     programmes: "programme",
     experience: "experience",
     about: "about",

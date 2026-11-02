@@ -3,7 +3,7 @@ Replaces the white card on linen: photograph and text sit directly on the ground
 ```jsx
 <Tile src={photo} alt="A balcony over the valley" title="Stress Management"
   meta={["Mind", "7–14 nights"]}
-  text="Doctor-led routines, therapies and rest…" href="/en/programs/stress-management" />
+  text="Doctor-led routines, therapies and rest…" href="/en/programmes/stress-management" />
 
 {/* icon-led meta, for article lists and anywhere the row is scanned */}
 <Tile src={photo} alt="" title="How meals are planned during a stay"

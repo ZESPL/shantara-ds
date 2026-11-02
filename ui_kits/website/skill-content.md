@@ -46,7 +46,7 @@ Medical categories ([`content/medical-categories.json`](../../content/medical-ca
 | Collection | Its own fields | Page |
 | --- | --- | --- |
 | Condition | name; slug; category; summary; clinical body (Markdoc); medical reviewer (doctor); last medically reviewed | `/en/conditions/[slug]` |
-| Programme | name; slug; focus; proposition; durations; suitability; inclusions; clinicians (doctors). **No prices.** | `/en/programs/[slug]` |
+| Programme | name; slug; focus; proposition; durations; suitability; inclusions; clinicians (doctors). **No prices.** | `/en/programmes/[slug]` |
 | Therapy | name; slug; description; purpose; how it is used at Shantara | One `/en/therapies` page for all therapies. No page per therapy. |
 | Room | name; slug; summary; size; specification (`spec_line`); occupancy; balcony; amenities; gallery. **No prices.** | One `/en/rooms` page for all room categories. No page per room. |
 | Doctor | full name; slug; role; `photo_profile`; qualification; licences (issuing body only, never a registration number or joining date); years in practice; biography (Markdoc); areas of practice; professional memberships; publications; press; talks; videos; social posts; external profiles | Every doctor is listed on `/en/our-doctors`. Only Dr. Bahja Janu has a profile page (`/en/doctors/[slug]`), which lists her answers, reviewed articles, programmes, press, talks, videos and social posts. No other doctor gets one. |
@@ -146,7 +146,7 @@ Do not turn first contact into a full medical intake form.
 
 Do not ask questions merely because the CRM has fields for them.
 
-Do not calculate stay totals on this form or on program pages.
+Do not calculate stay totals on this form or on programme pages.
 
 ### Capture context automatically
 
@@ -256,7 +256,7 @@ High-priority recurring format.
 Examples:
 
 - Can I continue my existing medication during a naturopathy stay?
-- How long should a residential weight-management program be?
+- How long should a residential weight-management programme be?
 - What happens in the first naturopathy consultation?
 
 Recommended structure: question; short answer; detailed answer; doctor; credentials; sources where required; reviewed/updated date; related program/guide.
@@ -328,7 +328,7 @@ Treat E-E-A-T as an architectural/content requirement, not a badge. It applies i
 
 ### Experience
 
-Show first-hand Shantara reality: real facility photography; real therapy spaces; actual program process; actual food; actual rooms; actual day schedule; real clinicians; real guest stories.
+Show first-hand Shantara reality: real facility photography; real therapy spaces; actual programme process; actual food; actual rooms; actual day schedule; real clinicians; real guest stories.
 
 ### Expertise
 
@@ -408,7 +408,7 @@ Use only facts Shantara can verify.
 
 A clinical guide should educate.
 
-A program page should explain Shantara’s offering.
+A programme page should explain Shantara’s offering.
 
 Link them rather than disguising a sales page as neutral medical information.
 
@@ -426,4 +426,4 @@ Generate structured data from fields already required for the visible site.
 
 Medical review fields (`medical_reviewer`, `last_medically_reviewed`) should generate visible attribution and the appropriate schema relationship.
 
-Program pricing fields should power both visible pricing and `Offer` data where appropriate: **one source of truth, and in this repo that source is the tariff card.**
+Programme pricing fields should power both visible pricing and `Offer` data where appropriate: **one source of truth, and in this repo that source is the tariff card.**

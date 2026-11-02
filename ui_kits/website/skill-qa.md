@@ -118,16 +118,16 @@ Additionally verify:
 - [ ] Schema correctly links reviewer/condition/page.
 - [ ] Content is educational, not disguised advertising.
 
-## QA checklist: program pages
+## QA checklist: programme pages
 
 Verify:
 
-- [ ] What the program is is immediately clear.
+- [ ] What the programme is is immediately clear.
 - [ ] Intended audience is clear.
 - [ ] Audience is a health need where relevant, not only a programme name.
 - [ ] Duration/options are clear.
 - [ ] Inclusions are clear.
-- [ ] Pricing is clear if the business has chosen to publish it, **via the tariff card, not copied onto the program page**.
+- [ ] Pricing is clear if the business has chosen to publish it, **via the tariff card, not copied onto the programme page**.
 - [ ] Clinical oversight is explained.
 - [ ] Stay/experience is tangible.
 - [ ] Relevant conditions/therapies are linked appropriately.

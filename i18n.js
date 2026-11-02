@@ -60,7 +60,6 @@
     Property: "المكان",
     Visit: "الزيارة",
     "Book a Consultation": "احجز استشارة",
-    "View programs": "عرض البرامج",
     "View conditions": "عرض الحالات",
     "Our Story": "قصتنا",
     "Our Approach": "نهجنا",

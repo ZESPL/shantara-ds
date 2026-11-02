@@ -3,7 +3,7 @@ The 404 page body: a plain title, one line, a site search and a few useful links
 ```jsx
 <Section>
   <NotFoundSection links={[
-    { label: "Programmes", href: "/en/programs" }, { label: "Conditions", href: "/en/conditions" },
+    { label: "Programmes", href: "/en/programmes" }, { label: "Conditions", href: "/en/conditions" },
     { label: "Book a Consultation", href: "/en/book-consultation" }, { label: "Contact", href: "/en/contact" },
   ]} />
 </Section>

@@ -87,24 +87,24 @@ Create a condition page only when Shantara can provide:
 
 - meaningful original content;
 - a legitimate clinical perspective;
-- a relevant program or approach;
+- a relevant programme or approach;
 - medical review;
 - useful answers to prospective guests.
 
 Do not create dozens of thin condition pages in advance.
 
-## Programs
+## Programmes
 
 Use:
 
 ```text
-/en/programs
-/en/programs/[program-slug]
+/en/programmes
+/en/programmes/[programme-slug]
 ```
 
-Program pages are commercially important and should explain:
+Programme pages are commercially important and should explain:
 
-- what the program is;
+- what the programme is;
 - who it is intended for;
 - duration/options;
 - inclusions;
@@ -223,7 +223,7 @@ A page may be classified as:
 
 - home
 - condition
-- program
+- programme
 - experience
 - doctor
 - about
@@ -244,7 +244,7 @@ Prefer:
 
 ```text
 /en/conditions/diabetes
-/en/programs/weight-management
+/en/programmes/weight-management
 ```
 
 Every language uses the same families under its prefix (`/ar/conditions/diabetes` when that page is published). Root `/` is not an indexable duplicate of `/en`. Until localized slugs exist, English slugs may be reused under another prefix. Identity is the internal ID, not the slug.
@@ -265,10 +265,10 @@ Do not guess legacy URL mappings. Inspect the actual existing site before migrat
 
 Create meaningful relationships:
 
-- Condition → relevant Program
-- Program → Condition
-- Program → Therapy
-- Clinical Guide → Condition/Program
+- Condition → relevant Programme
+- Programme → Condition
+- Programme → Therapy
+- Clinical Guide → Condition/Programme
 - Doctor Answer → deeper Guide
 - Article → relevant core page
 
@@ -284,7 +284,7 @@ The Website Kit shows **one thin sample per family**, not every URL above.
 | --- | --- |
 | `/en` | `HomeScreen.js` |
 | `/en/conditions` | `ConditionsScreen.js` |
-| `/en/programs/[slug]` | `ProgrammeScreen.js` (Detox) |
+| `/en/programmes/[slug]` | `ProgrammeScreen.js` (Detox) |
 | Experience hub | `ExperienceScreen.js` |
 | About hub | `AboutScreen.js` |
 | Journal listing | `JournalScreen.js` |
@@ -292,6 +292,6 @@ The Website Kit shows **one thin sample per family**, not every URL above.
 | `/en/book-consultation` | `ConsultationScreen.js` |
 | Tariff / pricing | `TariffScreen.js` |
 
-The kit maps those families to hash routes (`#/en/`, `#/en/programs`). Production uses the real prefixed paths. Navigation labels come from the locale dictionary. Do not hard-code English in reusable nav. Footer contact data (phone, email, place) is globally stable; only the labels translate. Breadcrumb URLs stay in the current locale.
+The kit maps those families to hash routes (`#/en/`, `#/en/programmes`). Production uses the real prefixed paths. Navigation labels come from the locale dictionary. Do not hard-code English in reusable nav. Footer contact data (phone, email, place) is globally stable; only the labels translate. Breadcrumb URLs stay in the current locale.
 
 Do not expand the kit into the full production sitemap.

@@ -2,7 +2,7 @@
 
 Part of the [property handbook](../handbook.txt).
 
-Shantara's therapies draw from naturopathy principles. They work with natural elements and the body's own rhythms rather than overpowering it. Every therapy below may form part of a guest's personalised program, and is prescribed by a doctor rather than requested a la carte.
+Shantara's therapies draw from naturopathy principles. They work with natural elements and the body's own rhythms rather than overpowering it. Every therapy below may form part of a guest's personalised programme, and is prescribed by a doctor rather than requested a la carte.
 
 | Therapy | What it is / what it's for |
 | --- | --- |

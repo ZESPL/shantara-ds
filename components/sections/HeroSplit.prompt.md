@@ -3,7 +3,7 @@ The **offer** hero: a photograph on one side, running to the screen edge and the
 ```jsx
 <HeroSplit
   src="/assets/photos/water-wall.jpg" alt="The water wall court"
-  breadcrumbs={<Breadcrumbs items={[{ label: "Programmes", href: "/en/programs" }, "Detox"]} />}
+  breadcrumbs={<Breadcrumbs items={[{ label: "Programmes", href: "/en/programmes" }, "Detox"]} />}
   title="Detox"
   meta={[{ icon: "leaf", label: "Metabolic" }, { icon: "moon", label: "7–21 nights" }]}
   sub="Your doctor may recommend a meal plan or supervised fasting based on your assessment."

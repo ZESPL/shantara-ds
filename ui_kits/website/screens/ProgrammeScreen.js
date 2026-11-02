@@ -67,7 +67,7 @@ function ProgrammeScreen({ onNavigate }) {
         <HeroSplit
           src={window.photoSrc((programme.featured_image || {}).src || "water-wall")}
           alt={t("Water wall at the therapy wing")}
-          breadcrumbs={<Breadcrumbs items={[{ label: t("Programmes"), href: window.ShantaraLocales ? window.ShantaraLocales.kitHash(window.ShantaraI18n.currentLocaleCode(), "programme") : "#/en/programs" }, t(programme.name)]} />}
+          breadcrumbs={<Breadcrumbs items={[{ label: t("Programmes"), href: window.ShantaraLocales ? window.ShantaraLocales.kitHash(window.ShantaraI18n.currentLocaleCode(), "programme") : "#/en/programmes" }, t(programme.name)]} />}
           title={t(programme.name)}
           meta={[t("Naturopathy programme"), programme.durations ? t(programme.durations) : null].filter(Boolean)}
           sub={t(programme.proposition)}

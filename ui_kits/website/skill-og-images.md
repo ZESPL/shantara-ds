@@ -211,7 +211,7 @@ Share images are generated from the page metadata the site already builds for `<
 ```ts
 type PageMeta = {
   locale: EnabledLocale; // 'en'; sets og:locale, the image direction and the default image
-  path: string;          // canonical route: '/en/', '/en/programs/stress-management'
+  path: string;          // canonical route: '/en/', '/en/programmes/stress-management'
   title: string;         // page title without the brand suffix
   description?: string;  // meta description; a fixed page without one is noindex
   noindex?: boolean;
@@ -677,7 +677,7 @@ const m = resolveMeta(meta, Astro.site!);
 The tags sit inside the component's `<head>`, after the charset and viewport tags. Output on a programme page:
 
 ```html
-<meta property="og:image" content="https://shantara.life/open-graph/en/programs/stress-management.jpg">
+<meta property="og:image" content="https://shantara.life/open-graph/en/programmes/stress-management.jpg">
 <meta property="og:image:alt" content="Stress Management">
 ```
 

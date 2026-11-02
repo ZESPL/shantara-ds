@@ -66,13 +66,13 @@ test("locale persist is remembered and browser language only suggests enabled lo
 });
 
 test("internal links stay in the current locale", () => {
-  assert.equal(L.localePath("en", "programs"), "/en/programs");
+  assert.equal(L.localePath("en", "programmes"), "/en/programmes");
   assert.equal(L.localePath("en", "/conditions/diabetes"), "/en/conditions/diabetes");
-  assert.equal(L.kitHash("en", "programme"), "#/en/programs");
+  assert.equal(L.kitHash("en", "programme"), "#/en/programmes");
   assert.equal(L.kitHash("en", "home"), "#/en/");
   assert.equal(L.parseKitHash("#/en/conditions").view, "conditions");
   assert.equal(L.parseKitHash("#/").redirect, "#/en/");
-  assert.equal(L.parseKitHash("#/ar/programs").redirect, "#/en/programs");
+  assert.equal(L.parseKitHash("#/ar/programmes").redirect, "#/en/programmes");
   /* The founder is not a doctor: his profile is its own view at the locale root. */
   assert.equal(L.kitHash("en", "founder"), "#/en/pa-kareem");
   assert.equal(L.parseKitHash("#/en/pa-kareem").view, "founder");
@@ -90,32 +90,32 @@ test("lang and dir come from locale architecture", () => {
 test("disabled locales are hidden; no fake localized pages", () => {
   assert.equal(L.languageSelectorVisible({ currentLocale: "en" }), false);
   assert.deepEqual(L.languageSelectorOptions({ currentLocale: "en" }), []);
-  const disabled = L.normalizeRequest("/ar/programs");
+  const disabled = L.normalizeRequest("/ar/programmes");
   assert.equal(disabled.action, "redirect");
-  assert.equal(disabled.location, "/en/programs");
+  assert.equal(disabled.location, "/en/programmes");
   assert.equal(disabled.indexable, false);
-  assert.equal(L.equivalentHref("ar", { ar: { path: "programs", translation_status: "draft" } }), null);
-  assert.equal(L.equivalentHref("de", { de: { path: "programs", translation_status: "published" } }), null);
+  assert.equal(L.equivalentHref("ar", { ar: { path: "programmes", translation_status: "draft" } }), null);
+  assert.equal(L.equivalentHref("de", { de: { path: "programmes", translation_status: "published" } }), null);
 });
 
 test("canonical is self-referencing; translations do not canonicalize to English", () => {
-  assert.equal(L.canonicalUrl({ origin: "https://shantara.life", locale: "en", path: "programs" }), "https://shantara.life/en/programs");
-  assert.equal(L.canonicalUrl({ origin: "https://shantara.life", locale: "ar", path: "programs" }), "https://shantara.life/ar/programs");
+  assert.equal(L.canonicalUrl({ origin: "https://shantara.life", locale: "en", path: "programmes" }), "https://shantara.life/en/programmes");
+  assert.equal(L.canonicalUrl({ origin: "https://shantara.life", locale: "ar", path: "programmes" }), "https://shantara.life/ar/programmes");
 });
 
 test("hreflang is reciprocal and only emitted for published equivalents", () => {
   const onlyEn = L.hreflangAlternates({
     origin: "https://shantara.life",
-    pageTranslations: { en: { path: "programs", translation_status: "published" } },
+    pageTranslations: { en: { path: "programmes", translation_status: "published" } },
   });
   assert.deepEqual(onlyEn.map((l) => l.hreflang), ["en", "x-default"]);
-  assert.ok(onlyEn.every((l) => l.href.endsWith("/en/programs")));
+  assert.ok(onlyEn.every((l) => l.href.endsWith("/en/programmes")));
 
   const withDraftAr = L.hreflangAlternates({
     origin: "https://shantara.life",
     pageTranslations: {
-      en: { path: "programs", translation_status: "published" },
-      ar: { path: "programs", translation_status: "draft" },
+      en: { path: "programmes", translation_status: "published" },
+      ar: { path: "programmes", translation_status: "draft" },
     },
   });
   assert.equal(withDraftAr.some((l) => l.hreflang === "ar"), false);
@@ -126,17 +126,17 @@ test("sitemap lists only published localized pages", () => {
     origin: "https://shantara.life",
     pages: [
       {
-        slug: "programs",
+        slug: "programmes",
         translations: {
-          en: { path: "programs", translation_status: "published", lastmod: "2026-09-01" },
-          ar: { path: "programs", translation_status: "draft" },
+          en: { path: "programmes", translation_status: "published", lastmod: "2026-09-01" },
+          ar: { path: "programmes", translation_status: "draft" },
         },
       },
       { slug: "ghost", translations: { de: { translation_status: "published" } } },
     ],
   });
   assert.equal(entries.length, 1);
-  assert.equal(entries[0].loc, "https://shantara.life/en/programs");
+  assert.equal(entries[0].loc, "https://shantara.life/en/programmes");
   assert.equal(entries[0].lastmod, "2026-09-01");
   assert.ok(entries[0].alternates.some((a) => a.hreflang === "x-default"));
 });

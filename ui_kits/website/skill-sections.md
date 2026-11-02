@@ -67,7 +67,7 @@ Page
 
 The `sections[]` array is flexible.
 
-Do not make fixed condition/program/experience/story/contact templates.
+Do not make fixed condition/programme/experience/story/contact templates.
 
 ### Before composing any page
 
@@ -110,7 +110,7 @@ Typical uses: Home; Our Story; Farm & Dining; A Day at Shantara; possibly Rooms 
 
 Typical fields: title; meta row below the title (optional); supporting text (short); primary CTA (optional); secondary CTA (optional); image/video; optional short trust cue.
 
-Do not overload it with program tables, long copy, or multiple data points.
+Do not overload it with programme tables, long copy, or multiple data points.
 
 ### Editorial Hero
 
@@ -120,11 +120,11 @@ Typical uses: Conditions; Therapies; Our Approach; Clinical Guides; Doctor Answe
 
 Typical fields: title; category in the meta row below it; summary; optional image; optional author/reviewer metadata; optional updated/reviewed date.
 
-### Program Hero
+### Programme Hero
 
-Purpose: immediately explain a commercial program; communicate high-intent information.
+Purpose: immediately explain a commercial programme; communicate high-intent information.
 
-Typical fields: program title; concise proposition; optional image; duration/options; optional starting price (**only if already published on the tariff card; never invent**); short suitability statement; Book a Consultation CTA.
+Typical fields: programme title; concise proposition; optional image; duration/options; optional starting price (**only if already published on the tariff card; never invent**); short suitability statement; Book a Consultation CTA.
 
 Do not require every field if it is not relevant.
 
@@ -203,7 +203,7 @@ Component: `PanoramaCaption`. 21:9 on desktop, `mobileRatio` (default 4:5) on ph
 
 ### Card Collection
 
-Collections of entities: conditions; programs; therapies; rooms; doctors; articles; guest stories.
+Collections of entities: conditions; programmes; therapies; rooms; doctors; articles; guest stories.
 
 The section controls heading, introduction, selected items or a controlled query, and layout. Entity-specific cards remain separate configurations of `Tile`.
 
@@ -211,11 +211,11 @@ Component: `TileGrid`, with layout `3` (three across from 1000px), `2`, or `feat
 
 ### Feature Grid
 
-Program inclusions; facilities; amenities; principles; benefits; capabilities. Keep individual items short. Do not place paragraphs inside every feature tile.
+Programme inclusions; facilities; amenities; principles; benefits; capabilities. Keep individual items short. Do not place paragraphs inside every feature tile.
 
 ### Key Facts
 
-3–6 scannable data points. Examples: program duration; consultation type; room occupancy; supervision; meal plan; typical stay. Use for facts, not promotional slogans.
+3–6 scannable data points. Examples: programme duration; consultation type; room occupancy; supervision; meal plan; typical stay. Use for facts, not promotional slogans.
 
 ### Stats / Proof Strip
 
@@ -231,13 +231,13 @@ Component: `NumberedSteps`, with muted 01–04 numerals, a Medium item title and
 
 ### Timeline
 
-Chronological content: A Day at Shantara; company history; guest journey; program schedule. Do not build a separate schedule component when Timeline can do the job.
+Chronological content: A Day at Shantara; company history; guest journey; programme schedule. Do not build a separate schedule component when Timeline can do the job.
 
 Component: `TimeTable`, with the time column in olive, then a title and a line. Under 760px the time sits above the title.
 
 ### Table
 
-One general controlled table section for: room comparison; program comparison; sample menu; schedule; package comparison.
+One general controlled table section for: room comparison; programme comparison; sample menu; schedule; package comparison.
 
 Display modes may include: standard; comparison; schedule. Do not create a new component for every table use case.
 
@@ -302,7 +302,7 @@ Clinical sources; research references; guidelines; authoritative health referenc
 
 ### FAQ
 
-Contextual FAQs. Good examples: How long should I stay?; Can a companion stay with me?; What happens before arrival?; Should I bring my existing medicines?; What is included in the program?
+Contextual FAQs. Good examples: How long should I stay?; Can a companion stay with me?; What happens before arrival?; Should I bring my existing medicines?; What is included in the programme?
 
 Do not create a separate giant FAQ architecture unless needed.
 
@@ -310,7 +310,7 @@ Component: `Accordion`.
 
 ### Related Content
 
-Connect: condition → relevant program; program → relevant condition/therapy; article → condition/program; doctor answer → deeper clinical guide.
+Connect: condition → relevant programme; programme → relevant condition/therapy; article → condition/programme; doctor answer → deeper clinical guide.
 
 Keep relevance high. Do not use random “you may also like” content.
 
@@ -363,7 +363,7 @@ Example ProgramCard:
 
 ```text
 photograph (4:3)
-program name
+programme name
 one-line proposition
 duration
 ```
@@ -391,7 +391,7 @@ Rich Content
 Expert Quote
 Media + Content
 Feature Grid
-Related Program
+Related Programme
 Medical Reviewer
 FAQ
 Evidence / References
@@ -415,10 +415,10 @@ Consultation CTA
 
 The Arthritis page does not need to copy Diabetes.
 
-### Weight Management Program
+### Weight Management Programme
 
 ```text
-Program Hero
+Programme Hero
 Key Facts
 Rich Content: Who This Is For
 Feature Grid: Inclusions
@@ -436,7 +436,7 @@ Consultation CTA
 ### Executive Wellness
 
 ```text
-Program Hero
+Programme Hero
 Rich Content
 Feature Grid
 Package Table               ← tariff card if figures are required

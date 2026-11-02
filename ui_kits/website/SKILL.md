@@ -51,7 +51,7 @@ Prospective guests should answer, with minimum friction:
 
 1. What is Shantara?
 2. Can Shantara help with my need or condition?
-3. What program or experience is relevant to me?
+3. What programme or experience is relevant to me?
 4. What actually happens during a stay?
 5. Who is responsible for the clinical guidance?
 6. Why should I trust Shantara?
@@ -64,16 +64,16 @@ Primary business action, in visitor-facing language:
 
 Form chrome may use **Send your details**. Make the action easy without becoming aggressive, cluttered, or sales-heavy. Do not invent parallel primary CTAs. Do not use **Enquire about a stay** or **Request a consultation** as visitor-facing primary CTAs.
 
-Rates, currency amounts, “from …” figures, and stay totals appear **only** on the production tariff page, read from the Keystatic tariff. This design system and its documentation hold no rates, currencies or validity dates. The kit tariff screen and brand-deck tariff slides show the structure with “—”. Program, condition, enquiry, and home pages **link** to the tariff page. Do not invent prices.
+Rates, currency amounts, “from …” figures, and stay totals appear **only** on the production tariff page, read from the Keystatic tariff. This design system and its documentation hold no rates, currencies or validity dates. The kit tariff screen and brand-deck tariff slides show the structure with “—”. Programme, condition, enquiry, and home pages **link** to the tariff page. Do not invent prices.
 
 ## 2. Operating principles
 
 1. **Keep the architecture simple.** No generic page builder, no large backend for a marketing site, no CRM “just in case”, no dozens of analytics events, no hundreds of SEO landing pages, no parallel lead-capture flows, no one-component-per-page, no universal component with dozens of switches.
-2. **Page type describes meaning, not layout.** Types: home, condition, program, experience, doctor, about, article, contact, consultation, policy. Use them for CMS, schema, analytics, breadcrumbs, indexing, not to force a fixed template. A Diabetes page and an Arthritis page may use different sections.
+2. **Page type describes meaning, not layout.** Types: home, condition, programme, experience, doctor, about, article, contact, consultation, policy. Use them for CMS, schema, analytics, breadcrumbs, indexing, not to force a fixed template. A Diabetes page and an Arthritis page may use different sections.
 3. **Flexible pages, constrained sections.** Editors pick semantic sections (Process, FAQ, Expert, Gallery, Pricing, Feature Grid, Timeline), not Spacer, Row, Column, Heading, Paragraph, Button, or 50/50 layout.
 4. **One system wherever possible.** One consultation form, one lead entity, one analytics abstraction, one SEO metadata system, one schema generator, one type system, one spacing system, one section library, **one locale architecture**. Same components, sections, content models, tokens, analytics, schema, and lead form for every locale. Do not create `HomeEn` / `HomeAr`.
 5. **One job at every scale ([rule of one](../../docs/rule-of-one.md)).** A page has one idea and one primary action. A section makes one point with one photograph and at most one action. A view has one focal point and one primary button. If a page needs two ideas, it is two pages; if a section heading needs "and", it is two sections.
-6. **Evidence close to claims.** Medical claim → expert + source. Clinical process → doctor explanation. Program claim → inclusions/process. Guest experience → real photography/testimonial. Accreditation → exact credential. Facility claim → real facility photography.
+6. **Evidence close to claims.** Medical claim → expert + source. Clinical process → doctor explanation. Programme claim → inclusions/process. Guest experience → real photography/testimonial. Accreditation → exact credential. Facility claim → real facility photography.
 
 ## 3. Mental model
 
@@ -110,15 +110,15 @@ URL families are **locale-prefixed for every language, including English**:
 ```text
 /en/conditions
 /en/conditions/diabetes
-/en/programs
-/en/programs/[program-slug]
+/en/programmes
+/en/programmes/[programme-slug]
 ```
 
 Root `/` is the x-default entry and redirects to `/en` (or a remembered enabled locale). Do not force locale by IP. Do not leave `/` and `/en` both indexable. Only a published localized URL is canonical.
 
 Do not invent condition-category SEO hubs (`/en/conditions/metabolic-lifestyle/diabetes`). Group visually on `/en/conditions` without creating indexable category pages.
 
-Create a condition page only when Shantara can provide original content, a legitimate clinical perspective, a relevant program, medical review, and useful answers. Do not pre-build dozens of thin condition pages.
+Create a condition page only when Shantara can provide original content, a legitimate clinical perspective, a relevant programme, medical review, and useful answers. Do not pre-build dozens of thin condition pages.
 
 Experience pages (typical, not mandatory as individual URLs): Therapies, Rooms & Suites, Amenities & Activities, Farm & Dining, A Day at Shantara. Do not create a page per therapy or room category by default.
 
@@ -211,9 +211,9 @@ Primary funnel: Page View → Consultation CTA Click → Form Start → Generate
 
 SEO is part of the page system. Every **published localized** page: own URL, localized title/description/OG, self-referencing canonical, `hreflang` (only for locales that actually have that page), `inLanguage`, crawlable internal links in the current locale.
 
-Prefer `/en/conditions/diabetes` and `/en/programs/weight-management`. Avoid keyword-variation pages and invented hub depth. Do not canonicalize a translation back to English.
+Prefer `/en/conditions/diabetes` and `/en/programmes/weight-management`. Avoid keyword-variation pages and invented hub depth. Do not canonicalize a translation back to English.
 
-Generate schema from visible entity data. One Shantara organization `@id` across locales. Doctor and program identities stay stable; names may translate. Do not add invisible claims. Do not ask editors to write JSON-LD. `Offer` only where real visible commercial information exists. In this repo, that means the tariff card, not invented program prices.
+Generate schema from visible entity data. One Shantara organization `@id` across locales. Doctor and programme identities stay stable; names may translate. Do not add invisible claims. Do not ask editors to write JSON-LD. `Offer` only where real visible commercial information exists. In this repo, that means the tariff card, not invented programme prices.
 
 Do not create separate “AEO pages” or “GEO pages”. Answer real questions first, then expand. Prefer first-party facts over generic wellness copy. Do not treat `llms.txt` as a major SEO project.
 
@@ -231,7 +231,7 @@ Health content is an architectural requirement, not a badge.
 
 **All public-facing language follows [skill-copy.md](skill-copy.md).** Clarity first, warmth second, brand expression third. Write for a prospective guest. Do not narrate information architecture, invent booking restrictions (the minimum stay is 7 nights; see [copy/health-claims-and-compliance.md](copy/health-claims-and-compliance.md)), scatter prices, or convert design rationale into page copy.
 
-Do not invent content, credentials, prices, medical facts, or program details. Flag missing facts.
+Do not invent content, credentials, prices, medical facts, or programme details. Flag missing facts.
 
 ## 10. Performance and accessibility
 
@@ -265,7 +265,7 @@ When asked to modify Shantara’s website:
 2. Preserve working patterns unless there is a clear reason to replace them.
 3. Make the least invasive change that solves the task.
 4. Reuse existing sections/components.
-5. Do not invent content, credentials, prices, medical facts, or program details. Prefer `content/`; empty folders and `draft` records mean do not fabricate.
+5. Do not invent content, credentials, prices, medical facts, or programme details. Prefer `content/`; empty folders and `draft` records mean do not fabricate.
 6. Flag missing information explicitly.
 7. Do not introduce dependencies casually.
 8. Do not redesign unrelated pages.
@@ -287,7 +287,7 @@ These files are **previews** of the skill, not the live site:
 | --- | --- | --- |
 | `screens/HomeScreen.js` | home | `HeroFullBleed`, approach, doctors, programme tiles + roomy index, therapies, rooms, journal, FAQ |
 | `screens/ConditionsScreen.js` | condition listing | Visual grouping only; no category URLs |
-| `screens/ProgrammeScreen.js` | program | `HeroSplit` + booking panel; tariff link, no rates |
+| `screens/ProgrammeScreen.js` | programme | `HeroSplit` + booking panel; tariff link, no rates |
 | `screens/ExperienceScreen.js` | experience hub | Therapies, rooms, farm, a day; not one page per room |
 | `screens/AboutScreen.js` | about hub | Story, approach, doctors, editorial policy |
 | `screens/JournalScreen.js` | article listing | `HeroStatement` → `Tabs` → `TileGrid` → `Pagination` |
@@ -334,13 +334,13 @@ Arabic is the first language to localise later. When that project starts: enable
 
 ### URLs, slugs, root
 
-Every published URL is locale-prefixed, including English: `/en`, `/en/programs`, later `/ar/…`.
+Every published URL is locale-prefixed, including English: `/en`, `/en/programmes`, later `/ar/…`.
 
 - `/` is x-default. It may redirect to `/en` or a remembered **enabled** locale. It is not a second indexable English homepage.
 - No path ends in a slash, including the locale home: `/en/` 301s to `/en`, and every other path drops a trailing slash the same way ([URL-02](search-visibility/urls.md)).
 - `/ar` and `/ar/` are not published while `ar` is disabled.
 - Do not force locale by IP. `Accept-Language` may **suggest** once; an explicit choice is remembered (`shantara-locale`). The suggestion is never irreversible.
-- Content identity uses stable internal IDs, not translated slugs. Relationships reference IDs. Localized slugs are allowed later; until then English slugs may be reused under the locale prefix (`/ar/programs/detox`). Document the reuse; do not make identity depend on the slug.
+- Content identity uses stable internal IDs, not translated slugs. Relationships reference IDs. Localized slugs are allowed later; until then English slugs may be reused under the locale prefix (`/ar/programmes/detox`). Document the reuse; do not make identity depend on the slug.
 
 ### Language selector
 
@@ -358,11 +358,11 @@ Each language is a folder of files with the same filenames as English, holding o
 
 Distinguish: medical review of the English source; language/translation review; localized clinical review. Schema and bylines must not claim the English reviewer signed off the translation unless they did. E-E-A-T applies independently per translation. Do not strengthen or weaken claims, change certainty, medication, terminology, or contraindications in translation.
 
-UI strings (nav, buttons, form labels, validation, statuses) live in a locale dictionary. Editorial content (heroes, programs, clinical, FAQs, testimonials, articles) lives on the entity. Not one massive file. Do not embed marketing sentences in presentation components.
+UI strings (nav, buttons, form labels, validation, statuses) live in a locale dictionary. Editorial content (heroes, programmes, clinical, FAQs, testimonials, articles) lives on the entity. Not one massive file. Do not embed marketing sentences in presentation components.
 
 ### Fallback and collections
 
-Never silently mix languages on one page. Never render an English body under an `/ar/` URL. If a translated page does not exist, do not fabricate it. Omit the link, or explicitly offer English. Related programs on an Arabic page return Arabic records where available. Do not expose untranslated drafts.
+Never silently mix languages on one page. Never render an English body under an `/ar/` URL. If a translated page does not exist, do not fabricate it. Omit the link, or explicitly offer English. Related programmes on an Arabic page return Arabic records where available. Do not expose untranslated drafts.
 
 Internal links are generated centrally (`localePath`). Stay in the current locale when the equivalent exists.
 
@@ -378,13 +378,13 @@ Diodrum covers Latin and Cyrillic. **IBM Plex Sans Arabic** is the Arabic counte
 
 Each published localized page has its own URL, localized metadata, self-canonical, and reciprocal `hreflang` (enabled locales that actually have that page) plus `x-default`. XML sitemap lists only published localized URLs. Do not generate seven empty trees.
 
-Schema: one Organization `@id`. WebPage `url` and `inLanguage` follow the locale. Doctor and program `@id`s stay stable across locales.
+Schema: one Organization `@id`. WebPage `url` and `inLanguage` follow the locale. Doctor and programme `@id`s stay stable across locales.
 
 `track(name, props)` adds `locale` centrally. Event names stay English.
 
 ### This kit vs production
 
-Sample screens illustrate the skill. They are not a production website. The kit uses hash routes (`#/en/`, `#/en/programs`) that map to the production URL families above. Catalog LTR/RTL and `ui_kits/website/?fixture=rtl` are **development fixtures** for visual QA. They are not published Arabic pages.
+Sample screens illustrate the skill. They are not a production website. The kit uses hash routes (`#/en/`, `#/en/programmes`) that map to the production URL families above. Catalog LTR/RTL and `ui_kits/website/?fixture=rtl` are **development fixtures** for visual QA. They are not published Arabic pages.
 
 Initial build in this system: English samples, locale-aware routing, central config, LanguageSelector (always rendered; other locales "Coming soon"), RTL-ready components, Arabic type tokens, localized metadata helpers, hreflang/sitemap/schema/analytics helpers, documentation. It is not a translated website.
 

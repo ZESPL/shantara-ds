@@ -17,7 +17,7 @@ All current medications must be declared during the preliminary consultation, an
 
 ### Scope of non-medical staff
 
-- Non-medical staff may describe therapies, programs, and the general philosophy of naturopathy in the terms provided in this handbook.
+- Non-medical staff may describe therapies, programmes, and the general philosophy of naturopathy in the terms provided in this handbook.
 - Non-medical staff must never diagnose, promise a health outcome, advise on medication changes, or contradict a doctor's recommendation to a guest.
 - When in doubt, the correct answer is to say: "Let me check with the doctor on that for you."
 

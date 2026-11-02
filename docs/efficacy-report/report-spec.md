@@ -377,7 +377,7 @@ The first edition is meant to cover the past 3 months of clinical data. The hand
 **Found in handbook**
 
 - Do not quote the 30-second "wellness retreat" line as public copy. Do not use "patients" or "wellness retreat" as public product language. `docs/handbook.txt`, `docs/handbook/communication.md`
-- Terms staff should use: "Doctor-guided", "personalised program", "root cause", and "naturopathy protocol". `docs/handbook/communication.md`
+- Terms staff should use: "Doctor-guided", "personalised programme", "root cause", and "naturopathy protocol". `docs/handbook/communication.md`
 - Do not promise cures or specific medical outcomes. The handbook's example to avoid is "this will cure your diabetes". Describe support and lifestyle correction. Do not give guarantees. `docs/handbook/communication.md`
 - Do not call a wellness or retreat booking a "hospital stay". Hospital framing is reserved for genuinely clinical or medical-programme contexts. `docs/handbook/communication.md`
 - Non-medical staff must never diagnose, promise a health outcome, advise on medication changes, or contradict a doctor. `docs/handbook/protocols.md`

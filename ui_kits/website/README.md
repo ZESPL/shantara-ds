@@ -59,7 +59,7 @@ rtl-fixture.html
 | `screens/ConsultationScreen.js` | One short consultation form |
 | `screens/TariffScreen.js` | Dedicated tariff card, the only surface that quotes rates |
 
-Locale config: `locales.js` (`window.ShantaraLocales`). Shared UI strings: root `i18n.js`. Sample routing uses locale-prefixed hashes (`#/en/`, `#/en/programs`).
+Locale config: `locales.js` (`window.ShantaraLocales`). Shared UI strings: root `i18n.js`. Sample routing uses locale-prefixed hashes (`#/en/`, `#/en/programmes`).
 
 **Deliberately not built in this kit:** individual condition pages; therapy and room pages (production has one page each for all therapies and all rooms); Keystatic/Astro app wiring; production analytics/SEO endpoints; multiple forms; stay-total calculators; translated AR/DE/FR/RU/HI/ML website content. Production stack lives in [`skill-stack.md`](skill-stack.md).
 

@@ -6,7 +6,7 @@ The closing call to action (deck slide 18). **Use ClosingCTA only on pages that 
   title="A stay is confirmed after a doctor has spoken with you."
   sub="Share your name and a number we can reach. Our team will contact you to arrange a consultation."
   action={<Button size="lg">Book a Consultation</Button>}
-  secondaryAction={<TextLink href="/en/programs">View programmes</TextLink>}
+  secondaryAction={<TextLink href="/en/programmes">View programmes</TextLink>}
   contact={[
     { icon: "phone", label: "+91 9553 600 100", href: "tel:+919553600100" },
     { icon: "mail", label: "heal@shantara.life", href: "mailto:heal@shantara.life" },

@@ -6,11 +6,11 @@ Do not quote the 30-second line on this page, or use “patients” / “wellnes
 
 ### How to describe Shantara in 30 seconds
 
-> Shantara is a naturopathy wellness retreat in Kozhikode, built on more than two decades of clinical naturopathy practice. Every guest starts with a doctor consultation, and their program of treatments, therapies, and diet is personalised from there. It's a place to slow down and let the body reset, guided by medical care rather than left to chance.
+> Shantara is a naturopathy wellness retreat in Kozhikode, built on more than two decades of clinical naturopathy practice. Every guest starts with a doctor consultation, and their programme of treatments, therapies, and diet is personalised from there. It's a place to slow down and let the body reset, guided by medical care rather than left to chance.
 
 ### Terms staff should use
 
-"Doctor-guided," "personalised program," "root cause," and "naturopathy protocol"
+"Doctor-guided," "personalised programme," "root cause," and "naturopathy protocol"
 
 ### Terms and claims staff should avoid
 

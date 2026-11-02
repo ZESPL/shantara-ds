@@ -87,4 +87,4 @@ All treatments and therapies follow the doctor's prescription, and package inclu
 
 ### Post-stay support
 
-Guests who complete a program remain part of the Shantara family, and doctors remain available through online follow-up appointments to discuss concerns and provide continued guidance as guests update the team on their progress.
+Guests who complete a programme remain part of the Shantara family, and doctors remain available through online follow-up appointments to discuss concerns and provide continued guidance as guests update the team on their progress.

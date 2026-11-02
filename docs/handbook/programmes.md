@@ -76,7 +76,7 @@ Supports the body in restoring blood-sugar regulation naturally through lifestyl
 
 ### Complete Healing
 
-A deeper, more immersive program for guests managing multiple or long-standing concerns. It treats the body as a whole, addressing physical, mental, and metabolic health together through sustained naturopathic care.
+A deeper, more immersive programme for guests managing multiple or long-standing concerns. It treats the body as a whole, addressing physical, mental, and metabolic health together through sustained naturopathic care.
 
 **Who it's suited for**
 
@@ -97,7 +97,7 @@ A short reset for guests with limited time, offering rest, relaxation, and gentl
 **Who it's suited for**
 
 - Feel mentally or physically drained
-- Have limited time for extended programs
+- Have limited time for extended programmes
 - Seek a short wellness break
 
 **What guests typically notice**
@@ -156,7 +156,7 @@ Supports guests who want to stay capable, independent, and well for as long as p
 
 ### Corporate Retreats
 
-Group programs for organisations that help teams slow down, reset, and return with renewed energy and cohesion. Therapies and schedule are curated based on group size and objectives.
+Group programmes for organisations that help teams slow down, reset, and return with renewed energy and cohesion. Therapies and schedule are curated based on group size and objectives.
 
 **Who it's suited for**
 

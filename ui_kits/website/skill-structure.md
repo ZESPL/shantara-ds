@@ -77,7 +77,7 @@ src/
     images.ts         stored image path → Astro ImageMetadata; throws on a missing file
     routes.ts         the only place URLs are built: (type, id, locale) → path or anchor; DOCTOR_PROFILES
     i18n.ts           locale list, dictionary lookup (labels stay in locales.js)
-    schema.ts         @id builders (#doctor-{id}, #program-{id}, …)
+    schema.ts         @id builders (#doctor-{id}, #programme-{id}, …)
     track.ts          the one analytics abstraction (OpenPanel + Google Tag)
     lead-context.ts   locale, page type, content ID, UTMs → hidden form fields
     seo/meta.ts       PageMeta → document title (the one template), canonical, robots, Open Graph
@@ -109,8 +109,8 @@ Every URL carries a locale prefix, and `check-routes.mjs` enforces it ([Build ch
 | `/en` | `index.astro` | `copy/en/home.ts` and `featured` entities | `WebPage` |
 | `/en/conditions` | `conditions/index.astro` | conditions | `CollectionPage` + `ItemList` + `BreadcrumbList` |
 | `/en/conditions/{slug}` | `conditions/[slug].astro` | condition | `MedicalWebPage` + `MedicalCondition` + `BreadcrumbList`, `reviewedBy` pointing to the doctor's `Person` `@id` |
-| `/en/programs` | `programs/index.astro` | programs | `CollectionPage` + `ItemList` + `BreadcrumbList` |
-| `/en/programs/{slug}` | `programs/[slug].astro` | program | `WebPage` + `["Service", "MedicalTherapy"]` + `BreadcrumbList` (no `offers`) |
+| `/en/programmes` | `programmes/index.astro` | programs | `CollectionPage` + `ItemList` + `BreadcrumbList` |
+| `/en/programmes/{slug}` | `programmes/[slug].astro` | program | `WebPage` + `["Service", "MedicalTherapy"]` + `BreadcrumbList` (no `offers`) |
 | `/en/therapies` | `therapies.astro` | therapies, one section per therapy with `id="{slug}"` | `WebPage` + `BreadcrumbList` |
 | `/en/rooms` | `rooms.astro` | rooms, one section each plus a comparison `SpecTable` | `WebPage` + `BreadcrumbList` |
 | `/en/amenities-activities` | `amenities-activities.astro` | `copy/en/amenities-activities.ts` | `WebPage` + `BreadcrumbList` |

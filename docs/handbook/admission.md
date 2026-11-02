@@ -18,7 +18,7 @@ Our doctors reserve the right to decline admission if a guest's condition requir
 
 ### Age policy
 
-Guests below 18 or above 80 years of age are not permitted to participate in programs, due to the specialised therapeutic nature of the treatments and clinical protocols involved.
+Guests below 18 or above 80 years of age are not permitted to participate in programmes, due to the specialised therapeutic nature of the treatments and clinical protocols involved.
 
 Minors aged 14 to 17 may be accommodated only as non-participating companions, and only upon a doctor's recommendation.
 

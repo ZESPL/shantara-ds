@@ -1,7 +1,7 @@
 Locale switcher for the public website header and mobile nav. Catalog documentation for this control is English.
 
 ```jsx
-<LanguageSelector locale="en" rest="programs" onSelect={(code) => navigate(code)} />
+<LanguageSelector locale="en" rest="programmes" onSelect={(code) => navigate(code)} />
 ```
 
 Do not use flags. The trigger shows a globe, the compact code (`EN`) and a small chevron. The list shows every planned language by its native name: the current one ticked, enabled ones as links, and languages not yet published listed disabled with “Coming soon”. The control always renders. It never hides itself while only English is enabled.

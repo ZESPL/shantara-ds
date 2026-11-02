@@ -2,7 +2,7 @@ Short items gathered under group headings: programmes by focus, therapies by kin
 
 ```jsx
 <GroupedList columns={3} groups={[
-  { label: "Metabolic", items: ["Detox", { label: "Weight Management", href: "/en/programs/weight-management" }] },
+  { label: "Metabolic", items: ["Detox", { label: "Weight Management", href: "/en/programmes/weight-management" }] },
   { label: "Mind", items: ["Stress Management"] },
 ]} />
 ```
