@@ -12,7 +12,7 @@ const CSS = `
 .sh-spec thead th{font:var(--type-body);color:var(--text-secondary);padding-bottom:var(--space-3)}
 .sh-spec tbody th{font:var(--type-body);color:var(--text-primary)}
 .sh-spec td{color:var(--text-secondary);font:var(--type-body)}
-@media (min-width:520px){.sh-spec td{white-space:nowrap}}
+@media (min-width:520px){.sh-spec td,.sh-spec thead th:not(:first-child){white-space:nowrap}}
 .sh-spec td[data-accent="true"]{color:var(--text-brand);font:var(--type-body);font-variant-numeric:tabular-nums}
 .sh-spec td[data-align="end"],.sh-spec th[data-align="end"]{text-align:end}
 .sh-spec[data-rules="true"] tbody tr{border-top:var(--border-width) solid var(--rule-color)}

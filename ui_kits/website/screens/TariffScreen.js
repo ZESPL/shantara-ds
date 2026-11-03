@@ -81,8 +81,8 @@ function TariffScreen({ onNavigate }) {
                 caption={t("Nightly rates, per room, including all taxes")}
                 columns={[
                   { key: "name", label: t("Room") },
-                  { key: "single", label: t("Single") + " (—)", accent: true, mobileLabel: true },
-                  { key: "double", label: t("Double") + " (—)", accent: true, mobileLabel: true },
+                  { key: "single", label: t("Single") + " (—)", accent: true, align: "end", mobileLabel: true },
+                  { key: "double", label: t("Double") + " (—)", accent: true, align: "end", mobileLabel: true },
                 ]}
                 rows={rooms.map((r) => ({ name: t(r.name), single: "—", double: "—" }))}
               />
@@ -116,7 +116,7 @@ function TariffScreen({ onNavigate }) {
                 columns={[
                   { key: "label", label: t("Charge") },
                   { key: "basis", label: t("Charged"), mobileLabel: true },
-                  { key: "amount", label: t("Amount") + " (—)", accent: true, mobileLabel: true },
+                  { key: "amount", label: t("Amount") + " (—)", accent: true, align: "end", mobileLabel: true },
                 ]}
                 rows={(tariff.supplements || []).map((s) => ({ label: t(s.label), basis: t(s.basis), amount: "—" }))}
               />
