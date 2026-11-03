@@ -1,6 +1,8 @@
 /* Rates and currencies are not stored in this design system. The production site reads them
    from its Keystatic Tariffs collection, one page per currency at /en/tariff/{code}
-   (/en/tariff redirects to one of them); this sample shows the structure with "—" cells. */
+   (/en/tariff redirects to one of them); this sample shows the structure with "—" cells.
+   A money column names its currency once, in its title ("Single (INR)"); cells show the
+   amount alone with two decimal places ("14,200.00") (RATE-02). */
 const TARIFF_ROOM_ORDER = ["executive-suite", "junior-suite", "premium-room", "superior-room", "standard-room"];
 
 function tariffRooms() {
@@ -79,8 +81,8 @@ function TariffScreen({ onNavigate }) {
                 caption={t("Nightly rates, per room, including all taxes")}
                 columns={[
                   { key: "name", label: t("Room") },
-                  { key: "single", label: t("Single"), accent: true, mobileLabel: true },
-                  { key: "double", label: t("Double"), accent: true, mobileLabel: true },
+                  { key: "single", label: t("Single") + " (—)", accent: true, mobileLabel: true },
+                  { key: "double", label: t("Double") + " (—)", accent: true, mobileLabel: true },
                 ]}
                 rows={rooms.map((r) => ({ name: t(r.name), single: "—", double: "—" }))}
               />
@@ -114,7 +116,7 @@ function TariffScreen({ onNavigate }) {
                 columns={[
                   { key: "label", label: t("Charge") },
                   { key: "basis", label: t("Charged"), mobileLabel: true },
-                  { key: "amount", label: t("Amount"), accent: true, mobileLabel: true },
+                  { key: "amount", label: t("Amount") + " (—)", accent: true, mobileLabel: true },
                 ]}
                 rows={(tariff.supplements || []).map((s) => ({ label: t(s.label), basis: t(s.basis), amount: "—" }))}
               />
