@@ -2,7 +2,7 @@ A guest's own words: one story with an optional photograph of the place, or two 
 
 ```jsx
 <Section>
-  <GuestStory story={{ quote: story.quote, name: story.consented_name, context: "Detox · 14 nights", src: "/assets/photos/balcony-lounge-infinity-edge-valley.jpg", alt: "The balcony lounge" }} />
+  <GuestStory story={{ quote: story.quote, name: story.consented_name, context: "Detox · 14 nights", src: "/assets/photos/interior-infinity-edge-valley.jpg", alt: "An indoor sitting space looking onto the valley" }} />
 </Section>
 <GuestStory title="Guests in their own words" stories={[…]} />
 ```

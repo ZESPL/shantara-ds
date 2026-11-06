@@ -185,7 +185,7 @@ Share previews are small: a 1200 px image is often shown about 500 px wide. Noth
 
 ## 5. Photography
 
-- **Use the page's own photograph.** Fixed pages use their hero. Entries use `featured_image`, which is already the photograph editors choose for the page ([skill-content.md](skill-content.md#shared-fields)). Doctor profiles use `photo_profile`. Pages with no photograph use `site/valley.jpg`.
+- **Use the page's own photograph.** Fixed pages use their hero. Entries use `featured_image`, which is already the photograph editors choose for the page ([skill-content.md](skill-content.md#shared-fields)). Doctor profiles use `photo_profile`. Pages with no photograph use `site/lobby-valley.jpg`.
 - **Photographs always come from the English entry.** Translated files carry text only ([skill-content.md](skill-content.md#languages)), so a translated page's share image uses the same photograph as the English one.
 - **Guest privacy applies unchanged.** Use a frame whose public use is **Yes** in [`assets/photos/README.md`](../../assets/photos/README.md). Its catalogue entry says where the quiet area is. Never treatment in progress, faces in therapy or room numbers.
 - **For the `default` template, choose a frame whose lower left is quiet and fairly dark.** The scrim protects contrast, but a bright sky or white wall behind the title still reads badly at preview size.
@@ -220,7 +220,7 @@ type PageMeta = {
     title?: string;       // defaults to title
     description?: string; // defaults to description
     template?: 'default' | 'programme' | 'editorial'; // defaults to 'default'
-    photo?: string;       // project-relative JPEG, e.g. 'src/assets/images/site/arrival-dusk.jpg'
+    photo?: string;       // project-relative JPEG, e.g. 'src/assets/images/site/porch-lobby-dusk.jpg'
     line?: boolean;       // false keeps the supporting line off the image; og:description is unchanged
     image?: string;       // manual override in public/, e.g. '/og/monsoon-2027.jpg' (section 9)
     imageAlt?: string;    // required with image
@@ -345,7 +345,7 @@ export type PageMeta = {
 };
 
 export const SITE_NAME = 'Shantara Naturopathy Retreat';
-export const OG_DEFAULT_PHOTO = 'src/assets/images/site/valley.jpg';
+export const OG_DEFAULT_PHOTO = 'src/assets/images/site/lobby-valley.jpg';
 
 export const ogDefaultImage = (locale: EnabledLocale) => (locale === 'en' ? '/og-default.jpg' : `/og-default-${locale}.jpg`);
 
@@ -422,7 +422,7 @@ const FIXED_PAGES: Record<EnabledLocale, Record<FixedKey, FixedPage>> = {
         template: 'default',
         title: 'A doctor-led stay in Keralam',
         description: "Every stay begins with a doctor's consultation.",
-        photo: 'src/assets/images/site/arrival-dusk.jpg',
+        photo: 'src/assets/images/site/porch-lobby-dusk.jpg',
       },
     },
     therapies: {

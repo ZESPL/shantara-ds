@@ -1,7 +1,7 @@
 A photograph running to the edge of the screen on one side and a bottom-aligned text column on the other (deck slides 4, 6 and 13).
 
 ```jsx
-<SplitSection src="/assets/photos/balcony.jpg" alt="A balcony over the valley" mediaSide="start">
+<SplitSection src="/assets/photos/open-deck.jpg" alt="The open deck" mediaSide="start">
   <Statement meta={["Mind", "7–14 nights"]} sub="Doctor-led routines, therapies and rest for guests managing sustained stress, poor sleep or fatigue.">
     Stress Management
   </Statement>

@@ -35,22 +35,25 @@ All frames here are **Yes**. Read the catalogue entry before placing type, so th
 
 | Job | First choice | Alternatives | Notes |
 | --- | --- | --- | --- |
-| Home or page hero, landscape | `exterior-entrance-dusk-lit-canopy` | `arrival-dusk`, `lounge-double-height-valley-guest`, `balcony-lounge-stump-table-valley`, `terrace-cafe-wave-ceiling-valley` | Dusk frames suit a dark ground. `terrace-cafe-wave-ceiling-valley` has a full-height plain wall on the left for type |
-| Hero, portrait or mobile crop | `valley` | `exterior-cobblestone-patio-valley-guest`, `balcony-lounge-infinity-edge-valley`, `room-premium`, `grounds-garden-wall-wide-textured-wall-guest-portrait-2x3` | Each has sky or a plain wall in the upper half |
-| Large calm area for a headline | `grounds-garden-wall-wide-textured-wall-guest-portrait-2x3` (wall) | `exterior-entrance-dusk-suv` (sky; a parked SUV at right), `grounds` (sky, upper left), `dining-table-two-chairs` (wall), `leisure-water-wall-lounge-golden-hour-reading-guest-landscape-3x2` (dark wall, upper left) | Type over photography still sits inside `--scrim-hero` or a glass capsule |
-| Arrival, getting here | `exterior-day` | `exterior-entrance-dusk-driveway`, `arrival-dusk`, `lobby`, `reception-desk-small-window` | `exterior-day` and the dusk frames show the SHANTARA sign |
+| Home or page hero, landscape | `porch-dusk-lit-canopy` | `porch-lobby-dusk`, `lobby-double-height-valley-guest`, `interior-stump-table-valley`, `open-deck-wave-ceiling-valley` | Dusk frames suit a dark ground. `open-deck-wave-ceiling-valley` has a full-height plain wall on the left for type. `porch-lobby-dusk` is the lobby seen from the porch |
+| Hero, portrait or mobile crop | `lobby-valley` | `exterior-cobblestone-patio-valley-guest`, `interior-infinity-edge-valley`, `room-premium`, `grounds-garden-wall-wide-textured-wall-guest-portrait-2x3` | Each has sky or a plain wall in the upper half. `lobby-valley` is the lobby, looking out |
+| Large calm area for a headline | `grounds-garden-wall-wide-textured-wall-guest-portrait-2x3` (wall) | `porch-dusk-suv` (sky; a parked SUV at right), `grounds` (sky, upper left), `dining-table-two-chairs` (wall), `courtyard-water-wall-golden-hour-reading-guest-landscape-3x2` (dark wall, upper left) | Type over photography still sits inside `--scrim-hero` or a glass capsule |
+| Arrival, getting here | `porch-day` | `porch-dusk-driveway`, `porch-lobby-dusk`, `lobby` | The porch frames show the SHANTARA sign. `porch-lobby-dusk` looks from the porch into the lobby |
 | Rooms | `room-bedroom-forest-view-armchair` | `room-bedroom-balcony-open-book`, `room-bedroom-desk-balcony-view`, `room-premium`, `room-twin` | `room-twin` shows one double bed, not twin beds. Match the frame to the room type it really shows |
 | Suites | `suite-living-balcony-empty` | `suite-living-balcony-guest-looking-out` | The pair are near-duplicates. Use one per page |
-| Balconies and views | `balcony-lounge-stump-table-valley` | `balcony-lounge-infinity-edge-valley`, `balcony`, `valley` | `valley` is the lounge window, not an outdoor view |
-| Restaurant | `dining-restaurant-valley-window` | `dining`, `dining-table-set-detail`, `dining-table-two-chairs`, `terrace-cafe-wave-ceiling-valley`, `terrace-cafe-fabric-ceiling-wide` | `dining` needs a scrim. The ceiling is busy |
+| Open deck | `open-deck-wave-ceiling-valley` | `open-deck`, `open-deck-fabric-ceiling` | One open deck, for reading, working and spending time. Use one frame per page |
+| Indoor sitting | `interior-stump-table-valley` | `interior-infinity-edge-valley` | Indoor rooms looking out. They are not balconies |
+| Lobby | `lobby` | `lobby-double-height-valley-guest`, `lobby-valley`, `lobby-mezzanine`, `lobby-valley-view-seated-guest` | These are all the lobby. `lobby-reception` shows staff faces, so it is **Check** and is not in this shortlist |
+| Restaurant | `dining-restaurant-valley-window` | `dining`, `dining-table-set-detail`, `dining-table-two-chairs` | `dining` needs a scrim. The ceiling is busy |
 | Food, grid of single plates | The `food-*-restaurant-portrait-2x3` set | — | Eight frames shot the same way (one plate, white table corner, green chairs), so they sit well together in a 3-up or 4-up grid |
 | Food, one wide image | `food-spread-five-plates-restaurant-wide-landscape-3x2` | `food-spread-red-rice-soup-garden-wide-landscape-3x2`, `food-spread-three-plates-garden-wide-landscape-3x2` | Never turn a filename into a dish name or health claim. Meals are planned by the doctor (handbook §11) |
-| Therapy pages | `treatment` (empty room) | `treatment-bath-corridor-cubicles`, `treatment-waiting-nook-lockers`, `activity-hall-yoga-studio-empty` | Show rooms, not treatment. `treatment-bath-corridor-cubicles` shows "Hip bath" door signs |
-| Yoga | `yoga-asana-balasana-childs-pose-studio-guest-landscape-3x2` | `yoga-meditation-aerial-cobblestone-circle-cross-legged-guest-landscape-3x2`, `activity-hall-yoga-studio-empty`, `detail-uniform-kurta-logo-embroidery-portrait-2x3` | Most other yoga frames show a face, so they are **Check** |
-| Grounds and nature | `grounds` | `courtyard-pond-architecture`, `grounds-hillside-path-walking-guest-landscape-3x2`, `grounds-pebble-path-barefoot-walking-landscape-3x2`, `water-wall`, `leisure-pergola-terrace-reading-guest-landscape-3x2` | `grounds-pond-building-path` shows a neighbouring building and power lines |
+| Therapy pages | `treatment` (empty room) | `treatment-bath-corridor-cubicles`, `hydrotherapy-waiting`, `treatment-reception-desk` | Show rooms, not treatment. `treatment-bath-corridor-cubicles` shows "Hip bath" door signs. `hydrotherapy-waiting` is the hydrotherapy waiting area. `treatment-reception-desk` is the therapy section reception |
+| Yoga | `yoga-asana-balasana-childs-pose-studio-guest-landscape-3x2` | `yoga-meditation-aerial-cobblestone-circle-cross-legged-guest-landscape-3x2`, `yoga-hall-empty`, `detail-uniform-kurta-logo-embroidery-portrait-2x3` | Most other yoga frames show a face, so they are **Check**. `yoga-hall-empty` is the empty yoga hall. `yoga-hall-waiting-bench-guest` is the bench in that hall, and it is **Check** |
+| Courtyard | `courtyard` | `courtyard-pond-architecture`, `courtyard-pond-building-path`, `courtyard-water-wall-standing-guest-foliage` | Pond, water wall, deck, boardwalk and covered seating are this courtyard. `courtyard-pond-building-path` shows a neighbouring building and power lines |
+| Grounds and nature | `grounds` | `grounds-hillside-path-walking-guest-landscape-3x2`, `grounds-pebble-path-barefoot-walking-landscape-3x2`, `leisure-pergola-terrace-reading-guest-landscape-3x2` | Courtyard frames are under Courtyard |
 | Doctor avatar, card, byline, share image | `doctor-*-passport.jpeg` (`photo_profile`) | `doctor-*-portrait-cropped.jpeg` for a square grid | See [Doctors](#doctors). The founder is not a doctor: his `founder-*` photographs never go in a doctors row ([Board](#board)) |
 | Doctor profile page | `doctor-*-portrait` (`photo`) | — | Seated, grey studio backdrop, room for type beside the figure |
-| Share-image background | `exterior-entrance-dusk-lit-canopy` | `balcony-lounge-stump-table-valley`, `lounge-double-height-valley-guest`, `terrace-cafe-wave-ceiling-valley` | Share images are generated from the page hero ([`skill-og-images.md`](../../ui_kits/website/skill-og-images.md)) |
+| Share-image background | `porch-dusk-lit-canopy` | `interior-stump-table-valley`, `lobby-double-height-valley-guest`, `open-deck-wave-ceiling-valley` | Share images are generated from the page hero ([`skill-og-images.md`](../../ui_kits/website/skill-og-images.md)) |
 
 **One photo per job, and no near-duplicates on one page.** Catalogue entries name each frame's near-duplicates under Cautions.
 
@@ -60,10 +63,8 @@ These were found by looking at every frame. Trust the catalogue over the filenam
 
 | File | Issue |
 | --- | --- |
-| `library.jpg` | No library. It shows a waiting corner (wooden armchair and bench, framed print) beside bath cubicles labelled "Special bath". It is the same nook as `treatment-waiting-nook-lockers.jpg`. Used as the featured image of `programs/executive-wellness`. It is also 1600×1067, smaller than the rest |
-| `treatment-waiting-nook-lockers.jpg` | The white units are bath cubicles with door labels, not lockers |
+| `treatment-waiting-nook-lockers.jpg` | The same hydrotherapy waiting area as `hydrotherapy-waiting.jpg`. The white units are bath cubicles with door labels, not lockers |
 | `room-twin.jpg` | One double bed, not twin beds. Used by `rooms/premium-room` and `rooms/standard-room` |
-| `valley.jpg` | An interior lounge looking through a window at the valley, not an open landscape |
 | `yoga-meditation-aerial-cobblestone-circle-knees-up-guest-landscape-3x2.jpg` | The person sits hugging her knees. It is not a meditation posture |
 | `food-*-overhead-*` | Several are a high angle, not true top-down |
 | `board-abdulla-aboobacker.jpeg` | 1014×1280, office backdrop. Does not match the grey studio set |
@@ -71,7 +72,7 @@ These were found by looking at every frame. Trust the catalogue over the filenam
 
 ## Kit defaults (keep these for samples)
 
-`arrival-dusk` · `balcony` · `corridor` · `courtyard` · `dining` · `exterior-day` · `grounds` · `library` · `lobby` · `lounge` · `reception` · `room-premium` · `room-twin` · `treatment` · `valley` · `water-wall`
+`porch-lobby-dusk` · `open-deck` · `corridor` · `courtyard` · `dining` · `porch-day` · `grounds` · `hydrotherapy-waiting` · `lobby` · `lobby-mezzanine` · `lobby-reception` · `room-premium` · `room-twin` · `treatment` · `lobby-valley` · `water-wall`
 
 Most kit defaults are short slugs. Extra frames use longer descriptive names. The catalogue marks kit defaults.
 
@@ -105,16 +106,19 @@ The founder and chairman's portraits (`founder-*`) and board portraits (`board-*
 
 | Prefix | Use for |
 | --- | --- |
+| `porch-*` | The porch, including the view from the porch into the lobby (`porch-lobby-dusk`) |
+| `lobby-*` | The lobby, including the reception desk and the valley windows |
+| `open-deck-*` | The open deck for reading, working and spending time. `open-deck`, `open-deck-fabric-ceiling` and `open-deck-wave-ceiling-valley` are the same space |
+| `interior-*` | Indoor sitting spaces. Not balconies |
+| `courtyard-*` | The courtyard: pond, water wall, deck, boardwalk and covered seating |
+| `hydrotherapy-*` | The hydrotherapy waiting area |
+| `yoga-hall-*` | The yoga hall. `yoga-hall-empty` is the empty hall. `yoga-hall-waiting-bench-guest` is the bench |
+| `treatment-reception-*` | The therapy section reception |
 | `room-bedroom-*` | Alternate bedroom angles |
 | `suite-living-*` | Suite living + balcony |
 | `dining-*` | Restaurant alternates / table detail |
-| `reception-*` / `lobby-*` | Reception & waiting |
-| `lounge-*` | Lounge alternates |
-| `balcony-*` / `terrace-*` | Balcony / café terrace |
-| `courtyard-*` / `water-wall-*` / `grounds-*` / `patio-*` | Courtyard, water, grounds |
-| `exterior-*` | Façade & dusk arrival alternates |
-| `treatment-*` | Therapy / bath corridor / waiting |
-| `activity-hall-*` | Yoga / multi-purpose hall |
+| `treatment-*` | Therapy room, bath corridor, hydrotherapy waiting |
+| `exterior-*` | Façade and cobblestone patio, other than the porch |
 
 ### Activity and lifestyle frames, by prefix
 
@@ -123,20 +127,20 @@ Names follow `category-subject-setting-variant-orientation-ratio`. Every file en
 | Prefix | Use for | Therapy page (`content/therapies/`) |
 | --- | --- | --- |
 | `yoga-asana-*` | Postures: cobra, child's pose, kneeling and standing stretches | `yoga-therapy` |
-| `yoga-pranayama-*` | Breathing, incl. alternate-nostril; studio and courtyard pond | `yoga-therapy` |
-| `yoga-meditation-*` | Seated / kneeling meditation; studio, courtyard pond, aerial cobblestone | `yoga-therapy`, `mind-body-therapy` |
+| `yoga-pranayama-*` | Breathing, incl. alternate-nostril; studio and the courtyard | `yoga-therapy` |
+| `yoga-meditation-*` | Seated / kneeling meditation; studio, the courtyard, aerial cobblestone | `yoga-therapy`, `mind-body-therapy` |
 | `massage-head-*` / `massage-face-*` / `massage-foot-reflexology-*` | Head, face and foot massage | `massage-therapy` |
 | `acupuncture-*` | Facial acupuncture | `acupuncture` |
 | `physiotherapy-*` | Mobility assessment, electrotherapy | `physiotherapy` |
 | `food-*` | Plated meals and juice: single dishes and table spreads in the restaurant (white table, green chairs), on the wood slab table and in the garden | `diet-therapy` |
 | `consultation-*` | Doctor consultation at a desk | — |
-| `grounds-*` | Walks, garden paths, textured walls, courtyard deck, pebble path | — |
-| `leisure-*` | Balcony valley view, pergola terrace, garden swing, water-wall lounge | — |
+| `grounds-*` | Walks, garden paths, textured walls, pebble path. The courtyard is `courtyard-*`, not `grounds-*` | — |
+| `leisure-*` | Balcony valley view, pergola terrace, garden swing. Courtyard water-wall frames are `courtyard-water-wall-*` | — |
 | `detail-*` | Uniform and brand details | — |
 
 Every `massage-*`, `acupuncture-*` and `physiotherapy-*` frame is **Avoid** for public use, because each shows treatment in progress. For those therapy pages, use the empty rooms under [Pick by job](#pick-by-job).
 
-`grounds-*` also covers the older property frame `grounds-pond-building-path`, which has no orientation suffix.
+The courtyard yoga frames keep the practice first in the name. Their setting is the courtyard: `yoga-meditation-courtyard-pond-deck-medium-guest-landscape-3x2`, `yoga-meditation-courtyard-pond-deck-wide-guest-landscape-3x2`, `yoga-pranayama-alternate-nostril-courtyard-pond-guest-landscape-3x2`, `yoga-pranayama-alternate-nostril-courtyard-pond-guest-portrait-2x3`.
 
 `food-*` names describe what is on the plate, not a menu: `salad-apple-lettuce`, `salad-beetroot-carrot`, `salad-sprouts-cucumber`, `vegetable-crescent`, `fruit-ring`, `soup-golden`, `juice-purple`, `red-rice-curry-plate`, and `spread-*` for several plates together. Settings are `restaurant`, `wood-table`, `stone-table` and `garden`. Do not turn a filename into a dish name, ingredient or health claim in copy. Meals are planned by the doctor (handbook §11).
 
@@ -146,35 +150,42 @@ Every `massage-*`, `acupuncture-*` and `physiotherapy-*` frame is **Avoid** for 
 2. Look at it, then add an entry to `CATALOGUE.md` under the right heading, using the same fields as the entries around it, and a row to the [Index](#index) here.
 3. If it changes a shortlist, update [Pick by job](#pick-by-job).
 4. Production preparation (size, compression, metadata) is in [`ui_kits/website/skill-images.md`](../../ui_kits/website/skill-images.md).
-
 ## Index
 
 Shape is the file's own orientation and ratio. Public is the status explained [above](#public-use). Best for lists the first two uses from the catalogue entry.
+
+### Porch
+
+The porch. `porch-lobby-dusk` looks from the porch into the lobby.
+
+| Name | Shape | Public | Setting | Light | Best for |
+| --- | --- | --- | --- | --- | --- |
+| `porch-lobby-dusk` | landscape 3:2 | Yes | porch, looking into the lobby | dusk with interior lamps, warm against a cool blue sky | full-bleed hero, arrival or location section |
+| `porch-day` | landscape 3:2 | Yes | porch | overcast daylight, neutral to cool | arrival or how-to-reach-us section, location page figure |
+| `porch-dusk-driveway` | landscape 3:2 | Yes | porch | dusk (blue hour) with interior and path lamps, cool sky and warm lamps | full-bleed hero, arrival section background |
+| `porch-dusk-lit-canopy` | landscape 3:2 | Yes | porch | dusk (blue hour) with lamps and uplights, cool sky and warm lamps | full-bleed hero, homepage arrival band |
+| `porch-dusk-suv` | landscape 3:2 | Yes | porch | dusk (blue hour) with lamps, cool | wide hero with headline over the sky, arrival section |
 
 ### Arrival and exterior
 
 | Name | Shape | Public | Setting | Light | Best for |
 | --- | --- | --- | --- | --- | --- |
-| `arrival-dusk` | landscape 3:2 | Yes | exterior / entrance and lobby | dusk with interior lamps, warm against a cool blue sky | full-bleed hero, arrival or location section |
 | `exterior-cobblestone-patio-valley-guest` | portrait 2:3 | Yes | exterior (cobblestone viewing patio, valley view) | overcast daylight, cool to neutral | portrait hero on mobile, split-section half |
-| `exterior-day` | landscape 3:2 | Yes | exterior (entrance and driveway) | overcast daylight, neutral to cool | arrival or how-to-reach-us section, location page figure |
-| `exterior-entrance-dusk-driveway` | landscape 3:2 | Yes | exterior (entrance and driveway) | dusk (blue hour) with interior and path lamps, cool sky and warm lamps | full-bleed hero, arrival section background |
-| `exterior-entrance-dusk-lit-canopy` | landscape 3:2 | Yes | exterior (entrance and driveway) | dusk (blue hour) with lamps and uplights, cool sky and warm lamps | full-bleed hero, homepage arrival band |
-| `exterior-entrance-dusk-suv` | landscape 3:2 | Yes | exterior (entrance and driveway, road) | dusk (blue hour) with lamps, cool | wide hero with headline over the sky, arrival section |
 | `exterior-facade-cobblestone-guest` | landscape 3:2 | Yes | exterior (building facade and cobblestone patio) | overcast daylight, neutral to cool | full-bleed hero, architecture or about section |
 
-### Lobby, reception and lounges
+### Lobby
+
+The lobby, including the reception desk and the valley view. `water-wall` is indoors beside a water wall, and is not the courtyard.
 
 | Name | Shape | Public | Setting | Light | Best for |
 | --- | --- | --- | --- | --- | --- |
-| `library` | landscape 3:2 | Yes | covered seating or waiting corner near cubicles (not a library) | daylight through the block screen and slatted roof, neutral to warm | internal facility documentation, article figure about common spaces |
-| `lobby-waiting-bench-guest` | landscape 3:2 | Check | lobby / waiting area | overcast daylight plus warm cove ceiling light, neutral-warm | split-section half, article figure |
-| `lobby` | landscape 3:2 | Yes | lobby / reception | overcast daylight from the windows plus warm pendant lamps, neutral with deep shadows | full-bleed hero (light text on the floor), arrival or "the house" section |
-| `lounge-double-height-valley-guest` | landscape 3:2 | Yes | lounge | overcast daylight, cool-neutral | full-bleed hero, share-image background |
-| `lounge-valley-view-seated-guest` | portrait 5:7 | Yes | lounge | overcast daylight plus warm pendants, neutral-warm | mobile hero, portrait split-section half |
-| `lounge` | landscape 3:2 | Yes | lounge / retail nook | daylight plus warm pendants and wall sconces, warm | full-bleed hero, "the house" or common-spaces section |
-| `reception-desk-small-window` | landscape 3:2 | Yes | reception (secondary) | interior lamps (linear pendant and drum shade) with dim daylight, neutral-warm | article figure, 3-up tile |
-| `reception` | landscape 3:2 | Check | lobby / reception | daylight plus warm linear pendant and logo glow, warm | full-bleed hero, arrival section |
+| `lobby` | landscape 3:2 | Yes | lobby | overcast daylight from the windows plus warm pendant lamps, neutral with deep shadows | full-bleed hero (light text on the floor), arrival or "the house" section |
+| `lobby-double-height-valley-guest` | landscape 3:2 | Yes | lobby | overcast daylight, cool-neutral | full-bleed hero, share-image background |
+| `lobby-valley-view-seated-guest` | portrait 5:7 | Yes | lobby | overcast daylight plus warm pendants, neutral-warm | mobile hero, portrait split-section half |
+| `lobby-mezzanine` | landscape 3:2 | Yes | lobby | daylight plus warm pendants and wall sconces, warm | full-bleed hero, "the house" or common-spaces section |
+| `lobby-reception` | landscape 3:2 | Check | lobby | daylight plus warm linear pendant and logo glow, warm | full-bleed hero, arrival section |
+| `water-wall` | portrait 2:3 | Yes | interior, beside a water wall (not the courtyard) | daylight from above, cool-neutral | portrait split-section half, social vertical |
+| `lobby-valley` | portrait 2:3 | Yes | lobby | overcast daylight, cool-neutral | portrait hero on mobile, split-section half |
 
 ### Rooms and suites
 
@@ -188,7 +199,7 @@ Shape is the file's own orientation and ratio. Public is the status explained [a
 | `suite-living-balcony-empty` | landscape 3:2 | Yes | suite living room | overcast daylight, neutral-warm | suites page hero or card, split-section half |
 | `suite-living-balcony-guest-looking-out` | landscape 3:2 | Yes | suite living room + balcony | overcast daylight, neutral | suites page hero, split-section half |
 
-### Restaurant and café terrace
+### Restaurant
 
 | Name | Shape | Public | Setting | Light | Best for |
 | --- | --- | --- | --- | --- | --- |
@@ -196,44 +207,61 @@ Shape is the file's own orientation and ratio. Public is the status explained [a
 | `dining-table-set-detail` | landscape 3:2 | Yes | restaurant | daylight and interior lamps, warm-neutral | dining section detail, 3-up tile |
 | `dining-table-two-chairs` | portrait 2:3 | Yes | restaurant | soft window daylight plus one warm pendant, cool-neutral | portrait hero on mobile, split-section half |
 | `dining` | landscape 3:2 | Yes | restaurant | daylight plus warm pendants, neutral | dining section hero, full-bleed hero with scrim |
-| `terrace-cafe-fabric-ceiling-wide` | portrait 5:7 | Yes | terrace café | overcast daylight, neutral-cool | mobile hero, portrait split-section half |
-| `terrace-cafe-wave-ceiling-valley` | landscape 3:2 | Yes | terrace café | overcast daylight, neutral-cool | full-bleed hero with text on the left wall, restaurant or café section |
 
-### Balconies
+### Open deck
 
-| Name | Shape | Public | Setting | Light | Best for |
-| --- | --- | --- | --- | --- | --- |
-| `balcony-lounge-infinity-edge-valley` | portrait 5:7 | Yes | balcony lounge (interior-exterior) | overcast daylight, neutral to cool | portrait hero on mobile, split-section half |
-| `balcony-lounge-stump-table-valley` | landscape 3:2 | Yes | balcony | overcast daylight, neutral | full-bleed hero, room or stay section |
-| `balcony` | portrait 5:7 | Yes | balcony / terrace | overcast daylight, neutral to cool | portrait hero on mobile, split-section half |
-
-### Courtyard, water wall and patio
+One open deck, for reading, working and spending time.
 
 | Name | Shape | Public | Setting | Light | Best for |
 | --- | --- | --- | --- | --- | --- |
-| `courtyard-pond-architecture` | portrait 2:3 | Yes | courtyard pond | overcast daylight, neutral | portrait hero on mobile, campus section |
-| `courtyard` | landscape 3:2 | Yes | courtyard pond (indoor-outdoor edge) | overcast daylight, neutral to cool | split-section half, campus section |
-| `patio-covered-pond-seating` | landscape 3:2 | Yes | courtyard pond / patio | overcast daylight, cool-neutral | split-section half, article figure |
-| `water-wall-seated-guest` | landscape 3:2 | Check | water wall terrace / courtyard pond | soft overcast daylight, neutral-cool | full-bleed hero, split-section half |
-| `water-wall-seating-foliage-frame` | landscape 3:2 | Yes | water wall terrace / courtyard pond | overcast daylight, dim, cool-neutral | background texture with scrim, 3-up tile |
-| `water-wall-standing-guest-foliage` | landscape 3:2 | Yes | water wall terrace / courtyard pond | overcast daylight, dim, cool-neutral | full-bleed hero with scrim, share-image background |
-| `water-wall` | portrait 2:3 | Yes | interior seating by water wall (lobby/landing) | daylight from above, cool-neutral | portrait split-section half, social vertical |
+| `open-deck-fabric-ceiling` | portrait 5:7 | Yes | open deck | overcast daylight, neutral-cool | mobile hero, portrait split-section half |
+| `open-deck-wave-ceiling-valley` | landscape 3:2 | Yes | open deck | overcast daylight, neutral-cool | full-bleed hero with text on the left wall, open deck |
+| `open-deck` | portrait 5:7 | Yes | open deck | overcast daylight, neutral to cool | portrait hero on mobile, split-section half |
 
-### Treatment spaces and halls
+### Indoor sitting
+
+Indoor sitting spaces. Not balconies.
 
 | Name | Shape | Public | Setting | Light | Best for |
 | --- | --- | --- | --- | --- | --- |
-| `activity-hall-yoga-studio-empty` | landscape 16:9 | Yes | activity hall / yoga studio (interior) | interior cove lamps plus some daylight from the left doors, warm | facilities section, split-section half |
+| `interior-infinity-edge-valley` | portrait 5:7 | Yes | interior | overcast daylight, neutral to cool | portrait hero on mobile, split-section half |
+| `interior-stump-table-valley` | landscape 3:2 | Yes | interior | overcast daylight, neutral | full-bleed hero, room or stay section |
+
+### Courtyard
+
+The courtyard: pond, water wall, deck, boardwalk and covered seating. Yoga frames shot here are listed under Yoga, with `courtyard` in the filename.
+
+| Name | Shape | Public | Setting | Light | Best for |
+| --- | --- | --- | --- | --- | --- |
+| `courtyard-pond-architecture` | portrait 2:3 | Yes | courtyard | overcast daylight, neutral | portrait hero on mobile, campus section |
+| `courtyard` | landscape 3:2 | Yes | courtyard | overcast daylight, neutral to cool | split-section half, campus section |
+| `courtyard-covered-pond-seating` | landscape 3:2 | Yes | courtyard | overcast daylight, cool-neutral | split-section half, article figure |
+| `courtyard-water-wall-seated-guest` | landscape 3:2 | Check | courtyard | soft overcast daylight, neutral-cool | full-bleed hero, split-section half |
+| `courtyard-water-wall-seating-foliage-frame` | landscape 3:2 | Yes | courtyard | overcast daylight, dim, cool-neutral | background texture with scrim, 3-up tile |
+| `courtyard-water-wall-standing-guest-foliage` | landscape 3:2 | Yes | courtyard | overcast daylight, dim, cool-neutral | full-bleed hero with scrim, share-image background |
+| `courtyard-deck-standing-guest-portrait-2x3` | portrait 2:3 | Check | courtyard | warm low-angle sunlight with soft shadows, warm | tall split-section half, portrait social post |
+| `courtyard-deck-walking-guest-portrait-2x3` | portrait 2:3 | Check | courtyard | warm late sun, warm | portrait social post, mobile hero |
+| `courtyard-boardwalk-railing-guest-landscape-3x2` | landscape 3:2 | Check | courtyard | soft shaded daylight, neutral | grounds split-section half, 16:9 slide |
+| `courtyard-boardwalk-railing-guest-portrait-2x3` | portrait 2:3 | Check | courtyard | soft shaded daylight, neutral | portrait social post, mobile hero |
+| `courtyard-pond-building-path` | landscape 3:2 | Yes | courtyard | overcast after rain, cool | architecture article figure, 16:9 slide |
+| `courtyard-water-wall-golden-hour-lantern-guest-portrait-2x3` | portrait 2:3 | Yes | courtyard | golden hour with a glowing pendant, warm | portrait social post, mobile hero |
+| `courtyard-water-wall-golden-hour-reading-guest-landscape-3x2` | landscape 3:2 | Yes | courtyard | golden hour with low raking sun, warm | full-bleed hero with text at the upper left, wide banner |
+| `courtyard-water-wall-golden-hour-seated-guest-landscape-3x2` | landscape 3:2 | Check | courtyard | golden hour, warm | full-bleed hero, wide banner |
+
+### Yoga hall and treatment
+
+`yoga-hall-empty` is the empty yoga hall. `yoga-hall-waiting-bench-guest` is its bench. `hydrotherapy-waiting` is the hydrotherapy waiting area. `treatment-reception-desk` is the therapy section reception.
+
+| Name | Shape | Public | Setting | Light | Best for |
+| --- | --- | --- | --- | --- | --- |
+| `hydrotherapy-waiting` | landscape 3:2 | Yes | hydrotherapy waiting area | daylight through the block screen and slatted roof, neutral to warm | internal facility documentation, article figure about common spaces |
+| `yoga-hall-waiting-bench-guest` | landscape 3:2 | Check | yoga hall, waiting bench | overcast daylight plus warm cove ceiling light, neutral-warm | split-section half, article figure |
+| `treatment-reception-desk` | landscape 3:2 | Yes | therapy section reception | interior lamps (linear pendant and drum shade) with dim daylight, neutral-warm | article figure, 3-up tile |
+| `yoga-hall-empty` | landscape 16:9 | Yes | yoga hall | interior cove lamps plus some daylight from the left doors, warm | facilities section, split-section half |
 | `corridor` | landscape 3:2 | Check | room-wing corridor (interior) | interior lamps, neutral to warm against cool grey walls | rooms or stay section, slide background |
 | `treatment-bath-corridor-cubicles` | landscape 3:2 | Yes | treatment bath area | daylight through slatted gables plus interior light, warm | article figure, facilities or treatments explainer |
-| `treatment-waiting-nook-lockers` | landscape 3:2 | Yes | treatment bath area / waiting nook | daylight through the block screen and glazing, neutral-warm | article figure, 3-up tile |
+| `treatment-waiting-nook-lockers` | landscape 3:2 | Yes | hydrotherapy waiting area | daylight through the block screen and glazing, neutral-warm | article figure, 3-up tile |
 | `treatment` | landscape 3:2 | Yes | treatment room | interior downlights, neutral-warm | treatments section split-half, article figure |
-
-### Landscape
-
-| Name | Shape | Public | Setting | Light | Best for |
-| --- | --- | --- | --- | --- | --- |
-| `valley` | portrait 2:3 | Yes | lounge with valley view (interior) | overcast daylight, cool-neutral | portrait hero on mobile, split-section half |
 
 ### Doctors
 
@@ -283,8 +311,8 @@ Shape is the file's own orientation and ratio. Public is the status explained [a
 | Name | Shape | Public | Setting | Light | Best for |
 | --- | --- | --- | --- | --- | --- |
 | `yoga-pranayama-alternate-nostril-close-up-guest-portrait-2x3` | portrait 2:3 | Check | yoga studio | soft daylight, warm-neutral | breathing/pranayama article figure, programme card |
-| `yoga-pranayama-alternate-nostril-courtyard-pond-guest-landscape-3x2` | landscape 3:2 | Check | courtyard pond | overcast daylight, neutral-cool | full-bleed hero, pranayama section split-half |
-| `yoga-pranayama-alternate-nostril-courtyard-pond-guest-portrait-2x3` | portrait 2:3 | Check | courtyard pond | overcast daylight, neutral-cool | portrait split-half, social vertical |
+| `yoga-pranayama-alternate-nostril-courtyard-pond-guest-landscape-3x2` | landscape 3:2 | Check | courtyard | overcast daylight, neutral-cool | full-bleed hero, pranayama section split-half |
+| `yoga-pranayama-alternate-nostril-courtyard-pond-guest-portrait-2x3` | portrait 2:3 | Check | courtyard | overcast daylight, neutral-cool | portrait split-half, social vertical |
 | `yoga-pranayama-alternate-nostril-studio-wide-guest-portrait-2x3` | portrait 2:3 | Check | yoga studio | strong backlight, warm | social vertical with caption below, mobile hero |
 | `yoga-pranayama-instructor-guiding-guest-studio-landscape-3x2` | landscape 3:2 | Check | yoga studio | backlit daylight through curtains, warm, slightly dim interior | split-section half on guided practice, programme detail figure |
 
@@ -294,8 +322,8 @@ Shape is the file's own orientation and ratio. Public is the status explained [a
 | --- | --- | --- | --- | --- | --- |
 | `yoga-meditation-aerial-cobblestone-circle-cross-legged-guest-landscape-3x2` | landscape 3:2 | Yes | paved courtyard / exterior | soft daylight, neutral-warm | full-bleed hero with text right, share-image background |
 | `yoga-meditation-aerial-cobblestone-circle-knees-up-guest-landscape-3x2` | landscape 3:2 | Yes | paved courtyard / exterior | soft daylight, neutral-warm | full-bleed hero, share-image background |
-| `yoga-meditation-courtyard-pond-deck-medium-guest-landscape-3x2` | landscape 3:2 | Check | courtyard pond | overcast daylight, neutral-cool | split-section half, meditation programme card |
-| `yoga-meditation-courtyard-pond-deck-wide-guest-landscape-3x2` | landscape 3:2 | Check | courtyard pond | overcast daylight, neutral-cool | full-bleed hero, share-image background |
+| `yoga-meditation-courtyard-pond-deck-medium-guest-landscape-3x2` | landscape 3:2 | Check | courtyard | overcast daylight, neutral-cool | split-section half, meditation programme card |
+| `yoga-meditation-courtyard-pond-deck-wide-guest-landscape-3x2` | landscape 3:2 | Check | courtyard | overcast daylight, neutral-cool | full-bleed hero, share-image background |
 | `yoga-meditation-cross-legged-studio-guest-portrait-2x3` | portrait 2:3 | Check | yoga studio | soft daylight from curtains, warm-neutral | portrait split-half, meditation programme card |
 | `yoga-meditation-cross-legged-studio-window-centred-guest-portrait-2x3` | portrait 2:3 | Check | yoga studio | backlit daylight, warm | portrait hero on mobile, meditation card |
 | `yoga-meditation-cross-legged-studio-window-wide-guest-landscape-3x2` | landscape 3:2 | Check | yoga studio | backlit daylight, warm | full-bleed hero, slide background |
@@ -377,10 +405,6 @@ Shape is the file's own orientation and ratio. Public is the status explained [a
 
 | Name | Shape | Public | Setting | Light | Best for |
 | --- | --- | --- | --- | --- | --- |
-| `grounds-courtyard-deck-standing-guest-portrait-2x3` | portrait 2:3 | Check | courtyard pond deck | warm low-angle sunlight with soft shadows, warm | tall split-section half, portrait social post |
-| `grounds-courtyard-deck-walking-guest-portrait-2x3` | portrait 2:3 | Check | courtyard pond deck | warm late sun, warm | portrait social post, mobile hero |
-| `grounds-garden-boardwalk-railing-guest-landscape-3x2` | landscape 3:2 | Check | garden boardwalk | soft shaded daylight, neutral | grounds split-section half, 16:9 slide |
-| `grounds-garden-boardwalk-railing-guest-portrait-2x3` | portrait 2:3 | Check | garden boardwalk | soft shaded daylight, neutral | portrait social post, mobile hero |
 | `grounds-garden-planters-standing-guest-landscape-3x2` | landscape 3:2 | Check | garden / building exterior | soft daylight, warm-green | full-bleed hero with text on the right, wide banner |
 | `grounds-garden-planters-walking-guest-landscape-3x2` | landscape 3:2 | Check | garden / building exterior | soft daylight, warm-green | full-bleed hero with text on the right, wide banner |
 | `grounds-garden-wall-touching-leaves-dark-frame-guest-portrait-2x3` | portrait 2:3 | Yes | garden path beside a textured wall | low warm sun, warm | portrait social post, tall split-section half |
@@ -389,7 +413,6 @@ Shape is the file's own orientation and ratio. Public is the status explained [a
 | `grounds-hillside-path-walking-guest-landscape-3x2` | landscape 3:2 | Yes | hillside path / exterior grounds | warm late-afternoon sun, warm | grounds split-section half, 16:9 slide |
 | `grounds-hillside-path-walking-guest-portrait-2x3` | portrait 2:3 | Yes | hillside path / exterior grounds | warm late sun, warm | portrait social post, mobile hero |
 | `grounds-pebble-path-barefoot-walking-landscape-3x2` | landscape 3:2 | Yes | garden pebble path | soft daylight, warm | 3-up tile, article figure |
-| `grounds-pond-building-path` | landscape 3:2 | Yes | courtyard pond / exterior | overcast after rain, cool | architecture article figure, 16:9 slide |
 | `grounds-textured-wall-eyes-closed-negative-space-guest-portrait-2x3` | portrait 2:3 | Check | garden wall | warm low sun with leaf shadows on the wall, warm | portrait social post with headline, mobile hero |
 | `grounds-textured-wall-profile-banana-leaf-guest-portrait-2x3` | portrait 2:3 | Check | garden wall | warm low sun, warm | portrait social post, mobile hero |
 | `grounds` | landscape 3:2 | Yes | exterior / grounds | overcast daylight, cool to neutral | about or location page split-section half, 16:9 slide |
@@ -405,9 +428,6 @@ Shape is the file's own orientation and ratio. Public is the status explained [a
 | `leisure-pergola-terrace-reading-guest-landscape-3x2` | landscape 3:2 | Yes | pergola terrace / garden | warm late-afternoon sun, warm | full-bleed hero, split-section half |
 | `leisure-pergola-terrace-reading-guest-portrait-2x3` | portrait 2:3 | Check | pergola terrace | warm late sun, warm | portrait social post, mobile hero |
 | `leisure-pergola-terrace-resting-guest-landscape-3x2` | landscape 3:2 | Check | pergola terrace / garden | warm late-afternoon sun, warm | full-bleed hero, split-section half |
-| `leisure-water-wall-lounge-golden-hour-lantern-guest-portrait-2x3` | portrait 2:3 | Yes | water-wall lounge beside a pool | golden hour with a glowing pendant, warm | portrait social post, mobile hero |
-| `leisure-water-wall-lounge-golden-hour-reading-guest-landscape-3x2` | landscape 3:2 | Yes | water-wall lounge beside a pool | golden hour with low raking sun, warm | full-bleed hero with text at the upper left, wide banner |
-| `leisure-water-wall-lounge-golden-hour-seated-guest-landscape-3x2` | landscape 3:2 | Check | water-wall lounge beside a pool | golden hour, warm | full-bleed hero, wide banner |
 
 ### Details
 
