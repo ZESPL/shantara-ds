@@ -99,7 +99,6 @@ function ConsultationScreen({ onNavigate, locale = "en", view = "booking" }) {
         items={[
           { title: t("A member of the team will call you to understand what you need.") },
           { title: t("A doctor then reviews whether a stay is the right next step.") },
-          { title: t("A stay is confirmed after a doctor has spoken with you.") },
         ]}
       />
       <div>

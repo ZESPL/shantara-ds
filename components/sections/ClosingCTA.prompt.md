@@ -3,7 +3,7 @@ The closing call to action (deck slide 18). **Use ClosingCTA only on pages that 
 ```jsx
 <ClosingCTA
   src="/assets/photos/porch-dusk-lit-canopy.jpg" alt="The porch at dusk"
-  title="A stay is confirmed after a doctor has spoken with you."
+  title="Plan your stay with our doctors."
   sub="Share your name and a number we can reach. Our team will contact you to arrange a consultation."
   action={<Button size="lg">Book a Consultation</Button>}
   secondaryAction={<TextLink href="/en/programmes">View programmes</TextLink>}

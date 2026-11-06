@@ -6,7 +6,6 @@ The guest's own path in 3 to 5 numbered steps.
     { title: "Send your details", text: "Share your name and a number we can reach." },
     { title: "A call from our team", text: "A member of the team calls to understand what you need." },
     { title: "A doctor reviews", text: "A doctor reviews whether a stay is the right next step." },
-    { title: "Your stay is confirmed", text: "A stay is confirmed after a doctor has spoken with you." },
   ]} />
 </Section>
 ```

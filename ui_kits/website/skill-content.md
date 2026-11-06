@@ -220,7 +220,7 @@ The form already captures its context (source page, page type, content id). Use 
 
 What happens next, by form:
 
-- **Consultation.** A member of the team will call you to understand what you need. A doctor then reviews whether a stay is the right next step. A stay is confirmed after a doctor has spoken with you.
+- **Consultation.** A member of the team will call you to understand what you need. A doctor then reviews whether a stay is the right next step.
 - **Ask the Doctor.** A doctor replies by email. If the question is chosen for the Journal, it is published without your name.
 - **Hosted visits.** We read each request and reply when we can host the visit. (The page's own words; see [special-pages/hosted-stays.md](special-pages/hosted-stays.md).)
 

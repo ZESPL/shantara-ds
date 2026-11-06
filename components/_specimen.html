@@ -364,7 +364,7 @@
           return <div style={{ display: "grid", gap: 32 }}>
             {[["himalaya", 'ground="himalaya" (default) · with a link'], ["pine", 'ground="pine" · dismissible'], ["stone", 'ground="stone" · dismissible']].map(([g, l]) => <div key={g}>
               <p className="shantara-usage-label" style={{ padding: "0 var(--layout-gutter)" }}>{l}</p>
-              <AnnouncementBar ground={g} href={g === "himalaya" ? "#" : undefined} linkLabel="Book a Consultation" dismissible={g !== "himalaya"}>A stay is confirmed after a doctor has spoken with you.</AnnouncementBar>
+              <AnnouncementBar ground={g} href={g === "himalaya" ? "#" : undefined} linkLabel="Book a Consultation" dismissible={g !== "himalaya"}>Every stay begins with a consultation.</AnnouncementBar>
             </div>)}
           </div>;
         case "Accordion":
@@ -626,13 +626,13 @@
           return <>
             <ClosingCTA
               src={P + "porch-dusk-lit-canopy.jpg"} alt="The porch at dusk"
-              title="A stay is confirmed after a doctor has spoken with you."
+              title="Plan your stay with our doctors."
               sub="Share your name and a number we can reach. Our team will contact you to arrange a consultation."
               action={<Button size="lg">Book a Consultation</Button>}
               secondaryAction={<TextLink href="#">View programmes</TextLink>}
               contact={contact} />
             <ClosingCTA variant="ground" ground="himalaya"
-              title="A stay is confirmed after a doctor has spoken with you."
+              title="Plan your stay with our doctors."
               action={<Button size="lg">Book a Consultation</Button>}
               contact={contactPlain} />
             <ClosingCTA variant="compact" ground="stone"
@@ -769,7 +769,6 @@
               { title: "Send your details", text: "Share your name and a number we can reach." },
               { title: "A call from our team", text: "A member of the team calls to understand what you need." },
               { title: "A doctor reviews", text: "A doctor reviews whether a stay is the right next step." },
-              { title: "Your stay is confirmed", text: "A stay is confirmed after a doctor has spoken with you." },
             ]} action={<Button>Book a Consultation</Button>} />
           </Section>;
         case "TimelineSection":
@@ -812,7 +811,7 @@
           return <Section>
             <div style={{ display: "flex", flexDirection: "column", gap: 40 }}>
               <NoticeBand title="Continue your medication">Do not stop or change any medication before you arrive. Your doctor reviews it with you at your consultation.</NoticeBand>
-              <NoticeBand tone="caution" layout="band" title="A stay is confirmed after a doctor has spoken with you" action={<TextLink href="#">Book a Consultation</TextLink>}>Share your health assessment and records first.</NoticeBand>
+              <NoticeBand tone="caution" layout="band" title="Send your records before your consultation" action={<TextLink href="#">Book a Consultation</TextLink>}>Share your health assessment, medical records and current medication.</NoticeBand>
             </div>
           </Section>;
         case "ReferencesSection":
@@ -846,7 +845,7 @@
         case "ConfirmationSection":
           return <Section>
             <ConfirmationSection autoFocus={false} sub="Thank you. We have your details."
-              next={["A member of the team will call you to understand what you need.", "A doctor then reviews whether a stay is the right next step.", "A stay is confirmed after a doctor has spoken with you."]}
+              next={["A member of the team will call you to understand what you need.", "A doctor then reviews whether a stay is the right next step."]}
               contact={[contact[0], { icon: "message-circle", label: "WhatsApp", href: "https://wa.me/919553600100?text=" + encodeURIComponent("Hello, I have just sent my details on the Shantara website.") }, contact[1]]}
               explore={[
                 { src: P + "dining-restaurant-valley-window.jpg", alt: "The dining room above the valley", title: "A day at Shantara", meta: ["Experience"], text: "From the first consultation to lights out.", href: "#a-day-at-shantara" },
