@@ -656,7 +656,7 @@
     "Optional. A programme, a condition, or when you hope to come, if you already know.": "اختياري. برنامج أو حالة أو موعد تودّ المجيء فيه، إن كنت تعرفه.",
     "We'll be in touch": "سنتواصل معك",
     "A member of the team will call you to understand what you need. A doctor then reviews whether a stay is the right next step.": "سيتصل بك أحد أعضاء الفريق لفهم ما تحتاجه. ثم يراجع طبيب ما إذا كانت الإقامة هي الخطوة التالية المناسبة.",
-    "A stay is confirmed after a doctor has spoken with you.": "تُؤكَّد الإقامة بعد أن يتحدث طبيب معك.",
+    "Every stay begins with a consultation.": "تبدأ كل إقامة باستشارة.",
     "Doctor-guided and drug-free. Supervised fasting may be included when your doctor considers it appropriate.": "بإشراف طبي وبلا أدوية. قد يُدرج الصيام تحت الإشراف عندما يراه طبيبك مناسباً.",
     "Text size": "حجم النص",
     Default: "افتراضي",

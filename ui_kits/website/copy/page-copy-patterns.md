@@ -109,8 +109,6 @@ Better:
 
 > A member of the team will call you to understand what you need. A doctor then reviews whether a stay is the right next step.
 
-> A stay is confirmed after a doctor has spoken with you.
-
 ---
 
 ## Calls to action stay short
