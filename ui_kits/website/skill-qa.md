@@ -132,7 +132,7 @@ Verify:
 - [ ] Stay/experience is tangible.
 - [ ] Relevant conditions/therapies are linked appropriately.
 - [ ] FAQs address real booking concerns.
-- [ ] Book a Consultation is the primary action.
+- [ ] Book a consultation is the primary action.
 - [ ] No clinical result is guaranteed.
 
 ## QA checklist: lead capture

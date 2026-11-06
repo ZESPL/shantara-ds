@@ -152,7 +152,7 @@ function ArticleScreen({ onNavigate, slug }) {
           ground="pine"
           title={t("Share your name and a number we can reach.")}
           sub={t("Our team will contact you to arrange a consultation.")}
-          action={<Button size="lg" onClick={() => { if (L) L.track("consultation_cta_click", { page_type: "article", content_id: a.id, content_name: a.title, cta_location: "closing" }); onNavigate("booking"); }}>{t("Book a Consultation")}</Button>}
+          action={<Button size="lg" onClick={() => { if (L) L.track("consultation_cta_click", { page_type: "article", content_id: a.id, content_name: a.title, cta_location: "closing" }); onNavigate("booking"); }}>{t("Book a consultation")}</Button>}
         />
       </P>
     </main>

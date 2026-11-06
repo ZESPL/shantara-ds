@@ -11,7 +11,7 @@ const { AnnouncementBar, Tabs, Breadcrumbs, Accordion } = window.ShantaraDesignS
 function Demo(){
   const {t,ar}=window.ShantaraI18n.useLocale();
   return (<div className="stack">
-<div style={{margin:"-20px -20px 0"}}><AnnouncementBar href="#" linkLabel={t("Book a Consultation")}>{t("Every stay begins with a consultation.")}</AnnouncementBar></div>
+<div style={{margin:"-20px -20px 0"}}><AnnouncementBar href="#" linkLabel={t("Book a consultation")}>{t("Every stay begins with a consultation.")}</AnnouncementBar></div>
 <Breadcrumbs items={[{label:t("Programmes"),href:"#"},{label:t("Wellness"),href:"#"},t("Detox")]}/>
 <Tabs items={[t("Overview"),t("Therapies"),t("Rooms"),t("Journal")]}/>
 <Tabs variant="pill" items={[{value:"all",label:t("All"),count:13},{value:"therapies",label:t("Therapies")},{value:"diet",label:t("Diet")}]}/>

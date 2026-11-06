@@ -60,7 +60,7 @@ Prospective guests should answer, with minimum friction:
 
 Primary business action, in visitor-facing language:
 
-> **Book a Consultation**
+> **Book a consultation**
 
 Form chrome may use **Send your details**. Make the action easy without becoming aggressive, cluttered, or sales-heavy. Do not invent parallel primary CTAs. Do not use **Enquire about a stay** or **Request a consultation** as visitor-facing primary CTAs.
 
@@ -101,7 +101,7 @@ Top-level navigation has **five items, no more**, centred between the logo and t
 - About
 - Journal
 
-Header actions: `LanguageSelector` (desktop; inside the menu sheet under 1000px), a **phone button** that opens a dropdown (Call +91 9553 600 100 · WhatsApp · Email heal@shantara.life), and **Book a Consultation** (primary CTA). Contact is reached from the phone dropdown and the footer, not the main nav. The call number (`phone`) and the WhatsApp number (`whatsapp`) are separate fields in `content/site.json`; both are currently **+91 9553 600 100**.
+Header actions: `LanguageSelector` (desktop; inside the menu sheet under 1000px), a **phone button** that opens a dropdown (Call +91 9553 600 100 · WhatsApp · Email heal@shantara.life), and **Book a consultation** (primary CTA). Contact is reached from the phone dropdown and the footer, not the main nav. The call number (`phone`) and the WhatsApp number (`whatsapp`) are separate fields in `content/site.json`; both are currently **+91 9553 600 100**.
 
 Do not create a mega-menu unless live page count genuinely requires it.
 
@@ -146,13 +146,13 @@ Heroes are a **family**, not one universal Hero with 30 props, and not 12 varian
 | Hero | Job | Typical uses | Component |
 | --- | --- | --- | --- |
 | Immersive | Place, emotion, photography | Home, Experience | `HeroFullBleed` |
-| Offer | Commercial page, high intent | Programme pages, Rooms and tariffs (duration/options, suitability, Book a Consultation; **no invented price**) | `HeroSplit` + booking panel |
-| Editorial / utility | Topic + readability | Conditions, About, Journal, Contact, Book a Consultation | `HeroStatement` with a side image, a Stone ground or a meta row, never "naked" |
+| Offer | Commercial page, high intent | Programme pages, Rooms and tariffs (duration/options, suitability, Book a consultation; **no invented price**) | `HeroSplit` + booking panel |
+| Editorial / utility | Topic + readability | Conditions, About, Journal, Contact, Book a consultation | `HeroStatement` with a side image, a Stone ground or a meta row, never "naked" |
 | Article | One Journal article | `/en/journal/<slug>` | `ArticleHeader` |
 
 No eyebrows anywhere: no small uppercase label above a hero, section or card title. Category, duration or place goes in a caption meta row **below** the title (`meta` prop / `MetaRow`).
 
-`ClosingCTA` only on pages that otherwise have no CTA (not Home, Programme, Tariffs or Book a Consultation). Vary its variants (`photo` / `ground` / `compact`) across pages.
+`ClosingCTA` only on pages that otherwise have no CTA (not Home, Programme, Tariffs or Book a consultation). Vary its variants (`photo` / `ground` / `compact`) across pages.
 
 Section library and example compositions: [skill-sections.md](skill-sections.md).
 
@@ -162,7 +162,7 @@ Visual direction: calm, premium, natural, clinically credible, spacious, human, 
 
 ## 6. Lead capture
 
-**One** consultation form. The visitor-facing primary CTA is **Book a Consultation**.
+**One** consultation form. The visitor-facing primary CTA is **Book a consultation**.
 
 Form chrome may use **Send your details**. Avoid parallel CTAs (Enquire about a stay, Request a consultation, Enquire Now, Request Callback, Know More, Get Quote, Start Journey, Begin your transformation) unless a genuinely different action exists. Visitor-facing labels follow [skill-copy.md](skill-copy.md).
 
@@ -196,7 +196,7 @@ Launch custom events only:
 
 | Event | When | Properties |
 | --- | --- | --- |
-| `consultation_cta_click` | Book Consultation CTA clicked | `page_type`, `content_id`, `content_name`, `cta_location` (`header` / `hero` / `inline` / `bottom` / `sticky`), `locale` |
+| `consultation_cta_click` | Book a consultation CTA clicked | `page_type`, `content_id`, `content_name`, `cta_location` (`header` / `hero` / `inline` / `bottom` / `sticky`), `locale` |
 | `form_start` | Form genuinely started | `form_id`, `page_type`, `locale` |
 | `generate_lead` | Submission confirmed | `form_id`, `page_type`, `source_page`, `locale` |
 | `contact_click` | WhatsApp / phone / email | `contact_method`, `page_type`, `cta_location`, `locale` |
@@ -295,7 +295,7 @@ These files are **previews** of the skill, not the live site:
 | `screens/ContactScreen.js` | contact | `HeroStatement` + NAP (Shantara Naturopathy Retreat), distances, call / WhatsApp / email |
 | `screens/ConsultationScreen.js` | consultation | One short form |
 | `screens/TariffScreen.js` | pricing surface | Structure only: currency selector, room × occupancy table, supplements, payment terms and cancellation, with “—” in place of every rate |
-| `chrome/SiteChrome.js` | chrome | Header overlays every page: logo, five centred nav items, LanguageSelector, phone dropdown, Book a Consultation; menu sheet (with the LanguageSelector) under 1000px; compact wordmark / frangipani mark at narrow or zoomed widths. Footer: Pine Tree ground, rosette strip on top, brand column (cream wordmark, NAP and social profile links) + three link columns (accordions under 760px); the bottom bar carries the copyright (legal entity, Metropolis Forward LLP), the Privacy and Terms links and the short location line. The text-size control is optional; the kit shows one, the production footer does not include it. Also `PageSlot` (`data-ds-id="page/<view>/<slot>"` on every section) |
+| `chrome/SiteChrome.js` | chrome | Header overlays every page: logo, five centred nav items, LanguageSelector, phone dropdown, Book a consultation; menu sheet (with the LanguageSelector) under 1000px; compact wordmark / frangipani mark at narrow or zoomed widths. Footer: Pine Tree ground, rosette strip on top, brand column (cream wordmark, NAP and social profile links) + three link columns (accordions under 760px); the bottom bar carries the copyright (legal entity, Metropolis Forward LLP), the Privacy and Terms links and the short location line. The text-size control is optional; the kit shows one, the production footer does not include it. Also `PageSlot` (`data-ds-id="page/<view>/<slot>"` on every section) |
 | `chrome/Photo.js` | chrome | Adapter over `Media` for `assets/photos/*` |
 
 Kit notes for humans: [README.md](README.md).

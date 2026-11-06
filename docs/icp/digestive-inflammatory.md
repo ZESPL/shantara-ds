@@ -98,7 +98,7 @@ Indicative: Gastrointestinal & Gut Health Restoration; Detox; Inflammatory & Mus
 
 ### N. Appropriate CTA
 
-Learn about the programme; Book a Consultation; Meet our doctors. Never “Reverse autoimmunity”.
+Learn about the programme; Book a consultation; Meet our doctors. Never “Reverse autoimmunity”.
 
 ### O. Conversion objective
 

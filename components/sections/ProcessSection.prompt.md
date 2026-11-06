@@ -10,7 +10,7 @@ The guest's own path in 3 to 5 numbered steps.
 </Section>
 ```
 
-**Use** on Home, programme pages and Book a Consultation, once per page.
+**Use** on Home, programme pages and Book a consultation, once per page.
 
 **Content.** Only steps the guest takes or sees. Never internal process ("we log your details"), never a response time that is not confirmed. A fifth step and beyond is dropped.
 

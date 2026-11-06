@@ -28,7 +28,7 @@ Keep the launch event model small.
 
 #### `consultation_cta_click`
 
-Fire when the Book a Consultation CTA is clicked.
+Fire when the Book a consultation CTA is clicked.
 
 Properties: `page_type`; `content_id`; `content_name`; `cta_location`; `locale` (added centrally).
 

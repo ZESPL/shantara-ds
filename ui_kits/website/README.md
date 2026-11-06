@@ -25,7 +25,7 @@ In the catalog, open `index.html` for the sample, then the Website kit cards for
 
 Welnez is the former name. Use **Shantara** in all new public copy.
 
-Primary visitor-facing action: **Book a Consultation**. This kit holds no rates, currencies or validity dates. [`content/tariff.json`](../../content/tariff.json) holds the tariff structure, and the tariff card (`screens/TariffScreen.js`) shows it with “—”. Production rates live only in the Keystatic tariff.
+Primary visitor-facing action: **Book a consultation**. This kit holds no rates, currencies or validity dates. [`content/tariff.json`](../../content/tariff.json) holds the tariff structure, and the tariff card (`screens/TariffScreen.js`) shows it with “—”. Production rates live only in the Keystatic tariff.
 
 Entity facts for kit screens: [`content/`](../../content/) (load `content/kit.js` → `window.ShantaraContent`). After editing facts, edit `content/` only. Screens compose `components/sections/` and `components/editorial/`. After editing `components/**`, rebuild `_ds_bundle.js` with `node scripts/build-bundle.mjs` (components only, never for copy).
 
@@ -46,7 +46,7 @@ rtl-fixture.html
 
 | File | Surface |
 | --- | --- |
-| `chrome/SiteChrome.js` | Header over every page: logo, five centred nav items (Programmes, Conditions, Experience, About, Journal), LanguageSelector, phone dropdown (Call / WhatsApp / Email; call and WhatsApp numbers are separate fields, both currently +91 9553 600 100), Book a Consultation; menu sheet under 1000px holds the nav, contact lines and LanguageSelector. Breakpoints are container queries so text size lg/xl (html `zoom`) re-lays the header. Footer: Pine Tree ground, rosette strip, cream wordmark + NAP "Shantara Naturopathy Retreat" and social profile links, three link columns (accordions under 760px), bottom bar with the copyright (legal entity, Metropolis Forward LLP), the Privacy and Terms links and the short location line. The text-size control is optional; the kit shows one, the production footer does not include it. `PageSlot` wraps every page section with `data-ds-id="page/<view>/<slot>"` |
+| `chrome/SiteChrome.js` | Header over every page: logo, five centred nav items (Programmes, Conditions, Experience, About, Journal), LanguageSelector, phone dropdown (Call / WhatsApp / Email; call and WhatsApp numbers are separate fields, both currently +91 9553 600 100), Book a consultation; menu sheet under 1000px holds the nav, contact lines and LanguageSelector. Breakpoints are container queries so text size lg/xl (html `zoom`) re-lays the header. Footer: Pine Tree ground, rosette strip, cream wordmark + NAP "Shantara Naturopathy Retreat" and social profile links, three link columns (accordions under 760px), bottom bar with the copyright (legal entity, Metropolis Forward LLP), the Privacy and Terms links and the short location line. The text-size control is optional; the kit shows one, the production footer does not include it. `PageSlot` wraps every page section with `data-ds-id="page/<view>/<slot>"` |
 | `chrome/Photo.js` | Adapter over the `Media` primitive for `assets/photos/*` (square-cut, ratio, `mobileRatio`, scrim) |
 | `screens/HomeScreen.js` | Full-bleed hero, approach, doctors, programme tiles + index, therapies, rooms, journal, FAQ (no ClosingCTA; the hero carries the CTA) |
 | `screens/ConditionsScreen.js` | Condition listing, visual groups only |

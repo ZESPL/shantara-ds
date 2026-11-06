@@ -53,7 +53,7 @@ Do not reposition Shantara as a spa, weekend getaway, beauty retreat, generic re
 
 **M. Programmes.** Weekend Rejuvenation; sometimes Executive Wellness; shorter Detox only if clinically and commercially real.
 
-**N. CTA.** Book a Consultation; Learn about the programme. Not “Book this weekend”.
+**N. CTA.** Book a consultation; Learn about the programme. Not “Book this weekend”.
 
 **O. Conversion.** Enquiry, then a stay that is correctly scoped, then CRM follow-up for a later core-ICP residency.
 

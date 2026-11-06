@@ -26,7 +26,7 @@ The rule of restraint is **one reader, one idea, one focal point, one next step*
 
 - **Page:** one idea and one primary action, decided in build step 1 before any layout.
 - **Section:** one point, one heading, one photograph (or one row of tiles), at most one action.
-- **View:** one dominant element (one Display or Statement headline, or one hero photograph), one primary button, one rosette band, one accent. The header's Book a Consultation button is the frame and does not count against the view.
+- **View:** one dominant element (one Display or Statement headline, or one hero photograph), one primary button, one rosette band, one accent. The header's Book a consultation button is the frame and does not count against the view.
 - **Element:** one label per action and one name per thing.
 
 When a second idea, image or action competes, move it to its own section or page, or demote it (a `TextLink`, a meta row). Do not shrink both to fit.
@@ -275,7 +275,7 @@ Visual quality serves one journey:
 
 Programme exploration → Enquiry / WhatsApp / Booking intent
 
-Primary visitor-facing CTA remains **Book a Consultation**. When choosing between two design options, prefer the one that makes this journey clearer.
+Primary visitor-facing CTA remains **Book a consultation**. When choosing between two design options, prefer the one that makes this journey clearer.
 
 ## Review checklist
 

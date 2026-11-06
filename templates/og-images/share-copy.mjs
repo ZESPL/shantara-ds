@@ -217,11 +217,11 @@ export const FIXED_PAGES = {
   },
   "book-consultation": {
     title: "Book a consultation",
-    description: "Send a few details. A doctor helps you choose the next step.",
+    description: "Share your name and a number we can reach. Our team will contact you to arrange a consultation.",
     og: {
       template: "programme",
       title: "Book a consultation",
-      description: "A doctor helps you choose the next step.",
+      description: "Share your name and a number we can reach. Our team will contact you to arrange a consultation.",
       photo: "porch-lobby-dusk",
     },
   },

@@ -1,7 +1,7 @@
 A one-line strip above the site header for one site-wide message.
 
 ```jsx
-<AnnouncementBar href="/en/book-consultation" linkLabel="Book a Consultation">
+<AnnouncementBar href="/en/book-consultation" linkLabel="Book a consultation">
   Every stay begins with a consultation.
 </AnnouncementBar>
 <AnnouncementBar ground="stone" dismissible storageKey="consultation-2026-10">

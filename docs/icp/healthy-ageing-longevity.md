@@ -108,7 +108,7 @@ Indicative: Longevity (named handbook wellness programme); Complete Healing; Wei
 
 ### N. Appropriate CTA
 
-Book a Consultation; Meet our doctors; Read what to expect. Avoid “Add years to your life”.
+Book a consultation; Meet our doctors; Read what to expect. Avoid “Add years to your life”.
 
 ### O. Conversion objective
 

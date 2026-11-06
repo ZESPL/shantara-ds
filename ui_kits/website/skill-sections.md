@@ -97,7 +97,7 @@ Do not create a single Hero with 30 props. Do not create 12 hero variants.
 | --- | --- |
 | Immersive (Home, Experience) | `HeroFullBleed` (Display headline, one primary button, `meta` caption row) |
 | Offer (Programme, Tariffs) | `HeroSplit` (photo one side, title + meta + one line + button) + a booking panel directly below |
-| Editorial / Utility (Conditions, About, Journal, Contact, Book a Consultation) | `HeroStatement` with a side image, a Stone ground or a meta row, never a bare statement |
+| Editorial / Utility (Conditions, About, Journal, Contact, Book a consultation) | `HeroStatement` with a side image, a Stone ground or a meta row, never a bare statement |
 | Article | `ArticleHeader` |
 
 The header overlays every page. On `HeroStatement` it sits on the Merino/Stone ground.
@@ -124,7 +124,7 @@ Typical fields: title; category in the meta row below it; summary; optional imag
 
 Purpose: immediately explain a commercial programme; communicate high-intent information.
 
-Typical fields: programme title; concise proposition; optional image; duration/options; optional starting price (**only if already published on the tariff card; never invent**); short suitability statement; Book a Consultation CTA.
+Typical fields: programme title; concise proposition; optional image; duration/options; optional starting price (**only if already published on the tariff card; never invent**); short suitability statement; Book a consultation CTA.
 
 Do not require every field if it is not relevant.
 
@@ -515,7 +515,7 @@ FAQ
 Consultation CTA
 ```
 
-### Book a Consultation
+### Book a consultation
 
 ```text
 Compact or Conversion-focused Hero

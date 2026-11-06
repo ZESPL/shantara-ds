@@ -124,7 +124,7 @@ The consultation form and Ask the Doctor use the field key `privacy_consent`. Th
 
 Primary visitor-facing CTA:
 
-> **Book a Consultation**
+> **Book a consultation**
 
 Form chrome may use **Send your details**. Do not list **Enquire about a stay** or **Request a consultation** as equivalent primary CTAs. Visitor-facing language follows [skill-copy.md](skill-copy.md).
 
@@ -170,7 +170,7 @@ The hosted-visits request is the other exception, with Ask the Doctor. It is spe
 
 WhatsApp is a secondary communication channel, not a separate lead architecture.
 
-Track WhatsApp clicks, but keep Book a Consultation as the main structured lead path.
+Track WhatsApp clicks, but keep Book a consultation as the main structured lead path.
 
 ### Backend simplicity
 
@@ -215,7 +215,7 @@ The form already captures its context (source page, page type, content id). Use 
 | Consultation · a condition page | Consultation request received | Call, WhatsApp, email | The programme for that condition · A Doctor Answer or Clinical Guide on that condition · Our approach | Back to the condition |
 | Consultation · a doctor profile or Our doctors | Consultation request received | Call, WhatsApp, email | That doctor's answers (Journal) · A day at Shantara · Tariff page | Back to the doctor |
 | Consultation · a Journal article or Doctor Answer | Consultation request received | Call, WhatsApp, email | The programme or condition the article is about · Our doctors · A day at Shantara | Back to the article |
-| Ask the Doctor (popup) | Question received | Email | More Doctor Answers (`/en/journal`) · The doctor's profile or section · Book a Consultation, as the last card only | Close, back to the page |
+| Ask the Doctor (popup) | Question received | Email | More Doctor Answers (`/en/journal`) · The doctor's profile or section · Book a consultation, as the last card only | Close, back to the page |
 | Hosted visits (`/en/hosted-stays`) | Request received | Email | Our story · Farm dining · A day at Shantara | Back to home |
 
 What happens next, by form:
@@ -235,10 +235,10 @@ The pre-filled line never repeats anything the visitor typed: no name, no condit
 #### Rules for every confirmation
 
 - In a modal, drawer or inline panel, the confirmation replaces the form inside the same container (`headingLevel={2}`, `exploreLayout="list"` so the cards become rows), and closing it returns the visitor to the page they were reading.
-- Do not repeat Book a Consultation on a consultation confirmation. Do not add a second form, a newsletter sign-up, a share bar, social follow buttons, testimonials, a countdown, a promotion or an autoplaying video.
+- Do not repeat Book a consultation on a consultation confirmation. Do not add a second form, a newsletter sign-up, a share bar, social follow buttons, testimonials, a countdown, a promotion or an autoplaying video.
 - Never echo health information the visitor typed, on screen or in a URL.
 - No separate thank-you URL. The confirmation is a state of the page that holds the form. Conversion is the event, fired only after the destination confirms success.
-- Hosted visits keep their page rules: no tariff link and no Book a Consultation on the confirmation.
+- Hosted visits keep their page rules: no tariff link and no Book a consultation on the confirmation.
 - Analytics: WhatsApp, call and email taps fire `contact_click` with `cta_location` `confirmation`. Do not add an event for card clicks; page views with the referrer already answer that.
 
 ## Publishing strategy

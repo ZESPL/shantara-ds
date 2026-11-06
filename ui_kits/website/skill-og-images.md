@@ -91,7 +91,7 @@ Jobs are the families in [skill-ia.md](skill-ia.md). The template is still the p
 | Tariff | `programme` | The tariff card | Rooms, inclusions, payment and cancellation. No amount. |
 | FAQ | `editorial` | Questions before a stay | Booking, who can stay, and the days here. |
 | Contact | `editorial` | Speak with the retreat | Call, WhatsApp or email from Keralam. No phone number. |
-| Book a Consultation | `programme` | Book a consultation | A doctor helps you choose the next step. |
+| Book a consultation | `programme` | Book a consultation | A doctor helps you choose the next step. |
 | House rules | `editorial` | During your stay | House rules for life at the retreat. |
 | Cancellation | `editorial` | If a stay is cancelled | How a change or a cancellation is handled. |
 | Privacy | `editorial` | Privacy at the retreat | What we collect, and why we keep it. |
@@ -114,7 +114,7 @@ An article's `category` is the subtype (Clinical Guide, Guest Story, Food & Reci
 | Template | Mirrors | Ground | Used for |
 | --- | --- | --- | --- |
 | `default` | `HeroFullBleed` | Full-bleed photograph, `--scrim-hero` behind the text, `--scrim-header` behind the wordmark | Home; the Experience pages (`/en/therapies`, `/en/rooms`, `/en/amenities-activities`, `/en/farm-dining`, `/en/a-day-at-shantara`); any page that sets no template |
-| `programme` | `HeroSplit` | Merino text column, photograph on the right at 40% of the width | Programme and condition detail pages, the founder's profile (`/en/pa-kareem`), doctor profiles (`/en/doctors/{slug}`), Tariffs, Book a Consultation |
+| `programme` | `HeroSplit` | Merino text column, photograph on the right at 40% of the width | Programme and condition detail pages, the founder's profile (`/en/pa-kareem`), doctor profiles (`/en/doctors/{slug}`), Tariffs, Book a consultation |
 | `editorial` | `HeroStatement`, `ArticleHeader` | Merino, rosette band on the right edge | Conditions and Programmes indexes; About pages (Our Story, Our Approach, Our Doctors, Medical Editorial Policy); the Journal index; every Journal entry (articles, Clinical Guides, Evidence Notes, Doctor Answers, Guest Stories); FAQ, Contact and the policy pages |
 
 **The template follows the page's hero.** A page type not listed here uses the template that matches its hero. Do not add a fourth template; a page that seems to need one uses the closest of the three.

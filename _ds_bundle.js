@@ -8252,7 +8252,7 @@ try { (() => {
 const { Statement, Input, Button, Icon } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 /* The 404 page body: a plain title, one line, a search field that posts to the site search,
-   and three or four useful links (Programmes, Conditions, Book a Consultation, Contact).
+   and three or four useful links (Programmes, Conditions, Book a consultation, Contact).
    Plain words, no jokes, no illustration. The page itself still returns HTTP 404.
    One column at every width, held to a 36rem measure: statement, search, links one per row.
    The field and the button sit in one row and share the 52px control height (Input md, Button lg). */

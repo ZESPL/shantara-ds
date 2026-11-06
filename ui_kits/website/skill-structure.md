@@ -169,7 +169,7 @@ The copy for these pages is written in code (`src/copy/en/`). Facts come from th
 | A Day at Shantara | Handbook §12 (daily routine) and §13 | Use the daily routine timings from handbook §12. Say that the doctor prescribes which treatments fill the morning and afternoon slots. The name follows Shantara, never Welnez. |
 | Our Story | Handbook §2 | Use the history paragraph in that section, and nowhere else. Do not date Shantara to 2000. Mention Welnez only as the former name, and only if the history needs it. |
 | Our Approach | Handbook, naturopathy principles and the guest journey | Describe the journey as enquiry → consultation → stay → going home. Do not use hospital words such as "discharge" or "patients". [AGENTS.md](../../AGENTS.md) bans "patients" on public pages. |
-| Our Doctors | `content/doctors/` | Each doctor gets a photo, name, qualification, areas of practice and a **Book a Consultation** button. Dr. Bahja also links to her profile page. Show only public, visible credentials. The founder, P.A. Kareem, is not a doctor and is not on this page. |
+| Our Doctors | `content/doctors/` | Each doctor gets a photo, name, qualification, areas of practice and a **Book a consultation** button. Dr. Bahja also links to her profile page. Show only public, visible credentials. The founder, P.A. Kareem, is not a doctor and is not on this page. |
 | Guest, policy and about pages | The lists in [skill-ia.md](skill-ia.md#utility-pages) | Do not invent text. Cancellation has no copy file; it renders from the tariff. |
 
 ## Reading content

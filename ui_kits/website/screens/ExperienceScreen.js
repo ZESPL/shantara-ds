@@ -83,7 +83,7 @@ function ExperienceScreen({ onNavigate }) {
           alt={t("The open deck")}
           title={t("Share your name and a number we can reach.")}
           sub={t("Our team will contact you to arrange a consultation.")}
-          action={<Button size="lg" onClick={() => onNavigate("booking")}>{t("Book a Consultation")}</Button>}
+          action={<Button size="lg" onClick={() => onNavigate("booking")}>{t("Book a consultation")}</Button>}
           contact={window.siteContactItems(t)}
         />
       </P>

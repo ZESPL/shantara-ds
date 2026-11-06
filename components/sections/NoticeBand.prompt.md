@@ -5,7 +5,7 @@ A note the reader must not miss: a clinical note, a caution, a policy or a booki
   Do not stop or change any medication before you arrive. Your doctor reviews it with you at your consultation.
 </NoticeBand>
 <NoticeBand tone="caution" layout="band" title="Send your records before your consultation"
-  action={<TextLink href="/en/book-consultation">Book a Consultation</TextLink>}>Share your health assessment, medical records and current medication.</NoticeBand>
+  action={<TextLink href="/en/book-consultation">Book a consultation</TextLink>}>Share your health assessment, medical records and current medication.</NoticeBand>
 ```
 
 **Use** sparingly: one per screen at most, inside a section or within an article. `inline` sits in the flow with a brand rule on its leading edge; `band` spans the container between hairlines.

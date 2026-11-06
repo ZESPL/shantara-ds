@@ -32,7 +32,7 @@ function TariffScreen({ onNavigate }) {
   const home = L ? L.kitHash(window.ShantaraI18n.currentLocaleCode(), "home") : "#/en/";
   const rooms = tariffRooms();
   const tariff = tariffRecord();
-  const book = (where) => () => { if (L) L.track("consultation_cta_click", { page_type: "tariffs", content_id: "tariffs", content_name: "Rooms and tariffs", cta_location: where }); onNavigate("booking"); };
+  const book = (where) => () => { if (L) L.track("consultation_cta_click", { page_type: "tariffs", content_id: "tariffs", content_name: "All-inclusive rates for residential naturopathy programmes", cta_location: where }); onNavigate("booking"); };
   const note = { margin: 0, font: "var(--type-body-sm)", color: "var(--text-secondary)", maxWidth: "var(--measure-body)" };
   const stack = { display: "flex", flexDirection: "column", gap: "var(--stack-md)" };
   return (
@@ -41,10 +41,10 @@ function TariffScreen({ onNavigate }) {
         <HeroSplit
           src={window.photoSrc("room-bedroom-desk-balcony-view")}
           alt={t("A bedroom with a desk and a balcony view")}
-          breadcrumbs={<Breadcrumbs items={[{ label: t("Home"), href: home }, t("Rooms and tariffs")]} />}
-          title={t("Rooms and tariffs")}
-          meta={[t("Five room categories"), t("Rates per night")]}
-          sub={t("Quiet rooms for resting between treatments. Reservations are confirmed after a preliminary consultation.")}
+          breadcrumbs={<Breadcrumbs items={[{ label: t("Home"), href: home }, t("Tariff")]} />}
+          title={t("All-inclusive rates for residential naturopathy programmes")}
+          meta={[t("Rates per night")]}
+          sub={t("Rates cover accommodation, diet therapy, prescribed naturopathy treatments and daily physician consultations.")}
         />
       </P>
 
@@ -52,16 +52,16 @@ function TariffScreen({ onNavigate }) {
         <Section>
           <FormSplit
             aside={<>
-              <Statement as="h2" size="h4">{t("What the nightly rate includes")}</Statement>
+              <Statement as="h2" size="h4">{t("What the rate includes")}</Statement>
               <PlainList columns={1} rules items={(tariff.includes || []).map((line) => t(line))} />
-              <Button fullWidth size="lg" onClick={book("inline")}>{t("Book a Consultation")}</Button>
+              <Button fullWidth size="lg" onClick={book("inline")}>{t("Book a consultation")}</Button>
             </>}
           >
             <Select label={t("Currency")} placeholder={t("Currencies come from the production tariff")} options={[]} disabled />
             <SpecTable
               size="lg"
               showHeader
-              caption={t("Rooms and tariffs")}
+              caption={t("Nightly rates")}
               columns={[
                 { key: "name", label: t("Room") },
                 { key: "single", label: t("Single / night"), accent: true, mobileLabel: true },

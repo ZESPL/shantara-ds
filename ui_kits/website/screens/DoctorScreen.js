@@ -76,7 +76,7 @@ function ProfileScreen({ onNavigate, d, pageType }) {
           ground="pine"
           title={t("Share your name and a number we can reach.")}
           sub={t("Our team will contact you to arrange a consultation.")}
-          action={<Button size="lg" onClick={() => { if (L) L.track("consultation_cta_click", { page_type: pageType, content_id: d.id, content_name: d.full_name, cta_location: "closing" }); onNavigate("booking"); }}>{t("Book a Consultation")}</Button>}
+          action={<Button size="lg" onClick={() => { if (L) L.track("consultation_cta_click", { page_type: pageType, content_id: d.id, content_name: d.full_name, cta_location: "closing" }); onNavigate("booking"); }}>{t("Book a consultation")}</Button>}
           contact={window.siteContactItems(t)}
         />
       </P>

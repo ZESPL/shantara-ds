@@ -60,7 +60,7 @@ try {
   await page.waitForTimeout(400);
   const afterNav = await page.evaluate(() => location.hash);
   if (afterNav !== "#/en/conditions") errors.push("conditions hash " + afterNav);
-  await page.getByRole("button", { name: "Book a Consultation" }).first().click();
+  await page.getByRole("button", { name: "Book a consultation" }).first().click();
   await page.waitForTimeout(500);
   const form = await page.evaluate(() => ({
     hash: location.hash,

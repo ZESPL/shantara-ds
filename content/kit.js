@@ -44,7 +44,7 @@ window.ShantaraContent = {
     "room_categories": 5,
     "built_up_sq_ft": 56000,
     "therapies_count": 13,
-    "primary_cta": "Book a Consultation",
+    "primary_cta": "Book a consultation",
     "form_chrome_cta": "Send your details",
     "form_field_keys": [
       "full_name",

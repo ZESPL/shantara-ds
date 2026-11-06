@@ -103,7 +103,7 @@ Indicative: Stress Management; Executive Wellness; Neurological & Stress-Related
 
 ### N. Appropriate CTA
 
-Book a Consultation; Speak to our team. Avoid “Book your reset now” with countdown timers.
+Book a consultation; Speak to our team. Avoid “Book your reset now” with countdown timers.
 
 ### O. Conversion objective
 

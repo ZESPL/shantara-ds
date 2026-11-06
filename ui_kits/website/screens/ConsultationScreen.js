@@ -19,7 +19,7 @@ function ConsultationScreen({ onNavigate, locale = "en", view = "booking" }) {
     source_page: L.localePath(locale, L.kitViewPath(view)),
     page_type: "consultation",
     content_id: "book-consultation",
-    content_name: "Book a Consultation",
+    content_name: "Book a consultation",
     landing_page: typeof location !== "undefined" ? location.hash : "",
     referrer: typeof document !== "undefined" ? document.referrer : "",
   }) : { locale };
@@ -75,7 +75,7 @@ function ConsultationScreen({ onNavigate, locale = "en", view = "booking" }) {
         <P id="booking/done">
         <HeroStatement
           tall={false}
-          meta={[t("Book a Consultation")]}
+          meta={[t("Book a consultation")]}
           title={t("Consultation request received")}
           sub={t("Our team will contact you to understand your requirements and guide you on the appropriate next step.")}
           actions={<>
@@ -112,7 +112,7 @@ function ConsultationScreen({ onNavigate, locale = "en", view = "booking" }) {
       <P id="booking/hero">
         <HeroStatement
           tall={false}
-          title={t("Book a Consultation")}
+          title={t("Book a consultation")}
           sub={t("Share your name and a number we can reach. Our team will contact you to arrange a consultation.")}
         />
       </P>

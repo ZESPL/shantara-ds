@@ -78,7 +78,7 @@ Each directory holds `<Name>.jsx`, `<Name>.d.ts` (props contract) and `<Name>.pr
 
 ### UI kits
 
-- `ui_kits/website/`: builder skill plus thin samples. Primary CTA is *Book a Consultation*. Public copy follows `skill-copy.md`. The tariff sample shows structure only; this folder holds no rates. Locale architecture: `ui_kits/website/locales.js` (root `locales.js` is a shim).
+- `ui_kits/website/`: builder skill plus thin samples. Primary CTA is *Book a consultation*. Public copy follows `skill-copy.md`. The tariff sample shows structure only; this folder holds no rates. Locale architecture: `ui_kits/website/locales.js` (root `locales.js` is a shim).
 - `ui_kits/app/`: in-stay guest companion, 390×844.
 
 ### Templates
