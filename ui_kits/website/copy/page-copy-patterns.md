@@ -4,6 +4,37 @@ Back to the [copy index](../skill-copy.md).
 
 Headings, CTAs, forms and the day-to-day patterns of writing a page.
 
+## Length
+
+Count words, then cut. These are guides, not a second heading.
+
+| Element | Length | Case and job |
+| --- | --- | --- |
+| Hero title | About 4 to 12 words | Sentence case. One fact. |
+| Hero subtext | One or two sentences, under 30 words | Does not repeat the title. |
+| Section heading | Under 10 words | Sentence case. One idea. |
+| Meta line | Under 12 words | A date, a place or a number. |
+| Table header | 1 to 3 words | Name the column. |
+| Call to action | 2 to 4 words | Sentence case. One label for that action. |
+| Form label | 1 to 4 words | Name the field. The error explains it. |
+| Error | One sentence | Say what to enter. |
+| Footer link | 1 to 5 words | The same term as the page, or the nav term. |
+
+## Before and after
+
+From the approved voice audit. The meaning stays. The selling word, the repeated heading or the pronoun on a fact goes.
+
+| Before | After | Why |
+| --- | --- | --- |
+| Book a consultation | Book a consultation | Sentence case. One label. |
+| Rooms and tariffs, and Packages & rates, both to the same page | Rates and inclusions | One footer link. The breadcrumb stays Tariff. No rooms page. |
+| Rates for residential naturopathy programmes | All-inclusive rates for residential naturopathy programmes | "All-inclusive" moves into the H1. |
+| All-inclusive nightly rates, 2026–27 · INR (₹) | Nightly rates, 2026–27 · INR (₹) | The H2 does not repeat the H1. The currency mark stays. |
+| What your rate includes | What the rate includes | "Your" was on a fact. |
+| All-inclusive package rates | All-inclusive rates | "Package" is banned. |
+| Preparing your mindset | What the stay involves | The heading was persuasion. The list under it is the rules. |
+| Your daily schedule | Daily schedule | "Your" was on a fact. The timetable is the same for every guest. |
+
 ## Write for the visitor
 
 Never write public copy from the perspective of the website team, developer, designer, content strategist or CMS.
@@ -193,7 +224,7 @@ Instead of:
 
 Use:
 
-> Book a Consultation
+> Book a consultation
 
 Instead of:
 
@@ -380,15 +411,10 @@ Calls to action should describe the next action accurately.
 
 Preferred:
 
-* Book a Consultation
+* Book a consultation
 * View programmes
-* View accommodation
+* View the tariff
 * Meet our doctors
-* View tariffs
-* Check what is included
-* Speak to our team
-* Send your details
-* Learn about the programme
 * Read what to expect
 
 Avoid:
@@ -407,7 +433,7 @@ Avoid:
 
 The CTA should describe an action rather than promise an outcome. Keep labels short.
 
-One label per action, everywhere: the consultation action is always **Book a Consultation**, never a different synonym on a different page. One view carries one primary action; any other action is a quieter link ([rule of one](../../../docs/rule-of-one.md)). Do not use Badge or static Tag as decorative pills next to actions.
+One label per action, everywhere: the consultation action is always **Book a consultation**, in sentence case, on the header, the footer, the page title, the H1, the breadcrumb, the submit button and the analytics name. One view carries one primary action; any other action is a quieter link ([rule of one](../../../docs/rule-of-one.md)). Do not use Badge or static Tag as decorative pills next to actions.
 
 ---
 

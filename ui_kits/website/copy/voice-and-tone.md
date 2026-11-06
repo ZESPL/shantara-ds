@@ -4,11 +4,11 @@ Back to the [copy index](../skill-copy.md).
 
 ## Core principle
 
-Clarity comes first.
+Restraint comes first.
 
-Warmth comes second.
+A fact, a price or a policy is a neutral sentence.
 
-Brand expression comes third.
+Warmth is not a layer added on top. Say the useful thing once, then stop.
 
 Shantara is a naturopathy retreat: a doctor-led residential clinic guests stay at.
 
@@ -36,29 +36,27 @@ If a sentence does not help the visitor understand Shantara, make a decision or 
 
 ## Voice
 
-Write like a knowledgeable practitioner and an attentive hotelier. That is the clinical-hotel voice: calm and warm, serious about care, never resort-cheerful and never hospital-solemn.
+Write like a knowledgeable practitioner stating what is so. That is the clinical-hotel voice: calm, specific, serious about care, never resort-cheerful and never hospital-solemn.
 
 The voice should be:
 
 * Calm
 * Clear
 * Respectful
-* Reassuring
 * Specific
-* Positive, honest, polite, caring, trustworthy, professional
-* Warm without being sentimental
+* Honest
+* Neutral about facts, prices and policy
 * Clinical when necessary
-* Hospitable without sounding luxurious for its own sake
 
 Do not write Cheerful. That is spa-bright, not a hotel with doctors.
 
-Hospitality leads. Belonging follows. Rejuvenation is not a voice word; *rejuvenating* stays on the caution list in [words to avoid](words-to-avoid.md).
+Do not sell. No urgency, no superlative, no sentence whose only job is to make the reader feel wanted.
 
-**Who we are:** Positive, Calm, Honest, Polite, Caring, Trustworthy, Professional.
+**Who we are:** Honest, Calm, Specific, Respectful, Professional.
 
-**Who we are not:** Rude, Toxic, Passive-aggressive, Gender-negative, Stereotypical, Slow to respond. Do not add Cheap (that invites luxury language) or Cheerful (that is spa-bright).
+**Who we are not:** Rude, Toxic, Passive-aggressive, Gender-negative, Stereotypical, Slow to respond, Cheerful, promotional.
 
-Register for writers: spoken-formal, serious about the medicine, fully respectful, warmly hospitable. A little warmth is hospitality. Spa enthusiasm is not.
+Register for writers: spoken-formal and plain. Policy pages are stricter. Spa enthusiasm is not a register.
 
 Policy pages are the exception. They use formal policy language. See [policy language](policy-language.md).
 
@@ -67,33 +65,21 @@ Policy pages are the exception. They use formal policy language. See [policy lan
 | Formal → Casual | near Formal | Spoken-formal, not stiff |
 | Serious → Funny | near Serious | Serious about care, not grave |
 | Respectful → Irreverent | Respectful | Fully respectful |
-| Matter-of-fact → Enthusiastic | just short of halfway | Hotel warmth, not spa hype |
+| Matter-of-fact → Enthusiastic | Matter-of-fact | State the fact. Do not warm it up. |
 
-Use:
+Use **you** only when the sentence tells the reader to do something: pack, send, call, choose, stop tea and coffee.
 
-> We
+Use **we** only for a commitment Shantara makes: we will call, we provide the pyjama suits, we retain a record.
 
-for Shantara.
+Do not put **you** or **your** on a fact to make it feel personal. "A doctor prescribes the treatments" is the fact. "Choose two signature therapies each week" is an instruction.
 
-Use:
+Prefer **guest** over client, customer or patient. **Guest** is the public noun for the person staying, including Guest Rights and Responsibilities. Handbook and internal notes may say patient when that text is not published. Schema field names are not public copy.
 
-> You
+Headings are sentence case. The consultation label is "Book a consultation". Do not set it in title case. Owner-locked titles stay as the owner wrote them. The visa page title is one of those. Do not invent a sentence-case twin.
 
-for the guest.
+Say it once. The H1, the lead under it and the first section heading do not repeat the same words. If the H1 says all-inclusive, the next heading does not.
 
-Prefer:
-
-> Guest
-
-over:
-
-> Client
-
-or:
-
-> Patient
-
-**Guest** is the public noun for the person staying, including Guest Rights and Responsibilities. Handbook and internal notes may say patient when that text is not published.
+British and Indian spelling: programme, centre, colour.
 
 ---
 
@@ -424,6 +410,24 @@ If not, split it or move the extra idea to where it belongs. See [rule of one](.
 Does the sentence provide information, or does it merely make Shantara sound like a wellness brand?
 
 If it only creates atmosphere, cut it or make it specific.
+
+### Restraint test
+
+Does the sentence sell, hurry the reader, or praise Shantara?
+
+If yes, delete it or replace it with the fact.
+
+### Pronoun test
+
+Is "you" or "your" doing the work of a fact that could be stated neutrally?
+
+If the reader is not being told to do something, take the pronoun out.
+
+### Once test
+
+Do the H1, the lead and the next heading say the same thing?
+
+If yes, keep it in one of them.
 
 ### Simplicity test
 

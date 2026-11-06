@@ -6,7 +6,7 @@ This skill governs all public-facing language written for the Shantara website: 
 
 A visitor should understand Shantara without having to understand Shantara's website architecture, internal processes, clinical terminology, content system or business rules. Public copy must sound like it was written for a prospective guest, not for the team building the website.
 
-**Core principle: clarity first, warmth second, brand expression third.**
+**Core principle: restraint first. A fact, a price or a policy is a neutral sentence. Say it once.**
 
 ## Parts
 
@@ -31,8 +31,10 @@ These are enforced everywhere; the linked part has the full rule.
 * **Never "four acres" / "4 acres" / "four hilltop acres".** "Hilltop" alone is fine. See [naming and NAP](copy/naming-and-nap.md#site-hilltop-not-acreage).
 * **"52 rooms"** at most once per site, never prominently (no stat tile, heading, or hero). See [naming and NAP](copy/naming-and-nap.md#rooms).
 * **Phone and WhatsApp**: stored as separate fields, both currently **+91 9553 600 100**. Email **heal@shantara.life**. See [naming and NAP](copy/naming-and-nap.md#one-contact-number).
-* **Plain and direct.** State facts and limitations explicitly. No softening, no "not every" when "some" says it, no words added to sound polished. See [voice and tone](copy/voice-and-tone.md#direct-and-natural-language).
-* **Guest**, not "patient" or "client", on public pages. See [voice and tone](copy/voice-and-tone.md#voice).
+* **Plain and direct.** State facts and limitations explicitly. No softening, no words added to sound polished, no selling verb. See [voice and tone](copy/voice-and-tone.md#direct-and-natural-language).
+* **Guest**, not "patient", "client" or "customer", on public pages. **You** only for an instruction the reader carries out. **We** only for a commitment. See [voice and tone](copy/voice-and-tone.md#voice).
+* **Sentence case headings.** The consultation action is **Book a consultation** everywhere: header, footer, page title, H1, breadcrumb, submit button and analytics name. See [page copy patterns](copy/page-copy-patterns.md#calls-to-action).
+* **One term.** The rates breadcrumb is **Tariff**. The footer link is **Rates and inclusions**. Do not also call the page rooms and tariffs, or packages and rates. **Rooms** only when a rooms page exists.
 * **No isolated prices** outside the tariff surface. See [health claims and compliance](copy/health-claims-and-compliance.md#pricing-must-remain-controlled).
 * **Nursing care and the personal attendant are different services.** Before writing about nursing, nurses, attendants, bystanders or helpers, read `docs/handbook/glossary.md` and follow the naming rules exactly.
 * **Policy pages use formal policy language**, not the spoken-formal site voice, and rewording never changes a commitment. See [policy language](copy/policy-language.md).

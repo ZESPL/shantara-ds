@@ -30,13 +30,13 @@ Where outcomes vary, make that clear.
 
 Use:
 
-> Recommendations depend on your assessment and individual health needs.
+> Recommendations depend on the assessment and the guest's health.
 
 Medication should be described carefully.
 
 Prefer:
 
-> Our doctors review your current medication as part of your assessment. Any change should be considered individually and only when medically appropriate.
+> Doctors review current medication as part of the assessment. Any change is considered individually and only when medically appropriate.
 
 Do not present medication reduction as an expected or intended outcome.
 

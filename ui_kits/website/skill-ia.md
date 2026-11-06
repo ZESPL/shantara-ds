@@ -16,9 +16,9 @@ Recommended top-level structure:
 - About
 - Journal (articles and Doctor Answers)
 - Contact
-- Book a Consultation
+- Book a consultation
 
-The primary visitor-facing CTA is **Book a Consultation**. Form chrome may use **Send your details**. Do not use **Enquire about a stay** or **Request a consultation** as primary CTAs. See [skill-copy.md](skill-copy.md).
+The primary visitor-facing CTA is **Book a consultation**, including the submit button. Do not use **Enquire about a stay**, **Request a consultation** or **Send your details** as a second label for that action. See [skill-copy.md](skill-copy.md).
 
 Do not create a mega-menu unless the number of live pages genuinely makes normal navigation difficult.
 
@@ -143,7 +143,7 @@ Medical Editorial Policy also sits under About.
 
 Accreditations and Sustainability are standing pages. Their URLs are under [Utility pages](#utility-pages).
 
-`/en/our-doctors` lists every practising doctor with a photo, name, qualification, areas of practice and a **Book a Consultation** button. The founder and chairman, P.A. Kareem, is not a doctor and is not listed there: he appears on Our Story, in the board, and on his own page, `/en/pa-kareem`, which lists his press, talks, videos and social posts. Dr. Bahja Janu (`/en/doctors/bahja-janu`) is the only doctor with a profile page. A doctor profile lists the doctor's answers, the articles they reviewed, their programmes, and any press, talks, videos and social posts on the doctor record. Those lists are outbound links. A YouTube recording is a link, never an embedded player. Do not create a profile page for any other doctor; link to their section on `/en/our-doctors` instead (for example `/en/our-doctors#{slug}`).
+`/en/our-doctors` lists every practising doctor with a photo, name, qualification, areas of practice and a **Book a consultation** button. The founder and chairman, P.A. Kareem, is not a doctor and is not listed there: he appears on Our Story, in the board, and on his own page, `/en/pa-kareem`, which lists his press, talks, videos and social posts. Dr. Bahja Janu (`/en/doctors/bahja-janu`) is the only doctor with a profile page. A doctor profile lists the doctor's answers, the articles they reviewed, their programmes, and any press, talks, videos and social posts on the doctor record. Those lists are outbound links. A YouTube recording is a link, never an embedded player. Do not create a profile page for any other doctor; link to their section on `/en/our-doctors` instead (for example `/en/our-doctors#{slug}`).
 
 Entity and parent history (including Hygiene Nature Cure Hospital / HNCH) belong here, not on condition or programme pages, and not as a hospital product pitch.
 
@@ -181,7 +181,7 @@ Traditional blog articles may continue to exist, but do not make generic blog pr
 
 ## Utility pages
 
-- Book a Consultation (`/en/book-consultation`)
+- Book a consultation (`/en/book-consultation`)
 - Contact (`/en/contact`)
 - Hosted visits (`/en/hosted-stays`): a special page. Specified in [special-pages/hosted-stays.md](special-pages/hosted-stays.md). Indexable. Not linked from the guest journey. No kit sample.
 - Frequently asked questions (`/en/faq`, grouped by category)
