@@ -59,7 +59,7 @@ function TodayScreen({ onTab, onOpen }) {
       <div>
         <h2 style={{ font: "var(--type-h4)", fontSize: "var(--text-lg)", marginBottom: "var(--space-4)" }}>{t("Open to you today")}</h2>
         <div style={{ display: "flex", gap: "var(--space-4)", overflowX: "auto", paddingBottom: 4 }}>
-          {[["Library", "library", "Quiet, all day"], ["Walking trails", "grounds", "Cooler after 5pm"], ["Courtyard", "courtyard", "Heliotherapy 7–9am"]].map(([n, ph, m]) => (
+          {[["Hydrotherapy", "hydrotherapy-waiting", "Waiting area"], ["Walking trails", "grounds", "Cooler after 5pm"], ["Courtyard", "courtyard", "Heliotherapy 7–9am"]].map(([n, ph, m]) => (
             <div key={n} style={{ flex: "0 0 168px" }}>
               <Photo name={ph} alt={t(n)} height={120} radius="var(--radius-sm)" />
               <div style={{ fontSize: "var(--text-sm)", fontWeight: "var(--weight-medium)", marginTop: "var(--space-3)" }}>{t(n)}</div>

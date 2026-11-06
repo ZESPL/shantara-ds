@@ -31,7 +31,7 @@ On this machine the pack was about **575MB**, almost all of it the raw `TRD` fra
 
 Flat folder; see [`assets/photos/README.md`](../assets/photos/README.md).
 
-**Kit defaults:** `arrival-dusk` · `valley` · `courtyard` · `treatment` · `room-premium` · `room-twin` · `balcony` · `dining` · `water-wall` · `library` · `grounds` · `lobby` · `exterior-day` · `reception` · `corridor` · `lounge`
+**Kit defaults:** `porch-lobby-dusk` · `lobby-valley` · `courtyard` · `treatment` · `room-premium` · `room-twin` · `open-deck` · `dining` · `water-wall` · `hydrotherapy-waiting` · `grounds` · `lobby` · `porch-day` · `lobby-reception` · `corridor` · `lobby-mezzanine`
 
 Plus descriptive alternates (rooms, dining, exteriors, treatments, etc.) and doctor photos (`doctor-*-portrait` full; `doctor-*-profile` square close-up). Prefer frames without `-guest` for public marketing. No room numbers.
 
