@@ -47,8 +47,8 @@ const card = (file, page, image) => ({
 });
 
 const samples = [
-  card("home.jpg", fixed("home"), photo("arrival-dusk")),
-  card("programme.jpg", programme, photo("balcony")),
+  card("home.jpg", fixed("home"), photo("porch-lobby-dusk")),
+  card("programme.jpg", programme, photo("open-deck")),
   card("doctor.jpg", bahja, photo("doctor-bahja-janu-portrait")),
   card("founder-kareem.jpg", kareem, asset("photos/founder-pa-kareem-passport.jpeg")),
   card("editorial.jpg", article),
@@ -56,16 +56,16 @@ const samples = [
   card("doctor-answer.jpg", shortAnswer),
   /* Layout fixture: a question long enough to wrap to three lines. The page's share headline is the shorter og.title. */
   { file: "long-title.jpg", template: "editorial", title: "Can I continue my existing medication during a naturopathy stay?" },
-  card("therapies.jpg", fixed("therapies"), photo("arrival-dusk")),
+  card("therapies.jpg", fixed("therapies"), photo("porch-lobby-dusk")),
   card("rooms.jpg", fixed("rooms"), photo("room-bedroom-forest-view-armchair")),
   card("tariff.jpg", fixed("tariff"), photo("room-premium")),
   card("faq.jpg", fixed("faq")),
   card("contact.jpg", fixed("contact")),
   /* The one committed fallback for pages that are not generated (public/og-default.jpg). */
-  { file: "og-default.jpg", template: "default", title: site.business_name, photo: photo("valley") },
+  { file: "og-default.jpg", template: "default", title: site.business_name, photo: photo("lobby-valley") },
   /* Rendering tests for right-to-left locales. Not approved images; no Arabic page uses them. */
-  { file: "rtl-test/default.jpg", template: "default", dir: "rtl", title: AR_TITLE, description: AR_LINE, photo: photo("valley") },
-  { file: "rtl-test/programme.jpg", template: "programme", dir: "rtl", title: AR_TITLE, description: AR_LINE, photo: photo("balcony") },
+  { file: "rtl-test/default.jpg", template: "default", dir: "rtl", title: AR_TITLE, description: AR_LINE, photo: photo("lobby-valley") },
+  { file: "rtl-test/programme.jpg", template: "programme", dir: "rtl", title: AR_TITLE, description: AR_LINE, photo: photo("open-deck") },
   { file: "rtl-test/editorial.jpg", template: "editorial", dir: "rtl", title: AR_TITLE, description: AR_LINE },
 ];
 

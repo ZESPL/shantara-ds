@@ -3,7 +3,7 @@ A heading row with one text link on the right, then tiles in a grid that never l
 ```jsx
 <TileGrid title="Naturopathy programmes"
   action={<TextLink href="/en/programmes">All programmes</TextLink>}>
-  <Tile src="/assets/photos/balcony.jpg" alt="" title="Stress Management" meta={["Mind", "7–14 nights"]}
+  <Tile src="/assets/photos/open-deck.jpg" alt="" title="Stress Management" meta={["Mind", "7–14 nights"]}
     text="Doctor-led routines, therapies and rest for guests managing sustained stress, poor sleep or fatigue." href="/en/programmes/stress-management" />
   <Tile src="/assets/photos/water-wall.jpg" alt="" title="Detox" meta={["Metabolic", "7–21 nights"]} … />
   <Tile src="/assets/photos/grounds.jpg" alt="" title="Weight Management" meta={["Metabolic", "14–21 nights"]} … />

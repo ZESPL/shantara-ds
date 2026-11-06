@@ -1,7 +1,7 @@
 Replaces the white card on linen: photograph and text sit directly on the ground, with no border, shadow or radius. Order: photograph → title → **meta row** → text.
 
 ```jsx
-<Tile src={photo} alt="A balcony over the valley" title="Stress Management"
+<Tile src={photo} alt="The open deck" title="Stress Management"
   meta={["Mind", "7–14 nights"]}
   text="Doctor-led routines, therapies and rest…" href="/en/programmes/stress-management" />
 

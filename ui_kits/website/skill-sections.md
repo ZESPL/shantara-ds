@@ -172,12 +172,21 @@ Editors should select **what the section means**, not manually recreate layout m
 
 The header's logo and controls sit in the page container (1240px plus the 20→48px gutter). A ground that runs edge to edge (Stone, Pine, the Himalaya `BandStatement`) keeps its text on those same lines, so it never breaks the grid. A **photograph** that runs to the screen edge does: on wide screens it passes the edge the logo sits on. One such plane gives a page its scale; several in a row make it feel unanchored.
 
-- **One full-bleed photograph per page, two at most.** Normally that is the hero (`HeroFullBleed` or `HeroSplit`). Every later photograph section uses its boxed form.
-- **Boxed forms** use `bleed={false}`: `SplitSection`, `HeroSplit`, `PanoramaCaption` and `ClosingCTA` (variant `photo`). `PanoramaCaption` and `ClosingCTA` take a `surround` ground (`merino` or `stone`) around the frame.
+- **One full-bleed photograph per page, two at most.** Normally that is the hero (`HeroFullBleed`). Every later photograph section uses its boxed form.
+- **`HeroSplit` is always boxed.** A half-width photograph that bleeds on one side breaks the boxed header's grid, so it has no full-bleed form. A hero that should fill the screen is `HeroFullBleed`, which fills the whole width under a transparent header.
+- **Boxed forms** use `bleed={false}`: `SplitSection`, `PanoramaCaption` and `ClosingCTA` (variant `photo`). `PanoramaCaption` and `ClosingCTA` take a `surround` ground (`merino` or `stone`) around the frame.
 - **Boxed means the default container** (1240px), never `wide` (1440px), so the frame's edges match the logo and the header's controls.
-- **Phones keep the edge-to-edge photograph.** The `HeroSplit`, `PanoramaCaption` and `ClosingCTA` boxed forms change nothing under 1000px; `SplitSection`'s keeps the gutter at every width.
+- **Phones keep the edge-to-edge photograph.** `HeroSplit` and the `PanoramaCaption` and `ClosingCTA` boxed forms change nothing under 1000px; `SplitSection`'s keeps the gutter at every width.
 - **Boxed frames stay square-cut**, like every photograph: no radius, no shadow, no border.
-- `HeroFullBleed` has no boxed form. If the opening should not be immersive, use `HeroStatement` or a boxed `HeroSplit`.
+- `HeroFullBleed` has no boxed form. If the opening should not be immersive, use `HeroStatement` or `HeroSplit`.
+
+### One piece of information per row
+
+Each group, list or block gets its own full row; never set two side by side. No aside beside the main content, no list split into columns, no two groups in a two-column grid, and on phones no two values on one line. A table is the one exception: a row may hold one record (a room and its two rates), with every cell in one type size. When a section seems to need an aside, stack the aside after the content instead. Lists use `PlainList columns={1}` and grouped lists `GroupedList columns={1}`.
+
+### Use the section built for the job
+
+Before composing a page, open its screen sample (§14 of [SKILL.md](SKILL.md)) and the `*.prompt.md` of every component it uses, and use the design system's component for each job before building anything by hand. A section's job is fixed by its prompt: `FormSplit` holds the consultation form and nothing else, so a rate table, a list of inclusions or any other content beside a panel is not a `FormSplit`. When no component fits, add one here first, then use it.
 
 ### Section Intro
 

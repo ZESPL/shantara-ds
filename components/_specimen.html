@@ -65,7 +65,7 @@
       ],
     };
     const therapyEntries = [
-      { id: "yoga-therapy", title: "Yoga Therapy", meta: ["Movement", "Daily, 6:00 AM"], text: "Gentle movement and breathwork adapted to the individual.", src: PH + "activity-hall-yoga-studio-empty.jpg", alt: "The yoga hall" },
+      { id: "yoga-therapy", title: "Yoga Therapy", meta: ["Movement", "Daily, 6:00 AM"], text: "Gentle movement and breathwork adapted to the individual.", src: PH + "yoga-hall-empty.jpg", alt: "The yoga hall" },
       { id: "diet-therapy", title: "Diet Therapy", meta: ["Food"], text: "Meals planned for your programme and reviewed as your stay progresses.", src: PH + "food-spread-five-plates-restaurant-wide-landscape-3x2.jpg", alt: "Five plates of a planned meal" },
       { id: "massage-therapy", title: "Massage Therapy", meta: ["Touch", "Prescribed after assessment"], text: "Therapeutic touch to ease muscle tension and support rest.", src: PH + "massage-foot-reflexology-therapist-side-view-landscape-3x2.jpg", alt: "A therapist's hands during foot reflexology" },
       { id: "hydrotherapy", title: "Hydrotherapy", meta: ["Water", "Prescribed after assessment"], text: "Water at controlled temperatures to support circulation.", src: PH + "treatment-bath-corridor-cubicles.jpg", alt: "The bath corridor in the therapy wing" },
@@ -103,7 +103,7 @@
         case "SplitSection": return <><Label><b>stack</b> + <b>id</b> · text above the photograph at every width; the anchor clears the sticky header</Label>
           <SplitSection id="hijama" stack ground="stone" src={P + "treatment.jpg"} alt="A treatment room"><Statement sub="Traditional cupping, delivered under medical supervision.">Hijama</Statement></SplitSection>
           <Label><b>video</b> · the player in the photograph's place (poster only here)</Label>
-          <SplitSection video={{ poster: P + "activity-hall-yoga-studio-empty.jpg", title: "Inside the yoga hall" }} mediaSide="end"><Statement sub="How a morning session is guided, adapted to what you can manage that day.">Inside the yoga hall</Statement></SplitSection></>;
+          <SplitSection video={{ poster: P + "yoga-hall-empty.jpg", title: "Inside the yoga hall" }} mediaSide="end"><Statement sub="How a morning session is guided, adapted to what you can manage that day.">Inside the yoga hall</Statement></SplitSection></>;
         case "TileGrid": return <><Label><b>layout="4"</b> · small items: therapies, amenities</Label>
           <Section><TileGrid layout="4" title="Therapies">{therapyEntries.map((t) => <Tile key={t.id} src={t.src} alt={t.alt} ratio="4:3" title={t.title} text={t.text} href={"#" + t.id} />)}</TileGrid></Section>
           <Label><b>layout="list"</b> · one per row, photograph beside the text from 760px</Label>
@@ -119,9 +119,9 @@
         case "FormSplit": return <><Label><b>compact</b> · the same form without the panel</Label>
           <Section><FormSplit compact onSubmit={(e) => e.preventDefault()}><Statement as="h2" size="title">Send your details</Statement><Input label="Name" name="full_name" autoComplete="name" required /><Input label="Mobile / WhatsApp number" name="phone" type="tel" autoComplete="tel" required /><Textarea label="Anything you'd like us to know?" name="notes" rows={3} /><div><Button size="lg" type="submit">Send your details</Button></div></FormSplit></Section></>;
         case "PanoramaCaption": return <><Label><b>video</b> · a muted loop under the same scrim, with a pause button (poster only here)</Label>
-          <PanoramaCaption video={{ poster: P + "valley.jpg", title: "The valley at first light" }} title="The valley at first light" /></>;
+          <PanoramaCaption video={{ poster: P + "lobby-valley.jpg", title: "The valley at first light" }} title="The valley at first light" /></>;
         case "ArticleHeader": return <><Label><b>video</b> · a video article, the player in the lead photograph's place</Label>
-          <ArticleHeader breadcrumbs={<Breadcrumbs items={[{ label: "Journal", href: "#" }, "Life at Shantara"]} />} title="A day at Shantara, on film" dek="Morning yoga to evening meditation." category="Life at Shantara" date="12 August 2026" readTime="3 min watch" video={{ poster: P + "activity-hall-yoga-studio-empty.jpg", title: "A day at Shantara" }} /></>;
+          <ArticleHeader breadcrumbs={<Breadcrumbs items={[{ label: "Journal", href: "#" }, "Life at Shantara"]} />} title="A day at Shantara, on film" dek="Morning yoga to evening meditation." category="Life at Shantara" date="12 August 2026" readTime="3 min watch" video={{ poster: P + "yoga-hall-empty.jpg", title: "A day at Shantara" }} /></>;
         case "BandStatement": return <><Label><b>quote</b> · the page's one accent as a doctor's own words</Label>
           <BandStatement quote={{ quote: "[Placeholder: a doctor's own words, approved for the page.]", cite: "Dr. Bahja Janu", role: "Medical Director" }} /></>;
         default: return null;
@@ -152,7 +152,7 @@
         { name: "Dr. Gangrei Gangmei", role: "Resident Medical Officer", src: P + "doctor-gangrei-gangmei-portrait-cropped.jpeg" },
       ];
       const programmes = [
-        { name: "Stress Management", focus: "Mind", durations: "7–14 nights", photo: "balcony", alt: "A balcony over the valley", text: "Doctor-led routines, therapies and rest for guests managing sustained stress, poor sleep or fatigue.", slug: "stress-management" },
+        { name: "Stress Management", focus: "Mind", durations: "7–14 nights", photo: "open-deck", alt: "The open deck", text: "Doctor-led routines, therapies and rest for guests managing sustained stress, poor sleep or fatigue.", slug: "stress-management" },
         { name: "Detox", focus: "Metabolic", durations: "7–21 nights", photo: "water-wall", alt: "The water wall court", text: "Your doctor may recommend a meal plan or supervised fasting based on your assessment. Therapies may also form part of your programme.", slug: "detox" },
         { name: "Weight Management", focus: "Metabolic", durations: "14–21 nights", photo: "grounds", alt: "The grounds", text: "Meals, daily activity and therapies, with weight and vitals reviewed by a doctor each morning.", slug: "weight-management" },
       ];
@@ -414,8 +414,8 @@
         /* ── Editorial ── */
         case "Media":
           return <div className="stack" style={{ maxWidth: 880 }}>
-            <Media src={P + "balcony.jpg"} alt="A balcony over the valley" ratio="4:3" style={{ maxWidth: 420 }} />
-            <Media src={P + "valley.jpg"} alt="The Chennamangallur valley from the hilltop" ratio="21:9" mobileRatio="4:3" />
+            <Media src={P + "open-deck.jpg"} alt="The open deck" ratio="4:3" style={{ maxWidth: 420 }} />
+            <Media src={P + "lobby-valley.jpg"} alt="The lobby looking out over the valley" ratio="21:9" mobileRatio="4:3" />
           </div>;
         case "MetaRow":
           return <div className="stack" style={{ maxWidth: 720, gap: 24 }}>
@@ -530,7 +530,7 @@
         case "HeroFullBleed":
           return <>
             <HeroFullBleed
-              src={P + "arrival-dusk.jpg"} alt="Shantara at dusk"
+              src={P + "porch-lobby-dusk.jpg"} alt="The lobby seen from the porch at dusk"
               title="A doctor-led naturopathy retreat in Keralam"
               sub="Drug-free naturopathy on a hilltop above the Chennamangallur valley. Every stay begins with a consultation, and your programme is planned by our doctors."
               actions={<><Button size="lg">Book a Consultation</Button><TextLink href="#">View programmes</TextLink></>}
@@ -576,7 +576,7 @@
           </>;
         case "SplitSection":
           return <>
-            <SplitSection src={P + "balcony.jpg"} alt="A balcony over the valley">
+            <SplitSection src={P + "open-deck.jpg"} alt="The open deck">
               <Statement meta={["Mind", "7–14 nights"]} sub="Doctor-led routines, therapies and rest for guests managing sustained stress, poor sleep or fatigue.">Stress Management</Statement>
               <div><TextLink href="#">Read about the programme</TextLink></div>
             </SplitSection>
@@ -593,7 +593,7 @@
             <PlainList columns={2} items={careSteps.map((s) => s.title)} />
           </BandStatement>;
         case "PanoramaCaption":
-          return <PanoramaCaption src={P + "valley.jpg"} alt="The Chennamangallur valley from the hilltop" title="Overlooking the Chennamangallur valley" />;
+          return <PanoramaCaption src={P + "lobby-valley.jpg"} alt="The lobby looking out over the valley" title="Overlooking the Chennamangallur valley" />;
         case "PeopleRow":
           return <Section>
             <PeopleRow title="Your programme is planned by our doctors." people={doctors} action={<TextLink href="#">About Shantara</TextLink>} />
@@ -625,7 +625,7 @@
         case "ClosingCTA":
           return <>
             <ClosingCTA
-              src={P + "exterior-entrance-dusk-lit-canopy.jpg"} alt="The entrance at dusk"
+              src={P + "porch-dusk-lit-canopy.jpg"} alt="The porch at dusk"
               title="A stay is confirmed after a doctor has spoken with you."
               sub="Share your name and a number we can reach. Our team will contact you to arrange a consultation."
               action={<Button size="lg">Book a Consultation</Button>}
@@ -643,7 +643,7 @@
           </>;
         case "FormSplit":
           return <Section>
-            <FormSplit onSubmit={(e) => e.preventDefault()} src={P + "reception.jpg"} alt="The reception desk" aside={<>
+            <FormSplit onSubmit={(e) => e.preventDefault()} src={P + "lobby-reception.jpg"} alt="The lobby, at the reception desk" aside={<>
               <Statement as="h3" size="title" sub="A member of the team will call you to understand what you need. A doctor then reviews whether a stay is the right next step.">We'll be in touch</Statement>
             </>}>
               <Statement as="h2" size="title" sub="Share your name and a number we can reach. Our team will contact you to arrange a consultation.">Send your details</Statement>
@@ -713,7 +713,7 @@
                 { icon: "plane", title: "From Calicut International Airport", text: "About 25 km, roughly 45 minutes. A shared transfer is included; share your flight details at least 48 hours ahead." },
                 { icon: "train-front", title: "From Calicut Railway Station", text: "About 30 km, roughly an hour. A shared transfer is included; share your train details at least 48 hours ahead." },
               ]}
-              src={P + "exterior-entrance-dusk-lit-canopy.jpg"} alt="The entrance at dusk"
+              src={P + "porch-dusk-lit-canopy.jpg"} alt="The porch at dusk"
               map={{ href: "https://maps.google.com/?q=Shantara+Chennamangallur+Kozhikode" }} />
           </Section>;
         case "ArticleLayout":
@@ -738,7 +738,7 @@
             { title: "Managing PCOS through lifestyle", src: P + "grounds.jpg", alt: "The grounds", category: "Clinical Guides", cat: "clinical", readTime: "6 min read" },
             { title: "How meals are planned during a stay", src: P + "dining-restaurant-valley-window.jpg", alt: "The dining room", category: "Food & Recipes", cat: "food", readTime: "4 min read" },
             { title: "How rooms are designed", src: P + "room-twin.jpg", alt: "A twin room", category: "Life at Shantara", cat: "life", readTime: "3 min read" },
-            { title: "A week of monsoon light", src: P + "valley.jpg", alt: "The valley", category: "Life at Shantara", cat: "life", readTime: "4 min read" },
+            { title: "A week of monsoon light", src: P + "lobby-valley.jpg", alt: "The lobby looking onto the valley", category: "Life at Shantara", cat: "life", readTime: "4 min read" },
             { title: "What happens at your naturopathy assessment", src: P + "consultation-doctor-at-desk-with-guest-landscape-3x2.jpg", alt: "A doctor at a consultation desk", category: "Clinical Guides", cat: "clinical", readTime: "5 min read" },
           ];
           const shown = all.filter((a) => cat === "all" || a.cat === cat);
@@ -774,7 +774,7 @@
           </Section>;
         case "TimelineSection":
           return <Section>
-            <TimelineSection title="A day at Shantara" sub="Every guest follows the same daily rhythm. Your doctor prescribes the treatments that fill the morning and afternoon." rows={daySchedule} src={P + "activity-hall-yoga-studio-empty.jpg"} alt="The yoga hall in the morning" />
+            <TimelineSection title="A day at Shantara" sub="Every guest follows the same daily rhythm. Your doctor prescribes the treatments that fill the morning and afternoon." rows={daySchedule} src={P + "yoga-hall-empty.jpg"} alt="The yoga hall in the morning" />
           </Section>;
         case "FeatureGrid":
           return <Section>
@@ -800,9 +800,9 @@
         case "VideoFeature":
           return <>
             <Section>
-              <VideoFeature title="A day at Shantara" sub="Morning yoga to evening meditation, in three minutes." video={{ poster: P + "valley.jpg", title: "A day at Shantara", captions: undefined }} note="Captions available. The video does not play automatically." />
+              <VideoFeature title="A day at Shantara" sub="Morning yoga to evening meditation, in three minutes." video={{ poster: P + "lobby-valley.jpg", title: "A day at Shantara", captions: undefined }} note="Captions available. The video does not play automatically." />
             </Section>
-            <VideoFeature layout="split" ground="stone" title="Inside the yoga hall" sub="How a morning session is guided, adapted to what you can manage that day." video={{ poster: P + "activity-hall-yoga-studio-empty.jpg", title: "Inside the yoga hall" }} />
+            <VideoFeature layout="split" ground="stone" title="Inside the yoga hall" sub="How a morning session is guided, adapted to what you can manage that day." video={{ poster: P + "yoga-hall-empty.jpg", title: "Inside the yoga hall" }} />
           </>;
         case "ProgrammeCompare":
           return <Section>
@@ -833,7 +833,7 @@
         case "GuestStory":
           return <>
             <Section>
-              <GuestStory story={{ quote: "[Placeholder: a consented guest story, in the guest's own words.]", name: "[First name, with consent]", context: "[Programme · length of stay]", src: P + "balcony-lounge-infinity-edge-valley.jpg", alt: "The balcony lounge over the valley" }} />
+              <GuestStory story={{ quote: "[Placeholder: a consented guest story, in the guest's own words.]", name: "[First name, with consent]", context: "[Programme · length of stay]", src: P + "interior-infinity-edge-valley.jpg", alt: "An indoor sitting space looking onto the valley" }} />
             </Section>
             <Section ground="stone">
               <GuestStory title="Guests in their own words" stories={[
@@ -851,7 +851,7 @@
               explore={[
                 { src: P + "dining-restaurant-valley-window.jpg", alt: "The dining room above the valley", title: "A day at Shantara", meta: ["Experience"], text: "From the first consultation to lights out.", href: "#a-day-at-shantara" },
                 { src: P + "consultation-doctor-at-desk-with-guest-landscape-3x2.jpg", alt: "A doctor in consultation with a guest", title: "Meet the doctors", meta: ["About"], text: "Who you will speak with before a stay.", href: "#our-doctors" },
-                { src: P + "balcony.jpg", alt: "A balcony over the valley", title: "Current rates and what a stay includes", meta: ["Tariff"], text: "Rooms, inclusions, payment and cancellation.", href: "#tariffs" },
+                { src: P + "open-deck.jpg", alt: "The open deck", title: "Current rates and what a stay includes", meta: ["Tariff"], text: "Rooms, inclusions, payment and cancellation.", href: "#tariffs" },
               ]}
               actions={<Button variant="secondary">Back to home</Button>} />
           </Section>;
@@ -869,7 +869,7 @@
           </Section>;
         case "Video":
           return <div style={{ padding: 24, display: "grid", gap: 24, maxWidth: 960 }}>
-            <Video poster={P + "valley.jpg"} title="A day at Shantara" />
+            <Video poster={P + "lobby-valley.jpg"} title="A day at Shantara" />
             <div style={{ maxWidth: 480 }}><Video mode="loop" ratio="4:5" poster={P + "water-wall.jpg"} title="The water wall" /></div>
           </div>;
         default:

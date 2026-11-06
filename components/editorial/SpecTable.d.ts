@@ -8,7 +8,5 @@ export interface SpecTableProps extends React.TableHTMLAttributes<HTMLTableEleme
   caption?: string;
   showHeader?: boolean;
   rules?: boolean;
-  /** `lg` sets the accent column in title size, for the tariff card. */
-  size?: "md" | "lg";
 }
 export declare function SpecTable(props: SpecTableProps): JSX.Element;

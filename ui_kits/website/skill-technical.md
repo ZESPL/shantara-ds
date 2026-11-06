@@ -240,7 +240,7 @@ Where appropriate: `MedicalWebPage`; `MedicalCondition`; `BreadcrumbList`; revie
 
 Where appropriate: `WebPage`; one node typed `["Service", "MedicalTherapy"]` with `relevantSpecialty` ([SCHEMA-10](search-visibility/schema.md)); `Offer` only where real visible commercial information exists; `BreadcrumbList`.
 
-Visible commercial figures exist only on the production tariff page, read from the Keystatic tariff. Do not emit `Offer` amounts anywhere else. Each `Offer` uses the exact amount and ISO currency code as entered; never convert or round. This design system holds no rates.
+Visible commercial figures exist only on the production tariff pages (`/en/tariff/{code}`, one per currency), read from the Keystatic Tariffs collection. Do not emit `Offer` amounts anywhere else. Each `Offer` uses the exact amount and ISO currency code as entered; never convert or round. This design system holds no rates.
 
 ### Doctors
 

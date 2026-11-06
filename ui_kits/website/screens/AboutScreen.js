@@ -67,7 +67,7 @@ function AboutScreen({ onNavigate }) {
       </P>
 
       <P id="about/approach">
-        <SplitSection src={window.photoSrc("library")} alt={t("The library at Shantara")} mediaSide="end" ground="merino">
+        <SplitSection src={window.photoSrc("hydrotherapy-waiting")} alt={t("The hydrotherapy waiting area")} mediaSide="end" ground="merino">
           <Statement size="title" sub={t("Treatment is drug-free. Plans are reviewed during the stay and adjusted where needed.")}>
             {t("Doctors set the daily plan: treatments, meals, activity and rest.")}
           </Statement>

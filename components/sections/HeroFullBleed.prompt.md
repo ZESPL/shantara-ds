@@ -2,7 +2,7 @@ Full-screen photographic hero with the statement bottom-left inside a scrim and 
 
 ```jsx
 <HeroFullBleed
-  src="/assets/photos/arrival-dusk.jpg" alt="Shantara at dusk"
+  src="/assets/photos/porch-lobby-dusk.jpg" alt="The lobby seen from the porch at dusk"
   title="A doctor-led naturopathy retreat in Keralam"
   sub="Drug-free naturopathy on a hilltop above the Chennamangallur valley. Every stay begins with a consultation, and your programme is planned by our doctors."
   actions={<>
@@ -38,8 +38,8 @@ Full-screen photographic hero with the statement bottom-left inside a scrim and 
 
 | Hero | Purpose | Use on |
 | --- | --- | --- |
-| `HeroFullBleed` | Immersive: the place carries the message | Home (`height="full"`), the Experience pages (Therapies, Rooms, Amenities & Activities, Farm & Dining, A Day at Shantara), one flagship inner page (`tall`) |
-| `HeroSplit` | Offer: a photograph beside the title, facts and the action | Programme and condition detail pages, doctor profiles, Tariffs, Book a Consultation |
+| `HeroFullBleed` | Immersive: the place carries the message | Home (`height="full"`), the Experience pages (Therapies, Rooms, Amenities & Activities, Farm & Dining, A Day at Shantara), the tariff pages, one flagship inner page (`tall`) |
+| `HeroSplit` | Offer, boxed: a photograph beside the title, facts and the action | Programme and condition detail pages, doctor profiles, Book a Consultation |
 | `HeroStatement` | Editorial: words lead, no photograph needed | Conditions and Programmes indexes, About, Journal index, Contact, legal pages (`ArticleHeader` for single articles) |
 
 One hero per page, always first. None of them takes a label above the title: place, category or duration go in `meta`, below it. Breadcrumbs open every hero except the home page's.

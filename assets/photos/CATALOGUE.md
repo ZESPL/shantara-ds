@@ -13,14 +13,16 @@ Each entry gives:
 - **Mood**, **Best for** and **Cautions** (signage, clutter, near-duplicates, mismatched filenames).
 - **Used by:** the `content/` records that reference the photo, where any do.
 
-### Arrival and exterior
+### Porch
 
-#### arrival-dusk.jpg
+These frames are the porch. `porch-lobby-dusk` is the lobby seen from the porch.
 
-- `arrival-dusk` · 2880×1920 · landscape 3:2 · 1249 KB · kit default
+#### porch-lobby-dusk.jpg
+
+- `porch-lobby-dusk` · 2880×1920 · landscape 3:2 · 1249 KB · kit default
 - **Public use:** **Yes**
-- **Shows:** The entrance porte-cochère at dusk: two stone-clad pillars frame a lit glass lobby with lounge chairs, under a timber-slatted ceiling with downlights. The brand name is mounted on the right pillar.
-- **Setting:** exterior / entrance and lobby
+- **Shows:** The view from the porch into the lobby at dusk: two stone-clad pillars frame the lit glass lobby with chairs, under a timber-slatted ceiling with downlights. The brand name is mounted on the right pillar.
+- **Setting:** porch, looking into the lobby
 - **People:** none (a figure is faintly seated inside the lobby, too small to identify)
 - **Light:** dusk with interior lamps, warm against a cool blue sky; palette: navy, honey wood, grey stone, amber
 - **Composition:** symmetrical; lobby glazing centre, pillars at the left and right edges; text space: timber ceiling across the top band; cobbled forecourt in the lower strip; scrim: light to needed (ceiling is textured)
@@ -28,6 +30,64 @@ Each entry gives:
 - **Mood:** welcoming, evening, architectural
 - **Best for:** full-bleed hero, arrival or location section, share-image background, slide background
 - **Cautions:** readable "SHANTARA" signage on the right pillar and the flower logo lit inside the lobby, which is fine for brand use but duplicates any overlaid logo
+
+#### porch-day.jpg
+
+- `porch-day` · 2880×1918 · landscape 3:2 · 1232 KB · kit default
+- **Public use:** **Yes**
+- **Shows:** The porch in daylight, with a wood-clad canopy, stone-clad columns and a "SHANTARA" wall sign, a black car parked beneath, frangipani trees and a tall palm, under a cloudy sky.
+- **Setting:** porch
+- **People:** none
+- **Light:** overcast daylight, neutral to cool; palette: charcoal grey, warm wood brown, stone grey, green
+- **Composition:** canopy in the centre-left; tree on the right third; text space: cloudy sky in the upper right; scrim: light
+- **Crops:** 3:2 (native), 16:9, 4:3; 21:9 holds (object-position: center 40%); 1:1 centred on the canopy
+- **Mood:** arrival, solid, everyday
+- **Best for:** arrival or how-to-reach-us section, location page figure, split-section half, article figure
+- **Cautions:** readable "SHANTARA" signage on the column. A parked black car under the canopy and a white van and red car at the right edge add clutter. Daytime counterpart of the three dusk porch frames.
+
+#### porch-dusk-driveway.jpg
+
+- `porch-dusk-driveway` · 2880×1919 · landscape 3:2 · 1005 KB
+- **Public use:** **Yes**
+- **Shows:** The porch at dusk with warm downlights in the wood ceiling, lit bollards along a curved cobblestone driveway, a curved rubble-stone wall on the right and a palm silhouette against a blue sky.
+- **Setting:** porch
+- **People:** none
+- **Light:** dusk (blue hour) with interior and path lamps, cool sky and warm lamps; palette: deep blue, charcoal, amber, stone grey
+- **Composition:** canopy and glazed doors in the centre; driveway sweeps from the lower centre; text space: blue sky in the upper centre-right, and dark cobbles in the lower third; scrim: light
+- **Crops:** 3:2 (native), 16:9, 4:3, 1:1 (object-position: center 45%); 21:9 tight on the top
+- **Mood:** welcoming, evening, quiet
+- **Best for:** full-bleed hero, arrival section background, share-image background, slide background
+- **Cautions:** the "SHANTARA" sign on the column is small but legible at full size. Near-duplicate of porch-dusk-lit-canopy.jpg and porch-dusk-suv.jpg.
+
+#### porch-dusk-lit-canopy.jpg
+
+- `porch-dusk-lit-canopy` · 2880×1920 · landscape 3:2 · 1155 KB
+- **Public use:** **Yes**
+- **Shows:** A wider dusk view of the same porch: a lit wood canopy, a glazed lobby, stone columns, potted plants with bollard lights on the left, and uplit frangipani trees with a tall palm on the right.
+- **Setting:** porch
+- **People:** none
+- **Light:** dusk (blue hour) with lamps and uplights, cool sky and warm lamps; palette: deep blue, charcoal, amber, warm wood
+- **Composition:** canopy centred; trees on the right third; text space: sky in the upper centre and upper right, and cobblestone foreground in the lower third; scrim: light
+- **Crops:** 3:2 (native), 16:9, 21:9 (object-position: center 40%), 4:3, 1:1
+- **Mood:** welcoming, calm, evening
+- **Best for:** full-bleed hero, homepage arrival band, share-image background, deck title slide
+- **Cautions:** the sign on the right column is small but legible at full size. Near-duplicate of porch-dusk-driveway.jpg and porch-dusk-suv.jpg.
+
+#### porch-dusk-suv.jpg
+
+- `porch-dusk-suv` · 2880×1923 · landscape 3:2 · 921 KB
+- **Public use:** **Yes**
+- **Shows:** The porch at dusk, seen from further along the drive, with a black SUV parked at the right beside uplit frangipani trees, a large palm silhouette and a blue cloudy sky.
+- **Setting:** porch
+- **People:** none
+- **Light:** dusk (blue hour) with lamps, cool; palette: deep blue, charcoal, amber, grey
+- **Composition:** canopy in the centre-left; palm in the centre-right; SUV at the right edge; text space: a large sky in the upper half, centre and right; scrim: light
+- **Crops:** 3:2 (native), 16:9, 21:9 (object-position: center 35%); 4:3 holds; 1:1 loses the context
+- **Mood:** evening, arrival, quiet
+- **Best for:** wide hero with headline over the sky, arrival section, slide background
+- **Cautions:** the parked black SUV is prominent at the right, and a dark awning intrudes in the top left corner. The sign is small but readable. Near-duplicate of the other two dusk porch frames; prefer porch-dusk-lit-canopy.jpg when you do not want a vehicle in the frame.
+
+### Arrival and exterior
 
 #### exterior-cobblestone-patio-valley-guest.jpg
 
@@ -43,62 +103,6 @@ Each entry gives:
 - **Best for:** portrait hero on mobile, split-section half, story or vertical social background, chapter opener slide
 - **Cautions:** heavy dark wall areas at the edges; the figure is very small at thumbnail size.
 
-#### exterior-day.jpg
-
-- `exterior-day` · 2880×1918 · landscape 3:2 · 1232 KB · kit default
-- **Public use:** **Yes**
-- **Shows:** The main entrance porte-cochère with a wood-clad canopy, stone-clad columns and a "SHANTARA" wall sign, a black car parked beneath, frangipani trees and a tall palm, under a cloudy sky.
-- **Setting:** exterior (entrance and driveway)
-- **People:** none
-- **Light:** overcast daylight, neutral to cool; palette: charcoal grey, warm wood brown, stone grey, green
-- **Composition:** canopy and entrance in the centre-left; tree on the right third; text space: cloudy sky in the upper right; scrim: light
-- **Crops:** 3:2 (native), 16:9, 4:3; 21:9 holds (object-position: center 40%); 1:1 centred on the canopy
-- **Mood:** arrival, solid, everyday
-- **Best for:** arrival or how-to-reach-us section, location page figure, split-section half, article figure
-- **Cautions:** readable "SHANTARA" signage on the column. A parked black car under the canopy and a white van and red car at the right edge add clutter. Daytime counterpart of the three dusk entrance frames.
-
-#### exterior-entrance-dusk-driveway.jpg
-
-- `exterior-entrance-dusk-driveway` · 2880×1919 · landscape 3:2 · 1005 KB
-- **Public use:** **Yes**
-- **Shows:** The entrance canopy at dusk with warm downlights in the wood ceiling, lit bollards along a curved cobblestone driveway, a curved rubble-stone wall on the right and a palm silhouette against a blue sky.
-- **Setting:** exterior (entrance and driveway)
-- **People:** none
-- **Light:** dusk (blue hour) with interior and path lamps, cool sky and warm lamps; palette: deep blue, charcoal, amber, stone grey
-- **Composition:** canopy and glass entrance in the centre; driveway sweeps from the lower centre; text space: blue sky in the upper centre-right, and dark cobbles in the lower third; scrim: light
-- **Crops:** 3:2 (native), 16:9, 4:3, 1:1 (object-position: center 45%); 21:9 tight on the top
-- **Mood:** welcoming, evening, quiet
-- **Best for:** full-bleed hero, arrival section background, share-image background, slide background
-- **Cautions:** the "SHANTARA" sign on the column is small but legible at full size. Near-duplicate of exterior-entrance-dusk-lit-canopy.jpg and exterior-entrance-dusk-suv.jpg.
-
-#### exterior-entrance-dusk-lit-canopy.jpg
-
-- `exterior-entrance-dusk-lit-canopy` · 2880×1920 · landscape 3:2 · 1155 KB
-- **Public use:** **Yes**
-- **Shows:** A wider dusk view of the same entrance: a lit wood canopy, a glazed lobby, stone columns, potted plants with bollard lights on the left, and uplit frangipani trees with a tall palm on the right.
-- **Setting:** exterior (entrance and driveway)
-- **People:** none
-- **Light:** dusk (blue hour) with lamps and uplights, cool sky and warm lamps; palette: deep blue, charcoal, amber, warm wood
-- **Composition:** canopy centred; trees on the right third; text space: sky in the upper centre and upper right, and cobblestone foreground in the lower third; scrim: light
-- **Crops:** 3:2 (native), 16:9, 21:9 (object-position: center 40%), 4:3, 1:1
-- **Mood:** welcoming, calm, evening
-- **Best for:** full-bleed hero, homepage arrival band, share-image background, deck title slide
-- **Cautions:** the sign on the right column is small but legible at full size. Near-duplicate of exterior-entrance-dusk-driveway.jpg and exterior-entrance-dusk-suv.jpg.
-
-#### exterior-entrance-dusk-suv.jpg
-
-- `exterior-entrance-dusk-suv` · 2880×1923 · landscape 3:2 · 921 KB
-- **Public use:** **Yes**
-- **Shows:** The entrance canopy at dusk seen from further down the driveway, with a black SUV parked at the right beside uplit frangipani trees, a large palm silhouette and a blue cloudy sky.
-- **Setting:** exterior (entrance and driveway, road)
-- **People:** none
-- **Light:** dusk (blue hour) with lamps, cool; palette: deep blue, charcoal, amber, grey
-- **Composition:** canopy in the centre-left; palm in the centre-right; SUV at the right edge; text space: a large sky in the upper half, centre and right; scrim: light
-- **Crops:** 3:2 (native), 16:9, 21:9 (object-position: center 35%); 4:3 holds; 1:1 loses the context
-- **Mood:** evening, arrival, quiet
-- **Best for:** wide hero with headline over the sky, arrival section, slide background
-- **Cautions:** the parked black SUV is prominent at the right, and a dark awning intrudes in the top left corner. The sign is small but readable. Near-duplicate of the other two dusk entrance frames; prefer exterior-entrance-dusk-lit-canopy.jpg when you do not want a vehicle in the frame.
-
 #### exterior-facade-cobblestone-guest.jpg
 
 - `exterior-facade-cobblestone-guest` · 2880×1919 · landscape 3:2 · 1003 KB
@@ -113,85 +117,58 @@ Each entry gives:
 - **Best for:** full-bleed hero, architecture or about section, split-section half, slide background
 - **Cautions:** out-of-focus leaves in the lower left foreground. The figure is very small.
 
-### Lobby, reception and lounges
+### Lobby
 
-#### library.jpg
-
-- `library` · 1600×1067 · landscape 3:2 · 325 KB · kit default
-- **Public use:** **Yes**
-- **Shows:** A wooden armchair and a wooden two-seater bench sit on a concrete floor against a concrete-block screen wall and a beige wall. A framed print of a woman in a head wrap hangs on the wall, a glass door at the left opens onto plants and paving, and a row of grey cubicle doors with small labels runs along the right. No books or shelves are visible, so the image does not match its filename.
-- **Setting:** covered seating or waiting corner near cubicles (not a library)
-- **People:** none
-- **Light:** daylight through the block screen and slatted roof, neutral to warm; palette: beige, teak brown, concrete grey, off-white
-- **Composition:** the furniture is at the centre and lower half; text space: the plain beige wall at the upper centre-right, which is small; scrim: light
-- **Crops:** 3:2, 4:3, 16:9 (object-position 50% 60%)
-- **Mood:** plain, functional, tidy
-- **Best for:** internal facility documentation, article figure about common spaces, slide figure
-- **Cautions:** the filename is misleading (no library is shown); the cubicle doors carry small readable labels (they appear to read "Special bath"); the framed artwork is a third-party print; a utilitarian corner that is weak for marketing; a lower resolution (1600x1067)
-- **Used by:** `programs/executive-wellness` (featured_image)
-
-#### lobby-waiting-bench-guest.jpg
-
-- `lobby-waiting-bench-guest` · 2880×1920 · landscape 3:2 · 825 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
-- **Shows:** A man in a brown shirt and dark trousers sits barefoot on a slim upholstered bench against a textured plaster wall, looking toward a sliding glass door that opens onto banana leaves and a green hill. On the left, dark glass doors show a lit interior corridor.
-- **Setting:** lobby / waiting area
-- **People:** guest, face identifiable (side profile, small in frame)
-- **Light:** overcast daylight plus warm cove ceiling light, neutral-warm; palette: putty beige, warm white, leaf green, charcoal glass
-- **Composition:** seated figure right of centre, just inside the right third; window on the right edge; glass doors fill the left third; text space: wide plain plaster wall in the upper centre above the bench, plus the floor in the lower quarter; scrim: not needed on the wall
-- **Crops:** 3:2 and 16:9 hold; 21:9 holds if cropped from the ceiling down; 4:3 at object-position 65% 50%; 4:5 or 1:1 at 70% 50% (bench and window); 2:3 is weak
-- **Mood:** quiet, waiting, spacious
-- **Best for:** split-section half, article figure, slide background with text on the wall, arrival or first-day section
-- **Cautions:** guest's face is identifiable in profile, so check consent; the reflections in the dark glass doors on the left are busy
+These frames are the lobby, including the reception desk and the view out to the valley. `water-wall` is indoor seating beside a water wall. It is not the courtyard.
 
 #### lobby.jpg
 
 - `lobby` · 2880×1914 · landscape 3:2 · 809 KB · kit default
 - **Public use:** **Yes**
 - **Shows:** A double-height lobby with a dark stone reception desk on the left, where two staff work at laptops in front of a backlit flower logo on a black wall. Floor-to-ceiling windows look out to distant hills; a curved cream sofa, a wood-slab table, a tripod lamp and lounge chairs sit on dark speckled flooring.
-- **Setting:** lobby / reception
+- **Setting:** lobby
 - **People:** staff/practitioner, face not identifiable (both in low-light silhouette and profile; check at full resolution)
 - **Light:** overcast daylight from the windows plus warm pendant lamps, neutral with deep shadows; palette: black stone, walnut, cream, pale grey sky
 - **Composition:** desk and logo in the left third; windows centre; seating in the centre and right; text space: the window/sky band in the upper centre (busy with mullions) and the dark floor in the lower third; scrim: light on the windows, not needed for light text on the dark floor
-- **Crops:** 3:2, 16:9 and 4:3 hold; 21:9 at object-position 50% 45%; 1:1 at 30% 50% (desk and logo) or 65% 50% (lounge); 4:5 and 2:3 are weak
+- **Crops:** 3:2, 16:9 and 4:3 hold; 21:9 at object-position 50% 45%; 1:1 at 30% 50% (desk and logo) or 65% 50% (seating); 4:5 and 2:3 are weak
 - **Mood:** dark, architectural, hushed
 - **Best for:** full-bleed hero (light text on the floor), arrival or "the house" section, slide background, split-section half
-- **Cautions:** the backlit flower logo is prominent; the left side is very dark; staff are at work with laptops, so this frame has an office feel; near-duplicate in subject of reception.jpg
+- **Cautions:** the backlit flower logo is prominent; the left side is very dark; staff are at work with laptops, so this frame has an office feel; near-duplicate in subject of lobby-reception.jpg. Both frames are the lobby
 
-#### lounge-double-height-valley-guest.jpg
+#### lobby-double-height-valley-guest.jpg
 
-- `lounge-double-height-valley-guest` · 2880×1920 · landscape 3:2 · 739 KB
+- `lobby-double-height-valley-guest` · 2880×1920 · landscape 3:2 · 739 KB
 - **Public use:** **Yes**
-- **Shows:** A double-height lounge with a full-wall grid window onto cloudy sky and forested hills. A curved cream sofa with round cushions, a wood-stump table, poufs and an armchair stand on dark flooring, and a woman in a headscarf and a long robe stands at the window with her back to the camera.
-- **Setting:** lounge
+- **Shows:** The double-height lobby, with a full-wall grid window onto cloudy sky and forested hills. A curved cream sofa with round cushions, a wood-stump table, poufs and an armchair stand on dark flooring, and a woman in a headscarf and a long robe stands at the window with her back to the camera.
+- **Setting:** lobby
 - **People:** guest, face not identifiable (back to camera)
 - **Light:** overcast daylight, cool-neutral; palette: pale grey sky, cream, charcoal floor, forest green
 - **Composition:** sofa centre in the lower half; figure right of centre at about 70%; text space: large pale sky in the upper half of the window (behind the mullion grid) and the dark floor along the bottom; scrim: light (the mullion lines cross the sky)
 - **Crops:** 3:2, 16:9 and 21:9 hold; 4:3 holds; 1:1 at object-position 60% 55%; 4:5 at 65% 55%; 2:3 is weak
 - **Mood:** calm, airy, contemplative
 - **Best for:** full-bleed hero, share-image background, slide background, section opener for the house or the valley
-- **Cautions:** the mullion grid makes text over the sky less clean; same lounge as lounge-valley-view-seated-guest.jpg (related frame, not a duplicate)
+- **Cautions:** the mullion grid makes text over the sky less clean; same part of the lobby as lobby-valley-view-seated-guest.jpg (related frame, not a duplicate)
 
-#### lounge-valley-view-seated-guest.jpg
+#### lobby-valley-view-seated-guest.jpg
 
-- `lounge-valley-view-seated-guest` · 2057×2880 · portrait 5:7 · 814 KB
+- `lobby-valley-view-seated-guest` · 2057×2880 · portrait 5:7 · 814 KB
 - **Public use:** **Yes**
-- **Shows:** A portrait view of the same double-height lounge: a woman in a headscarf sits on the curved cream sofa looking out of the tall grid windows at misty hills. Warm box pendants hang from the ceiling, and armchairs and a stump table fill the lower right.
-- **Setting:** lounge
+- **Shows:** A portrait view of the same double-height lobby: a woman in a headscarf sits on the curved cream sofa looking out of the tall grid windows at misty hills. Warm box pendants hang from the ceiling, and armchairs and a stump table fill the lower right.
+- **Setting:** lobby
 - **People:** guest, face not identifiable (seen from behind and the side, facing the window)
 - **Light:** overcast daylight plus warm pendants, neutral-warm; palette: grey sky, walnut panelling, cream bouclé, black floor
 - **Composition:** seated figure at the centre, in the vertical middle; armchairs in the lower right; text space: dark floor in the lower-left quarter, and the window panes in the upper centre (gridded); scrim: not needed for light text on the floor, light on the windows
 - **Crops:** 2:3 and 4:5 hold (native portrait); 1:1 at object-position 50% 60%; 3:2 or 16:9 only as a narrow band at 50% 60%, which loses height
 - **Mood:** still, contemplative, enclosed
 - **Best for:** mobile hero, portrait split-section half, story or social portrait post, article figure
-- **Cautions:** armchair in the foreground is cropped at the right edge; near-duplicate in location of lounge-double-height-valley-guest.jpg and the same guest
+- **Cautions:** armchair in the foreground is cropped at the right edge; near-duplicate in location of lobby-double-height-valley-guest.jpg and the same guest
 
-#### lounge.jpg
+#### lobby-mezzanine.jpg
 
-- `lounge` · 2880×1920 · landscape 3:2 · 872 KB · kit default
+- `lobby-mezzanine` · 2880×1920 · landscape 3:2 · 872 KB · kit default
 - **Public use:** **Yes**
-- **Shows:** A wide view of a lounge with walnut-panelled walls and a mezzanine balcony. A central retail nook holds shelves of packaged products, a timber staircase rises to the right with a white robed statue beside it, and grey bouclé armchairs with wooden frames sit on round rugs on black flooring. A tall window at the left frames plants and a pebble bed.
-- **Setting:** lounge / retail nook
+- **Shows:** The lobby: a wide view with walnut-panelled walls and a mezzanine balcony. A central retail nook holds shelves of packaged products, a timber staircase rises to the right with a white robed statue beside it, and grey bouclé armchairs with wooden frames sit on round rugs on black flooring. A tall window at the left frames plants and a pebble bed.
+- **Setting:** lobby
 - **People:** none (the white figure by the stairs is a statue)
 - **Light:** daylight plus warm pendants and wall sconces, warm; palette: walnut, black stone, warm grey, off-white
 - **Composition:** symmetrical, with the retail nook at the centre and chairs at the left and right; text space: the dark floor in the lower third, and the pale upper walls at the top corners; scrim: not needed for light text on the floor
@@ -201,33 +178,49 @@ Each entry gives:
 - **Cautions:** product packaging on the shelves may be legible at full resolution; the statue by the stairs draws the eye; busy at the centre
 - **Used by:** `articles/managing-pcos-lifestyle` (featured_image), `conditions/pcos` (featured_image), `programs/weekend-rejuvenation` (featured_image)
 
-#### reception-desk-small-window.jpg
+#### lobby-reception.jpg
 
-- `reception-desk-small-window` · 2880×1920 · landscape 3:2 · 874 KB
-- **Public use:** **Yes**
-- **Shows:** A small, empty reception area with a curved pale desk and a potted plant against white panelled walls. A flush door is at the left, a wooden stand with glass water bottles, a brown shell chair and a round white side table with a bowl of fruit are at the right, and a glazed door with a view of greenery is beside them.
-- **Setting:** reception (secondary)
-- **People:** none
-- **Light:** interior lamps (linear pendant and drum shade) with dim daylight, neutral-warm; palette: white, terrazzo grey, tan, walnut
-- **Composition:** desk at the centre; chair and table in the right third; text space: plain white panelled wall in the upper left and centre above the desk; scrim: not needed (dark text works)
-- **Crops:** 3:2 and 4:3 hold; 16:9 at object-position 50% 55%; 1:1 at 50% 55%; 4:5 at 55% 55%
-- **Mood:** plain, tidy, quiet
-- **Best for:** article figure, 3-up tile, practical or arrival info section
-- **Cautions:** an air-conditioning unit is visible through the glazed door; the frame is a little bland; slight wide-angle lean at the edges
-
-#### reception.jpg
-
-- `reception` · 2880×1920 · landscape 3:2 · 912 KB · kit default
+- `lobby-reception` · 2880×1920 · landscape 3:2 · 912 KB · kit default
 - **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
-- **Shows:** The main reception: two staff (a woman in a headscarf and a man) at laptops behind a dark stone desk, under a backlit flower logo on a black wall. A walnut ceiling and shelving, a long wood bench, bouclé lounge chairs and a glass-walled corridor are in the centre.
-- **Setting:** lobby / reception
+- **Shows:** The lobby, at the reception desk: two staff (a woman in a headscarf and a man) at laptops behind a dark stone desk, under a backlit flower logo on a black wall. A walnut ceiling and shelving, a long wood bench, bouclé lounge chairs and a glass-walled corridor are in the centre.
+- **Setting:** lobby
 - **People:** staff/practitioner, face identifiable (small, facing camera)
 - **Light:** daylight plus warm linear pendant and logo glow, warm; palette: walnut, black stone, cream, warm white
 - **Composition:** desk and logo in the right third; chairs in the left third; corridor at the centre vanishing point; text space: walnut ceiling across the top quarter and the dark floor in the lower third; scrim: not needed for light text on the floor or ceiling
 - **Crops:** 3:2 and 16:9 hold; 21:9 at object-position 50% 50%; 4:3 holds; 1:1 at 70% 50% (desk and logo); 4:5 and 2:3 are weak
 - **Mood:** warm, composed, welcoming
 - **Best for:** full-bleed hero, arrival section, slide background, split-section half
-- **Cautions:** the backlit logo is prominent; staff faces are identifiable; laptops on the desk; near-duplicate in subject of lobby.jpg
+- **Cautions:** the backlit logo is prominent; staff faces are identifiable; laptops on the desk; near-duplicate in subject of lobby.jpg. Both frames are the lobby
+
+#### water-wall.jpg
+
+- `water-wall` · 1920×2880 · portrait 2:3 · 1220 KB · kit default
+- **Public use:** **Yes**
+- **Shows:** Three cream upholstered chairs on curved teak legs on a wood-look floor, beside a glass railing that looks onto a tall textured wall with water falling down it; a trailing plant hangs from above and a glass-block window sits in the grey wall.
+- **Setting:** interior, beside a water wall (not the courtyard)
+- **People:** none
+- **Light:** daylight from above, cool-neutral; palette: slate grey, cream, teak, warm wood floor
+- **Composition:** chairs lower right and centre, water wall upper left; text space: grey wall upper right (between plant and window), slatted ceiling top; scrim: light
+- **Crops:** 2:3, 4:5, 9:16; 1:1 at object-position 50% 65%; no wide landscape
+- **Mood:** quiet, cool, architectural
+- **Best for:** portrait split-section half, social vertical, 3-up tile, article figure
+- **Cautions:** dark wall edge on far right; chairs cropped at right edge
+- **Used by:** `programs/detox` (featured_image)
+
+#### lobby-valley.jpg
+
+- `lobby-valley` · 1919×2880 · portrait 2:3 · 735 KB · kit default
+- **Public use:** **Yes**
+- **Shows:** The lobby: a curved cream bouclé sofa with round cushions, a ball pouf and a rough-cut wooden slab table on an oval rug, in front of floor-to-ceiling glass looking over coconut palms and hills under heavy grey cloud.
+- **Setting:** lobby
+- **People:** none
+- **Light:** overcast daylight, cool-neutral; palette: cloud grey, cream, palm green, dark wood
+- **Composition:** furniture in lower 40%, sofa centre-left, table lower right; text space: large sky panes in upper half; scrim: light (sky is mid-grey, black window mullions cross it)
+- **Crops:** 2:3, 4:5, 9:16; 1:1 at object-position 50% 70%; landscape only as a narrow strip (loses the sky or the sofa)
+- **Mood:** calm, grey-day, spacious
+- **Best for:** portrait hero on mobile, split-section half, story/social vertical, slide background with title in sky
+- **Cautions:** rain droplets visible on the glass; vertical window frames cut through the text area
+- **Used by:** `articles/week-of-monsoon-light` (featured_image), `programs/longevity` (featured_image)
 
 ### Rooms and suites
 
@@ -244,6 +237,7 @@ Each entry gives:
 - **Mood:** calm, light, ordered
 - **Best for:** rooms page hero, split-section half, card image for a room type, slide background
 - **Cautions:** near-duplicate of room-bedroom-desk-balcony-view.jpg and room-premium.jpg (same room styling)
+- **Used by:** `rooms/superior-room` (featured_image)
 
 #### room-bedroom-desk-balcony-view.jpg
 
@@ -332,7 +326,7 @@ Each entry gives:
 - **Best for:** suites page hero, split-section half, share-image background, stay or arrival story
 - **Cautions:** the blowing drape near the figure may read as motion blur; near-duplicate of suite-living-balcony-empty.jpg
 
-### Restaurant and café terrace
+### Restaurant
 
 #### dining-restaurant-valley-window.jpg
 
@@ -391,87 +385,97 @@ Each entry gives:
 - **Cautions:** visible AC cassette and exposed ceiling services; small exit sign above the rear door; foreground chairs cut at the edges; similar to dining-restaurant-valley-window.jpg
 - **Used by:** `articles/how-meals-are-planned` (featured_image), `conditions/diabetes` (featured_image), `programs/corporate-retreats` (featured_image)
 
-#### terrace-cafe-fabric-ceiling-wide.jpg
+### Open deck
 
-- `terrace-cafe-fabric-ceiling-wide` · 2057×2880 · portrait 5:7 · 1112 KB
+These three frames are the same open deck, for reading, working and spending time.
+
+#### open-deck-fabric-ceiling.jpg
+
+- `open-deck-fabric-ceiling` · 2057×2880 · portrait 5:7 · 1112 KB
 - **Public use:** **Yes**
-- **Shows:** A portrait view of a covered terrace with a dark timber deck, black slatted chairs and round tables, a railing onto forested hills, and a ceiling of layered draped fabric with rattan pendant lamps. A grey textured wall and a large leafy plant are at the right; a fern in a white pot is in the lower-right corner, and a cup is on the far table.
-- **Setting:** terrace café
+- **Shows:** The open deck, in a portrait view, with a dark timber deck, black slatted chairs and round tables, a railing onto forested hills, and a ceiling of layered draped fabric with rattan pendant lamps. A grey textured wall and a large leafy plant are at the right; a fern in a white pot is in the lower-right corner, and a cup is on the far table.
+- **Setting:** open deck
 - **People:** none
 - **Light:** overcast daylight, neutral-cool; palette: sand fabric, dark brown deck, charcoal, pale grey sky
 - **Composition:** draped ceiling across the top third; tables in the middle; deck in the lower third; text space: the pale sky at the left in the middle band and the deck in the lower third (textured); scrim: light
 - **Crops:** 2:3 and 4:5 hold; 1:1 at object-position 50% 50%; 3:2 at 50% 45%
 - **Mood:** airy, textured, unhurried
-- **Best for:** mobile hero, portrait split-section half, social portrait post, restaurant or café section
-- **Cautions:** the fern is cut off in the lower-right corner; near-duplicate in location of terrace-cafe-wave-ceiling-valley.jpg
+- **Best for:** mobile hero, portrait split-section half, social portrait post, open deck
+- **Cautions:** the fern is cut off in the lower-right corner. Same open deck as open-deck.jpg and open-deck-wave-ceiling-valley.jpg, for reading, working and spending time
 
-#### terrace-cafe-wave-ceiling-valley.jpg
+#### open-deck.jpg
 
-- `terrace-cafe-wave-ceiling-valley` · 2880×1917 · landscape 3:2 · 832 KB
+- `open-deck` · 2057×2880 · portrait 5:7 · 994 KB · kit default
 - **Public use:** **Yes**
-- **Shows:** A covered terrace in perspective with a draped wave-fabric ceiling and rattan pendants, a dark timber deck, and black slatted chairs at round tables. In the foreground, a table holds a white cup and an open book; the railing at the right opens onto a forest valley, a grey textured wall runs down the left, and a glass-walled room is at the far end.
-- **Setting:** terrace café
-- **People:** none
-- **Light:** overcast daylight, neutral-cool; palette: sand, dark brown, slate grey, green
-- **Composition:** deep perspective to the centre; foreground table at the lower right; text space: the plain grey wall in the left third (full height) and the sky at the upper right; scrim: not needed on the wall for light text, light on the sky
-- **Crops:** 3:2 and 16:9 hold; 4:3 holds; 21:9 at object-position 50% 40%; 1:1 at 55% 50%; 4:5 at 60% 50%
-- **Mood:** calm, open, unhurried
-- **Best for:** full-bleed hero with text on the left wall, restaurant or café section, slide background, split-section half
-- **Cautions:** the chair in the foreground is cut at the lower-right edge; near-duplicate in location of terrace-cafe-fabric-ceiling-wide.jpg
-
-### Balconies
-
-#### balcony-lounge-infinity-edge-valley.jpg
-
-- `balcony-lounge-infinity-edge-valley` · 2057×2880 · portrait 5:7 · 1135 KB
-- **Public use:** **Yes**
-- **Shows:** Two upholstered lounge chairs and a tree-stump table holding a book and a small brass scale face a framed opening onto a still water edge, forested hills and a cloudy sky.
-- **Setting:** balcony lounge (interior-exterior)
-- **People:** none
-- **Light:** overcast daylight, neutral to cool; palette: charcoal, oatmeal, walnut, sky grey, forest green
-- **Composition:** symmetrical; chairs at the lower left and lower right, table lower centre, opening upper centre; text space: sky in the upper-centre opening; scrim: light
-- **Crops:** 2:3, 3:4, 4:5; 1:1 at object-position 50% 60%; 16:9 only as a tight band around the chairs
-- **Mood:** still, contemplative, quiet
-- **Best for:** portrait hero on mobile, split-section half, 4:5 social post, slide background
-- **Cautions:** dark textured walls take up much of the frame; small doorway at the right edge
-
-#### balcony-lounge-stump-table-valley.jpg
-
-- `balcony-lounge-stump-table-valley` · 2880×1920 · landscape 3:2 · 1055 KB
-- **Public use:** **Yes**
-- **Shows:** Two grey outdoor chairs and a tree-stump table with a book face a glass balustrade framing a dense forested valley and cloudy sky, between dark textured walls under a timber ceiling.
-- **Setting:** balcony
-- **People:** none
-- **Light:** overcast daylight, neutral; palette: charcoal, walnut, forest green, cloud white
-- **Composition:** symmetrical; table lower centre, view centre; text space: dark walls at the left and right thirds; sky upper centre; scrim: not needed on the walls for light text
-- **Crops:** 3:2, 16:9, 4:3, 1:1; 21:9 at object-position 50% 55%
-- **Mood:** calm, enclosed, green
-- **Best for:** full-bleed hero, room or stay section, split-section half, share-image background
-- **Cautions:** the book's cover text is small but possibly readable at full size
-
-#### balcony.jpg
-
-- `balcony` · 2057×2880 · portrait 5:7 · 994 KB · kit default
-- **Public use:** **Yes**
-- **Shows:** Looking down a dark passage onto a timber-decked balcony with a bistro table holding two cups, a slatted chair and a potted plant, against a railing, forested hills and an overcast sky. Fabric drapes and woven pendant lamps hang from the ceiling.
-- **Setting:** balcony / terrace
+- **Shows:** The open deck, seen from a passage: a timber deck with a bistro table holding two cups, a slatted chair and a potted plant, against a railing, forested hills and an overcast sky. Fabric drapes and woven pendant lamps hang from the ceiling.
+- **Setting:** open deck
 - **People:** none
 - **Light:** overcast daylight, neutral to cool; palette: charcoal, sand, forest green, cloud grey
 - **Composition:** framed by dark walls on both sides; table and chair centre-left in the lower half; text space: dark walls at the left and right edges, sky in the centre; scrim: not needed on the dark walls
 - **Crops:** 2:3, 3:4, 4:5; 1:1 at object-position 50% 60%
 - **Mood:** quiet, framed, unhurried
 - **Best for:** portrait hero on mobile, split-section half, 4:5 social post
-- **Cautions:** dark frame; draped fabric ceiling reads busy at the top
-- **Used by:** `programs/stress-management` (featured_image), `rooms/superior-room` (featured_image)
+- **Cautions:** Same open deck as open-deck-fabric-ceiling.jpg and open-deck-wave-ceiling-valley.jpg, for reading, working and spending time. The draped fabric ceiling reads busy at the top
+- **Used by:** `programs/stress-management` (featured_image)
 
-### Courtyard, water wall and patio
+#### open-deck-wave-ceiling-valley.jpg
+
+- `open-deck-wave-ceiling-valley` · 2880×1917 · landscape 3:2 · 832 KB
+- **Public use:** **Yes**
+- **Shows:** The open deck, in perspective, with a draped wave-fabric ceiling and rattan pendants, a dark timber deck, and black slatted chairs at round tables. In the foreground, a table holds a white cup and an open book; the railing at the right opens onto a forest valley, a grey textured wall runs down the left, and a glass-walled room is at the far end.
+- **Setting:** open deck
+- **People:** none
+- **Light:** overcast daylight, neutral-cool; palette: sand, dark brown, slate grey, green
+- **Composition:** deep perspective to the centre; foreground table at the lower right; text space: the plain grey wall in the left third (full height) and the sky at the upper right; scrim: not needed on the wall for light text, light on the sky
+- **Crops:** 3:2 and 16:9 hold; 4:3 holds; 21:9 at object-position 50% 40%; 1:1 at 55% 50%; 4:5 at 60% 50%
+- **Mood:** calm, open, unhurried
+- **Best for:** full-bleed hero with text on the left wall, open deck, slide background, split-section half
+- **Cautions:** the chair in the foreground is cut at the lower-right edge. Same open deck as open-deck.jpg and open-deck-fabric-ceiling.jpg, for reading, working and spending time
+
+### Indoor sitting
+
+These are indoor sitting spaces. They are not balconies.
+
+#### interior-infinity-edge-valley.jpg
+
+- `interior-infinity-edge-valley` · 2057×2880 · portrait 5:7 · 1135 KB
+- **Public use:** **Yes**
+- **Shows:** Two upholstered lounge chairs and a tree-stump table holding a book and a small brass scale face a framed opening onto a still water edge, forested hills and a cloudy sky.
+- **Setting:** interior
+- **People:** none
+- **Light:** overcast daylight, neutral to cool; palette: charcoal, oatmeal, walnut, sky grey, forest green
+- **Composition:** symmetrical; chairs at the lower left and lower right, table lower centre, opening upper centre; text space: sky in the upper-centre opening; scrim: light
+- **Crops:** 2:3, 3:4, 4:5; 1:1 at object-position 50% 60%; 16:9 only as a tight band around the chairs
+- **Mood:** still, contemplative, quiet
+- **Best for:** portrait hero on mobile, split-section half, 4:5 social post, slide background
+- **Cautions:** An indoor sitting space, not a balcony. Dark textured walls take up much of the frame; small doorway at the right edge
+
+#### interior-stump-table-valley.jpg
+
+- `interior-stump-table-valley` · 2880×1920 · landscape 3:2 · 1055 KB
+- **Public use:** **Yes**
+- **Shows:** Two grey chairs and a tree-stump table with a book face a glass balustrade framing a dense forested valley and cloudy sky, between dark textured walls under a timber ceiling.
+- **Setting:** interior
+- **People:** none
+- **Light:** overcast daylight, neutral; palette: charcoal, walnut, forest green, cloud white
+- **Composition:** symmetrical; table lower centre, view centre; text space: dark walls at the left and right thirds; sky upper centre; scrim: not needed on the walls for light text
+- **Crops:** 3:2, 16:9, 4:3, 1:1; 21:9 at object-position 50% 55%
+- **Mood:** calm, enclosed, green
+- **Best for:** full-bleed hero, room or stay section, split-section half, share-image background
+- **Cautions:** An indoor sitting space, not a balcony. The book's cover text is small but possibly readable at full size
+
+### Courtyard
+
+Every frame in this section is the courtyard. The pond, the water wall, the deck, the boardwalk and the covered seating are parts of it.
+
+Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation-courtyard-pond-deck-medium-guest-landscape-3x2`, `yoga-meditation-courtyard-pond-deck-wide-guest-landscape-3x2`, `yoga-pranayama-alternate-nostril-courtyard-pond-guest-landscape-3x2`, `yoga-pranayama-alternate-nostril-courtyard-pond-guest-portrait-2x3`.
 
 #### courtyard-pond-architecture.jpg
 
 - `courtyard-pond-architecture` · 1919×2880 · portrait 2:3 · 1285 KB
 - **Public use:** **Yes**
 - **Shows:** The central courtyard with a still pond, large-leaved plants and a bed of river pebbles in front, a timber walkway at the right, and grey multi-storey buildings with tiled roofs, red balcony posts and a frangipani tree.
-- **Setting:** courtyard pond
+- **Setting:** courtyard
 - **People:** none
 - **Light:** overcast daylight, neutral; palette: slate grey, green, terracotta, pebble tan
 - **Composition:** plants and pebbles fill the lower half, architecture the upper half, pond centre-left; text space: small sky patch at the top centre; scrim: needed for text over the building
@@ -485,7 +489,7 @@ Each entry gives:
 - `courtyard` · 2880×1947 · landscape 3:2 · 1319 KB · kit default
 - **Public use:** **Yes**
 - **Shows:** Two green-cushioned chairs and a round timber table with a bowl sit on a dark floor beside a reflecting pool with planting. A motion-blurred figure in dark clothes walks across a deck in the mid-ground, with glazed corridors and balconies around.
-- **Setting:** courtyard pond (indoor-outdoor edge)
+- **Setting:** courtyard
 - **People:** guest, face not identifiable (motion-blurred passer-by, role unclear)
 - **Light:** overcast daylight, neutral to cool; palette: sage grey, green, walnut, charcoal
 - **Composition:** table and chairs lower centre, blurred figure centre; text space: textured sage wall at the left third; scrim: light
@@ -495,12 +499,12 @@ Each entry gives:
 - **Cautions:** motion-blurred person at centre; reflections in the glass on the right; near-duplicate setting of courtyard-pond-architecture.jpg but a different view
 - **Used by:** `programs/complete-healing` (featured_image)
 
-#### patio-covered-pond-seating.jpg
+#### courtyard-covered-pond-seating.jpg
 
-- `patio-covered-pond-seating` · 2880×1920 · landscape 3:2 · 1231 KB
+- `courtyard-covered-pond-seating` · 2880×1920 · landscape 3:2 · 1231 KB
 - **Public use:** **Yes**
-- **Shows:** A covered patio with a timber-slatted roof on dark posts, and a single wooden armchair and small table on dark terrazzo beside a shallow pond. A bare-branched tree and leafy plants on a pebble bed fill the right foreground; a lush planted bank and metal chairs on a far deck are beyond, with a grey multi-storey building at the right.
-- **Setting:** courtyard pond / patio
+- **Shows:** Covered seating in the courtyard, with a timber-slatted roof on dark posts, and a single wooden armchair and small table on dark terrazzo beside a shallow pond. A bare-branched tree and leafy plants on a pebble bed fill the right foreground; a lush planted bank and metal chairs on a far deck are beyond, with a grey multi-storey building at the right.
+- **Setting:** courtyard
 - **People:** none
 - **Light:** overcast daylight, cool-neutral; palette: slate grey, deep green, timber brown, olive water
 - **Composition:** armchair left of centre; tree branches cross the right half; text space: none (busy foliage and roof); scrim: needed
@@ -509,78 +513,220 @@ Each entry gives:
 - **Best for:** split-section half, article figure, 3-up tile, gallery
 - **Cautions:** busy frame; the foreground branches clutter the right; a wooden post and a dark diagonal pole at the left edge
 
-#### water-wall-seated-guest.jpg
+#### courtyard-water-wall-seated-guest.jpg
 
-- `water-wall-seated-guest` · 2880×1920 · landscape 3:2 · 900 KB
+- `courtyard-water-wall-seated-guest` · 2880×1920 · landscape 3:2 · 900 KB
 - **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
 - **Shows:** A woman in a cream headscarf and beige dress sits on a chair beside a small wooden table in front of a dark wall with falling water; a second empty chair, foliage at right and a reflecting pool in front.
-- **Setting:** water wall terrace / courtyard pond
+- **Setting:** courtyard
 - **People:** guest, face identifiable
 - **Light:** soft overcast daylight, neutral-cool; palette: charcoal, sand beige, leaf green, teak
 - **Composition:** guest at left-centre third; text space: dark water wall upper centre (busy streaks); scrim: needed for light text over the streaky wall
 - **Crops:** 3:2, 16:9; 4:3 and 1:1 at object-position 40% 50%; 21:9 holds
 - **Mood:** still, private, contemplative
 - **Best for:** full-bleed hero, split-section half, share-image background, women-travelling or privacy-themed section
-- **Cautions:** out-of-focus leaves in left and lower-left foreground; near-duplicate setting of water-wall-standing-guest-foliage.jpg and water-wall-seating-foliage-frame.jpg
+- **Cautions:** out-of-focus leaves in left and lower-left foreground; near-duplicate setting of courtyard-water-wall-standing-guest-foliage.jpg and courtyard-water-wall-seating-foliage-frame.jpg
 
-#### water-wall-seating-foliage-frame.jpg
+#### courtyard-water-wall-seating-foliage-frame.jpg
 
-- `water-wall-seating-foliage-frame` · 2880×1921 · landscape 3:2 · 686 KB
+- `courtyard-water-wall-seating-foliage-frame` · 2880×1921 · landscape 3:2 · 686 KB
 - **Public use:** **Yes**
 - **Shows:** Two green-seated chairs and a round wooden table with a bowl in front of the dark water wall, seen through branches and leaves of a frangipani-like tree; brick-red deck in front.
-- **Setting:** water wall terrace / courtyard pond
+- **Setting:** courtyard
 - **People:** none
 - **Light:** overcast daylight, dim, cool-neutral; palette: charcoal, olive green, teak, brick red
 - **Composition:** furniture small at centre, framed by branches on all sides; text space: none clean (leaves cover the frame); scrim: needed
 - **Crops:** 3:2, 16:9; 4:3 holds; 1:1 at centre loses the frame effect
 - **Mood:** hidden, quiet, dark
 - **Best for:** background texture with scrim, 3-up tile, article figure, section divider
-- **Cautions:** dark frame; foliage dominates; near-duplicate of water-wall-standing-guest-foliage.jpg (same framing, no person)
+- **Cautions:** dark frame; foliage dominates; near-duplicate of courtyard-water-wall-standing-guest-foliage.jpg (same framing, no person)
 
-#### water-wall-standing-guest-foliage.jpg
+#### courtyard-water-wall-standing-guest-foliage.jpg
 
-- `water-wall-standing-guest-foliage` · 2880×1920 · landscape 3:2 · 808 KB
+- `courtyard-water-wall-standing-guest-foliage` · 2880×1920 · landscape 3:2 · 808 KB
 - **Public use:** **Yes**
 - **Shows:** Same branch-framed view of the water wall seating, with a woman in a long cream scarf and dress standing at the table, face tilted up towards the falling water.
-- **Setting:** water wall terrace / courtyard pond
+- **Setting:** courtyard
 - **People:** guest, face not identifiable
 - **Light:** overcast daylight, dim, cool-neutral; palette: charcoal, olive green, cream, teak
 - **Composition:** figure small at centre, slightly above middle; text space: none clean; scrim: needed
 - **Crops:** 3:2, 16:9; 4:3; 1:1 at centre
 - **Mood:** hushed, discovering, private
 - **Best for:** full-bleed hero with scrim, share-image background, slide background
-- **Cautions:** dark frame; foliage covers much of the image; near-duplicate of water-wall-seating-foliage-frame.jpg
+- **Cautions:** dark frame; foliage covers much of the image; near-duplicate of courtyard-water-wall-seating-foliage-frame.jpg
 
-#### water-wall.jpg
+#### courtyard-deck-standing-guest-portrait-2x3.jpg
 
-- `water-wall` · 1920×2880 · portrait 2:3 · 1220 KB · kit default
+- `courtyard-deck-standing-guest-portrait-2x3` · 2880×4320 · portrait 2:3 · 737 KB
+- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Shows:** A woman in a white kurta and trousers with a small embroidered motif stands barefoot on a wooden deck by a dark pond, smiling. She is framed between two out-of-focus pillars, with a pale wall, slender trees and a wooden bollard light behind her.
+- **Setting:** courtyard
+- **People:** guest, face identifiable
+- **Light:** warm low-angle sunlight with soft shadows, warm; palette: cream, warm grey, teak brown, green
+- **Composition:** the subject is right of centre, from mid-frame downward; text space: the pale wall at the upper left of the inner frame; scrim: light
+- **Crops:** 2:3, 4:5 (object-position 60% 50%), 3:4; no wide crops
+- **Mood:** welcoming, warm, calm
+- **Best for:** tall split-section half, portrait social post, mobile hero, stay or arrival page figure
+- **Cautions:** out-of-focus pillars cover the left and right edges; near-duplicate of courtyard-deck-walking-guest-portrait-2x3.jpg
+
+#### courtyard-deck-walking-guest-portrait-2x3.jpg
+
+- `courtyard-deck-walking-guest-portrait-2x3` · 2880×4320 · portrait 2:3 · 777 KB
+- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Shows:** The same woman in a white kurta walks barefoot across the wooden deck by the pond, looking toward the camera. The pale wall, slender trees and greenery are behind her, and the pond is in the foreground.
+- **Setting:** courtyard
+- **People:** guest, face identifiable
+- **Light:** warm late sun, warm; palette: cream, warm grey, teak brown, green
+- **Composition:** the subject is centre-left to centre at mid-height; text space: the upper pale wall area; scrim: light
+- **Crops:** 2:3, 4:5 (object-position 50% 45%), 3:4
+- **Mood:** easy, warm, unhurried
+- **Best for:** portrait social post, mobile hero, split-section half, courtyard article figure
+- **Cautions:** out-of-focus pillars frame both edges; near-duplicate of courtyard-deck-standing-guest-portrait-2x3.jpg
+
+#### courtyard-boardwalk-railing-guest-landscape-3x2.jpg
+
+- `courtyard-boardwalk-railing-guest-landscape-3x2` · 2880×1920 · landscape 3:2 · 379 KB
+- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Shows:** A woman in a white kurta rests one hand on a wooden boardwalk railing and looks up and to the left, surrounded by large banana-type leaves. The background is a dark, moss-covered wall and trees.
+- **Setting:** courtyard
+- **People:** guest, face identifiable
+- **Light:** soft shaded daylight, neutral; palette: pale grey-white, leaf green, dark moss brown
+- **Composition:** the subject is at centre to right-of-centre, from mid-frame up; text space: the darker foliage at upper right is limited and busy; scrim: needed
+- **Crops:** 3:2, 16:9 (object-position 55% 35%), 4:3; 1:1 centred on the subject
+- **Mood:** fresh, green, contemplative
+- **Best for:** courtyard split-section half, 16:9 slide, article figure, share image with a scrim
+- **Cautions:** out-of-focus leaves sit in the lower-left foreground; landscape twin of courtyard-boardwalk-railing-guest-portrait-2x3.jpg
+
+#### courtyard-boardwalk-railing-guest-portrait-2x3.jpg
+
+- `courtyard-boardwalk-railing-guest-portrait-2x3` · 2880×4320 · portrait 2:3 · 664 KB
+- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Shows:** The same scene in portrait: a woman in a white kurta stands at a boardwalk railing among large leaves, looking left. The wooden deck is visible at lower right.
+- **Setting:** courtyard
+- **People:** guest, face identifiable
+- **Light:** soft shaded daylight, neutral; palette: pale grey-white, leaf green, dark moss brown
+- **Composition:** the subject is at centre-right, from the upper third to the bottom; text space: dark foliage at the top, which is busy; scrim: needed
+- **Crops:** 2:3, 4:5 (object-position 60% 35%), 3:4
+- **Mood:** green, quiet, reflective
+- **Best for:** portrait social post, mobile hero, tall split-section half, courtyard article figure
+- **Cautions:** out-of-focus leaves cover the lower-left foreground; portrait twin of courtyard-boardwalk-railing-guest-landscape-3x2.jpg
+
+#### courtyard-pond-building-path.jpg
+
+- `courtyard-pond-building-path` · 2880×1918 · landscape 3:2 · 1121 KB
 - **Public use:** **Yes**
-- **Shows:** Three cream upholstered chairs on curved teak legs on a wood-look floor, beside a glass railing that looks onto a tall textured wall with water falling down it; a trailing plant hangs from above and a glass-block window sits in the grey wall.
-- **Setting:** interior seating by water wall (lobby/landing)
+- **Shows:** A long rectangular pond running between dark textured building walls, with plants and pebbles along the left edge and an outdoor table with black chairs on the right bank. A person in jeans stands on a small bridge in the distance, and a neighbouring multi-storey building, palms and an electricity pole with wires are visible beyond the trees.
+- **Setting:** courtyard
+- **People:** guest, face not identifiable (distance)
+- **Light:** overcast after rain, cool; palette: charcoal, deep green, grey sky, dark olive water
+- **Composition:** the vanishing point is centre, along the pond; text space: the overcast sky at the top centre, which is small, and the dark water at the bottom; scrim: light on the sky, not needed for white text on the water
+- **Crops:** 3:2, 16:9 (object-position 50% 60%), 4:3
+- **Mood:** moody, cool, architectural
+- **Best for:** architecture article figure, 16:9 slide, split-section half
+- **Cautions:** an off-site neighbouring building, an electricity pole and wires are visible; wet, gloomy weather; outdoor furniture at the right edge
+
+#### courtyard-water-wall-golden-hour-lantern-guest-portrait-2x3.jpg
+
+- `courtyard-water-wall-golden-hour-lantern-guest-portrait-2x3` · 2880×4320 · portrait 2:3 · 798 KB
+- **Public use:** **Yes**
+- **Shows:** In the courtyard, beside the water wall, a woman in a striped dress reads on a chair next to small tables and floor lanterns. A woven pendant lamp glows at the upper left, and a sunlit wall, a bare-branched tree and a reflecting pool are in the foreground.
+- **Setting:** courtyard
+- **People:** guest, face not identifiable (small, looking down)
+- **Light:** golden hour with a glowing pendant, warm; palette: deep brown-black, amber, ochre, muted green
+- **Composition:** the subject is at left-centre, in the lower half; text space: the dark area in the upper middle and the warm wall at the upper right; scrim: not needed for light text on the dark areas
+- **Crops:** 2:3, 4:5 (object-position 40% 65%), 3:4
+- **Mood:** warm, intimate, evening
+- **Best for:** portrait social post, mobile hero, tall split-section half, slide background
+- **Cautions:** a dark frame overall; heavy foreground leaf blur at the left; a strong warm cast
+
+#### courtyard-water-wall-golden-hour-reading-guest-landscape-3x2.jpg
+
+- `courtyard-water-wall-golden-hour-reading-guest-landscape-3x2` · 2880×1920 · landscape 3:2 · 508 KB
+- **Public use:** **Yes**
+- **Shows:** A woman in a striped dress reads, seated barefoot on a chair beside small tables with wooden-backed chairs and floor lanterns. A dark water wall is behind on the left and a sunlit wall with a bare-branched tree is on the right, above a reflecting pool.
+- **Setting:** courtyard
+- **People:** guest, face not identifiable (profile, looking down)
+- **Light:** golden hour with low raking sun, warm; palette: near-black, amber, ochre, olive green
+- **Composition:** the subject is at centre, at mid-height; text space: the dark water wall in the upper-left half; scrim: not needed for white text
+- **Crops:** 3:2, 16:9, 21:9 (object-position 45% 55%), 4:3
+- **Mood:** warm, quiet, evening
+- **Best for:** full-bleed hero with text at the upper left, wide banner, slide background, share-image background
+- **Cautions:** a strong warm colour cast; deep shadows; near-duplicate of courtyard-water-wall-golden-hour-seated-guest-landscape-3x2.jpg
+
+#### courtyard-water-wall-golden-hour-seated-guest-landscape-3x2.jpg
+
+- `courtyard-water-wall-golden-hour-seated-guest-landscape-3x2` · 2880×1920 · landscape 3:2 · 462 KB
+- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Shows:** The same courtyard seating: a woman in a striped dress sits barefoot on a chair with her eyes closed and her hands in her lap, beside lanterns and empty chairs. There is a dark water wall on the left and a sunlit wall with tree shadows on the right.
+- **Setting:** courtyard
+- **People:** guest, face identifiable
+- **Light:** golden hour, warm; palette: near-black, amber, ochre, olive green
+- **Composition:** the subject is at centre, at mid-height; text space: the dark water wall in the upper-left half; scrim: not needed for white text
+- **Crops:** 3:2, 16:9, 21:9 (object-position 45% 55%), 4:3
+- **Mood:** restful, warm, evening
+- **Best for:** full-bleed hero, wide banner, slide background, share-image background
+- **Cautions:** a strong warm cast; deep shadows; near-duplicate of courtyard-water-wall-golden-hour-reading-guest-landscape-3x2.jpg
+
+### Yoga hall and treatment
+
+`yoga-hall-empty` is the empty yoga hall. `yoga-hall-waiting-bench-guest` is the bench in that hall. `hydrotherapy-waiting` and `treatment-waiting-nook-lockers` are the hydrotherapy waiting area. `treatment-reception-desk` is the therapy section reception.
+
+#### hydrotherapy-waiting.jpg
+
+- `hydrotherapy-waiting` · 1600×1067 · landscape 3:2 · 325 KB · kit default
+- **Public use:** **Yes**
+- **Shows:** A wooden armchair and a wooden two-seater bench sit on a concrete floor against a concrete-block screen wall and a beige wall. A framed print of a woman in a head wrap hangs on the wall, a glass door at the left opens onto plants and paving, and a row of grey cubicle doors with small labels runs along the right. This is the hydrotherapy waiting area. No books or shelves are visible.
+- **Setting:** hydrotherapy waiting area
 - **People:** none
-- **Light:** daylight from above, cool-neutral; palette: slate grey, cream, teak, warm wood floor
-- **Composition:** chairs lower right and centre, water wall upper left; text space: grey wall upper right (between plant and window), slatted ceiling top; scrim: light
-- **Crops:** 2:3, 4:5, 9:16; 1:1 at object-position 50% 65%; no wide landscape
-- **Mood:** quiet, cool, architectural
-- **Best for:** portrait split-section half, social vertical, 3-up tile, article figure
-- **Cautions:** dark wall edge on far right; chairs cropped at right edge
-- **Used by:** `programs/detox` (featured_image)
+- **Light:** daylight through the block screen and slatted roof, neutral to warm; palette: beige, teak brown, concrete grey, off-white
+- **Composition:** the furniture is at the centre and lower half; text space: the plain beige wall at the upper centre-right, which is small; scrim: light
+- **Crops:** 3:2, 4:3, 16:9 (object-position 50% 60%)
+- **Mood:** plain, functional, tidy
+- **Best for:** internal facility documentation, article figure about common spaces, slide figure
+- **Cautions:** the cubicle doors carry small readable labels (they appear to read "Special bath"); the framed artwork is a third-party print; a utilitarian corner that is weak for marketing; a lower resolution (1600x1067)
+- **Used by:** `programs/executive-wellness` (featured_image)
 
-### Treatment spaces and halls
+#### yoga-hall-waiting-bench-guest.jpg
 
-#### activity-hall-yoga-studio-empty.jpg
+- `yoga-hall-waiting-bench-guest` · 2880×1920 · landscape 3:2 · 825 KB
+- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Shows:** A man in a brown shirt and dark trousers sits barefoot on a slim upholstered bench against a textured plaster wall, looking toward a sliding glass door that opens onto banana leaves and a green hill. On the left, dark glass doors show a lit interior corridor.
+- **Setting:** yoga hall, waiting bench
+- **People:** guest, face identifiable (side profile, small in frame)
+- **Light:** overcast daylight plus warm cove ceiling light, neutral-warm; palette: putty beige, warm white, leaf green, charcoal glass
+- **Composition:** seated figure right of centre, just inside the right third; window on the right edge; glass doors fill the left third; text space: wide plain plaster wall in the upper centre above the bench, plus the floor in the lower quarter; scrim: not needed on the wall
+- **Crops:** 3:2 and 16:9 hold; 21:9 holds if cropped from the ceiling down; 4:3 at object-position 65% 50%; 4:5 or 1:1 at 70% 50% (bench and window); 2:3 is weak
+- **Mood:** quiet, waiting, spacious
+- **Best for:** split-section half, article figure, slide background with text on the wall, arrival or first-day section
+- **Cautions:** guest's face is identifiable in profile, so check consent; the reflections in the dark glass doors on the left are busy
 
-- `activity-hall-yoga-studio-empty` · 2880×1620 · landscape 16:9 · 565 KB
+#### treatment-reception-desk.jpg
+
+- `treatment-reception-desk` · 2880×1920 · landscape 3:2 · 874 KB
 - **Public use:** **Yes**
-- **Shows:** An empty, long hall with a pale stone-tile floor, a stepped ceiling with warm cove lighting and four ceiling fans, wooden lockers along the right wall and sliding glass doors to greenery on the left. A whiteboard on an easel stands near the far wall.
-- **Setting:** activity hall / yoga studio (interior)
+- **Shows:** The therapy section reception: a small, empty desk with a curved pale desk and a potted plant against white panelled walls. A flush door is at the left, a wooden stand with glass water bottles, a brown shell chair and a round white side table with a bowl of fruit are at the right, and a glazed door with a view of greenery is beside them.
+- **Setting:** therapy section reception
+- **People:** none
+- **Light:** interior lamps (linear pendant and drum shade) with dim daylight, neutral-warm; palette: white, terrazzo grey, tan, walnut
+- **Composition:** desk at the centre; chair and table in the right third; text space: plain white panelled wall in the upper left and centre above the desk; scrim: not needed (dark text works)
+- **Crops:** 3:2 and 4:3 hold; 16:9 at object-position 50% 55%; 1:1 at 50% 55%; 4:5 at 55% 55%
+- **Mood:** plain, tidy, quiet
+- **Best for:** article figure, 3-up tile, practical or arrival info section
+- **Cautions:** an air-conditioning unit is visible through the glazed door; the frame is a little bland; slight wide-angle lean at the edges
+
+#### yoga-hall-empty.jpg
+
+- `yoga-hall-empty` · 2880×1620 · landscape 16:9 · 565 KB
+- **Public use:** **Yes**
+- **Shows:** The empty yoga hall: a long room with a pale stone-tile floor, a stepped ceiling with warm cove lighting and four ceiling fans, wooden lockers along the right wall and sliding glass doors to greenery on the left. A whiteboard on an easel stands near the far wall.
+- **Setting:** yoga hall
 - **People:** none
 - **Light:** interior cove lamps plus some daylight from the left doors, warm; palette: beige, cream, honey wood, soft green
 - **Composition:** one-point perspective, vanishing point at centre; text space: ceiling band across the top third and the empty floor in the lower third; scrim: light
 - **Crops:** 16:9, 21:9, 3:2, 4:3; 1:1 holds at centre
 - **Mood:** spacious, quiet, clean
 - **Best for:** facilities section, split-section half, slide background, 3-up tile
-- **Cautions:** wall-mounted AC units, ceiling fans, a whiteboard on an easel and small locker labels read as utilitarian; no mats or props, so the use of the room is not obvious
+- **Cautions:** wall-mounted AC units, ceiling fans, a whiteboard on an easel and small locker labels read as utilitarian; no mats or props are set out. It is the empty yoga hall
 
 #### corridor.jpg
 
@@ -616,14 +762,14 @@ Each entry gives:
 - `treatment-waiting-nook-lockers` · 2880×1920 · landscape 3:2 · 1004 KB
 - **Public use:** **Yes**
 - **Shows:** A waiting nook with a wooden armchair and a two-seat wooden bench against a grey wall. A framed portrait artwork of a woman in a headwrap hangs above, a ventilation block screen with daylight is at the left, a glass door opens to a planted courtyard, and a row of white cubicle doors with small labels runs along the right.
-- **Setting:** treatment bath area / waiting nook
+- **Setting:** hydrotherapy waiting area
 - **People:** none (the framed artwork only)
 - **Light:** daylight through the block screen and glazing, neutral-warm; palette: grey, teak brown, white, leaf green
 - **Composition:** chair and bench in the lower centre; artwork upper centre; cubicles in the right third; text space: plain grey wall in the upper centre beside the artwork (limited); scrim: light
 - **Crops:** 3:2 and 4:3 hold; 16:9 at object-position 50% 55%; 1:1 at 45% 55%; 4:5 at 45% 55%
 - **Mood:** quiet, warm, practical
 - **Best for:** article figure, 3-up tile, facilities or "between treatments" section
-- **Cautions:** does not quite match its filename: the white units at the right look like bath cubicles with small door labels (one appears to read "Spinal bath"), not lockers; the label text may be legible at full resolution; the artwork is prominent
+- **Cautions:** Same hydrotherapy waiting area as hydrotherapy-waiting.jpg. The white units at the right are bath cubicles with small door labels (one appears to read "Spinal bath"), not lockers, so this filename still says lockers; the label text may be legible at full resolution; the artwork is prominent
 
 #### treatment.jpg
 
@@ -639,23 +785,6 @@ Each entry gives:
 - **Best for:** treatments section split-half, article figure, facilities 3-up tile
 - **Cautions:** wall AC unit at top centre; readable "ALFA" tissue box brand and a soap dispenser at right; a medical-looking device behind the couch; clock and bottles on the counter add small clutter
 - **Used by:** `articles/understanding-insulin-resistance` (featured_image), `conditions/arthritis` (featured_image), `doctor-answers/supervised-fast-feels-like` (featured_image), `programs/diabetes-reversal` (featured_image)
-
-### Landscape
-
-#### valley.jpg
-
-- `valley` · 1919×2880 · portrait 2:3 · 735 KB · kit default
-- **Public use:** **Yes**
-- **Shows:** A curved cream bouclé sofa with round cushions, a ball pouf and a rough-cut wooden slab table on an oval rug, in front of floor-to-ceiling glass looking over coconut palms and hills under heavy grey cloud.
-- **Setting:** lounge with valley view (interior)
-- **People:** none
-- **Light:** overcast daylight, cool-neutral; palette: cloud grey, cream, palm green, dark wood
-- **Composition:** furniture in lower 40%, sofa centre-left, table lower right; text space: large sky panes in upper half; scrim: light (sky is mid-grey, black window mullions cross it)
-- **Crops:** 2:3, 4:5, 9:16; 1:1 at object-position 50% 70%; landscape only as a narrow strip (loses the sky or the sofa)
-- **Mood:** calm, grey-day, spacious
-- **Best for:** portrait hero on mobile, split-section half, story/social vertical, slide background with title in sky
-- **Cautions:** rain droplets visible on the glass; vertical window frames cut through the text area
-- **Used by:** `articles/week-of-monsoon-light` (featured_image), `programs/longevity` (featured_image)
 
 ### Doctors
 
@@ -1014,7 +1143,7 @@ Each entry gives:
 - `yoga-pranayama-alternate-nostril-courtyard-pond-guest-landscape-3x2` · 2880×1920 · landscape 3:2 · 545 KB
 - **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
 - **Shows:** A woman in white sits cross-legged on the pond deck doing alternate-nostril breathing, framed by branches at left and right, glass walls of a dining area behind.
-- **Setting:** courtyard pond
+- **Setting:** courtyard
 - **People:** guest, face identifiable
 - **Light:** overcast daylight, neutral-cool; palette: concrete grey, white, olive green, dark water
 - **Composition:** figure centre, small; text space: dark pond in lower quarter; scrim: needed
@@ -1028,7 +1157,7 @@ Each entry gives:
 - `yoga-pranayama-alternate-nostril-courtyard-pond-guest-portrait-2x3` · 2880×4320 · portrait 2:3 · 724 KB
 - **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
 - **Shows:** Vertical view of the same woman doing alternate-nostril breathing on the pond deck, grey column and glass walls behind, a woven pendant lamp at top.
-- **Setting:** courtyard pond
+- **Setting:** courtyard
 - **People:** guest, face identifiable
 - **Light:** overcast daylight, neutral-cool; palette: concrete grey, white, teak, olive green
 - **Composition:** figure lower-centre; text space: grey column and wall in upper half (some clutter); scrim: light
@@ -1100,7 +1229,7 @@ Each entry gives:
 - `yoga-meditation-courtyard-pond-deck-medium-guest-landscape-3x2` · 2880×1920 · landscape 3:2 · 434 KB
 - **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
 - **Shows:** A woman in white sits cross-legged, eyes closed, on a small wooden deck over a pond, with glass walls behind showing a dining area with tables, chairs and a wall fan.
-- **Setting:** courtyard pond
+- **Setting:** courtyard
 - **People:** guest, face identifiable
 - **Light:** overcast daylight, neutral-cool; palette: concrete grey, white, teak, leaf green
 - **Composition:** figure centre; text space: none clean (glass and interior behind); scrim: needed
@@ -1114,7 +1243,7 @@ Each entry gives:
 - `yoga-meditation-courtyard-pond-deck-wide-guest-landscape-3x2` · 2880×1920 · landscape 3:2 · 552 KB
 - **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
 - **Shows:** Wider view of the same woman meditating on the pond deck, framed by frangipani-like branches at left and right, with the pond reflecting her in the foreground.
-- **Setting:** courtyard pond
+- **Setting:** courtyard
 - **People:** guest, face identifiable
 - **Light:** overcast daylight, neutral-cool; palette: concrete grey, white, olive green, dark water
 - **Composition:** figure centre, small; text space: dark pond in lower quarter; scrim: needed (light text on water works with a soft scrim)
@@ -1917,62 +2046,6 @@ Each entry gives:
 
 ### Grounds and walks
 
-#### grounds-courtyard-deck-standing-guest-portrait-2x3.jpg
-
-- `grounds-courtyard-deck-standing-guest-portrait-2x3` · 2880×4320 · portrait 2:3 · 737 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
-- **Shows:** A woman in a white kurta and trousers with a small embroidered motif stands barefoot on a wooden deck by a dark pond, smiling. She is framed between two out-of-focus pillars, with a pale wall, slender trees and a wooden bollard light behind her.
-- **Setting:** courtyard pond deck
-- **People:** guest, face identifiable
-- **Light:** warm low-angle sunlight with soft shadows, warm; palette: cream, warm grey, teak brown, green
-- **Composition:** the subject is right of centre, from mid-frame downward; text space: the pale wall at the upper left of the inner frame; scrim: light
-- **Crops:** 2:3, 4:5 (object-position 60% 50%), 3:4; no wide crops
-- **Mood:** welcoming, warm, calm
-- **Best for:** tall split-section half, portrait social post, mobile hero, stay or arrival page figure
-- **Cautions:** out-of-focus pillars cover the left and right edges; near-duplicate of grounds-courtyard-deck-walking-guest-portrait-2x3.jpg
-
-#### grounds-courtyard-deck-walking-guest-portrait-2x3.jpg
-
-- `grounds-courtyard-deck-walking-guest-portrait-2x3` · 2880×4320 · portrait 2:3 · 777 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
-- **Shows:** The same woman in a white kurta walks barefoot across the wooden deck by the pond, looking toward the camera. The pale wall, slender trees and greenery are behind her, and the pond is in the foreground.
-- **Setting:** courtyard pond deck
-- **People:** guest, face identifiable
-- **Light:** warm late sun, warm; palette: cream, warm grey, teak brown, green
-- **Composition:** the subject is centre-left to centre at mid-height; text space: the upper pale wall area; scrim: light
-- **Crops:** 2:3, 4:5 (object-position 50% 45%), 3:4
-- **Mood:** easy, warm, unhurried
-- **Best for:** portrait social post, mobile hero, split-section half, grounds article figure
-- **Cautions:** out-of-focus pillars frame both edges; near-duplicate of grounds-courtyard-deck-standing-guest-portrait-2x3.jpg
-
-#### grounds-garden-boardwalk-railing-guest-landscape-3x2.jpg
-
-- `grounds-garden-boardwalk-railing-guest-landscape-3x2` · 2880×1920 · landscape 3:2 · 379 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
-- **Shows:** A woman in a white kurta rests one hand on a wooden boardwalk railing and looks up and to the left, surrounded by large banana-type leaves. The background is a dark, moss-covered wall and trees.
-- **Setting:** garden boardwalk
-- **People:** guest, face identifiable
-- **Light:** soft shaded daylight, neutral; palette: pale grey-white, leaf green, dark moss brown
-- **Composition:** the subject is at centre to right-of-centre, from mid-frame up; text space: the darker foliage at upper right is limited and busy; scrim: needed
-- **Crops:** 3:2, 16:9 (object-position 55% 35%), 4:3; 1:1 centred on the subject
-- **Mood:** fresh, green, contemplative
-- **Best for:** grounds split-section half, 16:9 slide, article figure, share image with a scrim
-- **Cautions:** out-of-focus leaves sit in the lower-left foreground; landscape twin of grounds-garden-boardwalk-railing-guest-portrait-2x3.jpg
-
-#### grounds-garden-boardwalk-railing-guest-portrait-2x3.jpg
-
-- `grounds-garden-boardwalk-railing-guest-portrait-2x3` · 2880×4320 · portrait 2:3 · 664 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
-- **Shows:** The same scene in portrait: a woman in a white kurta stands at a boardwalk railing among large leaves, looking left. The wooden deck is visible at lower right.
-- **Setting:** garden boardwalk
-- **People:** guest, face identifiable
-- **Light:** soft shaded daylight, neutral; palette: pale grey-white, leaf green, dark moss brown
-- **Composition:** the subject is at centre-right, from the upper third to the bottom; text space: dark foliage at the top, which is busy; scrim: needed
-- **Crops:** 2:3, 4:5 (object-position 60% 35%), 3:4
-- **Mood:** green, quiet, reflective
-- **Best for:** portrait social post, mobile hero, tall split-section half, grounds article figure
-- **Cautions:** out-of-focus leaves cover the lower-left foreground; portrait twin of grounds-garden-boardwalk-railing-guest-landscape-3x2.jpg
-
 #### grounds-garden-planters-standing-guest-landscape-3x2.jpg
 
 - `grounds-garden-planters-standing-guest-landscape-3x2` · 2880×1920 · landscape 3:2 · 411 KB
@@ -2084,20 +2157,6 @@ Each entry gives:
 - **Mood:** grounded, tactile, simple
 - **Best for:** 3-up tile, article figure, split-section half, section divider band
 - **Cautions:** none
-
-#### grounds-pond-building-path.jpg
-
-- `grounds-pond-building-path` · 2880×1918 · landscape 3:2 · 1121 KB
-- **Public use:** **Yes**
-- **Shows:** A long rectangular pond running between dark textured building walls, with plants and pebbles along the left edge and an outdoor table with black chairs on the right bank. A person in jeans stands on a small bridge in the distance, and a neighbouring multi-storey building, palms and an electricity pole with wires are visible beyond the trees.
-- **Setting:** courtyard pond / exterior
-- **People:** guest, face not identifiable (distance)
-- **Light:** overcast after rain, cool; palette: charcoal, deep green, grey sky, dark olive water
-- **Composition:** the vanishing point is centre, along the pond; text space: the overcast sky at the top centre, which is small, and the dark water at the bottom; scrim: light on the sky, not needed for white text on the water
-- **Crops:** 3:2, 16:9 (object-position 50% 60%), 4:3
-- **Mood:** moody, cool, architectural
-- **Best for:** architecture article figure, 16:9 slide, split-section half
-- **Cautions:** an off-site neighbouring building, an electricity pole and wires are visible; wet, gloomy weather; outdoor furniture at the right edge
 
 #### grounds-textured-wall-eyes-closed-negative-space-guest-portrait-2x3.jpg
 
@@ -2241,48 +2300,6 @@ Each entry gives:
 - **Mood:** restful, still, warm
 - **Best for:** full-bleed hero, split-section half, slide background, share-image background
 - **Cautions:** an out-of-focus bollard at lower left; near-duplicate of leisure-pergola-terrace-reading-guest-landscape-3x2.jpg
-
-#### leisure-water-wall-lounge-golden-hour-lantern-guest-portrait-2x3.jpg
-
-- `leisure-water-wall-lounge-golden-hour-lantern-guest-portrait-2x3` · 2880×4320 · portrait 2:3 · 798 KB
-- **Public use:** **Yes**
-- **Shows:** In a dim lounge beside a water wall, a woman in a striped dress reads on a chair next to small tables and floor lanterns. A woven pendant lamp glows at the upper left, and a sunlit wall, a bare-branched tree and a reflecting pool are in the foreground.
-- **Setting:** water-wall lounge beside a pool
-- **People:** guest, face not identifiable (small, looking down)
-- **Light:** golden hour with a glowing pendant, warm; palette: deep brown-black, amber, ochre, muted green
-- **Composition:** the subject is at left-centre, in the lower half; text space: the dark area in the upper middle and the warm wall at the upper right; scrim: not needed for light text on the dark areas
-- **Crops:** 2:3, 4:5 (object-position 40% 65%), 3:4
-- **Mood:** warm, intimate, evening
-- **Best for:** portrait social post, mobile hero, tall split-section half, slide background
-- **Cautions:** a dark frame overall; heavy foreground leaf blur at the left; a strong warm cast
-
-#### leisure-water-wall-lounge-golden-hour-reading-guest-landscape-3x2.jpg
-
-- `leisure-water-wall-lounge-golden-hour-reading-guest-landscape-3x2` · 2880×1920 · landscape 3:2 · 508 KB
-- **Public use:** **Yes**
-- **Shows:** A woman in a striped dress reads, seated barefoot on a chair beside small tables with wooden-backed chairs and floor lanterns. A dark water wall is behind on the left and a sunlit wall with a bare-branched tree is on the right, above a reflecting pool.
-- **Setting:** water-wall lounge beside a pool
-- **People:** guest, face not identifiable (profile, looking down)
-- **Light:** golden hour with low raking sun, warm; palette: near-black, amber, ochre, olive green
-- **Composition:** the subject is at centre, at mid-height; text space: the dark water wall in the upper-left half; scrim: not needed for white text
-- **Crops:** 3:2, 16:9, 21:9 (object-position 45% 55%), 4:3
-- **Mood:** warm, quiet, evening
-- **Best for:** full-bleed hero with text at the upper left, wide banner, slide background, share-image background
-- **Cautions:** a strong warm colour cast; deep shadows; near-duplicate of leisure-water-wall-lounge-golden-hour-seated-guest-landscape-3x2.jpg
-
-#### leisure-water-wall-lounge-golden-hour-seated-guest-landscape-3x2.jpg
-
-- `leisure-water-wall-lounge-golden-hour-seated-guest-landscape-3x2` · 2880×1920 · landscape 3:2 · 462 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
-- **Shows:** The same lounge: a woman in a striped dress sits barefoot on a chair with her eyes closed and her hands in her lap, beside lanterns and empty chairs. There is a dark water wall on the left and a sunlit wall with tree shadows on the right.
-- **Setting:** water-wall lounge beside a pool
-- **People:** guest, face identifiable
-- **Light:** golden hour, warm; palette: near-black, amber, ochre, olive green
-- **Composition:** the subject is at centre, at mid-height; text space: the dark water wall in the upper-left half; scrim: not needed for white text
-- **Crops:** 3:2, 16:9, 21:9 (object-position 45% 55%), 4:3
-- **Mood:** restful, warm, evening
-- **Best for:** full-bleed hero, wide banner, slide background, share-image background
-- **Cautions:** a strong warm cast; deep shadows; near-duplicate of leisure-water-wall-lounge-golden-hour-reading-guest-landscape-3x2.jpg
 
 ### Details
 

@@ -4,6 +4,15 @@ Part of the [property handbook](../handbook.txt).
 
 Shantara's therapies draw from naturopathy principles. They work with natural elements and the body's own rhythms rather than overpowering it. Every therapy below may form part of a guest's personalised programme, and is prescribed by a doctor rather than requested a la carte.
 
+### Two kinds of therapy
+
+The tariff names two kinds, and the website's Therapies collection stores each therapy with one of them:
+
+- **Prescribed treatments.** The naturopathy treatments a guest's doctor prescribes, included in the stay (for example hydrotherapy, mud therapy and fasting therapy).
+- **Signature therapies.** Massages and body treatments a guest chooses for themselves. A set number each week is included; more are charged. They are always "signature therapies", never "recreational therapies".
+
+The website reads the names, the kinds and the weekly number from Keystatic (the Therapies collection and Tariff terms). Do not copy the list into a page or document; link to the tariff.
+
 | Therapy | What it is / what it's for |
 | --- | --- |
 | Mud Therapy | Mineral-rich earth application that calms inflammation, improves circulation, and reduces physical tension while grounding the mind. |

@@ -12,7 +12,7 @@ What a visitor sees after sending a form: it arrived, what happens next, how to 
     explore={[
       { src: "/assets/photos/dining-restaurant-valley-window.jpg", alt: "The dining room above the valley", title: "A day at Shantara", meta: ["Experience"], text: "From the first consultation to lights out.", href: "/en/a-day-at-shantara" },
       { src: "/assets/photos/consultation-doctor-at-desk-with-guest-landscape-3x2.jpg", alt: "A doctor in consultation with a guest", title: "Meet the doctors", meta: ["About"], text: "Who you will speak with before a stay.", href: "/en/our-doctors" },
-      { src: "/assets/photos/balcony.jpg", alt: "A balcony over the valley", title: "Current rates and what a stay includes", meta: ["Tariff"], text: "Rooms, inclusions, payment and cancellation.", href: "/en/tariffs" },
+      { src: "/assets/photos/open-deck.jpg", alt: "The open deck", title: "Current rates and what a stay includes", meta: ["Tariff"], text: "Rooms, inclusions, payment and cancellation.", href: "/en/tariffs" },
     ]}
     actions={<Button variant="secondary" href="/en/">Back to home</Button>} />
 </Section>

@@ -125,7 +125,26 @@ Pages:
 /en/a-day-at-shantara
 ```
 
+The therapies page is titled **Therapies and treatments**, with two sections, **Naturopathy treatments** (the Therapies collection's prescribed treatments) and **Signature therapies**, each listing its therapies from the collection with the therapy's slug as its anchor. The tariff links to it under its inclusions and does not list the therapies itself.
+
 Therapies and rooms each have **one page**. Do not create individual pages for a therapy or a room category. Links to a single therapy or room point to its section on that page (for example `/en/therapies#hijama`).
+
+## Tariff
+
+Pages:
+
+```text
+/en/tariff                ← a redirect, not a page
+/en/tariff/[code]         ← one page per currency, code in lower case (/en/tariff/inr)
+/en/tariff/[code]/card    ← the printable client rate card (noindex)
+```
+
+- **One page per currency.** Each entry in the production Tariffs collection gets a static page at `/en/tariff/{code}`. Each is canonical to itself, indexable and listed in the sitemap. There is no `hreflang`: the pages differ by currency, not language. Each has its own share image (its H1 and lead).
+- **`/en/tariff` redirects.** It has no content and is not in the sitemap. A 302 at the edge sends the visitor to one currency's page: first the `currency` cookie when it holds a known code (the visitor's own choice always wins), then the entry whose `defaultForCountries` includes the request's country, then the default entry. The response is private and never cached (`Vary: Cookie`, `Cache-Control: private, no-store`). A static redirect to the default currency is the fallback if the edge function fails. This departs from RATE-03 (see [rates.md](search-visibility/rates.md)).
+- **Every other page links to `/en/tariff`**, never to a currency page: programme pages, Rooms, Retreat policies, Terms, Cancellation, the footer, confirmations and messages.
+- **Currency links, not a selector.** The tariff page offers a row of plain links, one per currency. A link carries `?set=1`; the edge function sets the `currency` cookie and redirects to the clean URL. No JavaScript is involved.
+- **One primary action**, Book a Consultation, with the tariff page as its lead context. No form on the tariff page, and no `ClosingCTA`.
+- **The client rate card** (`/en/tariff/{code}/card`) renders from the same records in the client card's order and is printed to one PDF per currency. It is `noindex` and not in the sitemap.
 
 ## About
 
@@ -203,7 +222,7 @@ Do not invent the text. A page with no fact source below stays unpublished until
 **Policies**
 
 6. Terms and Conditions (`/en/terms`).
-7. Cancellation and Refund Policy (`/en/cancellation`; footer label "Cancellation policy"). Rendered from the tariff’s cancellation terms, so the page and the tariff cannot disagree.
+7. Cancellation and Refund Policy (`/en/cancellation`; footer label "Cancellation policy"). Its refund schedule and postponement terms render from the Tariff terms record the tariff pages also read, so the page and the tariff cannot disagree.
 8. Privacy Policy (`/en/privacy-policy`). This is the public notice of what the website collects and why, including the consultation form, Ask the Doctor, the hosted-visits form, and analytics. The text is supplied by Shantara in `copy/en/policies/privacy-policy.md`. Handbook §8 is staff guidance and is not a source for this page. The page stays unpublished until that public text exists.
 9. Ethics Policy (`/en/ethics`).
 10. Diversity and Inclusion (`/en/diversity`).
@@ -290,7 +309,7 @@ The Website Kit shows **one thin sample per family**, not every URL above.
 | Journal listing | `JournalScreen.js` |
 | `/en/contact` | `ContactScreen.js` |
 | `/en/book-consultation` | `ConsultationScreen.js` |
-| Tariff / pricing | `TariffScreen.js` |
+| `/en/tariff/[code]` (one per currency; `/en/tariff` redirects) | `TariffScreen.js` |
 
 The kit maps those families to hash routes (`#/en/`, `#/en/programmes`). Production uses the real prefixed paths. Navigation labels come from the locale dictionary. Do not hard-code English in reusable nav. Footer contact data (phone, email, place) is globally stable; only the labels translate. Breadcrumb URLs stay in the current locale.
 

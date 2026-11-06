@@ -1,5 +1,5 @@
 /* Contact: HeroStatement → address (NAP), distances and direct lines
-   beside the entrance photograph → ClosingCTA (ground, Himalaya; the page has no other CTA). */
+   beside the porch photograph → ClosingCTA (ground, Himalaya; the page has no other CTA). */
 
 const CONTACT_DISTANCES = [
   { place: "Calicut International Airport", km: "28 km", mins: "55 min" },
@@ -27,7 +27,7 @@ function ContactScreen({ onNavigate }) {
       </P>
 
       <P id="contact/details">
-        <SplitSection src={window.photoSrc("exterior-entrance-dusk-driveway")} alt={t("The entrance drive at dusk")} ground="stone" align="center">
+        <SplitSection src={window.photoSrc("porch-dusk-driveway")} alt={t("The porch at dusk")} ground="stone" align="center">
           <Statement size="title" meta={[c.name]} sub={t("A hilltop above the Chennamangallur valley. Airport and railway transfers are included with a confirmed stay. Details follow after consultation.")}>
             {t("Chennamangallur, Kozhikode, Keralam, India - 673602")}
           </Statement>

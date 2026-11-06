@@ -9,7 +9,7 @@ const PROGRAMME_ID = "detox";
 const GALLERY = [
   { name: "treatment", alt: "Treatment room" },
   { name: "dining-restaurant-valley-window", alt: "The dining room over the valley" },
-  { name: "grounds-pond-building-path", alt: "Walking path beside the pond" },
+  { name: "courtyard-pond-building-path", alt: "The courtyard, beside the pond" },
 ];
 
 const DAY_TIMES = [
