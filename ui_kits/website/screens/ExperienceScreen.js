@@ -6,7 +6,7 @@ const EXPERIENCES = [
   { title: "Treatments and therapies", copy: "Your doctor may recommend therapies based on your assessment and programme.", photo: "treatment", alt: "Treatment room", view: "programme" },
   { title: "Accommodation", copy: "Five room categories, from quiet valley rooms to suites with balcony access.", photo: "room-premium", alt: "A room with a balcony over the valley", view: "tariffs" },
   { title: "Meals during your stay", copy: "Meals are planned as part of your programme, taking into account your doctor's recommendations and dietary requirements.", photo: "dining", alt: "The dining room", view: "booking" },
-  { title: "Daily schedule", copy: "Morning review, therapies, meals, walking or quiet time, then an early night.", photo: "grounds-pond-building-path", alt: "A path beside the pond on the grounds", view: "programme" },
+  { title: "Daily schedule", copy: "Morning review, therapies, meals, walking or quiet time, then an early night.", photo: "courtyard-pond-building-path", alt: "The courtyard, beside the pond", view: "programme" },
 ];
 
 const DAY_STEPS = [
@@ -52,7 +52,7 @@ function ExperienceScreen({ onNavigate }) {
       </P>
 
       <P id="experience/timetable">
-        <SplitSection ground="stone" mediaSide="end" src={window.photoSrc("activity-hall-yoga-studio-empty")} alt={t("The yoga hall")}>
+        <SplitSection ground="stone" mediaSide="end" src={window.photoSrc("yoga-hall-empty")} alt={t("The yoga hall")}>
           <Statement size="title">{t("A typical day")}</Statement>
           <TimeTable rows={DAY_TIMES.map((r) => ({ time: t(r.time), title: t(r.text) }))} />
         </SplitSection>
@@ -60,7 +60,7 @@ function ExperienceScreen({ onNavigate }) {
 
       <P id="experience/setting">
         <PanoramaCaption
-          src={window.photoSrc("valley")}
+          src={window.photoSrc("lobby-valley")}
           alt={t("The lounge window over the valley")}
           title={t("Overlooking the Chennamangallur valley")}
         />
@@ -79,8 +79,8 @@ function ExperienceScreen({ onNavigate }) {
       <P id="experience/closing">
         <ClosingCTA
           variant="photo"
-          src={window.photoSrc("terrace-cafe-wave-ceiling-valley")}
-          alt={t("The terrace café over the valley")}
+          src={window.photoSrc("open-deck-wave-ceiling-valley")}
+          alt={t("The open deck")}
           title={t("Share your name and a number we can reach.")}
           sub={t("Our team will contact you to arrange a consultation.")}
           action={<Button size="lg" onClick={() => onNavigate("booking")}>{t("Book a Consultation")}</Button>}

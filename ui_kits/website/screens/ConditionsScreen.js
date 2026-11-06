@@ -46,7 +46,7 @@ function ConditionsScreen({ onNavigate }) {
       {groups.length > 1 ? (
         <>
           <P id="conditions/panorama">
-            <PanoramaCaption src={window.photoSrc("grounds-pond-building-path")} alt={t("A path past the pond on the grounds at Shantara")} />
+            <PanoramaCaption src={window.photoSrc("courtyard-pond-building-path")} alt={t("The courtyard pond at Shantara")} />
           </P>
           <P id="conditions/index-more">
             <Section>
@@ -59,8 +59,8 @@ function ConditionsScreen({ onNavigate }) {
       <P id="conditions/closing">
         <ClosingCTA
           variant="photo"
-          src={window.photoSrc("exterior-entrance-dusk-lit-canopy")}
-          alt={t("The entrance canopy at dusk")}
+          src={window.photoSrc("porch-dusk-lit-canopy")}
+          alt={t("The porch at dusk")}
           title={t("Share your name and a number we can reach.")}
           sub={t("Our team will contact you to arrange a consultation.")}
           action={<Button size="lg" onClick={() => { if (L) L.track("consultation_cta_click", { page_type: "conditions", content_id: "conditions", content_name: "Conditions", cta_location: "closing" }); onNavigate("booking"); }}>{t("Book a Consultation")}</Button>}

@@ -408,8 +408,8 @@ window.ShantaraContent = {
       ],
       "status": "published",
       "featured_image": {
-        "src": "library",
-        "alt": "The library at Shantara"
+        "src": "hydrotherapy-waiting",
+        "alt": "The hydrotherapy waiting area"
       },
       "featured": true
     },
@@ -442,8 +442,8 @@ window.ShantaraContent = {
       ],
       "status": "published",
       "featured_image": {
-        "src": "valley",
-        "alt": "The valley below Shantara"
+        "src": "lobby-valley",
+        "alt": "The lobby looking out over the valley"
       },
       "featured": false
     },
@@ -506,8 +506,8 @@ window.ShantaraContent = {
       ],
       "status": "published",
       "featured_image": {
-        "src": "balcony",
-        "alt": "A room balcony over the valley"
+        "src": "open-deck",
+        "alt": "The open deck"
       },
       "featured": true
     },
@@ -536,8 +536,8 @@ window.ShantaraContent = {
       ],
       "status": "published",
       "featured_image": {
-        "src": "lounge",
-        "alt": "The lounge at Shantara"
+        "src": "lobby-mezzanine",
+        "alt": "The lobby"
       },
       "featured": true
     },
@@ -911,8 +911,8 @@ window.ShantaraContent = {
       "category": "Hormonal",
       "status": "draft",
       "featured_image": {
-        "src": "lounge",
-        "alt": "The lounge at Shantara"
+        "src": "lobby-mezzanine",
+        "alt": "The lobby"
       },
       "external_references": []
     },
@@ -1212,8 +1212,8 @@ window.ShantaraContent = {
       ],
       "status": "published",
       "featured_image": {
-        "src": "balcony",
-        "alt": "A room balcony over the valley"
+        "src": "room-bedroom-balcony-open-book",
+        "alt": "A guest room opening onto a balcony"
       },
       "featured": true
     }
@@ -1529,8 +1529,8 @@ window.ShantaraContent = {
       "source": "gap",
       "status": "draft",
       "featured_image": {
-        "src": "lounge",
-        "alt": "The lounge at Shantara"
+        "src": "lobby-mezzanine",
+        "alt": "The lobby"
       }
     },
     {
@@ -1586,8 +1586,8 @@ window.ShantaraContent = {
       "source": "kit",
       "status": "draft",
       "featured_image": {
-        "src": "valley",
-        "alt": "The valley below Shantara"
+        "src": "lobby-valley",
+        "alt": "The lobby looking out over the valley"
       }
     }
   ],

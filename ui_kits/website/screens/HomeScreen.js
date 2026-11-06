@@ -43,8 +43,8 @@ function HomeScreen({ onNavigate }) {
       <P id="home/hero">
         <HeroFullBleed
           height="full"
-          src={window.photoSrc("arrival-dusk")}
-          alt={t("The entrance to Shantara at dusk")}
+          src={window.photoSrc("porch-lobby-dusk")}
+          alt={t("The lobby seen from the porch at dusk")}
           title={t("A doctor-led naturopathy retreat in Keralam")}
           sub={t("Every stay begins with a doctor's consultation.")}
           actions={<Button size="lg" onClick={() => onNavigate("booking")}>{t("Book a Consultation")}</Button>}

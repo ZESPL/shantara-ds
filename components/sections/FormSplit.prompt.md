@@ -1,7 +1,7 @@
 The consultation form on Merino beside a Stone panel: a photograph of the place, then what happens next.
 
 ```jsx
-<FormSplit onSubmit={handleSubmit} src="/assets/photos/reception.jpg" alt="The reception desk" aside={<>
+<FormSplit onSubmit={handleSubmit} src="/assets/photos/lobby-reception.jpg" alt="The lobby, at the reception desk" aside={<>
   <Statement as="h3" size="title"
     sub="A member of the team will call you to understand what you need. A doctor then reviews whether a stay is the right next step.">
     We'll be in touch
@@ -22,6 +22,6 @@ The consultation form on Merino beside a Stone panel: a photograph of the place,
 
 **Responsive.** Under 1000px the form comes first at full width and the Stone panel follows it. From 1000px the form takes 7 of 12 columns and the panel 5. The panel is sticky below the header while the form scrolls only when the window is at least 800px tall; in a shorter window (a 720px laptop, or large guest text) it stays in the flow so its lower half is never hidden. The panel's padding is fluid (24→48px).
 
-**Panel photograph.** `src` / `alt` (or `media`): a photograph of the place across the top of the Stone panel at 4:3, edge to edge: `reception.jpg` in the demos (the reception desk, no guests). Never a doctor thumbnail; a doctor named in the panel copy comes from content/doctors/.
+**Panel photograph.** `src` / `alt` (or `media`): a photograph of the place across the top of the Stone panel at 4:3, edge to edge: `lobby-reception.jpg` in the demos (the reception desk, no guests). Never a doctor thumbnail; a doctor named in the panel copy comes from content/doctors/.
 
 **Variation: `compact`.** The same form without the panel, capped at 44rem, name and phone side by side from 760px, for Hosted visits or the end of a condition page. It is still the site's one consultation form, never a second form with other fields.

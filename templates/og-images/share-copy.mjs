@@ -80,7 +80,7 @@ export const FIXED_PAGES = {
       template: "default",
       title: "A doctor-led stay in Keralam",
       description: "Every stay begins with a doctor's consultation.",
-      photo: "arrival-dusk",
+      photo: "porch-lobby-dusk",
     },
   },
   therapies: {
@@ -90,7 +90,7 @@ export const FIXED_PAGES = {
       template: "default",
       title: "Therapies during a stay",
       description: "Your doctor recommends them after consultation.",
-      photo: "arrival-dusk",
+      photo: "porch-lobby-dusk",
     },
   },
   rooms: {
@@ -110,7 +110,7 @@ export const FIXED_PAGES = {
       template: "default",
       title: "The grounds of the retreat",
       description: "Shared rooms and time on the grounds.",
-      photo: "valley",
+      photo: "lobby-valley",
     },
   },
   "farm-dining": {
@@ -120,7 +120,7 @@ export const FIXED_PAGES = {
       template: "default",
       title: "Meals during the stay",
       description: "Your doctor plans them with the programme.",
-      photo: "valley",
+      photo: "lobby-valley",
     },
   },
   "a-day-at-shantara": {
@@ -130,7 +130,7 @@ export const FIXED_PAGES = {
       template: "default",
       title: "A day at the retreat",
       description: "An example day. Each stay is planned.",
-      photo: "arrival-dusk",
+      photo: "porch-lobby-dusk",
     },
   },
   conditions: {
@@ -222,7 +222,7 @@ export const FIXED_PAGES = {
       template: "programme",
       title: "Book a consultation",
       description: "A doctor helps you choose the next step.",
-      photo: "arrival-dusk",
+      photo: "porch-lobby-dusk",
     },
   },
   "resident-policies": {

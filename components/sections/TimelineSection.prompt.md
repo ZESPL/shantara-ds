@@ -2,7 +2,7 @@ A day, or a stay, in order: a statement and a TimeTable beside one photograph.
 
 ```jsx
 <Section>
-  <TimelineSection title="A day at Shantara" rows={day} src="/assets/photos/activity-hall-yoga-studio-empty.jpg" alt="The yoga hall" />
+  <TimelineSection title="A day at Shantara" rows={day} src="/assets/photos/yoga-hall-empty.jpg" alt="The yoga hall" />
 </Section>
 ```
 

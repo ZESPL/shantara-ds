@@ -10,7 +10,7 @@ How to reach Shantara: call, WhatsApp, email, the address, a photograph of the a
     ]}
     address={["Shantara", "Chennamangallur, Kozhikode", "Keralam 673602, India"]}
     directions={[{ icon: "plane", title: "From Calicut International Airport", text: "About 25 km, roughly 45 minutes." }]}
-    src="/assets/photos/exterior-entrance-dusk-lit-canopy.jpg" alt="The entrance at dusk"
+    src="/assets/photos/porch-dusk-lit-canopy.jpg" alt="The porch at dusk"
     map={{ href: "https://maps.google.com/?q=…" }} />
 </Section>
 ```

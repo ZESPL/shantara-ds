@@ -120,7 +120,7 @@ function ConsultationScreen({ onNavigate, locale = "en", view = "booking" }) {
 
       <P id="booking/form">
       <Section space="bottom">
-        <FormSplit aside={aside} src={window.photoSrc("reception")} alt={t("The reception desk")} onSubmit={(event) => { event.preventDefault(); setConfirming(true); }}>
+        <FormSplit aside={aside} src={window.photoSrc("lobby-reception")} alt={t("The lobby, at the reception desk")} onSubmit={(event) => { event.preventDefault(); setConfirming(true); }}>
           <Input name={keys.full_name} autoComplete="name" label={t("Name")} required onFocus={markStart} />
           <Input name={keys.phone} autoComplete="tel" label={t("Mobile / WhatsApp number")} required onFocus={markStart} />
           <Input name={keys.email} autoComplete="email" label={t("Email")} type="email" hint={t("Optional")} onFocus={markStart} />

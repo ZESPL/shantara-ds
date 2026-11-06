@@ -16,7 +16,7 @@ const TARIFF_ROOM_PHOTOS = {
   "executive-suite": "suite-living-balcony-empty",
   "junior-suite": "room-bedroom-forest-view-armchair",
   "premium-room": "room-premium",
-  "superior-room": "balcony",
+  "superior-room": "room-bedroom-balcony-open-book",
   "standard-room": "room-twin",
 };
 

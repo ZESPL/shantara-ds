@@ -2,7 +2,7 @@ A full-width photograph with a short caption bottom-left and no button: the paus
 
 ```jsx
 <PanoramaCaption
-  src="/assets/photos/valley.jpg" alt="The Chennamangallur valley from the hilltop"
+  src="/assets/photos/lobby-valley.jpg" alt="The lobby looking out over the valley"
   title="Overlooking the Chennamangallur valley"
 />
 ```
