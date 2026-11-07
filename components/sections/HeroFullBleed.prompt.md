@@ -6,7 +6,7 @@ Full-screen photographic hero with the statement bottom-left inside a scrim and 
   title="A doctor-led naturopathy retreat in Keralam"
   sub="Drug-free naturopathy on a hilltop above the Chennamangallur valley. Every stay begins with a consultation, and your programme is planned by our doctors."
   actions={<>
-    <Button size="lg">Book a consultation</Button>
+    <Button size="lg">Make an Inquiry</Button>
     <TextLink>View programmes</TextLink>
   </>}
   meta={["Kozhikode, Keralam"]}
@@ -18,7 +18,7 @@ Full-screen photographic hero with the statement bottom-left inside a scrim and 
   breadcrumbs={<Breadcrumbs items={[{ label: "Home", href: "/en/" }, { label: "Experience", href: "/en/experience" }, "Rooms"]} />}
   title="Rooms that look out over the valley"
   sub="Five room categories, each a residential stay planned around your programme."
-  actions={<Button size="lg">Book a consultation</Button>}
+  actions={<Button size="lg">Make an Inquiry</Button>}
 />
 ```
 
@@ -39,7 +39,7 @@ Full-screen photographic hero with the statement bottom-left inside a scrim and 
 | Hero | Purpose | Use on |
 | --- | --- | --- |
 | `HeroFullBleed` | Immersive: the place carries the message | Home (`height="full"`), the Experience pages (Therapies, Rooms, Amenities & Activities, Farm & Dining, A Day at Shantara), one flagship inner page (`tall`) |
-| `HeroSplit` | Offer: a photograph beside the title, facts and the action | Programme and condition detail pages, doctor profiles, Tariffs, Book a consultation |
+| `HeroSplit` | Offer: a photograph beside the title, facts and the action | Programme and condition detail pages, doctor profiles, Tariffs, Make an Inquiry |
 | `HeroStatement` | Editorial: words lead, no photograph needed | Conditions and Programmes indexes, About, Journal index, Contact, legal pages (`ArticleHeader` for single articles) |
 
 One hero per page, always first. None of them takes a label above the title: place, category or duration go in `meta`, below it. Breadcrumbs open every hero except the home page's.

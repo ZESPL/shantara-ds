@@ -38,7 +38,7 @@ const SAMPLE_SECTIONS = [
     "A typical day may include a consultation, therapies, meals, physical activity, rest and personal time.",
   ] },
   { id: "before-you-arrive", label: "Before you arrive", paras: [
-    "Share your name and a number we can reach. Our team will contact you to arrange a consultation.",
+    "Share your name and a number we can reach. Our team will contact you to discuss the next step.",
   ] },
 ];
 
@@ -151,8 +151,8 @@ function ArticleScreen({ onNavigate, slug }) {
           variant="compact"
           ground="pine"
           title={t("Share your name and a number we can reach.")}
-          sub={t("Our team will contact you to arrange a consultation.")}
-          action={<Button size="lg" onClick={() => { if (L) L.track("consultation_cta_click", { page_type: "article", content_id: a.id, content_name: a.title, cta_location: "closing" }); onNavigate("booking"); }}>{t("Book a consultation")}</Button>}
+          sub={t("Our team will contact you to discuss the next step.")}
+          action={<Button size="lg" onClick={() => { if (L) L.track("consultation_cta_click", { page_type: "article", content_id: a.id, content_name: a.title, cta_location: "closing" }); onNavigate("booking"); }}>{t("Make an Inquiry")}</Button>}
         />
       </P>
     </main>

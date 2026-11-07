@@ -1,4 +1,4 @@
-/* Book a consultation: HeroStatement → the form beside a Stone panel (who
+/* Make an Inquiry: HeroStatement → the form beside a Stone panel (who
    calls, what happens next). Dialog confirm, Spinner, success state and Toast are kept.
    No ClosingCTA: the form is the page's CTA (#35). */
 
@@ -18,8 +18,8 @@ function ConsultationScreen({ onNavigate, locale = "en", view = "booking" }) {
     locale,
     source_page: L.localePath(locale, L.kitViewPath(view)),
     page_type: "consultation",
-    content_id: "book-consultation",
-    content_name: "Book a consultation",
+    content_id: "make-an-inquiry",
+    content_name: "Make an Inquiry",
     landing_page: typeof location !== "undefined" ? location.hash : "",
     referrer: typeof document !== "undefined" ? document.referrer : "",
   }) : { locale };
@@ -75,8 +75,8 @@ function ConsultationScreen({ onNavigate, locale = "en", view = "booking" }) {
         <P id="booking/done">
         <HeroStatement
           tall={false}
-          meta={[t("Book a consultation")]}
-          title={t("Consultation request received")}
+          meta={[t("Make an Inquiry")]}
+          title={t("Inquiry received")}
           sub={t("Our team will contact you to understand your requirements and guide you on the appropriate next step.")}
           actions={<>
             <Button variant="secondary" size="lg" onClick={() => onNavigate("home")}>{t("Back to home")}</Button>
@@ -85,7 +85,7 @@ function ConsultationScreen({ onNavigate, locale = "en", view = "booking" }) {
           style={{ paddingBlockEnd: "var(--section-y)" }}
         />
         </P>
-        {toast ? <Toast fixed tone="success" title={t("Consultation request received")} message={t("Our team will contact you to understand your requirements and guide you on the appropriate next step.")} onClose={() => setToast(false)} /> : null}
+        {toast ? <Toast fixed tone="success" title={t("Inquiry received")} message={t("Our team will contact you to understand your requirements and guide you on the appropriate next step.")} onClose={() => setToast(false)} /> : null}
       </main>
     );
   }
@@ -112,8 +112,8 @@ function ConsultationScreen({ onNavigate, locale = "en", view = "booking" }) {
       <P id="booking/hero">
         <HeroStatement
           tall={false}
-          title={t("Book a consultation")}
-          sub={t("Share your name and a number we can reach. Our team will contact you to arrange a consultation.")}
+          title={t("Make an Inquiry")}
+          sub={t("Share your name and a number we can reach. Our team will contact you to discuss the next step.")}
         />
       </P>
 
@@ -129,14 +129,14 @@ function ConsultationScreen({ onNavigate, locale = "en", view = "booking" }) {
             <input key={key} type="hidden" name={key} value={value || ""} readOnly />
           ))}
           <div className="sh-actions" data-stack="mobile" style={{ marginTop: "var(--space-4)" }}>
-            <Button size="lg" type="submit">{t("Send your details")}</Button>
+            <Button size="lg" type="submit">{t("Make an Inquiry")}</Button>
           </div>
         </FormSplit>
       </Section>
       </P>
 
       <Dialog open={confirming} onClose={pending ? undefined : () => setConfirming(false)}
-        title={t("Send your details?")}
+        title={t("Send this inquiry?")}
         description={t("We will use these details only to contact you.")}
         footer={pending ? <Spinner /> : <><Button variant="secondary" onClick={() => setConfirming(false)}>{t("Not yet")}</Button><Button onClick={submit}>{t("Yes, send")}</Button></>} />
     </main>

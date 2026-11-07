@@ -2,7 +2,7 @@ Renders one Lucide glyph, colour-inheriting, for use inside any Shantara control
 
 ```jsx
 <Icon name="leaf" size={24} />
-<Button startIcon={<Icon name="calendar-days" size={18} />}>Book a consultation</Button>
+<Button startIcon={<Icon name="calendar-days" size={18} />}>Make an Inquiry</Button>
 <Icon name="message-circle" label="WhatsApp" />
 ```
 

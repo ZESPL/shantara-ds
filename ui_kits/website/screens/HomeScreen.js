@@ -47,7 +47,7 @@ function HomeScreen({ onNavigate }) {
           alt={t("The lobby seen from the porch at dusk")}
           title={t("A doctor-led naturopathy retreat in Keralam")}
           sub={t("Every stay begins with a doctor's consultation.")}
-          actions={<Button size="lg" onClick={() => onNavigate("booking")}>{t("Book a consultation")}</Button>}
+          actions={<Button size="lg" onClick={() => onNavigate("booking")}>{t("Make an Inquiry")}</Button>}
           meta={[t("Kozhikode, Keralam")]}
         />
       </P>

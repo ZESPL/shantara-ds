@@ -1,7 +1,7 @@
 Shantara's action control: three variants, one near-square shape (`--radius-control`, 2px), taken from the brand deck's closing slide.
 
 ```jsx
-<Button size="lg">Book a consultation</Button>
+<Button size="lg">Make an Inquiry</Button>
 <Button variant="secondary">View programmes</Button>
 <Button variant="link" endIcon={<Icon name="arrow-right" size={16} />}>View conditions</Button>
 ```

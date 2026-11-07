@@ -60,7 +60,7 @@ try {
   await page.waitForTimeout(400);
   const afterNav = await page.evaluate(() => location.hash);
   if (afterNav !== "#/en/conditions") errors.push("conditions hash " + afterNav);
-  await page.getByRole("button", { name: "Book a consultation" }).first().click();
+  await page.getByRole("button", { name: "Make an Inquiry" }).first().click();
   await page.waitForTimeout(500);
   const form = await page.evaluate(() => ({
     hash: location.hash,
@@ -71,7 +71,7 @@ try {
   for (const key of ["full_name", "phone", "email", "country", "notes", "locale"]) {
     if (!form.names.includes(key)) errors.push("missing field " + key);
   }
-  if (form.hash !== "#/en/book-consultation") errors.push("booking hash " + form.hash);
+  if (form.hash !== "#/en/make-an-inquiry") errors.push("booking hash " + form.hash);
   await page.goto(base + "#/en/journal/how-meals-are-planned", { waitUntil: "networkidle" });
   await page.waitForTimeout(600);
   const art = await page.evaluate(() => ({ hash: location.hash, h1: document.querySelector("h1")?.textContent }));

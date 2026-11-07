@@ -336,7 +336,7 @@ function MenuSheet({ view, locale, onNavigate, onClose, onBook, onLocaleChange }
             ))}
           </ul>
         </nav>
-        <Button size="lg" fullWidth onClick={() => { onClose(false); onBook("menu"); }}>{t("Book a consultation")}</Button>
+        <Button size="lg" fullWidth onClick={() => { onClose(false); onBook("menu"); }}>{t("Enquire")}</Button>
         <div className="sh-menu-contact">
           <a className="shantara-dir-ltr" href={c.tel} style={{ fontVariantNumeric: "tabular-nums" }}><Icon name="phone" size={18} />{c.phone}</a>
           <a href={c.whatsapp} target="_blank" rel="noopener"><Icon name="message-circle" size={18} />{t("WhatsApp")}</a>
@@ -422,8 +422,8 @@ function SiteHeader({ view, onNavigate, locale = "en", onLocaleChange }) {
         <div className="sh-hdr-end">
           {LanguageSelector ? <span className="sh-hdr-lang"><LanguageSelector locale={locale} rest={window.ShantaraLocales ? window.ShantaraLocales.kitViewPath(view) : ""} onSelect={onLocaleChange} /></span> : null}
           <CallMenu view={view} />
-          <span className="sh-hdr-book-full"><Button size="md" onClick={() => book("header")}>{t("Book a consultation")}</Button></span>
-          <span className="sh-hdr-book-short"><Button size="md" onClick={() => book("header")}>{t("Book")}</Button></span>
+          <span className="sh-hdr-book-full"><Button size="md" onClick={() => book("header")}>{t("Enquire")}</Button></span>
+          <span className="sh-hdr-book-short"><Button size="md" onClick={() => book("header")}>{t("Enquire")}</Button></span>
           <span className="sh-hdr-menu" ref={menuBtn}>
             <IconButton label={t("Open menu")} aria-expanded={open} aria-controls="sh-site-menu" aria-haspopup="dialog" onClick={() => setOpen(true)}><Icon name="menu" size={22} /></IconButton>
           </span>
@@ -450,7 +450,7 @@ const FOOTER_COLS = [
   { title: "Visit", links: [
     { label: "Contact", view: "contact" },
     { label: "Rates and inclusions", view: "tariffs" },
-    { label: "Book a consultation", view: "booking" },
+    { label: "Make an Inquiry", view: "booking" },
     { label: "Cancellation policy", view: "contact" },
   ] },
 ];

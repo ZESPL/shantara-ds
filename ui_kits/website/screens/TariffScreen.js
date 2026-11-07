@@ -54,7 +54,7 @@ function TariffScreen({ onNavigate }) {
             aside={<>
               <Statement as="h2" size="h4">{t("What the rate includes")}</Statement>
               <PlainList columns={1} rules items={(tariff.includes || []).map((line) => t(line))} />
-              <Button fullWidth size="lg" onClick={book("inline")}>{t("Book a consultation")}</Button>
+              <Button fullWidth size="lg" onClick={book("inline")}>{t("Make an Inquiry")}</Button>
             </>}
           >
             <Select label={t("Currency")} placeholder={t("Currencies come from the production tariff")} options={[]} disabled />

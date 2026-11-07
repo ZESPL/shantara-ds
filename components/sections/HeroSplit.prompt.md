@@ -7,7 +7,7 @@ The **offer** hero: a photograph on one side, running to the screen edge and the
   title="Detox"
   meta={[{ icon: "leaf", label: "Metabolic" }, { icon: "moon", label: "7–21 nights" }]}
   sub="Your doctor may recommend a meal plan or supervised fasting based on your assessment."
-  actions={<><Button size="lg">Book a consultation</Button><TextLink href="#programme">What the programme includes</TextLink></>}
+  actions={<><Button size="lg">Make an Inquiry</Button><TextLink href="#programme">What the programme includes</TextLink></>}
   facts={<PlainList columns={2} size="sm" items={["Doctor review each morning", "Meals planned for you"]} />}
 />
 ```
@@ -29,7 +29,7 @@ The **offer** hero: a photograph on one side, running to the screen edge and the
 | Hero | Purpose | Use on |
 | --- | --- | --- |
 | `HeroFullBleed` | Immersive: the place carries the message | Home (`height="full"`), Experience, one flagship inner page (`tall`) |
-| `HeroSplit` | Offer: a photograph beside the title, facts and the action | Programme and condition detail pages, Tariffs, Book a consultation |
+| `HeroSplit` | Offer: a photograph beside the title, facts and the action | Programme and condition detail pages, Tariffs, Make an Inquiry |
 | `HeroStatement` | Editorial: words lead, no photograph needed | Conditions and Programmes indexes, About, Journal index, Contact, legal pages (`ArticleHeader` for single articles) |
 
 One hero per page, always first. None of them takes a label above the title: place, category or duration go in `meta`, below it.

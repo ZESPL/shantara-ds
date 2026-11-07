@@ -101,7 +101,7 @@ Before publishing a new or rebuilt page:
 - [ ] Type never sits on the rosette band; narrow surfaces drop the band.
 - [ ] CTAs are short; no decorative Badge/Tag pills next to actions; no 2xs helper essays.
 - [ ] Text-size control (if present) works at Larger without breaking layout.
-- [ ] The footer links to every published page in the For guests, Policies, and About Shantara lists in [skill-ia.md](skill-ia.md#utility-pages), plus Our Story, Our Approach, Our Doctors, Medical Editorial Policy, and Contact ([PAGE-08](search-visibility/pages.md)). Privacy and Terms are links to `/en/privacy-policy` and `/en/terms`.
+- [ ] The footer links to every published page in the For guests, Policies, and About Shantara lists in [skill-ia.md](skill-ia.md#utility-pages), plus Our Story, Our Approach, Our Doctors, Medical Editorial Policy, and Contact ([PAGE-08](search-visibility/pages.md)). Privacy and Booking terms are links to `/en/privacy-policy` and `/en/booking-terms`.
 
 ## QA checklist: medical / condition content
 
@@ -132,7 +132,7 @@ Verify:
 - [ ] Stay/experience is tangible.
 - [ ] Relevant conditions/therapies are linked appropriately.
 - [ ] FAQs address real booking concerns.
-- [ ] Book a consultation is the primary action.
+- [ ] Make an Inquiry is the primary action.
 - [ ] No clinical result is guaranteed.
 
 ## QA checklist: lead capture

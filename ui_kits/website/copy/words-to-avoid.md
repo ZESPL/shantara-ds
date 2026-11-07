@@ -11,7 +11,7 @@ Do not use these as product type, H1, title fragment, or primary CTA:
 * Nature cure (except accurate historical parent naming on About, e.g. Hygiene Nature Cure Hospital)
 * Begin your wellness journey
 * Wellness retreat
-* Package, deal, offer (a rate sheet is a tariff; the action is "Book a consultation")
+* Package, deal, offer (a rate sheet is a tariff; the action is "Make an Inquiry")
 
 Internal negatives (“not a spa”, “not a hospital”, “not an Ayurveda resort”, “not a US naturopathic office”, “not Hygiene Nature Cure Hospital”) and the clinical-hotel model live in this skill, ICP, ad exclusions, and brand cards. They are not visitor-facing argument copy.
 

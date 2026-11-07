@@ -33,7 +33,7 @@ These are enforced everywhere; the linked part has the full rule.
 * **Phone and WhatsApp**: stored as separate fields, both currently **+91 9553 600 100**. Email **heal@shantara.life**. See [naming and NAP](copy/naming-and-nap.md#one-contact-number).
 * **Plain and direct.** State facts and limitations explicitly. No softening, no words added to sound polished, no selling verb. See [voice and tone](copy/voice-and-tone.md#direct-and-natural-language).
 * **Guest**, not "patient", "client" or "customer", on public pages. **You** only for an instruction the reader carries out. **We** only for a commitment. See [voice and tone](copy/voice-and-tone.md#voice).
-* **Sentence case headings.** The consultation action is **Book a consultation** everywhere: header, footer, page title, H1, breadcrumb, submit button and analytics name. See [page copy patterns](copy/page-copy-patterns.md#calls-to-action).
+* **Sentence case headings.** The inquiry action is **Make an Inquiry** on the page title, H1, breadcrumb, footer, submit button, in-page CTAs and analytics name. The header and menu sheet use **Enquire**. See [page copy patterns](copy/page-copy-patterns.md#calls-to-action).
 * **One term.** The rates breadcrumb is **Tariff**. The footer link is **Rates and inclusions**. Do not also call the page rooms and tariffs, or packages and rates. **Rooms** only when a rooms page exists.
 * **No isolated prices** outside the tariff surface. See [health claims and compliance](copy/health-claims-and-compliance.md#pricing-must-remain-controlled).
 * **Nursing care and the personal attendant are different services.** Before writing about nursing, nurses, attendants, bystanders or helpers, read `docs/handbook/glossary.md` and follow the naming rules exactly.

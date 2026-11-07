@@ -99,7 +99,7 @@
         case "HeroStatement": return <><Label><b>policy page</b> · the same hero as editorial pages (no utility variant), "Updated" in meta</Label>
           <HeroStatement breadcrumbs={<Breadcrumbs items={[{ label: "Home", href: "#" }, "Privacy policy"]} />} title="Privacy policy" sub="How we collect, use and protect the details you share with us." meta={["Updated 20 August 2026"]} /></>;
         case "HeroSplit": return <><Label><b>video</b> · a short muted loop in place of the photograph (poster only here: no R2 host in the design system)</Label>
-          <HeroSplit video={{ poster: P + "water-wall.jpg", title: "The water wall" }} breadcrumbs={<Breadcrumbs items={[{ label: "Therapies", href: "#" }, "Hydrotherapy"]} />} title="Hydrotherapy" meta={["Water", "Prescribed after assessment"]} sub="Water at controlled temperatures to support circulation." actions={<Button size="lg">Book a consultation</Button>} /></>;
+          <HeroSplit video={{ poster: P + "water-wall.jpg", title: "The water wall" }} breadcrumbs={<Breadcrumbs items={[{ label: "Therapies", href: "#" }, "Hydrotherapy"]} />} title="Hydrotherapy" meta={["Water", "Prescribed after assessment"]} sub="Water at controlled temperatures to support circulation." actions={<Button size="lg">Make an Inquiry</Button>} /></>;
         case "SplitSection": return <><Label><b>stack</b> + <b>id</b> · text above the photograph at every width; the anchor clears the sticky header</Label>
           <SplitSection id="hijama" stack ground="stone" src={P + "treatment.jpg"} alt="A treatment room"><Statement sub="Traditional cupping, delivered under medical supervision.">Hijama</Statement></SplitSection>
           <Label><b>video</b> · the player in the photograph's place (poster only here)</Label>
@@ -117,7 +117,7 @@
           <Label><b>variant="tariff"</b> · the commercial close for pages that never quote a rate</Label>
           <ClosingCTA variant="tariff" sub="Rates are per room, per night, and include all taxes." /></>;
         case "FormSplit": return <><Label><b>compact</b> · the same form without the panel</Label>
-          <Section><FormSplit compact onSubmit={(e) => e.preventDefault()}><Statement as="h2" size="title">Send your details</Statement><Input label="Name" name="full_name" autoComplete="name" required /><Input label="Mobile / WhatsApp number" name="phone" type="tel" autoComplete="tel" required /><Textarea label="Anything you'd like us to know?" name="notes" rows={3} /><div><Button size="lg" type="submit">Send your details</Button></div></FormSplit></Section></>;
+          <Section><FormSplit compact onSubmit={(e) => e.preventDefault()}><Statement as="h2" size="title">Make an Inquiry</Statement><Input label="Name" name="full_name" autoComplete="name" required /><Input label="Mobile / WhatsApp number" name="phone" type="tel" autoComplete="tel" required /><Textarea label="Anything you'd like us to know?" name="notes" rows={3} /><div><Button size="lg" type="submit">Make an Inquiry</Button></div></FormSplit></Section></>;
         case "PanoramaCaption": return <><Label><b>video</b> · a muted loop under the same scrim, with a pause button (poster only here)</Label>
           <PanoramaCaption video={{ poster: P + "lobby-valley.jpg", title: "The valley at first light" }} title="The valley at first light" /></>;
         case "ArticleHeader": return <><Label><b>video</b> · a video article, the player in the lead photograph's place</Label>
@@ -225,18 +225,18 @@
         case "Button":
           return <div className="stack" style={{ maxWidth: "none" }}>
             <div className="row">
-              <Button size="lg">Book a consultation</Button>
+              <Button size="lg">Make an Inquiry</Button>
               <Button variant="secondary" size="lg">View programmes</Button>
               <Button variant="link" endIcon={<Icon name="arrow-right" size={16} />}>View conditions</Button>
             </div>
             <div className="row">
-              <Button>Book a consultation</Button>
+              <Button>Make an Inquiry</Button>
               <Button variant="secondary">Speak to our team</Button>
-              <Button disabled>Send your details</Button>
+              <Button disabled>Make an Inquiry</Button>
             </div>
             <div data-ground="himalaya" style={{ padding: 24 }}>
               <div className="row">
-                <Button size="lg">Book a consultation</Button>
+                <Button size="lg">Make an Inquiry</Button>
                 <Button variant="secondary" size="lg">View programmes</Button>
                 <Button variant="link" endIcon={<Icon name="arrow-right" size={16} />}>View conditions</Button>
               </div>
@@ -364,7 +364,7 @@
           return <div style={{ display: "grid", gap: 32 }}>
             {[["himalaya", 'ground="himalaya" (default) · with a link'], ["pine", 'ground="pine" · dismissible'], ["stone", 'ground="stone" · dismissible']].map(([g, l]) => <div key={g}>
               <p className="shantara-usage-label" style={{ padding: "0 var(--layout-gutter)" }}>{l}</p>
-              <AnnouncementBar ground={g} href={g === "himalaya" ? "#" : undefined} linkLabel="Book a consultation" dismissible={g !== "himalaya"}>Every stay begins with a consultation.</AnnouncementBar>
+              <AnnouncementBar ground={g} href={g === "himalaya" ? "#" : undefined} linkLabel="Make an Inquiry" dismissible={g !== "himalaya"}>Every stay begins with a consultation.</AnnouncementBar>
             </div>)}
           </div>;
         case "Accordion":
@@ -381,7 +381,7 @@
             <Dialog
               open={open}
               onClose={() => setOpen(false)}
-              title="Send your details?"
+              title="Send this inquiry?"
               description="A member of our team will call you back to arrange your consultation."
               footer={<><Button variant="secondary" onClick={() => setOpen(false)}>Not yet</Button><Button onClick={() => setOpen(false)}>Yes, send</Button></>}
             />
@@ -522,7 +522,7 @@
                 <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
                   <p style={{ margin: 0, font: "var(--type-caption)", color: "var(--text-muted)" }}>{label}</p>
                   <Statement size="title">Your programme is planned after consultation and assessment.</Statement>
-                  <div className="sh-actions"><Button>Book a consultation</Button><TextLink href="#">Read what to expect</TextLink></div>
+                  <div className="sh-actions"><Button>Make an Inquiry</Button><TextLink href="#">Read what to expect</TextLink></div>
                 </div>
               </Section>
             ))}
@@ -533,14 +533,14 @@
               src={P + "porch-lobby-dusk.jpg"} alt="The lobby seen from the porch at dusk"
               title="A doctor-led naturopathy retreat in Keralam"
               sub="Drug-free naturopathy on a hilltop above the Chennamangallur valley. Every stay begins with a consultation, and your programme is planned by our doctors."
-              actions={<><Button size="lg">Book a consultation</Button><TextLink href="#">View programmes</TextLink></>}
+              actions={<><Button size="lg">Make an Inquiry</Button><TextLink href="#">View programmes</TextLink></>}
               meta={["Kozhikode, Keralam"]} />
             <HeroFullBleed height="tall"
               src={P + "room-premium.jpg"} alt="A room with a balcony over the valley"
               breadcrumbs={<Breadcrumbs items={[{ label: "Home", href: "#" }, { label: "Experience", href: "#" }, "Rooms"]} />}
               title="Rooms that look out over the valley"
               sub="Five room categories, each a residential stay planned around your programme."
-              actions={<Button size="lg">Book a consultation</Button>} />
+              actions={<Button size="lg">Make an Inquiry</Button>} />
           </>;
         case "HeroSplit":
           return <>
@@ -550,14 +550,14 @@
               title="Detox"
               meta={[{ icon: "leaf", label: "Metabolic" }, { icon: "moon", label: "7–21 nights" }]}
               sub="Your doctor may recommend a meal plan or supervised fasting based on your assessment. Therapies may also form part of your programme."
-              actions={<><Button size="lg">Book a consultation</Button><TextLink href="#">What the programme includes</TextLink></>}
+              actions={<><Button size="lg">Make an Inquiry</Button><TextLink href="#">What the programme includes</TextLink></>}
               facts={<PlainList columns={2} size="sm" items={["Consultation and assessment first", "Doctor review each morning", "Meals planned for you", "Therapies prescribed by your doctor"]} />} />
             <HeroSplit ground="stone" mediaSide="start" split="60"
               src={P + "room-premium.jpg"} alt="A room with a balcony"
               title="Stays and rooms"
               meta={["Five room categories", "Single or double occupancy"]}
               sub="Each stay is residential. Your room is chosen when your programme is confirmed."
-              actions={<Button size="lg">Book a consultation</Button>} />
+              actions={<Button size="lg">Make an Inquiry</Button>} />
           </>;
         case "HeroStatement":
           return <>
@@ -565,7 +565,7 @@
               breadcrumbs={<Breadcrumbs items={[{ label: "Home", href: "#" }, "Conditions"]} />}
               title="Conditions we commonly see"
               sub="Our doctors see guests with a range of long-standing conditions. Programmes are planned after consultation and assessment."
-              actions={<Button size="lg">Book a consultation</Button>}
+              actions={<Button size="lg">Make an Inquiry</Button>}
               meta={["Reviewed by Dr. Bahja Janu, Medical Director", "Updated August 2026"]} />
             <HeroStatement ground="stone" tall={false}
               breadcrumbs={<Breadcrumbs items={[{ label: "Home", href: "#" }, "About"]} />}
@@ -627,18 +627,18 @@
             <ClosingCTA
               src={P + "porch-dusk-lit-canopy.jpg"} alt="The porch at dusk"
               title="Plan your stay with our doctors."
-              sub="Share your name and a number we can reach. Our team will contact you to arrange a consultation."
-              action={<Button size="lg">Book a consultation</Button>}
+              sub="Share your name and a number we can reach. Our team will contact you to discuss the next step."
+              action={<Button size="lg">Make an Inquiry</Button>}
               secondaryAction={<TextLink href="#">View programmes</TextLink>}
               contact={contact} />
             <ClosingCTA variant="ground" ground="himalaya"
               title="Plan your stay with our doctors."
-              action={<Button size="lg">Book a consultation</Button>}
+              action={<Button size="lg">Make an Inquiry</Button>}
               contact={contactPlain} />
             <ClosingCTA variant="compact" ground="stone"
               title="Questions about a programme?"
-              sub="Our team will call you back to arrange a consultation."
-              action={<Button>Book a consultation</Button>}
+              sub="Our team will call you back to discuss the next step."
+              action={<Button>Make an Inquiry</Button>}
               secondaryAction={<Button variant="secondary">Call +91 9553 600 100</Button>} />
           </>;
         case "FormSplit":
@@ -646,14 +646,14 @@
             <FormSplit onSubmit={(e) => e.preventDefault()} src={P + "lobby-reception.jpg"} alt="The lobby, at the reception desk" aside={<>
               <Statement as="h3" size="title" sub="A member of the team will call you to understand what you need. A doctor then reviews whether a stay is the right next step.">We'll be in touch</Statement>
             </>}>
-              <Statement as="h2" size="title" sub="Share your name and a number we can reach. Our team will contact you to arrange a consultation.">Send your details</Statement>
+              <Statement as="h2" size="title" sub="Share your name and a number we can reach. Our team will contact you to discuss the next step.">Make an Inquiry</Statement>
               <Input label="Name" name="full_name" autoComplete="name" required />
               <Input label="Mobile / WhatsApp number" name="phone" type="tel" autoComplete="tel" placeholder="+91" required />
               <Input label="Email" name="email" type="email" autoComplete="email" />
               <Select label="Country" name="country" options={["India", "United Arab Emirates", "United Kingdom", "Other"]} />
               <Textarea label="Anything you'd like us to know?" name="notes" rows={3} />
               <p style={{ margin: 0, font: "var(--type-caption)", color: "var(--text-muted)" }}>We will use these details only to contact you.</p>
-              <div><Button size="lg" type="submit">Send your details</Button></div>
+              <div><Button size="lg" type="submit">Make an Inquiry</Button></div>
             </FormSplit>
           </Section>;
         case "ArticleHeader":
@@ -766,10 +766,10 @@
         case "ProcessSection":
           return <Section ground="stone">
             <ProcessSection title="How a stay begins" sub="From your first message to your first morning." steps={[
-              { title: "Send your details", text: "Share your name and a number we can reach." },
+              { title: "Make an Inquiry", text: "Share your name and a number we can reach." },
               { title: "A call from our team", text: "A member of the team calls to understand what you need." },
               { title: "A doctor reviews", text: "A doctor reviews whether a stay is the right next step." },
-            ]} action={<Button>Book a consultation</Button>} />
+            ]} action={<Button>Make an Inquiry</Button>} />
           </Section>;
         case "TimelineSection":
           return <Section>
@@ -811,7 +811,7 @@
           return <Section>
             <div style={{ display: "flex", flexDirection: "column", gap: 40 }}>
               <NoticeBand title="Continue your medication">Do not stop or change any medication before you arrive. Your doctor reviews it with you at your consultation.</NoticeBand>
-              <NoticeBand tone="caution" layout="band" title="Send your records before your consultation" action={<TextLink href="#">Book a consultation</TextLink>}>Share your health assessment, medical records and current medication.</NoticeBand>
+              <NoticeBand tone="caution" layout="band" title="Send your records before your consultation" action={<TextLink href="#">Make an Inquiry</TextLink>}>Share your health assessment, medical records and current medication.</NoticeBand>
             </div>
           </Section>;
         case "ReferencesSection":
@@ -856,7 +856,7 @@
           </Section>;
         case "NotFoundSection":
           return <Section>
-            <NotFoundSection links={[{ label: "Programmes", href: "#programmes" }, { label: "Conditions", href: "#conditions" }, { label: "Book a consultation", href: "#book" }, { label: "Contact", href: "#contact" }]} />
+            <NotFoundSection links={[{ label: "Programmes", href: "#programmes" }, { label: "Conditions", href: "#conditions" }, { label: "Make an Inquiry", href: "#book" }, { label: "Contact", href: "#contact" }]} />
           </Section>;
         case "PolicySection":
           return <Section>

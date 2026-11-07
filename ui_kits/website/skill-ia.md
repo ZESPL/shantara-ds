@@ -16,9 +16,9 @@ Recommended top-level structure:
 - About
 - Journal (articles and Doctor Answers)
 - Contact
-- Book a consultation
+- Make an Inquiry
 
-The primary visitor-facing CTA is **Book a consultation**, including the submit button. Do not use **Enquire about a stay**, **Request a consultation** or **Send your details** as a second label for that action. See [skill-copy.md](skill-copy.md).
+The primary visitor-facing CTA is **Make an Inquiry**, including the submit button. The header and menu sheet use the short label **Enquire**. Do not use **Book a consultation**, **Enquire about a stay**, **Request a consultation** or **Send your details** as a second label for that action. See [skill-copy.md](skill-copy.md).
 
 Do not create a mega-menu unless the number of live pages genuinely makes normal navigation difficult.
 
@@ -143,7 +143,7 @@ Medical Editorial Policy also sits under About.
 
 Accreditations and Sustainability are standing pages. Their URLs are under [Utility pages](#utility-pages).
 
-`/en/our-doctors` lists every practising doctor with a photo, name, qualification, areas of practice and a **Book a consultation** button. The founder and chairman, P.A. Kareem, is not a doctor and is not listed there: he appears on Our Story, in the board, and on his own page, `/en/pa-kareem`, which lists his press, talks, videos and social posts. Dr. Bahja Janu (`/en/doctors/bahja-janu`) is the only doctor with a profile page. A doctor profile lists the doctor's answers, the articles they reviewed, their programmes, and any press, talks, videos and social posts on the doctor record. Those lists are outbound links. A YouTube recording is a link, never an embedded player. Do not create a profile page for any other doctor; link to their section on `/en/our-doctors` instead (for example `/en/our-doctors#{slug}`).
+`/en/our-doctors` lists every practising doctor with a photo, name, qualification, areas of practice and a **Make an Inquiry** button. The founder and chairman, P.A. Kareem, is not a doctor and is not listed there: he appears on Our Story, in the board, and on his own page, `/en/pa-kareem`, which lists his press, talks, videos and social posts. Dr. Bahja Janu (`/en/doctors/bahja-janu`) is the only doctor with a profile page. A doctor profile lists the doctor's answers, the articles they reviewed, their programmes, and any press, talks, videos and social posts on the doctor record. Those lists are outbound links. A YouTube recording is a link, never an embedded player. Do not create a profile page for any other doctor; link to their section on `/en/our-doctors` instead (for example `/en/our-doctors#{slug}`).
 
 Entity and parent history (including Hygiene Nature Cure Hospital / HNCH) belong here, not on condition or programme pages, and not as a hospital product pitch.
 
@@ -181,7 +181,7 @@ Traditional blog articles may continue to exist, but do not make generic blog pr
 
 ## Utility pages
 
-- Book a consultation (`/en/book-consultation`)
+- Make an Inquiry (`/en/make-an-inquiry`)
 - Contact (`/en/contact`)
 - Hosted visits (`/en/hosted-stays`): a special page. Specified in [special-pages/hosted-stays.md](special-pages/hosted-stays.md). Indexable. Not linked from the guest journey. No kit sample.
 - Frequently asked questions (`/en/faq`, grouped by category)
@@ -202,8 +202,8 @@ Do not invent the text. A page with no fact source below stays unpublished until
 
 **Policies**
 
-6. Terms and Conditions (`/en/terms`).
-7. Cancellation and Refund Policy (`/en/cancellation`; footer label "Cancellation policy"). Rendered from the tariff’s cancellation terms, so the page and the tariff cannot disagree.
+6. Booking terms and conditions (`/en/booking-terms`). The contract for a reservation. It incorporates the cancellation and refund policy, the tariff page, and the retreat policies and house rules. There is no separate general terms page. Footer label: "Booking terms and conditions".
+7. Cancellation and Refund Policy (`/en/cancellation`; footer label "Cancellation policy"). Rendered from the tariff’s cancellation terms, so the page and the tariff cannot disagree. It forms part of the booking terms.
 8. Privacy Policy (`/en/privacy-policy`). This is the public notice of what the website collects and why, including the consultation form, Ask the Doctor, the hosted-visits form, and analytics. The text is supplied by Shantara in `copy/en/policies/privacy-policy.md`. Handbook §8 is staff guidance and is not a source for this page. The page stays unpublished until that public text exists.
 9. Ethics Policy (`/en/ethics`).
 10. Diversity and Inclusion (`/en/diversity`).
@@ -213,9 +213,9 @@ Do not invent the text. A page with no fact source below stays unpublished until
 11. Accreditations and Certifications (`/en/accreditations`). Publish only a credential Shantara can show.
 12. Sustainability (`/en/sustainability`).
 
-The booking confirmation, and the tariff letter or email, each link to Terms and Conditions and to the Cancellation and Refund Policy. They do not restate either policy.
+The booking confirmation, and the tariff letter or email, each link to the booking terms and conditions. They do not restate that contract. They may also link to the Cancellation and Refund Policy, which the booking terms incorporate.
 
-Earlier planned paths redirect: `/en/resident-policies` to `/en/house-rules`, and `/en/terms-of-service` to `/en/terms`.
+Earlier planned paths redirect: `/en/resident-policies` to `/en/house-rules`, and `/en/terms` and `/en/terms-of-service` to `/en/booking-terms`.
 
 ## Page types
 
@@ -289,7 +289,7 @@ The Website Kit shows **one thin sample per family**, not every URL above.
 | About hub | `AboutScreen.js` |
 | Journal listing | `JournalScreen.js` |
 | `/en/contact` | `ContactScreen.js` |
-| `/en/book-consultation` | `ConsultationScreen.js` |
+| `/en/make-an-inquiry` | `ConsultationScreen.js` |
 | Tariff / pricing | `TariffScreen.js` |
 
 The kit maps those families to hash routes (`#/en/`, `#/en/programmes`). Production uses the real prefixed paths. Navigation labels come from the locale dictionary. Do not hard-code English in reusable nav. Footer contact data (phone, email, place) is globally stable; only the labels translate. Breadcrumb URLs stay in the current locale.

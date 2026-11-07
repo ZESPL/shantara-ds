@@ -26,7 +26,7 @@ From the approved voice audit. The meaning stays. The selling word, the repeated
 
 | Before | After | Why |
 | --- | --- | --- |
-| Book a consultation | Book a consultation | Sentence case. One label. |
+| Book a consultation | Make an Inquiry | The first step is the inquiry form. |
 | Rooms and tariffs, and Packages & rates, both to the same page | Rates and inclusions | One footer link. The breadcrumb stays Tariff. No rooms page. |
 | Rates for residential naturopathy programmes | All-inclusive rates for residential naturopathy programmes | "All-inclusive" moves into the H1. |
 | All-inclusive nightly rates, 2026–27 · INR (₹) | Nightly rates, 2026–27 · INR (₹) | The H2 does not repeat the H1. The currency mark stays. |
@@ -224,7 +224,7 @@ Instead of:
 
 Use:
 
-> Book a consultation
+> Make an Inquiry
 
 Instead of:
 
@@ -411,7 +411,7 @@ Calls to action should describe the next action accurately.
 
 Preferred:
 
-* Book a consultation
+* Make an Inquiry
 * View programmes
 * View the tariff
 * Meet our doctors
@@ -419,6 +419,7 @@ Preferred:
 
 Avoid:
 
+* Book a consultation
 * Enquire about a stay
 * Request a consultation
 * Begin your transformation
@@ -433,7 +434,7 @@ Avoid:
 
 The CTA should describe an action rather than promise an outcome. Keep labels short.
 
-One label per action, everywhere: the consultation action is always **Book a consultation**, in sentence case, on the header, the footer, the page title, the H1, the breadcrumb, the submit button and the analytics name. One view carries one primary action; any other action is a quieter link ([rule of one](../../../docs/rule-of-one.md)). Do not use Badge or static Tag as decorative pills next to actions.
+One label per action: the inquiry is **Make an Inquiry** on the page title, H1, breadcrumb, footer, submit button, in-page CTAs and analytics name. The header and menu sheet use the short label **Enquire**. One view carries one primary action; any other action is a quieter link ([rule of one](../../../docs/rule-of-one.md)). Do not use Badge or static Tag as decorative pills next to actions.
 
 ---
 

@@ -47,7 +47,7 @@ Every indexable page also gets the `WebSite` node and the full organisation grap
 | Conditions, Programmes and Journal listings | `CollectionPage` + `ItemList` + `BreadcrumbList` |
 | About | `AboutPage` with `about` pointing to the organisation |
 | Contact | `ContactPage` with `about` pointing to the organisation |
-| Book a consultation | `WebPage` + `BreadcrumbList` |
+| Make an Inquiry | `WebPage` + `BreadcrumbList` |
 | Policies, terms, privacy | `WebPage` + `BreadcrumbList` |
 | Form confirmation, 404, 410 | No structured data |
 | Any indexable page that shows a public video | The row above, plus one `VideoObject` (SCHEMA-16) |

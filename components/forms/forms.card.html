@@ -16,7 +16,7 @@ function Demo(){
   const [contact,setContact]=React.useState("whatsapp");
   return (<div>
 <form className="form" onSubmit={e=>e.preventDefault()} noValidate>
-<div className="full"><h2 className="t">Book a consultation</h2><p className="sub">Tell us a little about yourself. A member of our team will call you back.</p></div>
+<div className="full"><h2 className="t">Make an Inquiry</h2><p className="sub">Tell us a little about yourself. A member of our team will call you back.</p></div>
 <Input label="Full name" required autoComplete="name" placeholder="As on your passport"/>
 <Input label="Email" type="email" required defaultValue="anya.raman@" error="Enter an email address like name@example.com."/>
 <Input label="Phone or WhatsApp" type="tel" required autoComplete="tel" startIcon={<Icon name="phone" size={16}/>} placeholder="+91 98765 43210" hint="Include your country code."/>
@@ -36,7 +36,7 @@ function Demo(){
 <Checkbox label="I have medical reports from the last 12 months" description="You can share them with our team after we call." defaultChecked/>
 <Checkbox label="I agree to be contacted about my consultation" required error="Please tick this box so our team can contact you."/>
 </div>
-<div className="full"><Button type="submit" size="lg">Send your details</Button></div>
+<div className="full"><Button type="submit" size="lg">Make an Inquiry</Button></div>
 </form>
 <div className="states">
 <div className="stack"><p className="cap">Text fields</p>

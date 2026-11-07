@@ -27,7 +27,7 @@ Before building any page, section, deck, poster, document or message, write thes
 Reader:      who it is for and what they are deciding
 Idea:        the one sentence they should come away with
 Proof:       what must be shown for them to believe it
-Next step:   the one action (for the website, Book a consultation unless the surface has another job)
+Next step:   the one action (for the website, Make an Inquiry unless the surface has another job)
 Not here:    what was cut or moved, and where it went
 ```
 
@@ -68,7 +68,7 @@ A view is whatever is visible at once: a screen at the current scroll position, 
 
 ### 5. Element: one name for one thing
 
-- One label per action everywhere: **Book a consultation**, not a different synonym on each page ([`page-copy-patterns.md`](../ui_kits/website/copy/page-copy-patterns.md#calls-to-action)).
+- One label per action: **Make an Inquiry** on the page and form; the header uses **Enquire** ([`page-copy-patterns.md`](../ui_kits/website/copy/page-copy-patterns.md#calls-to-action)).
 - One name per programme, room category, service and person, taken from `content/` and the glossary. No synonyms for variety.
 - A button describes one action. A caption carries one fact. A list item states one thing.
 
@@ -78,7 +78,7 @@ Use this table to apply the rule; the linked file holds the full rules for that 
 
 | Medium | One reader / job | One focal point | One next step | Full rules |
 | --- | --- | --- | --- | --- |
-| Website page | One page job (need, intent, page type) | One hero, first, with one headline | One primary action, usually Book a consultation | [`ui_kits/website/SKILL.md`](../ui_kits/website/SKILL.md), [`skill-sections.md`](../ui_kits/website/skill-sections.md) |
+| Website page | One page job (need, intent, page type) | One hero, first, with one headline | One primary action, usually Make an Inquiry | [`ui_kits/website/SKILL.md`](../ui_kits/website/SKILL.md), [`skill-sections.md`](../ui_kits/website/skill-sections.md) |
 | Website section | One point | One photograph or one tile row | At most one action; often none | [`skill-premium.md`](../ui_kits/website/skill-premium.md#layout-and-whitespace) |
 | Hero | The page's idea, as one full-sentence headline | One photograph or one statement | One primary button; a second action is a `TextLink` | Hero `*.prompt.md` files |
 | Share image | The page's hero, reduced | The title, in Diodrum Light | None on the image | [`skill-og-images.md`](../ui_kits/website/skill-og-images.md) |
@@ -122,7 +122,7 @@ A poster is read in a few seconds, often from a distance.
 
 - **Not one item.** A `TileGrid` of programmes, a `KeyFacts` list or a credentials strip is one job with several items. The rule limits jobs, not items.
 - **Not for reference surfaces.** The tariff, FAQ, policies, a programme comparison and the handbook exist to hold many facts. Their rule is one purpose per surface (help someone check or compare), with one topic per section.
-- **Not for navigation and the footer.** The header and footer list many links by design. They are the frame, not a view's focal point. The header's Book a consultation button is the one exception to "one primary button per view" and does not count against the page.
+- **Not for navigation and the footer.** The header and footer list many links by design. They are the frame, not a view's focal point. The header's Enquire button is the one exception to "one primary button per view" and does not count against the page.
 - **Proof can be plural.** Several facts, figures or credentials may support the one idea, as long as all of them support it.
 - **Not an excuse to remove required information.** Medical review, references, consent, legal text and accessibility requirements stay, even when they add elements.
 

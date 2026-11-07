@@ -7,16 +7,16 @@ The consultation form on Merino beside a Stone panel: a photograph of the place,
     We'll be in touch
   </Statement>
 </>}>
-  <Statement as="h2" size="title">Send your details</Statement>
+  <Statement as="h2" size="title">Make an Inquiry</Statement>
   <Input label="Name" name="full_name" autoComplete="name" required />
   <Input label="Mobile / WhatsApp number" name="phone" type="tel" autoComplete="tel" placeholder="+91" required />
-  <Button size="lg" type="submit">Send your details</Button>
+  <Button size="lg" type="submit">Make an Inquiry</Button>
 </FormSplit>
 ```
 
 **A real form.** The left column renders a `<form>`: pass `onSubmit` (and `action` / `method` if it posts), give the button `type="submit"`, and mark required fields `required`. Enter in a field submits, the browser checks required fields before `onSubmit` runs (pass `noValidate` when the page validates itself), and assistive technology announces a form. Do not wire submission to the button's `onClick`.
 
-**Content.** Fields follow `content/site.json` `form_field_keys`; the button reads “Send your details”. The panel says in plain sentences what happens next, as the consultation screen does; a doctor it names comes from `content/doctors/`. Do not narrate internal process as a numbered list (“1. We receive your details…”), and never promise a response time that is not confirmed.
+**Content.** Fields follow `content/site.json` `form_field_keys`; the button reads “Make an Inquiry”. The panel says in plain sentences what happens next, as the inquiry screen does; a doctor it names comes from `content/doctors/`. Do not narrate internal process as a numbered list (“1. We receive your details…”), and never promise a response time that is not confirmed.
 
 **One job.** One form, one purpose, one submit button ([rule of one](../../docs/rule-of-one.md)). The panel reassures; it carries no second button or competing action.
 

@@ -103,7 +103,7 @@ Indicative: Hormonal & Endocrine Balance; Men’s Vitality (named handbook welln
 
 ### N. Appropriate CTA
 
-Book a consultation; Meet our doctors; Learn about the programme. Avoid “Balance your hormones now”.
+Make an Inquiry; Meet our doctors; Learn about the programme. Avoid “Balance your hormones now”.
 
 ### O. Conversion objective
 

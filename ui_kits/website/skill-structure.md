@@ -47,10 +47,10 @@ src/
     home.ts
     therapies.ts  rooms.ts  amenities-activities.ts  farm-dining.ts  a-day-at-shantara.ts
     our-story.ts  our-approach.ts  our-doctors.ts
-    conditions.ts  programs.ts  journal.ts  faq.ts  tariff.ts  contact.ts  book-consultation.ts
+    conditions.ts  programs.ts  journal.ts  faq.ts  tariff.ts  contact.ts  make-an-inquiry.ts
     policies/
       admission-criteria.md  house-rules.md  guest-rights.md
-      feedback-and-complaints.md  accessibility.md  terms.md
+      feedback-and-complaints.md  accessibility.md  booking-terms.md
       privacy-policy.md  ethics.md  diversity.md
       accreditations.md  sustainability.md
   components/
@@ -126,14 +126,14 @@ Every URL carries a locale prefix, and `check-routes.mjs` enforces it ([Build ch
 | `/en/tariff` | `tariff.astro` | `tariff/en.json` | `WebPage` + `BreadcrumbList`, with `Offer` only for visible rates |
 | `/en/faq` | `faq.astro` | `faq/en.json` | `WebPage` + `BreadcrumbList` (`FAQPage` optional) |
 | `/en/contact` | `contact.astro` | `site/en.json` | `ContactPage` |
-| `/en/book-consultation` | `book-consultation.astro` | `ConsultationForm` | `WebPage` + `BreadcrumbList` |
+| `/en/make-an-inquiry` | `make-an-inquiry.astro` | `ConsultationForm` | `WebPage` + `BreadcrumbList` |
 | `/en/hosted-stays` | `hosted-stays.astro` | Specified in [special-pages/hosted-stays.md](special-pages/hosted-stays.md). Indexable. No links from nav, footer, or guest pages. No kit sample. Same slug under each published locale. | `WebPage` only |
 | `/en/admission-criteria` | `admission-criteria.astro` | `copy/en/policies/admission-criteria.md` | `WebPage` + `BreadcrumbList` |
 | `/en/house-rules` | `house-rules.astro` | `copy/en/policies/house-rules.md` | `WebPage` + `BreadcrumbList` |
 | `/en/guest-rights` | `guest-rights.astro` | `copy/en/policies/guest-rights.md` | `WebPage` + `BreadcrumbList` |
 | `/en/feedback-and-complaints` | `feedback-and-complaints.astro` | `copy/en/policies/feedback-and-complaints.md` | `WebPage` + `BreadcrumbList` |
 | `/en/accessibility` | `accessibility.astro` | `copy/en/policies/accessibility.md` | `WebPage` + `BreadcrumbList` |
-| `/en/terms` | `terms.astro` | `copy/en/policies/terms.md` | `WebPage` + `BreadcrumbList` |
+| `/en/booking-terms` | `[slug].astro` | the booking terms policy. The contract for a reservation. `/en/terms` and `/en/terms-of-service` redirect here | `WebPage` + `BreadcrumbList` |
 | `/en/cancellation` | `cancellation.astro` | `tariff/en.json` → `cancellation`, `payment_terms` | `WebPage` + `BreadcrumbList` |
 | `/en/privacy-policy` | `privacy-policy.astro` | `copy/en/policies/privacy-policy.md` | `WebPage` + `BreadcrumbList` |
 | `/en/ethics` | `ethics.astro` | `copy/en/policies/ethics.md` | `WebPage` + `BreadcrumbList` |
@@ -169,7 +169,7 @@ The copy for these pages is written in code (`src/copy/en/`). Facts come from th
 | A Day at Shantara | Handbook §12 (daily routine) and §13 | Use the daily routine timings from handbook §12. Say that the doctor prescribes which treatments fill the morning and afternoon slots. The name follows Shantara, never Welnez. |
 | Our Story | Handbook §2 | Use the history paragraph in that section, and nowhere else. Do not date Shantara to 2000. Mention Welnez only as the former name, and only if the history needs it. |
 | Our Approach | Handbook, naturopathy principles and the guest journey | Describe the journey as enquiry → consultation → stay → going home. Do not use hospital words such as "discharge" or "patients". [AGENTS.md](../../AGENTS.md) bans "patients" on public pages. |
-| Our Doctors | `content/doctors/` | Each doctor gets a photo, name, qualification, areas of practice and a **Book a consultation** button. Dr. Bahja also links to her profile page. Show only public, visible credentials. The founder, P.A. Kareem, is not a doctor and is not on this page. |
+| Our Doctors | `content/doctors/` | Each doctor gets a photo, name, qualification, areas of practice and a **Make an Inquiry** button. Dr. Bahja also links to her profile page. Show only public, visible credentials. The founder, P.A. Kareem, is not a doctor and is not on this page. |
 | Guest, policy and about pages | The lists in [skill-ia.md](skill-ia.md#utility-pages) | Do not invent text. Cancellation has no copy file; it renders from the tariff. |
 
 ## Reading content

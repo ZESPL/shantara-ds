@@ -42,7 +42,7 @@ function ensure() {
 /* next: string[] · contact: [{ icon, label, href? }] ·
    explore: [{ title, text?, meta?, src?, alt?, href }]: three cards (only the first three render).
    An http(s) href opens in a new tab. */
-export function ConfirmationSection({ title = "Consultation request received", sub, next = [], nextLabel = "What happens next", contact = [], contactLabel = "If you need us sooner", explore = [], exploreLabel = "Keep exploring", exploreLayout = "3", actions, autoFocus = true, headingLevel = 1, style, ...rest }) {
+export function ConfirmationSection({ title = "Inquiry received", sub, next = [], nextLabel = "What happens next", contact = [], contactLabel = "If you need us sooner", explore = [], exploreLabel = "Keep exploring", exploreLayout = "3", actions, autoFocus = true, headingLevel = 1, style, ...rest }) {
   ensure();
   const ref = React.useRef(null);
   React.useEffect(() => {

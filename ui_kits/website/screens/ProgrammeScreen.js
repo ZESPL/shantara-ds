@@ -71,7 +71,7 @@ function ProgrammeScreen({ onNavigate }) {
           title={t(programme.name)}
           meta={[t("Naturopathy programme"), programme.durations ? t(programme.durations) : null].filter(Boolean)}
           sub={t(programme.proposition)}
-          actions={<Button size="lg" onClick={() => onNavigate("booking")}>{t("Book a consultation")}</Button>}
+          actions={<Button size="lg" onClick={() => onNavigate("booking")}>{t("Make an Inquiry")}</Button>}
         />
       </P>
 
@@ -92,7 +92,7 @@ function ProgrammeScreen({ onNavigate }) {
               </div>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "var(--space-4)" }}>
-              <Button fullWidth size="lg" onClick={() => onNavigate("booking")}>{t("Book a consultation")}</Button>
+              <Button fullWidth size="lg" onClick={() => onNavigate("booking")}>{t("Make an Inquiry")}</Button>
               <Button fullWidth variant="secondary" onClick={() => onNavigate("tariffs")}>{t("View tariffs")}</Button>
             </div>
             <p style={{ margin: 0, font: "var(--type-body-sm)", color: "var(--text-secondary)" }}>{t("Your stay is confirmed after a doctor reviews your details.")}</p>

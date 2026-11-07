@@ -75,7 +75,7 @@ Do not put **you** or **your** on a fact to make it feel personal. "A doctor pre
 
 Prefer **guest** over client, customer or patient. **Guest** is the public noun for the person staying, including Guest Rights and Responsibilities. Handbook and internal notes may say patient when that text is not published. Schema field names are not public copy.
 
-Headings are sentence case. The consultation label is "Book a consultation". Do not set it in title case. Owner-locked titles stay as the owner wrote them. The visa page title is one of those. Do not invent a sentence-case twin.
+Headings are sentence case. The inquiry label is "Make an Inquiry". Do not set it in title case. Owner-locked titles stay as the owner wrote them. The visa page title is one of those. Do not invent a sentence-case twin.
 
 Say it once. The H1, the lead under it and the first section heading do not repeat the same words. If the H1 says all-inclusive, the next heading does not.
 
