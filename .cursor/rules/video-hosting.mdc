@@ -7,6 +7,8 @@ alwaysApply: true
 
 Canonical standard: `ui_kits/website/skill-video.md`.
 
+Guest films already in this design system are indexed in `assets/videos/README.md`. The mp4 files are gitignored. They are not on R2, consent is not recorded, and they are not testimonial records.
+
 Video files must be uploaded to Cloudflare R2 and served via Cloudflare CDN. Never commit video files to the repository. Every video must also be included in the site’s video sitemap.
 
 ## Not allowed

@@ -6,7 +6,7 @@ Back to the [website skill](SKILL.md).
 
 **Production CMS:** Keystatic (git-based) with Markdoc for long-form. `keystatic.config.ts` is the only schema, and pages read it through the Keystatic reader (see [skill-stack.md](skill-stack.md) and [skill-structure.md](skill-structure.md)). Staff do not edit in Keystatic.
 
-This model is instantiated in [`content/`](../../content/) for the design-system kit. Empty folders (`guest-stories/`, `events/`, `testimonials/`) mean the entity is not ready. Do not invent records to fill them. Stub conditions stay `draft` with empty clinical bodies until medical review exists.
+This model is instantiated in [`content/`](../../content/) for the design-system kit. Empty folders (`guest-stories/`, `events/`, `testimonials/`) mean the entity is not ready. Do not invent records to fill them. Guest films already filed here are indexed in [`assets/videos/README.md`](../../assets/videos/README.md). They stay out of `testimonials/` until consent is recorded and the file is on Cloudflare R2. Stub conditions stay `draft` with empty clinical bodies until medical review exists.
 
 Model business/content entities, not layout hacks. There is **no page builder and no composed pages**. Fixed pages (home, rooms, therapies, FAQ, tariff) keep their intro copy and SEO in code; Keystatic holds the entities they list.
 

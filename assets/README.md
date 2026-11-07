@@ -5,6 +5,7 @@ Every image file in this design system, and which one to pick, without opening i
 | Folder | What | Pick by |
 | --- | --- | --- |
 | `photos/` | 161 property, doctor, activity and food photographs | [`photos/README.md`](photos/README.md) |
+| `videos/` | Guest films. The mp4 files are gitignored and are not cleared for pages | [`videos/README.md`](videos/README.md) |
 | `./` (root) | Shantara wordmark, flower mark, rosette pattern | This file, [Logo](#shantara-logo) and [Pattern](#rosette-pattern) |
 | `lockups/` | Shantara with Hygiene Nature Cure | This file, [Lockups](#lockups-with-hygiene-nature-cure) |
 | `hnch/` | Hygiene Nature Cure Hospital's own mark | This file, [HNCH](#hygiene-nature-cure-hospital-hnch) |

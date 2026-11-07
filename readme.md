@@ -48,6 +48,7 @@ tokens/                 → fonts, colors, typography, spacing, radius, elevatio
 assets/                 → wordmark and flower in 4 colourways each, pattern cell + motif, Diodrum TTFs
 assets/README.md        → index of logos, lockups, HNCH mark and pattern files
 assets/photos/          → property + doctor photos (flat; README.md = rules, shortlist, index; CATALOGUE.md = one entry per frame)
+assets/videos/          → guest films (gitignored mp4; README.md is the index; not testimonials yet)
 guidelines/             → specimen cards (Brand, Foundations)
 components/             → core, forms, navigation, feedback, editorial, sections: jsx, d.ts, prompt.md; catalog pages via docs/component.html?c=
 scripts/build-bundle.mjs → rebuilds _ds_bundle.js from components/ (see its header for Babel)

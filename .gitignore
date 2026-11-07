@@ -1,7 +1,9 @@
 uploads/
 dist/
 
-# Video files live on Cloudflare R2, never in git. See ui_kits/website/skill-video.md
+# Video files live on Cloudflare R2, never in git.
+# Guest films on this machine are indexed in assets/videos/README.md
+# See ui_kits/website/skill-video.md
 *.mp4
 *.webm
 *.mov
