@@ -93,10 +93,9 @@ Primitives are developer-level (Container, Heading, Button, Form Field, Accordio
 
 ## 4. Information architecture
 
-Top-level navigation has **five items, no more**, centred between the logo and the actions on desktop:
+Top-level navigation has **five items at most**, centred between the logo and the actions on desktop. Today it has four:
 
 - Programmes
-- Conditions
 - Experience
 - About
 - Journal
@@ -108,15 +107,16 @@ Do not create a mega-menu unless live page count genuinely requires it.
 URL families are **locale-prefixed for every language, including English**:
 
 ```text
-/en/conditions
-/en/conditions/diabetes
 /en/programmes
 /en/programmes/[programme-slug]
+/en/conditions/[condition-slug]   (deferred: no condition pages yet)
 ```
 
 Root `/` is the x-default entry and redirects to `/en` (or a remembered enabled locale). Do not force locale by IP. Do not leave `/` and `/en` both indexable. Only a published localized URL is canonical.
 
-Do not invent condition-category SEO hubs (`/en/conditions/metabolic-lifestyle/diabetes`). Group visually on `/en/conditions` without creating indexable category pages.
+**Status (shantara.life D-202 to D-208).** The site is programmes only for now. There are no condition pages and no Conditions nav item. Conditions are data: a `conditions` record is `name`, `slug` and `synonyms`, and each programme lists the conditions it is for, in order. They appear under a programme's Who it is for, in the rows and the A to Z **Find a programme by condition** list on `/en/programmes`, in site search and in the programme's schema (`MedicalCondition` with `possibleTreatment`). The rules below govern condition pages when one is built; the slug is already stable.
+
+Do not invent condition-category SEO hubs (`/en/conditions/metabolic-lifestyle/diabetes`). When condition pages exist, group them visually on `/en/conditions` without creating indexable category pages.
 
 Create a condition page only when Shantara can provide original content, a legitimate clinical perspective, a relevant programme, medical review, and useful answers. Do not pre-build dozens of thin condition pages.
 
@@ -286,8 +286,8 @@ These files are **previews** of the skill, not the live site:
 | Sample | Skill page type | Notes |
 | --- | --- | --- |
 | `screens/HomeScreen.js` | home | `HeroFullBleed`, approach, doctors, programme tiles + roomy index, therapies, rooms, journal, FAQ |
-| `screens/ConditionsScreen.js` | condition listing | Visual grouping only; no category URLs |
-| `screens/ProgrammeScreen.js` | programme | `HeroSplit` + booking panel; tariff link, no rates |
+| `screens/ProgrammesScreen.js` | programme listing | `HeroFullBleed`, one `IndexList` row per programme (name, summary, conditions), then Find a programme by condition as an A to Z `GroupedList` |
+| `screens/ProgrammeScreen.js` | programme | Advanced Detox & Cellular Cleansing: `HeroSplit` + booking panel; tariff link, no rates |
 | `screens/ExperienceScreen.js` | experience hub | Therapies, rooms, farm, a day; not one page per room |
 | `screens/AboutScreen.js` | about hub | Story, approach, doctors, editorial policy |
 | `screens/JournalScreen.js` | article listing | `HeroStatement` → `Tabs` → `TileGrid` → `Pagination` |

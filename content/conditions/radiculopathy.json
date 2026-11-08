@@ -1,0 +1,12 @@
+{
+  "id": "radiculopathy",
+  "slug": "radiculopathy",
+  "name": "Radiculopathy",
+  "synonyms": [
+    "pinched nerve",
+    "nerve root compression",
+    "cervical radiculopathy"
+  ],
+  "locale": "en",
+  "source": "client"
+}

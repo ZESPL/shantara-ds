@@ -1,0 +1,13 @@
+{
+  "id": "diabetic-or-hypertensive-nephropathy",
+  "slug": "diabetic-or-hypertensive-nephropathy",
+  "name": "Diabetic or hypertensive nephropathy",
+  "synonyms": [
+    "nephropathy",
+    "diabetic kidney disease",
+    "kidney damage from diabetes",
+    "kidney damage from blood pressure"
+  ],
+  "locale": "en",
+  "source": "client"
+}

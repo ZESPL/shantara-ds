@@ -72,7 +72,7 @@ function AboutScreen({ onNavigate }) {
             {t("Doctors set the daily plan: treatments, meals, activity and rest.")}
           </Statement>
           <div>
-            <TextLink onClick={() => onNavigate("programme")}>{t("Programmes")}</TextLink>
+            <TextLink onClick={() => onNavigate("programmes")}>{t("Programmes")}</TextLink>
           </div>
         </SplitSection>
       </P>

@@ -1,10 +1,10 @@
 /* Website chrome: header, phone dropdown, menu sheet, footer, and two helpers the screens
    share (PageSlot, siteContactItems). Composition sample, not the production site. */
 
-/* Five items, no more (owner decision #6). Contact lives in the phone dropdown and the footer. */
+/* Five items at most (owner decision #6); four today, since there are no condition pages
+   (shantara.life D-202). Contact lives in the phone dropdown and the footer. */
 const NAV = [
-  { label: "Programmes", view: "programme" },
-  { label: "Conditions", view: "conditions" },
+  { label: "Programmes", view: "programmes" },
   { label: "Experience", view: "experience" },
   { label: "About", view: "about" },
   { label: "Journal", view: "journal" },
@@ -12,7 +12,7 @@ const NAV = [
 
 /* Views that open on HeroFullBleed: the header starts transparent with Merino type over a
    scrim, then turns solid Merino once the page scrolls. */
-const PHOTO_HERO_VIEWS = ["home", "experience"];
+const PHOTO_HERO_VIEWS = ["home", "experience", "programmes"];
 /* Views that open on HeroSplit: the photograph runs to the top edge on one side, so the
    header is solid from the start rather than dark type over a photograph. */
 const SOLID_HEADER_VIEWS = ["programme", "tariffs"];
@@ -436,8 +436,7 @@ function SiteHeader({ view, onNavigate, locale = "en", onLocaleChange }) {
 
 const FOOTER_COLS = [
   { title: "Programmes & visits", links: [
-    { label: "Programmes", view: "programme" },
-    { label: "Conditions", view: "conditions" },
+    { label: "Programmes", view: "programmes" },
     { label: "Experience", view: "experience" },
     { label: "Journal", view: "journal" },
   ] },
@@ -544,4 +543,12 @@ function SiteFooter({ onNavigate, locale = "en" }) {
   );
 }
 
-Object.assign(window, { SiteHeader, SiteFooter, PageSlot, siteContact, siteContactItems, applyTextSize, readStoredTextSize });
+/* A programme's `durations` (a list of nights) as one line: [14, 21, 28] → "14, 21 or 28 nights". */
+function nightsLabel(durations) {
+  if (!Array.isArray(durations) || !durations.length) return "";
+  const list = durations.map(String);
+  const last = list.pop();
+  return (list.length ? list.join(", ") + " or " + last : last) + " nights";
+}
+
+Object.assign(window, { SiteHeader, SiteFooter, PageSlot, siteContact, siteContactItems, applyTextSize, readStoredTextSize, nightsLabel });

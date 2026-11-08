@@ -1,0 +1,13 @@
+{
+  "id": "low-back-and-neck-pain",
+  "slug": "low-back-and-neck-pain",
+  "name": "Low back and neck pain",
+  "synonyms": [
+    "back pain",
+    "neck pain",
+    "lumbago",
+    "stiff neck"
+  ],
+  "locale": "en",
+  "source": "client"
+}

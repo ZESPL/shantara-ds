@@ -1,0 +1,14 @@
+{
+  "id": "type-2-diabetes",
+  "slug": "type-2-diabetes",
+  "name": "Type 2 diabetes",
+  "synonyms": [
+    "diabetes",
+    "sugar",
+    "high blood sugar",
+    "diabetes mellitus",
+    "T2DM"
+  ],
+  "locale": "en",
+  "source": "client"
+}

@@ -4,6 +4,10 @@ export interface IndexItem {
   title: React.ReactNode;
   /** One line. */
   text?: React.ReactNode;
+  /** A second, quieter line under `text`, such as a programme's first conditions. */
+  meta?: React.ReactNode;
+  /** Written to `data-filter-terms` (pipe-separated) for a page script that filters rows. */
+  terms?: string;
   href?: string;
   onClick?: React.MouseEventHandler;
 }

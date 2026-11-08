@@ -1,0 +1,12 @@
+{
+  "id": "dyspepsia",
+  "slug": "dyspepsia",
+  "name": "Indigestion (dyspepsia)",
+  "synonyms": [
+    "dyspepsia",
+    "indigestion",
+    "upset stomach"
+  ],
+  "locale": "en",
+  "source": "client"
+}

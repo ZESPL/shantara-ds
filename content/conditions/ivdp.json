@@ -1,0 +1,14 @@
+{
+  "id": "ivdp",
+  "slug": "ivdp",
+  "name": "Slipped disc (IVDP)",
+  "synonyms": [
+    "IVDP",
+    "disc prolapse",
+    "herniated disc",
+    "disc bulge",
+    "intervertebral disc prolapse"
+  ],
+  "locale": "en",
+  "source": "client"
+}

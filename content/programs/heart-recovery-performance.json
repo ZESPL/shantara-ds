@@ -1,0 +1,38 @@
+{
+  "id": "heart-recovery-performance",
+  "slug": "heart-recovery-performance",
+  "name": "Heart Recovery & Performance",
+  "proposition": "A residential programme for guests in a medically stable phase after a heart attack, angioplasty or bypass surgery, and for guests at high risk of heart disease. Supervised exercise, meals, stress care and therapies follow cardiac rehabilitation principles and are reviewed with the guest each day.",
+  "audience": "For stable recovery after a heart attack, angioplasty or bypass, and high heart risk.",
+  "durations": [
+    21,
+    28
+  ],
+  "conditions": [
+    "recovery-after-heart-attack",
+    "recovery-after-heart-surgery",
+    "coronary-artery-disease",
+    "hypertension",
+    "dyslipidemia",
+    "metabolic-syndrome"
+  ],
+  "suitability": [
+    "Guests in a medically stable phase only, cleared for the stay by their own cardiologist",
+    "Professionals with raised cardiac risk markers and a mostly seated routine"
+  ],
+  "order": 11,
+  "locale": "en",
+  "source": "client",
+  "related_pages": [
+    {
+      "type": "programme",
+      "id": "metabolic-reversal"
+    }
+  ],
+  "status": "published",
+  "featured_image": {
+    "src": "grounds-hillside-path-walking-guest-landscape-3x2",
+    "alt": "A guest in white walking barefoot down a curving hillside path, seen from above through foliage"
+  },
+  "featured": false
+}

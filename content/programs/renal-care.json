@@ -1,0 +1,38 @@
+{
+  "id": "renal-care",
+  "slug": "renal-care",
+  "name": "Renal Care",
+  "proposition": "A residential programme for guests with early-stage kidney conditions who remain under their own nephrologist's care. Meals, fluid intake, blood pressure, blood sugar, gentle activity and therapies are planned with caution and reviewed each day.",
+  "audience": "For early-stage kidney disease, kidney stones and kidney strain from diabetes or BP.",
+  "durations": [
+    21,
+    28
+  ],
+  "conditions": [
+    "early-chronic-kidney-disease",
+    "diabetic-or-hypertensive-nephropathy",
+    "kidney-stones",
+    "microalbuminuria",
+    "nephritis",
+    "fluid-retention"
+  ],
+  "suitability": [
+    "Guests who remain under the care of their own nephrologist and continue prescribed medication",
+    "Guests whose kidney condition is linked to diabetes or high blood pressure"
+  ],
+  "order": 17,
+  "locale": "en",
+  "source": "owner",
+  "related_pages": [
+    {
+      "type": "programme",
+      "id": "metabolic-reversal"
+    }
+  ],
+  "status": "published",
+  "featured_image": {
+    "src": "open-deck",
+    "alt": "A timber-decked balcony with a table and chair, looking out to forested hills"
+  },
+  "featured": false
+}

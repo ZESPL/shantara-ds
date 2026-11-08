@@ -1,0 +1,34 @@
+{
+  "id": "liver-restoration",
+  "slug": "liver-restoration",
+  "name": "Liver Restoration",
+  "proposition": "A residential programme for guests with fatty liver, or with stable liver cirrhosis under their own hepatologist's care. Meals, fasting where suitable, gentle activity, therapies and rest are planned around liver health and reviewed each day.",
+  "audience": "For fatty liver, and stable cirrhosis under the guest's own hepatologist.",
+  "durations": [
+    21,
+    28
+  ],
+  "conditions": [
+    "fatty-liver",
+    "liver-cirrhosis"
+  ],
+  "suitability": [
+    "Guests with cirrhosis only when it is stable and their own hepatologist agrees to the stay",
+    "Guests whose liver condition is linked to weight, blood sugar or alcohol"
+  ],
+  "order": 18,
+  "locale": "en",
+  "source": "owner",
+  "related_pages": [
+    {
+      "type": "programme",
+      "id": "metabolic-reversal"
+    }
+  ],
+  "status": "published",
+  "featured_image": {
+    "src": "porch-dusk-lit-canopy",
+    "alt": "The porch at dusk with a lit wood canopy, stone columns and uplit trees"
+  },
+  "featured": false
+}

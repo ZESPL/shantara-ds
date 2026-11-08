@@ -1,0 +1,12 @@
+{
+  "id": "copd",
+  "slug": "copd",
+  "name": "COPD (stable)",
+  "synonyms": [
+    "COPD",
+    "chronic obstructive pulmonary disease",
+    "emphysema"
+  ],
+  "locale": "en",
+  "source": "client"
+}

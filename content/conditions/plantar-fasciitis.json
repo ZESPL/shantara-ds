@@ -1,0 +1,11 @@
+{
+  "id": "plantar-fasciitis",
+  "slug": "plantar-fasciitis",
+  "name": "Plantar fasciitis",
+  "synonyms": [
+    "heel pain",
+    "heel spur"
+  ],
+  "locale": "en",
+  "source": "client"
+}

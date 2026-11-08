@@ -1,26 +1,12 @@
 {
   "id": "ibs",
   "slug": "ibs",
-  "name": "IBS",
-  "summary": null,
-  "clinical": null,
-  "faqs": [],
-  "medical_reviewer": null,
-  "last_medically_reviewed": null,
-  "locale": "en",
-  "source": "gap",
-  "related_pages": [
-    {
-      "type": "programme",
-      "id": "detox"
-    },
-    {
-      "type": "programme",
-      "id": "complete-healing"
-    }
+  "name": "Irritable bowel syndrome (IBS)",
+  "synonyms": [
+    "IBS",
+    "irritable bowel",
+    "spastic colon"
   ],
-  "category": null,
-  "status": "draft",
-  "featured_image": null,
-  "external_references": []
+  "locale": "en",
+  "source": "client"
 }

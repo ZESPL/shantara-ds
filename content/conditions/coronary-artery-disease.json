@@ -1,0 +1,15 @@
+{
+  "id": "coronary-artery-disease",
+  "slug": "coronary-artery-disease",
+  "name": "Coronary artery disease (stable)",
+  "synonyms": [
+    "CAD",
+    "ischaemic heart disease",
+    "ischemic heart disease",
+    "IHD",
+    "heart blockage",
+    "angina"
+  ],
+  "locale": "en",
+  "source": "client"
+}

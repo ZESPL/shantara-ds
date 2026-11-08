@@ -1,0 +1,12 @@
+{
+  "id": "micronutrient-deficiencies",
+  "slug": "micronutrient-deficiencies",
+  "name": "Micronutrient deficiencies",
+  "synonyms": [
+    "vitamin deficiency",
+    "mineral deficiency",
+    "nutritional deficiency"
+  ],
+  "locale": "en",
+  "source": "client"
+}

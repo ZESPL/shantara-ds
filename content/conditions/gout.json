@@ -1,0 +1,12 @@
+{
+  "id": "gout",
+  "slug": "gout",
+  "name": "Gout",
+  "synonyms": [
+    "high uric acid",
+    "uric acid",
+    "hyperuricemia"
+  ],
+  "locale": "en",
+  "source": "client"
+}

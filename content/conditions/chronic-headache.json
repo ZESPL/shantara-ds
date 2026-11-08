@@ -1,0 +1,12 @@
+{
+  "id": "chronic-headache",
+  "slug": "chronic-headache",
+  "name": "Chronic headache",
+  "synonyms": [
+    "headache",
+    "tension headache",
+    "chronic headache syndromes"
+  ],
+  "locale": "en",
+  "source": "client"
+}

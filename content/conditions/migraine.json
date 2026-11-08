@@ -2,25 +2,10 @@
   "id": "migraine",
   "slug": "migraine",
   "name": "Migraine",
-  "summary": null,
-  "clinical": null,
-  "faqs": [],
-  "medical_reviewer": null,
-  "last_medically_reviewed": null,
-  "locale": "en",
-  "source": "gap",
-  "related_pages": [
-    {
-      "type": "programme",
-      "id": "stress-management"
-    },
-    {
-      "type": "programme",
-      "id": "complete-healing"
-    }
+  "synonyms": [
+    "migraine headache",
+    "migraine disorder"
   ],
-  "category": null,
-  "status": "draft",
-  "featured_image": null,
-  "external_references": []
+  "locale": "en",
+  "source": "client"
 }

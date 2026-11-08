@@ -1,0 +1,11 @@
+{
+  "id": "microalbuminuria",
+  "slug": "microalbuminuria",
+  "name": "Microalbuminuria",
+  "synonyms": [
+    "protein in urine",
+    "albuminuria"
+  ],
+  "locale": "en",
+  "source": "client"
+}

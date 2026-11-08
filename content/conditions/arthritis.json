@@ -2,25 +2,12 @@
   "id": "arthritis",
   "slug": "arthritis",
   "name": "Arthritis",
-  "summary": "Therapies, movement and rest may be recommended to support joint comfort, following assessment.",
-  "clinical": null,
-  "faqs": [],
-  "medical_reviewer": null,
-  "last_medically_reviewed": null,
-  "note": null,
-  "locale": "en",
-  "source": "kit",
-  "related_pages": [
-    {
-      "type": "programme",
-      "id": "complete-healing"
-    }
+  "synonyms": [
+    "osteoarthritis",
+    "joint pain",
+    "knee pain",
+    "stiff joints"
   ],
-  "category": "Musculoskeletal",
-  "status": "draft",
-  "featured_image": {
-    "src": "treatment",
-    "alt": "A treatment room at Shantara"
-  },
-  "external_references": []
+  "locale": "en",
+  "source": "client"
 }

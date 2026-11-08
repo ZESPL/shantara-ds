@@ -1,0 +1,14 @@
+{
+  "id": "chronic-acidity",
+  "slug": "chronic-acidity",
+  "name": "Chronic acidity",
+  "synonyms": [
+    "acidity",
+    "heartburn",
+    "acid reflux",
+    "GERD",
+    "GORD"
+  ],
+  "locale": "en",
+  "source": "client"
+}

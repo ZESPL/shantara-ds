@@ -10,7 +10,6 @@ Locale architecture, enabled vs planned languages, and hreflang live in the [web
 
 Recommended top-level structure:
 
-- Conditions
 - Programmes
 - Experience
 - About
@@ -63,7 +62,9 @@ Other named needs (`fatty-liver`, `back-pain`, `menopause`, and similar) remain 
 
 ## Conditions
 
-Use locale-prefixed URLs, including English:
+**Status (shantara.life D-202 to D-208).** The site is programmes only for now. There are no condition pages and no Conditions nav item. Conditions are data: a `conditions` record is `name`, `slug` and `synonyms`, and each programme lists the conditions it is for, in order. They appear under a programme's Who it is for, in the rows and the A to Z **Find a programme by condition** list on `/en/programmes`, in site search and in the programme's schema (`MedicalCondition` with `possibleTreatment`). The rules below govern condition pages when one is built; the slug is already stable.
+
+When condition pages are built, use locale-prefixed URLs, including English:
 
 ```text
 /en/conditions
@@ -265,8 +266,8 @@ Do not guess legacy URL mappings. Inspect the actual existing site before migrat
 
 Create meaningful relationships:
 
-- Condition → relevant Programme
-- Programme → Condition
+- Programme → Condition (the programme's ordered `conditions` list; shown as text until condition pages exist)
+- Condition → relevant Programme (generated from that list when a condition page exists)
 - Programme → Therapy
 - Clinical Guide → Condition/Programme
 - Doctor Answer → deeper Guide
@@ -283,8 +284,8 @@ The Website Kit shows **one thin sample per family**, not every URL above.
 | Skill URL family | Kit sample |
 | --- | --- |
 | `/en` | `HomeScreen.js` |
-| `/en/conditions` | `ConditionsScreen.js` |
-| `/en/programmes/[slug]` | `ProgrammeScreen.js` (Detox) |
+| `/en/programmes` | `ProgrammesScreen.js` |
+| `/en/programmes/[slug]` | `ProgrammeScreen.js` (Advanced Detox & Cellular Cleansing) |
 | Experience hub | `ExperienceScreen.js` |
 | About hub | `AboutScreen.js` |
 | Journal listing | `JournalScreen.js` |

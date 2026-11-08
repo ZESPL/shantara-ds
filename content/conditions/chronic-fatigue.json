@@ -1,0 +1,13 @@
+{
+  "id": "chronic-fatigue",
+  "slug": "chronic-fatigue",
+  "name": "Chronic fatigue",
+  "synonyms": [
+    "tiredness",
+    "low energy",
+    "exhaustion",
+    "always tired"
+  ],
+  "locale": "en",
+  "source": "client"
+}
