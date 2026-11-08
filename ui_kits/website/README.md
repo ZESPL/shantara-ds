@@ -50,7 +50,7 @@ rtl-fixture.html
 | `chrome/Photo.js` | Adapter over the `Media` primitive for `assets/photos/*` (square-cut, ratio, `mobileRatio`, scrim) |
 | `screens/HomeScreen.js` | Full-bleed hero, approach, doctors, programme tiles + index, therapies, rooms, journal, FAQ (no ClosingCTA; the hero carries the CTA) |
 | `screens/ProgrammesScreen.js` | Programme listing: a full-width catalogue, one row per programme with a thumbnail and condition tags |
-| `screens/ConditionsScreen.js` | Conditions A to Z, each linking to its programme |
+| `screens/ConditionsScreen.js` | Conditions index: one link per condition, A to Z |
 | `screens/ProgrammeScreen.js` | Programme sample (Advanced Detox & Cellular Cleansing) |
 | `screens/ExperienceScreen.js` | What a stay includes |
 | `screens/AboutScreen.js` | Story, approach, doctors, policy |

@@ -11,7 +11,6 @@ Locale architecture, enabled vs planned languages, and hreflang live in the [web
 Recommended top-level structure:
 
 - Programmes
-- Conditions (one A to Z page)
 - Experience
 - About
 - Journal (articles and Doctor Answers)
@@ -63,7 +62,7 @@ Other named needs (`fatty-liver`, `back-pain`, `menopause`, and similar) remain 
 
 ## Conditions
 
-**Status (shantara.life D-203 to D-214).** There are no condition detail pages for now. Conditions are data: a `conditions` record is `name`, `slug` and `synonyms`, and each programme lists the conditions it is for, in order. They appear as static tags on the programme's catalogue row on `/en/programmes`, under the programme's Who it is for, on `/en/conditions` (one A to Z page with a search filter, each condition linking to its primary programme), in site search and in the programme's schema (`MedicalCondition` with `possibleTreatment`). The rules below govern condition detail pages when one is built; the slug is already stable.
+**Status (shantara.life D-203 to D-216).** There are no condition detail pages for now. Conditions are data: a `conditions` record is `name`, `slug` and `synonyms`, and each programme lists the conditions it is for, in order. They appear as static tags on the programme's catalogue row on `/en/programmes`, under the programme's Who it is for, on `/en/conditions` (a plain A to Z index with a search field, each condition linking to its primary programme; linked from the footer, not the nav), in site search and in the programme's schema (`MedicalCondition` with `possibleTreatment`). The rules below govern condition detail pages when one is built; the slug is already stable.
 
 When condition pages are built, use locale-prefixed URLs, including English:
 

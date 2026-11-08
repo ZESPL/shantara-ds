@@ -396,20 +396,18 @@ Consultation CTA
 
 No tiles grid, no group title, no focus groups, no comparison table (shantara.life D-215).
 
-### Conditions A to Z
+### Conditions index
 
 ```text
-Editorial Hero (HeroStatement with a side image), no button
-A search field (with JavaScript) above an A to Z GroupedList: each condition links to its primary programme and names every programme that lists it
-Statement: how a programme is chosen
-Consultation CTA
+Compact Editorial Hero (HeroStatement, tall={false}): title and one line, no image, no button
+A search field (with JavaScript) above an A to Z GroupedList: each condition is one link to its primary programme
 ```
 
-Where condition searches land while there are no condition detail pages (shantara.life D-214). Works without JavaScript.
+Nothing follows the list: no How a programme is chosen, no Consultation CTA. The hero is deliberately bare on this utility index. Works without JavaScript. Linked from the footer and the programmes catalogue, not the nav (shantara.life D-216).
 
 ### Diabetes
 
-Condition detail page compositions below apply once condition detail pages are built (deferred, D-214).
+Condition detail page compositions below apply once condition detail pages are built (deferred, D-216).
 
 ```text
 Editorial Hero
