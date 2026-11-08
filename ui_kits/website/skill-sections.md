@@ -387,21 +387,21 @@ These are examples, not templates. Each one starts from the page's one idea and 
 
 ```text
 Immersive Hero (HeroFullBleed), no button
-A line that links to the conditions page
+Condition search, centred (with JavaScript): filters the catalogue by programme name and by each listed condition's name and synonyms
 Catalogue: one Tile row per programme (layout="thumb", size="lg"): small thumbnail, name (h2, the link), audience summary, every condition as a static Tag
-Statement: how a programme is chosen
-Process: how a stay is arranged
-Consultation CTA
+A centred "Explore all conditions" link to the conditions index
 ```
 
-No tiles grid, no group title, no focus groups, no comparison table (shantara.life D-215).
+Nothing follows the list: no How a programme is chosen, no How a stay is arranged, no Consultation CTA; the header Enquire is the page's only button. No tiles grid, no group title, no focus groups, no comparison table (shantara.life D-217).
 
 ### Conditions index
 
 ```text
 Compact Editorial Hero (HeroStatement, tall={false}): title and one line, no image, no button
-A search field (with JavaScript) above an A to Z GroupedList: each condition is one link to its primary programme
+Condition search, centred (with JavaScript), above an A to Z GroupedList: each condition is one link to its primary programme
 ```
+
+The condition search is the same on both pages: an Input with `type="search"`, at most 36rem wide and centred, the label "Search by condition" kept for screen readers but visually hidden, and the placeholder "Search for conditions like diabetes, back pain or PCOS." No hint line below. Without JavaScript it is hidden and the full list shows (shantara.life D-217).
 
 Nothing follows the list: no How a programme is chosen, no Consultation CTA. The hero is deliberately bare on this utility index. Works without JavaScript. Linked from the footer and the programmes catalogue, not the nav (shantara.life D-216).
 
