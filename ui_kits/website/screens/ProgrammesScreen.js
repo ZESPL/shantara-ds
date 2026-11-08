@@ -1,7 +1,7 @@
 /* Programmes listing: HeroFullBleed (no button) → a full-width catalogue, one Tile row per
-   programme (photograph, name, audience summary, conditions as static Tags) → how a
+   programme (small thumbnail, name, audience summary, conditions as static Tags) → how a
    programme is chosen → ClosingCTA. Conditions A to Z are on ConditionsScreen.
-   Composition sample, not the production site (shantara.life D-213). */
+   Composition sample, not the production site (shantara.life D-215). */
 
 function ProgrammesScreen({ onNavigate }) {
   const { t } = window.ShantaraI18n.useLocale();
@@ -38,9 +38,9 @@ function ProgrammesScreen({ onNavigate }) {
           </p>
           <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
             {programs.map((p) => (
-              <li key={p.id} style={{ padding: "var(--space-8) 0", borderTop: "var(--border-width) solid var(--rule-color)" }}>
+              <li key={p.id} style={{ padding: "var(--space-6) 0", borderTop: "var(--border-width) solid var(--rule-color)" }}>
                 <Tile
-                  layout="row"
+                  layout="thumb"
                   size="lg"
                   headingLevel={2}
                   src={window.photoSrc((p.featured_image || {}).src)}

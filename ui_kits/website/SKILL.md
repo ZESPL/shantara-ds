@@ -288,7 +288,7 @@ These files are **previews** of the skill, not the live site:
 | Sample | Skill page type | Notes |
 | --- | --- | --- |
 | `screens/HomeScreen.js` | home | `HeroFullBleed`, approach, doctors, programme tiles + roomy index, therapies, rooms, journal, FAQ |
-| `screens/ProgrammesScreen.js` | programme listing | `HeroFullBleed` without a button, then a full-width catalogue: one `Tile` (`layout="row"`) per programme with photograph, audience summary and conditions as static `Tag`s |
+| `screens/ProgrammesScreen.js` | programme listing | `HeroFullBleed` without a button, then a full-width catalogue: one `Tile` (`layout="thumb"`) per programme with a small thumbnail, audience summary and conditions as static `Tag`s |
 | `screens/ConditionsScreen.js` | condition A to Z | `HeroStatement` with a side image, every condition as an A to Z `GroupedList` linking to its primary programme; no detail pages |
 | `screens/ProgrammeScreen.js` | programme | Advanced Detox & Cellular Cleansing: `HeroSplit` + booking panel; tariff link, no rates |
 | `screens/ExperienceScreen.js` | experience hub | Therapies, rooms, farm, a day; not one page per room |

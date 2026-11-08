@@ -22,8 +22,8 @@ export interface TileProps extends React.HTMLAttributes<HTMLElement> {
   onClick?: React.MouseEventHandler;
   /** `lg` for the featured tile in a TileGrid. */
   size?: "md" | "lg";
-  /** `row` puts the photograph beside the text from 760px. */
-  layout?: "stack" | "row";
+  /** `row` puts the photograph beside the text from 760px; `thumb` keeps a small thumbnail (112px, 220px from 760px) beside the text at every width. */
+  layout?: "stack" | "row" | "thumb";
   headingLevel?: 2 | 3 | 4;
 }
 export declare function Tile(props: TileProps): JSX.Element;

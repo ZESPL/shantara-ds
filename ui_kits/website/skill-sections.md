@@ -207,7 +207,7 @@ Collections of entities: conditions; programmes; therapies; rooms; doctors; arti
 
 The section controls heading, introduction, selected items or a controlled query, and layout. Entity-specific cards remain separate configurations of `Tile`.
 
-Component: `TileGrid`, with layout `3` (three across from 1000px), `2`, or `feature` (one large tile beside the rest). Choose the layout by count, not by page type. When the list is too long for a photograph per item, use `IndexList`. The programmes index is a catalogue of `Tile` rows (`layout="row"`) with a photograph each. The conditions A to Z page uses `GroupedList`.
+Component: `TileGrid`, with layout `3` (three across from 1000px), `2`, or `feature` (one large tile beside the rest). Choose the layout by count, not by page type. When the list is too long for a photograph per item, use `IndexList`. The programmes index is a catalogue of `Tile` rows (`layout="thumb"`) with a small thumbnail each. The conditions A to Z page uses `GroupedList`.
 
 ### Feature Grid
 
@@ -349,7 +349,7 @@ Do not create one component with dozens of conditional fields. Each configuratio
 
 All tiles share: typography (Light title, Regular body); square-cut photographs; hover (photograph scales to 1.02 inside its frame, `--tile-media-scale`, and the title takes a hairline underline; no lift, no shadow); focus ring; the whole tile is one link.
 
-Ratios: listing tiles **4:3** (`--card-media-ratio`). Wide editorial frames **16:9**; doctors **4:5**; tall architecture **3:4**. **21:9** only through `PanoramaCaption`, with `mobileRatio` for phones. Heroes use a height (100svh / 72svh), not a ratio. `layout="row"` puts the photograph beside the text from 760px, for lists of articles or rooms.
+Ratios: listing tiles **4:3** (`--card-media-ratio`). Wide editorial frames **16:9**; doctors **4:5**; tall architecture **3:4**. **21:9** only through `PanoramaCaption`, with `mobileRatio` for phones. Heroes use a height (100svh / 72svh), not a ratio. `layout="row"` puts the photograph beside the text from 760px, for lists of articles or rooms. `layout="thumb"` keeps a small 4:3 thumbnail beside the text at every width, for the programmes catalogue.
 
 **Grids:** `TileGrid` layout follows the count: 3 across, 2 across, or `feature` (one large, the rest beside it). Never an uneven last row. A listing too long for a photograph per item uses `IndexList`.
 
@@ -388,13 +388,13 @@ These are examples, not templates. Each one starts from the page's one idea and 
 ```text
 Immersive Hero (HeroFullBleed), no button
 A line that links to the conditions page
-Catalogue: one Tile row per programme (layout="row", size="lg"): photograph, name (h2, the link), audience summary, every condition as a static Tag
+Catalogue: one Tile row per programme (layout="thumb", size="lg"): small thumbnail, name (h2, the link), audience summary, every condition as a static Tag
 Statement: how a programme is chosen
 Process: how a stay is arranged
 Consultation CTA
 ```
 
-No tiles grid, no group title, no focus groups, no comparison table (shantara.life D-213).
+No tiles grid, no group title, no focus groups, no comparison table (shantara.life D-215).
 
 ### Conditions A to Z
 

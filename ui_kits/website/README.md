@@ -49,7 +49,7 @@ rtl-fixture.html
 | `chrome/SiteChrome.js` | Header over every page: logo, five centred nav items (Programmes, Conditions, Experience, About, Journal), LanguageSelector, phone dropdown (Call / WhatsApp / Email; call and WhatsApp numbers are separate fields, both currently +91 9553 600 100), Enquire; menu sheet under 1000px holds the nav, contact lines and LanguageSelector. Breakpoints are container queries so text size lg/xl (html `zoom`) re-lays the header. Footer: Pine Tree ground, rosette strip, cream wordmark + NAP "Shantara Naturopathy Retreat" and social profile links, three link columns (accordions under 760px), bottom bar with the copyright (legal entity, Metropolis Forward LLP), the Privacy and Terms links and the short location line. The text-size control is optional; the kit shows one, the production footer does not include it. `PageSlot` wraps every page section with `data-ds-id="page/<view>/<slot>"` |
 | `chrome/Photo.js` | Adapter over the `Media` primitive for `assets/photos/*` (square-cut, ratio, `mobileRatio`, scrim) |
 | `screens/HomeScreen.js` | Full-bleed hero, approach, doctors, programme tiles + index, therapies, rooms, journal, FAQ (no ClosingCTA; the hero carries the CTA) |
-| `screens/ProgrammesScreen.js` | Programme listing: a full-width catalogue, one row per programme with photo and condition tags |
+| `screens/ProgrammesScreen.js` | Programme listing: a full-width catalogue, one row per programme with a thumbnail and condition tags |
 | `screens/ConditionsScreen.js` | Conditions A to Z, each linking to its programme |
 | `screens/ProgrammeScreen.js` | Programme sample (Advanced Detox & Cellular Cleansing) |
 | `screens/ExperienceScreen.js` | What a stay includes |

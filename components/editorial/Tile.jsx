@@ -20,6 +20,10 @@ const CSS = `
 .sh-tile[data-size="lg"] .sh-tile-title{font:var(--type-title)}
 .sh-tile[data-size="lg"] .sh-tile-text{font:var(--type-body);max-width:56ch}
 .sh-tile-tags{display:flex;flex-wrap:wrap;gap:var(--space-2);margin:var(--space-2) 0 0;padding:0;list-style:none}
+.sh-tile-tags .sh-tag{max-width:100%;white-space:normal;height:auto;min-height:24px;padding-block:3px;line-height:1.35}
+/* layout="thumb": a small 4:3 thumbnail beside the text at every width (catalogue rows). */
+.sh-tile[data-layout="thumb"]{display:grid;grid-template-columns:112px minmax(0,1fr);gap:var(--space-5);align-items:start}
+@media (min-width:760px){.sh-tile[data-layout="thumb"]{grid-template-columns:220px minmax(0,1fr);gap:var(--grid-gap)}}
 .sh-tile:focus-visible{outline:none;box-shadow:var(--ring-focus)}
 @media (hover: hover) and (pointer: fine){
   .sh-tile[data-href]:hover .sh-media>img{transform:scale(var(--tile-media-scale))}
