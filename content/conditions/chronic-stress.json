@@ -1,0 +1,12 @@
+{
+  "id": "chronic-stress",
+  "slug": "chronic-stress",
+  "name": "Chronic stress",
+  "synonyms": [
+    "stress",
+    "long-term stress",
+    "tension"
+  ],
+  "locale": "en",
+  "source": "client"
+}

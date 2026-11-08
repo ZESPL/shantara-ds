@@ -1,0 +1,11 @@
+{
+  "id": "sciatica",
+  "slug": "sciatica",
+  "name": "Sciatica",
+  "synonyms": [
+    "leg pain",
+    "sciatic nerve pain"
+  ],
+  "locale": "en",
+  "source": "client"
+}

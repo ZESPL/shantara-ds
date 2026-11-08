@@ -1,0 +1,12 @@
+{
+  "id": "kidney-stones",
+  "slug": "kidney-stones",
+  "name": "Kidney stones",
+  "synonyms": [
+    "renal stones",
+    "nephrolithiasis",
+    "renal calculi"
+  ],
+  "locale": "en",
+  "source": "client"
+}

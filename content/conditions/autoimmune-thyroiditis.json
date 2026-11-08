@@ -1,0 +1,12 @@
+{
+  "id": "autoimmune-thyroiditis",
+  "slug": "autoimmune-thyroiditis",
+  "name": "Autoimmune thyroiditis",
+  "synonyms": [
+    "Hashimoto's",
+    "Hashimoto's thyroiditis",
+    "autoimmune thyroid disease"
+  ],
+  "locale": "en",
+  "source": "client"
+}

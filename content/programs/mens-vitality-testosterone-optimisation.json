@@ -1,0 +1,35 @@
+{
+  "id": "mens-vitality-testosterone-optimisation",
+  "slug": "mens-vitality-testosterone-optimisation",
+  "name": "Men's Vitality & Testosterone Optimisation",
+  "proposition": "A residential programme for men with low energy, weight around the middle, hormonal changes linked to stress or mild fertility concerns. Meals, strength exercise, sleep, stress care and therapies are planned after an assessment of hormonal and metabolic health and reviewed each day.",
+  "durations": [
+    21,
+    28
+  ],
+  "conditions": [
+    "low-testosterone",
+    "male-infertility",
+    "metabolic-syndrome",
+    "obesity"
+  ],
+  "suitability": [
+    "Men with low energy linked to weight, sleep or stress",
+    "Men who remain under the care of their own doctor for any hormonal treatment"
+  ],
+  "order": 10,
+  "locale": "en",
+  "source": "client",
+  "related_pages": [
+    {
+      "type": "programme",
+      "id": "metabolic-reversal"
+    }
+  ],
+  "status": "published",
+  "featured_image": {
+    "src": "suite-living-balcony-empty",
+    "alt": "A suite living area with a sofa, opening onto a covered balcony over forested hills"
+  },
+  "featured": false
+}

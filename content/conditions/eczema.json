@@ -1,0 +1,11 @@
+{
+  "id": "eczema",
+  "slug": "eczema",
+  "name": "Eczema",
+  "synonyms": [
+    "atopic dermatitis",
+    "itchy skin"
+  ],
+  "locale": "en",
+  "source": "client"
+}

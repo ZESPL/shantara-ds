@@ -1,0 +1,13 @@
+{
+  "id": "dysbiosis",
+  "slug": "dysbiosis",
+  "name": "Gut dysbiosis",
+  "synonyms": [
+    "dysbiosis",
+    "gut flora imbalance",
+    "microbiome imbalance",
+    "after antibiotics"
+  ],
+  "locale": "en",
+  "source": "client"
+}

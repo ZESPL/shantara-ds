@@ -207,7 +207,7 @@ Collections of entities: conditions; programmes; therapies; rooms; doctors; arti
 
 The section controls heading, introduction, selected items or a controlled query, and layout. Entity-specific cards remain separate configurations of `Tile`.
 
-Component: `TileGrid`, with layout `3` (three across from 1000px), `2`, or `feature` (one large tile beside the rest). Choose the layout by count, not by page type. When the list is too long for a photograph per item (all conditions, the full programme list), use `IndexList`.
+Component: `TileGrid`, with layout `3` (three across from 1000px), `2`, or `feature` (one large tile beside the rest). Choose the layout by count, not by page type. When the list is too long for a photograph per item (all conditions, the full programme list), use `IndexList`; the programmes index uses it for every programme. An A to Z list of short names (Find a programme by condition) uses `GroupedList`.
 
 ### Feature Grid
 
@@ -383,7 +383,22 @@ In this kit, tiles are samples of the semantic jobs, not a production card libra
 
 These are examples, not templates. Each one starts from the page's one idea and one action ([rule of one](../../docs/rule-of-one.md)), then lists only the sections that serve them. Write the brief first, then choose; do not copy a list and fill it.
 
+### Programmes index
+
+```text
+Immersive Hero (HeroFullBleed)
+Index rows: one IndexList row per programme: name (the link), summary, a quieter line of its first four conditions
+Find a programme by condition: an A to Z GroupedList; each condition links to its primary programme and names every programme that lists it; with JavaScript, a search field above the rows filters both by name and synonym
+Statement: how a programme is chosen
+Process: how a stay is arranged
+Consultation CTA
+```
+
+The programmes index is where condition searches land while there are no condition pages (shantara.life D-205, D-206). No tiles, no focus groups, no comparison table.
+
 ### Diabetes
+
+Condition page compositions below apply once condition pages are built (deferred, D-200).
 
 ```text
 Editorial Hero

@@ -1,0 +1,11 @@
+{
+  "id": "endometriosis",
+  "slug": "endometriosis",
+  "name": "Endometriosis",
+  "synonyms": [
+    "painful periods",
+    "endometrial pain"
+  ],
+  "locale": "en",
+  "source": "client"
+}

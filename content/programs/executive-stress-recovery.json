@@ -1,0 +1,37 @@
+{
+  "id": "executive-stress-recovery",
+  "slug": "executive-stress-recovery",
+  "name": "Executive Stress Recovery",
+  "proposition": "A shorter programme for professionals with burnout, long-term stress or poor sleep. A set daily routine, breathing practice, yoga, therapies, meals and time away from work are reviewed with the guest each day.",
+  "durations": [
+    7,
+    14
+  ],
+  "conditions": [
+    "burnout",
+    "chronic-stress",
+    "insomnia",
+    "mild-anxiety",
+    "migraine",
+    "chronic-headache"
+  ],
+  "suitability": [
+    "Business leaders, founders and others in demanding roles",
+    "Guests with limited time who want a shorter stay"
+  ],
+  "order": 13,
+  "locale": "en",
+  "source": "client",
+  "related_pages": [
+    {
+      "type": "programme",
+      "id": "signature-total-transformation"
+    }
+  ],
+  "status": "published",
+  "featured_image": {
+    "src": "room-bedroom-balcony-open-book",
+    "alt": "A guest room with a made bed, an open book on the duvet and a balcony over forested hills"
+  },
+  "featured": false
+}

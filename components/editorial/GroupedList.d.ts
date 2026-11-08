@@ -1,6 +1,12 @@
 import * as React from "react";
 
-export interface GroupedItem { label: React.ReactNode; text?: React.ReactNode; href?: string }
+export interface GroupedItem {
+  label: React.ReactNode;
+  text?: React.ReactNode;
+  href?: string;
+  /** Written to `data-filter-terms` (pipe-separated) for a page script that filters items. */
+  terms?: string;
+}
 export interface Group { label: string; items: Array<string | GroupedItem> }
 export interface GroupedListProps extends React.HTMLAttributes<HTMLDivElement> {
   groups: Group[];

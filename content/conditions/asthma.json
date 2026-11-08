@@ -1,22 +1,11 @@
 {
   "id": "asthma",
   "slug": "asthma",
-  "name": "Asthma",
-  "summary": null,
-  "clinical": null,
-  "faqs": [],
-  "medical_reviewer": null,
-  "last_medically_reviewed": null,
-  "locale": "en",
-  "source": "gap",
-  "related_pages": [
-    {
-      "type": "programme",
-      "id": "complete-healing"
-    }
+  "name": "Asthma (mild, stable)",
+  "synonyms": [
+    "bronchial asthma",
+    "wheezing"
   ],
-  "category": null,
-  "status": "draft",
-  "featured_image": null,
-  "external_references": []
+  "locale": "en",
+  "source": "client"
 }

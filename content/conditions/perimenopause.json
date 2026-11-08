@@ -1,0 +1,12 @@
+{
+  "id": "perimenopause",
+  "slug": "perimenopause",
+  "name": "Perimenopause and menopause",
+  "synonyms": [
+    "menopause",
+    "hot flushes",
+    "perimenopausal transition"
+  ],
+  "locale": "en",
+  "source": "client"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "inflammatory-bowel-disease",
+  "slug": "inflammatory-bowel-disease",
+  "name": "Inflammatory bowel disease (stable)",
+  "synonyms": [
+    "IBD",
+    "colitis",
+    "ulcerative colitis",
+    "Crohn's disease"
+  ],
+  "locale": "en",
+  "source": "client"
+}

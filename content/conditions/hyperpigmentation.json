@@ -1,0 +1,13 @@
+{
+  "id": "hyperpigmentation",
+  "slug": "hyperpigmentation",
+  "name": "Hyperpigmentation",
+  "synonyms": [
+    "dark spots",
+    "pigmentation",
+    "melasma",
+    "uneven skin tone"
+  ],
+  "locale": "en",
+  "source": "client"
+}

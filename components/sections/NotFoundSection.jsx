@@ -5,7 +5,7 @@ import { Button } from "../core/Button.jsx";
 import { Icon } from "../core/Icon.jsx";
 
 /* The 404 page body: a plain title, one line, a search field that posts to the site search,
-   and three or four useful links (Programmes, Conditions, Make an Inquiry, Contact).
+   and three or four useful links (Programmes, Make an Inquiry, Contact).
    Plain words, no jokes, no illustration. The page itself still returns HTTP 404.
    One column at every width, held to a 36rem measure: statement, search, links one per row.
    The field and the button sit in one row and share the 52px control height (Input md, Button lg). */

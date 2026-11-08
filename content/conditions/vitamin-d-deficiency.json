@@ -1,0 +1,11 @@
+{
+  "id": "vitamin-d-deficiency",
+  "slug": "vitamin-d-deficiency",
+  "name": "Vitamin D deficiency",
+  "synonyms": [
+    "vitamin D",
+    "low vitamin D"
+  ],
+  "locale": "en",
+  "source": "client"
+}

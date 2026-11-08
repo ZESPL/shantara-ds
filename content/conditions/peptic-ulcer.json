@@ -1,0 +1,13 @@
+{
+  "id": "peptic-ulcer",
+  "slug": "peptic-ulcer",
+  "name": "Peptic ulcer",
+  "synonyms": [
+    "stomach ulcer",
+    "gastric ulcer",
+    "duodenal ulcer",
+    "ulcer"
+  ],
+  "locale": "en",
+  "source": "client"
+}

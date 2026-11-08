@@ -1,0 +1,13 @@
+{
+  "id": "female-infertility",
+  "slug": "female-infertility",
+  "name": "Female infertility (unexplained)",
+  "synonyms": [
+    "infertility",
+    "trouble conceiving",
+    "fertility",
+    "hormonal imbalance affecting fertility"
+  ],
+  "locale": "en",
+  "source": "client"
+}

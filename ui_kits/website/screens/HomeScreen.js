@@ -1,7 +1,7 @@
 /* Home: composition sample (not the production site). Content from window.ShantaraContent. */
 
 /* The three programmes shown with photographs; the rest go in the text index below them. */
-const HOME_TILE_PROGRAMMES = ["detox", "diabetes-reversal", "stress-management"];
+const HOME_TILE_PROGRAMMES = ["metabolic-reversal", "weight-loss-body-sculpt", "pain-rehabilitation"];
 /* Kit-journal articles on the home page (photos chosen so none repeats another frame on this page). */
 const HOME_ARTICLES = ["how-programme-duration-is-decided", "how-meals-are-planned", "week-of-monsoon-light"];
 
@@ -84,7 +84,7 @@ function HomeScreen({ onNavigate }) {
         <Section ground="stone">
           <TileGrid
             title={t("Naturopathy programmes")}
-            action={<TextLink onClick={() => onNavigate("programme")}>{t("View programmes")}</TextLink>}
+            action={<TextLink onClick={() => onNavigate("programmes")}>{t("View programmes")}</TextLink>}
             layout="3"
           >
             {tiles.map((p) => (
@@ -94,7 +94,7 @@ function HomeScreen({ onNavigate }) {
                 alt=""
                 ratio="4:3"
                 title={t(p.name)}
-                meta={[t(p.focus), p.durations ? t(p.durations) : null].filter(Boolean)}
+                meta={[window.nightsLabel(p.durations) ? t(window.nightsLabel(p.durations)) : null].filter(Boolean)}
                 text={t(p.proposition)}
                 onClick={() => onNavigate("programme")}
               />
@@ -109,9 +109,9 @@ function HomeScreen({ onNavigate }) {
           </div>
           <div className="sh-kit-index-after">
             <p style={{ margin: 0, font: "var(--type-body-sm)", color: "var(--text-secondary)", maxWidth: "var(--measure-body)" }}>
-              {t("Alongside these, Shantara runs condition-specific medical programmes across eleven categories, from metabolic and renal health to hormonal conditions. Every guest in a medical programme is under a doctor's direct care.")}
+              {t("Each programme lists the conditions it is for. The doctor recommends the programme after assessment.")}
             </p>
-            <div><TextLink onClick={() => onNavigate("conditions")}>{t("View conditions")}</TextLink></div>
+            <div><TextLink onClick={() => onNavigate("programmes")}>{t("Find a programme by condition")}</TextLink></div>
           </div>
         </Section>
       </P>

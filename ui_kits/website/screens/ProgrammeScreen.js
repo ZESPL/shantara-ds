@@ -1,8 +1,8 @@
-/* Programme detail: Detox sample (not the production site).
+/* Programme detail: Advanced Detox & Cellular Cleansing sample (not the production site).
    HeroSplit → overview beside the booking panel → what to expect → doctors.
    The booking panel is the page's CTA, so there is no ClosingCTA (#35). */
 
-const PROGRAMME_ID = "detox";
+const PROGRAMME_ID = "advanced-detox-cellular-cleansing";
 
 /* Three frames that are not the hero (water-wall): therapy, meals, the grounds.
    A keyboard-scrollable region on phones and tablets; every photo keeps its alt text. */
@@ -50,7 +50,7 @@ function ProgrammeScreen({ onNavigate }) {
   const P = window.PageSlot;
   ensureProgrammeCss();
   const C = window.ShantaraContent;
-  const programme = (C.programs || []).find((p) => p.id === PROGRAMME_ID) || { name: "Detox", durations: "7–21 nights", proposition: "" };
+  const programme = (C.programs || []).find((p) => p.id === PROGRAMME_ID) || { name: "Advanced Detox & Cellular Cleansing", durations: [14, 21], proposition: "" };
   /* Every doctor, the Medical Director first. The founder is not a doctor and is not listed here. */
   const doctors = (C.doctors || []).slice().sort((a, b) => (b.id === "bahja-janu") - (a.id === "bahja-janu")).map((d) => ({
     name: t(d.full_name),
@@ -66,10 +66,10 @@ function ProgrammeScreen({ onNavigate }) {
       <P id="programme/hero">
         <HeroSplit
           src={window.photoSrc((programme.featured_image || {}).src || "water-wall")}
-          alt={t("Water wall at the therapy wing")}
-          breadcrumbs={<Breadcrumbs items={[{ label: t("Programmes"), href: window.ShantaraLocales ? window.ShantaraLocales.kitHash(window.ShantaraI18n.currentLocaleCode(), "programme") : "#/en/programmes" }, t(programme.name)]} />}
+          alt={t((programme.featured_image || {}).alt || "Water wall at the therapy wing")}
+          breadcrumbs={<Breadcrumbs items={[{ label: t("Programmes"), href: window.ShantaraLocales ? window.ShantaraLocales.kitHash(window.ShantaraI18n.currentLocaleCode(), "programmes") : "#/en/programmes" }, t(programme.name)]} />}
           title={t(programme.name)}
-          meta={[t("Naturopathy programme"), programme.durations ? t(programme.durations) : null].filter(Boolean)}
+          meta={[t("Naturopathy programme"), window.nightsLabel(programme.durations) ? t(window.nightsLabel(programme.durations)) : null].filter(Boolean)}
           sub={t(programme.proposition)}
           actions={<Button size="lg" onClick={() => onNavigate("booking")}>{t("Make an Inquiry")}</Button>}
         />
@@ -81,13 +81,13 @@ function ProgrammeScreen({ onNavigate }) {
           aside={<>
             <div>
               <p className="sh-prog-name">{t(programme.name)}</p>
-              <MetaRow style={{ marginTop: "var(--space-3)" }} items={[t("Consultation first"), programme.durations ? t(programme.durations) : null]} />
+              <MetaRow style={{ marginTop: "var(--space-3)" }} items={[t("Consultation first"), window.nightsLabel(programme.durations) ? t(window.nightsLabel(programme.durations)) : null]} />
             </div>
             <div>
               <p className="sh-prog-sub" id="sh-prog-len">{t("Typical duration")}</p>
               <div role="radiogroup" aria-labelledby="sh-prog-len" style={{ display: "flex", flexDirection: "column", gap: "var(--space-3)" }}>
-                {[["7", "7 nights", "a shorter stay"], ["14", "14 nights", "a common length for this programme"], ["21", "21 nights", "for a longer residential stay"]].map(([v, l, d]) => (
-                  <Radio key={v} card name="len" value={v} label={t(l)} description={t(d)} checked={len === v} onChange={() => setLen(v)} />
+                {(programme.durations || []).map((n) => [String(n), n + " nights", null]).map(([v, l, d]) => (
+                  <Radio key={v} card name="len" value={v} label={t(l)} description={d ? t(d) : undefined} checked={len === v} onChange={() => setLen(v)} />
                 ))}
               </div>
             </div>

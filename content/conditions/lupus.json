@@ -1,0 +1,11 @@
+{
+  "id": "lupus",
+  "slug": "lupus",
+  "name": "Lupus (stable)",
+  "synonyms": [
+    "SLE",
+    "systemic lupus erythematosus"
+  ],
+  "locale": "en",
+  "source": "client"
+}

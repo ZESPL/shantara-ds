@@ -1,0 +1,14 @@
+{
+  "id": "fluid-retention",
+  "slug": "fluid-retention",
+  "name": "Fluid retention",
+  "synonyms": [
+    "oedema",
+    "edema",
+    "swelling",
+    "non-cardiac fluid retention",
+    "water retention"
+  ],
+  "locale": "en",
+  "source": "client"
+}

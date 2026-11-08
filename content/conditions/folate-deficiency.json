@@ -1,0 +1,11 @@
+{
+  "id": "folate-deficiency",
+  "slug": "folate-deficiency",
+  "name": "Folate deficiency",
+  "synonyms": [
+    "folic acid deficiency",
+    "low folate"
+  ],
+  "locale": "en",
+  "source": "client"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "rheumatoid-arthritis",
+  "slug": "rheumatoid-arthritis",
+  "name": "Rheumatoid arthritis (stable)",
+  "synonyms": [
+    "RA",
+    "rheumatoid"
+  ],
+  "locale": "en",
+  "source": "client"
+}

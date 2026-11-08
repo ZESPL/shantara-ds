@@ -1,0 +1,12 @@
+{
+  "id": "mild-anxiety",
+  "slug": "mild-anxiety",
+  "name": "Mild anxiety",
+  "synonyms": [
+    "anxiety",
+    "worry",
+    "nervousness"
+  ],
+  "locale": "en",
+  "source": "client"
+}

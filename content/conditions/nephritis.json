@@ -1,0 +1,11 @@
+{
+  "id": "nephritis",
+  "slug": "nephritis",
+  "name": "Nephritis (stable)",
+  "synonyms": [
+    "kidney inflammation",
+    "glomerulonephritis"
+  ],
+  "locale": "en",
+  "source": "client"
+}

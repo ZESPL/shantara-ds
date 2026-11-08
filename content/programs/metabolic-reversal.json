@@ -1,0 +1,40 @@
+{
+  "id": "metabolic-reversal",
+  "slug": "metabolic-reversal",
+  "name": "Metabolic Reversal",
+  "proposition": "A residential programme for guests with type 2 diabetes, prediabetes, fatty liver, raised cholesterol or weight around the middle. Prescribed meals, supervised fasting where suitable, exercise and therapies run alongside regular checks of blood sugar, weight and other markers, reviewed by the doctor each day.",
+  "durations": [
+    14,
+    21,
+    28
+  ],
+  "conditions": [
+    "type-2-diabetes",
+    "prediabetes",
+    "metabolic-syndrome",
+    "fatty-liver",
+    "dyslipidemia",
+    "obesity",
+    "hypertension",
+    "diabetic-or-hypertensive-nephropathy"
+  ],
+  "suitability": [
+    "Guests who remain under the care of their own doctor and continue prescribed medication",
+    "Guests who want a structured routine to change how they eat, move and sleep"
+  ],
+  "order": 2,
+  "locale": "en",
+  "source": "client",
+  "related_pages": [
+    {
+      "type": "programme",
+      "id": "weight-loss-body-sculpt"
+    }
+  ],
+  "status": "published",
+  "featured_image": {
+    "src": "dining",
+    "alt": "The dining hall with green chairs and set tables under paper pendant lamps"
+  },
+  "featured": true
+}

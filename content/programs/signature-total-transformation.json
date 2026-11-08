@@ -1,0 +1,31 @@
+{
+  "id": "signature-total-transformation",
+  "slug": "signature-total-transformation",
+  "name": "Signature Total Transformation",
+  "proposition": "The broadest of the programmes, for guests with more than one long-standing lifestyle condition. Meals, fasting where suitable, therapies, exercise, rest and stress care are combined in one plan that the doctor reviews each day.",
+  "durations": [
+    21,
+    28
+  ],
+  "conditions": [],
+  "suitability": [
+    "Guests managing more than one long-standing lifestyle condition",
+    "Professionals who want a longer supervised stay away from work",
+    "Guests who want one programme to cover diet, activity, therapies, sleep and stress together"
+  ],
+  "order": 1,
+  "locale": "en",
+  "source": "client",
+  "related_pages": [
+    {
+      "type": "programme",
+      "id": "metabolic-reversal"
+    }
+  ],
+  "status": "published",
+  "featured_image": {
+    "src": "exterior-cobblestone-patio-valley-guest",
+    "alt": "A guest standing at the edge of a circular cobblestone patio between two dark walls, looking out over palms and distant hills"
+  },
+  "featured": true
+}

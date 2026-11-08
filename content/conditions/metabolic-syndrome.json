@@ -1,0 +1,11 @@
+{
+  "id": "metabolic-syndrome",
+  "slug": "metabolic-syndrome",
+  "name": "Metabolic syndrome",
+  "synonyms": [
+    "syndrome X",
+    "insulin resistance syndrome"
+  ],
+  "locale": "en",
+  "source": "client"
+}

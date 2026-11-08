@@ -1,0 +1,13 @@
+{
+  "id": "menstrual-irregularities",
+  "slug": "menstrual-irregularities",
+  "name": "Irregular periods",
+  "synonyms": [
+    "irregular menstrual cycles",
+    "menstrual irregularities",
+    "missed periods",
+    "heavy periods"
+  ],
+  "locale": "en",
+  "source": "client"
+}

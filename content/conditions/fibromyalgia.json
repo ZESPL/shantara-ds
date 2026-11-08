@@ -1,0 +1,11 @@
+{
+  "id": "fibromyalgia",
+  "slug": "fibromyalgia",
+  "name": "Fibromyalgia",
+  "synonyms": [
+    "widespread pain",
+    "chronic muscle pain"
+  ],
+  "locale": "en",
+  "source": "client"
+}

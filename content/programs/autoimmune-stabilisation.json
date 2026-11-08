@@ -1,0 +1,35 @@
+{
+  "id": "autoimmune-stabilisation",
+  "slug": "autoimmune-stabilisation",
+  "name": "Autoimmune Stabilisation",
+  "proposition": "A longer residential programme for guests with a diagnosed autoimmune condition in a stable phase. Meals, gut care, gentle therapies, activity and rest sit alongside the guest's existing medical treatment and are monitored each day.",
+  "durations": [
+    21,
+    28
+  ],
+  "conditions": [
+    "rheumatoid-arthritis",
+    "lupus",
+    "autoimmune-thyroiditis",
+    "inflammatory-bowel-disease"
+  ],
+  "suitability": [
+    "Guests whose condition is in a stable phase, not in an active flare",
+    "Guests who remain under the care of their own specialist and continue prescribed medication"
+  ],
+  "order": 6,
+  "locale": "en",
+  "source": "client",
+  "related_pages": [
+    {
+      "type": "programme",
+      "id": "inflammation-modulation"
+    }
+  ],
+  "status": "published",
+  "featured_image": {
+    "src": "treatment",
+    "alt": "An empty treatment room with a padded beige couch, folded towels and a wall basin"
+  },
+  "featured": false
+}

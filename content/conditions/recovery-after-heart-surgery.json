@@ -1,0 +1,14 @@
+{
+  "id": "recovery-after-heart-surgery",
+  "slug": "recovery-after-heart-surgery",
+  "name": "Recovery after angioplasty or bypass surgery",
+  "synonyms": [
+    "CABG",
+    "bypass surgery",
+    "angioplasty",
+    "stent",
+    "cardiac rehabilitation"
+  ],
+  "locale": "en",
+  "source": "client"
+}

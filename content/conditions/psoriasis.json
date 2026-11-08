@@ -1,0 +1,11 @@
+{
+  "id": "psoriasis",
+  "slug": "psoriasis",
+  "name": "Psoriasis",
+  "synonyms": [
+    "scaly skin",
+    "plaque psoriasis"
+  ],
+  "locale": "en",
+  "source": "client"
+}

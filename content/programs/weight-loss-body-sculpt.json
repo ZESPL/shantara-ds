@@ -1,0 +1,36 @@
+{
+  "id": "weight-loss-body-sculpt",
+  "slug": "weight-loss-body-sculpt",
+  "name": "Weight Loss & Body Sculpt",
+  "proposition": "A medically supervised programme for guests who want to lose excess fat and build strength. Prescribed meals, exercise sessions, lymphatic massage and other therapies are adjusted as weight and body measurements are reviewed each morning.",
+  "durations": [
+    14,
+    21,
+    28
+  ],
+  "conditions": [
+    "obesity",
+    "pcos",
+    "metabolic-syndrome"
+  ],
+  "suitability": [
+    "Adults with a body mass index (BMI) above 25",
+    "Women carrying weight gained during or after pregnancy",
+    "Guests who want steady fat loss under supervision rather than a crash diet"
+  ],
+  "order": 3,
+  "locale": "en",
+  "source": "client",
+  "related_pages": [
+    {
+      "type": "programme",
+      "id": "metabolic-reversal"
+    }
+  ],
+  "status": "published",
+  "featured_image": {
+    "src": "yoga-hall-empty",
+    "alt": "The empty yoga hall with tall windows"
+  },
+  "featured": true
+}

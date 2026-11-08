@@ -1,0 +1,35 @@
+{
+  "id": "advanced-detox-cellular-cleansing",
+  "slug": "advanced-detox-cellular-cleansing",
+  "name": "Advanced Detox & Cellular Cleansing",
+  "proposition": "A medically supervised programme for guests with ongoing fatigue or long exposure to alcohol, smoking or pollution, and for guests preparing for a weight-loss programme. Meals, fasting where suitable, water therapies, lymphatic massage and rest are planned around liver and digestive health and reviewed each day.",
+  "durations": [
+    14,
+    21
+  ],
+  "conditions": [
+    "chronic-fatigue",
+    "chronic-inflammation",
+    "fatty-liver"
+  ],
+  "suitability": [
+    "Guests with long exposure to alcohol, smoking or city pollution",
+    "Guests preparing for a weight-loss programme",
+    "Guests with long-standing lifestyle conditions linked to inflammation"
+  ],
+  "order": 8,
+  "locale": "en",
+  "source": "client",
+  "related_pages": [
+    {
+      "type": "programme",
+      "id": "weight-loss-body-sculpt"
+    }
+  ],
+  "status": "published",
+  "featured_image": {
+    "src": "room-premium",
+    "alt": "A guest room with a recliner by a sliding door to a balcony and the hills beyond"
+  },
+  "featured": false
+}

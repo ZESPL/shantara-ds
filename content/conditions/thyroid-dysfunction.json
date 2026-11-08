@@ -1,0 +1,13 @@
+{
+  "id": "thyroid-dysfunction",
+  "slug": "thyroid-dysfunction",
+  "name": "Thyroid imbalance",
+  "synonyms": [
+    "hypothyroidism",
+    "underactive thyroid",
+    "thyroid",
+    "thyroid dysfunction"
+  ],
+  "locale": "en",
+  "source": "client"
+}

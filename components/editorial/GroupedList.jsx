@@ -30,7 +30,8 @@ function ensure() {
   document.head.appendChild(el);
 }
 
-/* groups: [{ label, items: [string | { label, text?, href? }] }] */
+/* groups: [{ label, items: [string | { label, text?, href?, terms? }] }]
+   terms: written to data-filter-terms for a page script that filters the items. */
 export function GroupedList({ groups = [], columns = 1, rules = true, headingLevel = 3, style, ...rest }) {
   ensure();
   const H = "h" + headingLevel;
@@ -43,7 +44,7 @@ export function GroupedList({ groups = [], columns = 1, rules = true, headingLev
             {g.items.map((it) => {
               const o = typeof it === "string" ? { label: it } : it;
               const body = <>{o.label}{o.text ? <span className="sh-glist-text">{o.text}</span> : null}</>;
-              return <li key={o.label}>{o.href ? <a href={o.href}><span>{body}</span></a> : body}</li>;
+              return <li key={o.label} data-filter-terms={o.terms}>{o.href ? <a href={o.href}><span>{body}</span></a> : body}</li>;
             })}
           </ul>
         </section>

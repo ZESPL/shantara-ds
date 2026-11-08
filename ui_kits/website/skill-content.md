@@ -25,7 +25,7 @@ Define each group once and reuse it.
 | FAQs | `faqs`: list of `{question, answer}` | Conditions, programmes |
 | SEO | Meta title, meta description | Conditions, programmes, doctors, articles, doctor answers |
 
-**Related pages.** `type` is a fixed list in the Keystatic config: `condition`, `program`, `therapy`, `room`, `doctor`, `article`, `doctor_answer`, `page`. It is not an editable collection. Link in one direction only; the site generates the reverse links at build time (a programme page lists every condition that points to it). Page templates group items by type, so a condition page renders its `program` items as "Programmes for …". Relationships use stable IDs, never URLs. Therapy and room links point to their section on the single therapies or rooms page. Doctor links go to the doctor's profile page when one exists, otherwise to their section on `/en/our-doctors`.
+**Related pages.** `type` is a fixed list in the Keystatic config: `condition`, `program`, `therapy`, `room`, `doctor`, `article`, `doctor_answer`, `page`. It is not an editable collection. Link in one direction only; the site generates the reverse links at build time. Programmes and conditions are the exception: the programme's own `conditions` field holds that link, in display order, and a future condition page looks it up. Page templates group items by type, so a condition page renders its `program` items as "Programmes for …". Relationships use stable IDs, never URLs. Therapy and room links point to their section on the single therapies or rooms page. Doctor links go to the doctor's profile page when one exists, otherwise to their section on `/en/our-doctors`.
 
 Attribution is not a related page: an article's author and a doctor answer's doctor keep their own fields.
 
@@ -45,8 +45,8 @@ Medical categories ([`content/medical-categories.json`](../../content/medical-ca
 
 | Collection | Its own fields | Page |
 | --- | --- | --- |
-| Condition | name; slug; category; summary; clinical body (Markdoc); medical reviewer (doctor); last medically reviewed | `/en/conditions/[slug]` |
-| Programme | name; slug; focus; proposition; durations; suitability; inclusions; clinicians (doctors). **No prices.** | `/en/programmes/[slug]` |
+| Condition | name; slug; synonyms (lay terms and abbreviations for the filter and site search). A condition page, when one is built, adds summary, clinical body (Markdoc), medical reviewer (doctor) and last medically reviewed. | None yet (D-200). A future page is `/en/conditions/[slug]`. |
+| Programme | name; slug; proposition; durations (nights); conditions (ordered list of condition IDs); suitability (who the stay suits when that is not a condition); order; inclusions; clinicians (doctors). No `focus`. **No prices.** | `/en/programmes/[slug]` |
 | Therapy | name; slug; description; purpose; how it is used at Shantara | One `/en/therapies` page for all therapies. No page per therapy. |
 | Room | name; slug; summary; size; specification (`spec_line`); occupancy; balcony; amenities; gallery. **No prices.** | One `/en/rooms` page for all room categories. No page per room. |
 | Doctor | full name; slug; role; `photo_profile`; qualification; licences (issuing body only, never a registration number or joining date); years in practice; biography (Markdoc); areas of practice; professional memberships; publications; press; talks; videos; social posts; external profiles | Every doctor is listed on `/en/our-doctors`. Only Dr. Bahja Janu has a profile page (`/en/doctors/[slug]`), which lists her answers, reviewed articles, programmes, press, talks, videos and social posts. No other doctor gets one. |

@@ -2,7 +2,7 @@
   "id": "medical-categories",
   "locale": "en",
   "source": "handbook",
-  "note": "Eleven handbook clinical groupings: a staff routing aid, not public IA.",
+  "note": "Eleven handbook clinical groupings: a staff routing aid, not public IA. The public site has no condition pages or category pages; each condition is a record in content/conditions/ and programmes list the conditions they are for (website D-200, D-201).",
   "categories": [
     {
       "id": "metabolic-lifestyle",

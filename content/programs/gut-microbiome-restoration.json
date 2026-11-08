@@ -1,0 +1,40 @@
+{
+  "id": "gut-microbiome-restoration",
+  "slug": "gut-microbiome-restoration",
+  "name": "Gut & Microbiome Restoration",
+  "proposition": "A residential programme for guests with long-standing digestive complaints, including after a course of antibiotics. Plant-based meals, meal timing, therapies and, where suitable, fasting are reviewed with the guest each day.",
+  "durations": [
+    14,
+    21
+  ],
+  "conditions": [
+    "ibs",
+    "bloating",
+    "chronic-acidity",
+    "dysbiosis",
+    "gastritis",
+    "peptic-ulcer",
+    "constipation",
+    "dyspepsia",
+    "inflammatory-bowel-disease"
+  ],
+  "suitability": [
+    "Guests recovering their digestion after a course of antibiotics",
+    "Guests whose digestive complaints sit alongside weight or blood sugar concerns"
+  ],
+  "order": 7,
+  "locale": "en",
+  "source": "client",
+  "related_pages": [
+    {
+      "type": "programme",
+      "id": "inflammation-modulation"
+    }
+  ],
+  "status": "published",
+  "featured_image": {
+    "src": "food-spread-three-plates-garden-wide-landscape-3x2",
+    "alt": "Three plated dishes on a dark live-edge wooden table beside garden plants and river pebbles"
+  },
+  "featured": false
+}

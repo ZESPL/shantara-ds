@@ -1,0 +1,12 @@
+{
+  "id": "ovulatory-dysfunction",
+  "slug": "ovulatory-dysfunction",
+  "name": "Ovulation problems",
+  "synonyms": [
+    "ovulatory dysfunction",
+    "anovulation",
+    "not ovulating"
+  ],
+  "locale": "en",
+  "source": "client"
+}

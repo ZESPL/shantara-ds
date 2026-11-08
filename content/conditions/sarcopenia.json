@@ -1,0 +1,12 @@
+{
+  "id": "sarcopenia",
+  "slug": "sarcopenia",
+  "name": "Early muscle loss (sarcopenia)",
+  "synonyms": [
+    "sarcopenia",
+    "muscle loss",
+    "muscle weakness with age"
+  ],
+  "locale": "en",
+  "source": "client"
+}

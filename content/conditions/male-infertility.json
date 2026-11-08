@@ -1,0 +1,12 @@
+{
+  "id": "male-infertility",
+  "slug": "male-infertility",
+  "name": "Male infertility (mild to moderate)",
+  "synonyms": [
+    "low sperm count",
+    "male factor infertility",
+    "sperm quality"
+  ],
+  "locale": "en",
+  "source": "client"
+}

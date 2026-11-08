@@ -1,26 +1,12 @@
 {
   "id": "hypertension",
   "slug": "hypertension",
-  "name": "Hypertension",
-  "summary": null,
-  "clinical": null,
-  "faqs": [],
-  "medical_reviewer": null,
-  "last_medically_reviewed": null,
-  "locale": "en",
-  "source": "gap",
-  "related_pages": [
-    {
-      "type": "programme",
-      "id": "complete-healing"
-    },
-    {
-      "type": "programme",
-      "id": "detox"
-    }
+  "name": "High blood pressure",
+  "synonyms": [
+    "hypertension",
+    "BP",
+    "blood pressure"
   ],
-  "category": null,
-  "status": "draft",
-  "featured_image": null,
-  "external_references": []
+  "locale": "en",
+  "source": "client"
 }

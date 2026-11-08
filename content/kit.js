@@ -118,7 +118,7 @@ window.ShantaraContent = {
     "id": "medical-categories",
     "locale": "en",
     "source": "handbook",
-    "note": "Eleven handbook clinical groupings: a staff routing aid, not public IA.",
+    "note": "Eleven handbook clinical groupings: a staff routing aid, not public IA. The public site has no condition pages or category pages; each condition is a record in content/conditions/ and programmes list the conditions they are for (website D-200, D-201).",
     "categories": [
       {
         "id": "metabolic-lifestyle",
@@ -248,725 +248,1615 @@ window.ShantaraContent = {
   },
   "programs": [
     {
-      "id": "complete-healing",
-      "slug": "complete-healing",
-      "name": "Complete Healing",
-      "focus": "Immersive",
-      "proposition": "For guests managing several long-standing conditions at once, across metabolic, musculoskeletal and mental health.",
-      "durations": "21–28 nights",
+      "id": "advanced-detox-cellular-cleansing",
+      "slug": "advanced-detox-cellular-cleansing",
+      "name": "Advanced Detox & Cellular Cleansing",
+      "proposition": "A medically supervised programme for guests with ongoing fatigue or long exposure to alcohol, smoking or pollution, and for guests preparing for a weight-loss programme. Meals, fasting where suitable, water therapies, lymphatic massage and rest are planned around liver and digestive health and reviewed each day.",
+      "durations": [
+        14,
+        21
+      ],
+      "conditions": [
+        "chronic-fatigue",
+        "chronic-inflammation",
+        "fatty-liver"
+      ],
+      "suitability": [
+        "Guests with long exposure to alcohol, smoking or city pollution",
+        "Guests preparing for a weight-loss programme",
+        "Guests with long-standing lifestyle conditions linked to inflammation"
+      ],
+      "order": 8,
       "locale": "en",
-      "source": "kit",
+      "source": "client",
       "related_pages": [
         {
-          "type": "therapy",
-          "id": "mud-therapy"
-        },
-        {
-          "type": "therapy",
-          "id": "physiotherapy"
-        },
-        {
-          "type": "therapy",
-          "id": "diet-therapy"
-        },
-        {
-          "type": "therapy",
-          "id": "yoga-therapy"
-        },
-        {
-          "type": "therapy",
-          "id": "mind-body-therapy"
+          "type": "programme",
+          "id": "weight-loss-body-sculpt"
         }
       ],
       "status": "published",
       "featured_image": {
-        "src": "courtyard",
-        "alt": "The courtyard at Shantara"
+        "src": "room-premium",
+        "alt": "A guest room with a recliner by a sliding door to a balcony and the hills beyond"
       },
-      "featured": true
+      "featured": false
     },
     {
-      "id": "corporate-retreats",
-      "slug": "corporate-retreats",
-      "name": "Corporate Retreats",
-      "focus": "Groups",
-      "proposition": "Group programmes for teams, with therapies and schedule planned around group size and objectives.",
-      "durations": "By arrangement",
-      "locale": "en",
-      "source": "kit",
-      "related_pages": [
-        {
-          "type": "therapy",
-          "id": "yoga-therapy"
-        },
-        {
-          "type": "therapy",
-          "id": "mind-body-therapy"
-        },
-        {
-          "type": "therapy",
-          "id": "massage-therapy"
-        }
+      "id": "autoimmune-stabilisation",
+      "slug": "autoimmune-stabilisation",
+      "name": "Autoimmune Stabilisation",
+      "proposition": "A longer residential programme for guests with a diagnosed autoimmune condition in a stable phase. Meals, gut care, gentle therapies, activity and rest sit alongside the guest's existing medical treatment and are monitored each day.",
+      "durations": [
+        21,
+        28
       ],
-      "status": "published",
-      "featured_image": {
-        "src": "dining",
-        "alt": "The dining room at Shantara"
-      },
-      "featured": true
-    },
-    {
-      "id": "detox",
-      "slug": "detox",
-      "name": "Detox",
-      "focus": "Metabolic",
-      "proposition": "Your doctor may recommend a meal plan or supervised fasting based on your assessment. Therapies may also form part of your programme.",
-      "durations": "7–21 nights",
-      "locale": "en",
-      "source": "kit",
-      "related_pages": [
-        {
-          "type": "therapy",
-          "id": "fasting-therapy"
-        },
-        {
-          "type": "therapy",
-          "id": "diet-therapy"
-        },
-        {
-          "type": "therapy",
-          "id": "hydrotherapy"
-        },
-        {
-          "type": "therapy",
-          "id": "heliotherapy"
-        }
+      "conditions": [
+        "rheumatoid-arthritis",
+        "lupus",
+        "autoimmune-thyroiditis",
+        "inflammatory-bowel-disease"
       ],
-      "status": "published",
-      "featured_image": {
-        "src": "water-wall",
-        "alt": "The water wall at the therapy wing"
-      },
-      "featured": true
-    },
-    {
-      "id": "diabetes-reversal",
-      "slug": "diabetes-reversal",
-      "name": "Diabetes Reversal",
-      "focus": "Clinical",
-      "proposition": "Diet, activity and therapies planned around blood-sugar control, with medication reviewed by a doctor. Recommendations depend on your assessment.",
-      "durations": "14–28 nights",
+      "suitability": [
+        "Guests whose condition is in a stable phase, not in an active flare",
+        "Guests who remain under the care of their own specialist and continue prescribed medication"
+      ],
+      "order": 6,
       "locale": "en",
-      "source": "kit",
+      "source": "client",
       "related_pages": [
         {
-          "type": "therapy",
-          "id": "diet-therapy"
-        },
-        {
-          "type": "therapy",
-          "id": "fasting-therapy"
-        },
-        {
-          "type": "therapy",
-          "id": "yoga-therapy"
-        },
-        {
-          "type": "therapy",
-          "id": "heliotherapy"
+          "type": "programme",
+          "id": "inflammation-modulation"
         }
       ],
       "status": "published",
       "featured_image": {
         "src": "treatment",
-        "alt": "A treatment room at Shantara"
-      },
-      "featured": true
-    },
-    {
-      "id": "executive-wellness",
-      "slug": "executive-wellness",
-      "name": "Executive Wellness",
-      "focus": "Rest",
-      "proposition": "A compact daily plan for guests who need to stay partly available for work.",
-      "durations": "7–10 nights",
-      "locale": "en",
-      "source": "kit",
-      "related_pages": [
-        {
-          "type": "therapy",
-          "id": "yoga-therapy"
-        },
-        {
-          "type": "therapy",
-          "id": "mind-body-therapy"
-        },
-        {
-          "type": "therapy",
-          "id": "diet-therapy"
-        }
-      ],
-      "status": "published",
-      "featured_image": {
-        "src": "hydrotherapy-waiting",
-        "alt": "The hydrotherapy waiting area"
-      },
-      "featured": true
-    },
-    {
-      "id": "longevity",
-      "slug": "longevity",
-      "name": "Longevity",
-      "focus": "Clinical",
-      "proposition": "Preventive routines, metabolic and movement support, and doctor-guided reassessment for guests who want to stay capable and well.",
-      "durations": null,
-      "locale": "en",
-      "source": "handbook",
-      "related_pages": [
-        {
-          "type": "therapy",
-          "id": "physiotherapy"
-        },
-        {
-          "type": "therapy",
-          "id": "yoga-therapy"
-        },
-        {
-          "type": "therapy",
-          "id": "diet-therapy"
-        },
-        {
-          "type": "therapy",
-          "id": "heliotherapy"
-        }
-      ],
-      "status": "published",
-      "featured_image": {
-        "src": "lobby-valley",
-        "alt": "The lobby looking out over the valley"
+        "alt": "An empty treatment room with a padded beige couch, folded towels and a wall basin"
       },
       "featured": false
     },
     {
-      "id": "mens-vitality",
-      "slug": "mens-vitality",
-      "name": "Men's Vitality",
-      "focus": "Clinical",
-      "proposition": "A doctor-led stay for men covering metabolic health, energy and hormone-related concerns. Routines, meals, activity and rest are planned after clinical review.",
-      "durations": null,
+      "id": "executive-stress-recovery",
+      "slug": "executive-stress-recovery",
+      "name": "Executive Stress Recovery",
+      "proposition": "A shorter programme for professionals with burnout, long-term stress or poor sleep. A set daily routine, breathing practice, yoga, therapies, meals and time away from work are reviewed with the guest each day.",
+      "durations": [
+        7,
+        14
+      ],
+      "conditions": [
+        "burnout",
+        "chronic-stress",
+        "insomnia",
+        "mild-anxiety",
+        "migraine",
+        "chronic-headache"
+      ],
+      "suitability": [
+        "Business leaders, founders and others in demanding roles",
+        "Guests with limited time who want a shorter stay"
+      ],
+      "order": 13,
       "locale": "en",
-      "source": "handbook",
+      "source": "client",
       "related_pages": [
         {
-          "type": "therapy",
-          "id": "diet-therapy"
-        },
-        {
-          "type": "therapy",
-          "id": "yoga-therapy"
-        },
-        {
-          "type": "therapy",
-          "id": "physiotherapy"
+          "type": "programme",
+          "id": "signature-total-transformation"
         }
       ],
       "status": "published",
       "featured_image": {
-        "src": "grounds",
-        "alt": "The grounds at Shantara"
+        "src": "room-bedroom-balcony-open-book",
+        "alt": "A guest room with a made bed, an open book on the duvet and a balcony over forested hills"
       },
       "featured": false
     },
     {
-      "id": "stress-management",
-      "slug": "stress-management",
-      "name": "Stress Management",
-      "focus": "Mind",
-      "proposition": "Doctor-led routines, therapies and rest for guests managing sustained stress, poor sleep or fatigue.",
-      "durations": "7–14 nights",
+      "id": "gut-microbiome-restoration",
+      "slug": "gut-microbiome-restoration",
+      "name": "Gut & Microbiome Restoration",
+      "proposition": "A residential programme for guests with long-standing digestive complaints, including after a course of antibiotics. Plant-based meals, meal timing, therapies and, where suitable, fasting are reviewed with the guest each day.",
+      "durations": [
+        14,
+        21
+      ],
+      "conditions": [
+        "ibs",
+        "bloating",
+        "chronic-acidity",
+        "dysbiosis",
+        "gastritis",
+        "peptic-ulcer",
+        "constipation",
+        "dyspepsia",
+        "inflammatory-bowel-disease"
+      ],
+      "suitability": [
+        "Guests recovering their digestion after a course of antibiotics",
+        "Guests whose digestive complaints sit alongside weight or blood sugar concerns"
+      ],
+      "order": 7,
       "locale": "en",
-      "source": "kit",
+      "source": "client",
       "related_pages": [
         {
-          "type": "therapy",
-          "id": "yoga-therapy"
-        },
+          "type": "programme",
+          "id": "inflammation-modulation"
+        }
+      ],
+      "status": "published",
+      "featured_image": {
+        "src": "food-spread-three-plates-garden-wide-landscape-3x2",
+        "alt": "Three plated dishes on a dark live-edge wooden table beside garden plants and river pebbles"
+      },
+      "featured": false
+    },
+    {
+      "id": "heart-recovery-performance",
+      "slug": "heart-recovery-performance",
+      "name": "Heart Recovery & Performance",
+      "proposition": "A residential programme for guests in a medically stable phase after a heart attack, angioplasty or bypass surgery, and for guests at high risk of heart disease. Supervised exercise, meals, stress care and therapies follow cardiac rehabilitation principles and are reviewed with the guest each day.",
+      "durations": [
+        21,
+        28
+      ],
+      "conditions": [
+        "recovery-after-heart-attack",
+        "recovery-after-heart-surgery",
+        "coronary-artery-disease",
+        "hypertension",
+        "dyslipidemia",
+        "metabolic-syndrome"
+      ],
+      "suitability": [
+        "Guests in a medically stable phase only, cleared for the stay by their own cardiologist",
+        "Professionals with raised cardiac risk markers and a mostly seated routine"
+      ],
+      "order": 11,
+      "locale": "en",
+      "source": "client",
+      "related_pages": [
         {
-          "type": "therapy",
-          "id": "mind-body-therapy"
-        },
+          "type": "programme",
+          "id": "metabolic-reversal"
+        }
+      ],
+      "status": "published",
+      "featured_image": {
+        "src": "grounds-hillside-path-walking-guest-landscape-3x2",
+        "alt": "A guest in white walking barefoot down a curving hillside path, seen from above through foliage"
+      },
+      "featured": false
+    },
+    {
+      "id": "inflammation-modulation",
+      "slug": "inflammation-modulation",
+      "name": "Inflammation Modulation",
+      "proposition": "A residential programme for guests with long-standing inflammation, including raised inflammatory markers, inflammatory arthritis and persistent fatigue. Meals, gut care, stress care, therapies and rest are adjusted at each daily review.",
+      "durations": [
+        14,
+        21,
+        28
+      ],
+      "conditions": [
+        "chronic-inflammation",
+        "inflammatory-arthritis",
+        "chronic-fatigue",
+        "gout",
+        "fibromyalgia",
+        "rheumatoid-arthritis",
+        "psoriasis"
+      ],
+      "suitability": [
+        "Guests with a diagnosed autoimmune condition for whom the doctor advises a shorter stay than Autoimmune Stabilisation",
+        "Guests who remain under the care of their own doctor and continue prescribed medication"
+      ],
+      "order": 5,
+      "locale": "en",
+      "source": "client",
+      "related_pages": [
         {
-          "type": "therapy",
-          "id": "hydrotherapy"
-        },
+          "type": "programme",
+          "id": "autoimmune-stabilisation"
+        }
+      ],
+      "status": "published",
+      "featured_image": {
+        "src": "grounds-pebble-path-barefoot-walking-landscape-3x2",
+        "alt": "Bare feet stepping on a bed of river pebbles"
+      },
+      "featured": false
+    },
+    {
+      "id": "liver-restoration",
+      "slug": "liver-restoration",
+      "name": "Liver Restoration",
+      "proposition": "A residential programme for guests with fatty liver, or with stable liver cirrhosis under their own hepatologist's care. Meals, fasting where suitable, gentle activity, therapies and rest are planned around liver health and reviewed each day.",
+      "durations": [
+        21,
+        28
+      ],
+      "conditions": [
+        "fatty-liver",
+        "liver-cirrhosis"
+      ],
+      "suitability": [
+        "Guests with cirrhosis only when it is stable and their own hepatologist agrees to the stay",
+        "Guests whose liver condition is linked to weight, blood sugar or alcohol"
+      ],
+      "order": 18,
+      "locale": "en",
+      "source": "owner",
+      "related_pages": [
         {
-          "type": "therapy",
-          "id": "mud-therapy"
+          "type": "programme",
+          "id": "metabolic-reversal"
+        }
+      ],
+      "status": "published",
+      "featured_image": {
+        "src": "porch-dusk-lit-canopy",
+        "alt": "The porch at dusk with a lit wood canopy, stone columns and uplit trees"
+      },
+      "featured": false
+    },
+    {
+      "id": "longevity-biological-age-optimisation",
+      "slug": "longevity-biological-age-optimisation",
+      "name": "Longevity & Biological Age Optimisation",
+      "proposition": "A programme for guests over 35 who want a full picture of their health and a plan for the years ahead. An assessment at the start of the stay guides meals, exercise, therapies and rest, which the doctor reviews each day.",
+      "durations": [
+        14,
+        21
+      ],
+      "conditions": [],
+      "suitability": [
+        "Adults over 35 who want a full health assessment and a long-term plan",
+        "Guests without a specific diagnosis who want to look after their health early",
+        "Guests who want to keep exercise, diet and sleep habits after they leave"
+      ],
+      "order": 15,
+      "locale": "en",
+      "source": "client",
+      "related_pages": [
+        {
+          "type": "programme",
+          "id": "signature-total-transformation"
+        }
+      ],
+      "status": "published",
+      "featured_image": {
+        "src": "lobby-double-height-valley-guest",
+        "alt": "The double-height lobby, with a guest in a headscarf standing at a window looking out at cloudy sky and forested hills"
+      },
+      "featured": false
+    },
+    {
+      "id": "mens-vitality-testosterone-optimisation",
+      "slug": "mens-vitality-testosterone-optimisation",
+      "name": "Men's Vitality & Testosterone Optimisation",
+      "proposition": "A residential programme for men with low energy, weight around the middle, hormonal changes linked to stress or mild fertility concerns. Meals, strength exercise, sleep, stress care and therapies are planned after an assessment of hormonal and metabolic health and reviewed each day.",
+      "durations": [
+        21,
+        28
+      ],
+      "conditions": [
+        "low-testosterone",
+        "male-infertility",
+        "metabolic-syndrome",
+        "obesity"
+      ],
+      "suitability": [
+        "Men with low energy linked to weight, sleep or stress",
+        "Men who remain under the care of their own doctor for any hormonal treatment"
+      ],
+      "order": 10,
+      "locale": "en",
+      "source": "client",
+      "related_pages": [
+        {
+          "type": "programme",
+          "id": "metabolic-reversal"
+        }
+      ],
+      "status": "published",
+      "featured_image": {
+        "src": "suite-living-balcony-empty",
+        "alt": "A suite living area with a sofa, opening onto a covered balcony over forested hills"
+      },
+      "featured": false
+    },
+    {
+      "id": "metabolic-reversal",
+      "slug": "metabolic-reversal",
+      "name": "Metabolic Reversal",
+      "proposition": "A residential programme for guests with type 2 diabetes, prediabetes, fatty liver, raised cholesterol or weight around the middle. Prescribed meals, supervised fasting where suitable, exercise and therapies run alongside regular checks of blood sugar, weight and other markers, reviewed by the doctor each day.",
+      "durations": [
+        14,
+        21,
+        28
+      ],
+      "conditions": [
+        "type-2-diabetes",
+        "prediabetes",
+        "metabolic-syndrome",
+        "fatty-liver",
+        "dyslipidemia",
+        "obesity",
+        "hypertension",
+        "diabetic-or-hypertensive-nephropathy"
+      ],
+      "suitability": [
+        "Guests who remain under the care of their own doctor and continue prescribed medication",
+        "Guests who want a structured routine to change how they eat, move and sleep"
+      ],
+      "order": 2,
+      "locale": "en",
+      "source": "client",
+      "related_pages": [
+        {
+          "type": "programme",
+          "id": "weight-loss-body-sculpt"
+        }
+      ],
+      "status": "published",
+      "featured_image": {
+        "src": "dining",
+        "alt": "The dining hall with green chairs and set tables under paper pendant lamps"
+      },
+      "featured": true
+    },
+    {
+      "id": "nutritional-recovery",
+      "slug": "nutritional-recovery",
+      "name": "Nutritional Recovery",
+      "proposition": "A residential programme for guests with anaemia, low vitamin B12, vitamin D or folate, or low protein. Prescribed meals, sunlight therapy, gentle activity and rest are planned around the guest's blood results and reviewed each day.",
+      "durations": [
+        14,
+        21
+      ],
+      "conditions": [
+        "anaemia",
+        "vitamin-b12-deficiency",
+        "vitamin-d-deficiency",
+        "folate-deficiency",
+        "hypoproteinemia",
+        "micronutrient-deficiencies"
+      ],
+      "suitability": [
+        "Guests with recent blood results that show a deficiency",
+        "Guests whose deficiency is linked to diet, digestion or a busy routine"
+      ],
+      "order": 19,
+      "locale": "en",
+      "source": "owner",
+      "related_pages": [
+        {
+          "type": "programme",
+          "id": "gut-microbiome-restoration"
+        }
+      ],
+      "status": "published",
+      "featured_image": {
+        "src": "food-spread-five-plates-restaurant-wide-landscape-3x2",
+        "alt": "Five plates of salads, red rice, curry and a vegetable bake on a table in the restaurant"
+      },
+      "featured": false
+    },
+    {
+      "id": "pain-rehabilitation",
+      "slug": "pain-rehabilitation",
+      "name": "Pain Rehabilitation",
+      "proposition": "A residential programme for long-standing spine, joint and nerve pain, for guests who want care without surgery. Physiotherapy, water and mud therapies, manual therapy, therapeutic yoga, sunlight therapy and meals follow each guest's mobility and are adjusted each day.",
+      "durations": [
+        14,
+        21,
+        28
+      ],
+      "conditions": [
+        "ivdp",
+        "sciatica",
+        "arthritis",
+        "low-back-and-neck-pain",
+        "spondylosis",
+        "radiculopathy",
+        "frozen-shoulder",
+        "tennis-elbow",
+        "plantar-fasciitis",
+        "fibromyalgia"
+      ],
+      "suitability": [
+        "Guests with musculoskeletal pain that has lasted for months",
+        "Guests who can follow a set routine for the full stay, with any mobility requirements declared before arrival"
+      ],
+      "order": 4,
+      "locale": "en",
+      "source": "client",
+      "related_pages": [
+        {
+          "type": "programme",
+          "id": "inflammation-modulation"
+        }
+      ],
+      "status": "published",
+      "featured_image": {
+        "src": "treatment-bath-corridor-cubicles",
+        "alt": "A long corridor of white bath cubicle doors under a pitched timber roof"
+      },
+      "featured": true
+    },
+    {
+      "id": "renal-care",
+      "slug": "renal-care",
+      "name": "Renal Care",
+      "proposition": "A residential programme for guests with early-stage kidney conditions who remain under their own nephrologist's care. Meals, fluid intake, blood pressure, blood sugar, gentle activity and therapies are planned with caution and reviewed each day.",
+      "durations": [
+        21,
+        28
+      ],
+      "conditions": [
+        "early-chronic-kidney-disease",
+        "diabetic-or-hypertensive-nephropathy",
+        "kidney-stones",
+        "microalbuminuria",
+        "nephritis",
+        "fluid-retention"
+      ],
+      "suitability": [
+        "Guests who remain under the care of their own nephrologist and continue prescribed medication",
+        "Guests whose kidney condition is linked to diabetes or high blood pressure"
+      ],
+      "order": 17,
+      "locale": "en",
+      "source": "owner",
+      "related_pages": [
+        {
+          "type": "programme",
+          "id": "metabolic-reversal"
         }
       ],
       "status": "published",
       "featured_image": {
         "src": "open-deck",
-        "alt": "The open deck"
+        "alt": "A timber-decked balcony with a table and chair, looking out to forested hills"
       },
-      "featured": true
+      "featured": false
     },
     {
-      "id": "weekend-rejuvenation",
-      "slug": "weekend-rejuvenation",
-      "name": "Weekend Rejuvenation",
-      "focus": "Rest",
-      "proposition": "A shorter stay for guests with limited time: rest, gentle therapies and meals planned for the programme.",
-      "durations": "7 nights",
+      "id": "respiratory-allergy-control",
+      "slug": "respiratory-allergy-control",
+      "name": "Respiratory & Allergy Control",
+      "proposition": "A residential programme for guests with allergic or breathing complaints that are stable, including complaints made worse by city pollution. Breathing practice, steam and water therapies, meals and rest are reviewed with the guest each day.",
+      "durations": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "conditions": [
+        "allergic-rhinitis",
+        "asthma",
+        "sinusitis",
+        "chronic-bronchitis",
+        "copd"
+      ],
+      "suitability": [
+        "Guests whose breathing is affected by city pollution",
+        "Guests whose asthma or COPD is stable and managed by their own doctor"
+      ],
+      "order": 12,
       "locale": "en",
-      "source": "kit",
+      "source": "client",
       "related_pages": [
         {
-          "type": "therapy",
-          "id": "yoga-therapy"
-        },
-        {
-          "type": "therapy",
-          "id": "massage-therapy"
-        },
-        {
-          "type": "therapy",
-          "id": "hydrotherapy"
+          "type": "programme",
+          "id": "gut-microbiome-restoration"
         }
       ],
       "status": "published",
       "featured_image": {
-        "src": "lobby-mezzanine",
-        "alt": "The lobby"
+        "src": "yoga-meditation-aerial-cobblestone-circle-cross-legged-guest-landscape-3x2",
+        "alt": "A guest meditating at the centre of a cobblestone circle, seen from above"
       },
-      "featured": true
+      "featured": false
     },
     {
-      "id": "weight-management",
-      "slug": "weight-management",
-      "name": "Weight Management",
-      "focus": "Metabolic",
-      "proposition": "Meals, daily activity and therapies, with weight and vitals reviewed by a doctor each morning.",
-      "durations": "14–21 nights",
+      "id": "senior-vitality-geriatric-wellness",
+      "slug": "senior-vitality-geriatric-wellness",
+      "name": "Senior Vitality & Geriatric Wellness",
+      "proposition": "A residential programme for guests over 55 who want to keep their strength, balance and independence. Exercise therapy, meals, preventive checks, gentle therapies and rest are reviewed with the guest each morning.",
+      "durations": [
+        14,
+        21
+      ],
+      "conditions": [
+        "sarcopenia",
+        "type-2-diabetes",
+        "arthritis",
+        "hypertension"
+      ],
+      "suitability": [
+        "Adults over 55 who want to stay strong and independent",
+        "Older guests who want to lower their risk of falls",
+        "Older guests with stable long-term conditions who remain under their own doctor's care"
+      ],
+      "order": 14,
       "locale": "en",
-      "source": "kit",
+      "source": "client",
       "related_pages": [
         {
-          "type": "therapy",
-          "id": "diet-therapy"
-        },
-        {
-          "type": "therapy",
-          "id": "yoga-therapy"
-        },
-        {
-          "type": "therapy",
-          "id": "hydrotherapy"
-        },
-        {
-          "type": "therapy",
-          "id": "physiotherapy"
+          "type": "programme",
+          "id": "pain-rehabilitation"
         }
       ],
       "status": "published",
       "featured_image": {
-        "src": "grounds",
-        "alt": "The grounds at Shantara"
+        "src": "lobby",
+        "alt": "A double-height lobby with a stone desk, lounge seating and tall windows over distant hills"
+      },
+      "featured": false
+    },
+    {
+      "id": "signature-total-transformation",
+      "slug": "signature-total-transformation",
+      "name": "Signature Total Transformation",
+      "proposition": "The broadest of the programmes, for guests with more than one long-standing lifestyle condition. Meals, fasting where suitable, therapies, exercise, rest and stress care are combined in one plan that the doctor reviews each day.",
+      "durations": [
+        21,
+        28
+      ],
+      "conditions": [],
+      "suitability": [
+        "Guests managing more than one long-standing lifestyle condition",
+        "Professionals who want a longer supervised stay away from work",
+        "Guests who want one programme to cover diet, activity, therapies, sleep and stress together"
+      ],
+      "order": 1,
+      "locale": "en",
+      "source": "client",
+      "related_pages": [
+        {
+          "type": "programme",
+          "id": "metabolic-reversal"
+        }
+      ],
+      "status": "published",
+      "featured_image": {
+        "src": "exterior-cobblestone-patio-valley-guest",
+        "alt": "A guest standing at the edge of a circular cobblestone patio between two dark walls, looking out over palms and distant hills"
       },
       "featured": true
+    },
+    {
+      "id": "skin-health-restoration",
+      "slug": "skin-health-restoration",
+      "name": "Skin Health Restoration",
+      "proposition": "A residential programme for guests with long-standing skin conditions such as psoriasis, eczema or acne. Meals, gut care, water and mud therapies, sunlight therapy and stress care are reviewed with the guest each day, alongside any treatment from the guest's own dermatologist.",
+      "durations": [
+        14,
+        21,
+        28
+      ],
+      "conditions": [
+        "psoriasis",
+        "eczema",
+        "dermatitis",
+        "acne",
+        "hyperpigmentation"
+      ],
+      "suitability": [
+        "Guests whose skin flares with stress, diet or digestion",
+        "Guests who remain under the care of their own dermatologist"
+      ],
+      "order": 16,
+      "locale": "en",
+      "source": "owner",
+      "related_pages": [
+        {
+          "type": "programme",
+          "id": "gut-microbiome-restoration"
+        }
+      ],
+      "status": "published",
+      "featured_image": {
+        "src": "courtyard-pond-building-path",
+        "alt": "A long courtyard pond between dark textured building walls after rain"
+      },
+      "featured": false
+    },
+    {
+      "id": "weight-loss-body-sculpt",
+      "slug": "weight-loss-body-sculpt",
+      "name": "Weight Loss & Body Sculpt",
+      "proposition": "A medically supervised programme for guests who want to lose excess fat and build strength. Prescribed meals, exercise sessions, lymphatic massage and other therapies are adjusted as weight and body measurements are reviewed each morning.",
+      "durations": [
+        14,
+        21,
+        28
+      ],
+      "conditions": [
+        "obesity",
+        "pcos",
+        "metabolic-syndrome"
+      ],
+      "suitability": [
+        "Adults with a body mass index (BMI) above 25",
+        "Women carrying weight gained during or after pregnancy",
+        "Guests who want steady fat loss under supervision rather than a crash diet"
+      ],
+      "order": 3,
+      "locale": "en",
+      "source": "client",
+      "related_pages": [
+        {
+          "type": "programme",
+          "id": "metabolic-reversal"
+        }
+      ],
+      "status": "published",
+      "featured_image": {
+        "src": "yoga-hall-empty",
+        "alt": "The empty yoga hall with tall windows"
+      },
+      "featured": true
+    },
+    {
+      "id": "womens-vitality-hormonal-intelligence",
+      "slug": "womens-vitality-hormonal-intelligence",
+      "name": "Women's Vitality & Hormonal Intelligence",
+      "proposition": "A 28-night programme for women with PCOS, irregular cycles, perimenopausal symptoms, fertility concerns or hormonal changes linked to stress. Meals, exercise, therapies, sleep and stress care are planned around the guest's cycle and metabolic health and reviewed each day.",
+      "durations": [
+        28
+      ],
+      "conditions": [
+        "pcos",
+        "menstrual-irregularities",
+        "perimenopause",
+        "female-infertility",
+        "ovulatory-dysfunction",
+        "endometriosis",
+        "thyroid-dysfunction",
+        "prediabetes"
+      ],
+      "suitability": [
+        "Women with weight gain linked to hormonal changes",
+        "Women who want a structured stay before trying to conceive"
+      ],
+      "order": 9,
+      "locale": "en",
+      "source": "client",
+      "related_pages": [
+        {
+          "type": "programme",
+          "id": "weight-loss-body-sculpt"
+        }
+      ],
+      "status": "published",
+      "featured_image": {
+        "src": "leisure-pergola-terrace-reading-guest-landscape-3x2",
+        "alt": "A guest in white reading under a pergola beside tall grasses and a garden slope"
+      },
+      "featured": false
     }
   ],
   "conditions": [
     {
+      "id": "acne",
+      "slug": "acne",
+      "name": "Acne",
+      "synonyms": [
+        "acne vulgaris",
+        "hormonal acne",
+        "pimples",
+        "breakouts"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "allergic-rhinitis",
+      "slug": "allergic-rhinitis",
+      "name": "Allergic rhinitis",
+      "synonyms": [
+        "hay fever",
+        "dust allergy",
+        "sneezing",
+        "nasal allergy"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "anaemia",
+      "slug": "anaemia",
+      "name": "Anaemia",
+      "synonyms": [
+        "anemia",
+        "low haemoglobin",
+        "low hemoglobin",
+        "iron deficiency"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
       "id": "arthritis",
       "slug": "arthritis",
       "name": "Arthritis",
-      "summary": "Therapies, movement and rest may be recommended to support joint comfort, following assessment.",
-      "clinical": null,
-      "faqs": [],
-      "medical_reviewer": null,
-      "last_medically_reviewed": null,
-      "note": null,
-      "locale": "en",
-      "source": "kit",
-      "related_pages": [
-        {
-          "type": "programme",
-          "id": "complete-healing"
-        }
+      "synonyms": [
+        "osteoarthritis",
+        "joint pain",
+        "knee pain",
+        "stiff joints"
       ],
-      "category": "Musculoskeletal",
-      "status": "draft",
-      "featured_image": {
-        "src": "treatment",
-        "alt": "A treatment room at Shantara"
-      },
-      "external_references": []
+      "locale": "en",
+      "source": "client"
     },
     {
       "id": "asthma",
       "slug": "asthma",
-      "name": "Asthma",
-      "summary": null,
-      "clinical": null,
-      "faqs": [],
-      "medical_reviewer": null,
-      "last_medically_reviewed": null,
-      "locale": "en",
-      "source": "gap",
-      "related_pages": [
-        {
-          "type": "programme",
-          "id": "complete-healing"
-        }
+      "name": "Asthma (mild, stable)",
+      "synonyms": [
+        "bronchial asthma",
+        "wheezing"
       ],
-      "category": null,
-      "status": "draft",
-      "featured_image": null,
-      "external_references": []
+      "locale": "en",
+      "source": "client"
     },
     {
-      "id": "back-pain",
-      "slug": "back-pain",
-      "name": "Low back / neck pain",
-      "summary": null,
-      "clinical": null,
-      "faqs": [],
-      "medical_reviewer": null,
-      "last_medically_reviewed": null,
-      "locale": "en",
-      "source": "gap",
-      "related_pages": [
-        {
-          "type": "programme",
-          "id": "complete-healing"
-        }
+      "id": "autoimmune-thyroiditis",
+      "slug": "autoimmune-thyroiditis",
+      "name": "Autoimmune thyroiditis",
+      "synonyms": [
+        "Hashimoto's",
+        "Hashimoto's thyroiditis",
+        "autoimmune thyroid disease"
       ],
-      "category": null,
-      "status": "draft",
-      "featured_image": null,
-      "external_references": []
+      "locale": "en",
+      "source": "client"
     },
     {
-      "id": "diabetes",
-      "slug": "diabetes",
-      "name": "Diabetes",
-      "summary": "Residential programmes planned around blood-sugar control, meals and daily doctor review.",
-      "clinical": null,
-      "faqs": [],
-      "medical_reviewer": null,
-      "last_medically_reviewed": null,
-      "note": null,
-      "locale": "en",
-      "source": "kit",
-      "related_pages": [
-        {
-          "type": "programme",
-          "id": "diabetes-reversal"
-        },
-        {
-          "type": "programme",
-          "id": "weight-management"
-        },
-        {
-          "type": "programme",
-          "id": "detox"
-        },
-        {
-          "type": "programme",
-          "id": "complete-healing"
-        }
+      "id": "bloating",
+      "slug": "bloating",
+      "name": "Bloating",
+      "synonyms": [
+        "gas",
+        "flatulence",
+        "abdominal distension"
       ],
-      "category": "Metabolic",
-      "status": "draft",
-      "featured_image": {
-        "src": "dining",
-        "alt": "The dining room at Shantara"
-      },
-      "external_references": []
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "burnout",
+      "slug": "burnout",
+      "name": "Burnout",
+      "synonyms": [
+        "burnout syndrome",
+        "work stress",
+        "exhaustion"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "chronic-acidity",
+      "slug": "chronic-acidity",
+      "name": "Chronic acidity",
+      "synonyms": [
+        "acidity",
+        "heartburn",
+        "acid reflux",
+        "GERD",
+        "GORD"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "chronic-bronchitis",
+      "slug": "chronic-bronchitis",
+      "name": "Chronic bronchitis",
+      "synonyms": [
+        "bronchitis",
+        "smoker's cough"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "chronic-fatigue",
+      "slug": "chronic-fatigue",
+      "name": "Chronic fatigue",
+      "synonyms": [
+        "tiredness",
+        "low energy",
+        "exhaustion",
+        "always tired"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "chronic-headache",
+      "slug": "chronic-headache",
+      "name": "Chronic headache",
+      "synonyms": [
+        "headache",
+        "tension headache",
+        "chronic headache syndromes"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "chronic-inflammation",
+      "slug": "chronic-inflammation",
+      "name": "Chronic low-grade inflammation",
+      "synonyms": [
+        "raised CRP",
+        "high ESR",
+        "inflammatory markers",
+        "inflammation"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "chronic-stress",
+      "slug": "chronic-stress",
+      "name": "Chronic stress",
+      "synonyms": [
+        "stress",
+        "long-term stress",
+        "tension"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "constipation",
+      "slug": "constipation",
+      "name": "Constipation",
+      "synonyms": [
+        "hard stools",
+        "irregular bowel movements"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "copd",
+      "slug": "copd",
+      "name": "COPD (stable)",
+      "synonyms": [
+        "COPD",
+        "chronic obstructive pulmonary disease",
+        "emphysema"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "coronary-artery-disease",
+      "slug": "coronary-artery-disease",
+      "name": "Coronary artery disease (stable)",
+      "synonyms": [
+        "CAD",
+        "ischaemic heart disease",
+        "ischemic heart disease",
+        "IHD",
+        "heart blockage",
+        "angina"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "dermatitis",
+      "slug": "dermatitis",
+      "name": "Dermatitis",
+      "synonyms": [
+        "skin inflammation",
+        "contact dermatitis",
+        "skin rash"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "diabetic-or-hypertensive-nephropathy",
+      "slug": "diabetic-or-hypertensive-nephropathy",
+      "name": "Diabetic or hypertensive nephropathy",
+      "synonyms": [
+        "nephropathy",
+        "diabetic kidney disease",
+        "kidney damage from diabetes",
+        "kidney damage from blood pressure"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "dysbiosis",
+      "slug": "dysbiosis",
+      "name": "Gut dysbiosis",
+      "synonyms": [
+        "dysbiosis",
+        "gut flora imbalance",
+        "microbiome imbalance",
+        "after antibiotics"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "dyslipidemia",
+      "slug": "dyslipidemia",
+      "name": "Dyslipidemia",
+      "synonyms": [
+        "high cholesterol",
+        "cholesterol",
+        "triglycerides",
+        "hyperlipidemia",
+        "lipid imbalance"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "dyspepsia",
+      "slug": "dyspepsia",
+      "name": "Indigestion (dyspepsia)",
+      "synonyms": [
+        "dyspepsia",
+        "indigestion",
+        "upset stomach"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "early-chronic-kidney-disease",
+      "slug": "early-chronic-kidney-disease",
+      "name": "Early-stage chronic kidney disease (stages 1–2)",
+      "synonyms": [
+        "CKD",
+        "kidney disease",
+        "chronic kidney disease"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "eczema",
+      "slug": "eczema",
+      "name": "Eczema",
+      "synonyms": [
+        "atopic dermatitis",
+        "itchy skin"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "endometriosis",
+      "slug": "endometriosis",
+      "name": "Endometriosis",
+      "synonyms": [
+        "painful periods",
+        "endometrial pain"
+      ],
+      "locale": "en",
+      "source": "client"
     },
     {
       "id": "fatty-liver",
       "slug": "fatty-liver",
       "name": "Fatty liver (NAFLD)",
-      "summary": null,
-      "clinical": null,
-      "faqs": [],
-      "medical_reviewer": null,
-      "last_medically_reviewed": null,
-      "locale": "en",
-      "source": "gap",
-      "related_pages": [
-        {
-          "type": "programme",
-          "id": "weight-management"
-        },
-        {
-          "type": "programme",
-          "id": "detox"
-        }
+      "synonyms": [
+        "NAFLD",
+        "MASLD",
+        "non-alcoholic fatty liver disease",
+        "fatty liver disease"
       ],
-      "category": null,
-      "status": "draft",
-      "featured_image": null,
-      "external_references": []
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "female-infertility",
+      "slug": "female-infertility",
+      "name": "Female infertility (unexplained)",
+      "synonyms": [
+        "infertility",
+        "trouble conceiving",
+        "fertility",
+        "hormonal imbalance affecting fertility"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "fibromyalgia",
+      "slug": "fibromyalgia",
+      "name": "Fibromyalgia",
+      "synonyms": [
+        "widespread pain",
+        "chronic muscle pain"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "fluid-retention",
+      "slug": "fluid-retention",
+      "name": "Fluid retention",
+      "synonyms": [
+        "oedema",
+        "edema",
+        "swelling",
+        "non-cardiac fluid retention",
+        "water retention"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "folate-deficiency",
+      "slug": "folate-deficiency",
+      "name": "Folate deficiency",
+      "synonyms": [
+        "folic acid deficiency",
+        "low folate"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "frozen-shoulder",
+      "slug": "frozen-shoulder",
+      "name": "Frozen shoulder",
+      "synonyms": [
+        "adhesive capsulitis",
+        "shoulder stiffness"
+      ],
+      "locale": "en",
+      "source": "client"
     },
     {
       "id": "gastritis",
       "slug": "gastritis",
       "name": "Gastritis",
-      "summary": null,
-      "clinical": null,
-      "faqs": [],
-      "medical_reviewer": null,
-      "last_medically_reviewed": null,
-      "locale": "en",
-      "source": "gap",
-      "related_pages": [
-        {
-          "type": "programme",
-          "id": "detox"
-        }
+      "synonyms": [
+        "stomach inflammation",
+        "stomach lining inflammation"
       ],
-      "category": null,
-      "status": "draft",
-      "featured_image": null,
-      "external_references": []
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "gout",
+      "slug": "gout",
+      "name": "Gout",
+      "synonyms": [
+        "high uric acid",
+        "uric acid",
+        "hyperuricemia"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "hyperpigmentation",
+      "slug": "hyperpigmentation",
+      "name": "Hyperpigmentation",
+      "synonyms": [
+        "dark spots",
+        "pigmentation",
+        "melasma",
+        "uneven skin tone"
+      ],
+      "locale": "en",
+      "source": "client"
     },
     {
       "id": "hypertension",
       "slug": "hypertension",
-      "name": "Hypertension",
-      "summary": null,
-      "clinical": null,
-      "faqs": [],
-      "medical_reviewer": null,
-      "last_medically_reviewed": null,
-      "locale": "en",
-      "source": "gap",
-      "related_pages": [
-        {
-          "type": "programme",
-          "id": "complete-healing"
-        },
-        {
-          "type": "programme",
-          "id": "detox"
-        }
+      "name": "High blood pressure",
+      "synonyms": [
+        "hypertension",
+        "BP",
+        "blood pressure"
       ],
-      "category": null,
-      "status": "draft",
-      "featured_image": null,
-      "external_references": []
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "hypoproteinemia",
+      "slug": "hypoproteinemia",
+      "name": "Low protein (hypoproteinemia)",
+      "synonyms": [
+        "hypoproteinemia",
+        "low albumin",
+        "protein deficiency"
+      ],
+      "locale": "en",
+      "source": "client"
     },
     {
       "id": "ibs",
       "slug": "ibs",
-      "name": "IBS",
-      "summary": null,
-      "clinical": null,
-      "faqs": [],
-      "medical_reviewer": null,
-      "last_medically_reviewed": null,
-      "locale": "en",
-      "source": "gap",
-      "related_pages": [
-        {
-          "type": "programme",
-          "id": "detox"
-        },
-        {
-          "type": "programme",
-          "id": "complete-healing"
-        }
+      "name": "Irritable bowel syndrome (IBS)",
+      "synonyms": [
+        "IBS",
+        "irritable bowel",
+        "spastic colon"
       ],
-      "category": null,
-      "status": "draft",
-      "featured_image": null,
-      "external_references": []
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "inflammatory-arthritis",
+      "slug": "inflammatory-arthritis",
+      "name": "Inflammatory arthritis",
+      "synonyms": [
+        "joint inflammation",
+        "swollen joints"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "inflammatory-bowel-disease",
+      "slug": "inflammatory-bowel-disease",
+      "name": "Inflammatory bowel disease (stable)",
+      "synonyms": [
+        "IBD",
+        "colitis",
+        "ulcerative colitis",
+        "Crohn's disease"
+      ],
+      "locale": "en",
+      "source": "client"
     },
     {
       "id": "insomnia",
       "slug": "insomnia",
       "name": "Insomnia",
-      "summary": null,
-      "clinical": null,
-      "faqs": [],
-      "medical_reviewer": null,
-      "last_medically_reviewed": null,
-      "locale": "en",
-      "source": "gap",
-      "related_pages": [
-        {
-          "type": "programme",
-          "id": "stress-management"
-        }
+      "synonyms": [
+        "poor sleep",
+        "sleeplessness",
+        "trouble sleeping",
+        "sleep problems"
       ],
-      "category": null,
-      "status": "draft",
-      "featured_image": null,
-      "external_references": []
+      "locale": "en",
+      "source": "client"
     },
     {
-      "id": "menopause",
-      "slug": "menopause",
-      "name": "Perimenopause",
-      "summary": null,
-      "clinical": null,
-      "faqs": [],
-      "medical_reviewer": null,
-      "last_medically_reviewed": null,
-      "locale": "en",
-      "source": "gap",
-      "related_pages": [
-        {
-          "type": "programme",
-          "id": "complete-healing"
-        }
+      "id": "ivdp",
+      "slug": "ivdp",
+      "name": "Slipped disc (IVDP)",
+      "synonyms": [
+        "IVDP",
+        "disc prolapse",
+        "herniated disc",
+        "disc bulge",
+        "intervertebral disc prolapse"
       ],
-      "category": null,
-      "status": "draft",
-      "featured_image": null,
-      "external_references": []
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "kidney-stones",
+      "slug": "kidney-stones",
+      "name": "Kidney stones",
+      "synonyms": [
+        "renal stones",
+        "nephrolithiasis",
+        "renal calculi"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "liver-cirrhosis",
+      "slug": "liver-cirrhosis",
+      "name": "Liver cirrhosis (stable)",
+      "synonyms": [
+        "cirrhosis",
+        "compensated cirrhosis"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "low-back-and-neck-pain",
+      "slug": "low-back-and-neck-pain",
+      "name": "Low back and neck pain",
+      "synonyms": [
+        "back pain",
+        "neck pain",
+        "lumbago",
+        "stiff neck"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "low-testosterone",
+      "slug": "low-testosterone",
+      "name": "Low testosterone",
+      "synonyms": [
+        "testosterone",
+        "low T",
+        "male hormonal decline",
+        "andropause"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "lupus",
+      "slug": "lupus",
+      "name": "Lupus (stable)",
+      "synonyms": [
+        "SLE",
+        "systemic lupus erythematosus"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "male-infertility",
+      "slug": "male-infertility",
+      "name": "Male infertility (mild to moderate)",
+      "synonyms": [
+        "low sperm count",
+        "male factor infertility",
+        "sperm quality"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "menstrual-irregularities",
+      "slug": "menstrual-irregularities",
+      "name": "Irregular periods",
+      "synonyms": [
+        "irregular menstrual cycles",
+        "menstrual irregularities",
+        "missed periods",
+        "heavy periods"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "metabolic-syndrome",
+      "slug": "metabolic-syndrome",
+      "name": "Metabolic syndrome",
+      "synonyms": [
+        "syndrome X",
+        "insulin resistance syndrome"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "microalbuminuria",
+      "slug": "microalbuminuria",
+      "name": "Microalbuminuria",
+      "synonyms": [
+        "protein in urine",
+        "albuminuria"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "micronutrient-deficiencies",
+      "slug": "micronutrient-deficiencies",
+      "name": "Micronutrient deficiencies",
+      "synonyms": [
+        "vitamin deficiency",
+        "mineral deficiency",
+        "nutritional deficiency"
+      ],
+      "locale": "en",
+      "source": "client"
     },
     {
       "id": "migraine",
       "slug": "migraine",
       "name": "Migraine",
-      "summary": null,
-      "clinical": null,
-      "faqs": [],
-      "medical_reviewer": null,
-      "last_medically_reviewed": null,
-      "locale": "en",
-      "source": "gap",
-      "related_pages": [
-        {
-          "type": "programme",
-          "id": "stress-management"
-        },
-        {
-          "type": "programme",
-          "id": "complete-healing"
-        }
+      "synonyms": [
+        "migraine headache",
+        "migraine disorder"
       ],
-      "category": null,
-      "status": "draft",
-      "featured_image": null,
-      "external_references": []
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "mild-anxiety",
+      "slug": "mild-anxiety",
+      "name": "Mild anxiety",
+      "synonyms": [
+        "anxiety",
+        "worry",
+        "nervousness"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "nephritis",
+      "slug": "nephritis",
+      "name": "Nephritis (stable)",
+      "synonyms": [
+        "kidney inflammation",
+        "glomerulonephritis"
+      ],
+      "locale": "en",
+      "source": "client"
     },
     {
       "id": "obesity",
       "slug": "obesity",
       "name": "Obesity",
-      "summary": "Meals, activity and therapies, with weight and vitals reviewed each morning.",
-      "clinical": null,
-      "faqs": [],
-      "medical_reviewer": null,
-      "last_medically_reviewed": null,
-      "locale": "en",
-      "source": "kit",
-      "note": "Launch slug for /en/conditions/obesity, not a kit listing card (the weight-management need card covers the sample).",
-      "related_pages": [
-        {
-          "type": "programme",
-          "id": "weight-management"
-        },
-        {
-          "type": "programme",
-          "id": "diabetes-reversal"
-        },
-        {
-          "type": "programme",
-          "id": "detox"
-        }
+      "synonyms": [
+        "overweight",
+        "weight gain",
+        "central obesity",
+        "belly fat",
+        "visceral fat",
+        "BMI"
       ],
-      "category": null,
-      "status": "draft",
-      "featured_image": null,
-      "external_references": []
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "ovulatory-dysfunction",
+      "slug": "ovulatory-dysfunction",
+      "name": "Ovulation problems",
+      "synonyms": [
+        "ovulatory dysfunction",
+        "anovulation",
+        "not ovulating"
+      ],
+      "locale": "en",
+      "source": "client"
     },
     {
       "id": "pcos",
       "slug": "pcos",
       "name": "PCOS",
-      "summary": "A programme may be planned around hormonal health, meals, activity and rest, following assessment.",
-      "clinical": null,
-      "faqs": [],
-      "medical_reviewer": null,
-      "last_medically_reviewed": null,
-      "note": null,
-      "locale": "en",
-      "source": "kit",
-      "related_pages": [
-        {
-          "type": "programme",
-          "id": "complete-healing"
-        },
-        {
-          "type": "programme",
-          "id": "detox"
-        }
+      "synonyms": [
+        "polycystic ovary syndrome",
+        "PCOD",
+        "polycystic ovaries"
       ],
-      "category": "Hormonal",
-      "status": "draft",
-      "featured_image": {
-        "src": "lobby-mezzanine",
-        "alt": "The lobby"
-      },
-      "external_references": []
+      "locale": "en",
+      "source": "client"
     },
     {
-      "id": "thyroid",
-      "slug": "thyroid",
-      "name": "Thyroid dysfunction",
-      "summary": null,
-      "clinical": null,
-      "faqs": [],
-      "medical_reviewer": null,
-      "last_medically_reviewed": null,
-      "locale": "en",
-      "source": "gap",
-      "related_pages": [
-        {
-          "type": "programme",
-          "id": "complete-healing"
-        }
+      "id": "peptic-ulcer",
+      "slug": "peptic-ulcer",
+      "name": "Peptic ulcer",
+      "synonyms": [
+        "stomach ulcer",
+        "gastric ulcer",
+        "duodenal ulcer",
+        "ulcer"
       ],
-      "category": null,
-      "status": "draft",
-      "featured_image": null,
-      "external_references": []
+      "locale": "en",
+      "source": "client"
     },
     {
-      "id": "weight-management",
-      "slug": "weight-management",
-      "name": "Weight management",
-      "summary": "Meals, activity and therapies, with weight and vitals reviewed each morning.",
-      "clinical": null,
-      "faqs": [],
-      "medical_reviewer": null,
-      "last_medically_reviewed": null,
-      "note": "Listing need-card sample; distinct from the Weight Management programme entity.",
-      "locale": "en",
-      "source": "kit",
-      "related_pages": [
-        {
-          "type": "programme",
-          "id": "weight-management"
-        },
-        {
-          "type": "programme",
-          "id": "detox"
-        }
+      "id": "perimenopause",
+      "slug": "perimenopause",
+      "name": "Perimenopause and menopause",
+      "synonyms": [
+        "menopause",
+        "hot flushes",
+        "perimenopausal transition"
       ],
-      "category": "Metabolic",
-      "status": "draft",
-      "featured_image": {
-        "src": "grounds",
-        "alt": "The grounds at Shantara"
-      },
-      "external_references": []
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "plantar-fasciitis",
+      "slug": "plantar-fasciitis",
+      "name": "Plantar fasciitis",
+      "synonyms": [
+        "heel pain",
+        "heel spur"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "prediabetes",
+      "slug": "prediabetes",
+      "name": "Prediabetes and insulin resistance",
+      "synonyms": [
+        "borderline diabetes",
+        "insulin resistance",
+        "impaired glucose tolerance",
+        "insulin-resistant endocrine patterns"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "psoriasis",
+      "slug": "psoriasis",
+      "name": "Psoriasis",
+      "synonyms": [
+        "scaly skin",
+        "plaque psoriasis"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "radiculopathy",
+      "slug": "radiculopathy",
+      "name": "Radiculopathy",
+      "synonyms": [
+        "pinched nerve",
+        "nerve root compression",
+        "cervical radiculopathy"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "recovery-after-heart-attack",
+      "slug": "recovery-after-heart-attack",
+      "name": "Recovery after a heart attack",
+      "synonyms": [
+        "post-MI",
+        "myocardial infarction",
+        "cardiac rehabilitation",
+        "heart attack recovery"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "recovery-after-heart-surgery",
+      "slug": "recovery-after-heart-surgery",
+      "name": "Recovery after angioplasty or bypass surgery",
+      "synonyms": [
+        "CABG",
+        "bypass surgery",
+        "angioplasty",
+        "stent",
+        "cardiac rehabilitation"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "rheumatoid-arthritis",
+      "slug": "rheumatoid-arthritis",
+      "name": "Rheumatoid arthritis (stable)",
+      "synonyms": [
+        "RA",
+        "rheumatoid"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "sarcopenia",
+      "slug": "sarcopenia",
+      "name": "Early muscle loss (sarcopenia)",
+      "synonyms": [
+        "sarcopenia",
+        "muscle loss",
+        "muscle weakness with age"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "sciatica",
+      "slug": "sciatica",
+      "name": "Sciatica",
+      "synonyms": [
+        "leg pain",
+        "sciatic nerve pain"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "sinusitis",
+      "slug": "sinusitis",
+      "name": "Sinusitis",
+      "synonyms": [
+        "chronic rhinosinusitis",
+        "recurrent sinusitis",
+        "sinus"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "spondylosis",
+      "slug": "spondylosis",
+      "name": "Spondylosis",
+      "synonyms": [
+        "cervical spondylosis",
+        "lumbar spondylosis",
+        "spinal arthritis"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "tennis-elbow",
+      "slug": "tennis-elbow",
+      "name": "Tennis elbow",
+      "synonyms": [
+        "lateral epicondylitis",
+        "elbow pain"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "thyroid-dysfunction",
+      "slug": "thyroid-dysfunction",
+      "name": "Thyroid imbalance",
+      "synonyms": [
+        "hypothyroidism",
+        "underactive thyroid",
+        "thyroid",
+        "thyroid dysfunction"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "type-2-diabetes",
+      "slug": "type-2-diabetes",
+      "name": "Type 2 diabetes",
+      "synonyms": [
+        "diabetes",
+        "sugar",
+        "high blood sugar",
+        "diabetes mellitus",
+        "T2DM"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "vitamin-b12-deficiency",
+      "slug": "vitamin-b12-deficiency",
+      "name": "Vitamin B12 deficiency",
+      "synonyms": [
+        "B12",
+        "low B12"
+      ],
+      "locale": "en",
+      "source": "client"
+    },
+    {
+      "id": "vitamin-d-deficiency",
+      "slug": "vitamin-d-deficiency",
+      "name": "Vitamin D deficiency",
+      "synonyms": [
+        "vitamin D",
+        "low vitamin D"
+      ],
+      "locale": "en",
+      "source": "client"
     }
   ],
   "therapies": [
