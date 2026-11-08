@@ -207,7 +207,7 @@ Collections of entities: conditions; programmes; therapies; rooms; doctors; arti
 
 The section controls heading, introduction, selected items or a controlled query, and layout. Entity-specific cards remain separate configurations of `Tile`.
 
-Component: `TileGrid`, with layout `3` (three across from 1000px), `2`, or `feature` (one large tile beside the rest). Choose the layout by count, not by page type. When the list is too long for a photograph per item (all conditions, the full programme list), use `IndexList`; the programmes index uses it for every programme. An A to Z list of short names (Find a programme by condition) uses `GroupedList`.
+Component: `TileGrid`, with layout `3` (three across from 1000px), `2`, or `feature` (one large tile beside the rest). Choose the layout by count, not by page type. When the list is too long for a photograph per item, use `IndexList`. The programmes index is a catalogue of `Tile` rows (`layout="thumb"`) with a small thumbnail each. The conditions A to Z page uses `GroupedList`.
 
 ### Feature Grid
 
@@ -349,7 +349,7 @@ Do not create one component with dozens of conditional fields. Each configuratio
 
 All tiles share: typography (Light title, Regular body); square-cut photographs; hover (photograph scales to 1.02 inside its frame, `--tile-media-scale`, and the title takes a hairline underline; no lift, no shadow); focus ring; the whole tile is one link.
 
-Ratios: listing tiles **4:3** (`--card-media-ratio`). Wide editorial frames **16:9**; doctors **4:5**; tall architecture **3:4**. **21:9** only through `PanoramaCaption`, with `mobileRatio` for phones. Heroes use a height (100svh / 72svh), not a ratio. `layout="row"` puts the photograph beside the text from 760px, for lists of articles or rooms.
+Ratios: listing tiles **4:3** (`--card-media-ratio`). Wide editorial frames **16:9**; doctors **4:5**; tall architecture **3:4**. **21:9** only through `PanoramaCaption`, with `mobileRatio` for phones. Heroes use a height (100svh / 72svh), not a ratio. `layout="row"` puts the photograph beside the text from 760px, for lists of articles or rooms. `layout="thumb"` keeps a small 4:3 thumbnail beside the text at every width, for the programmes catalogue.
 
 **Grids:** `TileGrid` layout follows the count: 3 across, 2 across, or `feature` (one large, the rest beside it). Never an uneven last row. A listing too long for a photograph per item uses `IndexList`.
 
@@ -386,19 +386,30 @@ These are examples, not templates. Each one starts from the page's one idea and 
 ### Programmes index
 
 ```text
-Immersive Hero (HeroFullBleed)
-Index rows: one IndexList row per programme: name (the link), its audience summary, a quieter line of its first four conditions
-Find a programme by condition: an A to Z GroupedList; each condition links to its primary programme and names every programme that lists it; with JavaScript, a search field above the rows filters both by name and synonym
+Immersive Hero (HeroFullBleed), no button
+A line that links to the conditions page
+Catalogue: one Tile row per programme (layout="thumb", size="lg"): small thumbnail, name (h2, the link), audience summary, every condition as a static Tag
 Statement: how a programme is chosen
 Process: how a stay is arranged
 Consultation CTA
 ```
 
-The programmes index is where condition searches land while there are no condition pages (shantara.life D-207, D-208). No tiles, no focus groups, no comparison table.
+No tiles grid, no group title, no focus groups, no comparison table (shantara.life D-215).
+
+### Conditions A to Z
+
+```text
+Editorial Hero (HeroStatement with a side image), no button
+A search field (with JavaScript) above an A to Z GroupedList: each condition links to its primary programme and names every programme that lists it
+Statement: how a programme is chosen
+Consultation CTA
+```
+
+Where condition searches land while there are no condition detail pages (shantara.life D-214). Works without JavaScript.
 
 ### Diabetes
 
-Condition page compositions below apply once condition pages are built (deferred, D-202).
+Condition detail page compositions below apply once condition detail pages are built (deferred, D-214).
 
 ```text
 Editorial Hero

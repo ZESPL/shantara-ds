@@ -1,10 +1,11 @@
 /* Website chrome: header, phone dropdown, menu sheet, footer, and two helpers the screens
    share (PageSlot, siteContactItems). Composition sample, not the production site. */
 
-/* Five items at most (owner decision #6); four today, since there are no condition pages
-   (shantara.life D-202). Contact lives in the phone dropdown and the footer. */
+/* Five items, no more (owner decision #6). Conditions is the A to Z page (shantara.life
+   D-214); there are no condition detail pages. Contact lives in the phone dropdown and the footer. */
 const NAV = [
   { label: "Programmes", view: "programmes" },
+  { label: "Conditions", view: "conditions" },
   { label: "Experience", view: "experience" },
   { label: "About", view: "about" },
   { label: "Journal", view: "journal" },
@@ -437,6 +438,7 @@ function SiteHeader({ view, onNavigate, locale = "en", onLocaleChange }) {
 const FOOTER_COLS = [
   { title: "Programmes & visits", links: [
     { label: "Programmes", view: "programmes" },
+    { label: "Conditions", view: "conditions" },
     { label: "Experience", view: "experience" },
     { label: "Journal", view: "journal" },
   ] },

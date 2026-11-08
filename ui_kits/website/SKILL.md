@@ -93,9 +93,10 @@ Primitives are developer-level (Container, Heading, Button, Form Field, Accordio
 
 ## 4. Information architecture
 
-Top-level navigation has **five items at most**, centred between the logo and the actions on desktop. Today it has four:
+Top-level navigation has **five items, no more**, centred between the logo and the actions on desktop:
 
 - Programmes
+- Conditions
 - Experience
 - About
 - Journal
@@ -109,12 +110,13 @@ URL families are **locale-prefixed for every language, including English**:
 ```text
 /en/programmes
 /en/programmes/[programme-slug]
-/en/conditions/[condition-slug]   (deferred: no condition pages yet)
+/en/conditions                    (A to Z: conditions → programmes)
+/en/conditions/[condition-slug]   (deferred: no condition detail pages yet)
 ```
 
 Root `/` is the x-default entry and redirects to `/en` (or a remembered enabled locale). Do not force locale by IP. Do not leave `/` and `/en` both indexable. Only a published localized URL is canonical.
 
-**Status (shantara.life D-202 to D-208).** The site is programmes only for now. There are no condition pages and no Conditions nav item. Conditions are data: a `conditions` record is `name`, `slug` and `synonyms`, and each programme lists the conditions it is for, in order. They appear under a programme's Who it is for, in the rows and the A to Z **Find a programme by condition** list on `/en/programmes`, in site search and in the programme's schema (`MedicalCondition` with `possibleTreatment`). The rules below govern condition pages when one is built; the slug is already stable.
+**Status (shantara.life D-203 to D-214).** There are no condition detail pages for now. Conditions are data: a `conditions` record is `name`, `slug` and `synonyms`, and each programme lists the conditions it is for, in order. They appear as static tags on the programme's catalogue row on `/en/programmes`, under the programme's Who it is for, on `/en/conditions` (one A to Z page with a search filter, each condition linking to its primary programme), in site search and in the programme's schema (`MedicalCondition` with `possibleTreatment`). The rules below govern condition detail pages when one is built; the slug is already stable.
 
 Do not invent condition-category SEO hubs (`/en/conditions/metabolic-lifestyle/diabetes`). When condition pages exist, group them visually on `/en/conditions` without creating indexable category pages.
 
@@ -286,7 +288,8 @@ These files are **previews** of the skill, not the live site:
 | Sample | Skill page type | Notes |
 | --- | --- | --- |
 | `screens/HomeScreen.js` | home | `HeroFullBleed`, approach, doctors, programme tiles + roomy index, therapies, rooms, journal, FAQ |
-| `screens/ProgrammesScreen.js` | programme listing | `HeroFullBleed`, one `IndexList` row per programme (name, summary, conditions), then Find a programme by condition as an A to Z `GroupedList` |
+| `screens/ProgrammesScreen.js` | programme listing | `HeroFullBleed` without a button, then a full-width catalogue: one `Tile` (`layout="thumb"`) per programme with a small thumbnail, audience summary and conditions as static `Tag`s |
+| `screens/ConditionsScreen.js` | condition A to Z | `HeroStatement` with a side image, every condition as an A to Z `GroupedList` linking to its primary programme; no detail pages |
 | `screens/ProgrammeScreen.js` | programme | Advanced Detox & Cellular Cleansing: `HeroSplit` + booking panel; tariff link, no rates |
 | `screens/ExperienceScreen.js` | experience hub | Therapies, rooms, farm, a day; not one page per room |
 | `screens/AboutScreen.js` | about hub | Story, approach, doctors, editorial policy |

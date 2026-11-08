@@ -18,4 +18,13 @@ Replaces the white card on linen: photograph and text sit directly on the ground
 
 **Content.** One photograph per job. Do not reuse a frame that already appears on the page.
 
-**Responsive.** Stacks everywhere; `layout="row"` sits side by side from 760px. Put tiles in `TileGrid`, which never leaves an uneven last row.
+**Catalogue rows.** The programmes index is one full-width column of `layout="thumb"` `size="lg"` tiles, one per programme: a small thumbnail, the name, the audience summary as `text`, and every condition it lists as `tags` (static Tags, never chips). A long tag wraps onto a second line. No group title.
+
+```jsx
+<Tile layout="thumb" size="lg" headingLevel={2} src={photo} alt="…" title="Metabolic Reversal"
+  text="For type 2 diabetes, prediabetes, fatty liver, high cholesterol and weight at the middle."
+  tags={["Type 2 diabetes", "Prediabetes and insulin resistance", "Fatty liver (NAFLD)"]}
+  href="/en/programmes/metabolic-reversal" />
+```
+
+**Responsive.** Stacks everywhere; `layout="row"` sits side by side from 760px; `layout="thumb"` keeps a 112px thumbnail beside the text on phones and 220px from 760px. Put tiles in `TileGrid`, which never leaves an uneven last row.

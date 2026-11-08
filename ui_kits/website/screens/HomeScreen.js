@@ -111,7 +111,7 @@ function HomeScreen({ onNavigate }) {
             <p style={{ margin: 0, font: "var(--type-body-sm)", color: "var(--text-secondary)", maxWidth: "var(--measure-body)" }}>
               {t("Each programme lists the conditions it is for. The doctor recommends the programme after assessment.")}
             </p>
-            <div><TextLink onClick={() => onNavigate("programmes")}>{t("Find a programme by condition")}</TextLink></div>
+            <div><TextLink onClick={() => onNavigate("conditions")}>{t("Find a programme by condition")}</TextLink></div>
           </div>
         </Section>
       </P>
