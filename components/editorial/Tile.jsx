@@ -1,6 +1,7 @@
 import React from "react";
 import { Media } from "./Media.jsx";
 import { MetaRow } from "./MetaRow.jsx";
+import { Tag } from "../core/Tag.jsx";
 
 /* Replaces the white card on linen. Photograph and text sit directly on the ground,
    with no border, shadow or radius. Order: photograph → title → meta row → text. Category and
@@ -18,6 +19,7 @@ const CSS = `
 .sh-tile-meta{margin:0;font:var(--type-caption);color:var(--text-muted);font-variant-numeric:tabular-nums}
 .sh-tile[data-size="lg"] .sh-tile-title{font:var(--type-title)}
 .sh-tile[data-size="lg"] .sh-tile-text{font:var(--type-body);max-width:56ch}
+.sh-tile-tags{display:flex;flex-wrap:wrap;gap:var(--space-2);margin:var(--space-2) 0 0;padding:0;list-style:none}
 .sh-tile:focus-visible{outline:none;box-shadow:var(--ring-focus)}
 @media (hover: hover) and (pointer: fine){
   .sh-tile[data-href]:hover .sh-media>img{transform:scale(var(--tile-media-scale))}
@@ -37,17 +39,18 @@ function ensure() {
   document.head.appendChild(el);
 }
 
-export function Tile({ media, src, alt = "", ratio = "4:3", title, text, meta, href, onClick, size = "md", layout = "stack", headingLevel = 3, style, ...rest }) {
+/* tags: static Tags under the text, e.g. the conditions a programme is for (catalogue rows). */
+export function Tile({ media, src, alt = "", ratio = "4:3", title, text, meta, tags, href, onClick, size = "md", layout = "stack", headingLevel = 3, style, ...rest }) {
   ensure();
   const interactive = !!(href || onClick);
-  const Tag = interactive ? "a" : "div";
+  const El = interactive ? "a" : "div";
   const H = "h" + headingLevel;
   const figure = media || (src ? <Media src={src} alt={alt} ratio={ratio} /> : null);
   const metaNode = meta == null || meta === false ? null
     : Array.isArray(meta) || typeof meta === "string" ? <MetaRow items={meta} />
     : <div className="sh-tile-meta">{meta}</div>;
   return (
-    <Tag
+    <El
       data-ds-id="editorial/Tile"
       className="sh-tile"
       data-size={size}
@@ -63,7 +66,8 @@ export function Tile({ media, src, alt = "", ratio = "4:3", title, text, meta, h
         <H className="sh-tile-title"><span>{title}</span></H>
         {metaNode}
         {text ? <p className="sh-tile-text">{text}</p> : null}
+        {tags && tags.length ? <ul className="sh-tile-tags">{tags.map((tag) => <li key={tag}><Tag>{tag}</Tag></li>)}</ul> : null}
       </div>
-    </Tag>
+    </El>
   );
 }

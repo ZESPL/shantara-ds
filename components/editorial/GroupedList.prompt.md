@@ -1,4 +1,4 @@
-Short items gathered under group headings: therapies by kind, or conditions A to Z on the programmes index (Find a programme by condition).
+Short items gathered under group headings: therapies by kind, or conditions A to Z on `/en/conditions`.
 
 ```jsx
 <GroupedList columns={3} headingLevel={3} groups={[

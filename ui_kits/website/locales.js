@@ -174,6 +174,7 @@
   const KIT_VIEWS = {
     home: "",
     programmes: "programmes",
+    conditions: "conditions",
     programs: "programmes",
     /* The programme detail sample. */
     programme: "programmes/advanced-detox-cellular-cleansing",
@@ -197,6 +198,7 @@
   const VIEW_FROM_PATH = {
     "": "home",
     programmes: "programmes",
+    conditions: "conditions",
     "programmes/advanced-detox-cellular-cleansing": "programme",
     experience: "experience",
     about: "about",

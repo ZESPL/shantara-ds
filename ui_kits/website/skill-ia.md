@@ -11,6 +11,7 @@ Locale architecture, enabled vs planned languages, and hreflang live in the [web
 Recommended top-level structure:
 
 - Programmes
+- Conditions (one A to Z page)
 - Experience
 - About
 - Journal (articles and Doctor Answers)
@@ -62,7 +63,7 @@ Other named needs (`fatty-liver`, `back-pain`, `menopause`, and similar) remain 
 
 ## Conditions
 
-**Status (shantara.life D-202 to D-208).** The site is programmes only for now. There are no condition pages and no Conditions nav item. Conditions are data: a `conditions` record is `name`, `slug` and `synonyms`, and each programme lists the conditions it is for, in order. They appear under a programme's Who it is for, in the rows and the A to Z **Find a programme by condition** list on `/en/programmes`, in site search and in the programme's schema (`MedicalCondition` with `possibleTreatment`). The rules below govern condition pages when one is built; the slug is already stable.
+**Status (shantara.life D-203 to D-214).** There are no condition detail pages for now. Conditions are data: a `conditions` record is `name`, `slug` and `synonyms`, and each programme lists the conditions it is for, in order. They appear as static tags on the programme's catalogue row on `/en/programmes`, under the programme's Who it is for, on `/en/conditions` (one A to Z page with a search filter, each condition linking to its primary programme), in site search and in the programme's schema (`MedicalCondition` with `possibleTreatment`). The rules below govern condition detail pages when one is built; the slug is already stable.
 
 When condition pages are built, use locale-prefixed URLs, including English:
 
@@ -285,6 +286,7 @@ The Website Kit shows **one thin sample per family**, not every URL above.
 | --- | --- |
 | `/en` | `HomeScreen.js` |
 | `/en/programmes` | `ProgrammesScreen.js` |
+| `/en/conditions` | `ConditionsScreen.js` |
 | `/en/programmes/[slug]` | `ProgrammeScreen.js` (Advanced Detox & Cellular Cleansing) |
 | Experience hub | `ExperienceScreen.js` |
 | About hub | `AboutScreen.js` |

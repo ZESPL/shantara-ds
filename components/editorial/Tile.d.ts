@@ -16,6 +16,8 @@ export interface TileProps extends React.HTMLAttributes<HTMLElement> {
    */
   meta?: string | Array<string | MetaItem> | React.ReactNode;
   text?: React.ReactNode;
+  /** Static Tags under the text, such as the conditions a programme is for. */
+  tags?: string[];
   href?: string;
   onClick?: React.MouseEventHandler;
   /** `lg` for the featured tile in a TileGrid. */
