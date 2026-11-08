@@ -62,7 +62,7 @@ Other named needs (`fatty-liver`, `back-pain`, `menopause`, and similar) remain 
 
 ## Conditions
 
-**Status (shantara.life D-200 to D-206).** The site is programmes only for now. There are no condition pages and no Conditions nav item. Conditions are data: a `conditions` record is `name`, `slug` and `synonyms`, and each programme lists the conditions it is for, in order. They appear under a programme's Who it is for, in the rows and the A to Z **Find a programme by condition** list on `/en/programmes`, in site search and in the programme's schema (`MedicalCondition` with `possibleTreatment`). The rules below govern condition pages when one is built; the slug is already stable.
+**Status (shantara.life D-202 to D-208).** The site is programmes only for now. There are no condition pages and no Conditions nav item. Conditions are data: a `conditions` record is `name`, `slug` and `synonyms`, and each programme lists the conditions it is for, in order. They appear under a programme's Who it is for, in the rows and the A to Z **Find a programme by condition** list on `/en/programmes`, in site search and in the programme's schema (`MedicalCondition` with `possibleTreatment`). The rules below govern condition pages when one is built; the slug is already stable.
 
 When condition pages are built, use locale-prefixed URLs, including English:
 

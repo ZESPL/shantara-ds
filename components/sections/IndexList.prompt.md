@@ -12,7 +12,7 @@ A text-only index for lists too long for photographs: a group label on the left 
 ]} />
 ```
 
-**Programmes index.** One group, every programme a row: `title` the name, `text` the programme's summary, `meta` its first four conditions, `terms` the name plus every condition name and synonym for the page's filter script.
+**Programmes index.** One group, every programme a row: `title` the name, `text` the programme's audience summary, `meta` its first four conditions, `terms` the name plus every condition name and synonym for the page's filter script.
 
 **Use** for conditions and the full programme list, anywhere photographs would repeat. Group labels come from content (a condition's `category`); never invent a taxonomy. Rows without `href` or `onClick` render as plain text with no arrow.
 

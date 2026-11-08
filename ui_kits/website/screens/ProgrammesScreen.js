@@ -1,7 +1,7 @@
 /* Programmes listing: HeroFullBleed → one IndexList row per programme (name, summary, its
    first conditions) → Find a programme by condition (an A to Z GroupedList) → how a
    programme is chosen → ClosingCTA. Composition sample, not the production site.
-   There are no condition pages (shantara.life D-200): a condition links to its primary
+   There are no condition pages (shantara.life D-202): a condition links to its primary
    programme, the one that lists it earliest, then the one earlier in the list. */
 
 function programmeListing() {
@@ -43,7 +43,7 @@ function ProgrammesScreen({ onNavigate }) {
   const { programs, conditions, letters } = programmeListing();
   const rows = programs.map((p) => ({
     title: t(p.name),
-    text: t(p.proposition),
+    text: t(p.audience || p.proposition),
     meta: (p.conditions || []).slice(0, 4).map((id) => (conditions.get(id) || {}).name).filter(Boolean).map(t).join(", ") || undefined,
     href: detail,
     onClick: (e) => { e.preventDefault(); onNavigate("programme"); },

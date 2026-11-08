@@ -387,18 +387,18 @@ These are examples, not templates. Each one starts from the page's one idea and 
 
 ```text
 Immersive Hero (HeroFullBleed)
-Index rows: one IndexList row per programme: name (the link), summary, a quieter line of its first four conditions
+Index rows: one IndexList row per programme: name (the link), its audience summary, a quieter line of its first four conditions
 Find a programme by condition: an A to Z GroupedList; each condition links to its primary programme and names every programme that lists it; with JavaScript, a search field above the rows filters both by name and synonym
 Statement: how a programme is chosen
 Process: how a stay is arranged
 Consultation CTA
 ```
 
-The programmes index is where condition searches land while there are no condition pages (shantara.life D-205, D-206). No tiles, no focus groups, no comparison table.
+The programmes index is where condition searches land while there are no condition pages (shantara.life D-207, D-208). No tiles, no focus groups, no comparison table.
 
 ### Diabetes
 
-Condition page compositions below apply once condition pages are built (deferred, D-200).
+Condition page compositions below apply once condition pages are built (deferred, D-202).
 
 ```text
 Editorial Hero

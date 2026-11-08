@@ -2,7 +2,7 @@
    share (PageSlot, siteContactItems). Composition sample, not the production site. */
 
 /* Five items at most (owner decision #6); four today, since there are no condition pages
-   (shantara.life D-200). Contact lives in the phone dropdown and the footer. */
+   (shantara.life D-202). Contact lives in the phone dropdown and the footer. */
 const NAV = [
   { label: "Programmes", view: "programmes" },
   { label: "Experience", view: "experience" },

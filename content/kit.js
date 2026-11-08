@@ -118,7 +118,7 @@ window.ShantaraContent = {
     "id": "medical-categories",
     "locale": "en",
     "source": "handbook",
-    "note": "Eleven handbook clinical groupings: a staff routing aid, not public IA. The public site has no condition pages or category pages; each condition is a record in content/conditions/ and programmes list the conditions they are for (website D-200, D-201).",
+    "note": "Eleven handbook clinical groupings: a staff routing aid, not public IA. The public site has no condition pages or category pages; each condition is a record in content/conditions/ and programmes list the conditions they are for (website D-202, D-203).",
     "categories": [
       {
         "id": "metabolic-lifestyle",
@@ -252,6 +252,7 @@ window.ShantaraContent = {
       "slug": "advanced-detox-cellular-cleansing",
       "name": "Advanced Detox & Cellular Cleansing",
       "proposition": "A medically supervised programme for guests with ongoing fatigue or long exposure to alcohol, smoking or pollution, and for guests preparing for a weight-loss programme. Meals, fasting where suitable, water therapies, lymphatic massage and rest are planned around liver and digestive health and reviewed each day.",
+      "audience": "For ongoing fatigue and long exposure to alcohol, smoking or city pollution.",
       "durations": [
         14,
         21
@@ -287,6 +288,7 @@ window.ShantaraContent = {
       "slug": "autoimmune-stabilisation",
       "name": "Autoimmune Stabilisation",
       "proposition": "A longer residential programme for guests with a diagnosed autoimmune condition in a stable phase. Meals, gut care, gentle therapies, activity and rest sit alongside the guest's existing medical treatment and are monitored each day.",
+      "audience": "For stable rheumatoid arthritis, lupus, Hashimoto's and inflammatory bowel disease.",
       "durations": [
         21,
         28
@@ -322,6 +324,7 @@ window.ShantaraContent = {
       "slug": "executive-stress-recovery",
       "name": "Executive Stress Recovery",
       "proposition": "A shorter programme for professionals with burnout, long-term stress or poor sleep. A set daily routine, breathing practice, yoga, therapies, meals and time away from work are reviewed with the guest each day.",
+      "audience": "For burnout, long-term stress, poor sleep and headaches in demanding roles.",
       "durations": [
         7,
         14
@@ -359,6 +362,7 @@ window.ShantaraContent = {
       "slug": "gut-microbiome-restoration",
       "name": "Gut & Microbiome Restoration",
       "proposition": "A residential programme for guests with long-standing digestive complaints, including after a course of antibiotics. Plant-based meals, meal timing, therapies and, where suitable, fasting are reviewed with the guest each day.",
+      "audience": "For bloating, IBS, acidity and reflux, constipation and digestion after antibiotics.",
       "durations": [
         14,
         21
@@ -399,6 +403,7 @@ window.ShantaraContent = {
       "slug": "heart-recovery-performance",
       "name": "Heart Recovery & Performance",
       "proposition": "A residential programme for guests in a medically stable phase after a heart attack, angioplasty or bypass surgery, and for guests at high risk of heart disease. Supervised exercise, meals, stress care and therapies follow cardiac rehabilitation principles and are reviewed with the guest each day.",
+      "audience": "For stable recovery after a heart attack, angioplasty or bypass, and high heart risk.",
       "durations": [
         21,
         28
@@ -436,6 +441,7 @@ window.ShantaraContent = {
       "slug": "inflammation-modulation",
       "name": "Inflammation Modulation",
       "proposition": "A residential programme for guests with long-standing inflammation, including raised inflammatory markers, inflammatory arthritis and persistent fatigue. Meals, gut care, stress care, therapies and rest are adjusted at each daily review.",
+      "audience": "For joint stiffness, fatigue and skin flare-ups without an autoimmune diagnosis.",
       "durations": [
         14,
         21,
@@ -475,6 +481,7 @@ window.ShantaraContent = {
       "slug": "liver-restoration",
       "name": "Liver Restoration",
       "proposition": "A residential programme for guests with fatty liver, or with stable liver cirrhosis under their own hepatologist's care. Meals, fasting where suitable, gentle activity, therapies and rest are planned around liver health and reviewed each day.",
+      "audience": "For fatty liver, and stable cirrhosis under the guest's own hepatologist.",
       "durations": [
         21,
         28
@@ -508,6 +515,7 @@ window.ShantaraContent = {
       "slug": "longevity-biological-age-optimisation",
       "name": "Longevity & Biological Age Optimisation",
       "proposition": "A programme for guests over 35 who want a full picture of their health and a plan for the years ahead. An assessment at the start of the stay guides meals, exercise, therapies and rest, which the doctor reviews each day.",
+      "audience": "For adults over 35 who want a full health assessment and a long-term plan.",
       "durations": [
         14,
         21
@@ -539,6 +547,7 @@ window.ShantaraContent = {
       "slug": "mens-vitality-testosterone-optimisation",
       "name": "Men's Vitality & Testosterone Optimisation",
       "proposition": "A residential programme for men with low energy, weight around the middle, hormonal changes linked to stress or mild fertility concerns. Meals, strength exercise, sleep, stress care and therapies are planned after an assessment of hormonal and metabolic health and reviewed each day.",
+      "audience": "For low energy, low testosterone, weight at the middle and mild fertility concerns.",
       "durations": [
         21,
         28
@@ -574,6 +583,7 @@ window.ShantaraContent = {
       "slug": "metabolic-reversal",
       "name": "Metabolic Reversal",
       "proposition": "A residential programme for guests with type 2 diabetes, prediabetes, fatty liver, raised cholesterol or weight around the middle. Prescribed meals, supervised fasting where suitable, exercise and therapies run alongside regular checks of blood sugar, weight and other markers, reviewed by the doctor each day.",
+      "audience": "For type 2 diabetes, prediabetes, fatty liver, high cholesterol and weight at the middle.",
       "durations": [
         14,
         21,
@@ -614,6 +624,7 @@ window.ShantaraContent = {
       "slug": "nutritional-recovery",
       "name": "Nutritional Recovery",
       "proposition": "A residential programme for guests with anaemia, low vitamin B12, vitamin D or folate, or low protein. Prescribed meals, sunlight therapy, gentle activity and rest are planned around the guest's blood results and reviewed each day.",
+      "audience": "For anaemia and low vitamin B12, vitamin D, folate or protein.",
       "durations": [
         14,
         21
@@ -651,6 +662,7 @@ window.ShantaraContent = {
       "slug": "pain-rehabilitation",
       "name": "Pain Rehabilitation",
       "proposition": "A residential programme for long-standing spine, joint and nerve pain, for guests who want care without surgery. Physiotherapy, water and mud therapies, manual therapy, therapeutic yoga, sunlight therapy and meals follow each guest's mobility and are adjusted each day.",
+      "audience": "For slipped discs, sciatica, back and neck pain, arthritis and frozen shoulder.",
       "durations": [
         14,
         21,
@@ -693,6 +705,7 @@ window.ShantaraContent = {
       "slug": "renal-care",
       "name": "Renal Care",
       "proposition": "A residential programme for guests with early-stage kidney conditions who remain under their own nephrologist's care. Meals, fluid intake, blood pressure, blood sugar, gentle activity and therapies are planned with caution and reviewed each day.",
+      "audience": "For early-stage kidney disease, kidney stones and kidney strain from diabetes or BP.",
       "durations": [
         21,
         28
@@ -730,6 +743,7 @@ window.ShantaraContent = {
       "slug": "respiratory-allergy-control",
       "name": "Respiratory & Allergy Control",
       "proposition": "A residential programme for guests with allergic or breathing complaints that are stable, including complaints made worse by city pollution. Breathing practice, steam and water therapies, meals and rest are reviewed with the guest each day.",
+      "audience": "For allergic rhinitis, sinusitis, recurring bronchitis, seasonal allergies and asthma.",
       "durations": [
         7,
         14,
@@ -768,6 +782,7 @@ window.ShantaraContent = {
       "slug": "senior-vitality-geriatric-wellness",
       "name": "Senior Vitality & Geriatric Wellness",
       "proposition": "A residential programme for guests over 55 who want to keep their strength, balance and independence. Exercise therapy, meals, preventive checks, gentle therapies and rest are reviewed with the guest each morning.",
+      "audience": "For guests over 55 managing stiffness, reduced mobility, poor sleep or balance concerns.",
       "durations": [
         14,
         21
@@ -804,6 +819,7 @@ window.ShantaraContent = {
       "slug": "signature-total-transformation",
       "name": "Signature Total Transformation",
       "proposition": "The broadest of the programmes, for guests with more than one long-standing lifestyle condition. Meals, fasting where suitable, therapies, exercise, rest and stress care are combined in one plan that the doctor reviews each day.",
+      "audience": "For guests managing several long-standing lifestyle conditions at once.",
       "durations": [
         21,
         28
@@ -835,6 +851,7 @@ window.ShantaraContent = {
       "slug": "skin-health-restoration",
       "name": "Skin Health Restoration",
       "proposition": "A residential programme for guests with long-standing skin conditions such as psoriasis, eczema or acne. Meals, gut care, water and mud therapies, sunlight therapy and stress care are reviewed with the guest each day, alongside any treatment from the guest's own dermatologist.",
+      "audience": "For psoriasis, eczema, dermatitis, acne and pigmentation.",
       "durations": [
         14,
         21,
@@ -872,6 +889,7 @@ window.ShantaraContent = {
       "slug": "weight-loss-body-sculpt",
       "name": "Weight Loss & Body Sculpt",
       "proposition": "A medically supervised programme for guests who want to lose excess fat and build strength. Prescribed meals, exercise sessions, lymphatic massage and other therapies are adjusted as weight and body measurements are reviewed each morning.",
+      "audience": "For overweight and obesity, weight kept after pregnancy and supervised fat loss.",
       "durations": [
         14,
         21,
@@ -908,6 +926,7 @@ window.ShantaraContent = {
       "slug": "womens-vitality-hormonal-intelligence",
       "name": "Women's Vitality & Hormonal Intelligence",
       "proposition": "A 28-night programme for women with PCOS, irregular cycles, perimenopausal symptoms, fertility concerns or hormonal changes linked to stress. Meals, exercise, therapies, sleep and stress care are planned around the guest's cycle and metabolic health and reviewed each day.",
+      "audience": "For PCOS, irregular or painful cycles, perimenopause, menopause and thyroid imbalance.",
       "durations": [
         28
       ],

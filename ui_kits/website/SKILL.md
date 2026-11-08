@@ -114,7 +114,7 @@ URL families are **locale-prefixed for every language, including English**:
 
 Root `/` is the x-default entry and redirects to `/en` (or a remembered enabled locale). Do not force locale by IP. Do not leave `/` and `/en` both indexable. Only a published localized URL is canonical.
 
-**Status (shantara.life D-200 to D-206).** The site is programmes only for now. There are no condition pages and no Conditions nav item. Conditions are data: a `conditions` record is `name`, `slug` and `synonyms`, and each programme lists the conditions it is for, in order. They appear under a programme's Who it is for, in the rows and the A to Z **Find a programme by condition** list on `/en/programmes`, in site search and in the programme's schema (`MedicalCondition` with `possibleTreatment`). The rules below govern condition pages when one is built; the slug is already stable.
+**Status (shantara.life D-202 to D-208).** The site is programmes only for now. There are no condition pages and no Conditions nav item. Conditions are data: a `conditions` record is `name`, `slug` and `synonyms`, and each programme lists the conditions it is for, in order. They appear under a programme's Who it is for, in the rows and the A to Z **Find a programme by condition** list on `/en/programmes`, in site search and in the programme's schema (`MedicalCondition` with `possibleTreatment`). The rules below govern condition pages when one is built; the slug is already stable.
 
 Do not invent condition-category SEO hubs (`/en/conditions/metabolic-lifestyle/diabetes`). When condition pages exist, group them visually on `/en/conditions` without creating indexable category pages.
 
