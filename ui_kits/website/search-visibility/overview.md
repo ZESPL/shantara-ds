@@ -74,6 +74,7 @@ Recorded on 25 September 2026 and 23 October 2026. The rules below already follo
 
 ## Change log
 
+- **1.17, 8 November 2026.** Adopted from the website's D-217. The programmes index is the hero, a centred condition search and the catalogue, with nothing after it; the same search sits on `/en/conditions`. The footer link reads "Conditions A to Z". No schema change.
 - **1.16, 8 November 2026.** Adopted from the website's D-216. `/en/conditions` is a plain A to Z index with a search field and a compact hero, linked from the footer, not the nav. No schema change.
 - **1.15, 8 November 2026.** Adopted from the website's D-214 and D-215. `/en/conditions` is one A to Z page that links each condition to its primary programme; there are still no condition detail pages, and Conditions is back in the nav. The programmes index is a catalogue of rows with a small thumbnail and condition tags. No schema change.
 - **1.14, 8 November 2026.** Programmes only, adopted from the website's D-202 to D-212. There are no condition pages for now; conditions are data (name, slug, synonyms) that programmes list. SCHEMA-05 and SCHEMA-10: a programme page emits one `MedicalCondition` per listed condition with `possibleTreatment` → the programme, and its page node's `about` names them. Retired programme and condition URLs from the previous site 301 to the closest programme. SKILL.md, skill-ia.md, skill-content.md and skill-sections.md say the same.

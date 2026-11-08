@@ -1,11 +1,11 @@
 /* Programmes listing: HeroFullBleed (no button) → a full-width catalogue, one Tile row per
-   programme (small thumbnail, name, audience summary, conditions as static Tags) → how a
-   programme is chosen → ClosingCTA. Conditions A to Z are on ConditionsScreen.
-   Composition sample, not the production site (shantara.life D-215). */
+   programme (small thumbnail, name, audience summary, conditions as static Tags) → a centred
+   "Explore all conditions" link. Nothing follows. The production page adds a centred condition
+   search above the catalogue. Composition sample, not the production site (shantara.life D-217). */
 
 function ProgrammesScreen({ onNavigate }) {
   const { t } = window.ShantaraI18n.useLocale();
-  const { Breadcrumbs, HeroFullBleed, Section, Tile, Statement, TextLink, ClosingCTA, Button } = window.ShantaraDesignSystem_45bbe4;
+  const { Breadcrumbs, HeroFullBleed, Section, Tile, TextLink } = window.ShantaraDesignSystem_45bbe4;
   const P = window.PageSlot;
   const L = window.ShantaraLocales;
   const locale = window.ShantaraI18n.currentLocaleCode();
@@ -32,10 +32,6 @@ function ProgrammesScreen({ onNavigate }) {
 
       <P id="programmes/list">
         <Section>
-          <p style={{ margin: "0 0 var(--stack-lg)", font: "var(--type-body)", color: "var(--text-secondary)", maxWidth: "var(--measure-body)" }}>
-            {t("Each programme lists the conditions it is for.")}{" "}
-            <TextLink onClick={() => onNavigate("conditions")}>{t("Find a programme by condition")}</TextLink>
-          </p>
           <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
             {programs.map((p) => (
               <li key={p.id} style={{ padding: "var(--space-6) 0", borderTop: "var(--border-width) solid var(--rule-color)" }}>
@@ -54,28 +50,12 @@ function ProgrammesScreen({ onNavigate }) {
               </li>
             ))}
           </ul>
+          <p style={{ margin: "var(--stack-lg) 0 0", textAlign: "center", maxWidth: "none" }}>
+            <TextLink onClick={() => onNavigate("conditions")}>{t("Explore all conditions")}</TextLink>
+          </p>
         </Section>
       </P>
 
-      <P id="programmes/choose">
-        <Section ground="stone">
-          <Statement sub={t("After an enquiry, the team calls to arrange a consultation with a naturopathy doctor. The doctor recommends the programme and the length of stay, and confirms the plan after an assessment on arrival.")}>
-            {t("How a programme is chosen")}
-          </Statement>
-        </Section>
-      </P>
-
-      <P id="programmes/closing">
-        <ClosingCTA
-          variant="photo"
-          src={window.photoSrc("porch-dusk-lit-canopy")}
-          alt={t("The porch at dusk")}
-          title={t("Which programme fits?")}
-          sub={t("Send an enquiry and the team will call to talk through which programme fits.")}
-          action={<Button size="lg" onClick={() => { if (L) L.track("consultation_cta_click", { page_type: "programmes", content_id: "programmes", content_name: "Programmes", cta_location: "closing" }); onNavigate("booking"); }}>{t("Make an Inquiry")}</Button>}
-          contact={window.siteContactItems(t)}
-        />
-      </P>
     </main>
   );
 }

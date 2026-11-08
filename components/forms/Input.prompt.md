@@ -2,6 +2,10 @@ Text field for all single-line entry.
 
 ```jsx
 <Input label="Email" type="email" placeholder="you@example.com" required hint="We only email about your booking." />
+
+{/* Condition search on the programmes and conditions pages: the placeholder carries the hint,
+    the label stays for screen readers (visually hidden), centred, at most 36rem wide. */}
+<Input label="Search by condition" type="search" placeholder="Search for conditions like diabetes, back pain or PCOS." />
 <Input label="Guests" error="Maximum 6 guests per suite." defaultValue="8" />
 <Input label="Search treatments" startIcon={<Icon name="search" size={16} />} />
 ```
