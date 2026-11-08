@@ -45,7 +45,7 @@ Medical categories ([`content/medical-categories.json`](../../content/medical-ca
 
 | Collection | Its own fields | Page |
 | --- | --- | --- |
-| Condition | name; slug; synonyms (lay terms and abbreviations for the filter and site search). A condition page, when one is built, adds summary, clinical body (Markdoc), medical reviewer (doctor) and last medically reviewed. | No detail page yet (D-214); conditions are listed A to Z on `/en/conditions`. A future detail page is `/en/conditions/[slug]`. |
+| Condition | name; slug; synonyms (lay terms and abbreviations for the filter and site search). A condition page, when one is built, adds summary, clinical body (Markdoc), medical reviewer (doctor) and last medically reviewed. | No detail page yet (D-216); conditions are listed A to Z on `/en/conditions`. A future detail page is `/en/conditions/[slug]`. |
 | Programme | name; slug; proposition; audience (one sentence of at most 90 characters starting "For": the listing row's line); durations (nights); conditions (ordered list of condition IDs); suitability (who the stay suits when that is not a condition); order; inclusions; clinicians (doctors). No `focus`. **No prices.** | `/en/programmes/[slug]` |
 | Therapy | name; slug; description; purpose; how it is used at Shantara | One `/en/therapies` page for all therapies. No page per therapy. |
 | Room | name; slug; summary; size; specification (`spec_line`); occupancy; balcony; amenities; gallery. **No prices.** | One `/en/rooms` page for all room categories. No page per room. |
