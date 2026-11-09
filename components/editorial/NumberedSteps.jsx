@@ -13,7 +13,7 @@ const CSS = `
 .sh-step-n{font:var(--weight-light) var(--text-lg)/1.3 var(--font-display);color:var(--text-brand);font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1;white-space:nowrap}
 .sh-step-body{min-width:0}
 .sh-step-title{margin:0;font:var(--type-item);color:var(--text-primary)}
-.sh-step-text{margin:var(--space-3) 0 0;font:var(--type-body-sm);color:var(--text-secondary);max-width:52ch}
+.sh-step-text{margin:var(--space-3) 0 0;font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-body)}
 .sh-steps[data-rules="false"] .sh-step{border-top:0;padding-top:0}
 @media (min-width:760px){.sh-steps[data-orientation="horizontal"][data-columns="2"],.sh-steps[data-orientation="horizontal"][data-columns="3"],.sh-steps[data-orientation="horizontal"][data-columns="4"]{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (min-width:1000px){

@@ -34,7 +34,7 @@ export function NotFoundSection({ title = "We couldn't find that page", sub = "T
   ensure();
   return (
     <div data-ds-id="sections/NotFoundSection" className="sh-404" style={style} {...rest}>
-      <Statement as={"h" + headingLevel} size="h1" sub={sub} measure="20ch">{title}</Statement>
+      <Statement as={"h" + headingLevel} size="h1" sub={sub} measure="title">{title}</Statement>
       <form className="sh-404-search" role="search" action={searchAction} method="get">
         <Input label={searchLabel} name="q" type="search" startIcon={<Icon name="search" size={18} />} />
         <Button type="submit" variant="secondary" size="lg">Search</Button>

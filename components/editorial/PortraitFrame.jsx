@@ -11,7 +11,7 @@ const CSS = `
 .sh-portrait .sh-media{background:color-mix(in srgb, var(--color-pearl-bush) 82%, var(--color-pine-tree))}
 .sh-portrait-name{margin:0;font:var(--weight-regular) var(--text-lg)/1.3 var(--font-display);color:var(--text-primary)}
 .sh-portrait-role{margin:var(--space-2) 0 0;font:var(--type-body-sm);color:var(--text-secondary)}
-.sh-portrait-detail{margin:var(--space-3) 0 0;font:var(--type-caption);color:var(--text-muted);max-width:36ch}
+.sh-portrait-detail{margin:var(--space-3) 0 0;font:var(--type-caption);color:var(--text-muted);max-width:var(--measure-narrow)}
 `;
 
 function ensure() {

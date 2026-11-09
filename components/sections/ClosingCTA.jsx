@@ -92,7 +92,7 @@ export function ClosingCTA({ variant, ground = "pine", src, alt = "", position, 
       <div className={"sh-close-body" + (v === "photo" ? " sh-photo-text" : "")}>
         <div className="sh-container">
           <div className="sh-close-row">
-            <Statement as={titleAs} size={compact ? "h3" : "statement"} sub={sub} measure={compact ? "32ch" : undefined}>{heading}</Statement>
+            <Statement as={titleAs} size={compact ? "h3" : "statement"} sub={sub} measure={compact ? "heading" : undefined}>{heading}</Statement>
             {acts ? <div className="sh-actions sh-close-actions" data-stack="mobile">{acts}</div> : null}
           </div>
           <Contact contact={contact} />

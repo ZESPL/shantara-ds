@@ -28,7 +28,7 @@ export interface HeroStatementProps extends React.HTMLAttributes<HTMLElement> {
   /** Headline size. Default `h1`. */
   size?: "display" | "h1" | "statement";
   titleAs?: "h1" | "h2";
-  /** Headline line length. Default `22ch`. */
-  measure?: string;
+  /** Headline measure token. Default `title` (`--measure-title`); policy pages pass `heading`. */
+  measure?: "title" | "heading" | "body";
 }
 export declare function HeroStatement(props: HeroStatementProps): JSX.Element;

@@ -5,13 +5,13 @@ import React from "react";
    at a 68ch measure with the body rhythm. Wide children (figure[data-width="wide"],
    tables) may break out of the measure up to the container. */
 const CSS = `
-.sh-prose{--_measure:68ch;max-width:var(--_measure);font:var(--type-body);color:var(--text-primary);min-width:0;overflow-wrap:break-word}
+.sh-prose{--_measure:var(--measure-body);max-width:var(--_measure);font:var(--type-body);color:var(--text-primary);min-width:0;overflow-wrap:break-word}
 .sh-prose[data-size="lg"]{font:var(--type-lead)}
 .sh-prose>*{margin-block:0}
 .sh-prose>*+*{margin-top:1.1em}
 .sh-prose>:first-child{margin-top:0}
-.sh-prose h2{font:var(--type-h3);color:var(--text-primary);margin-top:2.2em;text-wrap:balance;scroll-margin-top:calc(var(--space-12) + 24px)}
-.sh-prose h3{font:var(--type-h4);color:var(--text-primary);margin-top:1.9em;text-wrap:balance;scroll-margin-top:calc(var(--space-12) + 24px)}
+.sh-prose h2{font:var(--type-h3);color:var(--text-primary);margin-top:2.2em;scroll-margin-top:calc(var(--space-12) + 24px)}
+.sh-prose h3{font:var(--type-h4);color:var(--text-primary);margin-top:1.9em;scroll-margin-top:calc(var(--space-12) + 24px)}
 .sh-prose h4{font:var(--type-item-sm);margin-top:1.6em}
 .sh-prose h2+*,.sh-prose h3+*,.sh-prose h4+*{margin-top:0.6em}
 .sh-prose p{text-wrap:pretty}
@@ -28,7 +28,7 @@ const CSS = `
 .sh-prose blockquote footer,.sh-prose blockquote cite{display:block;margin-top:var(--space-3);font:var(--type-body-sm);font-style:normal;color:var(--text-secondary)}
 .sh-prose figure{margin-inline:0;margin-block:2em}
 .sh-prose figure img{display:block;width:100%;height:auto}
-.sh-prose figcaption{margin-top:var(--space-3);font:var(--type-caption);color:var(--text-muted);max-width:60ch}
+.sh-prose figcaption{margin-top:var(--space-3);font:var(--type-caption);color:var(--text-muted);max-width:var(--measure-body)}
 .sh-prose hr{border:0;height:1px;background:var(--rule-color);margin-block:2.4em}
 .sh-prose table{width:100%;border-collapse:collapse;font:var(--type-body-sm);font-variant-numeric:tabular-nums}
 @media (max-width:759.98px){.sh-prose table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}}

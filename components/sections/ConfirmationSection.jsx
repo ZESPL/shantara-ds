@@ -56,7 +56,7 @@ export function ConfirmationSection({ title = "Inquiry received", sub, next = []
     <div data-ds-id="sections/ConfirmationSection" className="sh-conf" ref={ref} style={style} {...rest}>
       <div className="sh-conf-main" role="status">
         <span className="sh-conf-mark" aria-hidden="true"><Icon name="check" size={24} /></span>
-        <Statement as={"h" + headingLevel} size="h1" sub={sub} actions={actions} measure="22ch">{title}</Statement>
+        <Statement as={"h" + headingLevel} size="h1" sub={sub} actions={actions} measure="title">{title}</Statement>
         {next.length ? (
           <div>
             <p className="sh-conf-label">{nextLabel}</p>

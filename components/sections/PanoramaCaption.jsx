@@ -19,9 +19,9 @@ const CSS = `
 .sh-pano-film>.sh-media-scrim{position:absolute;inset:0;z-index:1;pointer-events:none;background:var(--scrim-hero)}
 .sh-pano-cap{align-self:end;width:100%;padding-block:var(--section-y-sm)}
 .sh-pano-cap .sh-container{display:flex;flex-direction:column;gap:var(--space-4)}
-.sh-pano-title{margin:0;font:var(--type-title);color:var(--text-primary);max-width:26ch}
-.sh-pano-sub{margin:0;font:var(--type-body-sm);color:var(--text-secondary);max-width:52ch}
-@media (min-width:1000px){.sh-pano-title{font:var(--type-statement);max-width:24ch}}
+.sh-pano-title{margin:0;font:var(--type-title);color:var(--text-primary);max-width:var(--measure-title)}
+.sh-pano-sub{margin:0;font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-body)}
+@media (min-width:1000px){.sh-pano-title{font:var(--type-statement);max-width:var(--measure-title)}}
 @media (min-width:1000px){
   .sh-pano-box{padding:var(--section-y-sm) var(--layout-gutter)}
   .sh-pano-box>.sh-pano{max-width:var(--layout-max);margin-inline:auto}
