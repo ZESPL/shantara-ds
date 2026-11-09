@@ -27,7 +27,7 @@ The closing call to action (deck slide 18). **Use ClosingCTA only on pages that 
 
 **Contact row.** Pass items, not loose inline elements: every item is the same 44px inline-flex box, so links and plain text share a baseline; icons are optional per item (all or none). One row on wide screens, wrapping as needed; one per line under 520px.
 
-**Photo variant lead.** The `sub` is set in the lead type (`--type-lead`), like a hero's lead (website D-222).
+**Photo variant type.** The title is set at the H1 size (`--type-h1`) and the `sub` in the lead type (`--type-lead`), like a hero's title and lead (website D-222). The title keeps its `h2` element.
 
 **Photo variant ink.** Over the photograph every line (sub, contact text and contact icons) is solid Merino (no faded Merino, no Gold), and the text block carries its own scrim so a headline that wraps high on a phone is never left on bright sky.
 
