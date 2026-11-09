@@ -46,7 +46,7 @@ src/
   copy/en/                    ← fixed-page copy, written in code, typed, not in Keystatic
     home.ts
     therapies.ts  rooms.ts  amenities-activities.ts  farm-dining.ts  a-day-at-shantara.ts
-    our-story.ts  our-approach.ts  our-doctors.ts
+    our-story.ts  naturopathy.ts  our-doctors.ts
     conditions.ts  programs.ts  journal.ts  faq.ts  tariff.ts  contact.ts  make-an-inquiry.ts
     policies/
       admission-criteria.md  house-rules.md  guest-rights.md
@@ -98,7 +98,7 @@ tests/                Playwright: 4–5 smoke tests only
 - **Singletons** use `{singleton}/{locale}.json`.
 - **File format.** An entry with a long-form Markdoc body is `.mdoc`, with its other fields in frontmatter. Everything else is `.json`. Field names match the design-system records in [`content/`](../../content/).
 - **English is the master.** A translated file holds only translatable text. Images, video, related pages, featured flags and every price come from English ([Languages](skill-content.md#languages)). This covers `tariff/{locale}.json` too: a translation may carry labels, terms and notes, never amounts.
-- **`related_pages` types** are `condition`, `program`, `therapy`, `room`, `doctor`, `article`, `doctor_answer` and `page`. A `page` ID is a fixed-route key from `lib/routes.ts`, such as `our-approach`.
+- **`related_pages` types** are `condition`, `program`, `therapy`, `room`, `doctor`, `article`, `doctor_answer` and `page`. A `page` ID is a fixed-route key from `lib/routes.ts`, such as `naturopathy`.
 
 ## Route table
 
@@ -117,7 +117,7 @@ Every URL carries a locale prefix, and `check-routes.mjs` enforces it ([Build ch
 | `/en/farm-dining` | `farm-dining.astro` | `copy/en/farm-dining.ts` | `WebPage` + `BreadcrumbList` |
 | `/en/a-day-at-shantara` | `a-day-at-shantara.astro` | `copy/en/a-day-at-shantara.ts` shown in a `TimeTable` | `WebPage` + `BreadcrumbList` |
 | `/en/our-story` | `our-story.astro` | copy and the founder's `leadership` record | `AboutPage` + `BreadcrumbList` |
-| `/en/our-approach` | `our-approach.astro` | copy, with the guest journey shown in `NumberedSteps` | `AboutPage` + `BreadcrumbList` |
+| `/en/naturopathy` | `naturopathy.astro` | copy: the principles, what the guest experiences, what a stay adds, the treatments from the Therapies collection (website D-219) | `AboutPage` + `BreadcrumbList` |
 | `/en/our-doctors` | `our-doctors.astro` | every practising doctor (not the founder), one section each with `id="{slug}"` | `AboutPage` + `ItemList` + `BreadcrumbList`. The `ItemList` refers to each practising doctor's `Person` node by `@id` |
 | `/en/pa-kareem` | `pa-kareem.astro` | the founder's `leadership` record, with his press, talks, videos and social posts. He is not a doctor, so the page has no answers, reviewed articles or programmes | `ProfilePage` + `Person` + `BreadcrumbList` |
 | `/en/doctors/bahja-janu` | `doctors/[slug].astro`, whose paths come from `DOCTOR_PROFILES` only | doctor, plus their answers, reviewed articles, programmes, press, talks, videos and social posts | `ProfilePage` + `Person` + `BreadcrumbList` |
@@ -168,7 +168,7 @@ The copy for these pages is written in code (`src/copy/en/`). Facts come from th
 | Organic Farm & Dining | Handbook §11 | The handbook says meals are part of treatment and "not a restaurant menu". Show "An example day of meals" and say that the doctor prescribes each guest's diet. Meal and juice timings are in handbook §11. |
 | A Day at Shantara | Handbook §12 (daily routine) and §13 | Use the daily routine timings from handbook §12. Say that the doctor prescribes which treatments fill the morning and afternoon slots. The name follows Shantara, never Welnez. |
 | Our Story | Handbook §2 | Use the history paragraph in that section, and nowhere else. Do not date Shantara to 2000. Mention Welnez only as the former name, and only if the history needs it. |
-| Our Approach | Handbook, naturopathy principles and the guest journey | Describe the journey as enquiry → consultation → stay → going home. Do not use hospital words such as "discharge" or "patients". [AGENTS.md](../../AGENTS.md) bans "patients" on public pages. |
+| Naturopathy | Handbook "Our approach" (the six principles), therapies.md, food.md, stay.md | What naturopathy is and what a guided stay adds; no booking steps (website D-219). Do not use hospital words such as "discharge" or "patients". [AGENTS.md](../../AGENTS.md) bans "patients" on public pages. |
 | Our Doctors | `content/doctors/` | Each doctor gets a photo, name, qualification, areas of practice and a **Make an Inquiry** button. Dr. Bahja also links to her profile page. Show only public, visible credentials. The founder, P.A. Kareem, is not a doctor and is not on this page. |
 | Guest, policy and about pages | The lists in [skill-ia.md](skill-ia.md#utility-pages) | Do not invent text. Cancellation has no copy file; it renders from the tariff. |
 

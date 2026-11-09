@@ -116,7 +116,7 @@ Do not overload it with programme tables, long copy, or multiple data points.
 
 Purpose: establish topic clearly; support educational/medical content; prioritize readability.
 
-Typical uses: Conditions; Therapies; Our Approach; Clinical Guides; Doctor Answers; Articles.
+Typical uses: Conditions; Therapies; Naturopathy; Clinical Guides; Doctor Answers; Articles.
 
 Typical fields: title; category in the meta row below it; summary; optional image; optional author/reviewer metadata; optional updated/reviewed date.
 
@@ -526,16 +526,16 @@ Rich Content
 Consultation CTA
 ```
 
-### Our Approach
+### Naturopathy
+
+Replaces Our Approach (website D-219).
 
 ```text
-Editorial Hero
-Rich Content
-Feature Grid
-Process
-Media + Content
-Expert Section
-FAQ
+Full-bleed Hero (cover image)
+Philosophy (Statement + PlainList of the six principles)
+Practice (TileGrid: what the guest experiences)
+Stay: at-home opening, Band Statement (the page's one accent), At home / At Shantara SpecTable, medication note, Treatments at Shantara, BNYS line
+Rhythm (Statement + Programmes and house-guidelines links)
 Consultation CTA
 ```
 

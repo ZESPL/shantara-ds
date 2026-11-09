@@ -10,6 +10,7 @@ Locale architecture, enabled vs planned languages, and hreflang live in the [web
 
 Recommended top-level structure:
 
+- Naturopathy (`/en/naturopathy`: what naturopathy is and what a stay adds; website D-218)
 - Programmes
 - Experience
 - About
@@ -134,13 +135,12 @@ Pages:
 
 ```text
 /en/our-story
-/en/our-approach
 /en/our-doctors
 /en/pa-kareem
 /en/doctors/bahja-janu
 ```
 
-Medical Editorial Policy also sits under About.
+Medical Editorial Policy also sits under About. The former `/en/our-approach` is folded into `/en/naturopathy`, a top-level nav item (website D-219).
 
 Accreditations and Sustainability are standing pages. Their URLs are under [Utility pages](#utility-pages).
 
