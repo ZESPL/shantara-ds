@@ -212,7 +212,7 @@ The form already captures its context (source page, page type, content id). Use 
 | --- | --- | --- | --- | --- |
 | Inquiry · `/en/make-an-inquiry`, home, header, any page without its own row | Inquiry received | Call, WhatsApp, email | A day at Shantara · Our doctors · Tariff page | Back to home |
 | Inquiry · a programme page | Inquiry received | Call, WhatsApp, email | The doctors on that programme (`/en/our-doctors#{slug}`) · A day at Shantara · Tariff page | Back to the programme |
-| Inquiry · a condition page | Inquiry received | Call, WhatsApp, email | The programme for that condition · A Doctor Answer or Clinical Guide on that condition · Our approach | Back to the condition |
+| Inquiry · a condition page | Inquiry received | Call, WhatsApp, email | The programme for that condition · A Doctor Answer or Clinical Guide on that condition · Naturopathy | Back to the condition |
 | Inquiry · a doctor profile or Our doctors | Inquiry received | Call, WhatsApp, email | That doctor's answers (Journal) · A day at Shantara · Tariff page | Back to the doctor |
 | Inquiry · a Journal article or Doctor Answer | Inquiry received | Call, WhatsApp, email | The programme or condition the article is about · Our doctors · A day at Shantara | Back to the article |
 | Ask the Doctor (popup) | Question received | Email | More Doctor Answers (`/en/journal`) · The doctor's profile or section · Make an Inquiry, as the last card only | Close, back to the page |

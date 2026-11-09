@@ -123,7 +123,7 @@ Create a condition page only when Shantara can provide original content, a legit
 
 Experience pages (typical, not mandatory as individual URLs): Therapies, Rooms & Suites, Amenities & Activities, Farm & Dining, A Day at Shantara. Do not create a page per therapy or room category by default.
 
-About: Our Story, Our Approach, Our Doctors, Medical Editorial Policy.
+Naturopathy (top level, website D-218). About: Our Story, Our Doctors, Medical Editorial Policy.
 
 Utility, guest, policy and about pages are in [skill-ia.md](skill-ia.md), with the rest of the inventory, publishing families and URL rules. That file also holds the last-updated line, the contact for questions, and the links from the booking confirmation and the tariff letter.
 

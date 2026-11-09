@@ -79,7 +79,7 @@ Jobs are the families in [skill-ia.md](skill-ia.md). The template is still the p
 | Farm and dining | `default` | Meals during the stay | Your doctor plans them with the programme. |
 | A day at Shantara | `default` | A day at the retreat | An example day. Each stay is planned. |
 | Our Story | `editorial` | How Shantara began | P.A. Kareem's naturopathy practice. The parent hospital is named only in that story. |
-| Our Approach | `editorial` | How a stay is planned | Consultation, the stay, then going home. |
+| Naturopathy | `default` (the cover photograph) | Naturopathy at Shantara | A residential naturopathy programme, planned by doctors. (website D-219) |
 | Our Doctors | `editorial` | The doctors at Shantara | Qualifications, practice and how to consult. |
 | Doctor profile | `programme` | The doctor's name | Qualification, or the role if there is no qualification. |
 | Founder profile (`/en/pa-kareem`) | `programme` | His name | Qualification, or the role if there is no qualification. He is not a doctor: this is not a doctor profile. |
@@ -115,7 +115,7 @@ An article's `category` is the subtype (Clinical Guide, Guest Story, Food & Reci
 | --- | --- | --- | --- |
 | `default` | `HeroFullBleed` | Full-bleed photograph, `--scrim-hero` behind the text, `--scrim-header` behind the wordmark | Home; the Experience pages (`/en/therapies`, `/en/rooms`, `/en/amenities-activities`, `/en/farm-dining`, `/en/a-day-at-shantara`); any page that sets no template |
 | `programme` | `HeroSplit` | Merino text column, photograph on the right at 40% of the width | Programme and condition detail pages, the founder's profile (`/en/pa-kareem`), doctor profiles (`/en/doctors/{slug}`), Tariffs, Make an Inquiry |
-| `editorial` | `HeroStatement`, `ArticleHeader` | Merino, rosette band on the right edge | Conditions and Programmes indexes; About pages (Our Story, Our Approach, Our Doctors, Medical Editorial Policy); the Journal index; every Journal entry (articles, Clinical Guides, Evidence Notes, Doctor Answers, Guest Stories); FAQ, Contact and the policy pages |
+| `editorial` | `HeroStatement`, `ArticleHeader` | Merino, rosette band on the right edge | Conditions and Programmes indexes; About pages (Our Story, Our Doctors, Medical Editorial Policy); the Journal index; every Journal entry (articles, Clinical Guides, Evidence Notes, Doctor Answers, Guest Stories); FAQ, Contact and the policy pages |
 
 **The template follows the page's hero.** A page type not listed here uses the template that matches its hero. Do not add a fourth template; a page that seems to need one uses the closest of the three.
 
