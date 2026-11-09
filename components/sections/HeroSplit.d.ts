@@ -39,7 +39,7 @@ export interface HeroSplitProps extends React.HTMLAttributes<HTMLElement> {
   minHeight?: string;
   size?: "display" | "h1" | "statement";
   titleAs?: "h1" | "h2";
-  /** Headline measure. Default 18ch. */
-  measure?: string;
+  /** Headline measure token. Default `title` (`--measure-title`). */
+  measure?: "title" | "heading" | "body";
 }
 export declare function HeroSplit(props: HeroSplitProps): JSX.Element;

@@ -6,8 +6,8 @@ import { Media } from "./Media.jsx";
    (inside Prose); "full" fills the container. */
 const CSS = `
 .sh-afig{margin:2em 0;min-width:0}
-.sh-afig[data-width="prose"]{max-width:68ch}
-.sh-afig-cap{display:flex;flex-wrap:wrap;gap:var(--space-1) var(--space-4);margin-top:var(--space-3);font:var(--type-caption);color:var(--text-muted);max-width:68ch}
+.sh-afig[data-width="prose"]{max-width:var(--measure-body)}
+.sh-afig-cap{display:flex;flex-wrap:wrap;gap:var(--space-1) var(--space-4);margin-top:var(--space-3);font:var(--type-caption);color:var(--text-muted);max-width:var(--measure-body)}
 .sh-afig-cap>span:first-child{color:var(--text-secondary)}
 `;
 

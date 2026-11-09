@@ -5,7 +5,7 @@ import React from "react";
 const CSS = `
 .sh-num{display:flex;flex-direction:column;gap:var(--space-4);min-width:0}
 .sh-num-value{font:var(--type-numeral);font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1;color:var(--text-primary);letter-spacing:-0.01em}
-.sh-num-label{font:var(--type-body-sm);color:var(--text-secondary);max-width:24ch}
+.sh-num-label{font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-narrow)}
 `;
 
 function ensure() {

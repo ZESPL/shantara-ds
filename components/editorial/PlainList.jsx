@@ -10,7 +10,7 @@ const CSS = `
 .sh-plist[data-size="sm"]>li{font:var(--type-body-sm)}
 .sh-plist[data-rules="true"]>li{padding-top:var(--space-4);border-top:var(--border-width) solid var(--rule-color)}
 .sh-plist-title{display:block;font:var(--type-item-sm);color:var(--text-primary)}
-.sh-plist-text{display:block;margin-top:var(--space-2);font:var(--type-body-sm);color:var(--text-secondary);max-width:44ch}
+.sh-plist-text{display:block;margin-top:var(--space-2);font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-narrow)}
 .sh-plist[data-marker="numeral"]{grid-template-columns:minmax(0,1fr);gap:0;counter-reset:sh-plist}
 .sh-plist[data-marker="numeral"]>li{counter-increment:sh-plist;display:grid;grid-template-columns:3.5rem minmax(0,1fr);gap:var(--space-5);align-items:baseline;padding-block:var(--space-6);border-top:var(--border-width) solid var(--rule-color);font:var(--type-item);max-width:none}
 .sh-plist[data-marker="numeral"]>li:last-child{border-bottom:var(--border-width) solid var(--rule-color)}

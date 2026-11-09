@@ -59,10 +59,17 @@
 --tracking-wide:0.06em; /* @kind font */
 --tracking-normal:0; /* @kind font */
 
-/* Line length */
---measure-statement:40ch; /* @kind other */
+/* Line length: the only four measures. Every max-width on text reads one of these; a
+   literal ch value in a component fails scripts/check-measure.mjs. ch scales with the
+   text size, so the measures hold at every text-scale step.
+   title   display and h1 titles, hero headlines
+   heading h2–h6, section statements, quotes
+   body    paragraphs, leads, subs, article text (about 70–75 characters)
+   narrow  card text, captions, notes, short supporting lines */
 --measure-title:22ch; /* @kind other */
---measure-body:62ch; /* @kind other */
+--measure-heading:36ch; /* @kind other */
+--measure-body:65ch; /* @kind other */
+--measure-narrow:45ch; /* @kind other */
 
 /* Composite roles — the Shantara type system.
    display 40→64 Light · h1 34→48 Light · h2 28→38 Regular · h3 24→30 Medium · h4 24 Medium

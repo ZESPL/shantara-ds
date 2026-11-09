@@ -53,7 +53,7 @@ function ensure() {
 
 const MR = { "4:3": "var(--media-ratio)", "4:5": "var(--media-ratio-portrait)", "3:2": "3 / 2", "16:9": "var(--media-ratio-wide)", "1:1": "1 / 1" };
 
-export function HeroSplit({ media, video, src, alt = "", position, mobilePosition, title, sub, actions, meta, breadcrumbs, facts, mediaSide = "end", split = "50", ground = "merino", mobileRatio = "4:3", mobileMediaFirst = false, bleed = true, minHeight, size = "h1", titleAs = "h1", measure = "18ch", style, ...rest }) {
+export function HeroSplit({ media, video, src, alt = "", position, mobilePosition, title, sub, actions, meta, breadcrumbs, facts, mediaSide = "end", split = "50", ground = "merino", mobileRatio = "4:3", mobileMediaFirst = false, bleed = true, minHeight, size = "h1", titleAs = "h1", measure = "title", style, ...rest }) {
   ensure();
   /* `video`: a short muted loop in place of the photograph (editorial/Video, R2 only). */
   const figure = media || (video ? <Video {...video} mode="loop" ratio="4:3" /> : <Media src={src} alt={alt} ratio="4:3" position={position} mobilePosition={mobilePosition} priority />);

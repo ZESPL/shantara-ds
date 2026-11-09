@@ -13,7 +13,7 @@ const CSS = `
 .sh-proc-step{display:grid;grid-template-columns:3.25rem minmax(0,1fr);gap:var(--space-4);align-items:baseline;padding:var(--space-6) 0;border-top:var(--border-width) solid var(--rule-color);counter-increment:sh-proc}
 .sh-proc-step::before{content:counter(sh-proc, decimal-leading-zero);font:var(--weight-light) var(--text-2xl)/1 var(--font-display);color:var(--text-brand);font-variant-numeric:tabular-nums}
 .sh-proc-title{margin:0;font:var(--type-item-sm);color:var(--text-primary)}
-.sh-proc-text{margin:var(--space-2) 0 0;font:var(--type-body-sm);color:var(--text-secondary);max-width:40ch}
+.sh-proc-text{margin:var(--space-2) 0 0;font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-narrow)}
 @media (min-width:760px){.sh-proc-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (min-width:1000px){
   .sh-proc-list{grid-template-columns:repeat(var(--_n,4),minmax(0,1fr))}

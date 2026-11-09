@@ -13,7 +13,7 @@ const CSS = `
 .sh-gal-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--space-8) var(--grid-gap);align-items:stretch}
 .sh-gal-item{display:flex;flex-direction:column;gap:var(--space-3);margin:0;min-width:0}
 .sh-gal-item>.sh-media{flex:1 1 auto;aspect-ratio:4 / 3}
-.sh-gal-cap{font:var(--type-caption);color:var(--text-secondary);max-width:52ch}
+.sh-gal-cap{font:var(--type-caption);color:var(--text-secondary);max-width:var(--measure-body)}
 @media (min-width:760px){
   .sh-gal-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .sh-gal-item:nth-child(5n+1){grid-column:1/-1}

@@ -13,7 +13,7 @@ const CSS = `
 .sh-feat-item{display:grid;grid-template-columns:28px minmax(0,1fr);gap:var(--space-4);align-items:start;padding:var(--space-5) 0;border-top:var(--border-width) solid var(--rule-color)}
 .sh-feat-item [data-icon]{margin-top:1px;color:var(--text-brand)}
 .sh-feat-title{margin:0;font:var(--type-item-sm);color:var(--text-primary)}
-.sh-feat-text{margin:var(--space-1) 0 0;font:var(--type-body-sm);color:var(--text-secondary);max-width:40ch}
+.sh-feat-text{margin:var(--space-1) 0 0;font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-narrow)}
 @media (min-width:520px){.sh-feat-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (min-width:1000px){
   .sh-feat-list{grid-template-columns:repeat(var(--_c,3),minmax(0,1fr))}

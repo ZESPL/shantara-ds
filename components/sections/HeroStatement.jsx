@@ -38,7 +38,7 @@ function ensure() {
   document.head.appendChild(el);
 }
 
-export function HeroStatement({ title, sub, actions, breadcrumbs, meta, rule = true, aside, media, src, alt = "", ratio = "4:5", ground = "merino", tall = true, size = "h1", titleAs = "h1", measure = "22ch", style, ...rest }) {
+export function HeroStatement({ title, sub, actions, breadcrumbs, meta, rule = true, aside, media, src, alt = "", ratio = "4:5", ground = "merino", tall = true, size = "h1", titleAs = "h1", measure = "title", style, ...rest }) {
   ensure();
   const figure = media || (src ? <Media src={src} alt={alt} ratio={ratio} priority /> : null);
   const hasSide = !!(figure || aside);

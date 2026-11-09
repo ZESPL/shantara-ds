@@ -1,4 +1,4 @@
-Long-form article text at a 68ch measure. Styles the plain HTML a CMS or Markdown renderer produces, with no classes needed in the content.
+Long-form article text at the body measure (`--measure-body`, 65ch). Styles the plain HTML a CMS or Markdown renderer produces, with no classes needed in the content.
 
 ```jsx
 <Prose html={article.bodyHtml} />

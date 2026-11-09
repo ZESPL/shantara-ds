@@ -73,7 +73,7 @@ Full stack table: [skill-stack.md](skill-stack.md).
 Shantara ships **one typeface for Latin/Cyrillic: Diodrum** (weights via design-system tokens). Display and body are the same family at different sizes and weights. Do **not** introduce a separate “premium serif” for headings.
 
 - Self-host fonts. Subset them. Use `font-display: swap` (already set on Diodrum faces).
-- Generous heading sizes, body line height 1.6, body measure `--measure-body` (62ch), headlines `--measure-statement` (30ch).
+- Generous heading sizes, body line height 1.6, body measure `--measure-body` (65ch), headlines `--measure-heading` (36ch), page titles `--measure-title` (22ch), card text and captions `--measure-narrow` (45ch). These four tokens are the only measures.
 - Use type tokens (`--type-display`, `--type-statement`, `--type-body`, …) and the spacing/type scale. No one-off font stacks in components. Voices and weights: [Design system rules](#design-system-rules-from-the-brand-deck).
 - Arabic: **IBM Plex Sans Arabic** pairing under `[dir=rtl]` (see `tokens/rtl.css`). Do not use a system fallback as the Arabic display face.
 
@@ -108,7 +108,7 @@ The website is the brand deck carried to a scrolling page. The deck rules that a
 
 - **The Light rule:** every heading at 24px or larger is Diodrum Light. Medium is only for item titles at 20px or smaller. Body is Regular 17/1.6, never Light.
 - `--type-lead` is deprecated. Use body, or a `Statement` with a `sub` line.
-- Headlines are left-aligned and wrap at `--measure-statement` (30ch). Body wraps at `--measure-body` (62ch).
+- Headlines are left-aligned, wrap at `--measure-heading` (36ch) or `--measure-title` (22ch) for a page title, and use `text-wrap: pretty`: lines fill, and only a lone last word is avoided. `balance` is for short centred UI text only (Tooltip, Dialog, AnnouncementBar). Body wraps at `--measure-body` (65ch).
 
 ### Grounds
 

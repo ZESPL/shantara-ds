@@ -12,13 +12,13 @@ const CSS = `
 .sh-tile[data-href]{cursor:pointer}
 .sh-tile .sh-media>img{transition:transform var(--duration-reveal) var(--ease-out)}
 .sh-tile-body{display:flex;flex-direction:column;gap:var(--space-3);min-width:0}
-.sh-tile-title{margin:0;font:var(--type-item);color:var(--text-primary);text-wrap:balance}
+.sh-tile-title{margin:0;font:var(--type-item);color:var(--text-primary)}
 .sh-tile-title>span{background:linear-gradient(currentColor,currentColor) 0 100% / 0 1px no-repeat;transition:background-size var(--duration-base) var(--ease-out);padding-bottom:2px}
 .sh-tile-body>.sh-meta{margin-top:calc(var(--space-1) * -1)}
-.sh-tile-text{margin:var(--space-1) 0 0;font:var(--type-body-sm);color:var(--text-secondary);max-width:48ch}
+.sh-tile-text{margin:var(--space-1) 0 0;font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-narrow)}
 .sh-tile-meta{margin:0;font:var(--type-caption);color:var(--text-muted);font-variant-numeric:tabular-nums}
 .sh-tile[data-size="lg"] .sh-tile-title{font:var(--type-title)}
-.sh-tile[data-size="lg"] .sh-tile-text{font:var(--type-body);max-width:56ch}
+.sh-tile[data-size="lg"] .sh-tile-text{font:var(--type-body);max-width:var(--measure-body)}
 .sh-tile-tags{display:flex;flex-wrap:wrap;gap:var(--space-2);margin:var(--space-2) 0 0;padding:0;list-style:none}
 .sh-tile-tags .sh-tag{max-width:100%;white-space:normal;height:auto;min-height:24px;padding-block:3px;line-height:1.35}
 /* layout="thumb": a small 4:3 thumbnail beside the text at every width (catalogue rows). */

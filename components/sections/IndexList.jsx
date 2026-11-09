@@ -17,8 +17,8 @@ const CSS = `
 /* Row titles sit a clear step below the group label (24→30px), so the group still reads
    as the heading on a phone where both would otherwise be 24px. */
 .sh-index-title{font:var(--weight-medium) var(--text-lg)/var(--leading-snug) var(--font-display);color:var(--text-primary)}
-.sh-index-text{grid-column:1;font:var(--type-body-sm);color:var(--text-secondary);max-width:52ch}
-.sh-index-meta{grid-column:1;font:var(--type-body-sm);color:var(--text-muted);max-width:52ch}
+.sh-index-text{grid-column:1;font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-body)}
+.sh-index-meta{grid-column:1;font:var(--type-body-sm);color:var(--text-muted);max-width:var(--measure-body)}
 .sh-index-arrow{grid-column:2;grid-row:1;align-self:center;display:inline-flex;color:var(--text-brand);transition:transform var(--duration-fast) var(--ease-out)}
 .sh-index-link:focus-visible{outline:none;box-shadow:var(--ring-focus)}
 @media (hover: hover) and (pointer: fine){
