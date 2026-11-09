@@ -528,15 +528,18 @@ Consultation CTA
 
 ### Naturopathy
 
-Replaces Our Approach (website D-219).
+Replaces Our Approach (website D-219; layout amended by website D-221). Sample: `screens/NaturopathyScreen.js`.
 
 ```text
 Full-bleed Hero (cover image)
-Philosophy (Statement + PlainList of the six principles)
-Practice (TileGrid: what the guest experiences)
-Stay: at-home opening, Band Statement (the page's one accent), At home / At Shantara SpecTable, medication note, Treatments at Shantara, BNYS line
-Rhythm (Statement + Programmes and house-guidelines links)
-Consultation CTA
+Philosophy: boxed Split (Statement + photograph), then PlainList marker="numeral" of the six principles
+Practice: Statement, two boxed Split chapters on alternate sides (meals, yoga), one Tile (A day at the retreat)
+Panorama (boxed, revealed): a place, in a few words
+Stay: at-home opening, Band Statement (the page's one accent), At home / At Shantara SpecTable variant="contrast" (revealed), medication note
+Treatments: boxed Split (Statement + GroupedList of the therapy links)
+Doctors: PeopleRow, the BNYS line as its statement, "Meet our doctors"
+Rhythm: NumeralsSplit (the minimum stay) + Programmes and house-guidelines links
+Consultation CTA (photo)
 ```
 
 ### Make an Inquiry

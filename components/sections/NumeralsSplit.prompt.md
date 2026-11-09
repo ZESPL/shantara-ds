@@ -9,7 +9,7 @@ A statement beside one to three large Light numerals, each standing on a hairlin
 </Section>
 ```
 
-**Content.** Figures come only from `content/site.json`, with their labels as written there. Today that is one figure, `therapies_count`, so one numeral is the normal case and has its own layout; do not pad it with a second figure. `rooms_count` is never a stat. Three at most; a fourth is dropped. Never a rate, an outcome, a percentage, or a guest total tied to a year. The practice history is not a numeral.
+**Content.** Figures come only from `content/site.json`, with their labels as written there. Today that is one figure, `therapies_count`, plus on the website the minimum stay in nights (Site settings `minimumStayNights`, beside the sentence that states it on Naturopathy), so one numeral is the normal case and has its own layout; do not pad it with a second figure. `rooms_count` is never a stat. Three at most; a fourth is dropped. Never a rate, an outcome, a percentage, or a guest total tied to a year. The practice history is not a numeral.
 
 **One job.** The figures support the one statement beside them ([rule of one](../../docs/rule-of-one.md)); they are not a second message.
 

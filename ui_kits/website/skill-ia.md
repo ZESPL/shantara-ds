@@ -137,14 +137,13 @@ Pages:
 /en/our-story
 /en/our-doctors
 /en/pa-kareem
-/en/doctors/bahja-janu
 ```
 
 Medical Editorial Policy also sits under About. The former `/en/our-approach` is folded into `/en/naturopathy`, a top-level nav item (website D-219).
 
 Accreditations and Sustainability are standing pages. Their URLs are under [Utility pages](#utility-pages).
 
-`/en/our-doctors` lists every practising doctor with a photo, name, qualification, areas of practice and a **Make an Inquiry** button. The founder and chairman, P.A. Kareem, is not a doctor and is not listed there: he appears on Our Story, in the board, and on his own page, `/en/pa-kareem`, which lists his press, talks, videos and social posts. Dr. Bahja Janu (`/en/doctors/bahja-janu`) is the only doctor with a profile page. A doctor profile lists the doctor's answers, the articles they reviewed, their programmes, and any press, talks, videos and social posts on the doctor record. Those lists are outbound links. A YouTube recording is a link, never an embedded player. Do not create a profile page for any other doctor; link to their section on `/en/our-doctors` instead (for example `/en/our-doctors#{slug}`).
+`/en/our-doctors` lists every practising doctor with a photo, name, qualification, areas of practice and a **Make an Inquiry** button. The founder and chairman, P.A. Kareem, is not a doctor and is not listed there: he appears on Our Story, in the board, and on his own page, `/en/pa-kareem`, which lists his press, talks, videos and social posts. No doctor has a profile page (website D-223): `/en/our-doctors` is the only doctors page, and every link to a doctor is their section there (for example `/en/our-doctors#{slug}`). Do not create a doctor profile page.
 
 Entity and parent history (including Hygiene Nature Cure Hospital / HNCH) belong here, not on condition or programme pages, and not as a hospital product pitch.
 

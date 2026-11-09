@@ -16,6 +16,7 @@ import { TextLink } from "../editorial/TextLink.jsx";
 const CSS = `
 .sh-close{position:relative;isolation:isolate}
 .sh-close[data-variant="photo"]{display:flex;align-items:flex-end;min-height:clamp(520px, 72svh, 860px);overflow:hidden}
+.sh-close[data-variant="photo"] .sh-stmt-sub{font:var(--type-lead)}
 .sh-close>.sh-media{position:absolute;inset:0;z-index:-1;aspect-ratio:auto;height:100%}
 .sh-close-body{width:100%;padding-block:var(--section-y)}
 .sh-close[data-variant="compact"] .sh-close-body{padding-block:clamp(40px, 3vw + 28px, 72px)}

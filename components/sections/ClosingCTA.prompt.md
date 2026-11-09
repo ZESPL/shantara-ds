@@ -27,6 +27,8 @@ The closing call to action (deck slide 18). **Use ClosingCTA only on pages that 
 
 **Contact row.** Pass items, not loose inline elements: every item is the same 44px inline-flex box, so links and plain text share a baseline; icons are optional per item (all or none). One row on wide screens, wrapping as needed; one per line under 520px.
 
+**Photo variant lead.** The `sub` is set in the lead type (`--type-lead`), like a hero's lead (website D-222).
+
 **Photo variant ink.** Over the photograph every line (sub, contact text and contact icons) is solid Merino (no faded Merino, no Gold), and the text block carries its own scrim so a headline that wraps high on a phone is never left on bright sky.
 
 **One job.** The page's one next step, stated once ([rule of one](../../docs/rule-of-one.md)). One primary button; the secondary action and contact row are quieter. One `ClosingCTA` per page, and only when the page has no other CTA.
@@ -36,3 +38,5 @@ The closing call to action (deck slide 18). **Use ClosingCTA only on pages that 
 **Boxed photo: `bleed={false}`.** Variant `photo` only. From 1000px the dark photograph sits inside the page container (1240px) on a `surround` ground (`merino` by default, or `stone`), so its edges line up with the header and with the footer's content below it. Same height, scrim and ink. Use it when the page already opens with a full-bleed hero. Under 1000px nothing changes.
 
 **Variations.** `variant="whatsapp"`: the ground layout with "Message us on WhatsApp" as the primary action and a call as the second; pass `whatsapp` (a wa.me URL) and `phone` (a tel: URL) from content/site.json, and `phoneLabel`. `variant="tariff"`: a compact Stone band, "Current rates and what a stay includes", with one link to the tariff page (`tariffHref`): the commercial close for programme and room pages, which never quote a rate.
+
+**On the website** every page that ends on a closing CTA uses one shared close (website D-222, `EnquiryClosing`): the photo variant on the enquiry frame, the title "Begin your transformation with Shantara", the owner's lead, one "Make an Enquiry" button and no contact row.

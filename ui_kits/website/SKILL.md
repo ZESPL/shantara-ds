@@ -291,6 +291,7 @@ These files are **previews** of the skill, not the live site:
 | `screens/ConditionsScreen.js` | condition index | A compact `HeroStatement` with no image, then every condition as an A to Z `GroupedList`, each one link to its primary programme; nothing after the list; no detail pages |
 | `screens/ProgrammeScreen.js` | programme | Advanced Detox & Cellular Cleansing: `HeroSplit` + booking panel; tariff link, no rates |
 | `screens/ExperienceScreen.js` | experience hub | Therapies, rooms, farm, a day; not one page per room |
+| `screens/NaturopathyScreen.js` | naturopathy (about) | `HeroFullBleed`, principles (boxed split + `PlainList marker="numeral"`), practice chapters (boxed splits, one `Tile`), `PanoramaCaption`, `BandStatement`, `SpecTable variant="contrast"`, treatments split, doctors `PeopleRow`, `NumeralsSplit` (minimum stay), photo `ClosingCTA`; two `data-reveal` frames |
 | `screens/AboutScreen.js` | about hub | Story, approach, doctors, editorial policy |
 | `screens/JournalScreen.js` | article listing | `HeroStatement` → `Tabs` → `TileGrid` → `Pagination` |
 | `screens/ArticleScreen.js` | article | `#/en/journal/<slug>`: `ArticleHeader`, `Prose`, `TableOfContents`, `ReviewedBy`, `ShareBar`, `AuthorCard`, `RelatedArticles` (kit body is a marked sample) |

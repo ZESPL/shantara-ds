@@ -214,7 +214,7 @@ Motion should make Shantara feel calm, continuous, and intentional. It must neve
 Not every section animates. Use only this vocabulary:
 
 - **Hero:** one subtle entrance on first load (for example, a gentle fade and small upward settle of the heading). Once only.
-- **Major editorial images:** an occasional reveal as they enter the viewport (`--duration-reveal`, 640 ms). Not every image. At most one or two per page.
+- **Major editorial images:** an occasional reveal as they enter the viewport (`--duration-reveal`, 640 ms). Not every image. At most one or two per page. Use the `data-reveal` attribute (`tokens/motion.css`): CSS only and scroll-driven, so the frame settles in over its entry; browsers without scroll-driven animation, and reduced motion, show it still. Put it on the element wrapping the frame (or the page's one comparison table), never on running text or headings, and never on the hero. Print shows everything still.
 - **Buttons, links and tiles:** subtle hover and focus states (colour, underline). A `Tile` scales its photograph to 1.02 inside the frame (`--tile-media-scale`) and underlines its title. Nothing lifts or gains a shadow on marketing pages.
 - **Page changes:** a restrained Astro View Transition. Shared-element transitions (for example, a programme card image becoming the programme page hero) are allowed where they help continuity.
 - **Long-form, programme, therapy and clinical content:** mostly static. Reading pages should not move.
