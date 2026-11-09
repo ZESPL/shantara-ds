@@ -1,4 +1,5 @@
-/* Profiles. Doctor: route #/<locale>/doctors/<slug> (view "doctor"), from content/doctors/.
+/* Profiles. Doctor: route #/<locale>/doctors/<slug> (view "doctor"), from content/doctors/. A
+   specimen only: the website builds no doctor profile page (website D-223).
    Founder: route #/<locale>/pa-kareem (view "founder"), from content/leadership/. The founder
    and chairman is not a doctor: never list him with the doctors or give him a clinical role.
    Portrait, biography, then the media register on the record:
