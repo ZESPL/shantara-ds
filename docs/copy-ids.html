@@ -33,8 +33,8 @@
       <div class="ds-table-wrap"><table>
         <thead><tr><th>Thing</th><th>Pattern</th><th>Example</th></tr></thead>
         <tbody>
-          <tr><td>Portal page</td><td><code>ds:&lt;folder&gt;/&lt;file without .html&gt;</code></td><td><code>ds:docs/website-copy-voice</code>, <code>ds:guidelines/colors</code></td></tr>
-          <tr><td>Section of a page</td><td><code>&lt;page ID&gt;#&lt;heading id&gt;</code></td><td><code>ds:docs/website-copy-voice#core-principle</code></td></tr>
+          <tr><td>Portal page</td><td><code>ds:&lt;folder&gt;/&lt;file without .html&gt;</code></td><td><code>ds:docs/website-copy-language</code>, <code>ds:guidelines/colors</code></td></tr>
+          <tr><td>Section of a page</td><td><code>&lt;page ID&gt;#&lt;heading id&gt;</code></td><td><code>ds:docs/website-copy-language#five-rules</code></td></tr>
           <tr><td>Component</td><td><code>ds:components/&lt;family&gt;/&lt;Name&gt;</code></td><td><code>ds:components/editorial/Tile</code></td></tr>
           <tr><td>Component family</td><td><code>ds:components/&lt;family&gt;</code></td><td><code>ds:components/sections</code></td></tr>
           <tr><td>UI kit or template</td><td><code>ds:ui_kits/&lt;kit&gt;</code>, <code>ds:templates/&lt;name&gt;</code></td><td><code>ds:ui_kits/website</code>, <code>ds:templates/brand-deck</code></td></tr>
@@ -46,7 +46,7 @@
       <h2 id="resolve">How to resolve an ID</h2>
       <ol>
         <li><code>ds:components/editorial/Tile</code> → <code>components/editorial/Tile.jsx</code>, its <code>.prompt.md</code> and <code>.d.ts</code>; the page is <code>docs/component.html?c=Tile</code>.</li>
-        <li><code>ds:docs/website-copy-voice#core-principle</code> → the page <code>docs/website-copy-voice.html</code>, scrolled to the element with that id. The markdown behind a docs page is named in its meta line.</li>
+        <li><code>ds:docs/website-copy-language#five-rules</code> → the page <code>docs/website-copy-language.html</code>, scrolled to the element with that id. The markdown behind a docs page is named in its meta line.</li>
         <li><code>ds:page/home/hero</code> → the element with <code>data-ds-id="page/home/hero"</code> in <code>ui_kits/website/</code>.</li>
       </ol>
 

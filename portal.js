@@ -194,8 +194,8 @@
         "ui_kits/website/index.html", "docs/website-kit.html", "docs/website-skill.html", "docs/website-ia.html",
         "docs/website-sections.html", "docs/website-content.html",
         { path: "docs/website-copy.html", prefix: "docs/website-copy-", children: [
-          "docs/website-copy-voice.html", "docs/website-copy-naming.html", "docs/website-copy-claims.html",
-          "docs/website-copy-patterns.html", "docs/website-copy-words.html", "docs/website-copy-localisation.html",
+          "docs/website-copy-language.html", "docs/website-copy-naming.html", "docs/website-copy-claims.html",
+          "docs/website-copy-patterns.html", "docs/website-copy-localisation.html",
         ] },
         { path: "docs/icp.html", prefix: "docs/icp-", children: [
           "docs/icp-messaging-map.html", "docs/icp-profile-template.html", "docs/icp-weight-metabolic.html",
