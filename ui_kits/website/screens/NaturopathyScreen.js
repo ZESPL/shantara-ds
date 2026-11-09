@@ -4,7 +4,8 @@
    (intro, two boxed SplitSection chapters on alternate sides, one Tile) → PanoramaCaption
    (reveal) → the stay opening → BandStatement (the one accent) → SpecTable variant="contrast"
    (reveal) and the medication note → treatments (boxed SplitSection) → doctors (PeopleRow) →
-   NumeralsSplit (the minimum stay) → ClosingCTA (photo; the page has no other CTA).
+   NumeralsSplit (the minimum stay) → the website's one closing CTA (photo, owner copy, no
+   contact row; website D-222).
    Copy is the site's owner-approved copy (src/copy/en/naturopathy.ts); the herbal record is
    left out until the doctors sign it off. Two reveals, one full-bleed hero, one band. */
 
@@ -159,10 +160,9 @@ function NaturopathyScreen({ onNavigate }) {
           bleed={false}
           src={window.photoSrc("lobby-valley")}
           alt={t("The lounge window over the valley")}
-          title={t("Enquire about a stay")}
-          sub={t("Tell us about your health and what you hope to change. Our team then calls, and a doctor reviews the health details before a programme is confirmed.")}
+          title={t("Begin your transformation journey with Shantara")}
+          sub={t("Meaningful change begins with understanding your health. Share your goals with us, and our team will help you explore how Shantara's programmes and personalised care can support your transformation.")}
           action={<Button size="lg" onClick={() => onNavigate("booking")}>{t("Make an Inquiry")}</Button>}
-          contact={window.siteContactItems(t)}
         />
       </P>
     </main>
