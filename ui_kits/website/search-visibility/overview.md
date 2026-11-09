@@ -74,6 +74,7 @@ Recorded on 25 September 2026 and 23 October 2026. The rules below already follo
 
 ## Change log
 
+- **1.22, 9 November 2026.** Adopted from the website's D-222. The photo ClosingCTA's title is set at the H1 size, like a hero's title. No schema or URL change.
 - **1.21, 9 November 2026.** Adopted from the website's D-223. No doctor has a profile page; `/en/doctors/bahja-janu` is removed and every doctor link is the doctor's section on `/en/our-doctors`. Doctor `Person.url` points there. Only the founder keeps a profile page.
 - **1.20, 9 November 2026.** Adopted from the website's D-222. One closing CTA on every page that ends on one: the photo variant, the owner's title and lead (the lead in lead type), one enquiry button and no contact row. No schema or URL change.
 - **1.19, 9 November 2026.** Adopted from the website's D-221. Naturopathy is photo-led with the same order of ideas: `PlainList marker="numeral"`, `SpecTable variant="contrast"`, the `data-reveal` editorial image reveal (two per page at most) and `screens/NaturopathyScreen.js`. No schema or URL change.
