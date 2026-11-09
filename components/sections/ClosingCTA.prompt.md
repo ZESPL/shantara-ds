@@ -39,4 +39,4 @@ The closing call to action (deck slide 18). **Use ClosingCTA only on pages that 
 
 **Variations.** `variant="whatsapp"`: the ground layout with "Message us on WhatsApp" as the primary action and a call as the second; pass `whatsapp` (a wa.me URL) and `phone` (a tel: URL) from content/site.json, and `phoneLabel`. `variant="tariff"`: a compact Stone band, "Current rates and what a stay includes", with one link to the tariff page (`tariffHref`): the commercial close for programme and room pages, which never quote a rate.
 
-**On the website** every page that ends on a closing CTA uses one shared close (website D-222, `EnquiryClosing`): the photo variant on the enquiry frame, the title "Begin your transformation journey with Shantara", the owner's lead, one "Make an Enquiry" button and no contact row.
+**On the website** every page that ends on a closing CTA uses one shared close (website D-222, `EnquiryClosing`): the photo variant on the enquiry frame, the title "Begin your transformation with Shantara", the owner's lead, one "Make an Enquiry" button and no contact row.

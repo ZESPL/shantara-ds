@@ -160,7 +160,7 @@ function NaturopathyScreen({ onNavigate }) {
           bleed={false}
           src={window.photoSrc("lobby-valley")}
           alt={t("The lounge window over the valley")}
-          title={t("Begin your transformation journey with Shantara")}
+          title={t("Begin your transformation with Shantara")}
           sub={t("Share your goals with us, and our team will help you explore how Shantara's programmes and personalised care can support your transformation.")}
           action={<Button size="lg" onClick={() => onNavigate("booking")}>{t("Make an Inquiry")}</Button>}
         />
