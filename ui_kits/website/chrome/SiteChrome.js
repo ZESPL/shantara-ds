@@ -12,7 +12,7 @@ const NAV = [
 
 /* Views that open on HeroFullBleed: the header starts transparent with Merino type over a
    scrim, then turns solid Merino once the page scrolls. */
-const PHOTO_HERO_VIEWS = ["home", "experience", "programmes"];
+const PHOTO_HERO_VIEWS = ["home", "experience", "naturopathy", "programmes"];
 /* Views that open on HeroSplit: the photograph runs to the top edge on one side, so the
    header is solid from the start rather than dark type over a photograph. */
 const SOLID_HEADER_VIEWS = ["programme", "tariffs"];

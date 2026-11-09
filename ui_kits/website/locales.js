@@ -179,6 +179,7 @@
     /* The programme detail sample. */
     programme: "programmes/advanced-detox-cellular-cleansing",
     experience: "experience",
+    naturopathy: "naturopathy",
     about: "about",
     journal: "journal",
     contact: "contact",
@@ -201,6 +202,7 @@
     conditions: "conditions",
     "programmes/advanced-detox-cellular-cleansing": "programme",
     experience: "experience",
+    naturopathy: "naturopathy",
     about: "about",
     journal: "journal",
     contact: "contact",

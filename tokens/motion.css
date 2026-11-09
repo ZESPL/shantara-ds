@@ -26,6 +26,18 @@
 @keyframes sh-enter-rise{from{opacity:0;transform:translateY(8px) scale(0.98)}to{opacity:1;transform:none}}
 @keyframes sh-enter-up{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 @keyframes sh-breathe{0%,100%{transform:scale(0.82);opacity:.45}50%{transform:scale(1);opacity:1}}
+@keyframes sh-reveal{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:none}}
+
+/* The editorial image reveal (skill-premium "Major editorial images"): at most two per page.
+   CSS only and scroll-driven: the frame settles in over its entry into the viewport, the
+   scroll-linked counterpart of --duration-reveal. Without scroll-driven animation support, or
+   with reduced motion, it is simply there; nothing waits on JavaScript. */
+@supports (animation-timeline: view()){
+  @media (prefers-reduced-motion: no-preference){
+    [data-reveal]{animation:sh-reveal linear both;animation-timeline:view();animation-range:entry 5% entry 90%}
+  }
+}
+@media print{[data-reveal]{animation:none}}
 
 /* Gentler, not zero: keep colour/opacity, drop movement. */
 @media (prefers-reduced-motion: reduce){
