@@ -4,43 +4,13 @@ Back to the [copy index](../skill-copy.md).
 
 ## Clinical claims
 
-Health copy must describe the programme without promising outcomes that cannot be guaranteed.
+Programme effects are described with confidence, in the register set by [Shantara language](../../../docs/language.md): "Digestion strengthens, energy steadies and inflammation subsides."
 
-Describe:
+Three words stay off every page: **cure**, **guarantee** and **100%**. A permanent reversal or a medication-free outcome is never promised.
 
-* What doctors assess
-* What the programme may include
-* How treatments are recommended
-* How progress is monitored
-* How plans may be adjusted
-* What follow-up may be provided
+Medication is described with care:
 
-Never promise or imply that Shantara will:
-
-* Cure a condition
-* Reverse a condition
-* Heal a condition
-* Eliminate disease
-* Make someone medication-free
-* Guarantee weight loss
-* Guarantee symptom improvement
-* Guarantee a particular clinical result
-
-Where outcomes vary, make that clear.
-
-Use:
-
-> Recommendations depend on the assessment and the guest's health.
-
-Medication should be described carefully.
-
-Prefer:
-
-> Doctors review current medication as part of the assessment. Any change is considered individually and only when medically appropriate.
-
-Do not present medication reduction as an expected or intended outcome.
-
-Never encourage visitors to alter prescribed medication without appropriate medical supervision.
+> Doctors review current medication as part of the assessment. Any change is made individually and under medical supervision.
 
 ---
 
@@ -52,7 +22,7 @@ Avoid presenting Shantara as a menu of therapies that visitors simply assemble t
 
 Prefer:
 
-> Your doctor may recommend specific therapies based on your assessment and programme.
+> The doctor prescribes therapies from the assessment and the programme.
 
 Do not write:
 
@@ -205,24 +175,9 @@ The governance rule remains internal.
 
 ---
 
-## Avoid unnecessary absolutes
+## Absolutes come from policy
 
-Words such as these require particular care:
-
-* Always
-* Never
-* None
-* Only
-* Every
-* Must
-* Cannot
-* Minimum
-* Guaranteed
-* Required
-
-Do not introduce an absolute rule unless it comes from a verified clinical, operational, legal or commercial policy.
-
-AI-generated copy must not turn an observation into a policy.
+An absolute rule ("must", "only", "minimum", "required") is stated with confidence when it comes from a verified clinical, operational, legal or commercial policy. AI-generated copy never turns an observation into a policy.
 
 ---
 
@@ -243,4 +198,4 @@ If therapies can or cannot be booked independently is unknown, do not decide.
 
 If inclusions are unknown, do not generate generic inclusions.
 
-If the clinical effect of a treatment is uncertain, describe what the treatment involves rather than promising what it achieves.
+Effects are written in the body's terms (energy, digestion, sleep, inflammation, clarity) and never as a cure or guarantee.

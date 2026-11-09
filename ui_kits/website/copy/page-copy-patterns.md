@@ -136,9 +136,9 @@ Bad:
 
 Better:
 
-> We'll be in touch
+> Message received
 
-> A member of the team will call you to understand what you need. A doctor then reviews whether a stay is the right next step.
+> A member of the team calls to understand the need. A doctor then confirms the right programme.
 
 ---
 
@@ -148,7 +148,7 @@ Button labels describe one action, roughly 20 characters in English. Extra meani
 
 Do not use Badge or static Tag as decorative pills next to actions. Interactive filter Tags stay, because they are controls.
 
-`--text-2xs` / `--text-3xs` are for catalog specimen notes only (never for eyebrows, which are banned everywhere; see [voice and tone](voice-and-tone.md#punctuation)). Guest-readable helper copy is at least `--text-sm` (`--text-xs` only for true captions). Field hints stay short (“Optional”), never essay paragraphs.
+`--text-2xs` / `--text-3xs` are for catalog specimen notes only (never for eyebrows, which are banned everywhere; see the [copy index](../skill-copy.md#non-negotiables-quick-reference)). Guest-readable helper copy is at least `--text-sm` (`--text-xs` only for true captions). Field hints stay short (“Optional”), never essay paragraphs.
 
 ---
 
@@ -168,7 +168,7 @@ Instead of:
 
 Use:
 
-> What your stay includes
+> What the stay includes
 
 Instead of:
 
@@ -184,7 +184,7 @@ Instead of:
 
 Use:
 
-> Meals during your stay
+> Meals during the stay
 
 Instead of:
 
@@ -192,7 +192,7 @@ Instead of:
 
 Use:
 
-> Meet our doctors
+> The doctors
 
 Instead of:
 
@@ -208,7 +208,7 @@ Instead of:
 
 Use:
 
-> Who our programmes are for
+> Who the programmes are for
 
 Instead of:
 
@@ -216,7 +216,7 @@ Instead of:
 
 Use:
 
-> What to expect during your stay
+> What to expect during the stay
 
 Instead of:
 
@@ -230,9 +230,7 @@ Instead of:
 
 > Begin your transformation
 
-Brand expression can appear in supporting copy when appropriate.
-
-It should not replace information.
+Section headings name the subject. Evocative lines belong in the H1, the lead and the closing, in the register set by [Shantara language](../../../docs/language.md).
 
 ---
 
@@ -261,8 +259,8 @@ Better:
 Use separate navigation links or sections such as:
 
 * About Shantara
-* Our approach
-* Meet our doctors
+* The approach
+* The doctors
 * Medical Editorial Policy
 
 The visitor does not need to know that these are internally classified as "trust pages".
@@ -287,12 +285,11 @@ Do not imply that every guest follows an identical schedule.
 
 Use words such as:
 
-* May
 * Typically
-* Depending on your programme
-* Based on your doctor's recommendations
+* Depending on the programme
+* As the doctor prescribes
 
-when appropriate.
+when the schedule varies. Facts that hold for every guest are stated without a hedge.
 
 ---
 
@@ -332,31 +329,31 @@ There is no need to explain why the rates are located there.
 
 Headings should work even if all supporting copy disappears.
 
-One heading states one point. If a heading needs "and" to join two unrelated ideas, the section is doing two jobs; split it ([rule of one](../../../docs/rule-of-one.md)). "Meals during your stay" is one point; "Meals, rooms and activities" is three sections.
+One heading states one point. If a heading needs "and" to join two unrelated ideas, the section is doing two jobs; split it ([rule of one](../../../docs/rule-of-one.md)). "Meals during the stay" is one point; "Meals, rooms and activities" is three sections.
 
 Good headings:
 
 > Naturopathy programmes
 
-> What to expect during your stay
+> What to expect during the stay
 
-> Meet our doctors
+> The doctors
 
 > Treatments and therapies
 
-> Meals during your stay
+> Meals during the stay
 
 > Accommodation
 
-> Who our programmes are for
+> Who the programmes are for
 
-> Preparing for your stay
+> Preparing for the stay
 
-> After your stay
+> After the stay
 
 > Frequently asked questions
 
-Avoid headings that rely on metaphors or slogans to explain the section.
+Section headings (H2 and below) avoid metaphors or slogans that hide the subject. The H1 may be evocative.
 
 Avoid:
 
@@ -370,7 +367,7 @@ Avoid:
 
 > Where nature restores
 
-Headings never carry an eyebrow or overline above them. See [voice and tone](voice-and-tone.md#punctuation).
+Headings never carry an eyebrow or overline above them. See [copy index](../skill-copy.md#non-negotiables-quick-reference).
 
 ---
 
@@ -414,8 +411,8 @@ Preferred:
 * Make an Inquiry
 * View programmes
 * View the tariff
-* Meet our doctors
-* Read what to expect
+* The doctors
+* What to expect
 
 Avoid:
 
@@ -481,7 +478,7 @@ Before:
 
 After:
 
-> Meals are planned as part of your programme based on your doctor's recommendations and dietary needs.
+> Meals are planned as part of each programme, from the doctor's prescription and the guest's dietary needs.
 
 ### System language to human language
 
@@ -491,7 +488,7 @@ Before:
 
 After:
 
-> Your clinical team plans your programme following consultation and assessment.
+> The clinical team plans each programme after consultation and assessment.
 
 ### Architecture commentary to no copy
 
@@ -513,9 +510,9 @@ Before:
 
 After:
 
-> Your doctor may recommend a specific meal plan or supervised fasting based on your assessment. Therapies may also form part of your programme.
+> The doctor prescribes a meal plan or supervised fasting from the assessment. Therapies complete the programme.
 
-### Unsupported absolute to qualified explanation
+### Restriction to positive statement
 
 Before:
 
@@ -523,7 +520,7 @@ Before:
 
 After:
 
-> Treatments are recommended according to your programme and assessment.
+> Treatments are prescribed as part of each programme, from the assessment.
 
 ### Negative experience description to useful description
 
@@ -533,7 +530,7 @@ Before:
 
 After:
 
-> Your programme is planned after consultation and assessment.
+> Every programme is planned after consultation and assessment.
 
 ---
 
@@ -567,9 +564,9 @@ Useful to the guest.
 
 Examples:
 
-> Your programme begins with a consultation and assessment.
+> Every programme begins with a consultation and assessment.
 
-> Meals are planned according to your programme and dietary requirements.
+> Meals are planned according to the programme and dietary requirements.
 
 > Shantara has 52 rooms across five accommodation categories.
 
