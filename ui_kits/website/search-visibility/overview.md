@@ -74,6 +74,7 @@ Recorded on 25 September 2026 and 23 October 2026. The rules below already follo
 
 ## Change log
 
+- **1.19, 9 November 2026.** Adopted from the website's D-221. Naturopathy is photo-led with the same order of ideas: `PlainList marker="numeral"`, `SpecTable variant="contrast"`, the `data-reveal` editorial image reveal (two per page at most) and `screens/NaturopathyScreen.js`. No schema or URL change.
 - **1.18, 9 November 2026.** Adopted from the website's D-218 to D-220. Naturopathy (`/en/naturopathy`) is the first nav item and replaces `/en/our-approach`, which is deleted; `/en/our-doctors` is built. The handbook "Our approach" section holds the six principles and the herbal-medicine and supplements line. No schema change: Naturopathy is an `AboutPage`.
 - **1.17, 8 November 2026.** Adopted from the website's D-217. The programmes index is the hero, a centred condition search and the catalogue, with nothing after it; the same search sits on `/en/conditions`. The footer link reads "Conditions A to Z". No schema change.
 - **1.16, 8 November 2026.** Adopted from the website's D-216. `/en/conditions` is a plain A to Z index with a search field and a compact hero, linked from the footer, not the nav. No schema change.
