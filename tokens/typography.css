@@ -62,12 +62,14 @@
 /* Line length: the only four measures. Every max-width on text reads one of these; a
    literal ch value in a component fails scripts/check-measure.mjs. ch scales with the
    text size, so the measures hold at every text-scale step.
-   title   display and h1 titles, hero headlines
-   heading h2–h6, section statements, quotes
+   heading h2–h6, section statements, quotes: 36ch, about 48 characters
+   title   display and h1 titles, hero headlines. The same 36ch as heading, so a title
+           only wraps when it is long (22ch wrapped most page titles needlessly);
+           kept as its own role so the two can differ later
    body    paragraphs, leads, subs, article text (about 70–75 characters)
    narrow  card text, captions, notes, short supporting lines */
---measure-title:22ch; /* @kind other */
 --measure-heading:36ch; /* @kind other */
+--measure-title:var(--measure-heading); /* @kind other */
 --measure-body:65ch; /* @kind other */
 --measure-narrow:45ch; /* @kind other */
 
