@@ -1,0 +1,11 @@
+{
+  "id": "frozen-shoulder",
+  "slug": "frozen-shoulder",
+  "name": "Frozen shoulder",
+  "synonyms": [
+    "adhesive capsulitis",
+    "shoulder stiffness"
+  ],
+  "locale": "en",
+  "source": "client"
+}

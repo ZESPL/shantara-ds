@@ -19,6 +19,6 @@ The deck's heading block: optional breadcrumbs → full-sentence headline → op
 
 Hero and page-title sizes (`display`, `h1`) belong to the hero sections; do not set them by hand.
 
-**Measure.** Headlines wrap at 30ch; pass `measure` for a short page title.
+**Measure.** Headlines wrap at `--measure-heading` (36ch). Pass `measure="title"` (`--measure-title`, also 36ch) for a page title; heroes do this already. `measure` takes a token name only, never a ch value.
 
 **Responsive.** No breakpoints needed; `actions` stack full width under 520px.

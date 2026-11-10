@@ -47,7 +47,7 @@ function TariffScreen({ onNavigate }) {
   const currencies = [{ code: "—", href: "#", current: true }];
   const rooms = tariffRooms();
   const tariff = tariffRecord();
-  const book = (where) => () => { if (L) L.track("consultation_cta_click", { page_type: "tariff", content_id: "tariff", content_name: "All-inclusive package rates", cta_location: where }); onNavigate("booking"); };
+  const book = (where) => () => { if (L) L.track("consultation_cta_click", { page_type: "tariff", content_id: "tariff", content_name: "All-inclusive rates for residential naturopathy programmes", cta_location: where }); onNavigate("booking"); };
   const note = { margin: 0, font: "var(--type-body)", color: "var(--text-secondary)", maxWidth: "var(--measure-body)" };
   const column = { maxWidth: "var(--layout-narrow)", display: "flex", flexDirection: "column", gap: "var(--section-y-sm)" };
   const group = { display: "flex", flexDirection: "column", gap: "var(--stack-lg)" };
@@ -59,8 +59,8 @@ function TariffScreen({ onNavigate }) {
           src={window.photoSrc("room-bedroom-desk-balcony-view")}
           alt={t("A bedroom with a desk and a balcony view")}
           breadcrumbs={<Breadcrumbs items={[{ label: t("Home"), href: home }, t("Tariff")]} />}
-          title={t("All-inclusive package rates") + " · —"}
-          sub={t("One nightly rate covers your room, meals, daily consultations and the treatments your doctor prescribes.")}
+          title={t("All-inclusive rates for residential naturopathy programmes") + " · —"}
+          sub={t("Rates cover accommodation, diet therapy, prescribed naturopathy treatments and daily physician consultations.")}
         />
       </P>
 
@@ -101,7 +101,7 @@ function TariffScreen({ onNavigate }) {
               {/* The therapies have their own page; the tariff links to it and never lists them. */}
               <div><TextLink href={therapies}>{t("See all therapies and treatments")}</TextLink></div>
             </div>
-            <div><Button size="lg" onClick={book("inline")}>{t("Book Consultation")}</Button></div>
+            <div><Button size="lg" onClick={book("inline")}>{t("Make an Inquiry")}</Button></div>
           </div>
         </Section>
       </P>

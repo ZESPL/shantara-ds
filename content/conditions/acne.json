@@ -1,0 +1,13 @@
+{
+  "id": "acne",
+  "slug": "acne",
+  "name": "Acne",
+  "synonyms": [
+    "acne vulgaris",
+    "hormonal acne",
+    "pimples",
+    "breakouts"
+  ],
+  "locale": "en",
+  "source": "client"
+}

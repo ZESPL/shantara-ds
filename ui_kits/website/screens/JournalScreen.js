@@ -79,8 +79,8 @@ function JournalScreen({ onNavigate }) {
           variant="compact"
           ground="himalaya"
           title={t("Share your name and a number we can reach.")}
-          sub={t("Our team will contact you to arrange a consultation.")}
-          action={<Button size="lg" onClick={() => { if (L) L.track("consultation_cta_click", { page_type: "journal", content_id: "journal", content_name: "Journal", cta_location: "closing" }); onNavigate("booking"); }}>{t("Book a Consultation")}</Button>}
+          sub={t("Our team will contact you to discuss the next step.")}
+          action={<Button size="lg" onClick={() => { if (L) L.track("consultation_cta_click", { page_type: "journal", content_id: "journal", content_name: "Journal", cta_location: "closing" }); onNavigate("booking"); }}>{t("Make an Inquiry")}</Button>}
         />
       </P>
     </main>

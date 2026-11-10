@@ -5,7 +5,7 @@ import { Button } from "../core/Button.jsx";
 import { Icon } from "../core/Icon.jsx";
 
 /* The 404 page body: a plain title, one line, a search field that posts to the site search,
-   and three or four useful links (Programmes, Conditions, Book a Consultation, Contact).
+   and three or four useful links (Programmes, Make an Inquiry, Contact).
    Plain words, no jokes, no illustration. The page itself still returns HTTP 404.
    One column at every width, held to a 36rem measure: statement, search, links one per row.
    The field and the button sit in one row and share the 52px control height (Input md, Button lg). */
@@ -34,7 +34,7 @@ export function NotFoundSection({ title = "We couldn't find that page", sub = "T
   ensure();
   return (
     <div data-ds-id="sections/NotFoundSection" className="sh-404" style={style} {...rest}>
-      <Statement as={"h" + headingLevel} size="h1" sub={sub} measure="20ch">{title}</Statement>
+      <Statement as={"h" + headingLevel} size="h1" sub={sub} measure="title">{title}</Statement>
       <form className="sh-404-search" role="search" action={searchAction} method="get">
         <Input label={searchLabel} name="q" type="search" startIcon={<Icon name="search" size={18} />} />
         <Button type="submit" variant="secondary" size="lg">Search</Button>

@@ -16,6 +16,16 @@ const CSS = `
 .sh-spec td[data-accent="true"]{color:var(--text-brand);font:var(--type-body);font-variant-numeric:tabular-nums}
 .sh-spec td[data-align="end"],.sh-spec th[data-align="end"]{text-align:end}
 .sh-spec[data-rules="true"] tbody tr{border-top:var(--border-width) solid var(--rule-color)}
+/* variant="contrast": two sentences per row, side by side. Equal columns that wrap, one type
+   size, the accent column on a raised ground under a gold rule; the other in secondary ink. */
+.sh-spec[data-variant="contrast"]{table-layout:fixed}
+.sh-spec[data-variant="contrast"] th,.sh-spec[data-variant="contrast"] td{white-space:normal;vertical-align:top;padding:var(--space-5) var(--space-6);font:var(--type-body)}
+.sh-spec[data-variant="contrast"] thead th{font:var(--type-label);padding-block:var(--space-5) var(--space-4)}
+.sh-spec[data-variant="contrast"] tbody th{color:var(--text-secondary);padding-inline-start:0}
+.sh-spec[data-variant="contrast"] td[data-accent="true"]{background:var(--surface-raised);color:var(--text-primary);font:var(--type-body)}
+.sh-spec[data-variant="contrast"] thead th:first-child{padding-inline-start:0}
+.sh-spec[data-variant="contrast"] thead th:last-child{background:var(--surface-raised);color:var(--text-primary);border-top:3px solid var(--surface-accent)}
+.sh-spec[data-variant="contrast"] tbody tr:last-child td[data-accent="true"]{padding-bottom:var(--space-7)}
 @media (max-width:519.98px){
   .sh-spec thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
   .sh-spec,.sh-spec tbody,.sh-spec tr{display:block}
@@ -23,6 +33,12 @@ const CSS = `
   .sh-spec th,.sh-spec td{display:block;padding:0}
   .sh-spec td[data-label]::before{content:attr(data-label) " ";color:var(--text-muted);font:var(--type-body)}
   .sh-spec td[data-align="end"]{text-align:start}
+  .sh-spec[data-variant="contrast"] tr{flex-direction:column;gap:0;padding:0}
+  .sh-spec[data-variant="contrast"] tbody th,.sh-spec[data-variant="contrast"] td{padding:var(--space-4) var(--space-5)}
+  .sh-spec[data-variant="contrast"] tbody th{padding-inline-start:0}
+  .sh-spec[data-variant="contrast"] tbody tr:last-child td[data-accent="true"]{padding-bottom:var(--space-4)}
+  .sh-spec[data-variant="contrast"] td[data-accent="true"]{border-inline-start:3px solid var(--surface-accent)}
+  .sh-spec[data-variant="contrast"] [data-label]::before{content:attr(data-label);display:block;margin-bottom:var(--space-1);color:var(--text-muted);font:var(--type-caption)}
 }
 `;
 
@@ -35,11 +51,11 @@ function ensure() {
 }
 
 /* columns: [{ key, label, accent?, align? }]. The first column is the row header. */
-export function SpecTable({ columns = [], rows = [], caption, showHeader = false, rules = true, style, ...rest }) {
+export function SpecTable({ columns = [], rows = [], caption, showHeader = false, rules = true, variant = "default", style, ...rest }) {
   ensure();
   const [head, ...cells] = columns;
   return (
-    <table data-ds-id="editorial/SpecTable" className="sh-spec" data-rules={String(rules)} style={style} {...rest}>
+    <table data-ds-id="editorial/SpecTable" className="sh-spec" data-rules={String(rules)} data-variant={variant} style={style} {...rest}>
       {caption ? <caption className="sh-visually-hidden">{caption}</caption> : null}
       <thead style={showHeader ? undefined : { position: "absolute", width: 1, height: 1, overflow: "hidden", clip: "rect(0 0 0 0)" }}>
         <tr>{columns.map((c) => <th key={c.key} scope="col" data-align={c.align}>{c.label}</th>)}</tr>
@@ -47,9 +63,9 @@ export function SpecTable({ columns = [], rows = [], caption, showHeader = false
       <tbody>
         {rows.map((r, i) => (
           <tr key={r[head.key] || i}>
-            <th scope="row">{r[head.key]}</th>
+            <th scope="row" data-label={variant === "contrast" ? head.label : undefined}>{r[head.key]}</th>
             {cells.map((c) => (
-              <td key={c.key} data-accent={c.accent ? "true" : undefined} data-align={c.align} data-label={c.mobileLabel ? c.label : undefined}>{r[c.key]}</td>
+              <td key={c.key} data-accent={c.accent ? "true" : undefined} data-align={c.align} data-label={c.mobileLabel || variant === "contrast" ? c.label : undefined}>{r[c.key]}</td>
             ))}
           </tr>
         ))}

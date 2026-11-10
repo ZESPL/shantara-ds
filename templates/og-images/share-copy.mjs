@@ -215,13 +215,13 @@ export const FIXED_PAGES = {
       description: "Call, WhatsApp or email from Keralam.",
     },
   },
-  "book-consultation": {
-    title: "Book a consultation",
-    description: "Send a few details. A doctor helps you choose the next step.",
+  "make-an-inquiry": {
+    title: "Make an Inquiry",
+    description: "Share your name and a number we can reach. Our team will contact you to discuss the next step.",
     og: {
       template: "programme",
-      title: "Book a consultation",
-      description: "A doctor helps you choose the next step.",
+      title: "Make an Inquiry",
+      description: "Share your name and a number we can reach. Our team will contact you to discuss the next step.",
       photo: "porch-lobby-dusk",
     },
   },

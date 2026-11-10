@@ -12,6 +12,8 @@ description: >
 
 Canonical standard: **`ui_kits/website/skill-video.md`**. Read it before any change. This skill only lists the refusals and the required output; it does not repeat the rules.
 
+Guest films already in this design system are indexed in `assets/videos/README.md`. The mp4 files are gitignored. They are not on R2 and they are not testimonial records.
+
 Video files must be uploaded to Cloudflare R2 and served via Cloudflare CDN. Never commit video files to the repository. Every video must also be included in the site’s video sitemap.
 
 1. Refuse local or relative video paths, video imports, and any commit of `.mp4`, `.webm`, `.mov` or other video files. Host the file, the poster and the caption/transcript file on Cloudflare R2, served through Cloudflare CDN.

@@ -1,0 +1,13 @@
+{
+  "id": "low-testosterone",
+  "slug": "low-testosterone",
+  "name": "Low testosterone",
+  "synonyms": [
+    "testosterone",
+    "low T",
+    "male hormonal decline",
+    "andropause"
+  ],
+  "locale": "en",
+  "source": "client"
+}

@@ -6,7 +6,7 @@ Back to the [website skill](SKILL.md).
 
 **Production CMS:** Keystatic (git-based) with Markdoc for long-form. `keystatic.config.ts` is the only schema, and pages read it through the Keystatic reader (see [skill-stack.md](skill-stack.md) and [skill-structure.md](skill-structure.md)). Staff do not edit in Keystatic.
 
-This model is instantiated in [`content/`](../../content/) for the design-system kit. Empty folders (`guest-stories/`, `events/`, `testimonials/`) mean the entity is not ready. Do not invent records to fill them. Stub conditions stay `draft` with empty clinical bodies until medical review exists.
+This model is instantiated in [`content/`](../../content/) for the design-system kit. Empty folders (`guest-stories/`, `events/`, `testimonials/`) mean the entity is not ready. Do not invent records to fill them. Guest films already filed here are indexed in [`assets/videos/README.md`](../../assets/videos/README.md). They stay out of `testimonials/` until consent is recorded and the file is on Cloudflare R2. Stub conditions stay `draft` with empty clinical bodies until medical review exists.
 
 Model business/content entities, not layout hacks. There is **no page builder and no composed pages**. Fixed pages (home, rooms, therapies, FAQ, tariff) keep their intro copy and SEO in code; Keystatic holds the entities they list.
 
@@ -25,7 +25,7 @@ Define each group once and reuse it.
 | FAQs | `faqs`: list of `{question, answer}` | Conditions, programmes |
 | SEO | Meta title, meta description | Conditions, programmes, doctors, articles, doctor answers |
 
-**Related pages.** `type` is a fixed list in the Keystatic config: `condition`, `program`, `therapy`, `room`, `doctor`, `article`, `doctor_answer`, `page`. It is not an editable collection. Link in one direction only; the site generates the reverse links at build time (a programme page lists every condition that points to it). Page templates group items by type, so a condition page renders its `program` items as "Programmes for …". Relationships use stable IDs, never URLs. Therapy and room links point to their section on the single therapies or rooms page. Doctor links go to the doctor's profile page when one exists, otherwise to their section on `/en/our-doctors`.
+**Related pages.** `type` is a fixed list in the Keystatic config: `condition`, `program`, `therapy`, `room`, `doctor`, `article`, `doctor_answer`, `page`. It is not an editable collection. Link in one direction only; the site generates the reverse links at build time. Programmes and conditions are the exception: the programme's own `conditions` field holds that link, in display order, and a future condition page looks it up. Page templates group items by type, so a condition page renders its `program` items as "Programmes for …". Relationships use stable IDs, never URLs. Therapy and room links point to their section on the single therapies or rooms page. Doctor links go to the doctor's profile page when one exists, otherwise to their section on `/en/our-doctors`.
 
 Attribution is not a related page: an article's author and a doctor answer's doctor keep their own fields.
 
@@ -45,8 +45,8 @@ Medical categories ([`content/medical-categories.json`](../../content/medical-ca
 
 | Collection | Its own fields | Page |
 | --- | --- | --- |
-| Condition | name; slug; category; summary; clinical body (Markdoc); medical reviewer (doctor); last medically reviewed | `/en/conditions/[slug]` |
-| Programme | name; slug; focus; proposition; durations; suitability; inclusions; clinicians (doctors). **No prices.** | `/en/programmes/[slug]` |
+| Condition | name; slug; synonyms (lay terms and abbreviations for the filter and site search). A condition page, when one is built, adds summary, clinical body (Markdoc), medical reviewer (doctor) and last medically reviewed. | No detail page yet (D-216); conditions are listed A to Z on `/en/conditions`. A future detail page is `/en/conditions/[slug]`. |
+| Programme | name; slug; proposition; audience (one sentence of at most 90 characters starting "For": the listing row's line); durations (nights); conditions (ordered list of condition IDs); suitability (who the stay suits when that is not a condition); order; inclusions; clinicians (doctors). No `focus`. **No prices.** | `/en/programmes/[slug]` |
 | Therapy | name; slug; description; purpose; how it is used at Shantara | One `/en/therapies` page for all therapies. No page per therapy. |
 | Room | name; slug; summary; size; specification (`spec_line`); occupancy; balcony; amenities; gallery. **No prices.** | One `/en/rooms` page for all room categories. No page per room. |
 | Doctor | full name; slug; role; `photo_profile`; qualification; licences (issuing body only, never a registration number or joining date); years in practice; biography (Markdoc); areas of practice; professional memberships; publications; press; talks; videos; social posts; external profiles | Every doctor is listed on `/en/our-doctors`. Only Dr. Bahja Janu has a profile page (`/en/doctors/[slug]`), which lists her answers, reviewed articles, programmes, press, talks, videos and social posts. No other doctor gets one. |
@@ -126,9 +126,9 @@ The consultation form and Ask the Doctor use the field key `privacy_consent`. Th
 
 Primary visitor-facing CTA:
 
-> **Book a Consultation**
+> **Make an Inquiry**
 
-Form chrome may use **Send your details**. Do not list **Enquire about a stay** or **Request a consultation** as equivalent primary CTAs. Visitor-facing language follows [skill-copy.md](skill-copy.md).
+The submit button uses the same label, **Make an Inquiry**. Do not list **Book a consultation**, **Enquire about a stay**, **Request a consultation** or **Send your details** as equivalent primary CTAs. Visitor-facing language follows [skill-copy.md](skill-copy.md).
 
 Avoid multiple equivalent CTAs such as Enquire Now, Request Callback, Know More, Get Quote, Start Journey unless a genuinely different action exists.
 
@@ -162,7 +162,7 @@ Example: if a visitor submits from `/en/conditions/diabetes`, the lead context s
 
 ### Presentation options
 
-The same underlying form may appear as: dedicated `/en/book-consultation` page; modal; drawer; inline panel.
+The same underlying form may appear as: dedicated `/en/make-an-inquiry` page; modal; drawer; inline panel.
 
 Do not maintain separate forms or separate field definitions for the consultation.
 
@@ -172,7 +172,7 @@ The hosted-visits request is the other exception, with Ask the Doctor. It is spe
 
 WhatsApp is a secondary communication channel, not a separate lead architecture.
 
-Track WhatsApp clicks, but keep Book a Consultation as the main structured lead path.
+Track WhatsApp clicks, but keep Make an Inquiry as the main structured lead path.
 
 ### Backend simplicity
 
@@ -191,7 +191,7 @@ The browser only needs a success/failure response.
 
 Recommended success copy:
 
-> Consultation request received. Our team will contact you to understand your requirements and guide you on the appropriate next step.
+> Inquiry received. Our team will contact you to understand your requirements and guide you on the appropriate next step.
 
 A secondary WhatsApp action may be offered after lead capture. The full success state is specified under [Confirmation screens](#confirmation-screens).
 
@@ -212,17 +212,17 @@ The form already captures its context (source page, page type, content id). Use 
 
 | Form · sent from | Title | Contact | Keep exploring cards (in order) | Way back |
 | --- | --- | --- | --- | --- |
-| Consultation · `/en/book-consultation`, home, header, any page without its own row | Consultation request received | Call, WhatsApp, email | A day at Shantara · Our doctors · Tariff page | Back to home |
-| Consultation · a programme page | Consultation request received | Call, WhatsApp, email | The doctors on that programme (`/en/our-doctors#{slug}`) · A day at Shantara · Tariff page | Back to the programme |
-| Consultation · a condition page | Consultation request received | Call, WhatsApp, email | The programme for that condition · A Doctor Answer or Clinical Guide on that condition · Our approach | Back to the condition |
-| Consultation · a doctor profile or Our doctors | Consultation request received | Call, WhatsApp, email | That doctor's answers (Journal) · A day at Shantara · Tariff page | Back to the doctor |
-| Consultation · a Journal article or Doctor Answer | Consultation request received | Call, WhatsApp, email | The programme or condition the article is about · Our doctors · A day at Shantara | Back to the article |
-| Ask the Doctor (popup) | Question received | Email | More Doctor Answers (`/en/journal`) · The doctor's profile or section · Book a Consultation, as the last card only | Close, back to the page |
+| Inquiry · `/en/make-an-inquiry`, home, header, any page without its own row | Inquiry received | Call, WhatsApp, email | A day at Shantara · Our doctors · Tariff page | Back to home |
+| Inquiry · a programme page | Inquiry received | Call, WhatsApp, email | The doctors on that programme (`/en/our-doctors#{slug}`) · A day at Shantara · Tariff page | Back to the programme |
+| Inquiry · a condition page | Inquiry received | Call, WhatsApp, email | The programme for that condition · A Doctor Answer or Clinical Guide on that condition · Naturopathy | Back to the condition |
+| Inquiry · a doctor profile or Our doctors | Inquiry received | Call, WhatsApp, email | That doctor's answers (Journal) · A day at Shantara · Tariff page | Back to the doctor |
+| Inquiry · a Journal article or Doctor Answer | Inquiry received | Call, WhatsApp, email | The programme or condition the article is about · Our doctors · A day at Shantara | Back to the article |
+| Ask the Doctor (popup) | Question received | Email | More Doctor Answers (`/en/journal`) · The doctor's profile or section · Make an Inquiry, as the last card only | Close, back to the page |
 | Hosted visits (`/en/hosted-stays`) | Request received | Email | Our story · Farm dining · A day at Shantara | Back to home |
 
 What happens next, by form:
 
-- **Consultation.** A member of the team will call you to understand what you need. A doctor then reviews whether a stay is the right next step. A stay is confirmed after a doctor has spoken with you.
+- **Consultation.** A member of the team will call you to understand what you need. A doctor then reviews whether a stay is the right next step.
 - **Ask the Doctor.** A doctor replies by email. If the question is chosen for the Journal, it is published without your name.
 - **Hosted visits.** We read each request and reply when we can host the visit. (The page's own words; see [special-pages/hosted-stays.md](special-pages/hosted-stays.md).)
 
@@ -237,10 +237,10 @@ The pre-filled line never repeats anything the visitor typed: no name, no condit
 #### Rules for every confirmation
 
 - In a modal, drawer or inline panel, the confirmation replaces the form inside the same container (`headingLevel={2}`, `exploreLayout="list"` so the cards become rows), and closing it returns the visitor to the page they were reading.
-- Do not repeat Book a Consultation on a consultation confirmation. Do not add a second form, a newsletter sign-up, a share bar, social follow buttons, testimonials, a countdown, a promotion or an autoplaying video.
+- Do not repeat Make an Inquiry on a consultation confirmation. Do not add a second form, a newsletter sign-up, a share bar, social follow buttons, testimonials, a countdown, a promotion or an autoplaying video.
 - Never echo health information the visitor typed, on screen or in a URL.
 - No separate thank-you URL. The confirmation is a state of the page that holds the form. Conversion is the event, fired only after the destination confirms success.
-- Hosted visits keep their page rules: no tariff link and no Book a Consultation on the confirmation.
+- Hosted visits keep their page rules: no tariff link and no Make an Inquiry on the confirmation.
 - Analytics: WhatsApp, call and email taps fire `contact_click` with `cta_location` `confirmation`. Do not add an event for card clicks; page views with the referrer already answer that.
 
 ## Publishing strategy

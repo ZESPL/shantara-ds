@@ -20,6 +20,17 @@ Healing at Shantara begins by understanding what the body is asking for, rather 
 
 Unlike hospitality-focused wellness resorts, Shantara operates as a clinical naturopathy retreat, where treatment efficacy depends on controlled conditions: prescribed diets, structured routines, minimal external disruption, and continuous monitoring. The house rules in [section 13](policies.md#section-13) exist to protect these clinical outcomes, not to restrict guests unnecessarily.
 
+Naturopathy is one of the systems of medicine under India's Ministry of AYUSH. At Shantara, it is practised by doctors with a BNYS degree. Their work follows six principles (the source for the website's Naturopathy page, `/en/naturopathy`):
+
+1. Treatment that supports normal body functions, such as digestion, sleep and circulation.
+2. Looking at diet, sleep, activity and stress, as well as symptoms.
+3. The gentlest approach that is effective.
+4. Doctors explain each part of the programme, so guests understand what they are doing and why.
+5. Assessing overall health, not only the problem a guest came with.
+6. Building habits guests can keep up at home.
+
+Herbal medicine is used, prescribed by a doctor after assessment. Supplements are not used. On the website, herbal medicine stays unpublished until the doctors confirm that prescribing it is within their registration and scope (website D-219).
+
 ### Why Shantara, today
 
 Modern illness is rarely sudden. It builds quietly through routine, stress, and neglect, and what it often needs is not intervention but interruption, meaning a pause and a space to reset. Shantara exists for that moment.

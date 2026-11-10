@@ -1,10 +1,10 @@
 /* Website chrome: header, phone dropdown, menu sheet, footer, and two helpers the screens
    share (PageSlot, siteContactItems). Composition sample, not the production site. */
 
-/* Five items, no more (owner decision #6). Contact lives in the phone dropdown and the footer. */
+/* Four items: five at most (owner decision #6). Conditions is a plain index linked from the
+   footer, not the nav (shantara.life D-216). Contact lives in the phone dropdown and the footer. */
 const NAV = [
-  { label: "Programmes", view: "programme" },
-  { label: "Conditions", view: "conditions" },
+  { label: "Programmes", view: "programmes" },
   { label: "Experience", view: "experience" },
   { label: "About", view: "about" },
   { label: "Journal", view: "journal" },
@@ -12,7 +12,7 @@ const NAV = [
 
 /* Views that open on HeroFullBleed: the header starts transparent with Merino type over a
    scrim, then turns solid Merino once the page scrolls. */
-const PHOTO_HERO_VIEWS = ["home", "experience"];
+const PHOTO_HERO_VIEWS = ["home", "experience", "naturopathy", "programmes"];
 /* Views that open on HeroSplit: the photograph runs to the top edge on one side, so the
    header is solid from the start rather than dark type over a photograph. */
 const SOLID_HEADER_VIEWS = ["programme", "tariffs"];
@@ -336,7 +336,7 @@ function MenuSheet({ view, locale, onNavigate, onClose, onBook, onLocaleChange }
             ))}
           </ul>
         </nav>
-        <Button size="lg" fullWidth onClick={() => { onClose(false); onBook("menu"); }}>{t("Book a Consultation")}</Button>
+        <Button size="lg" fullWidth onClick={() => { onClose(false); onBook("menu"); }}>{t("Enquire")}</Button>
         <div className="sh-menu-contact">
           <a className="shantara-dir-ltr" href={c.tel} style={{ fontVariantNumeric: "tabular-nums" }}><Icon name="phone" size={18} />{c.phone}</a>
           <a href={c.whatsapp} target="_blank" rel="noopener"><Icon name="message-circle" size={18} />{t("WhatsApp")}</a>
@@ -422,8 +422,8 @@ function SiteHeader({ view, onNavigate, locale = "en", onLocaleChange }) {
         <div className="sh-hdr-end">
           {LanguageSelector ? <span className="sh-hdr-lang"><LanguageSelector locale={locale} rest={window.ShantaraLocales ? window.ShantaraLocales.kitViewPath(view) : ""} onSelect={onLocaleChange} /></span> : null}
           <CallMenu view={view} />
-          <span className="sh-hdr-book-full"><Button size="md" onClick={() => book("header")}>{t("Book a Consultation")}</Button></span>
-          <span className="sh-hdr-book-short"><Button size="md" onClick={() => book("header")}>{t("Book")}</Button></span>
+          <span className="sh-hdr-book-full"><Button size="md" onClick={() => book("header")}>{t("Enquire")}</Button></span>
+          <span className="sh-hdr-book-short"><Button size="md" onClick={() => book("header")}>{t("Enquire")}</Button></span>
           <span className="sh-hdr-menu" ref={menuBtn}>
             <IconButton label={t("Open menu")} aria-expanded={open} aria-controls="sh-site-menu" aria-haspopup="dialog" onClick={() => setOpen(true)}><Icon name="menu" size={22} /></IconButton>
           </span>
@@ -436,8 +436,8 @@ function SiteHeader({ view, onNavigate, locale = "en", onLocaleChange }) {
 
 const FOOTER_COLS = [
   { title: "Programmes & visits", links: [
-    { label: "Programmes", view: "programme" },
-    { label: "Conditions", view: "conditions" },
+    { label: "Programmes", view: "programmes" },
+    { label: "Conditions A to Z", view: "conditions" },
     { label: "Experience", view: "experience" },
     { label: "Journal", view: "journal" },
   ] },
@@ -449,8 +449,8 @@ const FOOTER_COLS = [
   ] },
   { title: "Visit", links: [
     { label: "Contact", view: "contact" },
-    { label: "Rooms and tariffs", view: "tariffs" },
-    { label: "Book a Consultation", view: "booking" },
+    { label: "Rates and inclusions", view: "tariffs" },
+    { label: "Make an Inquiry", view: "booking" },
     { label: "Cancellation policy", view: "contact" },
   ] },
 ];
@@ -544,4 +544,12 @@ function SiteFooter({ onNavigate, locale = "en" }) {
   );
 }
 
-Object.assign(window, { SiteHeader, SiteFooter, PageSlot, siteContact, siteContactItems, applyTextSize, readStoredTextSize });
+/* A programme's `durations` (a list of nights) as one line: [14, 21, 28] → "14, 21 or 28 nights". */
+function nightsLabel(durations) {
+  if (!Array.isArray(durations) || !durations.length) return "";
+  const list = durations.map(String);
+  const last = list.pop();
+  return (list.length ? list.join(", ") + " or " + last : last) + " nights";
+}
+
+Object.assign(window, { SiteHeader, SiteFooter, PageSlot, siteContact, siteContactItems, applyTextSize, readStoredTextSize, nightsLabel });

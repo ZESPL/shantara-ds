@@ -1,0 +1,39 @@
+{
+  "id": "respiratory-allergy-control",
+  "slug": "respiratory-allergy-control",
+  "name": "Respiratory & Allergy Control",
+  "proposition": "A residential programme for guests with allergic or breathing complaints that are stable, including complaints made worse by city pollution. Breathing practice, steam and water therapies, meals and rest are reviewed with the guest each day.",
+  "audience": "For allergic rhinitis, sinusitis, recurring bronchitis, seasonal allergies and asthma.",
+  "durations": [
+    7,
+    14,
+    21,
+    28
+  ],
+  "conditions": [
+    "allergic-rhinitis",
+    "asthma",
+    "sinusitis",
+    "chronic-bronchitis",
+    "copd"
+  ],
+  "suitability": [
+    "Guests whose breathing is affected by city pollution",
+    "Guests whose asthma or COPD is stable and managed by their own doctor"
+  ],
+  "order": 12,
+  "locale": "en",
+  "source": "client",
+  "related_pages": [
+    {
+      "type": "programme",
+      "id": "gut-microbiome-restoration"
+    }
+  ],
+  "status": "published",
+  "featured_image": {
+    "src": "yoga-meditation-aerial-cobblestone-circle-cross-legged-guest-landscape-3x2",
+    "alt": "A guest meditating at the centre of a cobblestone circle, seen from above"
+  },
+  "featured": false
+}

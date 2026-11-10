@@ -2,21 +2,12 @@
   "id": "insomnia",
   "slug": "insomnia",
   "name": "Insomnia",
-  "summary": null,
-  "clinical": null,
-  "faqs": [],
-  "medical_reviewer": null,
-  "last_medically_reviewed": null,
-  "locale": "en",
-  "source": "gap",
-  "related_pages": [
-    {
-      "type": "programme",
-      "id": "stress-management"
-    }
+  "synonyms": [
+    "poor sleep",
+    "sleeplessness",
+    "trouble sleeping",
+    "sleep problems"
   ],
-  "category": null,
-  "status": "draft",
-  "featured_image": null,
-  "external_references": []
+  "locale": "en",
+  "source": "client"
 }

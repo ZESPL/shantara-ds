@@ -1,0 +1,13 @@
+{
+  "id": "chronic-inflammation",
+  "slug": "chronic-inflammation",
+  "name": "Chronic low-grade inflammation",
+  "synonyms": [
+    "raised CRP",
+    "high ESR",
+    "inflammatory markers",
+    "inflammation"
+  ],
+  "locale": "en",
+  "source": "client"
+}

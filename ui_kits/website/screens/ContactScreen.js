@@ -60,7 +60,7 @@ function ContactScreen({ onNavigate }) {
           ground="himalaya"
           title={t("Share your name and a number we can reach.")}
           sub={t("To book a consultation, send your details and our team will be in touch.")}
-          action={<Button size="lg" onClick={() => { if (L) L.track("consultation_cta_click", { page_type: "contact", content_id: "contact", content_name: "Contact", cta_location: "closing" }); onNavigate("booking"); }}>{t("Book a Consultation")}</Button>}
+          action={<Button size="lg" onClick={() => { if (L) L.track("consultation_cta_click", { page_type: "contact", content_id: "contact", content_name: "Contact", cta_location: "closing" }); onNavigate("booking"); }}>{t("Make an Inquiry")}</Button>}
         />
       </P>
     </main>

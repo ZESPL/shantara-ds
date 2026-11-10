@@ -1,0 +1,14 @@
+{
+  "id": "dyslipidemia",
+  "slug": "dyslipidemia",
+  "name": "Dyslipidemia",
+  "synonyms": [
+    "high cholesterol",
+    "cholesterol",
+    "triglycerides",
+    "hyperlipidemia",
+    "lipid imbalance"
+  ],
+  "locale": "en",
+  "source": "client"
+}

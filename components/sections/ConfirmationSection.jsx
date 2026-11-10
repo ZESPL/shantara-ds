@@ -42,7 +42,7 @@ function ensure() {
 /* next: string[] · contact: [{ icon, label, href? }] ·
    explore: [{ title, text?, meta?, src?, alt?, href }]: three cards (only the first three render).
    An http(s) href opens in a new tab. */
-export function ConfirmationSection({ title = "Consultation request received", sub, next = [], nextLabel = "What happens next", contact = [], contactLabel = "If you need us sooner", explore = [], exploreLabel = "Keep exploring", exploreLayout = "3", actions, autoFocus = true, headingLevel = 1, style, ...rest }) {
+export function ConfirmationSection({ title = "Inquiry received", sub, next = [], nextLabel = "What happens next", contact = [], contactLabel = "If you need us sooner", explore = [], exploreLabel = "Keep exploring", exploreLayout = "3", actions, autoFocus = true, headingLevel = 1, style, ...rest }) {
   ensure();
   const ref = React.useRef(null);
   React.useEffect(() => {
@@ -56,7 +56,7 @@ export function ConfirmationSection({ title = "Consultation request received", s
     <div data-ds-id="sections/ConfirmationSection" className="sh-conf" ref={ref} style={style} {...rest}>
       <div className="sh-conf-main" role="status">
         <span className="sh-conf-mark" aria-hidden="true"><Icon name="check" size={24} /></span>
-        <Statement as={"h" + headingLevel} size="h1" sub={sub} actions={actions} measure="22ch">{title}</Statement>
+        <Statement as={"h" + headingLevel} size="h1" sub={sub} actions={actions} measure="title">{title}</Statement>
         {next.length ? (
           <div>
             <p className="sh-conf-label">{nextLabel}</p>

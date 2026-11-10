@@ -1,0 +1,13 @@
+{
+  "id": "allergic-rhinitis",
+  "slug": "allergic-rhinitis",
+  "name": "Allergic rhinitis",
+  "synonyms": [
+    "hay fever",
+    "dust allergy",
+    "sneezing",
+    "nasal allergy"
+  ],
+  "locale": "en",
+  "source": "client"
+}

@@ -1,47 +1,39 @@
 Back to the [website skill](SKILL.md).
 
-# Shantara Website Language and Copywriting Skill
+# Shantara website copy
 
-This skill governs all public-facing language written for the Shantara website: page copy, headings, hero sections, programme/condition/treatment/accommodation/doctor/about/editorial pages, FAQs, navigation labels, calls to action, cards, forms, and any other supporting or informational text visible to visitors.
-
-A visitor should understand Shantara without having to understand Shantara's website architecture, internal processes, clinical terminology, content system or business rules. Public copy must sound like it was written for a prospective guest, not for the team building the website.
-
-**Core principle: clarity first, warmth second, brand expression third.**
+Every visitor-facing word follows **[Shantara language](../../docs/language.md)**. It is mandatory: no first or second person, premium positioning, positive framing, assertive statements and no AI slop. Policy pages add the formal register in [policy language](copy/policy-language.md).
 
 ## Parts
 
-This skill is split into focused files under [`copy/`](copy/). Read the one relevant to the task; each is self-contained.
-
 | Part | Covers |
 | --- | --- |
-| [Voice and tone](copy/voice-and-tone.md) | Core principle, the voice, register, sentence-level habits, direct and natural language, final review checklist |
-| [Naming and NAP](copy/naming-and-nap.md) | Entity naming layers, business name, hilltop/acreage, room count, phone number, ownership, former names |
-| [Health claims and compliance](copy/health-claims-and-compliance.md) | Clinical claims, treatments, meals, booking/duration restrictions, pricing governance, AI authoring rules |
+| [Shantara language](../../docs/language.md) | The voice, pronoun-free patterns, positive framing, assertive register, banned AI slop, register by surface |
+| [Naming and NAP](copy/naming-and-nap.md) | Entity naming layers, business name, hilltop, room count, phone number, ownership, former names |
+| [Health claims and compliance](copy/health-claims-and-compliance.md) | Claims, treatments, meals, booking and duration rules, pricing governance, AI authoring rules |
 | [Page copy patterns](copy/page-copy-patterns.md) | Headings, CTAs, forms, information-architecture leakage, rewrite patterns, public vs internal copy |
-| [Words to avoid](copy/words-to-avoid.md) | Banned product language, luxury and mystical clichés, caution words, hard bans |
 | [Localisation](copy/localisation.md) | Published language, planned locales, translation rules |
-| [Policy language](copy/policy-language.md) | Formal register for policy pages (privacy, terms, cancellation, house rules, guest rights and every other `page_type: policy` page) |
+| [Policy language](copy/policy-language.md) | Formal register for every `page_type: policy` page |
 
 ## Non-negotiables (quick reference)
 
-These are enforced everywhere; the linked part has the full rule.
-
-* **No eyebrows.** Never a small uppercase tracked label above a section or title, anywhere. Category/duration meta goes in a line below the title. See [voice and tone](copy/voice-and-tone.md#punctuation).
+* **Shantara language.** No I, me, my, we, us, our, you or your, anywhere. See [Shantara language](../../docs/language.md).
+* **No eyebrows.** Never a small uppercase tracked label (overline) above a section, title, hero, card, specimen or portal page. Category, duration and other meta go in a meta line **below** the title, in normal case and caption type.
 * **Business name.** "Shantara Naturopathy Retreat" in NAP. "Shantara" alone is fine standalone. Never "Shantara Naturopathy" without "Retreat". See [naming and NAP](copy/naming-and-nap.md#business-name-nap).
 * **Never "four acres" / "4 acres" / "four hilltop acres".** "Hilltop" alone is fine. See [naming and NAP](copy/naming-and-nap.md#site-hilltop-not-acreage).
-* **"52 rooms"** at most once per site, never prominently (no stat tile, heading, or hero). See [naming and NAP](copy/naming-and-nap.md#rooms).
+* **"52 rooms"** at most once per site, never prominently (no stat tile, heading or hero). See [naming and NAP](copy/naming-and-nap.md#rooms).
 * **Phone and WhatsApp**: stored as separate fields, both currently **+91 9553 600 100**. Email **heal@shantara.life**. See [naming and NAP](copy/naming-and-nap.md#one-contact-number).
-* **Plain and direct.** State facts and limitations explicitly. No softening, no "not every" when "some" says it, no words added to sound polished. See [voice and tone](copy/voice-and-tone.md#direct-and-natural-language).
-* **Guest**, not "patient" or "client", on public pages. See [voice and tone](copy/voice-and-tone.md#voice).
+* **Guest**, never "patient", "client" or "customer", on public pages.
+* **Sentence case headings.** The inquiry action is **Make an Inquiry** on the page title, H1, breadcrumb, footer, submit button, in-page CTAs and analytics name. The header and menu sheet use **Enquire**. See [page copy patterns](copy/page-copy-patterns.md#calls-to-action).
+* **One term.** The rates breadcrumb is **Tariff**. The footer link is **Rates and inclusions**. **Rooms** only when a rooms page exists.
 * **No isolated prices** outside the tariff surface. See [health claims and compliance](copy/health-claims-and-compliance.md#pricing-must-remain-controlled).
 * **Nursing care and the personal attendant are different services.** Before writing about nursing, nurses, attendants, bystanders or helpers, read `docs/handbook/glossary.md` and follow the naming rules exactly.
-* **Policy pages use formal policy language**, not the spoken-formal site voice, and rewording never changes a commitment. See [policy language](copy/policy-language.md).
 * **BNYS doctors.** A doctor who holds a BNYS, and who is legally entitled to "Dr.", is written "Dr. [Full Name], BNYS" or "Dr. [Full Name]". Follow the naming rules in `docs/handbook/glossary.md`.
-* **One idea, one action.** Each page says one thing and asks for one next step; each heading states one point; each action has one label everywhere. See [rule of one](../../docs/rule-of-one.md).
-* **No outcome guarantees** (cure, reverse, heal, medication-free, guaranteed weight loss). See [health claims and compliance](copy/health-claims-and-compliance.md#clinical-claims).
+* **Claims.** Effects are described with confidence. Never "cure", "guarantee" or "100%". See [health claims and compliance](copy/health-claims-and-compliance.md#clinical-claims).
+* **One idea, one action.** Each page says one thing and asks for one next step. See [rule of one](../../docs/rule-of-one.md).
 
-## Do not narrate the website to the visitor
+## The website is never the subject
 
-Never write public copy from the perspective of the website team, developer, designer, content strategist or CMS. The visitor should never be told how the website itself is organised, why a page does or doesn't exist, or where information is stored. Present the information that is useful to the visitor. Full patterns and rewrite examples: [page copy patterns](copy/page-copy-patterns.md).
+Public copy never describes how the website is organised, why a page exists or where information is stored. Patterns and rewrites: [page copy patterns](copy/page-copy-patterns.md).
 
-Internal ICP names, strategy labels, and internal-only audience research (`docs/icp.md`) never become public headings, keywords, or ad copy without validation.
+Internal ICP names, strategy labels and internal audience research (`docs/icp.md`) never become public headings, keywords or ad copy without validation.

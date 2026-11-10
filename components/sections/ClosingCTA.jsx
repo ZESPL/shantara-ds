@@ -16,6 +16,8 @@ import { TextLink } from "../editorial/TextLink.jsx";
 const CSS = `
 .sh-close{position:relative;isolation:isolate}
 .sh-close[data-variant="photo"]{display:flex;align-items:flex-end;min-height:clamp(520px, 72svh, 860px);overflow:hidden}
+.sh-close[data-variant="photo"] .sh-stmt-title{font:var(--type-h1)}
+.sh-close[data-variant="photo"] .sh-stmt-sub{font:var(--type-lead)}
 .sh-close>.sh-media{position:absolute;inset:0;z-index:-1;aspect-ratio:auto;height:100%}
 .sh-close-body{width:100%;padding-block:var(--section-y)}
 .sh-close[data-variant="compact"] .sh-close-body{padding-block:clamp(40px, 3vw + 28px, 72px)}
@@ -90,7 +92,7 @@ export function ClosingCTA({ variant, ground = "pine", src, alt = "", position, 
       <div className={"sh-close-body" + (v === "photo" ? " sh-photo-text" : "")}>
         <div className="sh-container">
           <div className="sh-close-row">
-            <Statement as={titleAs} size={compact ? "h3" : "statement"} sub={sub} measure={compact ? "32ch" : undefined}>{heading}</Statement>
+            <Statement as={titleAs} size={compact ? "h3" : "statement"} sub={sub} measure={compact ? "heading" : undefined}>{heading}</Statement>
             {acts ? <div className="sh-actions sh-close-actions" data-stack="mobile">{acts}</div> : null}
           </div>
           <Contact contact={contact} />

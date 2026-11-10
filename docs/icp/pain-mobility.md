@@ -98,7 +98,7 @@ Indicative: Inflammatory & Musculoskeletal Rehabilitation; Complete Healing; the
 
 ### N. Appropriate CTA
 
-Read what to expect; Meet our doctors; Book a Consultation. Do not use “Book your pain-free life”.
+Read what to expect; Meet our doctors; Make an Inquiry. Do not use “Book your pain-free life”.
 
 ### O. Conversion objective
 

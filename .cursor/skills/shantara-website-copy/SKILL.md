@@ -16,7 +16,7 @@ Canonical skill lives with the Website Kit so humans and agents read the same fi
 
 **`ui_kits/website/skill-copy.md`**
 
-Read that file before writing, rewriting, reviewing, or approving any public-facing Shantara website copy. Brand voice, register, taglines, headings, and CTAs live there too. The catalog page is `docs/website-copy.html`. There is no separate brand-copy or brand-voice card.
+Every visitor-facing word follows `docs/language.md` (mandatory: no I, we or you; premium; positive; assertive; no AI slop). The copy index adds naming, claims, CTAs and policy register. The catalog page is `docs/website-copy.html`. There is no separate brand-copy or brand-voice card.
 
 The Website Kit sample screens in `ui_kits/website/` must follow this skill. Internal implementation notes belong in the other website skill files, never in rendered copy. Internal ICP names from `docs/icp.md` are strategy labels, not website headings.
 

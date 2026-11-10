@@ -8,5 +8,7 @@ export interface SpecTableProps extends React.TableHTMLAttributes<HTMLTableEleme
   caption?: string;
   showHeader?: boolean;
   rules?: boolean;
+  /** `contrast`: two sentences per row in equal, wrapping columns; the accent column on a raised ground under a gold rule. Use with `showHeader`. */
+  variant?: "default" | "contrast";
 }
 export declare function SpecTable(props: SpecTableProps): JSX.Element;

@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"ShantaraDesignSystem_45bbe4","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"Divider","sourcePath":"components/core/Divider.jsx"},{"name":"HnchLogo","sourcePath":"components/core/HnchLogo.jsx"},{"name":"ICON_GROUPS","sourcePath":"components/core/Icon.jsx"},{"name":"ICON_NAMES","sourcePath":"components/core/Icon.jsx"},{"name":"Icon","sourcePath":"components/core/Icon.jsx"},{"name":"IconButton","sourcePath":"components/core/IconButton.jsx"},{"name":"Logo","sourcePath":"components/core/Logo.jsx"},{"name":"PatternPanel","sourcePath":"components/core/PatternPanel.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Dialog","sourcePath":"components/feedback/Dialog.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"DateField","sourcePath":"components/forms/DateField.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"SearchList","sourcePath":"components/forms/SearchList.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Switch","sourcePath":"components/forms/Switch.jsx"},{"name":"Textarea","sourcePath":"components/forms/Textarea.jsx"},{"name":"Accordion","sourcePath":"components/navigation/Accordion.jsx"},{"name":"AnnouncementBar","sourcePath":"components/navigation/AnnouncementBar.jsx"},{"name":"Breadcrumbs","sourcePath":"components/navigation/Breadcrumbs.jsx"},{"name":"LanguageSelector","sourcePath":"components/navigation/LanguageSelector.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"Media","sourcePath":"components/editorial/Media.jsx"},{"name":"ArticleFigure","sourcePath":"components/editorial/ArticleFigure.jsx"},{"name":"PortraitFrame","sourcePath":"components/editorial/PortraitFrame.jsx"},{"name":"AuthorCard","sourcePath":"components/editorial/AuthorCard.jsx"},{"name":"GroupedList","sourcePath":"components/editorial/GroupedList.jsx"},{"name":"MetaRow","sourcePath":"components/editorial/MetaRow.jsx"},{"name":"NumberedSteps","sourcePath":"components/editorial/NumberedSteps.jsx"},{"name":"Numeral","sourcePath":"components/editorial/Numeral.jsx"},{"name":"Pagination","sourcePath":"components/editorial/Pagination.jsx"},{"name":"PlainList","sourcePath":"components/editorial/PlainList.jsx"},{"name":"Prose","sourcePath":"components/editorial/Prose.jsx"},{"name":"QuoteBlock","sourcePath":"components/editorial/QuoteBlock.jsx"},{"name":"ReviewedBy","sourcePath":"components/editorial/ReviewedBy.jsx"},{"name":"ShareBar","sourcePath":"components/editorial/ShareBar.jsx"},{"name":"SpecTable","sourcePath":"components/editorial/SpecTable.jsx"},{"name":"Statement","sourcePath":"components/editorial/Statement.jsx"},{"name":"TableOfContents","sourcePath":"components/editorial/TableOfContents.jsx"},{"name":"TextLink","sourcePath":"components/editorial/TextLink.jsx"},{"name":"Tile","sourcePath":"components/editorial/Tile.jsx"},{"name":"TimeTable","sourcePath":"components/editorial/TimeTable.jsx"},{"name":"Video","sourcePath":"components/editorial/Video.jsx"},{"name":"ArticleHeader","sourcePath":"components/sections/ArticleHeader.jsx"},{"name":"ArticleLayout","sourcePath":"components/sections/ArticleLayout.jsx"},{"name":"BandStatement","sourcePath":"components/sections/BandStatement.jsx"},{"name":"CatalogueSection","sourcePath":"components/sections/CatalogueSection.jsx"},{"name":"ClosingCTA","sourcePath":"components/sections/ClosingCTA.jsx"},{"name":"TileGrid","sourcePath":"components/sections/TileGrid.jsx"},{"name":"ConfirmationSection","sourcePath":"components/sections/ConfirmationSection.jsx"},{"name":"ContactLocation","sourcePath":"components/sections/ContactLocation.jsx"},{"name":"CredentialStrip","sourcePath":"components/sections/CredentialStrip.jsx"},{"name":"FaqSection","sourcePath":"components/sections/FaqSection.jsx"},{"name":"FeatureGrid","sourcePath":"components/sections/FeatureGrid.jsx"},{"name":"FormSplit","sourcePath":"components/sections/FormSplit.jsx"},{"name":"GalleryGrid","sourcePath":"components/sections/GalleryGrid.jsx"},{"name":"GuestStory","sourcePath":"components/sections/GuestStory.jsx"},{"name":"HeroFullBleed","sourcePath":"components/sections/HeroFullBleed.jsx"},{"name":"HeroSplit","sourcePath":"components/sections/HeroSplit.jsx"},{"name":"HeroStatement","sourcePath":"components/sections/HeroStatement.jsx"},{"name":"InPageNav","sourcePath":"components/sections/InPageNav.jsx"},{"name":"InclusionsSection","sourcePath":"components/sections/InclusionsSection.jsx"},{"name":"IndexList","sourcePath":"components/sections/IndexList.jsx"},{"name":"KeyFacts","sourcePath":"components/sections/KeyFacts.jsx"},{"name":"ListingSection","sourcePath":"components/sections/ListingSection.jsx"},{"name":"NotFoundSection","sourcePath":"components/sections/NotFoundSection.jsx"},{"name":"NoticeBand","sourcePath":"components/sections/NoticeBand.jsx"},{"name":"NumeralsSplit","sourcePath":"components/sections/NumeralsSplit.jsx"},{"name":"PanoramaCaption","sourcePath":"components/sections/PanoramaCaption.jsx"},{"name":"PeopleRow","sourcePath":"components/sections/PeopleRow.jsx"},{"name":"PolicySection","sourcePath":"components/sections/PolicySection.jsx"},{"name":"ProcessSection","sourcePath":"components/sections/ProcessSection.jsx"},{"name":"ProgrammeCompare","sourcePath":"components/sections/ProgrammeCompare.jsx"},{"name":"ReferencesSection","sourcePath":"components/sections/ReferencesSection.jsx"},{"name":"RelatedArticles","sourcePath":"components/sections/RelatedArticles.jsx"},{"name":"Section","sourcePath":"components/sections/Section.jsx"},{"name":"SplitSection","sourcePath":"components/sections/SplitSection.jsx"},{"name":"TimelineSection","sourcePath":"components/sections/TimelineSection.jsx"},{"name":"VideoFeature","sourcePath":"components/sections/VideoFeature.jsx"}],"sourceHashes":{"components/core/Badge.jsx":"6f87d9186fb4","components/core/Button.jsx":"fb2a139d1a82","components/core/Card.jsx":"899ecf09e977","components/core/Divider.jsx":"7841bbb870dd","components/core/HnchLogo.jsx":"3086ba9ae2ea","components/core/Icon.jsx":"cc8205da0659","components/core/IconButton.jsx":"0746d0dc8fb3","components/core/Logo.jsx":"71651ae4093b","components/core/PatternPanel.jsx":"bdd8ba344adf","components/core/Tag.jsx":"d29c1738558d","components/feedback/Dialog.jsx":"c1b84ed6f276","components/feedback/Spinner.jsx":"be5f4c801431","components/feedback/Toast.jsx":"c64129df2a1a","components/feedback/Tooltip.jsx":"9c7b40a94408","components/forms/Checkbox.jsx":"94f59a9c424c","components/forms/DateField.jsx":"913a3ce5a07e","components/forms/Input.jsx":"110473e90c03","components/forms/Radio.jsx":"617d02dde15d","components/forms/SearchList.jsx":"96bf0845eb74","components/forms/Select.jsx":"523766e2901d","components/forms/Switch.jsx":"6e7c22faf1b3","components/forms/Textarea.jsx":"ec0634e59eff","components/navigation/Accordion.jsx":"b8870511c6fe","components/navigation/AnnouncementBar.jsx":"a08f25f34e41","components/navigation/Breadcrumbs.jsx":"421f19e62be1","components/navigation/LanguageSelector.jsx":"54d901688c06","components/navigation/Tabs.jsx":"414b48cd2f58","components/editorial/Media.jsx":"33a6b0c1bfde","components/editorial/ArticleFigure.jsx":"f7689927c7db","components/editorial/PortraitFrame.jsx":"63f0b6155a5a","components/editorial/AuthorCard.jsx":"e96ed75df2fb","components/editorial/GroupedList.jsx":"238e19136bf2","components/editorial/MetaRow.jsx":"b7244fdce96c","components/editorial/NumberedSteps.jsx":"eb66c47b1dc9","components/editorial/Numeral.jsx":"e6b7086ade4c","components/editorial/Pagination.jsx":"893e51b7753d","components/editorial/PlainList.jsx":"8f21a3d5bda3","components/editorial/Prose.jsx":"5c8e1ce636ea","components/editorial/QuoteBlock.jsx":"b64d5a6a05d1","components/editorial/ReviewedBy.jsx":"cf907ffdf4c1","components/editorial/ShareBar.jsx":"a296f19b8e8f","components/editorial/SpecTable.jsx":"2151e35f592b","components/editorial/Statement.jsx":"9801ab9ee07c","components/editorial/TableOfContents.jsx":"e7a40c6c066e","components/editorial/TextLink.jsx":"5b739608f549","components/editorial/Tile.jsx":"e584181492e2","components/editorial/TimeTable.jsx":"610e5af78002","components/editorial/Video.jsx":"e21a3629d769","components/sections/ArticleHeader.jsx":"08192c93c062","components/sections/ArticleLayout.jsx":"393bf3aed56f","components/sections/BandStatement.jsx":"e4d406f97423","components/sections/CatalogueSection.jsx":"15c306e02e48","components/sections/ClosingCTA.jsx":"8416ad13bf31","components/sections/TileGrid.jsx":"c56cebd60494","components/sections/ConfirmationSection.jsx":"383f86a4f205","components/sections/ContactLocation.jsx":"391cc9e11360","components/sections/CredentialStrip.jsx":"a913e464373e","components/sections/FaqSection.jsx":"b68b80cab3ab","components/sections/FeatureGrid.jsx":"30cc440755ad","components/sections/FormSplit.jsx":"c44c5555c7b4","components/sections/GalleryGrid.jsx":"615715125816","components/sections/GuestStory.jsx":"4ee5f343575b","components/sections/HeroFullBleed.jsx":"63fda9954b4f","components/sections/HeroSplit.jsx":"953350f79419","components/sections/HeroStatement.jsx":"a01a4e27a8ae","components/sections/InPageNav.jsx":"eb3f79ab105e","components/sections/InclusionsSection.jsx":"8702adc09664","components/sections/IndexList.jsx":"8b059cd6e204","components/sections/KeyFacts.jsx":"04addc7ec64f","components/sections/ListingSection.jsx":"57c590d8c480","components/sections/NotFoundSection.jsx":"75a872ab4cab","components/sections/NoticeBand.jsx":"e7e738549007","components/sections/NumeralsSplit.jsx":"5051d50226ad","components/sections/PanoramaCaption.jsx":"9066fc95a5fa","components/sections/PeopleRow.jsx":"b52173733918","components/sections/PolicySection.jsx":"a181f48e2830","components/sections/ProcessSection.jsx":"1fa9cb2bbf8d","components/sections/ProgrammeCompare.jsx":"3d2cb3c0d938","components/sections/ReferencesSection.jsx":"d71e2cc1c769","components/sections/RelatedArticles.jsx":"035f4a14648b","components/sections/Section.jsx":"704bd382cde3","components/sections/SplitSection.jsx":"275162930637","components/sections/TimelineSection.jsx":"4e441b5ea5ef","components/sections/VideoFeature.jsx":"bea56a65b40c"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":4,"namespace":"ShantaraDesignSystem_45bbe4","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"Divider","sourcePath":"components/core/Divider.jsx"},{"name":"HnchLogo","sourcePath":"components/core/HnchLogo.jsx"},{"name":"ICON_GROUPS","sourcePath":"components/core/Icon.jsx"},{"name":"ICON_NAMES","sourcePath":"components/core/Icon.jsx"},{"name":"Icon","sourcePath":"components/core/Icon.jsx"},{"name":"IconButton","sourcePath":"components/core/IconButton.jsx"},{"name":"Logo","sourcePath":"components/core/Logo.jsx"},{"name":"PatternPanel","sourcePath":"components/core/PatternPanel.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Dialog","sourcePath":"components/feedback/Dialog.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Tooltip","sourcePath":"components/feedback/Tooltip.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"DateField","sourcePath":"components/forms/DateField.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"SearchList","sourcePath":"components/forms/SearchList.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Switch","sourcePath":"components/forms/Switch.jsx"},{"name":"Textarea","sourcePath":"components/forms/Textarea.jsx"},{"name":"Accordion","sourcePath":"components/navigation/Accordion.jsx"},{"name":"AnnouncementBar","sourcePath":"components/navigation/AnnouncementBar.jsx"},{"name":"Breadcrumbs","sourcePath":"components/navigation/Breadcrumbs.jsx"},{"name":"LanguageSelector","sourcePath":"components/navigation/LanguageSelector.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"Media","sourcePath":"components/editorial/Media.jsx"},{"name":"ArticleFigure","sourcePath":"components/editorial/ArticleFigure.jsx"},{"name":"PortraitFrame","sourcePath":"components/editorial/PortraitFrame.jsx"},{"name":"AuthorCard","sourcePath":"components/editorial/AuthorCard.jsx"},{"name":"GroupedList","sourcePath":"components/editorial/GroupedList.jsx"},{"name":"MetaRow","sourcePath":"components/editorial/MetaRow.jsx"},{"name":"NumberedSteps","sourcePath":"components/editorial/NumberedSteps.jsx"},{"name":"Numeral","sourcePath":"components/editorial/Numeral.jsx"},{"name":"Pagination","sourcePath":"components/editorial/Pagination.jsx"},{"name":"PlainList","sourcePath":"components/editorial/PlainList.jsx"},{"name":"Prose","sourcePath":"components/editorial/Prose.jsx"},{"name":"QuoteBlock","sourcePath":"components/editorial/QuoteBlock.jsx"},{"name":"ReviewedBy","sourcePath":"components/editorial/ReviewedBy.jsx"},{"name":"ShareBar","sourcePath":"components/editorial/ShareBar.jsx"},{"name":"SpecTable","sourcePath":"components/editorial/SpecTable.jsx"},{"name":"Statement","sourcePath":"components/editorial/Statement.jsx"},{"name":"TableOfContents","sourcePath":"components/editorial/TableOfContents.jsx"},{"name":"TextLink","sourcePath":"components/editorial/TextLink.jsx"},{"name":"Tile","sourcePath":"components/editorial/Tile.jsx"},{"name":"TimeTable","sourcePath":"components/editorial/TimeTable.jsx"},{"name":"Video","sourcePath":"components/editorial/Video.jsx"},{"name":"ArticleHeader","sourcePath":"components/sections/ArticleHeader.jsx"},{"name":"ArticleLayout","sourcePath":"components/sections/ArticleLayout.jsx"},{"name":"BandStatement","sourcePath":"components/sections/BandStatement.jsx"},{"name":"CatalogueSection","sourcePath":"components/sections/CatalogueSection.jsx"},{"name":"ClosingCTA","sourcePath":"components/sections/ClosingCTA.jsx"},{"name":"TileGrid","sourcePath":"components/sections/TileGrid.jsx"},{"name":"ConfirmationSection","sourcePath":"components/sections/ConfirmationSection.jsx"},{"name":"ContactLocation","sourcePath":"components/sections/ContactLocation.jsx"},{"name":"CredentialStrip","sourcePath":"components/sections/CredentialStrip.jsx"},{"name":"FaqSection","sourcePath":"components/sections/FaqSection.jsx"},{"name":"FeatureGrid","sourcePath":"components/sections/FeatureGrid.jsx"},{"name":"FormSplit","sourcePath":"components/sections/FormSplit.jsx"},{"name":"GalleryGrid","sourcePath":"components/sections/GalleryGrid.jsx"},{"name":"GuestStory","sourcePath":"components/sections/GuestStory.jsx"},{"name":"HeroFullBleed","sourcePath":"components/sections/HeroFullBleed.jsx"},{"name":"HeroSplit","sourcePath":"components/sections/HeroSplit.jsx"},{"name":"HeroStatement","sourcePath":"components/sections/HeroStatement.jsx"},{"name":"InPageNav","sourcePath":"components/sections/InPageNav.jsx"},{"name":"InclusionsSection","sourcePath":"components/sections/InclusionsSection.jsx"},{"name":"IndexList","sourcePath":"components/sections/IndexList.jsx"},{"name":"KeyFacts","sourcePath":"components/sections/KeyFacts.jsx"},{"name":"ListingSection","sourcePath":"components/sections/ListingSection.jsx"},{"name":"NotFoundSection","sourcePath":"components/sections/NotFoundSection.jsx"},{"name":"NoticeBand","sourcePath":"components/sections/NoticeBand.jsx"},{"name":"NumeralsSplit","sourcePath":"components/sections/NumeralsSplit.jsx"},{"name":"PanoramaCaption","sourcePath":"components/sections/PanoramaCaption.jsx"},{"name":"PeopleRow","sourcePath":"components/sections/PeopleRow.jsx"},{"name":"PolicySection","sourcePath":"components/sections/PolicySection.jsx"},{"name":"ProcessSection","sourcePath":"components/sections/ProcessSection.jsx"},{"name":"ProgrammeCompare","sourcePath":"components/sections/ProgrammeCompare.jsx"},{"name":"ReferencesSection","sourcePath":"components/sections/ReferencesSection.jsx"},{"name":"RelatedArticles","sourcePath":"components/sections/RelatedArticles.jsx"},{"name":"Section","sourcePath":"components/sections/Section.jsx"},{"name":"SplitSection","sourcePath":"components/sections/SplitSection.jsx"},{"name":"TimelineSection","sourcePath":"components/sections/TimelineSection.jsx"},{"name":"VideoFeature","sourcePath":"components/sections/VideoFeature.jsx"}],"sourceHashes":{"components/core/Badge.jsx":"6f87d9186fb4","components/core/Button.jsx":"fb2a139d1a82","components/core/Card.jsx":"899ecf09e977","components/core/Divider.jsx":"7841bbb870dd","components/core/HnchLogo.jsx":"3086ba9ae2ea","components/core/Icon.jsx":"cc8205da0659","components/core/IconButton.jsx":"0746d0dc8fb3","components/core/Logo.jsx":"71651ae4093b","components/core/PatternPanel.jsx":"bdd8ba344adf","components/core/Tag.jsx":"d29c1738558d","components/feedback/Dialog.jsx":"c1b84ed6f276","components/feedback/Spinner.jsx":"be5f4c801431","components/feedback/Toast.jsx":"c64129df2a1a","components/feedback/Tooltip.jsx":"9c7b40a94408","components/forms/Checkbox.jsx":"94f59a9c424c","components/forms/DateField.jsx":"913a3ce5a07e","components/forms/Input.jsx":"110473e90c03","components/forms/Radio.jsx":"617d02dde15d","components/forms/SearchList.jsx":"96bf0845eb74","components/forms/Select.jsx":"523766e2901d","components/forms/Switch.jsx":"6e7c22faf1b3","components/forms/Textarea.jsx":"ec0634e59eff","components/navigation/Accordion.jsx":"b8870511c6fe","components/navigation/AnnouncementBar.jsx":"a08f25f34e41","components/navigation/Breadcrumbs.jsx":"421f19e62be1","components/navigation/LanguageSelector.jsx":"54d901688c06","components/navigation/Tabs.jsx":"414b48cd2f58","components/editorial/Media.jsx":"33a6b0c1bfde","components/editorial/ArticleFigure.jsx":"90fd16c3508c","components/editorial/PortraitFrame.jsx":"7295a71bd614","components/editorial/AuthorCard.jsx":"ac19f6d7d58b","components/editorial/GroupedList.jsx":"eff4b0f8b898","components/editorial/MetaRow.jsx":"b7244fdce96c","components/editorial/NumberedSteps.jsx":"eab79e606b4b","components/editorial/Numeral.jsx":"4a48955c81fc","components/editorial/Pagination.jsx":"893e51b7753d","components/editorial/PlainList.jsx":"7a95e46f5ade","components/editorial/Prose.jsx":"db0d0b5df31a","components/editorial/QuoteBlock.jsx":"6c26234fefa5","components/editorial/ReviewedBy.jsx":"734fd905c034","components/editorial/ShareBar.jsx":"a296f19b8e8f","components/editorial/SpecTable.jsx":"f81ff1a2b57e","components/editorial/Statement.jsx":"d4d7f4fa3448","components/editorial/TableOfContents.jsx":"e7a40c6c066e","components/editorial/TextLink.jsx":"5b739608f549","components/editorial/Tile.jsx":"3382bed0a91b","components/editorial/TimeTable.jsx":"0893c5c9e430","components/editorial/Video.jsx":"e21a3629d769","components/sections/ArticleHeader.jsx":"5ec8d06943d7","components/sections/ArticleLayout.jsx":"393bf3aed56f","components/sections/BandStatement.jsx":"e4d406f97423","components/sections/CatalogueSection.jsx":"0c3d1be8bf5e","components/sections/ClosingCTA.jsx":"9f0a6b10d1a3","components/sections/TileGrid.jsx":"c56cebd60494","components/sections/ConfirmationSection.jsx":"5b4ce1ef4131","components/sections/ContactLocation.jsx":"391cc9e11360","components/sections/CredentialStrip.jsx":"a913e464373e","components/sections/FaqSection.jsx":"b68b80cab3ab","components/sections/FeatureGrid.jsx":"06c05a1ed951","components/sections/FormSplit.jsx":"c44c5555c7b4","components/sections/GalleryGrid.jsx":"cca1f5ad5413","components/sections/GuestStory.jsx":"db0f35ab9c7d","components/sections/HeroFullBleed.jsx":"d1ba9312d8d2","components/sections/HeroSplit.jsx":"e1048aa532a6","components/sections/HeroStatement.jsx":"dbc14bd879be","components/sections/InPageNav.jsx":"eb3f79ab105e","components/sections/InclusionsSection.jsx":"8702adc09664","components/sections/IndexList.jsx":"30f88430125b","components/sections/KeyFacts.jsx":"04addc7ec64f","components/sections/ListingSection.jsx":"57c590d8c480","components/sections/NotFoundSection.jsx":"630c75e42498","components/sections/NoticeBand.jsx":"e7e738549007","components/sections/NumeralsSplit.jsx":"5051d50226ad","components/sections/PanoramaCaption.jsx":"fbb73655d3bf","components/sections/PeopleRow.jsx":"b52173733918","components/sections/PolicySection.jsx":"a181f48e2830","components/sections/ProcessSection.jsx":"dc4c66747077","components/sections/ProgrammeCompare.jsx":"3d2cb3c0d938","components/sections/ReferencesSection.jsx":"d71e2cc1c769","components/sections/RelatedArticles.jsx":"035f4a14648b","components/sections/Section.jsx":"704bd382cde3","components/sections/SplitSection.jsx":"275162930637","components/sections/TimelineSection.jsx":"4e441b5ea5ef","components/sections/VideoFeature.jsx":"bea56a65b40c"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -4560,8 +4560,8 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
    (inside Prose); "full" fills the container. */
 const CSS = `
 .sh-afig{margin:2em 0;min-width:0}
-.sh-afig[data-width="prose"]{max-width:68ch}
-.sh-afig-cap{display:flex;flex-wrap:wrap;gap:var(--space-1) var(--space-4);margin-top:var(--space-3);font:var(--type-caption);color:var(--text-muted);max-width:68ch}
+.sh-afig[data-width="prose"]{max-width:var(--measure-body)}
+.sh-afig-cap{display:flex;flex-wrap:wrap;gap:var(--space-1) var(--space-4);margin-top:var(--space-3);font:var(--type-caption);color:var(--text-muted);max-width:var(--measure-body)}
 .sh-afig-cap>span:first-child{color:var(--text-secondary)}
 `;
 function ensure() {
@@ -4615,7 +4615,7 @@ const CSS = `
 .sh-portrait .sh-media{background:color-mix(in srgb, var(--color-pearl-bush) 82%, var(--color-pine-tree))}
 .sh-portrait-name{margin:0;font:var(--weight-regular) var(--text-lg)/1.3 var(--font-display);color:var(--text-primary)}
 .sh-portrait-role{margin:var(--space-2) 0 0;font:var(--type-body-sm);color:var(--text-secondary)}
-.sh-portrait-detail{margin:var(--space-3) 0 0;font:var(--type-caption);color:var(--text-muted);max-width:36ch}
+.sh-portrait-detail{margin:var(--space-3) 0 0;font:var(--type-caption);color:var(--text-muted);max-width:var(--measure-narrow)}
 `;
 function ensure() {
   if (typeof document === "undefined" || document.getElementById("sh-portrait-css")) return;
@@ -4684,14 +4684,14 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
    one-paragraph bio and a link to their profile. Portrait beside the text on every width;
    the portrait shrinks on phones. */
 const CSS = `
-.sh-author{display:grid;grid-template-columns:clamp(84px, 6vw + 60px, 128px) minmax(0,1fr);gap:var(--space-5) var(--space-7);align-items:start;padding-block:var(--space-7);border-block:var(--border-width) solid var(--rule-color);max-width:68ch;min-width:0}
+.sh-author{display:grid;grid-template-columns:clamp(84px, 6vw + 60px, 128px) minmax(0,1fr);gap:var(--space-5) var(--space-7);align-items:start;padding-block:var(--space-7);border-block:var(--border-width) solid var(--rule-color);max-width:var(--measure-body);min-width:0}
 .sh-author .sh-portrait{gap:0}
 .sh-author-body{display:flex;flex-direction:column;gap:var(--space-2);min-width:0}
 .sh-author-label{margin:0;font:var(--type-caption);color:var(--text-muted)}
 .sh-author-name{margin:0;font:var(--type-item);color:var(--text-primary)}
 .sh-author-name a{color:inherit;text-decoration:none}
 .sh-author-role{margin:0;font:var(--type-body-sm);color:var(--text-secondary)}
-.sh-author-bio{margin:var(--space-3) 0 0;font:var(--type-body-sm);color:var(--text-secondary);max-width:56ch}
+.sh-author-bio{margin:var(--space-3) 0 0;font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-body)}
 .sh-author-link{margin-top:var(--space-3)}
 @media (hover: hover) and (pointer: fine){.sh-author-name a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}}
 `;
@@ -4761,7 +4761,7 @@ const CSS = `
 .sh-glist-items a{color:inherit;text-decoration:none;display:flex;justify-content:space-between;gap:var(--space-4);align-items:baseline}
 .sh-glist-items a::after{content:"→";color:var(--text-brand);transition:transform var(--duration-fast) var(--ease-out)}
 [dir="rtl"] .sh-glist-items a::after{content:"←"}
-.sh-glist-text{display:block;margin-top:var(--space-1);font:var(--type-body-sm);color:var(--text-secondary);max-width:44ch}
+.sh-glist-text{display:block;margin-top:var(--space-1);font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-narrow)}
 .sh-glist[data-rules="false"] .sh-glist-items>li{border:0;padding:var(--space-2) 0}
 .sh-glist-items a:focus-visible{outline:none;box-shadow:var(--ring-focus)}
 @media (hover: hover) and (pointer: fine){.sh-glist-items a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}.sh-glist-items a:hover::after{transform:translateX(3px)}}
@@ -4776,7 +4776,8 @@ function ensure() {
   document.head.appendChild(el);
 }
 
-/* groups: [{ label, items: [string | { label, text?, href? }] }] */
+/* groups: [{ label, items: [string | { label, text?, href?, terms? }] }]
+   terms: written to data-filter-terms for a page script that filters the items. */
 function GroupedList({
   groups = [],
   columns = 1,
@@ -4808,7 +4809,8 @@ function GroupedList({
       className: "sh-glist-text"
     }, o.text) : null);
     return /*#__PURE__*/React.createElement("li", {
-      key: o.label
+      key: o.label,
+      "data-filter-terms": o.terms
     }, o.href ? /*#__PURE__*/React.createElement("a", {
       href: o.href
     }, /*#__PURE__*/React.createElement("span", null, body)) : body);
@@ -4899,7 +4901,7 @@ const CSS = `
 .sh-step-n{font:var(--weight-light) var(--text-lg)/1.3 var(--font-display);color:var(--text-brand);font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1;white-space:nowrap}
 .sh-step-body{min-width:0}
 .sh-step-title{margin:0;font:var(--type-item);color:var(--text-primary)}
-.sh-step-text{margin:var(--space-3) 0 0;font:var(--type-body-sm);color:var(--text-secondary);max-width:52ch}
+.sh-step-text{margin:var(--space-3) 0 0;font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-body)}
 .sh-steps[data-rules="false"] .sh-step{border-top:0;padding-top:0}
 @media (min-width:760px){.sh-steps[data-orientation="horizontal"][data-columns="2"],.sh-steps[data-orientation="horizontal"][data-columns="3"],.sh-steps[data-orientation="horizontal"][data-columns="4"]{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (min-width:1000px){
@@ -4969,7 +4971,7 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
 const CSS = `
 .sh-num{display:flex;flex-direction:column;gap:var(--space-4);min-width:0}
 .sh-num-value{font:var(--type-numeral);font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1;color:var(--text-primary);letter-spacing:-0.01em}
-.sh-num-label{font:var(--type-body-sm);color:var(--text-secondary);max-width:24ch}
+.sh-num-label{font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-narrow)}
 `;
 function ensure() {
   if (typeof document === "undefined" || document.getElementById("sh-num-css")) return;
@@ -5126,14 +5128,22 @@ Object.assign(__ds_scope, { Pagination });
 try { (() => {
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 /* Plain text in columns, with no bullets, no icons, no ticks (the deck's list style).
-   Items are strings, or { title, text } pairs. One column under 520px. */
+   Items are strings, or { title, text } pairs. One column under 520px.
+   marker="numeral": one item per row, each led by its two-digit number in Light display
+   type on a hairline, for a short fixed set read in order (the six principles). */
 const CSS = `
 .sh-plist{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:var(--space-5) var(--grid-gap)}
 .sh-plist>li{min-width:0;font:var(--type-body);color:var(--text-primary)}
 .sh-plist[data-size="sm"]>li{font:var(--type-body-sm)}
 .sh-plist[data-rules="true"]>li{padding-top:var(--space-4);border-top:var(--border-width) solid var(--rule-color)}
 .sh-plist-title{display:block;font:var(--type-item-sm);color:var(--text-primary)}
-.sh-plist-text{display:block;margin-top:var(--space-2);font:var(--type-body-sm);color:var(--text-secondary);max-width:44ch}
+.sh-plist-text{display:block;margin-top:var(--space-2);font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-narrow)}
+.sh-plist[data-marker="numeral"]{grid-template-columns:minmax(0,1fr);gap:0;counter-reset:sh-plist}
+.sh-plist[data-marker="numeral"]>li{counter-increment:sh-plist;display:grid;grid-template-columns:3.5rem minmax(0,1fr);gap:var(--space-5);align-items:baseline;padding-block:var(--space-6);border-top:var(--border-width) solid var(--rule-color);font:var(--type-item);max-width:none}
+.sh-plist[data-marker="numeral"]>li:last-child{border-bottom:var(--border-width) solid var(--rule-color)}
+.sh-plist[data-marker="numeral"]>li::before{content:counter(sh-plist, decimal-leading-zero);font:var(--weight-light) var(--text-2xl)/1 var(--font-display);color:var(--text-brand);font-variant-numeric:tabular-nums}
+.sh-plist[data-marker="numeral"]>li>span{grid-column:2}
+@media (min-width:1000px){.sh-plist[data-marker="numeral"]>li{grid-template-columns:7rem minmax(0,1fr);padding-block:var(--space-7)}.sh-plist[data-marker="numeral"]>li::before{font-size:var(--text-3xl)}}
 @media (min-width:520px){.sh-plist[data-columns="2"],.sh-plist[data-columns="3"]{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (min-width:1000px){.sh-plist[data-columns="3"]{grid-template-columns:repeat(3,minmax(0,1fr))}}
 `;
@@ -5149,6 +5159,7 @@ function PlainList({
   columns = 2,
   size = "md",
   rules = false,
+  marker = "none",
   style,
   ...rest
 }) {
@@ -5156,9 +5167,10 @@ function PlainList({
   return /*#__PURE__*/React.createElement("ul", _extends({
     "data-ds-id": "editorial/PlainList",
     className: "sh-plist",
-    "data-columns": String(columns),
+    "data-columns": marker === "numeral" ? "1" : String(columns),
     "data-size": size,
     "data-rules": String(rules),
+    "data-marker": marker,
     style: style
   }, rest), items.map((item, i) => /*#__PURE__*/React.createElement("li", {
     key: typeof item === "string" ? item : item.title || i
@@ -5179,13 +5191,13 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
    at a 68ch measure with the body rhythm. Wide children (figure[data-width="wide"],
    tables) may break out of the measure up to the container. */
 const CSS = `
-.sh-prose{--_measure:68ch;max-width:var(--_measure);font:var(--type-body);color:var(--text-primary);min-width:0;overflow-wrap:break-word}
+.sh-prose{--_measure:var(--measure-body);max-width:var(--_measure);font:var(--type-body);color:var(--text-primary);min-width:0;overflow-wrap:break-word}
 .sh-prose[data-size="lg"]{font:var(--type-lead)}
 .sh-prose>*{margin-block:0}
 .sh-prose>*+*{margin-top:1.1em}
 .sh-prose>:first-child{margin-top:0}
-.sh-prose h2{font:var(--type-h3);color:var(--text-primary);margin-top:2.2em;text-wrap:balance;scroll-margin-top:calc(var(--space-12) + 24px)}
-.sh-prose h3{font:var(--type-h4);color:var(--text-primary);margin-top:1.9em;text-wrap:balance;scroll-margin-top:calc(var(--space-12) + 24px)}
+.sh-prose h2{font:var(--type-h3);color:var(--text-primary);margin-top:2.2em;scroll-margin-top:calc(var(--space-12) + 24px)}
+.sh-prose h3{font:var(--type-h4);color:var(--text-primary);margin-top:1.9em;scroll-margin-top:calc(var(--space-12) + 24px)}
 .sh-prose h4{font:var(--type-item-sm);margin-top:1.6em}
 .sh-prose h2+*,.sh-prose h3+*,.sh-prose h4+*{margin-top:0.6em}
 .sh-prose p{text-wrap:pretty}
@@ -5202,7 +5214,7 @@ const CSS = `
 .sh-prose blockquote footer,.sh-prose blockquote cite{display:block;margin-top:var(--space-3);font:var(--type-body-sm);font-style:normal;color:var(--text-secondary)}
 .sh-prose figure{margin-inline:0;margin-block:2em}
 .sh-prose figure img{display:block;width:100%;height:auto}
-.sh-prose figcaption{margin-top:var(--space-3);font:var(--type-caption);color:var(--text-muted);max-width:60ch}
+.sh-prose figcaption{margin-top:var(--space-3);font:var(--type-caption);color:var(--text-muted);max-width:var(--measure-body)}
 .sh-prose hr{border:0;height:1px;background:var(--rule-color);margin-block:2.4em}
 .sh-prose table{width:100%;border-collapse:collapse;font:var(--type-body-sm);font-variant-numeric:tabular-nums}
 @media (max-width:759.98px){.sh-prose table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}}
@@ -5256,7 +5268,7 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
    own statements go here, never a composed testimonial. */
 const CSS = `
 .sh-quote{margin:0;display:flex;flex-direction:column;gap:var(--space-7);min-width:0}
-.sh-quote-text{margin:0;font:var(--type-statement);color:var(--text-primary);max-width:var(--measure-statement);text-wrap:pretty}
+.sh-quote-text{margin:0;font:var(--type-statement);color:var(--text-primary);max-width:var(--measure-heading);text-wrap:pretty}
 .sh-quote[data-size="md"] .sh-quote-text{font:var(--type-title)}
 .sh-quote-text>p{margin:0;text-indent:-0.42em}
 .sh-quote-text>p::before{content:"\\201C"}
@@ -5266,7 +5278,7 @@ const CSS = `
 .sh-quote-name{font-weight:var(--weight-medium);color:var(--text-primary);font-style:normal}
 .sh-quote-facts{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--space-6) var(--grid-gap);margin:var(--space-3) 0 0;padding-top:var(--space-6);border-top:var(--border-width) solid var(--rule-color)}
 .sh-quote-facts dt{margin:0 0 var(--space-2);font:var(--type-label);color:var(--text-primary)}
-.sh-quote-facts dd{margin:0;font:var(--type-body-sm);color:var(--text-secondary);max-width:44ch}
+.sh-quote-facts dd{margin:0;font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-narrow)}
 @media (min-width:760px){.sh-quote-facts{grid-template-columns:repeat(var(--_fc,2),minmax(0,1fr))}}
 `;
 function ensure() {
@@ -5319,14 +5331,14 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
    date (and the next review, if scheduled). Sits under the ArticleHeader byline or at the
    end of the article body. Inline on a hairline by default; `boxed` puts it on Stone. */
 const CSS = `
-.sh-reviewed{display:grid;grid-template-columns:auto minmax(0,1fr);gap:var(--space-1) var(--space-4);align-items:start;padding-block:var(--space-4);border-block:var(--border-width) solid var(--rule-color);max-width:68ch;min-width:0}
+.sh-reviewed{display:grid;grid-template-columns:auto minmax(0,1fr);gap:var(--space-1) var(--space-4);align-items:start;padding-block:var(--space-4);border-block:var(--border-width) solid var(--rule-color);max-width:var(--measure-body);min-width:0}
 .sh-reviewed[data-boxed="true"]{border:0;background:var(--ground-stone);padding:var(--space-5) var(--space-6)}
 .sh-reviewed-icon{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:color-mix(in srgb, var(--text-brand) 12%, transparent);color:var(--text-brand);grid-row:span 2}
 .sh-reviewed-who{margin:0;font:var(--type-body-sm);color:var(--text-secondary);padding-top:5px}
 .sh-reviewed-who strong{font-weight:var(--weight-medium);color:var(--text-primary)}
 .sh-reviewed-who a{color:inherit;text-decoration:underline;text-decoration-color:color-mix(in srgb, currentColor 35%, transparent);text-underline-offset:3px}
 .sh-reviewed-when{margin:0;font:var(--type-caption);color:var(--text-muted);font-variant-numeric:tabular-nums}
-.sh-reviewed-note{grid-column:2;margin:var(--space-2) 0 0;font:var(--type-caption);color:var(--text-muted);max-width:60ch}
+.sh-reviewed-note{grid-column:2;margin:var(--space-2) 0 0;font:var(--type-caption);color:var(--text-muted);max-width:var(--measure-body)}
 `;
 function ensure() {
   if (typeof document === "undefined" || document.getElementById("sh-reviewed-css")) return;
@@ -5484,6 +5496,16 @@ const CSS = `
 .sh-spec td[data-accent="true"]{color:var(--text-brand);font:var(--type-body);font-variant-numeric:tabular-nums}
 .sh-spec td[data-align="end"],.sh-spec th[data-align="end"]{text-align:end}
 .sh-spec[data-rules="true"] tbody tr{border-top:var(--border-width) solid var(--rule-color)}
+/* variant="contrast": two sentences per row, side by side. Equal columns that wrap, one type
+   size, the accent column on a raised ground under a gold rule; the other in secondary ink. */
+.sh-spec[data-variant="contrast"]{table-layout:fixed}
+.sh-spec[data-variant="contrast"] th,.sh-spec[data-variant="contrast"] td{white-space:normal;vertical-align:top;padding:var(--space-5) var(--space-6);font:var(--type-body)}
+.sh-spec[data-variant="contrast"] thead th{font:var(--type-label);padding-block:var(--space-5) var(--space-4)}
+.sh-spec[data-variant="contrast"] tbody th{color:var(--text-secondary);padding-inline-start:0}
+.sh-spec[data-variant="contrast"] td[data-accent="true"]{background:var(--surface-raised);color:var(--text-primary);font:var(--type-body)}
+.sh-spec[data-variant="contrast"] thead th:first-child{padding-inline-start:0}
+.sh-spec[data-variant="contrast"] thead th:last-child{background:var(--surface-raised);color:var(--text-primary);border-top:3px solid var(--surface-accent)}
+.sh-spec[data-variant="contrast"] tbody tr:last-child td[data-accent="true"]{padding-bottom:var(--space-7)}
 @media (max-width:519.98px){
   .sh-spec thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
   .sh-spec,.sh-spec tbody,.sh-spec tr{display:block}
@@ -5491,6 +5513,12 @@ const CSS = `
   .sh-spec th,.sh-spec td{display:block;padding:0}
   .sh-spec td[data-label]::before{content:attr(data-label) " ";color:var(--text-muted);font:var(--type-body)}
   .sh-spec td[data-align="end"]{text-align:start}
+  .sh-spec[data-variant="contrast"] tr{flex-direction:column;gap:0;padding:0}
+  .sh-spec[data-variant="contrast"] tbody th,.sh-spec[data-variant="contrast"] td{padding:var(--space-4) var(--space-5)}
+  .sh-spec[data-variant="contrast"] tbody th{padding-inline-start:0}
+  .sh-spec[data-variant="contrast"] tbody tr:last-child td[data-accent="true"]{padding-bottom:var(--space-4)}
+  .sh-spec[data-variant="contrast"] td[data-accent="true"]{border-inline-start:3px solid var(--surface-accent)}
+  .sh-spec[data-variant="contrast"] [data-label]::before{content:attr(data-label);display:block;margin-bottom:var(--space-1);color:var(--text-muted);font:var(--type-caption)}
 }
 `;
 function ensure() {
@@ -5508,6 +5536,7 @@ function SpecTable({
   caption,
   showHeader = false,
   rules = true,
+  variant = "default",
   style,
   ...rest
 }) {
@@ -5517,6 +5546,7 @@ function SpecTable({
     "data-ds-id": "editorial/SpecTable",
     className: "sh-spec",
     "data-rules": String(rules),
+    "data-variant": variant,
     style: style
   }, rest), caption ? /*#__PURE__*/React.createElement("caption", {
     className: "sh-visually-hidden"
@@ -5535,12 +5565,13 @@ function SpecTable({
   }, c.label)))), /*#__PURE__*/React.createElement("tbody", null, rows.map((r, i) => /*#__PURE__*/React.createElement("tr", {
     key: r[head.key] || i
   }, /*#__PURE__*/React.createElement("th", {
-    scope: "row"
+    scope: "row",
+    "data-label": variant === "contrast" ? head.label : undefined
   }, r[head.key]), cells.map(c => /*#__PURE__*/React.createElement("td", {
     key: c.key,
     "data-accent": c.accent ? "true" : undefined,
     "data-align": c.align,
-    "data-label": c.mobileLabel ? c.label : undefined
+    "data-label": c.mobileLabel || variant === "contrast" ? c.label : undefined
   }, r[c.key]))))));
 }
 Object.assign(__ds_scope, { SpecTable });
@@ -5567,7 +5598,7 @@ const SIZE = {
 const CSS = `
 .sh-stmt{display:flex;flex-direction:column;gap:var(--stack-md);min-width:0}
 .sh-stmt-crumbs{margin-bottom:calc(var(--stack-lg) - var(--stack-md))}
-.sh-stmt-title{margin:0;max-width:var(--_m,var(--measure-statement));color:var(--text-primary);text-wrap:balance}
+.sh-stmt-title{margin:0;max-width:var(--_m,var(--measure-heading));color:var(--text-primary)}
 .sh-stmt-sub{margin:0;max-width:var(--measure-body);font:var(--type-body);color:var(--text-secondary)}
 .sh-stmt[data-size="display"] .sh-stmt-sub,.sh-stmt[data-size="h1"] .sh-stmt-sub{font:var(--type-lead)}
 .sh-stmt-actions{margin-top:var(--space-3)}
@@ -5605,7 +5636,7 @@ function Statement({
     style: {
       font: SIZE[size] || SIZE.statement,
       ...(measure ? {
-        "--_m": measure
+        "--_m": `var(--measure-${measure})`
       } : null)
     }
   }, children), meta ? Array.isArray(meta) ? /*#__PURE__*/React.createElement(MetaRow, {
@@ -5788,7 +5819,7 @@ Object.assign(__ds_scope, { TextLink });
 
 // components/editorial/Tile.jsx
 try { (() => {
-const { Media, MetaRow } = __ds_scope;
+const { Media, MetaRow, Tag } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 /* Replaces the white card on linen. Photograph and text sit directly on the ground,
    with no border, shadow or radius. Order: photograph → title → meta row → text. Category and
@@ -5799,13 +5830,18 @@ const CSS = `
 .sh-tile[data-href]{cursor:pointer}
 .sh-tile .sh-media>img{transition:transform var(--duration-reveal) var(--ease-out)}
 .sh-tile-body{display:flex;flex-direction:column;gap:var(--space-3);min-width:0}
-.sh-tile-title{margin:0;font:var(--type-item);color:var(--text-primary);text-wrap:balance}
+.sh-tile-title{margin:0;font:var(--type-item);color:var(--text-primary)}
 .sh-tile-title>span{background:linear-gradient(currentColor,currentColor) 0 100% / 0 1px no-repeat;transition:background-size var(--duration-base) var(--ease-out);padding-bottom:2px}
 .sh-tile-body>.sh-meta{margin-top:calc(var(--space-1) * -1)}
-.sh-tile-text{margin:var(--space-1) 0 0;font:var(--type-body-sm);color:var(--text-secondary);max-width:48ch}
+.sh-tile-text{margin:var(--space-1) 0 0;font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-narrow)}
 .sh-tile-meta{margin:0;font:var(--type-caption);color:var(--text-muted);font-variant-numeric:tabular-nums}
 .sh-tile[data-size="lg"] .sh-tile-title{font:var(--type-title)}
-.sh-tile[data-size="lg"] .sh-tile-text{font:var(--type-body);max-width:56ch}
+.sh-tile[data-size="lg"] .sh-tile-text{font:var(--type-body);max-width:var(--measure-body)}
+.sh-tile-tags{display:flex;flex-wrap:wrap;gap:var(--space-2);margin:var(--space-2) 0 0;padding:0;list-style:none}
+.sh-tile-tags .sh-tag{max-width:100%;white-space:normal;height:auto;min-height:24px;padding-block:3px;line-height:1.35}
+/* layout="thumb": a small 4:3 thumbnail beside the text at every width (catalogue rows). */
+.sh-tile[data-layout="thumb"]{display:grid;grid-template-columns:112px minmax(0,1fr);gap:var(--space-5);align-items:start}
+@media (min-width:760px){.sh-tile[data-layout="thumb"]{grid-template-columns:220px minmax(0,1fr);gap:var(--grid-gap)}}
 .sh-tile:focus-visible{outline:none;box-shadow:var(--ring-focus)}
 @media (hover: hover) and (pointer: fine){
   .sh-tile[data-href]:hover .sh-media>img{transform:scale(var(--tile-media-scale))}
@@ -5823,6 +5859,8 @@ function ensure() {
   el.textContent = CSS;
   document.head.appendChild(el);
 }
+
+/* tags: static Tags under the text, e.g. the conditions a programme is for (catalogue rows). */
 function Tile({
   media,
   src,
@@ -5831,6 +5869,7 @@ function Tile({
   title,
   text,
   meta,
+  tags,
   href,
   onClick,
   size = "md",
@@ -5841,7 +5880,7 @@ function Tile({
 }) {
   ensure();
   const interactive = !!(href || onClick);
-  const Tag = interactive ? "a" : "div";
+  const El = interactive ? "a" : "div";
   const H = "h" + headingLevel;
   const figure = media || (src ? /*#__PURE__*/React.createElement(Media, {
     src: src,
@@ -5853,7 +5892,7 @@ function Tile({
   }) : /*#__PURE__*/React.createElement("div", {
     className: "sh-tile-meta"
   }, meta);
-  return /*#__PURE__*/React.createElement(Tag, _extends({
+  return /*#__PURE__*/React.createElement(El, _extends({
     "data-ds-id": "editorial/Tile",
     className: "sh-tile",
     "data-size": size,
@@ -5871,7 +5910,11 @@ function Tile({
     className: "sh-tile-title"
   }, /*#__PURE__*/React.createElement("span", null, title)), metaNode, text ? /*#__PURE__*/React.createElement("p", {
     className: "sh-tile-text"
-  }, text) : null));
+  }, text) : null, tags && tags.length ? /*#__PURE__*/React.createElement("ul", {
+    className: "sh-tile-tags"
+  }, tags.map(tag => /*#__PURE__*/React.createElement("li", {
+    key: tag
+  }, /*#__PURE__*/React.createElement(Tag, null, tag)))) : null));
 }
 Object.assign(__ds_scope, { Tile });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/editorial/Tile.jsx", error: String((e && e.message) || e) }); }
@@ -5887,7 +5930,7 @@ const CSS = `
 .sh-time-row:last-child{border-bottom:var(--border-width) solid var(--rule-color)}
 .sh-time-when{font:var(--type-body-sm);color:var(--text-brand);font-variant-numeric:tabular-nums}
 .sh-time-title{margin:0;font:var(--type-item-sm);color:var(--text-primary)}
-.sh-time-text{margin:var(--space-2) 0 0;font:var(--type-body-sm);color:var(--text-secondary);max-width:56ch}
+.sh-time-text{margin:var(--space-2) 0 0;font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-body)}
 @media (min-width:760px){.sh-time-row{grid-template-columns:minmax(9rem,2fr) minmax(0,5fr);gap:var(--grid-gap);align-items:baseline}}
 `;
 function ensure() {
@@ -6069,8 +6112,8 @@ const CSS = `
 .sh-ahead{padding-block:calc(var(--space-12) + var(--section-y-sm)) var(--section-y-sm)}
 .sh-ahead-col{display:flex;flex-direction:column;gap:var(--stack-md);max-width:52rem;min-width:0}
 .sh-ahead-crumbs{margin-bottom:var(--space-5)}
-.sh-ahead-title{margin:0;font:var(--type-h1);color:var(--text-primary);max-width:24ch;text-wrap:balance}
-.sh-ahead-dek{margin:0;font:var(--type-lead);color:var(--text-secondary);max-width:60ch}
+.sh-ahead-title{margin:0;font:var(--type-h1);color:var(--text-primary);max-width:var(--measure-title);}
+.sh-ahead-dek{margin:0;font:var(--type-lead);color:var(--text-secondary);max-width:var(--measure-body)}
 .sh-ahead-by{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--space-5) var(--space-8);margin-top:var(--space-4);padding-top:var(--space-5);border-top:var(--border-width) solid var(--rule-color)}
 .sh-ahead-people{display:flex;align-items:center;gap:var(--space-4);min-width:0}
 .sh-ahead-avatar{position:relative;flex:0 0 auto;width:48px;height:48px;overflow:hidden;background:color-mix(in srgb, var(--color-pearl-bush) 82%, var(--color-pine-tree));display:grid;place-items:center;font:var(--weight-regular) var(--text-sm)/1 var(--font-display);letter-spacing:var(--tracking-wide);color:color-mix(in srgb, var(--color-pine-tree) 60%, transparent)}
@@ -6082,7 +6125,7 @@ const CSS = `
 .sh-ahead-rev{font:var(--type-caption);color:var(--text-muted)}
 .sh-ahead-upd{white-space:nowrap}
 .sh-ahead-fig{margin:var(--stack-lg) 0 0}
-.sh-ahead-cap{margin-top:var(--space-3);font:var(--type-caption);color:var(--text-muted);max-width:68ch}
+.sh-ahead-cap{margin-top:var(--space-3);font:var(--type-caption);color:var(--text-muted);max-width:var(--measure-body)}
 @media (max-width:759.98px){.sh-ahead-fig{margin-inline:calc(-1 * var(--layout-gutter))}.sh-ahead-cap{padding-inline:var(--layout-gutter)}}
 `;
 function ensure() {
@@ -6332,7 +6375,7 @@ const CSS = `
 .sh-cat-entry:first-child{border-top:0;padding-top:0}
 .sh-cat-entry:last-child{padding-bottom:0}
 .sh-cat-body{display:flex;flex-direction:column;gap:var(--space-4);min-width:0}
-.sh-cat-title{margin:0;font:var(--type-title);color:var(--text-primary);text-wrap:balance}
+.sh-cat-title{margin:0;font:var(--type-title);color:var(--text-primary)}
 .sh-cat-text{margin:0;font:var(--type-body);color:var(--text-secondary);max-width:var(--measure-body)}
 .sh-cat-facts{margin-top:var(--space-3)}
 .sh-cat-action{margin-top:var(--space-2)}
@@ -6412,6 +6455,8 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
 const CSS = `
 .sh-close{position:relative;isolation:isolate}
 .sh-close[data-variant="photo"]{display:flex;align-items:flex-end;min-height:clamp(520px, 72svh, 860px);overflow:hidden}
+.sh-close[data-variant="photo"] .sh-stmt-title{font:var(--type-h1)}
+.sh-close[data-variant="photo"] .sh-stmt-sub{font:var(--type-lead)}
 .sh-close>.sh-media{position:absolute;inset:0;z-index:-1;aspect-ratio:auto;height:100%}
 .sh-close-body{width:100%;padding-block:var(--section-y)}
 .sh-close[data-variant="compact"] .sh-close-body{padding-block:clamp(40px, 3vw + 28px, 72px)}
@@ -6553,7 +6598,7 @@ function ClosingCTA({
     as: titleAs,
     size: compact ? "h3" : "statement",
     sub: sub,
-    measure: compact ? "32ch" : undefined
+    measure: compact ? "heading" : undefined
   }, heading), acts ? /*#__PURE__*/React.createElement("div", {
     className: "sh-actions sh-close-actions",
     "data-stack": "mobile"
@@ -6709,7 +6754,7 @@ function ensure() {
    explore: [{ title, text?, meta?, src?, alt?, href }]: three cards (only the first three render).
    An http(s) href opens in a new tab. */
 function ConfirmationSection({
-  title = "Consultation request received",
+  title = "Inquiry received",
   sub,
   next = [],
   nextLabel = "What happens next",
@@ -6757,7 +6802,7 @@ function ConfirmationSection({
     size: "h1",
     sub: sub,
     actions: actions,
-    measure: "22ch"
+    measure: "title"
   }, title), next.length ? /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", {
     className: "sh-conf-label"
   }, nextLabel), /*#__PURE__*/React.createElement("ul", {
@@ -7120,7 +7165,7 @@ const CSS = `
 .sh-feat-item{display:grid;grid-template-columns:28px minmax(0,1fr);gap:var(--space-4);align-items:start;padding:var(--space-5) 0;border-top:var(--border-width) solid var(--rule-color)}
 .sh-feat-item [data-icon]{margin-top:1px;color:var(--text-brand)}
 .sh-feat-title{margin:0;font:var(--type-item-sm);color:var(--text-primary)}
-.sh-feat-text{margin:var(--space-1) 0 0;font:var(--type-body-sm);color:var(--text-secondary);max-width:40ch}
+.sh-feat-text{margin:var(--space-1) 0 0;font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-narrow)}
 @media (min-width:520px){.sh-feat-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (min-width:1000px){
   .sh-feat-list{grid-template-columns:repeat(var(--_c,3),minmax(0,1fr))}
@@ -7280,7 +7325,7 @@ const CSS = `
 .sh-gal-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--space-8) var(--grid-gap);align-items:stretch}
 .sh-gal-item{display:flex;flex-direction:column;gap:var(--space-3);margin:0;min-width:0}
 .sh-gal-item>.sh-media{flex:1 1 auto;aspect-ratio:4 / 3}
-.sh-gal-cap{font:var(--type-caption);color:var(--text-secondary);max-width:52ch}
+.sh-gal-cap{font:var(--type-caption);color:var(--text-secondary);max-width:var(--measure-body)}
 @media (min-width:760px){
   .sh-gal-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .sh-gal-item:nth-child(5n+1){grid-column:1/-1}
@@ -7354,7 +7399,7 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
 const CSS = `
 .sh-story{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--stack-lg);align-items:center}
 .sh-story-quote{margin:0;display:flex;flex-direction:column;gap:var(--space-6);min-width:0}
-.sh-story-text{margin:0;font:var(--type-statement);color:var(--text-primary);max-width:var(--measure-statement);text-wrap:pretty}
+.sh-story-text{margin:0;font:var(--type-statement);color:var(--text-primary);max-width:var(--measure-heading);text-wrap:pretty}
 .sh-story-text::before{content:"\\201C"}.sh-story-text::after{content:"\\201D"}
 .sh-story-cite{display:flex;flex-direction:column;gap:var(--space-1);font:var(--type-body-sm);color:var(--text-secondary);font-style:normal}
 .sh-story-name{font-weight:var(--weight-medium);color:var(--text-primary)}
@@ -7510,7 +7555,7 @@ function HeroFullBleed({
     sub: sub,
     actions: actions,
     breadcrumbs: breadcrumbs,
-    measure: "24ch"
+    measure: "title"
   }, title), meta ? Array.isArray(meta) ? /*#__PURE__*/React.createElement(MetaRow, {
     items: meta
   }) : /*#__PURE__*/React.createElement("p", {
@@ -7590,7 +7635,7 @@ function HeroSplit({
   minHeight,
   size = "h1",
   titleAs = "h1",
-  measure = "18ch",
+  measure = "title",
   style,
   ...rest
 }) {
@@ -7701,7 +7746,7 @@ function HeroStatement({
   tall = true,
   size = "h1",
   titleAs = "h1",
-  measure = "22ch",
+  measure = "title",
   style,
   ...rest
 }) {
@@ -7984,7 +8029,8 @@ const CSS = `
 /* Row titles sit a clear step below the group label (24→30px), so the group still reads
    as the heading on a phone where both would otherwise be 24px. */
 .sh-index-title{font:var(--weight-medium) var(--text-lg)/var(--leading-snug) var(--font-display);color:var(--text-primary)}
-.sh-index-text{grid-column:1;font:var(--type-body-sm);color:var(--text-secondary);max-width:52ch}
+.sh-index-text{grid-column:1;font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-body)}
+.sh-index-meta{grid-column:1;font:var(--type-body-sm);color:var(--text-muted);max-width:var(--measure-body)}
 .sh-index-arrow{grid-column:2;grid-row:1;align-self:center;display:inline-flex;color:var(--text-brand);transition:transform var(--duration-fast) var(--ease-out)}
 .sh-index-link:focus-visible{outline:none;box-shadow:var(--ring-focus)}
 @media (hover: hover) and (pointer: fine){
@@ -8004,7 +8050,9 @@ function ensure() {
   document.head.appendChild(el);
 }
 
-/* groups: [{ label, items: [{ title, text?, href?, onClick? }] }] */
+/* groups: [{ label, items: [{ title, text?, meta?, terms?, href?, onClick? }] }]
+   meta: a second, quieter line under text (the conditions on a programmes index row).
+   terms: written to data-filter-terms for a page script that filters the rows. */
 /* anchors: rows link to sections on the same page (it.id → #id) and show no arrow.
    counts: the number of rows beside each group label. */
 function IndexList({
@@ -8039,7 +8087,8 @@ function IndexList({
     const Tag = linked ? "a" : "div";
     return /*#__PURE__*/React.createElement("li", {
       className: "sh-index-item",
-      key: it.title
+      key: it.title,
+      "data-filter-terms": it.terms
     }, /*#__PURE__*/React.createElement(Tag, {
       className: "sh-index-link",
       "data-anchor": anchors ? "" : undefined,
@@ -8061,7 +8110,9 @@ function IndexList({
       size: 18
     })) : null, it.text ? /*#__PURE__*/React.createElement("span", {
       className: "sh-index-text"
-    }, it.text) : null));
+    }, it.text) : null, it.meta ? /*#__PURE__*/React.createElement("span", {
+      className: "sh-index-meta"
+    }, it.meta) : null));
   })))));
 }
 Object.assign(__ds_scope, { IndexList });
@@ -8241,7 +8292,7 @@ try { (() => {
 const { Statement, Input, Button, Icon } = __ds_scope;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 /* The 404 page body: a plain title, one line, a search field that posts to the site search,
-   and three or four useful links (Programmes, Conditions, Book a Consultation, Contact).
+   and three or four useful links (Programmes, Make an Inquiry, Contact).
    Plain words, no jokes, no illustration. The page itself still returns HTTP 404.
    One column at every width, held to a 36rem measure: statement, search, links one per row.
    The field and the button sit in one row and share the 52px control height (Input md, Button lg). */
@@ -8284,7 +8335,7 @@ function NotFoundSection({
     as: "h" + headingLevel,
     size: "h1",
     sub: sub,
-    measure: "20ch"
+    measure: "title"
   }, title), /*#__PURE__*/React.createElement("form", {
     className: "sh-404-search",
     role: "search",
@@ -8474,9 +8525,9 @@ const CSS = `
 .sh-pano-film>.sh-media-scrim{position:absolute;inset:0;z-index:1;pointer-events:none;background:var(--scrim-hero)}
 .sh-pano-cap{align-self:end;width:100%;padding-block:var(--section-y-sm)}
 .sh-pano-cap .sh-container{display:flex;flex-direction:column;gap:var(--space-4)}
-.sh-pano-title{margin:0;font:var(--type-title);color:var(--text-primary);max-width:26ch}
-.sh-pano-sub{margin:0;font:var(--type-body-sm);color:var(--text-secondary);max-width:52ch}
-@media (min-width:1000px){.sh-pano-title{font:var(--type-statement);max-width:24ch}}
+.sh-pano-title{margin:0;font:var(--type-title);color:var(--text-primary);max-width:var(--measure-title)}
+.sh-pano-sub{margin:0;font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-body)}
+@media (min-width:1000px){.sh-pano-title{font:var(--type-statement);max-width:var(--measure-title)}}
 @media (min-width:1000px){
   .sh-pano-box{padding:var(--section-y-sm) var(--layout-gutter)}
   .sh-pano-box>.sh-pano{max-width:var(--layout-max);margin-inline:auto}
@@ -8696,7 +8747,7 @@ const CSS = `
 .sh-proc-step{display:grid;grid-template-columns:3.25rem minmax(0,1fr);gap:var(--space-4);align-items:baseline;padding:var(--space-6) 0;border-top:var(--border-width) solid var(--rule-color);counter-increment:sh-proc}
 .sh-proc-step::before{content:counter(sh-proc, decimal-leading-zero);font:var(--weight-light) var(--text-2xl)/1 var(--font-display);color:var(--text-brand);font-variant-numeric:tabular-nums}
 .sh-proc-title{margin:0;font:var(--type-item-sm);color:var(--text-primary)}
-.sh-proc-text{margin:var(--space-2) 0 0;font:var(--type-body-sm);color:var(--text-secondary);max-width:40ch}
+.sh-proc-text{margin:var(--space-2) 0 0;font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-narrow)}
 @media (min-width:760px){.sh-proc-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (min-width:1000px){
   .sh-proc-list{grid-template-columns:repeat(var(--_n,4),minmax(0,1fr))}

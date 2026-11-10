@@ -10,15 +10,15 @@ Locale architecture, enabled vs planned languages, and hreflang live in the [web
 
 Recommended top-level structure:
 
-- Conditions
+- Naturopathy (`/en/naturopathy`: what naturopathy is and what a stay adds; website D-218)
 - Programmes
 - Experience
 - About
 - Journal (articles and Doctor Answers)
 - Contact
-- Book a Consultation
+- Make an Inquiry
 
-The primary visitor-facing CTA is **Book a Consultation**. Form chrome may use **Send your details**. Do not use **Enquire about a stay** or **Request a consultation** as primary CTAs. See [skill-copy.md](skill-copy.md).
+The primary visitor-facing CTA is **Make an Inquiry**, including the submit button. The header and menu sheet use the short label **Enquire**. Do not use **Book a consultation**, **Enquire about a stay**, **Request a consultation** or **Send your details** as a second label for that action. See [skill-copy.md](skill-copy.md).
 
 Do not create a mega-menu unless the number of live pages genuinely makes normal navigation difficult.
 
@@ -63,7 +63,9 @@ Other named needs (`fatty-liver`, `back-pain`, `menopause`, and similar) remain 
 
 ## Conditions
 
-Use locale-prefixed URLs, including English:
+**Status (shantara.life D-203 to D-216).** There are no condition detail pages for now. Conditions are data: a `conditions` record is `name`, `slug` and `synonyms`, and each programme lists the conditions it is for, in order. They appear as static tags on the programme's catalogue row on `/en/programmes`, under the programme's Who it is for, on `/en/conditions` (a plain A to Z index with a search field, each condition linking to its primary programme; linked from the footer, not the nav), in site search and in the programme's schema (`MedicalCondition` with `possibleTreatment`). The rules below govern condition detail pages when one is built; the slug is already stable.
+
+When condition pages are built, use locale-prefixed URLs, including English:
 
 ```text
 /en/conditions
@@ -141,9 +143,9 @@ Pages:
 
 - **One page per currency.** Each entry in the production Tariffs collection gets a static page at `/en/tariff/{code}`. Each is canonical to itself, indexable and listed in the sitemap. There is no `hreflang`: the pages differ by currency, not language. Each has its own share image (its H1 and lead).
 - **`/en/tariff` redirects.** It has no content and is not in the sitemap. A 302 at the edge sends the visitor to one currency's page: first the `currency` cookie when it holds a known code (the visitor's own choice always wins), then the entry whose `defaultForCountries` includes the request's country, then the default entry. The response is private and never cached (`Vary: Cookie`, `Cache-Control: private, no-store`). A static redirect to the default currency is the fallback if the edge function fails. This departs from RATE-03 (see [rates.md](search-visibility/rates.md)).
-- **Every other page links to `/en/tariff`**, never to a currency page: programme pages, Rooms, Retreat policies, Terms, Cancellation, the footer, confirmations and messages.
+- **Every other page links to `/en/tariff`**, never to a currency page: programme pages, Rooms, Retreat policies, Booking terms, Cancellation, the footer, confirmations and messages.
 - **Currency links, not a selector.** The tariff page offers a row of plain links, one per currency. A link carries `?set=1`; the edge function sets the `currency` cookie and redirects to the clean URL. No JavaScript is involved.
-- **One primary action**, Book a Consultation, with the tariff page as its lead context. No form on the tariff page, and no `ClosingCTA`.
+- **One primary action**, Make an Inquiry, with the tariff page as its lead context. No form on the tariff page, and no `ClosingCTA`.
 - **The client rate card** (`/en/tariff/{code}/card`) renders from the same records in the client card's order and is printed to one PDF per currency. It is `noindex` and not in the sitemap.
 
 ## About
@@ -152,17 +154,15 @@ Pages:
 
 ```text
 /en/our-story
-/en/our-approach
 /en/our-doctors
 /en/pa-kareem
-/en/doctors/bahja-janu
 ```
 
-Medical Editorial Policy also sits under About.
+Medical Editorial Policy also sits under About. The former `/en/our-approach` is folded into `/en/naturopathy`, a top-level nav item (website D-219).
 
 Accreditations and Sustainability are standing pages. Their URLs are under [Utility pages](#utility-pages).
 
-`/en/our-doctors` lists every practising doctor with a photo, name, qualification, areas of practice and a **Book a Consultation** button. The founder and chairman, P.A. Kareem, is not a doctor and is not listed there: he appears on Our Story, in the board, and on his own page, `/en/pa-kareem`, which lists his press, talks, videos and social posts. Dr. Bahja Janu (`/en/doctors/bahja-janu`) is the only doctor with a profile page. A doctor profile lists the doctor's answers, the articles they reviewed, their programmes, and any press, talks, videos and social posts on the doctor record. Those lists are outbound links. A YouTube recording is a link, never an embedded player. Do not create a profile page for any other doctor; link to their section on `/en/our-doctors` instead (for example `/en/our-doctors#{slug}`).
+`/en/our-doctors` lists every practising doctor with a photo, name, qualification, areas of practice and a **Make an Inquiry** button. The founder and chairman, P.A. Kareem, is not a doctor and is not listed there: he appears on Our Story, in the board, and on his own page, `/en/pa-kareem`, which lists his press, talks, videos and social posts. No doctor has a profile page (website D-223): `/en/our-doctors` is the only doctors page, and every link to a doctor is their section there (for example `/en/our-doctors#{slug}`). Do not create a doctor profile page.
 
 Entity and parent history (including Hygiene Nature Cure Hospital / HNCH) belong here, not on condition or programme pages, and not as a hospital product pitch.
 
@@ -200,7 +200,7 @@ Traditional blog articles may continue to exist, but do not make generic blog pr
 
 ## Utility pages
 
-- Book a Consultation (`/en/book-consultation`)
+- Make an Inquiry (`/en/make-an-inquiry`)
 - Contact (`/en/contact`)
 - Hosted visits (`/en/hosted-stays`): a special page. Specified in [special-pages/hosted-stays.md](special-pages/hosted-stays.md). Indexable. Not linked from the guest journey. No kit sample.
 - Frequently asked questions (`/en/faq`, grouped by category)
@@ -221,8 +221,8 @@ Do not invent the text. A page with no fact source below stays unpublished until
 
 **Policies**
 
-6. Terms and Conditions (`/en/terms`).
-7. Cancellation and Refund Policy (`/en/cancellation`; footer label "Cancellation policy"). Its refund schedule and postponement terms render from the Tariff terms record the tariff pages also read, so the page and the tariff cannot disagree.
+6. Booking terms and conditions (`/en/booking-terms`). The contract for a reservation. It incorporates the cancellation and refund policy, the tariff page, and the retreat policies and house rules. There is no separate general terms page. Footer label: "Booking terms and conditions".
+7. Cancellation and Refund Policy (`/en/cancellation`; footer label "Cancellation policy"). Its refund schedule and postponement terms render from the Tariff terms record the tariff pages also read, so the page and the tariff cannot disagree. It forms part of the booking terms.
 8. Privacy Policy (`/en/privacy-policy`). This is the public notice of what the website collects and why, including the consultation form, Ask the Doctor, the hosted-visits form, and analytics. The text is supplied by Shantara in `copy/en/policies/privacy-policy.md`. Handbook §8 is staff guidance and is not a source for this page. The page stays unpublished until that public text exists.
 9. Ethics Policy (`/en/ethics`).
 10. Diversity and Inclusion (`/en/diversity`).
@@ -232,9 +232,9 @@ Do not invent the text. A page with no fact source below stays unpublished until
 11. Accreditations and Certifications (`/en/accreditations`). Publish only a credential Shantara can show.
 12. Sustainability (`/en/sustainability`).
 
-The booking confirmation, and the tariff letter or email, each link to Terms and Conditions and to the Cancellation and Refund Policy. They do not restate either policy.
+The booking confirmation, and the tariff letter or email, each link to the booking terms and conditions. They do not restate that contract. They may also link to the Cancellation and Refund Policy, which the booking terms incorporate.
 
-Earlier planned paths redirect: `/en/resident-policies` to `/en/house-rules`, and `/en/terms-of-service` to `/en/terms`.
+Earlier planned paths redirect: `/en/resident-policies` to `/en/house-rules`, and `/en/terms` and `/en/terms-of-service` to `/en/booking-terms`.
 
 ## Page types
 
@@ -284,8 +284,8 @@ Do not guess legacy URL mappings. Inspect the actual existing site before migrat
 
 Create meaningful relationships:
 
-- Condition → relevant Programme
-- Programme → Condition
+- Programme → Condition (the programme's ordered `conditions` list; shown as text until condition pages exist)
+- Condition → relevant Programme (generated from that list when a condition page exists)
 - Programme → Therapy
 - Clinical Guide → Condition/Programme
 - Doctor Answer → deeper Guide
@@ -302,13 +302,14 @@ The Website Kit shows **one thin sample per family**, not every URL above.
 | Skill URL family | Kit sample |
 | --- | --- |
 | `/en` | `HomeScreen.js` |
+| `/en/programmes` | `ProgrammesScreen.js` |
 | `/en/conditions` | `ConditionsScreen.js` |
-| `/en/programmes/[slug]` | `ProgrammeScreen.js` (Detox) |
+| `/en/programmes/[slug]` | `ProgrammeScreen.js` (Advanced Detox & Cellular Cleansing) |
 | Experience hub | `ExperienceScreen.js` |
 | About hub | `AboutScreen.js` |
 | Journal listing | `JournalScreen.js` |
 | `/en/contact` | `ContactScreen.js` |
-| `/en/book-consultation` | `ConsultationScreen.js` |
+| `/en/make-an-inquiry` | `ConsultationScreen.js` |
 | `/en/tariff/[code]` (one per currency; `/en/tariff` redirects) | `TariffScreen.js` |
 
 The kit maps those families to hash routes (`#/en/`, `#/en/programmes`). Production uses the real prefixed paths. Navigation labels come from the locale dictionary. Do not hard-code English in reusable nav. Footer contact data (phone, email, place) is globally stable; only the labels translate. Breadcrumb URLs stay in the current locale.

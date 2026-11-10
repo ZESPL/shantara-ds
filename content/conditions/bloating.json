@@ -1,0 +1,12 @@
+{
+  "id": "bloating",
+  "slug": "bloating",
+  "name": "Bloating",
+  "synonyms": [
+    "gas",
+    "flatulence",
+    "abdominal distension"
+  ],
+  "locale": "en",
+  "source": "client"
+}

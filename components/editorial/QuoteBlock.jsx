@@ -6,7 +6,7 @@ import React from "react";
    own statements go here, never a composed testimonial. */
 const CSS = `
 .sh-quote{margin:0;display:flex;flex-direction:column;gap:var(--space-7);min-width:0}
-.sh-quote-text{margin:0;font:var(--type-statement);color:var(--text-primary);max-width:var(--measure-statement);text-wrap:pretty}
+.sh-quote-text{margin:0;font:var(--type-statement);color:var(--text-primary);max-width:var(--measure-heading);text-wrap:pretty}
 .sh-quote[data-size="md"] .sh-quote-text{font:var(--type-title)}
 .sh-quote-text>p{margin:0;text-indent:-0.42em}
 .sh-quote-text>p::before{content:"\\201C"}
@@ -16,7 +16,7 @@ const CSS = `
 .sh-quote-name{font-weight:var(--weight-medium);color:var(--text-primary);font-style:normal}
 .sh-quote-facts{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--space-6) var(--grid-gap);margin:var(--space-3) 0 0;padding-top:var(--space-6);border-top:var(--border-width) solid var(--rule-color)}
 .sh-quote-facts dt{margin:0 0 var(--space-2);font:var(--type-label);color:var(--text-primary)}
-.sh-quote-facts dd{margin:0;font:var(--type-body-sm);color:var(--text-secondary);max-width:44ch}
+.sh-quote-facts dd{margin:0;font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-narrow)}
 @media (min-width:760px){.sh-quote-facts{grid-template-columns:repeat(var(--_fc,2),minmax(0,1fr))}}
 `;
 

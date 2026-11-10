@@ -1,0 +1,38 @@
+{
+  "id": "skin-health-restoration",
+  "slug": "skin-health-restoration",
+  "name": "Skin Health Restoration",
+  "proposition": "A residential programme for guests with long-standing skin conditions such as psoriasis, eczema or acne. Meals, gut care, water and mud therapies, sunlight therapy and stress care are reviewed with the guest each day, alongside any treatment from the guest's own dermatologist.",
+  "audience": "For psoriasis, eczema, dermatitis, acne and pigmentation.",
+  "durations": [
+    14,
+    21,
+    28
+  ],
+  "conditions": [
+    "psoriasis",
+    "eczema",
+    "dermatitis",
+    "acne",
+    "hyperpigmentation"
+  ],
+  "suitability": [
+    "Guests whose skin flares with stress, diet or digestion",
+    "Guests who remain under the care of their own dermatologist"
+  ],
+  "order": 16,
+  "locale": "en",
+  "source": "owner",
+  "related_pages": [
+    {
+      "type": "programme",
+      "id": "gut-microbiome-restoration"
+    }
+  ],
+  "status": "published",
+  "featured_image": {
+    "src": "courtyard-pond-building-path",
+    "alt": "A long courtyard pond between dark textured building walls after rain"
+  },
+  "featured": false
+}

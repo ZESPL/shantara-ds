@@ -4,6 +4,37 @@ Back to the [copy index](../skill-copy.md).
 
 Headings, CTAs, forms and the day-to-day patterns of writing a page.
 
+## Length
+
+Count words, then cut. These are guides, not a second heading.
+
+| Element | Length | Case and job |
+| --- | --- | --- |
+| Hero title | About 4 to 12 words | Sentence case. One fact. |
+| Hero subtext | One or two sentences, under 30 words | Does not repeat the title. |
+| Section heading | Under 10 words | Sentence case. One idea. |
+| Meta line | Under 12 words | A date, a place or a number. |
+| Table header | 1 to 3 words | Name the column. |
+| Call to action | 2 to 4 words | Sentence case. One label for that action. |
+| Form label | 1 to 4 words | Name the field. The error explains it. |
+| Error | One sentence | Say what to enter. |
+| Footer link | 1 to 5 words | The same term as the page, or the nav term. |
+
+## Before and after
+
+From the approved voice audit. The meaning stays. The selling word, the repeated heading or the pronoun on a fact goes.
+
+| Before | After | Why |
+| --- | --- | --- |
+| Book a consultation | Make an Inquiry | The first step is the inquiry form. |
+| Rooms and tariffs, and Packages & rates, both to the same page | Rates and inclusions | One footer link. The breadcrumb stays Tariff. No rooms page. |
+| Rates for residential naturopathy programmes | All-inclusive rates for residential naturopathy programmes | "All-inclusive" moves into the H1. |
+| All-inclusive nightly rates, 2026–27 · INR (₹) | Nightly rates, 2026–27 · INR (₹) | The H2 does not repeat the H1. The currency mark stays. |
+| What your rate includes | What the rate includes | "Your" was on a fact. |
+| All-inclusive package rates | All-inclusive rates | "Package" is banned. |
+| Preparing your mindset | What the stay involves | The heading was persuasion. The list under it is the rules. |
+| Your daily schedule | Daily schedule | "Your" was on a fact. The timetable is the same for every guest. |
+
 ## Write for the visitor
 
 Never write public copy from the perspective of the website team, developer, designer, content strategist or CMS.
@@ -105,11 +136,9 @@ Bad:
 
 Better:
 
-> We'll be in touch
+> Message received
 
-> A member of the team will call you to understand what you need. A doctor then reviews whether a stay is the right next step.
-
-> A stay is confirmed after a doctor has spoken with you.
+> A member of the team calls to understand the need. A doctor then confirms the right programme.
 
 ---
 
@@ -119,7 +148,7 @@ Button labels describe one action, roughly 20 characters in English. Extra meani
 
 Do not use Badge or static Tag as decorative pills next to actions. Interactive filter Tags stay, because they are controls.
 
-`--text-2xs` / `--text-3xs` are for catalog specimen notes only (never for eyebrows, which are banned everywhere; see [voice and tone](voice-and-tone.md#punctuation)). Guest-readable helper copy is at least `--text-sm` (`--text-xs` only for true captions). Field hints stay short (“Optional”), never essay paragraphs.
+`--text-2xs` / `--text-3xs` are for catalog specimen notes only (never for eyebrows, which are banned everywhere; see the [copy index](../skill-copy.md#non-negotiables-quick-reference)). Guest-readable helper copy is at least `--text-sm` (`--text-xs` only for true captions). Field hints stay short (“Optional”), never essay paragraphs.
 
 ---
 
@@ -139,7 +168,7 @@ Instead of:
 
 Use:
 
-> What your stay includes
+> What the stay includes
 
 Instead of:
 
@@ -155,7 +184,7 @@ Instead of:
 
 Use:
 
-> Meals during your stay
+> Meals during the stay
 
 Instead of:
 
@@ -163,7 +192,7 @@ Instead of:
 
 Use:
 
-> Meet our doctors
+> The doctors
 
 Instead of:
 
@@ -179,7 +208,7 @@ Instead of:
 
 Use:
 
-> Who our programmes are for
+> Who the programmes are for
 
 Instead of:
 
@@ -187,7 +216,7 @@ Instead of:
 
 Use:
 
-> What to expect during your stay
+> What to expect during the stay
 
 Instead of:
 
@@ -195,15 +224,13 @@ Instead of:
 
 Use:
 
-> Book a Consultation
+> Make an Inquiry
 
 Instead of:
 
 > Begin your transformation
 
-Brand expression can appear in supporting copy when appropriate.
-
-It should not replace information.
+Section headings name the subject. Evocative lines belong in the H1, the lead and the closing, in the register set by [Shantara language](../../../docs/language.md).
 
 ---
 
@@ -232,8 +259,8 @@ Better:
 Use separate navigation links or sections such as:
 
 * About Shantara
-* Our approach
-* Meet our doctors
+* The approach
+* The doctors
 * Medical Editorial Policy
 
 The visitor does not need to know that these are internally classified as "trust pages".
@@ -258,12 +285,11 @@ Do not imply that every guest follows an identical schedule.
 
 Use words such as:
 
-* May
 * Typically
-* Depending on your programme
-* Based on your doctor's recommendations
+* Depending on the programme
+* As the doctor prescribes
 
-when appropriate.
+when the schedule varies. Facts that hold for every guest are stated without a hedge.
 
 ---
 
@@ -303,31 +329,31 @@ There is no need to explain why the rates are located there.
 
 Headings should work even if all supporting copy disappears.
 
-One heading states one point. If a heading needs "and" to join two unrelated ideas, the section is doing two jobs; split it ([rule of one](../../../docs/rule-of-one.md)). "Meals during your stay" is one point; "Meals, rooms and activities" is three sections.
+One heading states one point. If a heading needs "and" to join two unrelated ideas, the section is doing two jobs; split it ([rule of one](../../../docs/rule-of-one.md)). "Meals during the stay" is one point; "Meals, rooms and activities" is three sections.
 
 Good headings:
 
 > Naturopathy programmes
 
-> What to expect during your stay
+> What to expect during the stay
 
-> Meet our doctors
+> The doctors
 
 > Treatments and therapies
 
-> Meals during your stay
+> Meals during the stay
 
 > Accommodation
 
-> Who our programmes are for
+> Who the programmes are for
 
-> Preparing for your stay
+> Preparing for the stay
 
-> After your stay
+> After the stay
 
 > Frequently asked questions
 
-Avoid headings that rely on metaphors or slogans to explain the section.
+Section headings (H2 and below) avoid metaphors or slogans that hide the subject. The H1 may be evocative.
 
 Avoid:
 
@@ -341,7 +367,7 @@ Avoid:
 
 > Where nature restores
 
-Headings never carry an eyebrow or overline above them. See [voice and tone](voice-and-tone.md#punctuation).
+Headings never carry an eyebrow or overline above them. See [copy index](../skill-copy.md#non-negotiables-quick-reference).
 
 ---
 
@@ -382,19 +408,15 @@ Calls to action should describe the next action accurately.
 
 Preferred:
 
-* Book a Consultation
+* Make an Inquiry
 * View programmes
-* View accommodation
-* Meet our doctors
-* View tariffs
-* Check what is included
-* Speak to our team
-* Send your details
-* Learn about the programme
-* Read what to expect
+* View the tariff
+* The doctors
+* What to expect
 
 Avoid:
 
+* Book a consultation
 * Enquire about a stay
 * Request a consultation
 * Begin your transformation
@@ -409,7 +431,7 @@ Avoid:
 
 The CTA should describe an action rather than promise an outcome. Keep labels short.
 
-One label per action, everywhere: the consultation action is always **Book a Consultation**, never a different synonym on a different page. One view carries one primary action; any other action is a quieter link ([rule of one](../../../docs/rule-of-one.md)). Do not use Badge or static Tag as decorative pills next to actions.
+One label per action: the inquiry is **Make an Inquiry** on the page title, H1, breadcrumb, footer, submit button, in-page CTAs and analytics name. The header and menu sheet use the short label **Enquire**. One view carries one primary action; any other action is a quieter link ([rule of one](../../../docs/rule-of-one.md)). Do not use Badge or static Tag as decorative pills next to actions.
 
 ---
 
@@ -456,7 +478,7 @@ Before:
 
 After:
 
-> Meals are planned as part of your programme based on your doctor's recommendations and dietary needs.
+> Meals are planned as part of each programme, from the doctor's prescription and the guest's dietary needs.
 
 ### System language to human language
 
@@ -466,7 +488,7 @@ Before:
 
 After:
 
-> Your clinical team plans your programme following consultation and assessment.
+> The clinical team plans each programme after consultation and assessment.
 
 ### Architecture commentary to no copy
 
@@ -488,9 +510,9 @@ Before:
 
 After:
 
-> Your doctor may recommend a specific meal plan or supervised fasting based on your assessment. Therapies may also form part of your programme.
+> The doctor prescribes a meal plan or supervised fasting from the assessment. Therapies complete the programme.
 
-### Unsupported absolute to qualified explanation
+### Restriction to positive statement
 
 Before:
 
@@ -498,7 +520,7 @@ Before:
 
 After:
 
-> Treatments are recommended according to your programme and assessment.
+> Treatments are prescribed as part of each programme, from the assessment.
 
 ### Negative experience description to useful description
 
@@ -508,7 +530,7 @@ Before:
 
 After:
 
-> Your programme is planned after consultation and assessment.
+> Every programme is planned after consultation and assessment.
 
 ---
 
@@ -542,9 +564,9 @@ Useful to the guest.
 
 Examples:
 
-> Your programme begins with a consultation and assessment.
+> Every programme begins with a consultation and assessment.
 
-> Meals are planned according to your programme and dietary requirements.
+> Meals are planned according to the programme and dietary requirements.
 
 > Shantara has 52 rooms across five accommodation categories.
 

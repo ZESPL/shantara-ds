@@ -1,0 +1,12 @@
+{
+  "id": "hypoproteinemia",
+  "slug": "hypoproteinemia",
+  "name": "Low protein (hypoproteinemia)",
+  "synonyms": [
+    "hypoproteinemia",
+    "low albumin",
+    "protein deficiency"
+  ],
+  "locale": "en",
+  "source": "client"
+}

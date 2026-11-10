@@ -97,7 +97,7 @@ Do not create a single Hero with 30 props. Do not create 12 hero variants.
 | --- | --- |
 | Immersive (Home, Experience) | `HeroFullBleed` (Display headline, one primary button, `meta` caption row) |
 | Offer (Programme, Tariffs) | `HeroSplit` (photo one side, title + meta + one line + button) + a booking panel directly below |
-| Editorial / Utility (Conditions, About, Journal, Contact, Book a Consultation) | `HeroStatement` with a side image, a Stone ground or a meta row, never a bare statement |
+| Editorial / Utility (Conditions, About, Journal, Contact, Make an Inquiry) | `HeroStatement` with a side image, a Stone ground or a meta row, never a bare statement |
 | Article | `ArticleHeader` |
 
 The header overlays every page. On `HeroStatement` it sits on the Merino/Stone ground.
@@ -116,7 +116,7 @@ Do not overload it with programme tables, long copy, or multiple data points.
 
 Purpose: establish topic clearly; support educational/medical content; prioritize readability.
 
-Typical uses: Conditions; Therapies; Our Approach; Clinical Guides; Doctor Answers; Articles.
+Typical uses: Conditions; Therapies; Naturopathy; Clinical Guides; Doctor Answers; Articles.
 
 Typical fields: title; category in the meta row below it; summary; optional image; optional author/reviewer metadata; optional updated/reviewed date.
 
@@ -124,7 +124,7 @@ Typical fields: title; category in the meta row below it; summary; optional imag
 
 Purpose: immediately explain a commercial programme; communicate high-intent information.
 
-Typical fields: programme title; concise proposition; optional image; duration/options; optional starting price (**only if already published on the tariff card; never invent**); short suitability statement; Book a Consultation CTA.
+Typical fields: programme title; concise proposition; optional image; duration/options; optional starting price (**only if already published on the tariff card; never invent**); short suitability statement; Make an Inquiry CTA.
 
 Do not require every field if it is not relevant.
 
@@ -216,7 +216,7 @@ Collections of entities: conditions; programmes; therapies; rooms; doctors; arti
 
 The section controls heading, introduction, selected items or a controlled query, and layout. Entity-specific cards remain separate configurations of `Tile`.
 
-Component: `TileGrid`, with layout `3` (three across from 1000px), `2`, or `feature` (one large tile beside the rest). Choose the layout by count, not by page type. When the list is too long for a photograph per item (all conditions, the full programme list), use `IndexList`.
+Component: `TileGrid`, with layout `3` (three across from 1000px), `2`, or `feature` (one large tile beside the rest). Choose the layout by count, not by page type. When the list is too long for a photograph per item, use `IndexList`. The programmes index is a catalogue of `Tile` rows (`layout="thumb"`) with a small thumbnail each. The conditions A to Z page uses `GroupedList`.
 
 ### Feature Grid
 
@@ -358,7 +358,7 @@ Do not create one component with dozens of conditional fields. Each configuratio
 
 All tiles share: typography (Light title, Regular body); square-cut photographs; hover (photograph scales to 1.02 inside its frame, `--tile-media-scale`, and the title takes a hairline underline; no lift, no shadow); focus ring; the whole tile is one link.
 
-Ratios: listing tiles **4:3** (`--card-media-ratio`). Wide editorial frames **16:9**; doctors **4:5**; tall architecture **3:4**. **21:9** only through `PanoramaCaption`, with `mobileRatio` for phones. Heroes use a height (100svh / 72svh), not a ratio. `layout="row"` puts the photograph beside the text from 760px, for lists of articles or rooms.
+Ratios: listing tiles **4:3** (`--card-media-ratio`). Wide editorial frames **16:9**; doctors **4:5**; tall architecture **3:4**. **21:9** only through `PanoramaCaption`, with `mobileRatio` for phones. Heroes use a height (100svh / 72svh), not a ratio. `layout="row"` puts the photograph beside the text from 760px, for lists of articles or rooms. `layout="thumb"` keeps a small 4:3 thumbnail beside the text at every width, for the programmes catalogue.
 
 **Grids:** `TileGrid` layout follows the count: 3 across, 2 across, or `feature` (one large, the rest beside it). Never an uneven last row. A listing too long for a photograph per item uses `IndexList`.
 
@@ -392,7 +392,31 @@ In this kit, tiles are samples of the semantic jobs, not a production card libra
 
 These are examples, not templates. Each one starts from the page's one idea and one action ([rule of one](../../docs/rule-of-one.md)), then lists only the sections that serve them. Write the brief first, then choose; do not copy a list and fill it.
 
+### Programmes index
+
+```text
+Immersive Hero (HeroFullBleed), no button
+Condition search, centred (with JavaScript): filters the catalogue by programme name and by each listed condition's name and synonyms
+Catalogue: one Tile row per programme (layout="thumb", size="lg"): small thumbnail, name (h2, the link), audience summary, every condition as a static Tag
+A centred "Explore all conditions" link to the conditions index
+```
+
+Nothing follows the list: no How a programme is chosen, no How a stay is arranged, no Consultation CTA; the header Enquire is the page's only button. No tiles grid, no group title, no focus groups, no comparison table (shantara.life D-217).
+
+### Conditions index
+
+```text
+Compact Editorial Hero (HeroStatement, tall={false}): title and one line, no image, no button
+Condition search, centred (with JavaScript), above an A to Z GroupedList: each condition is one link to its primary programme
+```
+
+The condition search is the same on both pages: an Input with `type="search"`, at most 36rem wide and centred, the label "Search by condition" kept for screen readers but visually hidden, and the placeholder "Search for conditions like diabetes, back pain or PCOS." No hint line below. Without JavaScript it is hidden and the full list shows (shantara.life D-217).
+
+Nothing follows the list: no How a programme is chosen, no Consultation CTA. The hero is deliberately bare on this utility index. Works without JavaScript. Linked from the footer and the programmes catalogue, not the nav (shantara.life D-216).
+
 ### Diabetes
+
+Condition detail page compositions below apply once condition detail pages are built (deferred, D-216).
 
 ```text
 Editorial Hero
@@ -511,20 +535,23 @@ Rich Content
 Consultation CTA
 ```
 
-### Our Approach
+### Naturopathy
+
+Replaces Our Approach (website D-219; layout amended by website D-221). Sample: `screens/NaturopathyScreen.js`.
 
 ```text
-Editorial Hero
-Rich Content
-Feature Grid
-Process
-Media + Content
-Expert Section
-FAQ
-Consultation CTA
+Full-bleed Hero (cover image)
+Philosophy: boxed Split (Statement + photograph), then PlainList marker="numeral" of the six principles
+Practice: Statement, two boxed Split chapters on alternate sides (meals, yoga), one Tile (A day at the retreat)
+Panorama (boxed, revealed): a place, in a few words
+Stay: at-home opening, Band Statement (the page's one accent), At home / At Shantara SpecTable variant="contrast" (revealed), medication note
+Treatments: boxed Split (Statement + GroupedList of the therapy links)
+Doctors: PeopleRow, the BNYS line as its statement, "Meet our doctors"
+Rhythm: NumeralsSplit (the minimum stay) + Programmes and house-guidelines links
+Consultation CTA (photo)
 ```
 
-### Book a Consultation
+### Make an Inquiry
 
 ```text
 Compact or Conversion-focused Hero

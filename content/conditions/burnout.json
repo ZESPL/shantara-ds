@@ -1,0 +1,12 @@
+{
+  "id": "burnout",
+  "slug": "burnout",
+  "name": "Burnout",
+  "synonyms": [
+    "burnout syndrome",
+    "work stress",
+    "exhaustion"
+  ],
+  "locale": "en",
+  "source": "client"
+}

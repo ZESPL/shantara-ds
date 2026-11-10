@@ -173,15 +173,18 @@
 
   const KIT_VIEWS = {
     home: "",
+    programmes: "programmes",
     conditions: "conditions",
-    programme: "programmes",
     programs: "programmes",
+    /* The programme detail sample. */
+    programme: "programmes/advanced-detox-cellular-cleansing",
     experience: "experience",
+    naturopathy: "naturopathy",
     about: "about",
     journal: "journal",
     contact: "contact",
-    booking: "book-consultation",
-    consultation: "book-consultation",
+    booking: "make-an-inquiry",
+    consultation: "make-an-inquiry",
     tariffs: "tariffs",
     /* Single Journal article. Navigate with "article:<slug>"; bare "article" opens the sample. */
     article: "journal/how-meals-are-planned",
@@ -195,13 +198,15 @@
 
   const VIEW_FROM_PATH = {
     "": "home",
+    programmes: "programmes",
     conditions: "conditions",
-    programmes: "programme",
+    "programmes/advanced-detox-cellular-cleansing": "programme",
     experience: "experience",
+    naturopathy: "naturopathy",
     about: "about",
     journal: "journal",
     contact: "contact",
-    "book-consultation": "booking",
+    "make-an-inquiry": "booking",
     booking: "booking",
     tariffs: "tariffs",
     "pa-kareem": "founder",

@@ -1,0 +1,12 @@
+{
+  "id": "dermatitis",
+  "slug": "dermatitis",
+  "name": "Dermatitis",
+  "synonyms": [
+    "skin inflammation",
+    "contact dermatitis",
+    "skin rash"
+  ],
+  "locale": "en",
+  "source": "client"
+}

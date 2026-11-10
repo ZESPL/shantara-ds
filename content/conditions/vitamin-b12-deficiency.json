@@ -1,0 +1,11 @@
+{
+  "id": "vitamin-b12-deficiency",
+  "slug": "vitamin-b12-deficiency",
+  "name": "Vitamin B12 deficiency",
+  "synonyms": [
+    "B12",
+    "low B12"
+  ],
+  "locale": "en",
+  "source": "client"
+}

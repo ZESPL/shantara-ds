@@ -20,7 +20,7 @@ This file sets the folder layout, routes and data sources for the **shantara.lif
 | 8 | **Singletons are per language** | Singletons use `site/{locale}.json`, `tariff-terms/{locale}.json` and `faq/{locale}.json`. English is the master copy. |
 | 9 | **Doctors are `Person` nodes, and pages carry a `BreadcrumbList`** | Use `Person`, never `Physician`, which Schema.org defines as a medical business ([SCHEMA-09](search-visibility/schema.md)). Programmes use `["Service", "MedicalTherapy"]` with no `offers` ([SCHEMA-10](search-visibility/schema.md)). |
 | 10 | **Code says `program`, copy says programme** | Folder names, URLs, collection names, `related_pages` types, TypeScript types and schema `@id` values all use `program`. Only visible copy says "programme". |
-| 11 | **One page lists the doctors, and only one doctor gets a profile page** | `/en/our-doctors` lists every practising doctor, each with an anchor section. Dr. Bahja Janu (`/en/doctors/bahja-janu`) is the only doctor with a profile page. The allowlist `DOCTOR_PROFILES` in `lib/routes.ts` controls this. No other doctor gets a page. The founder and chairman, P.A. Kareem, is not a doctor. His record is in the `leadership` collection, never in `doctors`, and his profile is `/en/pa-kareem`. He never appears on Our Doctors, in a doctors row, or as a clinician, author-doctor or medical reviewer. |
+| 11 | **One page lists the doctors, and no doctor gets a profile page** | `/en/our-doctors` lists every practising doctor, each with an anchor section, and is the only doctors page (website D-223). Every doctor link is `/en/our-doctors#{slug}`. `PROFILE_PAGES` in `lib/routes.ts` lists the only person pages: the founder. The founder and chairman, P.A. Kareem, is not a doctor. His record is in the `leadership` collection, never in `doctors`, and his profile is `/en/pa-kareem`. He never appears on Our Doctors, in a doctors row, or as a clinician, author-doctor or medical reviewer. |
 
 ## Folder tree
 
@@ -50,11 +50,11 @@ src/
   copy/en/                    ← fixed-page copy, written in code, typed, not in Keystatic
     home.ts
     therapies.ts  rooms.ts  amenities-activities.ts  farm-dining.ts  a-day-at-shantara.ts
-    our-story.ts  our-approach.ts  our-doctors.ts
-    conditions.ts  programs.ts  journal.ts  faq.ts  tariff.ts  contact.ts  book-consultation.ts
+    our-story.ts  naturopathy.ts  our-doctors.ts
+    conditions.ts  programs.ts  journal.ts  faq.ts  tariff.ts  contact.ts  make-an-inquiry.ts
     policies/
       admission-criteria.md  house-rules.md  guest-rights.md
-      feedback-and-complaints.md  accessibility.md  terms.md
+      feedback-and-complaints.md  accessibility.md  booking-terms.md
       privacy-policy.md  ethics.md  diversity.md
       accreditations.md  sustainability.md
   components/
@@ -102,7 +102,7 @@ tests/                Playwright: 4–5 smoke tests only
 - **Singletons** use `{singleton}/{locale}.json`.
 - **File format.** An entry with a long-form Markdoc body is `.mdoc`, with its other fields in frontmatter. Everything else is `.json`. Field names match the design-system records in [`content/`](../../content/).
 - **English is the master.** A translated file holds only translatable text. Images, video, related pages, featured flags and every price come from English ([Languages](skill-content.md#languages)). This covers `tariff-terms/{locale}.json` too: a translation may carry labels, terms and notes, never amounts.
-- **`related_pages` types** are `condition`, `program`, `therapy`, `room`, `doctor`, `article`, `doctor_answer` and `page`. A `page` ID is a fixed-route key from `lib/routes.ts`, such as `our-approach`.
+- **`related_pages` types** are `condition`, `program`, `therapy`, `room`, `doctor`, `article`, `doctor_answer` and `page`. A `page` ID is a fixed-route key from `lib/routes.ts`, such as `naturopathy`.
 
 ## Route table
 
@@ -121,10 +121,9 @@ Every URL carries a locale prefix, and `check-routes.mjs` enforces it ([Build ch
 | `/en/farm-dining` | `farm-dining.astro` | `copy/en/farm-dining.ts` | `WebPage` + `BreadcrumbList` |
 | `/en/a-day-at-shantara` | `a-day-at-shantara.astro` | `copy/en/a-day-at-shantara.ts` shown in a `TimeTable` | `WebPage` + `BreadcrumbList` |
 | `/en/our-story` | `our-story.astro` | copy and the founder's `leadership` record | `AboutPage` + `BreadcrumbList` |
-| `/en/our-approach` | `our-approach.astro` | copy, with the guest journey shown in `NumberedSteps` | `AboutPage` + `BreadcrumbList` |
+| `/en/naturopathy` | `naturopathy.astro` | copy: the principles, what the guest experiences, what a stay adds, the treatments from the Therapies collection (website D-219) | `AboutPage` + `BreadcrumbList` |
 | `/en/our-doctors` | `our-doctors.astro` | every practising doctor (not the founder), one section each with `id="{slug}"` | `AboutPage` + `ItemList` + `BreadcrumbList`. The `ItemList` refers to each practising doctor's `Person` node by `@id` |
 | `/en/pa-kareem` | `pa-kareem.astro` | the founder's `leadership` record, with his press, talks, videos and social posts. He is not a doctor, so the page has no answers, reviewed articles or programmes | `ProfilePage` + `Person` + `BreadcrumbList` |
-| `/en/doctors/bahja-janu` | `doctors/[slug].astro`, whose paths come from `DOCTOR_PROFILES` only | doctor, plus their answers, reviewed articles, programmes, press, talks, videos and social posts | `ProfilePage` + `Person` + `BreadcrumbList` |
 | `/en/journal` and `/en/journal/{n}` | `journal/[...page].astro` | articles and doctor answers, newest first | `CollectionPage` + `ItemList` + `BreadcrumbList` |
 | `/en/journal/{slug}` | `journal/[slug].astro` | article or doctor answer | `Article` + `BreadcrumbList`, with `MedicalWebPage` fields when medical |
 | `/en/tariff` | none: an edge-function 302 to one currency's page ([skill-ia.md](skill-ia.md#tariff)) | — | — |
@@ -132,14 +131,14 @@ Every URL carries a locale prefix, and `check-routes.mjs` enforces it ([Build ch
 | `/en/tariff/{code}/card` | `tariff/[code]/card.astro` (noindex; printed to PDF) | the same records | none |
 | `/en/faq` | `faq.astro` | `faq/en.json` | `WebPage` + `BreadcrumbList` (`FAQPage` optional) |
 | `/en/contact` | `contact.astro` | `site/en.json` | `ContactPage` |
-| `/en/book-consultation` | `book-consultation.astro` | `ConsultationForm` | `WebPage` + `BreadcrumbList` |
+| `/en/make-an-inquiry` | `make-an-inquiry.astro` | `ConsultationForm` | `WebPage` + `BreadcrumbList` |
 | `/en/hosted-stays` | `hosted-stays.astro` | Specified in [special-pages/hosted-stays.md](special-pages/hosted-stays.md). Indexable. No links from nav, footer, or guest pages. No kit sample. Same slug under each published locale. | `WebPage` only |
 | `/en/admission-criteria` | `admission-criteria.astro` | `copy/en/policies/admission-criteria.md` | `WebPage` + `BreadcrumbList` |
 | `/en/house-rules` | `house-rules.astro` | `copy/en/policies/house-rules.md` | `WebPage` + `BreadcrumbList` |
 | `/en/guest-rights` | `guest-rights.astro` | `copy/en/policies/guest-rights.md` | `WebPage` + `BreadcrumbList` |
 | `/en/feedback-and-complaints` | `feedback-and-complaints.astro` | `copy/en/policies/feedback-and-complaints.md` | `WebPage` + `BreadcrumbList` |
 | `/en/accessibility` | `accessibility.astro` | `copy/en/policies/accessibility.md` | `WebPage` + `BreadcrumbList` |
-| `/en/terms` | `terms.astro` | `copy/en/policies/terms.md` | `WebPage` + `BreadcrumbList` |
+| `/en/booking-terms` | `[slug].astro` | the booking terms policy. The contract for a reservation. `/en/terms` and `/en/terms-of-service` redirect here | `WebPage` + `BreadcrumbList` |
 | `/en/cancellation` | `cancellation.astro` | `tariff-terms/en.json` → `cancellation`, `postponement` | `WebPage` + `BreadcrumbList` |
 | `/en/privacy-policy` | `privacy-policy.astro` | `copy/en/policies/privacy-policy.md` | `WebPage` + `BreadcrumbList` |
 | `/en/ethics` | `ethics.astro` | `copy/en/policies/ethics.md` | `WebPage` + `BreadcrumbList` |
@@ -157,7 +156,7 @@ The cancellation policy has no copy file of its own. Its refund schedule and pos
 | --- | --- |
 | `therapy` | `/en/therapies#{slug}` |
 | `room` | `/en/rooms#{slug}` |
-| `doctor` | `/en/doctors/{slug}` for an entry in `DOCTOR_PROFILES`, otherwise `/en/our-doctors#{slug}`. This covers `ReviewedBy` and author links too |
+| `doctor` | `/en/our-doctors#{slug}` (no doctor has a profile page, website D-223). This covers `ReviewedBy` and author links too |
 | `founder` | `/en/pa-kareem`. The founder is not a doctor, so a `doctor` reference never resolves to him |
 | `author` (not a doctor) | No link. Show the name and role only |
 | `testimonial` | No link |
@@ -174,8 +173,8 @@ The copy for these pages is written in code (`src/copy/en/`). Facts come from th
 | Organic Farm & Dining | Handbook §11 | The handbook says meals are part of treatment and "not a restaurant menu". Show "An example day of meals" and say that the doctor prescribes each guest's diet. Meal and juice timings are in handbook §11. |
 | A Day at Shantara | Handbook §12 (daily routine) and §13 | Use the daily routine timings from handbook §12. Say that the doctor prescribes which treatments fill the morning and afternoon slots. The name follows Shantara, never Welnez. |
 | Our Story | Handbook §2 | Use the history paragraph in that section, and nowhere else. Do not date Shantara to 2000. Mention Welnez only as the former name, and only if the history needs it. |
-| Our Approach | Handbook, naturopathy principles and the guest journey | Describe the journey as enquiry → consultation → stay → going home. Do not use hospital words such as "discharge" or "patients". [AGENTS.md](../../AGENTS.md) bans "patients" on public pages. |
-| Our Doctors | `content/doctors/` | Each doctor gets a photo, name, qualification, areas of practice and a **Book a Consultation** button. Dr. Bahja also links to her profile page. Show only public, visible credentials. The founder, P.A. Kareem, is not a doctor and is not on this page. |
+| Naturopathy | Handbook "Our approach" (the six principles), therapies.md, food.md, stay.md | What naturopathy is and what a guided stay adds; no booking steps (website D-219). Do not use hospital words such as "discharge" or "patients". [AGENTS.md](../../AGENTS.md) bans "patients" on public pages. |
+| Our Doctors | `content/doctors/` | Each doctor gets a photo, name, qualification, areas of practice and a **Make an Inquiry** button. No doctor links to a profile page (website D-223). Show only public, visible credentials. The founder, P.A. Kareem, is not a doctor and is not on this page. |
 | Guest, policy and about pages | The lists in [skill-ia.md](skill-ia.md#utility-pages) | Do not invent text. Cancellation has no copy file; it renders from the tariff. |
 
 ## Reading content
@@ -219,8 +218,8 @@ Set these in Netlify. `.env.example` lists the names with no values.
 
 - **Locale route invariant.** No public page may sit directly under `src/pages/` except `index.astro`, the root redirect. Every public route lives beneath `src/pages/[locale]/`. Any other `.astro`, `.md` or `.mdx` file, or any other route directory, directly beneath `src/pages/` fails the build. The one exception is `src/pages/open-graph/`, which may hold only `[...route].ts`: it builds share images, not pages.
 - **Share images.** `scripts/check-og.mjs` runs after `astro build` ([skill-og-images.md § 10](skill-og-images.md#10-checks)).
-- **Route guard.** The build fails if `src/pages/[locale]/` contains a `therapies/`, `rooms/`, `our-doctors/` or `insights/` folder, or if `doctors/` holds anything other than `[slug].astro`. It also fails if `src/content/pages/` or `src/content.config.ts` exists.
-- **Doctor profiles.** `DOCTOR_PROFILES` is exactly `bahja-janu`, and that entry is published. `doctors` holds no `pa-kareem` entry; the founder's record is `leadership/en/pa-kareem`, and no `doctor` or `medical reviewer` reference may point to it.
+- **Route guard.** The build fails if `src/pages/[locale]/` contains a `therapies/`, `rooms/`, `our-doctors/`, `insights/` or `doctors/` folder. It also fails if `src/content/pages/` or `src/content.config.ts` exists.
+- **Doctor profiles.** No doctor has a page: `PROFILE_PAGES` holds only the founder (website D-223). `doctors` holds no `pa-kareem` entry; the founder's record is `leadership/en/pa-kareem`, and no `doctor` or `medical reviewer` reference may point to it.
 - **Slugs.** Slugs are lowercase with hyphens. They are unique across articles and doctor answers (they share `/en/journal/`), and they are never purely numeric, which keeps them clear of pagination.
 - **Entries.** Every entry in every collection and singleton reads without error.
 - **References.** Every `related_pages`, `author`, `doctor` and `medical reviewer` ID resolves. No published entry links to a draft.

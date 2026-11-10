@@ -48,6 +48,7 @@ tokens/                 → fonts, colors, typography, spacing, radius, elevatio
 assets/                 → wordmark and flower in 4 colourways each, pattern cell + motif, Diodrum TTFs
 assets/README.md        → index of logos, lockups, HNCH mark and pattern files
 assets/photos/          → property + doctor photos (flat; README.md = rules, shortlist, index; CATALOGUE.md = one entry per frame)
+assets/videos/          → guest films (gitignored mp4; README.md is the index; not testimonials yet)
 guidelines/             → specimen cards (Brand, Foundations)
 components/             → core, forms, navigation, feedback, editorial, sections: jsx, d.ts, prompt.md; catalog pages via docs/component.html?c=
 scripts/build-bundle.mjs → rebuilds _ds_bundle.js from components/ (see its header for Babel)
@@ -78,7 +79,7 @@ Each directory holds `<Name>.jsx`, `<Name>.d.ts` (props contract) and `<Name>.pr
 
 ### UI kits
 
-- `ui_kits/website/`: builder skill plus thin samples. Primary CTA is *Book a Consultation*. Public copy follows `skill-copy.md`. The tariff sample shows structure only; this folder holds no rates. Locale architecture: `ui_kits/website/locales.js` (root `locales.js` is a shim).
+- `ui_kits/website/`: builder skill plus thin samples. Primary CTA is *Make an Inquiry*. Public copy follows `skill-copy.md`. The tariff sample shows structure only; this folder holds no rates. Locale architecture: `ui_kits/website/locales.js` (root `locales.js` is a shim).
 - `ui_kits/app/`: in-stay guest companion, 390×844.
 
 ### Templates

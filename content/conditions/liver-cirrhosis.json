@@ -1,0 +1,11 @@
+{
+  "id": "liver-cirrhosis",
+  "slug": "liver-cirrhosis",
+  "name": "Liver cirrhosis (stable)",
+  "synonyms": [
+    "cirrhosis",
+    "compensated cirrhosis"
+  ],
+  "locale": "en",
+  "source": "client"
+}

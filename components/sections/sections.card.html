@@ -46,7 +46,7 @@ function Demo(){
 <HeroFullBleed src={P + "porch-lobby-dusk.jpg"} alt="The lobby seen from the porch at dusk"
   title="A doctor-led naturopathy retreat in Keralam"
   sub="Drug-free naturopathy on a hilltop above the Chennamangallur valley. Every stay begins with a consultation, and your programme is planned by our doctors."
-  actions={<><Button size="lg">Book a Consultation</Button><TextLink href="#">View programmes</TextLink></>}
+  actions={<><Button size="lg">Make an Inquiry</Button><TextLink href="#">View programmes</TextLink></>}
   meta={["Kozhikode, Keralam"]} />
 
 <Label name="HeroFullBleed" note="height tall · any other page, breadcrumbs open the text block" />
@@ -54,14 +54,14 @@ function Demo(){
   breadcrumbs={<Breadcrumbs items={[{ label: "Home", href: "#" }, { label: "Experience", href: "#" }, "Rooms"]} />}
   title="Rooms that look out over the valley"
   sub="Five room categories, each a residential stay planned around your programme."
-  actions={<Button size="lg">Book a Consultation</Button>} />
+  actions={<Button size="lg">Make an Inquiry</Button>} />
 
 <Label name="HeroSplit" note="offer hero · programme pages, meta below the title" />
 <HeroSplit src={P + "water-wall.jpg"} alt="The water wall court"
   breadcrumbs={<Breadcrumbs items={[{ label: "Programmes", href: "#" }, "Detox"]} />}
   title="Detox" meta={[{ icon: "leaf", label: "Metabolic" }, { icon: "moon", label: "7–21 nights" }]}
   sub="Your doctor may recommend a meal plan or supervised fasting based on your assessment."
-  actions={<><Button size="lg">Book a Consultation</Button><TextLink href="#">What the programme includes</TextLink></>}
+  actions={<><Button size="lg">Make an Inquiry</Button><TextLink href="#">What the programme includes</TextLink></>}
   facts={<PlainList columns={2} size="sm" items={["Consultation and assessment first", "Doctor review each morning"]} />} />
 
 <Label name="HeroStatement" note="editorial hero · closing hairline + meta" />
@@ -161,26 +161,26 @@ function Demo(){
   <FormSplit onSubmit={(e) => e.preventDefault()} src={P + "lobby-reception.jpg"} alt="The lobby, at the reception desk" aside={<>
     <Statement as="h3" size="title" sub="A member of the team will call you to understand what you need. A doctor then reviews whether a stay is the right next step.">We'll be in touch</Statement>
   </>}>
-    <Statement as="h2" size="title" sub="Share your name and a number we can reach. Our team will contact you to arrange a consultation.">Send your details</Statement>
+    <Statement as="h2" size="title" sub="Share your name and a number we can reach. Our team will contact you to discuss the next step.">Make an Inquiry</Statement>
     <Input label="Name" name="full_name" autoComplete="name" required />
     <Input label="Mobile / WhatsApp number" name="phone" type="tel" autoComplete="tel" placeholder="+91" required />
     <Select label="Country" name="country" options={["India", "United Arab Emirates", "United Kingdom", "Other"]} />
     <Textarea label="Anything you'd like us to know?" name="notes" rows={3} />
-    <div><Button size="lg" type="submit">Send your details</Button></div>
+    <div><Button size="lg" type="submit">Make an Inquiry</Button></div>
   </FormSplit>
 </Section>
 
 <Label name="ClosingCTA" note="variant photo · only on pages with no other CTA" />
 <ClosingCTA src={P + "porch-dusk-lit-canopy.jpg"} alt="The porch at dusk"
-  title="A stay is confirmed after a doctor has spoken with you."
-  sub="Share your name and a number we can reach. Our team will contact you to arrange a consultation."
-  action={<Button size="lg">Book a Consultation</Button>}
+  title="Plan your stay with our doctors."
+  sub="Share your name and a number we can reach. Our team will contact you to discuss the next step."
+  action={<Button size="lg">Make an Inquiry</Button>}
   contact={[{ icon: "phone", label: "+91 9553 600 100", href: "tel:+919553600100" }, { icon: "mail", label: "heal@shantara.life", href: "mailto:heal@shantara.life" }, { icon: "map-pin", label: "Chennamangallur, Kozhikode, Keralam, India - 673602" }]} />
 
 <Label name="ClosingCTA" note="variant compact · stone ground, one row" />
 <ClosingCTA variant="compact" ground="stone" title="Questions about a programme?"
-  sub="Our team will call you back to arrange a consultation."
-  action={<Button>Book a Consultation</Button>} />
+  sub="Our team will call you back to discuss the next step."
+  action={<Button>Make an Inquiry</Button>} />
 </div>);}
 ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
 </script></body></html>

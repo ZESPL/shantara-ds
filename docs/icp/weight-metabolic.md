@@ -93,7 +93,7 @@ Internal name “Weight & Metabolic Health” is **not** a keyword target.
 | Problem research | Reads about diabetes, fatty liver, obesity | Condition pages and doctor answers |
 | Solution research | Compares diet, medication, retreats, apps | How a residential stay actually works |
 | Comparison | Retreat vs hospital vs spa vs another Keralam property | Doctors, method, eligibility, tariff link |
-| High commercial intent | Looks at programmes, duration, inclusions | Programme page + Book a Consultation |
+| High commercial intent | Looks at programmes, duration, inclusions | Programme page + Make an Inquiry |
 | Brand validation | Checks credentials, reviews, press | About, doctors, editorial policy, guest experience (not efficacy claims) |
 | Consultation intent | Ready to talk | Enquiry form, WhatsApp as secondary |
 | Booking intent | After clinical guidance | Assisted conversion; no fake urgency |
@@ -116,7 +116,7 @@ Indicative: Weight Management; Diabetes Reversal (handbook name approved for use
 | --- | --- |
 | Education | Read the guide / Meet our doctors |
 | Programme consideration | Learn about the programme / View programmes |
-| Ready to talk | Book a Consultation / Speak to our team |
+| Ready to talk | Make an Inquiry / Speak to our team |
 | Avoid | Book now, Begin your transformation, guaranteed results language |
 
 ### O. Conversion objective

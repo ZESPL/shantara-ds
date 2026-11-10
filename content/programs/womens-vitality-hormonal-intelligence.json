@@ -1,0 +1,39 @@
+{
+  "id": "womens-vitality-hormonal-intelligence",
+  "slug": "womens-vitality-hormonal-intelligence",
+  "name": "Women's Vitality & Hormonal Intelligence",
+  "proposition": "A 28-night programme for women with PCOS, irregular cycles, perimenopausal symptoms, fertility concerns or hormonal changes linked to stress. Meals, exercise, therapies, sleep and stress care are planned around the guest's cycle and metabolic health and reviewed each day.",
+  "audience": "For PCOS, irregular or painful cycles, perimenopause, menopause and thyroid imbalance.",
+  "durations": [
+    28
+  ],
+  "conditions": [
+    "pcos",
+    "menstrual-irregularities",
+    "perimenopause",
+    "female-infertility",
+    "ovulatory-dysfunction",
+    "endometriosis",
+    "thyroid-dysfunction",
+    "prediabetes"
+  ],
+  "suitability": [
+    "Women with weight gain linked to hormonal changes",
+    "Women who want a structured stay before trying to conceive"
+  ],
+  "order": 9,
+  "locale": "en",
+  "source": "client",
+  "related_pages": [
+    {
+      "type": "programme",
+      "id": "weight-loss-body-sculpt"
+    }
+  ],
+  "status": "published",
+  "featured_image": {
+    "src": "leisure-pergola-terrace-reading-guest-landscape-3x2",
+    "alt": "A guest in white reading under a pergola beside tall grasses and a garden slope"
+  },
+  "featured": false
+}

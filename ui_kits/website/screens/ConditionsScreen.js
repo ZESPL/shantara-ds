@@ -1,71 +1,64 @@
-/* Conditions: HeroStatement → text index of conditions by group → a quiet
-   panorama → the rest of the index → ClosingCTA (photo; the page has no other CTA).
-   No photographs in the list: a condition is not a room or a meal. */
+/* Conditions index: a compact HeroStatement (no image, no button) → every condition a
+   programme lists as an A to Z GroupedList, each one link to its primary programme (the one
+   that lists it earliest, then the one earlier in the list). Nothing follows the list.
+   No condition detail pages. Linked from the footer, not the nav.
+   Composition sample, not the production site (shantara.life D-216). */
 
-function conditionListingGroups() {
-  const items = (window.ShantaraContent.conditions || []).filter((c) => c.category && c.summary);
-  const order = ["Metabolic", "Hormonal", "Musculoskeletal"];
-  return order
-    .map((name) => ({
-      name,
-      items: items
-        .filter((c) => c.category === name)
-        .map((c) => ({ name: c.name, copy: c.summary })),
-    }))
-    .filter((g) => g.items.length);
+function conditionLetters() {
+  const C = window.ShantaraContent;
+  const programs = (C.programs || [])
+    .filter((p) => p.status !== "draft")
+    .slice()
+    .sort((a, b) => (a.order || 0) - (b.order || 0));
+  const names = new Map((C.conditions || []).map((c) => [c.id, c.name]));
+  const byCondition = new Map();
+  programs.forEach((p, index) => {
+    (p.conditions || []).forEach((id, position) => {
+      if (!names.has(id)) return;
+      const entry = byCondition.get(id) || { name: names.get(id), programmes: [] };
+      entry.programmes.push({ name: p.name, rank: [position, index] });
+      byCondition.set(id, entry);
+    });
+  });
+  const letters = new Map();
+  [...byCondition.values()]
+    .map((e) => ({ ...e, programmes: e.programmes.sort((a, b) => a.rank[0] - b.rank[0] || a.rank[1] - b.rank[1]) }))
+    .sort((a, b) => a.name.localeCompare(b.name, "en", { sensitivity: "base" }))
+    .forEach((e) => {
+      const letter = e.name.charAt(0).toUpperCase();
+      letters.set(letter, [...(letters.get(letter) || []), e]);
+    });
+  return [...letters.entries()];
 }
 
-function ConditionsScreen({ onNavigate }) {
+function ConditionsScreen() {
   const { t } = window.ShantaraI18n.useLocale();
-  const { Breadcrumbs, HeroStatement, Section, IndexList, PanoramaCaption, ClosingCTA, Button } = window.ShantaraDesignSystem_45bbe4;
+  const { Breadcrumbs, HeroStatement, Section, GroupedList } = window.ShantaraDesignSystem_45bbe4;
   const P = window.PageSlot;
   const L = window.ShantaraLocales;
-  const home = L ? L.kitHash(window.ShantaraI18n.currentLocaleCode(), "home") : "#/en/";
-  const programmeHref = L ? L.kitHash(window.ShantaraI18n.currentLocaleCode(), "programme") : undefined;
-  const groups = conditionListingGroups().map((g) => ({
-    label: t(g.name),
-    items: g.items.map((item) => ({ title: t(item.name), text: t(item.copy), href: programmeHref, onClick: (e) => { e.preventDefault(); onNavigate("programme"); } })),
+  const locale = window.ShantaraI18n.currentLocaleCode();
+  const home = L ? L.kitHash(locale, "home") : "#/en/";
+  const detail = L ? L.kitHash(locale, "programme") : undefined;
+  const groups = conditionLetters().map(([letter, items]) => ({
+    label: letter,
+    items: items.map((e) => ({ label: t(e.name), href: detail })),
   }));
+
   return (
     <main>
       <P id="conditions/hero">
         <HeroStatement
+          tall={false}
           breadcrumbs={<Breadcrumbs items={[{ label: t("Home"), href: home }, t("Conditions")]} />}
-          title={t("Conditions we commonly see")}
-          sub={t("Our doctors see guests with a range of long-standing conditions. Programmes are planned after consultation and assessment.")}
+          title={t("Conditions")}
+          sub={t("Each condition leads to the programme that lists it. Where more than one programme lists a condition, the doctor recommends one after assessment.")}
         />
       </P>
 
-      {/* The panorama sits midway through the index as a pause; the list itself has no photographs. */}
       <P id="conditions/index">
         <Section space="bottom">
-          <IndexList groups={groups.slice(0, 1)} columns={1} />
+          <GroupedList columns={3} headingLevel={2} groups={groups} />
         </Section>
-      </P>
-
-      {groups.length > 1 ? (
-        <>
-          <P id="conditions/panorama">
-            <PanoramaCaption src={window.photoSrc("courtyard-pond-building-path")} alt={t("The courtyard pond at Shantara")} />
-          </P>
-          <P id="conditions/index-more">
-            <Section>
-              <IndexList groups={groups.slice(1)} columns={1} />
-            </Section>
-          </P>
-        </>
-      ) : null}
-
-      <P id="conditions/closing">
-        <ClosingCTA
-          variant="photo"
-          src={window.photoSrc("porch-dusk-lit-canopy")}
-          alt={t("The porch at dusk")}
-          title={t("Share your name and a number we can reach.")}
-          sub={t("Our team will contact you to arrange a consultation.")}
-          action={<Button size="lg" onClick={() => { if (L) L.track("consultation_cta_click", { page_type: "conditions", content_id: "conditions", content_name: "Conditions", cta_location: "closing" }); onNavigate("booking"); }}>{t("Book a Consultation")}</Button>}
-          contact={window.siteContactItems(t)}
-        />
       </P>
     </main>
   );

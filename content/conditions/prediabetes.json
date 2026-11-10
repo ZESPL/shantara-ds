@@ -1,0 +1,13 @@
+{
+  "id": "prediabetes",
+  "slug": "prediabetes",
+  "name": "Prediabetes and insulin resistance",
+  "synonyms": [
+    "borderline diabetes",
+    "insulin resistance",
+    "impaired glucose tolerance",
+    "insulin-resistant endocrine patterns"
+  ],
+  "locale": "en",
+  "source": "client"
+}

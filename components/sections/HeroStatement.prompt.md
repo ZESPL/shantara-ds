@@ -32,7 +32,7 @@ The **editorial** hero: words lead, no full photograph (deck slide 2). A large L
 | Hero | Purpose | Use on |
 | --- | --- | --- |
 | `HeroFullBleed` | Immersive: the place carries the message | Home (`height="full"`), Experience, the tariff pages, one flagship inner page (`tall`) |
-| `HeroSplit` | Offer, boxed: a photograph beside the title, facts and the action | Programme and condition detail pages, Book a Consultation |
+| `HeroSplit` | Offer, boxed: a photograph beside the title, facts and the action | Programme and condition detail pages, Make an Inquiry |
 | `HeroStatement` | Editorial: words lead, no photograph needed | Conditions and Programmes indexes, About, Journal index, Contact, policy and legal pages, 404, confirmation pages (`ArticleHeader` for single articles) |
 
 One hero per page, always first. None of them takes a label above the title: place, category or duration go in `meta`, below it.

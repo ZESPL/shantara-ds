@@ -1,0 +1,11 @@
+{
+  "id": "inflammatory-arthritis",
+  "slug": "inflammatory-arthritis",
+  "name": "Inflammatory arthritis",
+  "synonyms": [
+    "joint inflammation",
+    "swollen joints"
+  ],
+  "locale": "en",
+  "source": "client"
+}

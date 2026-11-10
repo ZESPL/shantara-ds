@@ -1,6 +1,7 @@
 import React from "react";
 import { Media } from "./Media.jsx";
 import { MetaRow } from "./MetaRow.jsx";
+import { Tag } from "../core/Tag.jsx";
 
 /* Replaces the white card on linen. Photograph and text sit directly on the ground,
    with no border, shadow or radius. Order: photograph → title → meta row → text. Category and
@@ -11,13 +12,18 @@ const CSS = `
 .sh-tile[data-href]{cursor:pointer}
 .sh-tile .sh-media>img{transition:transform var(--duration-reveal) var(--ease-out)}
 .sh-tile-body{display:flex;flex-direction:column;gap:var(--space-3);min-width:0}
-.sh-tile-title{margin:0;font:var(--type-item);color:var(--text-primary);text-wrap:balance}
+.sh-tile-title{margin:0;font:var(--type-item);color:var(--text-primary)}
 .sh-tile-title>span{background:linear-gradient(currentColor,currentColor) 0 100% / 0 1px no-repeat;transition:background-size var(--duration-base) var(--ease-out);padding-bottom:2px}
 .sh-tile-body>.sh-meta{margin-top:calc(var(--space-1) * -1)}
-.sh-tile-text{margin:var(--space-1) 0 0;font:var(--type-body-sm);color:var(--text-secondary);max-width:48ch}
+.sh-tile-text{margin:var(--space-1) 0 0;font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-narrow)}
 .sh-tile-meta{margin:0;font:var(--type-caption);color:var(--text-muted);font-variant-numeric:tabular-nums}
 .sh-tile[data-size="lg"] .sh-tile-title{font:var(--type-title)}
-.sh-tile[data-size="lg"] .sh-tile-text{font:var(--type-body);max-width:56ch}
+.sh-tile[data-size="lg"] .sh-tile-text{font:var(--type-body);max-width:var(--measure-body)}
+.sh-tile-tags{display:flex;flex-wrap:wrap;gap:var(--space-2);margin:var(--space-2) 0 0;padding:0;list-style:none}
+.sh-tile-tags .sh-tag{max-width:100%;white-space:normal;height:auto;min-height:24px;padding-block:3px;line-height:1.35}
+/* layout="thumb": a small 4:3 thumbnail beside the text at every width (catalogue rows). */
+.sh-tile[data-layout="thumb"]{display:grid;grid-template-columns:112px minmax(0,1fr);gap:var(--space-5);align-items:start}
+@media (min-width:760px){.sh-tile[data-layout="thumb"]{grid-template-columns:220px minmax(0,1fr);gap:var(--grid-gap)}}
 .sh-tile:focus-visible{outline:none;box-shadow:var(--ring-focus)}
 @media (hover: hover) and (pointer: fine){
   .sh-tile[data-href]:hover .sh-media>img{transform:scale(var(--tile-media-scale))}
@@ -37,17 +43,18 @@ function ensure() {
   document.head.appendChild(el);
 }
 
-export function Tile({ media, src, alt = "", ratio = "4:3", title, text, meta, href, onClick, size = "md", layout = "stack", headingLevel = 3, style, ...rest }) {
+/* tags: static Tags under the text, e.g. the conditions a programme is for (catalogue rows). */
+export function Tile({ media, src, alt = "", ratio = "4:3", title, text, meta, tags, href, onClick, size = "md", layout = "stack", headingLevel = 3, style, ...rest }) {
   ensure();
   const interactive = !!(href || onClick);
-  const Tag = interactive ? "a" : "div";
+  const El = interactive ? "a" : "div";
   const H = "h" + headingLevel;
   const figure = media || (src ? <Media src={src} alt={alt} ratio={ratio} /> : null);
   const metaNode = meta == null || meta === false ? null
     : Array.isArray(meta) || typeof meta === "string" ? <MetaRow items={meta} />
     : <div className="sh-tile-meta">{meta}</div>;
   return (
-    <Tag
+    <El
       data-ds-id="editorial/Tile"
       className="sh-tile"
       data-size={size}
@@ -63,7 +70,8 @@ export function Tile({ media, src, alt = "", ratio = "4:3", title, text, meta, h
         <H className="sh-tile-title"><span>{title}</span></H>
         {metaNode}
         {text ? <p className="sh-tile-text">{text}</p> : null}
+        {tags && tags.length ? <ul className="sh-tile-tags">{tags.map((tag) => <li key={tag}><Tag>{tag}</Tag></li>)}</ul> : null}
       </div>
-    </Tag>
+    </El>
   );
 }

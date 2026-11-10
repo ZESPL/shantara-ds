@@ -72,7 +72,7 @@ function AboutScreen({ onNavigate }) {
             {t("Doctors set the daily plan: treatments, meals, activity and rest.")}
           </Statement>
           <div>
-            <TextLink onClick={() => onNavigate("programme")}>{t("Programmes")}</TextLink>
+            <TextLink onClick={() => onNavigate("programmes")}>{t("Programmes")}</TextLink>
           </div>
         </SplitSection>
       </P>
@@ -90,8 +90,8 @@ function AboutScreen({ onNavigate }) {
           variant="ground"
           ground="pine"
           title={t("Share your name and a number we can reach.")}
-          sub={t("Our team will contact you to arrange a consultation.")}
-          action={<Button size="lg" onClick={() => { if (L) L.track("consultation_cta_click", { page_type: "about", content_id: "about", content_name: "About", cta_location: "closing" }); onNavigate("booking"); }}>{t("Book a Consultation")}</Button>}
+          sub={t("Our team will contact you to discuss the next step.")}
+          action={<Button size="lg" onClick={() => { if (L) L.track("consultation_cta_click", { page_type: "about", content_id: "about", content_name: "About", cta_location: "closing" }); onNavigate("booking"); }}>{t("Make an Inquiry")}</Button>}
           contact={window.siteContactItems(t)}
         />
       </P>

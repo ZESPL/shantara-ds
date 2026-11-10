@@ -15,7 +15,7 @@ export interface StatementProps extends React.HTMLAttributes<HTMLDivElement> {
   as?: "h1" | "h2" | "h3" | "p";
   /** Maps onto the type roles: display, h1, statement/h2, title/h3, h4. Fluid, never overflow. */
   size?: "display" | "h1" | "statement" | "h2" | "title" | "h3" | "h4";
-  /** Line length for the headline. Default `--measure-statement` (30ch). */
-  measure?: string;
+  /** Line length for the headline, one of the measure tokens. Default `heading` (`--measure-heading`). */
+  measure?: "title" | "heading" | "body";
 }
 export declare function Statement(props: StatementProps): JSX.Element;

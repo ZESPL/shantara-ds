@@ -1,0 +1,11 @@
+{
+  "id": "tennis-elbow",
+  "slug": "tennis-elbow",
+  "name": "Tennis elbow",
+  "synonyms": [
+    "lateral epicondylitis",
+    "elbow pain"
+  ],
+  "locale": "en",
+  "source": "client"
+}

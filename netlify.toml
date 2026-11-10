@@ -1,5 +1,5 @@
 [build]
-  command = "node scripts/prepare-dist.mjs"
+  command = "node scripts/check-measure.mjs && node scripts/prepare-dist.mjs"
   publish = "dist"
 
 [build.environment]

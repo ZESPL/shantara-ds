@@ -12,7 +12,7 @@ import { Media } from "../editorial/Media.jsx";
 const CSS = `
 .sh-story{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--stack-lg);align-items:center}
 .sh-story-quote{margin:0;display:flex;flex-direction:column;gap:var(--space-6);min-width:0}
-.sh-story-text{margin:0;font:var(--type-statement);color:var(--text-primary);max-width:var(--measure-statement);text-wrap:pretty}
+.sh-story-text{margin:0;font:var(--type-statement);color:var(--text-primary);max-width:var(--measure-heading);text-wrap:pretty}
 .sh-story-text::before{content:"\\201C"}.sh-story-text::after{content:"\\201D"}
 .sh-story-cite{display:flex;flex-direction:column;gap:var(--space-1);font:var(--type-body-sm);color:var(--text-secondary);font-style:normal}
 .sh-story-name{font-weight:var(--weight-medium);color:var(--text-primary)}

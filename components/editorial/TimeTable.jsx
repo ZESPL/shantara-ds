@@ -8,7 +8,7 @@ const CSS = `
 .sh-time-row:last-child{border-bottom:var(--border-width) solid var(--rule-color)}
 .sh-time-when{font:var(--type-body-sm);color:var(--text-brand);font-variant-numeric:tabular-nums}
 .sh-time-title{margin:0;font:var(--type-item-sm);color:var(--text-primary)}
-.sh-time-text{margin:var(--space-2) 0 0;font:var(--type-body-sm);color:var(--text-secondary);max-width:56ch}
+.sh-time-text{margin:var(--space-2) 0 0;font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-body)}
 @media (min-width:760px){.sh-time-row{grid-template-columns:minmax(9rem,2fr) minmax(0,5fr);gap:var(--grid-gap);align-items:baseline}}
 `;
 

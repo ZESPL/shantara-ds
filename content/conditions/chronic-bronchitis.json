@@ -1,0 +1,11 @@
+{
+  "id": "chronic-bronchitis",
+  "slug": "chronic-bronchitis",
+  "name": "Chronic bronchitis",
+  "synonyms": [
+    "bronchitis",
+    "smoker's cough"
+  ],
+  "locale": "en",
+  "source": "client"
+}

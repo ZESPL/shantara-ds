@@ -1,11 +1,11 @@
 A one-line strip above the site header for one site-wide message.
 
 ```jsx
-<AnnouncementBar href="/en/book-consultation" linkLabel="Book a Consultation">
-  A stay is confirmed after a doctor has spoken with you.
+<AnnouncementBar href="/en/make-an-inquiry" linkLabel="Make an Inquiry">
+  Every stay begins with a consultation.
 </AnnouncementBar>
 <AnnouncementBar ground="stone" dismissible storageKey="consultation-2026-10">
-  A stay is confirmed after a doctor has spoken with you.
+  Every stay begins with a consultation.
 </AnnouncementBar>
 ```
 

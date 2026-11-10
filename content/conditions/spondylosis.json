@@ -1,0 +1,12 @@
+{
+  "id": "spondylosis",
+  "slug": "spondylosis",
+  "name": "Spondylosis",
+  "synonyms": [
+    "cervical spondylosis",
+    "lumbar spondylosis",
+    "spinal arthritis"
+  ],
+  "locale": "en",
+  "source": "client"
+}

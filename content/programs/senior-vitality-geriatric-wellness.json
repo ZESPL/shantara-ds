@@ -1,0 +1,37 @@
+{
+  "id": "senior-vitality-geriatric-wellness",
+  "slug": "senior-vitality-geriatric-wellness",
+  "name": "Senior Vitality & Geriatric Wellness",
+  "proposition": "A residential programme for guests over 55 who want to keep their strength, balance and independence. Exercise therapy, meals, preventive checks, gentle therapies and rest are reviewed with the guest each morning.",
+  "audience": "For guests over 55 managing stiffness, reduced mobility, poor sleep or balance concerns.",
+  "durations": [
+    14,
+    21
+  ],
+  "conditions": [
+    "sarcopenia",
+    "type-2-diabetes",
+    "arthritis",
+    "hypertension"
+  ],
+  "suitability": [
+    "Adults over 55 who want to stay strong and independent",
+    "Older guests who want to lower their risk of falls",
+    "Older guests with stable long-term conditions who remain under their own doctor's care"
+  ],
+  "order": 14,
+  "locale": "en",
+  "source": "client",
+  "related_pages": [
+    {
+      "type": "programme",
+      "id": "pain-rehabilitation"
+    }
+  ],
+  "status": "published",
+  "featured_image": {
+    "src": "lobby",
+    "alt": "A double-height lobby with a stone desk, lounge seating and tall windows over distant hills"
+  },
+  "featured": false
+}

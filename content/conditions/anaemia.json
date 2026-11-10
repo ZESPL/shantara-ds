@@ -1,0 +1,13 @@
+{
+  "id": "anaemia",
+  "slug": "anaemia",
+  "name": "Anaemia",
+  "synonyms": [
+    "anemia",
+    "low haemoglobin",
+    "low hemoglobin",
+    "iron deficiency"
+  ],
+  "locale": "en",
+  "source": "client"
+}

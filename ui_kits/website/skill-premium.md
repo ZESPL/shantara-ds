@@ -26,7 +26,7 @@ The rule of restraint is **one reader, one idea, one focal point, one next step*
 
 - **Page:** one idea and one primary action, decided in build step 1 before any layout.
 - **Section:** one point, one heading, one photograph (or one row of tiles), at most one action.
-- **View:** one dominant element (one Display or Statement headline, or one hero photograph), one primary button, one rosette band, one accent. The header's Book a Consultation button is the frame and does not count against the view.
+- **View:** one dominant element (one Display or Statement headline, or one hero photograph), one primary button, one rosette band, one accent. The header's Enquire button is the frame and does not count against the view.
 - **Element:** one label per action and one name per thing.
 
 When a second idea, image or action competes, move it to its own section or page, or demote it (a `TextLink`, a meta row). Do not shrink both to fit.
@@ -73,7 +73,7 @@ Full stack table: [skill-stack.md](skill-stack.md).
 Shantara ships **one typeface for Latin/Cyrillic: Diodrum** (weights via design-system tokens). Display and body are the same family at different sizes and weights. Do **not** introduce a separate “premium serif” for headings.
 
 - Self-host fonts. Subset them. Use `font-display: swap` (already set on Diodrum faces).
-- Generous heading sizes, body line height 1.6, body measure `--measure-body` (62ch), headlines `--measure-statement` (30ch).
+- Generous heading sizes, body line height 1.6, body measure `--measure-body` (65ch), headlines `--measure-heading` (36ch), page titles `--measure-title` (the same 36ch), card text and captions `--measure-narrow` (45ch). These four tokens are the only measures.
 - Use type tokens (`--type-display`, `--type-statement`, `--type-body`, …) and the spacing/type scale. No one-off font stacks in components. Voices and weights: [Design system rules](#design-system-rules-from-the-brand-deck).
 - Arabic: **IBM Plex Sans Arabic** pairing under `[dir=rtl]` (see `tokens/rtl.css`). Do not use a system fallback as the Arabic display face.
 
@@ -108,7 +108,7 @@ The website is the brand deck carried to a scrolling page. The deck rules that a
 
 - **The Light rule:** every heading at 24px or larger is Diodrum Light. Medium is only for item titles at 20px or smaller. Body is Regular 17/1.6, never Light.
 - `--type-lead` is deprecated. Use body, or a `Statement` with a `sub` line.
-- Headlines are left-aligned and wrap at `--measure-statement` (30ch). Body wraps at `--measure-body` (62ch).
+- Headlines are left-aligned, wrap at `--measure-heading` (36ch) or `--measure-title` (the same 36ch) for a page title, and use `text-wrap: pretty`: lines fill, and only a lone last word is avoided. `balance` is for short centred UI text only (Tooltip, Dialog, AnnouncementBar). Body wraps at `--measure-body` (65ch).
 
 ### Grounds
 
@@ -200,7 +200,7 @@ Section-level mapping from the CMS library: [skill-sections.md](skill-sections.m
 
 Headings, labels, navigation, and buttons are direct and literal. A visitor scanning only the headings should understand the page.
 
-- Good: “Our treatment programmes”, “Book a consultation”, “Plan your stay”
+- Good: “Our treatment programmes”, “Make an Inquiry”, “Plan your stay”
 - Avoid: “Where healing begins”, “A journey within”, “Discover more”
 
 Calm, specific, factual tone. No hype.
@@ -214,7 +214,7 @@ Motion should make Shantara feel calm, continuous, and intentional. It must neve
 Not every section animates. Use only this vocabulary:
 
 - **Hero:** one subtle entrance on first load (for example, a gentle fade and small upward settle of the heading). Once only.
-- **Major editorial images:** an occasional reveal as they enter the viewport (`--duration-reveal`, 640 ms). Not every image. At most one or two per page.
+- **Major editorial images:** an occasional reveal as they enter the viewport (`--duration-reveal`, 640 ms). Not every image. At most one or two per page. Use the `data-reveal` attribute (`tokens/motion.css`): CSS only and scroll-driven, so the frame settles in over its entry; browsers without scroll-driven animation, and reduced motion, show it still. Put it on the element wrapping the frame (or the page's one comparison table), never on running text or headings, and never on the hero. Print shows everything still.
 - **Buttons, links and tiles:** subtle hover and focus states (colour, underline). A `Tile` scales its photograph to 1.02 inside the frame (`--tile-media-scale`) and underlines its title. Nothing lifts or gains a shadow on marketing pages.
 - **Page changes:** a restrained Astro View Transition. Shared-element transitions (for example, a programme card image becoming the programme page hero) are allowed where they help continuity.
 - **Long-form, programme, therapy and clinical content:** mostly static. Reading pages should not move.
@@ -275,7 +275,7 @@ Visual quality serves one journey:
 
 Programme exploration → Enquiry / WhatsApp / Booking intent
 
-Primary visitor-facing CTA remains **Book a Consultation**. When choosing between two design options, prefer the one that makes this journey clearer.
+Primary visitor-facing CTA remains **Make an Inquiry**. When choosing between two design options, prefer the one that makes this journey clearer.
 
 ## Review checklist
 

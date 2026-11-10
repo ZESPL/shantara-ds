@@ -38,7 +38,7 @@ export function HeroFullBleed({ media, src, alt = "", position, mobilePosition, 
       {figure}
       <div className="sh-hero-body sh-photo-text">
         <div className="sh-container">
-          <Statement as={titleAs} size={height === "full" ? "display" : "h1"} sub={sub} actions={actions} breadcrumbs={breadcrumbs} measure="24ch">{title}</Statement>
+          <Statement as={titleAs} size={height === "full" ? "display" : "h1"} sub={sub} actions={actions} breadcrumbs={breadcrumbs} measure="title">{title}</Statement>
           {meta ? (Array.isArray(meta) ? <MetaRow items={meta} /> : <p className="sh-hero-meta">{meta}</p>) : null}
         </div>
       </div>

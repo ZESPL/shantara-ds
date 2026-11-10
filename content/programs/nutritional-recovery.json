@@ -1,0 +1,38 @@
+{
+  "id": "nutritional-recovery",
+  "slug": "nutritional-recovery",
+  "name": "Nutritional Recovery",
+  "proposition": "A residential programme for guests with anaemia, low vitamin B12, vitamin D or folate, or low protein. Prescribed meals, sunlight therapy, gentle activity and rest are planned around the guest's blood results and reviewed each day.",
+  "audience": "For anaemia and low vitamin B12, vitamin D, folate or protein.",
+  "durations": [
+    14,
+    21
+  ],
+  "conditions": [
+    "anaemia",
+    "vitamin-b12-deficiency",
+    "vitamin-d-deficiency",
+    "folate-deficiency",
+    "hypoproteinemia",
+    "micronutrient-deficiencies"
+  ],
+  "suitability": [
+    "Guests with recent blood results that show a deficiency",
+    "Guests whose deficiency is linked to diet, digestion or a busy routine"
+  ],
+  "order": 19,
+  "locale": "en",
+  "source": "owner",
+  "related_pages": [
+    {
+      "type": "programme",
+      "id": "gut-microbiome-restoration"
+    }
+  ],
+  "status": "published",
+  "featured_image": {
+    "src": "food-spread-five-plates-restaurant-wide-landscape-3x2",
+    "alt": "Five plates of salads, red rice, curry and a vegetable bake on a table in the restaurant"
+  },
+  "featured": false
+}

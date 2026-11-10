@@ -2,25 +2,12 @@
   "id": "fatty-liver",
   "slug": "fatty-liver",
   "name": "Fatty liver (NAFLD)",
-  "summary": null,
-  "clinical": null,
-  "faqs": [],
-  "medical_reviewer": null,
-  "last_medically_reviewed": null,
-  "locale": "en",
-  "source": "gap",
-  "related_pages": [
-    {
-      "type": "programme",
-      "id": "weight-management"
-    },
-    {
-      "type": "programme",
-      "id": "detox"
-    }
+  "synonyms": [
+    "NAFLD",
+    "MASLD",
+    "non-alcoholic fatty liver disease",
+    "fatty liver disease"
   ],
-  "category": null,
-  "status": "draft",
-  "featured_image": null,
-  "external_references": []
+  "locale": "en",
+  "source": "client"
 }

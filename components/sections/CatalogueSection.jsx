@@ -14,7 +14,7 @@ const CSS = `
 .sh-cat-entry:first-child{border-top:0;padding-top:0}
 .sh-cat-entry:last-child{padding-bottom:0}
 .sh-cat-body{display:flex;flex-direction:column;gap:var(--space-4);min-width:0}
-.sh-cat-title{margin:0;font:var(--type-title);color:var(--text-primary);text-wrap:balance}
+.sh-cat-title{margin:0;font:var(--type-title);color:var(--text-primary)}
 .sh-cat-text{margin:0;font:var(--type-body);color:var(--text-secondary);max-width:var(--measure-body)}
 .sh-cat-facts{margin-top:var(--space-3)}
 .sh-cat-action{margin-top:var(--space-2)}

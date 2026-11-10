@@ -2,29 +2,11 @@
   "id": "pcos",
   "slug": "pcos",
   "name": "PCOS",
-  "summary": "A programme may be planned around hormonal health, meals, activity and rest, following assessment.",
-  "clinical": null,
-  "faqs": [],
-  "medical_reviewer": null,
-  "last_medically_reviewed": null,
-  "note": null,
-  "locale": "en",
-  "source": "kit",
-  "related_pages": [
-    {
-      "type": "programme",
-      "id": "complete-healing"
-    },
-    {
-      "type": "programme",
-      "id": "detox"
-    }
+  "synonyms": [
+    "polycystic ovary syndrome",
+    "PCOD",
+    "polycystic ovaries"
   ],
-  "category": "Hormonal",
-  "status": "draft",
-  "featured_image": {
-    "src": "lobby-mezzanine",
-    "alt": "The lobby"
-  },
-  "external_references": []
+  "locale": "en",
+  "source": "client"
 }

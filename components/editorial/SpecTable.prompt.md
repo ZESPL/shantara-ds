@@ -13,3 +13,11 @@ A real `<table>` for screen readers.
 **Responsive:** from 520px a value cell and its column title keep to one line ("Per person, per night" and "Amount (INR)" never break); money columns are `accent` and `align: "end"` and the name column wraps. Under 520px each row becomes a block: the name, then each other cell on its own line (set `mobileLabel` to prefix a cell with its column label), never two values side by side.
 
 **Rates.** Only the tariff screen passes rupee figures. Nowhere else.
+
+**Variation: `variant="contrast"`.** Two columns of short sentences set against each other, such as Naturopathy's At home / At Shantara. Equal columns that wrap, every cell in body size (one type size per table), a hairline between rows; the `accent` column sits on a raised ground under a gold rule and the row-header column in secondary ink. Pass `showHeader`. Under 520px each row becomes a stacked pair, each cell led by its column label, the accent cell ruled in gold on its start edge. Two columns only; not for figures.
+
+```jsx
+<SpecTable variant="contrast" showHeader caption="Naturopathy at home and at Shantara"
+  columns={[{ key: "home", label: "At home" }, { key: "shantara", label: "At Shantara", accent: true }]}
+  rows={rows} />
+```

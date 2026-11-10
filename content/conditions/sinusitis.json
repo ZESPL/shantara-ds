@@ -1,0 +1,12 @@
+{
+  "id": "sinusitis",
+  "slug": "sinusitis",
+  "name": "Sinusitis",
+  "synonyms": [
+    "chronic rhinosinusitis",
+    "recurrent sinusitis",
+    "sinus"
+  ],
+  "locale": "en",
+  "source": "client"
+}

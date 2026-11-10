@@ -40,8 +40,8 @@
   "room_categories": 5,
   "built_up_sq_ft": 56000,
   "therapies_count": 13,
-  "primary_cta": "Book a Consultation",
-  "form_chrome_cta": "Send your details",
+  "primary_cta": "Make an Inquiry",
+  "form_chrome_cta": "Make an Inquiry",
   "form_field_keys": [
     "full_name",
     "phone",

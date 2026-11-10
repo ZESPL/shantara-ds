@@ -1,4 +1,5 @@
-/* Profiles. Doctor: route #/<locale>/doctors/<slug> (view "doctor"), from content/doctors/.
+/* Profiles. Doctor: route #/<locale>/doctors/<slug> (view "doctor"), from content/doctors/. A
+   specimen only: the website builds no doctor profile page (website D-223).
    Founder: route #/<locale>/pa-kareem (view "founder"), from content/leadership/. The founder
    and chairman is not a doctor: never list him with the doctors or give him a clinical role.
    Portrait, biography, then the media register on the record:
@@ -75,8 +76,8 @@ function ProfileScreen({ onNavigate, d, pageType }) {
           variant="ground"
           ground="pine"
           title={t("Share your name and a number we can reach.")}
-          sub={t("Our team will contact you to arrange a consultation.")}
-          action={<Button size="lg" onClick={() => { if (L) L.track("consultation_cta_click", { page_type: pageType, content_id: d.id, content_name: d.full_name, cta_location: "closing" }); onNavigate("booking"); }}>{t("Book a Consultation")}</Button>}
+          sub={t("Our team will contact you to discuss the next step.")}
+          action={<Button size="lg" onClick={() => { if (L) L.track("consultation_cta_click", { page_type: pageType, content_id: d.id, content_name: d.full_name, cta_location: "closing" }); onNavigate("booking"); }}>{t("Make an Inquiry")}</Button>}
           contact={window.siteContactItems(t)}
         />
       </P>

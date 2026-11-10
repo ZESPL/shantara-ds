@@ -19,7 +19,7 @@ const SIZE = {
 const CSS = `
 .sh-stmt{display:flex;flex-direction:column;gap:var(--stack-md);min-width:0}
 .sh-stmt-crumbs{margin-bottom:calc(var(--stack-lg) - var(--stack-md))}
-.sh-stmt-title{margin:0;max-width:var(--_m,var(--measure-statement));color:var(--text-primary);text-wrap:balance}
+.sh-stmt-title{margin:0;max-width:var(--_m,var(--measure-heading));color:var(--text-primary)}
 .sh-stmt-sub{margin:0;max-width:var(--measure-body);font:var(--type-body);color:var(--text-secondary)}
 .sh-stmt[data-size="display"] .sh-stmt-sub,.sh-stmt[data-size="h1"] .sh-stmt-sub{font:var(--type-lead)}
 .sh-stmt-actions{margin-top:var(--space-3)}
@@ -38,7 +38,7 @@ export function Statement({ children, breadcrumbs, meta, sub, actions, as: Tag =
   return (
     <div data-ds-id="editorial/Statement" className={"sh-stmt" + (className ? " " + className : "")} data-size={size} style={style} {...rest}>
       {breadcrumbs ? <div className="sh-stmt-crumbs">{breadcrumbs}</div> : null}
-      <Tag className="sh-stmt-title" style={{ font: SIZE[size] || SIZE.statement, ...(measure ? { "--_m": measure } : null) }}>{children}</Tag>
+      <Tag className="sh-stmt-title" style={{ font: SIZE[size] || SIZE.statement, ...(measure ? { "--_m": `var(--measure-${measure})` } : null) }}>{children}</Tag>
       {meta ? (Array.isArray(meta) ? <MetaRow items={meta} /> : <div>{meta}</div>) : null}
       {sub ? <p className="sh-stmt-sub">{sub}</p> : null}
       {actions ? <div className="sh-actions sh-stmt-actions" data-stack="mobile">{actions}</div> : null}

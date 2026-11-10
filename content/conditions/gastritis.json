@@ -2,21 +2,10 @@
   "id": "gastritis",
   "slug": "gastritis",
   "name": "Gastritis",
-  "summary": null,
-  "clinical": null,
-  "faqs": [],
-  "medical_reviewer": null,
-  "last_medically_reviewed": null,
-  "locale": "en",
-  "source": "gap",
-  "related_pages": [
-    {
-      "type": "programme",
-      "id": "detox"
-    }
+  "synonyms": [
+    "stomach inflammation",
+    "stomach lining inflammation"
   ],
-  "category": null,
-  "status": "draft",
-  "featured_image": null,
-  "external_references": []
+  "locale": "en",
+  "source": "client"
 }

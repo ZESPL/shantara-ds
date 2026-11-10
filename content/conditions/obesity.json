@@ -2,30 +2,14 @@
   "id": "obesity",
   "slug": "obesity",
   "name": "Obesity",
-  "summary": "Meals, activity and therapies, with weight and vitals reviewed each morning.",
-  "clinical": null,
-  "faqs": [],
-  "medical_reviewer": null,
-  "last_medically_reviewed": null,
-  "locale": "en",
-  "source": "kit",
-  "note": "Launch slug for /en/conditions/obesity, not a kit listing card (the weight-management need card covers the sample).",
-  "related_pages": [
-    {
-      "type": "programme",
-      "id": "weight-management"
-    },
-    {
-      "type": "programme",
-      "id": "diabetes-reversal"
-    },
-    {
-      "type": "programme",
-      "id": "detox"
-    }
+  "synonyms": [
+    "overweight",
+    "weight gain",
+    "central obesity",
+    "belly fat",
+    "visceral fat",
+    "BMI"
   ],
-  "category": null,
-  "status": "draft",
-  "featured_image": null,
-  "external_references": []
+  "locale": "en",
+  "source": "client"
 }

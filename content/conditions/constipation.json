@@ -1,0 +1,11 @@
+{
+  "id": "constipation",
+  "slug": "constipation",
+  "name": "Constipation",
+  "synonyms": [
+    "hard stools",
+    "irregular bowel movements"
+  ],
+  "locale": "en",
+  "source": "client"
+}

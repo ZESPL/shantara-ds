@@ -17,7 +17,8 @@ const CSS = `
 /* Row titles sit a clear step below the group label (24→30px), so the group still reads
    as the heading on a phone where both would otherwise be 24px. */
 .sh-index-title{font:var(--weight-medium) var(--text-lg)/var(--leading-snug) var(--font-display);color:var(--text-primary)}
-.sh-index-text{grid-column:1;font:var(--type-body-sm);color:var(--text-secondary);max-width:52ch}
+.sh-index-text{grid-column:1;font:var(--type-body-sm);color:var(--text-secondary);max-width:var(--measure-body)}
+.sh-index-meta{grid-column:1;font:var(--type-body-sm);color:var(--text-muted);max-width:var(--measure-body)}
 .sh-index-arrow{grid-column:2;grid-row:1;align-self:center;display:inline-flex;color:var(--text-brand);transition:transform var(--duration-fast) var(--ease-out)}
 .sh-index-link:focus-visible{outline:none;box-shadow:var(--ring-focus)}
 @media (hover: hover) and (pointer: fine){
@@ -38,7 +39,9 @@ function ensure() {
   document.head.appendChild(el);
 }
 
-/* groups: [{ label, items: [{ title, text?, href?, onClick? }] }] */
+/* groups: [{ label, items: [{ title, text?, meta?, terms?, href?, onClick? }] }]
+   meta: a second, quieter line under text (the conditions on a programmes index row).
+   terms: written to data-filter-terms for a page script that filters the rows. */
 /* anchors: rows link to sections on the same page (it.id → #id) and show no arrow.
    counts: the number of rows beside each group label. */
 export function IndexList({ groups = [], columns = 2, headingLevel = 2, anchors = false, counts = false, style, ...rest }) {
@@ -56,11 +59,12 @@ export function IndexList({ groups = [], columns = 2, headingLevel = 2, anchors 
               const linked = !!(href || it.onClick);
               const Tag = linked ? "a" : "div";
               return (
-                <li className="sh-index-item" key={it.title}>
+                <li className="sh-index-item" key={it.title} data-filter-terms={it.terms}>
                   <Tag className="sh-index-link" data-anchor={anchors ? "" : undefined} href={linked ? href || "#" : undefined} onClick={it.onClick ? (e) => { if (!href) e.preventDefault(); it.onClick(e); } : undefined}>
                     <I className="sh-index-title" style={{ margin: 0 }}>{it.title}</I>
                     {linked && !anchors ? <span className="sh-index-arrow" aria-hidden="true"><Icon name="arrow-right" size={18} /></span> : null}
                     {it.text ? <span className="sh-index-text">{it.text}</span> : null}
+                    {it.meta ? <span className="sh-index-meta">{it.meta}</span> : null}
                   </Tag>
                 </li>
               );

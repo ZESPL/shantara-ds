@@ -20,7 +20,7 @@ Read this file first. Open a sibling reference only when the task needs that inv
 - [Images](skill-images.md): where image files go in the Astro repo, preparing files before commit, widths and formats, build checks
 - [Share images](skill-og-images.md): Open Graph and Twitter card images: three templates, page metadata and fallbacks, Astro build-time generation, manual overrides, checks
 - [Icons](skill-icons.md): favicon, iOS touch icon, Android home-screen icons, web manifest and browser theme colour: the seven files, `<head>` tags, rebuild and checks
-- [Video](skill-video.md): Cloudflare R2 + CDN only, native `<video>`, VideoObject, video sitemap, no committed files and no third-party players
+- [Video](skill-video.md): Cloudflare R2 + CDN only, native `<video>`, VideoObject, video sitemap, no committed files and no third-party players. Guest films on file: [`assets/videos/README.md`](../../assets/videos/README.md)
 - [Premium design](skill-premium.md): build order, design-system rules from the brand deck (type voices, grounds, shape, buttons, tiles, component map, responsive rules), motion vocabulary
 - [Information architecture](skill-ia.md): nav, URLs, page inventory, publishing families
 - [Sections and composition](skill-sections.md): heroes, section library → components, tiles, example pages
@@ -60,9 +60,9 @@ Prospective guests should answer, with minimum friction:
 
 Primary business action, in visitor-facing language:
 
-> **Book a Consultation**
+> **Make an Inquiry**
 
-Form chrome may use **Send your details**. Make the action easy without becoming aggressive, cluttered, or sales-heavy. Do not invent parallel primary CTAs. Do not use **Enquire about a stay** or **Request a consultation** as visitor-facing primary CTAs.
+The submit button uses the same label, **Make an Inquiry**. Make the action easy without becoming aggressive, cluttered, or sales-heavy. Do not invent parallel primary CTAs. Do not use **Book a consultation**, **Enquire about a stay**, **Request a consultation** or **Send your details** as visitor-facing primary CTAs.
 
 Rates, currency amounts, “from …” figures, and stay totals appear **only** on the production tariff page, read from the Keystatic tariff. This design system and its documentation hold no rates, currencies or validity dates. The kit tariff screen and brand-deck tariff slides show the structure with “—”. Programme, condition, enquiry, and home pages **link** to the tariff page. Do not invent prices.
 
@@ -93,36 +93,37 @@ Primitives are developer-level (Container, Heading, Button, Form Field, Accordio
 
 ## 4. Information architecture
 
-Top-level navigation has **five items, no more**, centred between the logo and the actions on desktop:
+Top-level navigation has **five items at most**, centred between the logo and the actions on desktop. Today it has four; Conditions is in the footer:
 
 - Programmes
-- Conditions
 - Experience
 - About
 - Journal
 
-Header actions: `LanguageSelector` (desktop; inside the menu sheet under 1000px), a **phone button** that opens a dropdown (Call +91 9553 600 100 · WhatsApp · Email heal@shantara.life), and **Book a Consultation** (primary CTA). Contact is reached from the phone dropdown and the footer, not the main nav. The call number (`phone`) and the WhatsApp number (`whatsapp`) are separate fields in `content/site.json`; both are currently **+91 9553 600 100**.
+Header actions: `LanguageSelector` (desktop; inside the menu sheet under 1000px), a **phone button** that opens a dropdown (Call +91 9553 600 100 · WhatsApp · Email heal@shantara.life), and **Enquire** (primary CTA; the page and form still say **Make an Inquiry**). Contact is reached from the phone dropdown and the footer, not the main nav. The call number (`phone`) and the WhatsApp number (`whatsapp`) are separate fields in `content/site.json`; both are currently **+91 9553 600 100**.
 
 Do not create a mega-menu unless live page count genuinely requires it.
 
 URL families are **locale-prefixed for every language, including English**:
 
 ```text
-/en/conditions
-/en/conditions/diabetes
 /en/programmes
 /en/programmes/[programme-slug]
+/en/conditions                    (A to Z: conditions → programmes)
+/en/conditions/[condition-slug]   (deferred: no condition detail pages yet)
 ```
 
 Root `/` is the x-default entry and redirects to `/en` (or a remembered enabled locale). Do not force locale by IP. Do not leave `/` and `/en` both indexable. Only a published localized URL is canonical.
 
-Do not invent condition-category SEO hubs (`/en/conditions/metabolic-lifestyle/diabetes`). Group visually on `/en/conditions` without creating indexable category pages.
+**Status (shantara.life D-203 to D-216).** There are no condition detail pages for now. Conditions are data: a `conditions` record is `name`, `slug` and `synonyms`, and each programme lists the conditions it is for, in order. They appear as static tags on the programme's catalogue row on `/en/programmes`, under the programme's Who it is for, on `/en/conditions` (a plain A to Z index with a search field, each condition linking to its primary programme; linked from the footer, not the nav), in site search and in the programme's schema (`MedicalCondition` with `possibleTreatment`). The rules below govern condition detail pages when one is built; the slug is already stable.
+
+Do not invent condition-category SEO hubs (`/en/conditions/metabolic-lifestyle/diabetes`). When condition pages exist, group them visually on `/en/conditions` without creating indexable category pages.
 
 Create a condition page only when Shantara can provide original content, a legitimate clinical perspective, a relevant programme, medical review, and useful answers. Do not pre-build dozens of thin condition pages.
 
 Experience pages (typical, not mandatory as individual URLs): Therapies, Rooms & Suites, Amenities & Activities, Farm & Dining, A Day at Shantara. Do not create a page per therapy or room category by default.
 
-About: Our Story, Our Approach, Our Doctors, Medical Editorial Policy.
+Naturopathy (top level, website D-218). About: Our Story, Our Doctors, Medical Editorial Policy.
 
 Utility, guest, policy and about pages are in [skill-ia.md](skill-ia.md), with the rest of the inventory, publishing families and URL rules. That file also holds the last-updated line, the contact for questions, and the links from the booking confirmation and the tariff letter.
 
@@ -146,13 +147,13 @@ Heroes are a **family**, not one universal Hero with 30 props, and not 12 varian
 | Hero | Job | Typical uses | Component |
 | --- | --- | --- | --- |
 | Immersive | Place, emotion, photography | Home, Experience | `HeroFullBleed` |
-| Offer | Commercial page, high intent | Programme pages, Rooms and tariffs (duration/options, suitability, Book a Consultation; **no invented price**) | `HeroSplit` + booking panel |
-| Editorial / utility | Topic + readability | Conditions, About, Journal, Contact, Book a Consultation | `HeroStatement` with a side image, a Stone ground or a meta row, never "naked" |
+| Offer | Commercial page, high intent | Programme pages, Rooms and tariffs (duration/options, suitability, Make an Inquiry; **no invented price**) | `HeroSplit` + booking panel |
+| Editorial / utility | Topic + readability | Conditions, About, Journal, Contact, Make an Inquiry | `HeroStatement` with a side image, a Stone ground or a meta row, never "naked" |
 | Article | One Journal article | `/en/journal/<slug>` | `ArticleHeader` |
 
 No eyebrows anywhere: no small uppercase label above a hero, section or card title. Category, duration or place goes in a caption meta row **below** the title (`meta` prop / `MetaRow`).
 
-`ClosingCTA` only on pages that otherwise have no CTA (not Home, Programme, Tariffs or Book a Consultation). Vary its variants (`photo` / `ground` / `compact`) across pages.
+`ClosingCTA` only on pages that otherwise have no CTA (not Home, Programme, Tariffs or Make an Inquiry). Vary its variants (`photo` / `ground` / `compact`) across pages.
 
 Section library and example compositions: [skill-sections.md](skill-sections.md).
 
@@ -162,9 +163,9 @@ Visual direction: calm, premium, natural, clinically credible, spacious, human, 
 
 ## 6. Lead capture
 
-**One** consultation form. The visitor-facing primary CTA is **Book a Consultation**.
+**One** consultation form. The visitor-facing primary CTA is **Make an Inquiry**.
 
-Form chrome may use **Send your details**. Avoid parallel CTAs (Enquire about a stay, Request a consultation, Enquire Now, Request Callback, Know More, Get Quote, Start Journey, Begin your transformation) unless a genuinely different action exists. Visitor-facing labels follow [skill-copy.md](skill-copy.md).
+The submit button uses the same label. Avoid parallel CTAs (Book a consultation, Enquire about a stay, Request a consultation, Send your details, Enquire Now, Request Callback, Know More, Get Quote, Start Journey, Begin your transformation) unless a genuinely different action exists. Visitor-facing labels follow [skill-copy.md](skill-copy.md).
 
 Recommended fields:
 
@@ -178,11 +179,11 @@ Do not turn first contact into a medical intake. Do not ask questions merely bec
 
 Automatically attach locale, source URL, page type, content id/name, program/condition context, landing page, referrer, UTMs, timestamp. If the visitor submits from `/en/conditions/diabetes`, do not ask “Which condition?”. Field **keys** stay `full_name`, `phone`, `email`, `country`, `notes` in every language. Labels translate; keys do not.
 
-Same form may appear as `/en/book-consultation`, modal, drawer, or inline panel. WhatsApp is a secondary channel, not a second lead architecture.
+Same form may appear as `/en/make-an-inquiry`, modal, drawer, or inline panel. WhatsApp is a secondary channel, not a second lead architecture.
 
 Success copy:
 
-> Consultation request received. Our team will contact you to understand your requirements and guide you on the appropriate next step.
+> Inquiry received. Our team will contact you to understand your requirements and guide you on the appropriate next step.
 
 Fire `generate_lead` **only after** the destination confirms success. A button click is not a lead.
 
@@ -196,7 +197,7 @@ Launch custom events only:
 
 | Event | When | Properties |
 | --- | --- | --- |
-| `consultation_cta_click` | Book Consultation CTA clicked | `page_type`, `content_id`, `content_name`, `cta_location` (`header` / `hero` / `inline` / `bottom` / `sticky`), `locale` |
+| `consultation_cta_click` | Make an Inquiry CTA clicked | `page_type`, `content_id`, `content_name`, `cta_location` (`header` / `hero` / `inline` / `bottom` / `sticky`), `locale` |
 | `form_start` | Form genuinely started | `form_id`, `page_type`, `locale` |
 | `generate_lead` | Submission confirmed | `form_id`, `page_type`, `source_page`, `locale` |
 | `contact_click` | WhatsApp / phone / email | `contact_method`, `page_type`, `cta_location`, `locale` |
@@ -286,16 +287,18 @@ These files are **previews** of the skill, not the live site:
 | Sample | Skill page type | Notes |
 | --- | --- | --- |
 | `screens/HomeScreen.js` | home | `HeroFullBleed`, approach, doctors, programme tiles + roomy index, therapies, rooms, journal, FAQ |
-| `screens/ConditionsScreen.js` | condition listing | Visual grouping only; no category URLs |
-| `screens/ProgrammeScreen.js` | programme | `HeroSplit` + booking panel; tariff link, no rates |
+| `screens/ProgrammesScreen.js` | programme listing | `HeroFullBleed` without a button, then a full-width catalogue: one `Tile` (`layout="thumb"`) per programme with a small thumbnail, audience summary and conditions as static `Tag`s |
+| `screens/ConditionsScreen.js` | condition index | A compact `HeroStatement` with no image, then every condition as an A to Z `GroupedList`, each one link to its primary programme; nothing after the list; no detail pages |
+| `screens/ProgrammeScreen.js` | programme | Advanced Detox & Cellular Cleansing: `HeroSplit` + booking panel; tariff link, no rates |
 | `screens/ExperienceScreen.js` | experience hub | Therapies, rooms, farm, a day; not one page per room |
+| `screens/NaturopathyScreen.js` | naturopathy (about) | `HeroFullBleed`, principles (boxed split + `PlainList marker="numeral"`), practice chapters (boxed splits, one `Tile`), `PanoramaCaption`, `BandStatement`, `SpecTable variant="contrast"`, treatments split, doctors `PeopleRow`, `NumeralsSplit` (minimum stay), photo `ClosingCTA`; two `data-reveal` frames |
 | `screens/AboutScreen.js` | about hub | Story, approach, doctors, editorial policy |
 | `screens/JournalScreen.js` | article listing | `HeroStatement` → `Tabs` → `TileGrid` → `Pagination` |
 | `screens/ArticleScreen.js` | article | `#/en/journal/<slug>`: `ArticleHeader`, `Prose`, `TableOfContents`, `ReviewedBy`, `ShareBar`, `AuthorCard`, `RelatedArticles` (kit body is a marked sample) |
 | `screens/ContactScreen.js` | contact | `HeroStatement` + NAP (Shantara Naturopathy Retreat), distances, call / WhatsApp / email |
 | `screens/ConsultationScreen.js` | consultation | One short form |
 | `screens/TariffScreen.js` | pricing surface (`/en/tariff/{code}`) | Structure only: currency links, room × occupancy table, supplements, payment terms, cancellation and a link to the full policy, with “—” in place of every rate |
-| `chrome/SiteChrome.js` | chrome | Header overlays every page: logo, five centred nav items, LanguageSelector, phone dropdown, Book a Consultation; menu sheet (with the LanguageSelector) under 1000px; compact wordmark / frangipani mark at narrow or zoomed widths. Footer: Pine Tree ground, rosette strip on top, brand column (cream wordmark, NAP and social profile links) + three link columns (accordions under 760px); the bottom bar carries the copyright (legal entity, Metropolis Forward LLP), the Privacy and Terms links and the short location line. The text-size control is optional; the kit shows one, the production footer does not include it. Also `PageSlot` (`data-ds-id="page/<view>/<slot>"` on every section) |
+| `chrome/SiteChrome.js` | chrome | Header overlays every page: logo, five centred nav items, LanguageSelector, phone dropdown, Enquire; menu sheet (with the LanguageSelector) under 1000px; compact wordmark / frangipani mark at narrow or zoomed widths. Footer: Pine Tree ground, rosette strip on top, brand column (cream wordmark, NAP and social profile links) + three link columns (accordions under 760px); the bottom bar carries the copyright (legal entity, Metropolis Forward LLP), the Privacy and Terms links and the short location line. The text-size control is optional; the kit shows one, the production footer does not include it. Also `PageSlot` (`data-ds-id="page/<view>/<slot>"` on every section) |
 | `chrome/Photo.js` | chrome | Adapter over `Media` for `assets/photos/*` |
 
 Kit notes for humans: [README.md](README.md).

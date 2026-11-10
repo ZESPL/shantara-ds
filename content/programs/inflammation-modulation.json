@@ -1,0 +1,40 @@
+{
+  "id": "inflammation-modulation",
+  "slug": "inflammation-modulation",
+  "name": "Inflammation Modulation",
+  "proposition": "A residential programme for guests with long-standing inflammation, including raised inflammatory markers, inflammatory arthritis and persistent fatigue. Meals, gut care, stress care, therapies and rest are adjusted at each daily review.",
+  "audience": "For joint stiffness, fatigue and skin flare-ups without an autoimmune diagnosis.",
+  "durations": [
+    14,
+    21,
+    28
+  ],
+  "conditions": [
+    "chronic-inflammation",
+    "inflammatory-arthritis",
+    "chronic-fatigue",
+    "gout",
+    "fibromyalgia",
+    "rheumatoid-arthritis",
+    "psoriasis"
+  ],
+  "suitability": [
+    "Guests with a diagnosed autoimmune condition for whom the doctor advises a shorter stay than Autoimmune Stabilisation",
+    "Guests who remain under the care of their own doctor and continue prescribed medication"
+  ],
+  "order": 5,
+  "locale": "en",
+  "source": "client",
+  "related_pages": [
+    {
+      "type": "programme",
+      "id": "autoimmune-stabilisation"
+    }
+  ],
+  "status": "published",
+  "featured_image": {
+    "src": "grounds-pebble-path-barefoot-walking-landscape-3x2",
+    "alt": "Bare feet stepping on a bed of river pebbles"
+  },
+  "featured": false
+}
