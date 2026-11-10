@@ -18,6 +18,8 @@ The consultation form on Merino beside a Stone panel: a photograph of the place,
 
 **Content.** Fields follow `content/site.json` `form_field_keys`; the button reads “Make an Inquiry”. The panel says in plain sentences what happens next, as the inquiry screen does; a doctor it names comes from `content/doctors/`. Do not narrate internal process as a numbered list (“1. We receive your details…”), and never promise a response time that is not confirmed.
 
+**Only the consultation form.** `FormSplit` is the form and its reassurance panel, nothing else. Never use it as a two-column layout for other content: a rate table with the inclusions in the panel is not a form (the tariff pages did this until 3 Nov 2026). Content stacks one group per row (see "One piece of information per row" in `ui_kits/website/skill-sections.md`).
+
 **One job.** One form, one purpose, one submit button ([rule of one](../../docs/rule-of-one.md)). The panel reassures; it carries no second button or competing action.
 
 **Responsive.** Under 1000px the form comes first at full width and the Stone panel follows it. From 1000px the form takes 7 of 12 columns and the panel 5. The panel is sticky below the header while the form scrolls only when the window is at least 800px tall; in a shorter window (a 720px laptop, or large guest text) it stays in the flow so its lower half is never hidden. The panel's padding is fluid (24→48px).

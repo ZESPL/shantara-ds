@@ -4,7 +4,7 @@ Programmes side by side in a real table (focus, who it is for, typical length), 
 <Section>
   <ProgrammeCompare title="Programmes at a glance"
     programmes={programs.map((p) => ({ name: p.name, href: `/en/programmes/${p.slug}`, focus: p.focus, forWhom: p.proposition, durations: p.durations }))}
-    action={<TextLink href="/en/tariffs">Current rates are on the tariff page</TextLink>} />
+    action={<TextLink href="/en/tariff">Current rates are on the tariff page</TextLink>} />
 </Section>
 ```
 

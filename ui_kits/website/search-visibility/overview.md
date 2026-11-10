@@ -2,7 +2,7 @@
 
 Back to the [website skill](../SKILL.md).
 
-Version 1.14. Updated 8 November 2026. Adapted for **shantara.life** from the Zarnik Marketplace checklist "Search and AI Visibility" version 6.2.
+Version 1.24. Updated 10 November 2026. Adapted for **shantara.life** from the Zarnik Marketplace checklist "Search and AI Visibility" version 6.2.
 
 This is the checkable rule list for search engines, AI answer engines (ChatGPT, Perplexity, Claude, Gemini, Google AI Overviews), AI browsing agents and accessibility on Shantara's public website. The reasoning and the locked decisions stay in [skill-technical.md](../skill-technical.md), [skill-ia.md](../skill-ia.md), [SKILL.md §15](../SKILL.md#section-15) and [skill-stack.md](../skill-stack.md). These files turn them into rules with IDs and checks. They do not replace them.
 
@@ -60,7 +60,7 @@ Recorded on 25 September 2026 and 23 October 2026. The rules below already follo
 | [Migration from the current site (MIG)](migration.md) | MIG-01 to MIG-05 | Crawl of the old site, legacy redirects, top pages, external listings, post-launch checks |
 | [Pages (PAGE)](pages.md) | PAGE-01 to PAGE-08 | Titles and descriptions, breadcrumbs, orphan pages, internal-only facts, original copy, trust pages |
 | [Medical content (MED)](medical.md) | MED-01 to MED-05 | Doctor review, sources, claim words in metadata, testimonials, honest dates |
-| [Rates (RATE)](rates.md) | RATE-01 to RATE-05 | Rates only on the tariff page, currency labels, same default for everyone, Offer schema, no rate-sheet internals |
+| [Rates (RATE)](rates.md) | RATE-01 to RATE-05 | Rates only on the per-currency tariff pages, currency labels, the `/en/tariff` redirect, Offer schema, no rate-sheet internals |
 | [Structured data (SCHEMA)](schema.md) | SCHEMA-01 to SCHEMA-16 | JSON-LD graph, `@id` values, MedicalClinic, page nodes, doctors, programmes, articles, FAQ, VideoObject, schema map |
 | [Link previews (SOCIAL)](social.md) | SOCIAL-01 to SOCIAL-04 | Open Graph tags, share images, Twitter card |
 | [Images (IMG)](images.md) | IMG-01 to IMG-06 | Astro Image, hero loading, lazy loading, alt text, filenames, real photography |
@@ -74,6 +74,8 @@ Recorded on 25 September 2026 and 23 October 2026. The rules below already follo
 
 ## Change log
 
+- **1.24, 10 November 2026.** RATE-02, adopted from the website's D-79: the currency is named once per money column, in its title in brackets, not in each cell; every amount shows two decimal places.
+- **1.23, 10 November 2026.** Tariff pages, adopted from the website's D-62 to D-73. The tariff is one page per currency at `/en/tariff/{code}`; `/en/tariff` is a redirect by cookie, then country, then the default (RATE-03 changed); RATE-01's check matches codes, symbols and `Offer` nodes outside `/en/tariff/*`, not bare figures, and skips the `llms.txt` links to each currency's Markdown twin; RATE-04 Offers are per room and occupancy. DATA-04 and skill-content.md list the renamed Site settings stay fields, the ages and `paymentAccepted`. skill-content.md, skill-ia.md and skill-structure.md describe the Tariffs, Room Categories, Supplements and Therapies collections and the Tariff terms singleton; validity dates are dropped.
 - **1.22, 9 November 2026.** Adopted from the website's D-222. The photo ClosingCTA's title is set at the H1 size, like a hero's title. No schema or URL change.
 - **1.21, 9 November 2026.** Adopted from the website's D-223. No doctor has a profile page; `/en/doctors/bahja-janu` is removed and every doctor link is the doctor's section on `/en/our-doctors`. Doctor `Person.url` points there. Only the founder keeps a profile page.
 - **1.20, 9 November 2026.** Adopted from the website's D-222. One closing CTA on every page that ends on one: the photo variant, the owner's title and lead (the lead in lead type), one enquiry button and no contact row. No schema or URL change.

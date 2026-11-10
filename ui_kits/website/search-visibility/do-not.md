@@ -18,7 +18,7 @@ Some SEO tools and older guides still recommend these. Do not follow them.
 - Do not write JSON-LD by hand in page components or Markdoc.
 - Do not commit video files, reference a local video path, or embed YouTube, Vimeo, Cloudflare Stream, Mux or any iframe player. Videos are native `<video>` files on Cloudflare R2. See [skill-video.md](../skill-video.md).
 - Do not add FAQ content to chase rich results.
-- Do not show rates outside the tariff page, or change rates by location, locale or device. The organisation's `priceRange` in JSON-LD is an indicative range, not a rate (RATE-01).
+- Do not show rates outside the tariff pages, or change the figures on a currency page by location, locale or device. Only `/en/tariff` picks a currency, by the visitor's choice first and then by country (RATE-03). The organisation's `priceRange` in JSON-LD is an indicative range, not a rate (RATE-01).
 - Do not put health claims in titles, meta descriptions, alt text or schema.
 - Do not change published, modified or reviewed dates on a deploy.
 - Do not inject canonical, robots, hreflang or JSON-LD with client-side JavaScript.

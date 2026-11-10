@@ -2,36 +2,59 @@
   "id": "tariff",
   "locale": "en",
   "status": "published",
-  "source": "rate-control-sheet",
+  "source": "client-rate-card",
+  "_note": "Structure only, mirroring the shantara.life Tariff terms singleton and Supplements collection. Rates, currencies, amounts, percentages and windows live only in the site's Keystatic Tariffs collection; every such value here is \"—\".",
   "includes": [
-    "Accommodation",
-    "The programme and treatments prescribed by your doctor",
-    "Daily doctor consultation",
+    "Airport and railway station transfers, Calicut",
+    "Accommodation in your chosen room",
+    "Diet therapy and all naturopathy meals",
+    "Daily consultation with your doctor",
     "Diagnostic tests, as advised by your doctor",
-    "All therapeutic naturopathy meals",
-    "Entertainment and activities",
-    "Two complimentary recreational therapies per week",
-    "Airport and railway transfers",
-    "Attire provided for your stay, and its laundry"
+    "Naturopathy treatments as prescribed by your doctor",
+    "Daily yoga and meditation sessions",
+    "{signature-therapies} signature therapies per week",
+    "Weekly activities and entertainment",
+    "Cotton pyjama suits for your stay, and their laundry",
+    "Discharge summary and online follow-up consultations after you leave"
   ],
   "excludes": [
-    "Recreational therapies beyond the two complimentary per week",
-    "Treatments beyond those prescribed by your doctor",
+    "Signature therapies beyond the {signature-therapies} each week",
+    "Treatments or lab tests beyond those your doctor prescribes",
+    "Care at an outside hospital, if needed",
     "Personal laundry"
   ],
+  "signatureTherapiesPerWeek": "—",
   "supplements": [
-    { "label": "Non-participating companion", "basis": "Per person, per night" },
-    { "label": "Extra bed or mattress", "basis": "Per bed, per night" }
+    { "label": "Non-participating companion", "basis": "Per person, per night", "note": "Includes stay and meals." },
+    { "label": "Extra bed or mattress", "basis": "Per bed, per night", "note": "Only when a separate bed is added to the room." },
+    { "label": "Personal attendant (bystander)", "basis": "Per day", "note": "The personal attendant is in addition to the 24-hour nursing care every guest receives." }
   ],
-  "payment_terms": [
-    { "booked_before": "—", "at_confirmation": "—", "balance": "—" }
+  "paymentTerms": [
+    { "bookedBefore": "—", "atConfirmation": "—", "balance": "—" }
   ],
   "cancellation": [
-    { "cancelled_before": "—", "refund": "—" }
+    { "cancelledBefore": "—", "refund": "—" }
   ],
-  "public_notes": [
+  "postponementNoticeDays": "—",
+  "postponementConfirmWithinDays": "—",
+  "postponementNewStayWithinMonths": "—",
+  "postponement": [
+    "A booking may be postponed once, free of charge, by written request received at least {noticeDays} days before the arrival date. Postponement is subject to availability.",
+    "The guest must confirm the new dates within {confirmWithinDays} days of the request. The new arrival date must fall within {newStayWithinMonths} months of the original arrival date.",
+    "Where the rate for the new dates is higher, the guest pays the difference. Where it is lower, the difference is not refunded.",
+    "A postponed booking cannot be changed again and is not refundable."
+  ],
+  "groupNote": "For 10 or more rooms on the same dates, contact us for group rates.",
+  "publicNotes": [
     "Rates are per room, per night, and include all taxes.",
-    "You can be quoted and pay in any currency shown on the tariff.",
-    "A companion staying in a separate room is charged separately. Our team confirms the amount."
+    "Double occupancy applies only when both guests take the programme.",
+    "A companion staying in a separate room is charged separately. Our team confirms the amount.",
+    "The minimum stay is {minimum-stay}. Your doctor confirms the final length of stay based on your condition. If your doctor recommends a longer stay, extra nights are charged at the rates on this tariff."
+  ],
+  "bookingSteps": [
+    "Fill in our online health assessment form.",
+    "Our doctors review it and may arrange a free online consultation.",
+    "Your doctor confirms whether the programme suits you and how long you should stay.",
+    "We send you an invoice, payable under the payment terms."
   ]
 }

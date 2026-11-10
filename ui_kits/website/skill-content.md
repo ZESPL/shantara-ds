@@ -34,10 +34,10 @@ Attribution is not a related page: an article's author and a doctor answer's doc
 | Singleton | Fields |
 | --- | --- |
 | Site settings | See [Site settings](#site-settings) |
-| Tariff | Structure only in this design system: `includes`, `excludes`, `supplements` (`label`, `basis`), `payment_terms`, `cancellation`, `public_notes`. See [Tariff](#tariff). |
+| Tariff terms | The words around the rates, no amounts: `includes`, `excludes`, `signatureTherapiesPerWeek`, `paymentTerms`, `cancellation`, `postponement` and its numbers, `groupNote`, `publicNotes`, `bookingSteps`. See [Tariff](#tariff). |
 | General FAQ | `categories`: list of `{name, faqs: [{question, answer}]}`. Editors can add categories. |
 
-Each singleton is one file per language: `site/{locale}.json`, `tariff/{locale}.json`, `faq/{locale}.json`. English is the master. A translated tariff carries labels, terms and notes, never amounts.
+Each singleton is one file per language: `site/{locale}.json`, `tariff-terms/{locale}.json`, `faq/{locale}.json`. English is the master. Translated tariff terms carry labels, terms and notes, never amounts. The rates themselves are the Tariffs collection, one entry per currency ([Tariff](#tariff)).
 
 Medical categories ([`content/medical-categories.json`](../../content/medical-categories.json)) stay in this design system as a staff routing aid. They are not modelled in Keystatic and are not public IA.
 
@@ -75,17 +75,19 @@ Notes that are not page copy (one lecture carried by several outlets, a sponsore
 
 ### Tariff
 
-Rates, currencies and validity dates are **not stored in this design system or its documentation**. They live only in the production Keystatic tariff, entered as exact, fixed numbers from Shantara's current rate sheet. The site never converts, rounds, derives or calculates a rate.
+Rates, currencies and amounts are **not stored in this design system or its documentation**. They live only in the production Keystatic tariff, entered as exact, fixed whole numbers from Shantara's current rate sheet. The site never converts, rounds, derives or calculates a rate. No validity dates are stored.
 
-Production tariff fields:
+The tariff is four collections and one singleton (shantara.life D-62 to D-66):
 
-- `valid_from`, `valid_to`
-- `currencies`: list of `{code, label}`, in any number and any order; the first is the default in the currency selector
-- `room_rates`: list of `{room, occupancy, prices: [{currency, amount}]}`; occupancy is a row, so new occupancies need no schema change
-- `supplements`: list of `{label, basis, prices: [{currency, amount}]}`
-- `includes`, `excludes`, `payment_terms`, `cancellation`, `public_notes`
+- **Tariffs** (`src/content/tariffs/{code}.json`): **one entry per currency**, and the only place money is typed. `code` (ISO 4217, matching the slug), `label`, `order`, `isDefault` (exactly one entry), `defaultForCountries` (ISO 3166-1 codes; a country belongs to one entry at most), `rooms` (`{category, single, double}`, `category` → Room Categories) and `supplements` (`{supplement, amount}`, `supplement` → Supplements). A currency exists only when it has an entry; adding one adds its page, its redirect target and its PDF with no code change. Currencies are listed by `order`.
+- **Room Categories**: room facts only. `name`, `areaSqft`, and the checkboxes `balcony`, `spaciousBalcony`, `valleyView`, `separateLivingArea`, `spaciousBathroom`. Square metres are calculated from sq ft. There is no per-category room count and no order field: rooms are listed by their single rate in the chosen currency, lowest first.
+- **Supplements**: each charge defined once. `name`, `basis` (a select: per person per night, per bed per night, per day), `note`, `order`, `status`. Its amounts live in the Tariffs entries. A draft supplement is not shown; a published one must have an amount in every tariff. The personal attendant is "Personal attendant (bystander)", and its note is the glossary's nursing line.
+- **Therapies**: one therapy per entry. `name` (sentence case), `kind` (Prescribed treatment or Signature therapy), `order`. They are "signature therapies", never "recreational".
+- **Tariff terms** (singleton): the words around the rates, with no amounts or dates. `includes`, `excludes`, `signatureTherapiesPerWeek`, `paymentTerms` (`{bookedBefore, atConfirmation, balance}`), `cancellation` (`{cancelledBefore, refund}`, the refund schedule in the cancellation policy's formal wording), `postponement` with its numbers as integers (notice days, days to confirm, months for the new stay), `groupNote`, `publicNotes` and `bookingSteps` (the client card only). Text may carry tokens such as `{signature-therapies}` or `{minimum-stay}`, filled from their owners.
 
-Show amounts exactly as entered, next to their ISO code. Build checks confirm completeness only: every rate and supplement row has a price for every listed currency, every code is valid, every published room has rates, and `valid_to` has not passed.
+The rules of a stay are in [Site settings](#site-settings), not here.
+
+Show amounts exactly as entered, next to their ISO code. Build checks confirm completeness only: every code is valid and matches its slug, exactly one entry is the default, every tariff has each room category and each published supplement once, every single rate is below its double rate, and every room has an area.
 
 Internal rate-sheet content never enters Keystatic, the design system, documentation or the front end. That covers anything Shantara's rate sheet marks internal, and its internal controls. Only the public all-inclusive rates, supplements, inclusions, exclusions, payment terms and cancellation policy are published.
 
@@ -106,7 +108,7 @@ src/content/conditions/ar/diabetes.json   ← only the text fields
 
 ## Site settings
 
-Centralize, one file per language (`site/{locale}.json`): business name; contact information; physical address; social links; Google Maps/location data; check-in and check-out times, the early check-in and late check-out window, and that window's policy statement (never typed in a page, copy file or policy body; [DATA-04](search-visibility/data.md)); primary CTA labels; consultation form settings; global SEO defaults; Organization/LocalBusiness schema data. Share images have no settings here: the default image and templates live in code ([skill-og-images.md](skill-og-images.md)).
+Centralize, one file per language (`site/{locale}.json`): business name; contact information; physical address; social links; Google Maps/location data; the rules of a stay: `checkinTime`, `checkoutTime`, `earlyLateWindowHours` (one window for both; the earliest check-in and latest check-out are calculated), `earlyLatePolicy` (the statement, written with tokens), `minimumStayNights`, `transferNoticeHours`, and the ages `programmeMinAge`, `programmeMaxAge` and `companionMinAge` (the oldest companion is calculated); none of them is ever typed in a page, copy file or policy body ([DATA-04](search-visibility/data.md)); `paymentAccepted`, the only list of payment methods (schema, tariff and client card read it); primary CTA labels; consultation form settings; global SEO defaults; Organization/LocalBusiness schema data. Share images have no settings here: the default image and templates live in code ([skill-og-images.md](skill-og-images.md)).
 
 Analytics IDs and service keys are not content. They live in Netlify environment variables ([skill-structure.md](skill-structure.md#environment-variables)).
 
@@ -346,7 +348,7 @@ Do not manufacture authority.
 
 Trust is the highest priority.
 
-Clearly expose: about Shantara; contact details; real physical location; clinical team; policies; pricing/inclusions where possible (**via the tariff card**); relationship to associated organizations if relevant; terms/cancellation rules; privacy practices. Do not use internal labels such as “trust pages” or “who operates Shantara” in public copy.
+Clearly expose: about Shantara; contact details; real physical location; clinical team; policies; pricing/inclusions where possible (**via the tariff pages**); relationship to associated organizations if relevant; terms/cancellation rules; privacy practices. Do not use internal labels such as “trust pages” or “who operates Shantara” in public copy.
 
 ### Medical claims
 
@@ -426,4 +428,4 @@ Generate structured data from fields already required for the visible site.
 
 Medical review fields (`medical_reviewer`, `last_medically_reviewed`) should generate visible attribution and the appropriate schema relationship.
 
-Programme pricing fields should power both visible pricing and `Offer` data where appropriate: **one source of truth, and in this repo that source is the tariff card.**
+Visible rates and `Offer` data come from one source of truth: the Tariffs collection, shown only on the per-currency tariff pages (`/en/tariff/{code}`).

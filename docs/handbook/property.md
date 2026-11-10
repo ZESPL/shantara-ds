@@ -33,21 +33,26 @@ Rooms are designed with restraint, so comfort feels subtle rather than excessive
 
 **What a stay includes**
 
-- Accommodation
-- The programme and treatments prescribed by the doctor
-- Daily doctor consultation
+- Airport and railway station transfers, Calicut (see [section 12](stay.md#section-12))
+- Accommodation in the chosen room
+- Diet therapy and all naturopathy meals
+- Daily consultation with the doctor
 - Diagnostic tests, as advised by the doctor
-- All therapeutic naturopathy meals
-- Entertainment and activities
-- Two complimentary recreational therapies per week
-- Airport transfer (see [section 12](stay.md#section-12))
-- Attire provided for the stay, and its laundry
+- Naturopathy treatments as prescribed by the doctor
+- Daily yoga and meditation sessions
+- A set number of signature therapies per week, chosen by the guest ([section 6](therapies.md#two-kinds-of-therapy))
+- Weekly activities and entertainment
+- Cotton pyjama suits for the stay, and their laundry
+- Discharge summary and online follow-up consultations after the guest leaves
 
 **What a stay does not include**
 
-- Recreational therapies beyond the two complimentary per week
-- Treatments beyond those prescribed by the doctor
+- Signature therapies beyond the weekly number
+- Treatments or lab tests beyond those the doctor prescribes
+- Care at an outside hospital, if needed
 - Personal laundry
+
+The website reads both lists from the Tariff terms record in Keystatic; when they change, change this list and that record together.
 
 ### Facilities & amenities
 

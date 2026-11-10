@@ -7,7 +7,7 @@ Part of the [property handbook](../handbook.txt).
 - The share due at confirmation and when the balance is due: as set in the published Terms and Conditions and on the current tariff. Do not restate the percentages or windows here.
 - Reservations are subject to room availability.
 - Guests can be quoted and pay in any currency shown on the current tariff.
-- Accepted payment methods: bank transfer, UPI, and credit/debit cards.
+- Accepted payment methods: bank transfer, UPI, and credit/debit cards. On the website the list is Site settings' `paymentAccepted`, the only list of payment methods.
 - Room assignment is based on availability at the time of booking; preferences are accommodated wherever possible.
 
 ### Pre-arrival requirements
@@ -18,9 +18,9 @@ Part of the [property handbook](../handbook.txt).
 
 ### Check-in & check-out
 
-- Check-in: 14:00 hrs. Check-out: 12:00 hrs. Guests are asked to have lunch before departure.
-- Early check-in or late check-out of up to 4 hours is complimentary, subject to room availability. Beyond 4 hours, an extra charge applies.
-- On the website these four facts (both times, the window and the policy statement) are set once, in Keystatic Site settings, and every page reads them from there ([DATA-04](../../ui_kits/website/search-visibility/data.md)). When they change, change this list and Site settings together.
+- Check-in: 14:00. Check-out: 11:00.
+- Early check-in or late check-out of up to 6 hours is complimentary, subject to room availability, so the earliest check-in is 08:00 and the latest check-out 17:00. Beyond 6 hours, an extra charge applies.
+- On the website these facts (both times, the one window, the policy statement, the minimum stay, the transfer notice and the age limits) are set once, in Keystatic Site settings, and every page reads them from there ([DATA-04](../../ui_kits/website/search-visibility/data.md)). When they change, change this list and Site settings together.
 
 ### Daily routine
 
@@ -46,13 +46,13 @@ Every guest follows this daily routine. The doctor prescribes which treatments f
 | 07:30 PM – 08:00 PM | Meditation |
 | 09:00 PM | Sleep |
 
-### Airport transfer
+### Airport and railway station transfer
 
-- Complimentary shared transfer from Calicut International Airport (about 25 km, roughly 45 minutes). There is no railway station transfer.
-- Guests must share their flight details at least 48 hours in advance.
+- Complimentary shared transfer from Calicut International Airport (about 25 km, roughly 45 minutes) or Kozhikode railway station.
+- Guests must share their flight or train details at least 48 hours in advance.
 
 ### Attire & laundry
 
 - Two sets of cotton pyjama suits are provided to every guest, and guests are asked to bring only basic personal clothing.
 - Wearing the retreat-provided pyjamas is mandatory. It maintains uniformity and helps guests disconnect from daily life during the healing process.
-- Daily laundry of retreat attire is complimentary. Personal clothing laundry is available on a chargeable basis.
+- Daily laundry of the cotton pyjama suits is complimentary. Personal clothing laundry is available on a chargeable basis.
