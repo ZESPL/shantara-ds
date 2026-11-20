@@ -18,11 +18,11 @@
 --text-scale:1;
 --text-3xs:calc(11px * var(--text-scale));
 --text-2xs:calc(12px * var(--text-scale));
---text-xs:calc(13px * var(--text-scale));
---text-sm:calc(15px * var(--text-scale));
---text-base:calc(17px * var(--text-scale));
+--text-xs:calc(14px * var(--text-scale));
+--text-sm:calc(16px * var(--text-scale));
+--text-base:calc(18px * var(--text-scale));
 --text-lg:calc(20px * var(--text-scale));
---text-lead:calc(22px * var(--text-scale));
+--text-lead:calc(24px * var(--text-scale));
 --text-xl:calc(24px * var(--text-scale));
 --text-2xl:calc(30px * var(--text-scale));
 --text-3xl:calc(38px * var(--text-scale));
@@ -32,12 +32,13 @@
 
 /* Phone-safe heading sizes. Display, h1, h2 and h3 shrink — linearly between a
    360px phone and a 1440px desktop — so long words never overflow a 390px screen.
-   Desktop values are exactly the scale above: 64 / 48 / 38 / 30. Each level stays
-   larger than the one below it at every width, and h3 never drops below h4 (24). */
---text-heading-display:calc(clamp(40px, 2.22vw + 32px, 64px) * var(--text-scale)); /* 40 → 64 */
---text-heading-h1:calc(clamp(34px, 1.3vw + 29.3px, 48px) * var(--text-scale));     /* 34 → 48 */
---text-heading-h2:calc(clamp(28px, 0.93vw + 24.7px, 38px) * var(--text-scale));    /* 28 → 38 */
---text-heading-h3:calc(clamp(24px, 0.56vw + 22px, 30px) * var(--text-scale));      /* 24 → 30 */
+   Desktop values: 88 / 64 / 48 / 32, larger than the fixed scale so a heading carries
+   the section. Each level stays larger than the one below it at every width, and h3
+   never drops below h4 (24). */
+--text-heading-display:calc(clamp(44px, 4.07vw + 29.33px, 88px) * var(--text-scale)); /* 44 → 88 */
+--text-heading-h1:calc(clamp(36px, 2.59vw + 26.67px, 64px) * var(--text-scale));      /* 36 → 64 */
+--text-heading-h2:calc(clamp(30px, 1.67vw + 24px, 48px) * var(--text-scale));         /* 30 → 48 */
+--text-heading-h3:calc(clamp(24px, 0.74vw + 21.33px, 32px) * var(--text-scale));      /* 24 → 32 */
 
 /* Aliases kept from the round-1 role names so existing components keep working.
    They now resolve to the type system above — no size of their own. */
@@ -47,13 +48,17 @@
 --text-fluid-title:var(--text-heading-h3);
 --text-fluid-numeral:var(--text-heading-display);
 
+--leading-display:1.04; /* @kind other */
 --leading-tight:1.06; /* @kind other */
+--leading-heading:1.12; /* @kind other */
 --leading-snug:1.2; /* @kind other */
---leading-normal:1.45; /* @kind other */
+--leading-normal:1.6; /* @kind other */
 --leading-relaxed:1.65; /* @kind other */
---leading-body:var(--leading-normal); /* @kind other — alias; body is 1.45 */
+--leading-body:var(--leading-normal); /* @kind other — alias; body is 1.6 */
 
-/* Tracking — Diodrum is geometric; display sizes are set loose, never tight */
+/* Tracking — Diodrum is geometric. Small caps-style labels are set loose; h1 and h2 are
+   drawn in a hair (--tracking-heading) so Light at 48–88px holds together as a line. */
+--tracking-heading:-0.015em; /* @kind font */
 --tracking-wordmark:0.22em; /* @kind font */
 --tracking-eyebrow:0.18em; /* @kind font */
 --tracking-wide:0.06em; /* @kind font */
@@ -74,19 +79,19 @@
 --measure-narrow:45ch; /* @kind other */
 
 /* Composite roles — the Shantara type system.
-   display 40→64 Light · h1 34→48 Light · h2 28→38 Regular · h3 24→30 Medium · h4 24 Medium
-   item-sm 17 Medium · lead 22 Light (relaxed) · body 17 Regular / 1.45 */
---type-display:var(--weight-light) var(--text-heading-display)/var(--leading-tight) var(--font-display);
+   display 44→88 Light · h1 36→64 Light · h2 30→48 Light · h3 24→32 Regular · h4 24 Medium
+   item-sm 18 Medium · lead 24 Light (relaxed) · body 18 Regular / 1.6 */
+--type-display:var(--weight-light) var(--text-heading-display)/var(--leading-display) var(--font-display);
 --type-h1:var(--weight-light) var(--text-heading-h1)/var(--leading-tight) var(--font-display);
---type-h2:var(--weight-regular) var(--text-heading-h2)/var(--leading-snug) var(--font-display);
---type-h3:var(--weight-medium) var(--text-heading-h3)/var(--leading-snug) var(--font-display);
+--type-h2:var(--weight-light) var(--text-heading-h2)/var(--leading-heading) var(--font-display);
+--type-h3:var(--weight-regular) var(--text-heading-h3)/var(--leading-snug) var(--font-display);
 --type-h4:var(--weight-medium) var(--text-xl)/var(--leading-snug) var(--font-display);
 /* Item titles inside dense lists and timetables: h4's weight at body size. */
 --type-item-sm:var(--weight-medium) var(--text-base)/var(--leading-snug) var(--font-display);
 --type-lead:var(--weight-light) var(--text-lead)/var(--leading-relaxed) var(--font-body);
 --type-body:var(--weight-regular) var(--text-base)/var(--leading-normal) var(--font-body);
---type-body-sm:var(--weight-regular) var(--text-sm)/var(--leading-normal) var(--font-body);
---type-caption:var(--weight-regular) var(--text-xs)/1.45 var(--font-body);
+--type-body-sm:var(--weight-regular) var(--text-sm)/1.55 var(--font-body);
+--type-caption:var(--weight-regular) var(--text-xs)/1.5 var(--font-body);
 --type-label:var(--weight-medium) var(--text-xs)/1.3 var(--font-body);
 /* Deprecated — no eyebrows or overlines on any surface. Kept so old code renders. */
 --type-eyebrow:var(--weight-semibold) var(--text-2xs)/1.2 var(--font-body);
