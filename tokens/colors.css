@@ -33,17 +33,17 @@
 --color-stone-500:oklch(from var(--color-pine-tree) 0.42 c h);
 --color-stone-400:oklch(from var(--color-pine-tree) 0.48 c h);
 --color-line-600:oklch(from var(--color-cotton-seed) 0.56 c h);
-/* Ivory: Merino mixed half with White (#F9F7F2), the page ground. Merino moves to the
-   alternate band, so the two light grounds read as paper and a band, not two beiges. */
+/* Ivory: Merino mixed half with White (#F9F7F2), the alternate band and raised surfaces
+   on a White page. Merino stays a brand colour and the ink on dark grounds. */
 --color-ivory:color-mix(in oklab, var(--color-merino) 50%, var(--color-white));
 /* Brass: Gold Crayola deepened, the primary-button fill on dark grounds. A fill only:
    as text it clears 4.5:1 on Pine but not on Himalaya, so text accents stay Gold Crayola. */
 --color-brass:oklch(from var(--color-gold-crayola) 0.74 c h);
 
 /* — Semantic surfaces — */
---surface-page:var(--color-ivory);
+--surface-page:var(--color-white);
 --surface-card:var(--color-white);
---surface-raised:var(--color-merino);
+--surface-raised:var(--color-ivory);
 --surface-sunken:var(--color-sand);
 --surface-inverse:var(--color-pine-tree);
 --surface-brand:var(--color-himalaya);
@@ -52,11 +52,11 @@
 --surface-overlay:color-mix(in srgb, var(--color-pine-tree) 55%, transparent);
 
 /* — Section grounds — the deck's three flat grounds plus photo and the footer.
-   The names are roles: "merino" is the page ground (Ivory) and "stone" the alternate band (Merino).
+   The names are roles: "merino" is the page ground (White) and "stone" the alternate band (Ivory).
    Sections choose one with data-ground; nothing else paints a marketing surface.
-   White is not a ground: it is reserved for form fields and dialogs. */
---ground-merino:var(--color-ivory);
---ground-stone:var(--color-merino);
+   Form fields on the White page are told apart by --border-control, not by fill. */
+--ground-merino:var(--color-white);
+--ground-stone:var(--color-ivory);
 --ground-himalaya:var(--color-himalaya);
 --ground-pine:var(--color-pine-tree);
 

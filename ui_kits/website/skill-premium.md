@@ -116,8 +116,8 @@ A section paints one of five grounds with `data-ground` (use `Section`; nothing 
 
 | Ground | Use |
 | --- | --- |
-| `merino` | Default. Most sections. Paints Ivory, the page ground. |
-| `stone` | Alternate light ground to separate two adjacent sections. Paints Merino; cards on it are White. |
+| `merino` | Default. Most sections. Paints White, the page ground. |
+| `stone` | Alternate light ground to separate two adjacent sections. Paints Ivory; cards on it are White. |
 | `himalaya` | `BandStatement` only. At most one per page. |
 | `pine` | `ClosingCTA` without a photograph, footer. |
 | `photo` | Heroes, `PanoramaCaption`, `ClosingCTA` with a photograph. |
