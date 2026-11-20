@@ -28,8 +28,8 @@
   --border-subtle:color-mix(in srgb, var(--color-merino) 18%, transparent);
   --border-control:color-mix(in srgb, var(--color-merino) 60%, transparent);
   --rule-color:color-mix(in srgb, var(--color-merino) 18%, transparent);
-  --btn-primary-bg:var(--color-gold-crayola);
-  --btn-primary-bg-hover:var(--color-gold-200);
+  --btn-primary-bg:var(--color-brass);
+  --btn-primary-bg-hover:var(--color-gold-crayola);
   --btn-primary-fg:var(--color-pine-tree);
   --ring-focus:var(--ring-focus-inverse);
   color:var(--text-primary);
