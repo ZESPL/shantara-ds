@@ -116,13 +116,13 @@ A section paints one of five grounds with `data-ground` (use `Section`; nothing 
 
 | Ground | Use |
 | --- | --- |
-| `merino` | Default. Most sections. |
-| `stone` | Alternate light ground to separate two adjacent sections. |
+| `merino` | Default. Most sections. Paints Ivory, the page ground. |
+| `stone` | Alternate light ground to separate two adjacent sections. Paints Merino; cards on it are White. |
 | `himalaya` | `BandStatement` only. At most one per page. |
 | `pine` | `ClosingCTA` without a photograph, footer. |
 | `photo` | Heroes, `PanoramaCaption`, `ClosingCTA` with a photograph. |
 
-Dark grounds re-point the ink tokens. Inside `himalaya`, `pine` and `photo` the primary button becomes Gold with Pine ink, text becomes Merino. Do not pass tone props or hard-code colours to get this.
+Dark grounds re-point the ink tokens. Inside `himalaya`, `pine` and `photo` the primary button becomes Brass with Pine ink, text becomes Merino, and text accents stay Gold Crayola. Do not pass tone props or hard-code colours to get this.
 
 ### Shape
 
