@@ -106,7 +106,7 @@ The website is the brand deck carried to a scrolling page. The deck rules that a
 | Item | `--type-item` (= h4) | 20 | Medium | Step, list and table item titles |
 | Numeral | `--type-numeral` | 48 → 84 | Light | Two or three figures in `NumeralsSplit` |
 
-- **The Light rule:** every heading at 24px or larger is Diodrum Light. Medium is only for item titles at 20px or smaller. Body is Regular 17/1.6, never Light.
+- **The Light rule:** display, h1 and h2 are Diodrum Light, set with `--tracking-heading`; h3 is Regular. Medium is only for h4 and item titles. Body is Regular 17/1.6, never Light. The scale is quiet (display 48, h1 36, h2 28): headings lead by weight, space and position, not by size.
 - `--type-lead` is deprecated. Use body, or a `Statement` with a `sub` line.
 - Headlines are left-aligned, wrap at `--measure-heading` (36ch) or `--measure-title` (the same 36ch) for a page title, and use `text-wrap: pretty`: lines fill, and only a lone last word is avoided. `balance` is for short centred UI text only (Tooltip, Dialog, AnnouncementBar). Body wraps at `--measure-body` (65ch).
 
@@ -116,13 +116,13 @@ A section paints one of five grounds with `data-ground` (use `Section`; nothing 
 
 | Ground | Use |
 | --- | --- |
-| `merino` | Default. Most sections. Paints Ivory, the page ground. |
-| `stone` | Alternate light ground to separate two adjacent sections. Paints Merino; cards on it are White. |
+| `merino` | Default. Most sections. |
+| `stone` | Alternate light ground to separate two adjacent sections. |
 | `himalaya` | `BandStatement` only. At most one per page. |
 | `pine` | `ClosingCTA` without a photograph, footer. |
 | `photo` | Heroes, `PanoramaCaption`, `ClosingCTA` with a photograph. |
 
-Dark grounds re-point the ink tokens. Inside `himalaya`, `pine` and `photo` the primary button becomes Brass with Pine ink, text becomes Merino, and text accents stay Gold Crayola. Do not pass tone props or hard-code colours to get this.
+Dark grounds re-point the ink tokens. Inside `himalaya`, `pine` and `photo` the primary button becomes Gold with Pine ink, text becomes Merino. Do not pass tone props or hard-code colours to get this.
 
 ### Shape
 
