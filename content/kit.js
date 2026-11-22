@@ -29,7 +29,7 @@ window.ShantaraContent = {
       },
       {
         "platform": "youtube",
-        "url": "https://www.youtube.com/@shantaranaturopathy"
+        "url": "https://www.youtube.com/@ShantaraNaturopathyRetreat"
       }
     ],
     "place": {
