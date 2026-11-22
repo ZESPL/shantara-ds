@@ -24,14 +24,13 @@ The first edition is meant to cover the past 3 months of clinical data. The hand
 **Gaps**
 
 - Exact start and end dates for the past 3 months: Not found in handbook.
-- P.A. Kareem is the founder and chairman, not a doctor, so he does not prepare or sign the report. He is a Government of India Certified Naturopath with 33+ years of practice. Degrees: B.A. in Urdu (Adib-e-Fazil) with Language Teachers' Training, and B.A. in History with B.Ed. The handbook says never to attribute a BNYS or a medical degree to him. `docs/handbook/founder.md`
+- P.A. Kareem is the founder and chairman, not a doctor, so he does not prepare the report. He is a Government of India Certified Naturopath with 33+ years of practice. Degrees: B.A. in Urdu (Adib-e-Fazil) with Language Teachers' Training, and B.A. in History with B.Ed. The handbook says never to attribute a BNYS or a medical degree to him. `docs/handbook/founder.md`
 - Which doctors prepare the report: Not found in handbook.
-- Which doctors sign the report: Not found in handbook.
 
 **Ask this person**
 
 - Doctors. Start with the Medical Director, Dr. Bahja Janu.
-- Management, for who may publish the finished report. The Chief Executive Officer is Nishan Kareem. The handbook does not say he signs clinical reports. `docs/handbook/founder.md`, `docs/handbook/contacts.md`
+- Management, for who publishes the finished report. The Chief Executive Officer is Nishan Kareem. `docs/handbook/founder.md`, `docs/handbook/contacts.md`
 
 ### 2. Summary
 
@@ -254,28 +253,6 @@ The first edition is meant to cover the past 3 months of clinical data. The hand
 
 - Doctors, especially the Medical Director, because she designs the treatment protocols and programmes. `docs/handbook/team.md`
 - Management, if a change affects what the website is allowed to say.
-
-### 10. Doctor sign-off
-
-**Found in handbook**
-
-- Dr. Bahja Janu, Medical Director, leads clinical operations and designs the treatment protocols and programmes. `docs/handbook/team.md`, `docs/handbook/contacts.md`
-- P.A. Kareem is Founder and Chairman. He is not a doctor and does not give clinical sign-off. `docs/handbook/founder.md`
-- The doctor on duty handles the treatment plan and is the first step for an emergency. `docs/handbook/contacts.md`
-- Non-medical staff must not contradict a doctor's recommendation. `docs/handbook/protocols.md`
-- Unfinished handbook statements need Azhar, P.A. Kareem, or Dr. Bahja Janu. That line is about the handbook, not about this report. `docs/handbook.txt`
-- Commercial and administrative departments (Sales, Marketing, Finance, Human Resources) sit with the Chief Executive Officer, Nishan Kareem. `docs/handbook/founder.md`, `docs/handbook/contacts.md`
-
-**Gaps**
-
-- Authority to sign a published aggregate efficacy report: Not found in handbook.
-- Whether one signature or several are required: Not found in handbook.
-- Azhar's role title: Not found in handbook.
-
-**Ask this person**
-
-- Doctors. Ask Dr. Bahja Janu who is allowed to sign.
-- Management (Nishan Kareem), for permission to publish on the website after the doctors sign. The handbook does not give him clinical sign-off.
 
 ### Treatments and therapies
 

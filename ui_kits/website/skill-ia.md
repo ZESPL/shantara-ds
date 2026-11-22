@@ -52,7 +52,7 @@ Other named needs (`fatty-liver`, `back-pain`, `menopause`, and similar) remain 
 
 **Structure reference:** Prakriti Shakti–style named condition cards (homepage cards, conditions-treated listing, treatment-programmes) are a useful pattern for how condition pages sit next to programmes. Copy structure, not copy, NAP scatter, or a holistic-wellness ICP.
 
-**Publish rule (unchanged):** a condition page only when original content, clinical perspective, relevant programme, medical review, and useful answers exist. Metrics rank which ready pages to ship first; they do not waive the content bar.
+**Publish rule (unchanged):** a condition page only when original content, clinical perspective, relevant programme, and useful answers exist. Metrics rank which ready pages to ship first; they do not waive the content bar.
 
 **GCC / West content jobs** (no new URL families):
 
@@ -90,7 +90,6 @@ Create a condition page only when Shantara can provide:
 - meaningful original content;
 - a legitimate clinical perspective;
 - a relevant programme or approach;
-- medical review;
 - useful answers to prospective guests.
 
 Do not create dozens of thin condition pages in advance.

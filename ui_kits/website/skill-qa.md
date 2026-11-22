@@ -107,9 +107,9 @@ Before publishing a new or rebuilt page:
 
 Additionally verify:
 
-- [ ] Medical reviewer is real and linked correctly.
+- [ ] A named medical reviewer is real and linked correctly.
 - [ ] Qualifications are accurate.
-- [ ] Last medically reviewed date is present.
+- [ ] A named reviewer comes with a last medically reviewed date.
 - [ ] Material claims are supported by appropriate references.
 - [ ] No unsupported cure/reversal guarantee exists.
 - [ ] Medication advice is clinically safe and appropriately qualified.

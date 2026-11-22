@@ -59,7 +59,7 @@ Recorded on 25 September 2026 and 23 October 2026. The rules below already follo
 | [Redirects and retired pages (REDIR)](redirects.md) | REDIR-01 to REDIR-05 | Slug-change redirects, single-hop 301s, host clean-up, query strings, retired pages |
 | [Migration from the current site (MIG)](migration.md) | MIG-01 to MIG-05 | Crawl of the old site, legacy redirects, top pages, external listings, post-launch checks |
 | [Pages (PAGE)](pages.md) | PAGE-01 to PAGE-08 | Titles and descriptions, breadcrumbs, orphan pages, internal-only facts, original copy, trust pages |
-| [Medical content (MED)](medical.md) | MED-01 to MED-05 | Doctor review, sources, claim words in metadata, testimonials, honest dates |
+| [Medical content (MED)](medical.md) | MED-01 to MED-05 | Reviewer attribution, sources, claim words in metadata, testimonials, honest dates |
 | [Rates (RATE)](rates.md) | RATE-01 to RATE-05 | Rates only on the per-currency tariff pages, currency labels, the `/en/tariff` redirect, Offer schema, no rate-sheet internals |
 | [Structured data (SCHEMA)](schema.md) | SCHEMA-01 to SCHEMA-16 | JSON-LD graph, `@id` values, MedicalClinic, page nodes, doctors, programmes, articles, FAQ, VideoObject, schema map |
 | [Link previews (SOCIAL)](social.md) | SOCIAL-01 to SOCIAL-04 | Open Graph tags, share images, Twitter card |
