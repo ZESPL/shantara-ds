@@ -20,7 +20,7 @@ Medical Director
 | Role | Medical Director |
 | Degree | Bachelor of Naturopathy and Yogic Sciences (BNYS), Alva's College of Naturopathy and Yogic Sciences, Mangalore, Rajiv Gandhi University of Health Sciences, 2012. Best Outgoing Student. |
 | Further training | Advanced Acupuncture and Cupping Therapy, Travancore Research Institute of Naturopathy & Yoga (2016). International Dorn Healer, AHHAI, Germany. NLP. Lifestyle coach. |
-| Licences and memberships | Travancore-Cochin Medical Council (TCMC), Kerala. Licensed by the Saudi Ministry of Health. Listed with CCRYN. Never publish a registration number. |
+| Licences and memberships | Travancore-Cochin Medical Council (TCMC), Keralam. Licensed by the Saudi Ministry of Health. Listed with CCRYN. Never publish a registration number. |
 | Areas of expertise | Lifestyle disorders (diabetes, hypertension, obesity); infertility and women's health; therapeutic fasting and detox; gut health and metabolic correction; stress management; preventive healthcare programmes. Her clinical skills also include acupuncture, cupping therapy, hyperbaric oxygen therapy (HBOT), yoga and physical therapy. |
 | Teaching | Guest Lecturer, KMCT Medical College, Mukkam (2018–2023). Guest Lecturer, IAHA, Kottakkal (2018–2023). |
 | Other credential | Certified Professional Coder (CPC), AAPC (2022). This is a medical-coding credential, not a clinical one. Do not present it as a clinical qualification. |

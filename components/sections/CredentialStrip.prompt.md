@@ -4,7 +4,7 @@ Credentials spelled out (name, issuer, holder, number), never a bare logo.
 <Section>
   <CredentialStrip title="Registrations and qualifications" items={[
     { name: "BNYS", issuer: "Rajiv Gandhi University of Health Sciences", holder: "Dr. Bahja Janu" },
-    { name: "Medical licence", issuer: "Travancore-Cochin Medical Council (TCMC), Kerala", holder: "Dr. Bahja Janu" },
+    { name: "Medical licence", issuer: "Travancore-Cochin Medical Council (TCMC), Keralam", holder: "Dr. Bahja Janu" },
   ]} />
 </Section>
 ```
