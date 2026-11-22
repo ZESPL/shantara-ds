@@ -50,7 +50,7 @@ An amenity appears on the website or in structured data only if it is listed in 
 
 ## Credentials and claims
 
-A credential, licence, registration, certification or membership appears on the website or in structured data only if it is listed in the verified credentials list below, with the document that proves it.
+A credential, licence, registration, certification or membership appears on the website or in structured data only if it is listed in the verified credentials list below. Every entry on that list is approved by the owner; it needs no separate proof.
 
 ### How to write a BNYS
 
@@ -70,7 +70,19 @@ A doctor who holds a Bachelor of Naturopathy and Yogic Sciences (BNYS), and who 
 - This section sets the written form. It does not add BNYS to anyone. Publishing the credential still requires an entry in the verified credentials list below.
 
 ### Verified credentials
-- Dr. Bahja Janu: BNYS, Rajiv Gandhi University of Health Sciences. Proof: [document name]
-- Dr. Bahja Janu: licence, Travancore-Cochin Medical Council (TCMC), Kerala. Proof: [document name]
-- Dr. Bahja Janu: licence, Ministry of Health, Saudi Arabia. Proof: [document name]
-- P.A. Kareem (founder and chairman; not a doctor, so never written with "Dr."): Government of India-certified Naturopathy Practitioner, issued by [issuing body as named on the certificate]. Proof: [document name]
+
+Approved by the owner on 22 Nov 2026.
+
+- Dr. Bahja Janu: BNYS, Alva's College of Naturopathy and Yogic Sciences, Mangalore, Rajiv Gandhi University of Health Sciences, 2012.
+- Dr. Bahja Janu: licence, Travancore-Cochin Medical Council (TCMC), Kerala.
+- Dr. Bahja Janu: licence, Ministry of Health, Saudi Arabia.
+- Dr. Bahja Janu: membership, Central Council for Research in Yoga & Naturopathy (CCRYN).
+- Dr. Bahja Janu: certification, Advanced Acupuncture and Cupping Therapy, Travancore Research Institute of Naturopathy & Yoga, 2016.
+- Dr. Bahja Janu: certification, International Dorn Healer, AHHAI, Germany.
+- Dr. Bahja Janu: certification, NLP.
+- Dr. Bahja Janu: certification, Lifestyle coach.
+- Dr. Gangrei Gangmei: BNYS, Rajiv Gandhi University of Health Sciences, 2024.
+- Dr. Gangrei Gangmei: certification, Basic Acupuncture (90-day course), Jalpaiguri Foundation for Traditional Treatment, 2025.
+- Dr. Keerthana V S: BNYS, Alva's College of Naturopathy and Yogic Sciences, Moodbidri, Mangalore, Rajiv Gandhi University of Health Sciences, 2024.
+- Dr. Sara Shanti Alen: BNYS, SDM College of Naturopathy and Yogic Sciences, Ujire, Rajiv Gandhi University of Health Sciences, 2025.
+- P.A. Kareem (founder and chairman; not a doctor, so never written with "Dr."): Government of India-certified Naturopathy Practitioner.
