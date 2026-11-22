@@ -74,7 +74,7 @@ A doctor who holds a Bachelor of Naturopathy and Yogic Sciences (BNYS), and who 
 Approved by the owner on 22 Nov 2026.
 
 - Dr. Bahja Janu: BNYS, Alva's College of Naturopathy and Yogic Sciences, Mangalore, Rajiv Gandhi University of Health Sciences, 2012.
-- Dr. Bahja Janu: licence, Travancore-Cochin Medical Council (TCMC), Kerala.
+- Dr. Bahja Janu: licence, Travancore-Cochin Medical Council (TCMC), Keralam.
 - Dr. Bahja Janu: licence, Ministry of Health, Saudi Arabia.
 - Dr. Bahja Janu: membership, Central Council for Research in Yoga & Naturopathy (CCRYN).
 - Dr. Bahja Janu: certification, Advanced Acupuncture and Cupping Therapy, Travancore Research Institute of Naturopathy & Yoga, 2016.

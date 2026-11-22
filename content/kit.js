@@ -2165,7 +2165,7 @@ window.ShantaraContent = {
       "photo_profile": "doctor-bahja-janu-passport.jpeg",
       "qualification": "Bachelor of Naturopathy and Yogic Sciences (BNYS)",
       "licences": [
-        "Travancore-Cochin Medical Council (TCMC), Kerala",
+        "Travancore-Cochin Medical Council (TCMC), Keralam",
         "Saudi Ministry of Health"
       ],
       "years_practice": "14+",

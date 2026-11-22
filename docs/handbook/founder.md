@@ -27,7 +27,7 @@ Founder and Chairman. He is not a doctor and is not part of the medical team in 
 | Naturopathy credential | Government of India Certified Naturopath. Trained under C. R. R. Varma. |
 | Degrees | B.A. in Urdu (Adib-e-Fazil) with Language Teachers' Training. B.A. in History with B.Ed. |
 | Naturopathy practice | 33+ years. |
-| Teaching and public service | About 30 years as High School Assistant (Urdu) at the Kerala Government Higher Secondary School, REC, Calicut. Member of the Kerala Government Textbook Committee, 1984–1996. |
+| Teaching and public service | About 30 years as High School Assistant (Urdu) at the Keralam Government Higher Secondary School, REC, Calicut. Member of the Keralam Government Textbook Committee, 1984–1996. |
 | Public education | Lectures and awareness programmes on naturopathy in Malayalam, Urdu, Hindi and English, across India and abroad |
 | Languages | Malayalam, Urdu, Hindi and English, the languages he lectures in |
 
@@ -68,7 +68,7 @@ The resume lists the second title as "Prakrthi Chikilsa…", so the full title i
 | Gulf Times (Qatar) | Naturopathy can cure without medicines | 23 November 2014 | https://www.gulf-times.com/story/417341/naturopathy-can-cure-without-medicines |
 | Arab News | Fasting During Ramadan Is Beneficial If Done Properly, Says Doctor | 5 September 2007 | https://www.arabnews.com/archive/302959 |
 
-No Indian national or Kerala newspaper coverage was found. `arabnews.com/node/302959` is the same 2007 article.
+No Indian national or Keralam newspaper coverage was found. `arabnews.com/node/302959` is the same 2007 article.
 
 **Talks.** Four YouTube recordings in which he speaks. Each title names him. They are outbound links on his profile, with the visit films and the two LinkedIn posts from the media register. Do not embed the player. Do not store them as site video.
 
