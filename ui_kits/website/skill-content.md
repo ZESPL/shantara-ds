@@ -52,7 +52,7 @@ Medical categories ([`content/medical-categories.json`](../../content/medical-ca
 | Doctor | full name; slug; role; `photo_profile`; qualification; licences (issuing body only, never a registration number or joining date); years in practice; biography (Markdoc); areas of practice; professional memberships; publications; press; talks; videos; social posts; external profiles | Every doctor is listed on `/en/our-doctors`. Only Dr. Bahja Janu has a profile page (`/en/doctors/[slug]`), which lists her answers, reviewed articles, programmes, press, talks, videos and social posts. No other doctor gets one. |
 | Leadership | full name; slug; role; `photo_profile`; qualification; years in practice; biography (Markdoc); publications; press; talks; videos; social posts; external profiles | The founder and chairman, P.A. Kareem, only (`/en/pa-kareem`). He is not a doctor: never put him in Doctor, a clinician field, a doctor answer or a medical reviewer field. Source: handbook §3. |
 | Author | name; slug; role; photo; short bio; optional link to a doctor | No page |
-| Article / Clinical Guide | title; slug; category; lead; body (Markdoc); read minutes; date published; date modified; author (required); medical reviewer (doctor, required for clinical content) | `/en/journal/[slug]` |
+| Article / Clinical Guide | title; slug; category; lead; body (Markdoc); read minutes; date published; date modified; author (required); medical reviewer (doctor, optional) | `/en/journal/[slug]` |
 | Doctor Answer | question; slug; short answer; detailed answer (Markdoc); category; read minutes; reviewed date; doctor (required) | `/en/journal/[slug]` |
 | Testimonial | quote; display name; country; anonymised; photo; stay month and year; programme; `consent_status` (`recorded`, `pending`, `withdrawn`); `consent_date` | No page. Publish only when consent is `recorded`. |
 
@@ -354,7 +354,7 @@ Clearly expose: about Shantara; contact details; real physical location; clinica
 
 Avoid unsupported language such as: cures diabetes; guarantees reversal; eliminates hypertension; permanent cure; guaranteed detoxification claims.
 
-Any significant clinical claim must have evidence, appropriate qualification, and clinical review.
+Any significant clinical claim must have evidence and appropriate qualification.
 
 The programme name **Diabetes Reversal** is approved for catalogue use. Do not present reversal as guaranteed efficacy or invent clinical rates.
 

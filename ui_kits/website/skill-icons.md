@@ -139,4 +139,4 @@ After deploy, check by hand:
 ## 9. Still open
 
 - **Safari dark tabs.** See the known limit in section 2; decide after the post-launch check.
-- **Designer sign-off at 16px.** The mark reads as a flower at 16px in `samples/preview.png`, but its thin outlines are faint at that size. A designer should confirm it. If they prefer, draw a heavier small-size version of the mark and point the build at it; nothing else changes.
+- **Small sizes.** The mark reads as a flower at 16px in `samples/preview.png`, but its thin outlines are faint at that size. If needed, draw a heavier small-size version of the mark and point the build at it; nothing else changes.

@@ -119,7 +119,7 @@ Root `/` is the x-default entry and redirects to `/en` (or a remembered enabled 
 
 Do not invent condition-category SEO hubs (`/en/conditions/metabolic-lifestyle/diabetes`). When condition pages exist, group them visually on `/en/conditions` without creating indexable category pages.
 
-Create a condition page only when Shantara can provide original content, a legitimate clinical perspective, a relevant programme, medical review, and useful answers. Do not pre-build dozens of thin condition pages.
+Create a condition page only when Shantara can provide original content, a legitimate clinical perspective, a relevant programme, and useful answers. Do not pre-build dozens of thin condition pages.
 
 Experience pages (typical, not mandatory as individual URLs): Therapies, Rooms & Suites, Amenities & Activities, Farm & Dining, A Day at Shantara. Do not create a page per therapy or room category by default.
 
@@ -357,9 +357,9 @@ Page / entity → source record → localized records per locale. Same section c
 
 Each language is a folder of files with the same filenames as English, holding only the translatable text. The only publishing field is `status` (`draft` / `published`). There are no translation review fields: the build warns when the English file was committed after its translation. A translation publishes independently. It must not block English. Full model: [skill-content.md](skill-content.md#languages).
 
-**Medical workflow (documented, not a workflow engine):** English source → clinical/medical review of the source → translation → language review → medical terminology / localized clinical review where required → localized publication.
+**Medical workflow (documented, not a workflow engine):** English source → translation → localized publication. No review or approval step gates publication.
 
-Distinguish: medical review of the English source; language/translation review; localized clinical review. Schema and bylines must not claim the English reviewer signed off the translation unless they did. E-E-A-T applies independently per translation. Do not strengthen or weaken claims, change certainty, medication, terminology, or contraindications in translation.
+Schema and bylines must not claim the English reviewer reviewed the translation unless they did. E-E-A-T applies independently per translation. Do not strengthen or weaken claims, change certainty, medication, terminology, or contraindications in translation.
 
 UI strings (nav, buttons, form labels, validation, statuses) live in a locale dictionary. Editorial content (heroes, programmes, clinical, FAQs, testimonials, articles) lives on the entity. Not one massive file. Do not embed marketing sentences in presentation components.
 
