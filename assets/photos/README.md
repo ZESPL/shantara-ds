@@ -19,7 +19,7 @@ Property frames are 2880px on the long edge. Activity and lifestyle frames are 2
 
 ## Public use
 
-Every entry carries one status, set from the privacy rules (root [`SKILL.md`](../../SKILL.md) §3, [`guidelines/brand-imagery.html`](../../guidelines/brand-imagery.html)): guests are never identifiable, no faces in therapy, no room numbers, imagery never shows treatment in progress.
+Every entry carries one status, set from the privacy rules (root [`SKILL.md`](../../SKILL.md) §3, [`guidelines/brand-imagery.html`](../../guidelines/brand-imagery.html)): no faces in therapy, no room numbers, imagery never shows treatment in progress.
 
 | Status | Meaning | Count |
 | --- | --- | --- |

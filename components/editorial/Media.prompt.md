@@ -12,4 +12,4 @@ Every photograph on the website: square-cut, cover-fit, lazy by default, with an
 
 **Performance.** Only the hero sets `priority`. Everything else lazy-loads.
 
-**Privacy.** No identifiable guests, no faces in therapy, no room numbers.
+**Privacy.** No faces in therapy, no room numbers.
