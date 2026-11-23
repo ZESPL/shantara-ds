@@ -289,14 +289,14 @@ These files are **previews** of the skill, not the live site:
 | `screens/HomeScreen.js` | home | `HeroFullBleed`, approach, doctors, programme tiles + roomy index, therapies, rooms, journal, FAQ |
 | `screens/ProgrammesScreen.js` | programme listing | `HeroFullBleed` without a button, then a full-width catalogue: one `Tile` (`layout="thumb"`) per programme with a small thumbnail, audience summary and conditions as static `Tag`s |
 | `screens/ConditionsScreen.js` | condition index | A compact `HeroStatement` with no image, then every condition as an A to Z `GroupedList`, each one link to its primary programme; nothing after the list; no detail pages |
-| `screens/ProgrammeScreen.js` | programme | Advanced Detox & Cellular Cleansing: `HeroSplit` + booking panel; tariff link, no rates |
+| `screens/ProgrammeScreen.js` | programme | `HeroFullBleed` (name + lead) → one Markdoc body beside a panel (programme length, conditions, Make an Enquiry, rates link) → links → medical team → FAQ → `ClosingCTA` (shantara.life D-241, D-302); no rates |
 | `screens/ExperienceScreen.js` | experience hub | Therapies, rooms, farm, a day; not one page per room |
 | `screens/NaturopathyScreen.js` | naturopathy (about) | `HeroFullBleed`, principles (boxed split + `PlainList marker="numeral"`), practice chapters (boxed splits, one `Tile`), `PanoramaCaption`, `BandStatement`, `SpecTable variant="contrast"`, treatments split, doctors `PeopleRow`, `NumeralsSplit` (minimum stay), photo `ClosingCTA`; two `data-reveal` frames |
 | `screens/AboutScreen.js` | about hub | Story, approach, doctors, editorial policy |
 | `screens/JournalScreen.js` | article listing | `HeroStatement` → `Tabs` → `TileGrid` → `Pagination` |
 | `screens/ArticleScreen.js` | article | `#/en/journal/<slug>`: `ArticleHeader`, `Prose`, `TableOfContents`, `ReviewedBy`, `ShareBar`, `AuthorCard`, `RelatedArticles` (kit body is a marked sample) |
 | `screens/ContactScreen.js` | contact | `HeroStatement` + NAP (Shantara Naturopathy Retreat), distances, call / WhatsApp / email |
-| `screens/ConsultationScreen.js` | consultation | One short form |
+| `screens/ConsultationScreen.js` | consultation | "Enquire about a programme": one short form, "Submit Enquiry", three next steps beside it (shantara.life D-169, D-303) |
 | `screens/TariffScreen.js` | pricing surface (`/en/tariff/{code}`) | Structure only: currency links, room × occupancy table, supplements, payment terms, cancellation and a link to the full policy, with “—” in place of every rate |
 | `chrome/SiteChrome.js` | chrome | Header overlays every page: logo, five centred nav items, LanguageSelector, phone dropdown, Enquire; menu sheet (with the LanguageSelector) under 1000px; compact wordmark / frangipani mark at narrow or zoomed widths. Footer: Pine Tree ground, rosette strip on top, brand column (cream wordmark, NAP and social profile links) + three link columns (accordions under 760px); the bottom bar carries the copyright (legal entity, Metropolis Forward LLP), the Privacy and Terms links and the short location line. The text-size control is optional; the kit shows one, the production footer does not include it. Also `PageSlot` (`data-ds-id="page/<view>/<slot>"` on every section) |
 | `chrome/Photo.js` | chrome | Adapter over `Media` for `assets/photos/*` |
