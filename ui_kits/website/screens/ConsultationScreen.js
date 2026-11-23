@@ -92,13 +92,14 @@ function ConsultationScreen({ onNavigate, locale = "en", view = "booking" }) {
 
   const aside = (
     <>
-      <Statement size="title" as="h2">{t("We'll be in touch")}</Statement>
+      <Statement size="title" as="h2">{t("What happens next")}</Statement>
       <NumberedSteps
         columns={1}
         rules
         items={[
-          { title: t("A member of the team will call you to understand what you need.") },
-          { title: t("A doctor then reviews whether a stay is the right next step.") },
+          { title: t("A conversation"), text: t("A member of the Shantara team gets in touch to understand individual needs and answer initial questions.") },
+          { title: t("Medical review"), text: t("A doctor reviews the information to understand whether a Shantara programme may be suitable.") },
+          { title: t("Programme guidance"), text: t("Based on the assessment, the team guides the guest through the recommended programme, its duration and the next steps.") },
         ]}
       />
       <div>
@@ -112,8 +113,8 @@ function ConsultationScreen({ onNavigate, locale = "en", view = "booking" }) {
       <P id="booking/hero">
         <HeroStatement
           tall={false}
-          title={t("Make an Inquiry")}
-          sub={t("Share your name and a number we can reach. Our team will contact you to discuss the next step.")}
+          title={t("Enquire about a programme")}
+          sub={t("Every programme at Shantara begins with an understanding of individual health needs. Share a few details to help the team guide the next steps.")}
         />
       </P>
 
@@ -124,12 +125,12 @@ function ConsultationScreen({ onNavigate, locale = "en", view = "booking" }) {
           <Input name={keys.phone} autoComplete="tel" label={t("Mobile / WhatsApp number")} required onFocus={markStart} />
           <Input name={keys.email} autoComplete="email" label={t("Email")} type="email" hint={t("Optional")} onFocus={markStart} />
           <Select name={keys.country} label={t("Country")} options={[{ value: "IN", label: t("India") }, { value: "AE", label: t("United Arab Emirates") }, { value: "GB", label: t("United Kingdom") }, { value: "OTHER", label: t("Other") }]} defaultValue="IN" onFocus={markStart} />
-          <Textarea name={keys.notes} label={t("Anything you'd like us to know?")} hint={t("Optional")} maxLength={400} onFocus={markStart} />
+          <Textarea name={keys.notes} label={t("Health information")} hint={t("Optional")} maxLength={400} onFocus={markStart} />
           {Object.entries(context).map(([key, value]) => (
             <input key={key} type="hidden" name={key} value={value || ""} readOnly />
           ))}
           <div className="sh-actions" data-stack="mobile" style={{ marginTop: "var(--space-4)" }}>
-            <Button size="lg" type="submit">{t("Make an Inquiry")}</Button>
+            <Button size="lg" type="submit">{t("Submit Enquiry")}</Button>
           </div>
         </FormSplit>
       </Section>

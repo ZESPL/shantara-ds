@@ -1,6 +1,6 @@
 # Shantara language
 
-Mandatory for every visitor-facing word: pages, headings, buttons, forms, errors, alt text, share images, emails and policies. No exceptions. This file replaces the earlier voice and tone rules and the words-to-avoid list.
+Mandatory for every visitor-facing word: pages, headings, buttons, forms, errors, alt text, share images, emails and policies. Two exceptions to rule 1 are recorded on shantara.life, and none other is allowed: the site-wide closing call to action may say "you" and "your" (D-227), and the enquiry form's labels, health placeholder and consent lines may say "you", "your" and "I", for example "When would you like to begin your programme?" and "I agree to be contacted by Shantara regarding this enquiry." (D-303). The rest of the enquiry page stays neutral. This file replaces the earlier voice and tone rules and the words-to-avoid list.
 
 ## Position
 
