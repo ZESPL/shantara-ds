@@ -181,7 +181,7 @@ These frames are the lobby, including the reception desk and the view out to the
 #### lobby-reception.jpg
 
 - `lobby-reception` · 2880×1920 · landscape 3:2 · 912 KB · kit default
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** The lobby, at the reception desk: two staff (a woman in a headscarf and a man) at laptops behind a dark stone desk, under a backlit flower logo on a black wall. A walnut ceiling and shelving, a long wood bench, bouclé lounge chairs and a glass-walled corridor are in the centre.
 - **Setting:** lobby
 - **People:** staff/practitioner, face identifiable (small, facing camera)
@@ -516,7 +516,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### courtyard-water-wall-seated-guest.jpg
 
 - `courtyard-water-wall-seated-guest` · 2880×1920 · landscape 3:2 · 900 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** A woman in a cream headscarf and beige dress sits on a chair beside a small wooden table in front of a dark wall with falling water; a second empty chair, foliage at right and a reflecting pool in front.
 - **Setting:** courtyard
 - **People:** guest, face identifiable
@@ -558,7 +558,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### courtyard-deck-standing-guest-portrait-2x3.jpg
 
 - `courtyard-deck-standing-guest-portrait-2x3` · 2880×4320 · portrait 2:3 · 737 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** A woman in a white kurta and trousers with a small embroidered motif stands barefoot on a wooden deck by a dark pond, smiling. She is framed between two out-of-focus pillars, with a pale wall, slender trees and a wooden bollard light behind her.
 - **Setting:** courtyard
 - **People:** guest, face identifiable
@@ -572,7 +572,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### courtyard-deck-walking-guest-portrait-2x3.jpg
 
 - `courtyard-deck-walking-guest-portrait-2x3` · 2880×4320 · portrait 2:3 · 777 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** The same woman in a white kurta walks barefoot across the wooden deck by the pond, looking toward the camera. The pale wall, slender trees and greenery are behind her, and the pond is in the foreground.
 - **Setting:** courtyard
 - **People:** guest, face identifiable
@@ -586,7 +586,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### courtyard-boardwalk-railing-guest-landscape-3x2.jpg
 
 - `courtyard-boardwalk-railing-guest-landscape-3x2` · 2880×1920 · landscape 3:2 · 379 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** A woman in a white kurta rests one hand on a wooden boardwalk railing and looks up and to the left, surrounded by large banana-type leaves. The background is a dark, moss-covered wall and trees.
 - **Setting:** courtyard
 - **People:** guest, face identifiable
@@ -600,7 +600,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### courtyard-boardwalk-railing-guest-portrait-2x3.jpg
 
 - `courtyard-boardwalk-railing-guest-portrait-2x3` · 2880×4320 · portrait 2:3 · 664 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** The same scene in portrait: a woman in a white kurta stands at a boardwalk railing among large leaves, looking left. The wooden deck is visible at lower right.
 - **Setting:** courtyard
 - **People:** guest, face identifiable
@@ -656,7 +656,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### courtyard-water-wall-golden-hour-seated-guest-landscape-3x2.jpg
 
 - `courtyard-water-wall-golden-hour-seated-guest-landscape-3x2` · 2880×1920 · landscape 3:2 · 462 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** The same courtyard seating: a woman in a striped dress sits barefoot on a chair with her eyes closed and her hands in her lap, beside lanterns and empty chairs. There is a dark water wall on the left and a sunlit wall with tree shadows on the right.
 - **Setting:** courtyard
 - **People:** guest, face identifiable
@@ -689,7 +689,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### yoga-hall-waiting-bench-guest.jpg
 
 - `yoga-hall-waiting-bench-guest` · 2880×1920 · landscape 3:2 · 825 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** A man in a brown shirt and dark trousers sits barefoot on a slim upholstered bench against a textured plaster wall, looking toward a sliding glass door that opens onto banana leaves and a green hill. On the left, dark glass doors show a lit interior corridor.
 - **Setting:** yoga hall, waiting bench
 - **People:** guest, face identifiable (side profile, small in frame)
@@ -997,7 +997,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### consultation-doctor-at-desk-with-guest-landscape-3x2.jpg
 
 - `consultation-doctor-at-desk-with-guest-landscape-3x2` · 2880×1920 · landscape 3:2 · 292 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** A doctor in a cream tunic with a stethoscope writes in a notebook at a desk while facing a guest seen from behind in three-quarter view. A computer monitor sits at the left.
 - **Setting:** consultation room
 - **People:** staff/practitioner, face identifiable + guest, face not identifiable
@@ -1027,7 +1027,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### yoga-asana-bhujangasana-cobra-studio-guest-landscape-3x2.jpg
 
 - `yoga-asana-bhujangasana-cobra-studio-guest-landscape-3x2` · 2880×1920 · landscape 3:2 · 285 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** A woman in a white kurta and trousers in cobra pose on a sage mat, head tilted back, eyes open looking upward, by sunlit sheer curtains.
 - **Setting:** yoga studio
 - **People:** guest, face identifiable
@@ -1041,7 +1041,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### yoga-asana-bhujangasana-cobra-studio-guest-portrait-2x3.jpg
 
 - `yoga-asana-bhujangasana-cobra-studio-guest-portrait-2x3` · 2880×4320 · portrait 2:3 · 485 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** Closer vertical view of the same cobra pose, woman in white on a sage mat looking upward, sheer curtains behind.
 - **Setting:** yoga studio
 - **People:** guest, face identifiable
@@ -1055,7 +1055,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### yoga-asana-kneeling-arms-raised-studio-guest-landscape-3x2.jpg
 
 - `yoga-asana-kneeling-arms-raised-studio-guest-landscape-3x2` · 2880×1920 · landscape 3:2 · 397 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** A woman in white kneels on a sage mat with both arms raised overhead and gaze up, beside tall sunlit curtains.
 - **Setting:** yoga studio
 - **People:** guest, face identifiable
@@ -1069,7 +1069,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### yoga-asana-kneeling-arms-raised-studio-guest-portrait-2x3.jpg
 
 - `yoga-asana-kneeling-arms-raised-studio-guest-portrait-2x3` · 2880×4320 · portrait 2:3 · 608 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** Wider vertical view of the woman kneeling on a sage mat with arms raised, in a corner of the studio with a tall curtained window at right.
 - **Setting:** yoga studio
 - **People:** guest, face identifiable
@@ -1083,7 +1083,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### yoga-asana-standing-arm-raise-diagonal-guest-portrait-2x3.jpg
 
 - `yoga-asana-standing-arm-raise-diagonal-guest-portrait-2x3` · 2880×4320 · portrait 2:3 · 542 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** A woman in a white kurta and trousers stands barefoot on a sage mat, right arm raised diagonally up to the side, facing the camera, against backlit sheer curtains.
 - **Setting:** yoga studio
 - **People:** guest, face identifiable
@@ -1097,7 +1097,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### yoga-asana-standing-arm-raise-sideways-guest-portrait-2x3.jpg
 
 - `yoga-asana-standing-arm-raise-sideways-guest-portrait-2x3` · 2880×4320 · portrait 2:3 · 550 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** The same woman standing on the mat with her right arm held straight out to the side at shoulder height, facing the camera, backlit curtains behind.
 - **Setting:** yoga studio
 - **People:** guest, face identifiable
@@ -1111,7 +1111,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### yoga-asana-standing-side-bend-guest-portrait-2x3.jpg
 
 - `yoga-asana-standing-side-bend-guest-portrait-2x3` · 2880×4320 · portrait 2:3 · 596 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** The same woman standing on the mat bending to her left with the right arm arched overhead, looking at the camera, backlit curtains behind.
 - **Setting:** yoga studio
 - **People:** guest, face identifiable
@@ -1127,7 +1127,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### yoga-pranayama-alternate-nostril-close-up-guest-portrait-2x3.jpg
 
 - `yoga-pranayama-alternate-nostril-close-up-guest-portrait-2x3` · 2880×4320 · portrait 2:3 · 637 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** Close-up of a woman in a white kurta, eyes closed, pressing one nostril closed with her right thumb, in alternate-nostril breathing.
 - **Setting:** yoga studio
 - **People:** guest, face identifiable
@@ -1141,7 +1141,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### yoga-pranayama-alternate-nostril-courtyard-pond-guest-landscape-3x2.jpg
 
 - `yoga-pranayama-alternate-nostril-courtyard-pond-guest-landscape-3x2` · 2880×1920 · landscape 3:2 · 545 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** A woman in white sits cross-legged on the pond deck doing alternate-nostril breathing, framed by branches at left and right, glass walls of a dining area behind.
 - **Setting:** courtyard
 - **People:** guest, face identifiable
@@ -1155,7 +1155,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### yoga-pranayama-alternate-nostril-courtyard-pond-guest-portrait-2x3.jpg
 
 - `yoga-pranayama-alternate-nostril-courtyard-pond-guest-portrait-2x3` · 2880×4320 · portrait 2:3 · 724 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** Vertical view of the same woman doing alternate-nostril breathing on the pond deck, grey column and glass walls behind, a woven pendant lamp at top.
 - **Setting:** courtyard
 - **People:** guest, face identifiable
@@ -1169,7 +1169,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### yoga-pranayama-alternate-nostril-studio-wide-guest-portrait-2x3.jpg
 
 - `yoga-pranayama-alternate-nostril-studio-wide-guest-portrait-2x3` · 2880×4320 · portrait 2:3 · 462 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** A woman in white sits cross-legged on a sage mat doing alternate-nostril breathing, centred before backlit sheer curtains, with a large empty floor in front.
 - **Setting:** yoga studio
 - **People:** guest, face identifiable
@@ -1183,7 +1183,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### yoga-pranayama-instructor-guiding-guest-studio-landscape-3x2.jpg
 
 - `yoga-pranayama-instructor-guiding-guest-studio-landscape-3x2` · 2880×1920 · landscape 3:2 · 366 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** A guest in white sits cross-legged on a sage mat doing alternate-nostril breathing while an instructor in cream, seen from behind at right, demonstrates with a raised hand.
 - **Setting:** yoga studio
 - **People:** guest, face identifiable + staff/practitioner, face not identifiable
@@ -1227,7 +1227,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### yoga-meditation-courtyard-pond-deck-medium-guest-landscape-3x2.jpg
 
 - `yoga-meditation-courtyard-pond-deck-medium-guest-landscape-3x2` · 2880×1920 · landscape 3:2 · 434 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** A woman in white sits cross-legged, eyes closed, on a small wooden deck over a pond, with glass walls behind showing a dining area with tables, chairs and a wall fan.
 - **Setting:** courtyard
 - **People:** guest, face identifiable
@@ -1241,7 +1241,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### yoga-meditation-courtyard-pond-deck-wide-guest-landscape-3x2.jpg
 
 - `yoga-meditation-courtyard-pond-deck-wide-guest-landscape-3x2` · 2880×1920 · landscape 3:2 · 552 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** Wider view of the same woman meditating on the pond deck, framed by frangipani-like branches at left and right, with the pond reflecting her in the foreground.
 - **Setting:** courtyard
 - **People:** guest, face identifiable
@@ -1255,7 +1255,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### yoga-meditation-cross-legged-studio-guest-portrait-2x3.jpg
 
 - `yoga-meditation-cross-legged-studio-guest-portrait-2x3` · 2880×4320 · portrait 2:3 · 575 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** A woman with loose shoulder-length hair in a white kurta sits cross-legged on a sage mat, eyes closed, hands on knees, seen from a three-quarter angle.
 - **Setting:** yoga studio
 - **People:** guest, face identifiable
@@ -1269,7 +1269,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### yoga-meditation-cross-legged-studio-window-centred-guest-portrait-2x3.jpg
 
 - `yoga-meditation-cross-legged-studio-window-centred-guest-portrait-2x3` · 2880×4320 · portrait 2:3 · 516 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** A woman with hair tied back in white sits cross-legged facing the camera, eyes closed, hands on knees, centred in front of backlit sheer curtains.
 - **Setting:** yoga studio
 - **People:** guest, face identifiable
@@ -1283,7 +1283,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### yoga-meditation-cross-legged-studio-window-wide-guest-landscape-3x2.jpg
 
 - `yoga-meditation-cross-legged-studio-window-wide-guest-landscape-3x2` · 2880×1920 · landscape 3:2 · 307 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** The same woman seated cross-legged on a sage mat, eyes closed, centred in front of a wide curtained window with greenery faintly visible through it.
 - **Setting:** yoga studio
 - **People:** guest, face identifiable
@@ -1297,7 +1297,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### yoga-meditation-eyes-closed-close-up-guest-portrait-2x3.jpg
 
 - `yoga-meditation-eyes-closed-close-up-guest-portrait-2x3` · 2880×4320 · portrait 2:3 · 878 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** Close-up of a woman with loose hair in a white kurta, eyes closed, seated, from the waist up.
 - **Setting:** yoga studio
 - **People:** guest, face identifiable
@@ -1311,7 +1311,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### yoga-meditation-vajrasana-kneeling-studio-guest-landscape-3x2.jpg
 
 - `yoga-meditation-vajrasana-kneeling-studio-guest-landscape-3x2` · 2880×1920 · landscape 3:2 · 374 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** A woman in white kneels in vajrasana on a sage mat, eyes closed, hands on thighs, beside tall sunlit curtains.
 - **Setting:** yoga studio
 - **People:** guest, face identifiable
@@ -1325,7 +1325,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### yoga-meditation-vajrasana-kneeling-studio-guest-portrait-2x3.jpg
 
 - `yoga-meditation-vajrasana-kneeling-studio-guest-portrait-2x3` · 2880×4320 · portrait 2:3 · 526 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** Wider vertical view of the same woman kneeling in vajrasana on a sage mat in the studio corner, curtained window at right.
 - **Setting:** yoga studio
 - **People:** guest, face identifiable
@@ -2049,7 +2049,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### grounds-garden-planters-standing-guest-landscape-3x2.jpg
 
 - `grounds-garden-planters-standing-guest-landscape-3x2` · 2880×1920 · landscape 3:2 · 411 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** A woman in white stands on a paved path beside a long grey raised planter full of large tropical leaves, with building windows behind. Heavy out-of-focus greenery fills the right half and the bottom of the frame.
 - **Setting:** garden / building exterior
 - **People:** guest, face identifiable (small in frame)
@@ -2063,7 +2063,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### grounds-garden-planters-walking-guest-landscape-3x2.jpg
 
 - `grounds-garden-planters-walking-guest-landscape-3x2` · 2880×1920 · landscape 3:2 · 450 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** A woman in white walks along the paved path beside the long grey planter of tropical leaves, trailing one hand toward the plants. Out-of-focus foliage fills the foreground on the right and along the bottom.
 - **Setting:** garden / building exterior
 - **People:** guest, face identifiable (small in frame)
@@ -2161,7 +2161,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### grounds-textured-wall-eyes-closed-negative-space-guest-portrait-2x3.jpg
 
 - `grounds-textured-wall-eyes-closed-negative-space-guest-portrait-2x3` · 2880×4320 · portrait 2:3 · 992 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** A woman in a white shirt stands with her eyes closed and her face tilted up toward the sun, in profile against a ribbed textured olive-grey wall. Broad green leaves rise at lower right.
 - **Setting:** garden wall
 - **People:** guest, face identifiable
@@ -2175,7 +2175,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### grounds-textured-wall-profile-banana-leaf-guest-portrait-2x3.jpg
 
 - `grounds-textured-wall-profile-banana-leaf-guest-portrait-2x3` · 2880×4320 · portrait 2:3 · 816 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** The same woman in a white shirt, in profile with her eyes open and a slight smile, raises one hand toward a large green leaf. The ribbed textured wall is behind her.
 - **Setting:** garden wall
 - **People:** guest, face identifiable
@@ -2206,7 +2206,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### leisure-balcony-profile-eyes-closed-guest-landscape-3x2.jpg
 
 - `leisure-balcony-profile-eyes-closed-guest-landscape-3x2` · 2880×1920 · landscape 3:2 · 218 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** A woman in a white shirt leans on a balcony railing with her eyes closed, in profile, facing left over a hazy green valley.
 - **Setting:** balcony with valley view
 - **People:** guest, face identifiable
@@ -2220,7 +2220,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### leisure-balcony-valley-view-guest-landscape-3x2.jpg
 
 - `leisure-balcony-valley-view-guest-landscape-3x2` · 2880×1920 · landscape 3:2 · 287 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** A woman in a white shirt stands at a balcony railing with her eyes closed, facing a forested valley. The railing runs diagonally from the lower left to the upper right.
 - **Setting:** balcony with valley view
 - **People:** guest, face identifiable
@@ -2234,7 +2234,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### leisure-garden-swing-looking-up-guest-landscape-3x2.jpg
 
 - `leisure-garden-swing-looking-up-guest-landscape-3x2` · 2880×1920 · landscape 3:2 · 460 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** A woman in a white kurta sits on a cream metal canopy swing holding an open book and looks toward the camera. A wall of stone-filled gabion cages is behind her, and large out-of-focus leaves cover the lower foreground.
 - **Setting:** garden / terrace swing
 - **People:** guest, face identifiable
@@ -2276,7 +2276,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### leisure-pergola-terrace-reading-guest-portrait-2x3.jpg
 
 - `leisure-pergola-terrace-reading-guest-portrait-2x3` · 2880×4320 · portrait 2:3 · 894 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** A closer portrait view of the woman in white reading a magazine on a dark chair under the pergola, with greenery and a dark textured wall behind her.
 - **Setting:** pergola terrace
 - **People:** guest, face identifiable (profile)
@@ -2290,7 +2290,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 #### leisure-pergola-terrace-resting-guest-landscape-3x2.jpg
 
 - `leisure-pergola-terrace-resting-guest-landscape-3x2` · 2880×1920 · landscape 3:2 · 612 KB
-- **Public use:** **Check**: identifiable person. Use only when a signed release is on file; otherwise pick a frame without a face.
+- **Public use:** **Check**: identifiable person. No signed release is required.
 - **Shows:** The same pergola terrace: a woman in a white kurta sits barefoot on a dark chair with her hands folded, gazing out to the left. Tall grasses and palms are to the left, a dark wall is behind her, and cobbles are in the foreground.
 - **Setting:** pergola terrace / garden
 - **People:** guest, face identifiable (profile)

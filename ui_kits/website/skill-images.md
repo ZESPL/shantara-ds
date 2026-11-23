@@ -16,7 +16,7 @@ It gathers rules that already exist elsewhere and adds the missing storage and c
 | Alt text, descriptive filenames, real photography, AI image metadata (IMG-04 to IMG-06) | [search-visibility/images.md](search-visibility/images.md) |
 | Share images: templates, generation, overrides, 1200 × 630 JPEG, 300 KB or less (SOCIAL-01 to SOCIAL-04) | [skill-og-images.md](skill-og-images.md) |
 | Ratio tokens, mobile crops, square corners | [`components/editorial/Media.prompt.md`](../../components/editorial/Media.prompt.md), [skill-premium.md](skill-premium.md) |
-| No identifiable guests, no treatment in progress | Root [`SKILL.md`](../../SKILL.md) |
+| No faces in therapy, no treatment in progress | Root [`SKILL.md`](../../SKILL.md) |
 
 ## 1. Where files go
 

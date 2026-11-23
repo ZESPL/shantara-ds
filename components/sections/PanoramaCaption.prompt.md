@@ -9,7 +9,7 @@ A full-width photograph with a short caption bottom-left and no button: the paus
 
 **Use** once or twice on a long page, between sections of text. It carries no action and no paragraph. If it needs a sentence of explanation, use `SplitSection` instead.
 
-**Content.** A place or a moment, in a few words. Only frames with no identifiable guests.
+**Content.** A place or a moment, in a few words.
 
 **One job.** One place or one moment, one frame ([rule of one](../../docs/rule-of-one.md)).
 

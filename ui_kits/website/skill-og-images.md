@@ -187,7 +187,7 @@ Share previews are small: a 1200 px image is often shown about 500 px wide. Noth
 
 - **Use the page's own photograph.** Fixed pages use their hero. Entries use `featured_image`, which is already the photograph editors choose for the page ([skill-content.md](skill-content.md#shared-fields)). Doctor profiles use `photo_profile`. Pages with no photograph use `site/lobby-valley.jpg`.
 - **Photographs always come from the English entry.** Translated files carry text only ([skill-content.md](skill-content.md#languages)), so a translated page's share image uses the same photograph as the English one.
-- **Guest privacy applies unchanged.** Use a frame whose public use is **Yes** in [`assets/photos/README.md`](../../assets/photos/README.md). Its catalogue entry says where the quiet area is. Never treatment in progress, faces in therapy or room numbers.
+- **Guest privacy applies unchanged.** Use a frame whose public use is **Yes** or **Check** in [`assets/photos/README.md`](../../assets/photos/README.md). Its catalogue entry says where the quiet area is. Never treatment in progress, faces in therapy or room numbers.
 - **For the `default` template, choose a frame whose lower left is quiet and fairly dark.** The scrim protects contrast, but a bright sky or white wall behind the title still reads badly at preview size.
 - The crop is centred. If the subject falls out of a 1.9:1 or 0.76:1 crop, choose another frame.
 - Real Shantara photography only. No stock, no filters or colour grades, and no AI-generated images of the place, rooms, food, therapies, guests or doctors (IMG-06).

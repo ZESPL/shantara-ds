@@ -19,12 +19,12 @@ Property frames are 2880px on the long edge. Activity and lifestyle frames are 2
 
 ## Public use
 
-Every entry carries one status, set from the privacy rules (root [`SKILL.md`](../../SKILL.md) §3, [`guidelines/brand-imagery.html`](../../guidelines/brand-imagery.html)): guests are never identifiable, no faces in therapy, no room numbers, imagery never shows treatment in progress.
+Every entry carries one status, set from the privacy rules (root [`SKILL.md`](../../SKILL.md) §3, [`guidelines/brand-imagery.html`](../../guidelines/brand-imagery.html)): no faces in therapy, no room numbers, imagery never shows treatment in progress.
 
 | Status | Meaning | Count |
 | --- | --- | --- |
 | **Yes** | No identifiable guest and no treatment in progress. Fine for the website, decks and social. Doctor and board portraits are **Yes** for their own person. | 102 |
-| **Check** | An identifiable face (guest, model or staff), or a detail such as possible room numbers. Use only once a signed release is confirmed or the detail is cropped out. Otherwise pick a **Yes** frame. | 39 |
+| **Check** | An identifiable face (guest, model or staff), or a detail such as possible room numbers. No signed release is required. Crop out room numbers. | 39 |
 | **Avoid** | Treatment in progress (massage, acupuncture, physiotherapy). Not for public marketing. Internal or training material only. | 20 |
 
 "`-guest`" in a filename means a person appears, not that the face can be seen. Many `-guest` frames are **Yes** (back to camera, distant, face out of frame). Some frames without `-guest` are **Check** or **Avoid**. Go by the status, not the filename.
