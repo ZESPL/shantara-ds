@@ -6,7 +6,7 @@ Back to the [website skill](SKILL.md).
 
 **Production CMS:** Keystatic (git-based) with Markdoc for long-form. `keystatic.config.ts` is the only schema, and pages read it through the Keystatic reader (see [skill-stack.md](skill-stack.md) and [skill-structure.md](skill-structure.md)). Staff do not edit in Keystatic.
 
-This model is instantiated in [`content/`](../../content/) for the design-system kit. Empty folders (`guest-stories/`, `events/`, `testimonials/`) mean the entity is not ready. Do not invent records to fill them. Guest films already filed here are indexed in [`assets/videos/README.md`](../../assets/videos/README.md). They stay out of `testimonials/` until consent is recorded and the file is on Cloudflare R2. Stub conditions stay `draft` with empty clinical bodies until medical review exists.
+This model is instantiated in [`content/`](../../content/) for the design-system kit. Empty folders (`guest-stories/`, `events/`, `testimonials/`) mean the entity is not ready. Do not invent records to fill them. Guest films already filed here are indexed in [`assets/videos/README.md`](../../assets/videos/README.md). They stay out of `testimonials/` until the file is on Cloudflare R2. Stub conditions stay `draft` with empty clinical bodies until medical review exists.
 
 Model business/content entities, not layout hacks. There is **no page builder and no composed pages**. Fixed pages (home, rooms, therapies, FAQ, tariff) keep their intro copy and SEO in code; Keystatic holds the entities they list.
 
@@ -54,7 +54,7 @@ Medical categories ([`content/medical-categories.json`](../../content/medical-ca
 | Author | name; slug; role; photo; short bio; optional link to a doctor | No page |
 | Article / Clinical Guide | title; slug; category; lead; body (Markdoc); read minutes; date published; date modified; author (required); medical reviewer (doctor, optional) | `/en/journal/[slug]` |
 | Doctor Answer | question; slug; short answer; detailed answer (Markdoc); category; read minutes; reviewed date; doctor (required) | `/en/journal/[slug]` |
-| Testimonial | quote; display name; country; anonymised; photo; stay month and year; programme; `consent_status` (`recorded`, `pending`, `withdrawn`); `consent_date` | No page. Publish only when consent is `recorded`. |
+| Testimonial | quote; display name; country; anonymised; photo; stay month and year; programme | No page. |
 
 Deferred until real records exist: Guest Story, Event.
 
@@ -298,7 +298,7 @@ Potentially strong E-E-A-T content if handled carefully.
 
 Examples: how a 21-day stay is structured; assessment → plan → stay → review → discharge.
 
-Use consent/anonymization appropriately.
+Anonymise where the guest prefers.
 
 ### Food & Recipes
 
@@ -369,8 +369,6 @@ Use the source that actually supports the statement.
 Testimonials may describe: experience; stay; food; service; how the guest felt; the journey.
 
 Do not use a guest testimonial as proof of clinical efficacy.
-
-Maintain consent internally.
 
 ### Medical Editorial Policy
 

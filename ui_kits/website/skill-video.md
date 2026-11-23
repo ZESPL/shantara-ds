@@ -6,7 +6,7 @@ Video files must be uploaded to Cloudflare R2 and served via Cloudflare CDN. Nev
 
 This file is the video standard for the design system and for shantara.life. Component docs, page implementations and reviews follow it. Example URLs below are absolute R2/CDN addresses. Replace `<r2-cdn-host>` with the live Cloudflare CDN hostname. Never use a local or relative path.
 
-Guest films already in this design system are indexed in [`assets/videos/README.md`](../../assets/videos/README.md). Read that index instead of opening the files. The mp4s are gitignored. They have no R2 URL, no poster, no WebM and no WebVTT. Consent is not recorded, so they are not `content/testimonials` records and they do not go on a page, in a deck, or in the video sitemap.
+Guest films already in this design system are indexed in [`assets/videos/README.md`](../../assets/videos/README.md). Read that index instead of opening the files. The mp4s are gitignored. They have no R2 URL, no poster, no WebM and no WebVTT, so they are not `content/testimonials` records yet and they do not go on a page, in a deck, or in the video sitemap until they do. No consent record is required.
 
 ## Core rules
 

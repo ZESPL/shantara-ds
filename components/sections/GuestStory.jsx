@@ -2,9 +2,9 @@ import React from "react";
 import { Statement } from "../editorial/Statement.jsx";
 import { Media } from "../editorial/Media.jsx";
 
-/* A guest's own words. Only real stories with written consent (content/guest-stories,
-   content/testimonials, both empty today, so nothing ships until they are not). A name only
-   when the guest agreed to it; otherwise a first initial and the context of the stay. Never
+/* A guest's own words. Only real stories (content/guest-stories,
+   content/testimonials, both empty today, so nothing ships until they are not). A name, or a first
+   initial, and the context of the stay. Never
    a health result or a claim the clinical team would not make; never a face in therapy.
    `story`: one story, a large quote, the attribution and the context of the stay, with an
    optional photograph of the place (not the guest) beside it from 1000px.
