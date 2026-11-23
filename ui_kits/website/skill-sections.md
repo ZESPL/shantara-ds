@@ -297,7 +297,7 @@ Do not show logos without context if the visitor cannot understand what they mea
 
 ### Testimonial
 
-One significant guest story/testimonial. Support: real name when consented; anonymized presentation when required; photo/video when consented; context of stay; quote/story.
+One significant guest story/testimonial. Support: real name or anonymised presentation; photo/video; context of stay; quote/story.
 
 Do not turn testimonials into unsupported medical efficacy claims.
 

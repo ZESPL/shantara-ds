@@ -5,13 +5,13 @@ Guest films filed in this design system. Read this instead of opening the files.
 ## How to use this index
 
 1. Pick from the [Index](#index). One row per film.
-2. These files are **not** testimonial records. `content/testimonials/` stays empty until a film has `consent_status` `recorded`, a transcript that does not state a clinical result, a poster, a WebVTT caption file, and a Cloudflare R2 URL. Do not invent the quote, the name, the country, the stay date or the consent.
+2. These files are **not** testimonial records. `content/testimonials/` stays empty until a film has a transcript that does not state a clinical result, a poster, a WebVTT caption file, and a Cloudflare R2 URL. Do not invent the quote, the name, the country or the stay date.
 3. The filename is a working label from the drop in `temp/Testimonials` on 7 November 2026. It is not the title, not the guest’s words, and not a medical claim. Several filenames say “wellness retreat” or state an outcome. Do not copy either onto a page, a deck, a schema description or a testimonial record.
 4. The mp4 files sit in `testimonials/` beside this index and are gitignored (`.gitignore`). A clone does not contain them. Do not commit them, and do not point a component at the local path. Hosting, the player, VideoObject and the video sitemap: [`ui_kits/website/skill-video.md`](../../ui_kits/website/skill-video.md).
 
 ## Not ready to publish
 
-Every film is **Check**. An identifiable guest is on camera. No consent record is in this repo. Do not put one on a page, in a deck, in a share image, or in the video sitemap.
+Every film is **Check**: an identifiable guest is on camera. No consent record is required. A film goes on a page only once the gaps below are closed.
 
 None of them is on Cloudflare R2. There is no WebM, no poster, and no separate caption file. English subtitles are burned into the picture, which does not satisfy the `captions` prop (that prop is a WebVTT URL). Four films also burn the SHANTARA wordmark into the picture, sometimes across the guest. They are finished cuts, not clean masters.
 

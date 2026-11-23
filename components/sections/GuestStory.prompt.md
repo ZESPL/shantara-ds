@@ -2,13 +2,13 @@ A guest's own words: one story with an optional photograph of the place, or two 
 
 ```jsx
 <Section>
-  <GuestStory story={{ quote: story.quote, name: story.consented_name, context: "Detox · 14 nights", src: "/assets/photos/interior-infinity-edge-valley.jpg", alt: "An indoor sitting space looking onto the valley" }} />
+  <GuestStory story={{ quote: story.quote, name: story.name, context: "Detox · 14 nights", src: "/assets/photos/interior-infinity-edge-valley.jpg", alt: "An indoor sitting space looking onto the valley" }} />
 </Section>
 <GuestStory title="Guests in their own words" stories={[…]} />
 ```
 
-**Use** when `content/guest-stories` or `content/testimonials` holds consented records. Both are empty today, so nothing ships yet. Source films are indexed in [`assets/videos/README.md`](../../assets/videos/README.md) and are not records. The specimen shows marked placeholders.
+**Use** when `content/guest-stories` or `content/testimonials` holds records. Both are empty today, so nothing ships yet. Source films are indexed in [`assets/videos/README.md`](../../assets/videos/README.md) and are not records. The specimen shows marked placeholders.
 
-**Content.** Real words with written consent; a name only when the guest agreed, otherwise an initial and the context of the stay. Never a health result or a claim the clinical team would not make. The photograph shows the place, never the guest in therapy.
+**Content.** Real words; a name or an initial, and the context of the stay. Never a health result or a claim the clinical team would not make. The photograph shows the place, never the guest in therapy.
 
 **Responsive.** `story`: quote above the photograph on phones; 7 / 5 from 1000px. `stories`: stacked, then side by side from 1000px. No carousel.

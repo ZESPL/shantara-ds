@@ -15,7 +15,7 @@ This file sets the folder layout, routes and data sources for the **shantara.lif
 | 3 | **FAQs are split in two** | Conditions and programmes keep their own `faqs` field. General FAQs sit in the `faq/en.json` singleton and render on `/en/faq`. |
 | 4 | **Therapies and rooms get one page each** | Both are flat files (`therapies.astro`, `rooms.astro`). A CI check fails the build if a `therapies/` or `rooms/` route folder appears. |
 | 5 | **Keystatic is the only schema. There is no Zod** | `keystatic.config.ts` defines every field. Pages read content through the Keystatic reader, which is typed from that config. There is no `content.config.ts`, no Astro Content Collections and no Zod. Staff do not edit in Keystatic, so it runs in `local` mode and the `/keystatic` admin loads only in development. Medical categories are not modelled. |
-| 6 | **Authors and testimonials are added now** | Add `authors/en/` and `testimonials/en/`. Testimonials publish only when `consent_status` is `recorded`. |
+| 6 | **Authors and testimonials are added now** | Add `authors/en/` and `testimonials/en/`. |
 | 7 | **Keys and analytics IDs are environment variables** | Keys and IDs never go in `src/content/`. Keep them in Netlify environment variables and document them in `.env.example`. |
 | 8 | **Singletons are per language** | Singletons use `site/{locale}.json`, `tariff-terms/{locale}.json` and `faq/{locale}.json`. English is the master copy. |
 | 9 | **Doctors are `Person` nodes, and pages carry a `BreadcrumbList`** | Use `Person`, never `Physician`, which Schema.org defines as a medical business ([SCHEMA-09](search-visibility/schema.md)). Programmes use `["Service", "MedicalTherapy"]` with no `offers` ([SCHEMA-10](search-visibility/schema.md)). |
@@ -224,5 +224,4 @@ Set these in Netlify. `.env.example` lists the names with no values.
 - **Entries.** Every entry in every collection and singleton reads without error.
 - **References.** Every `related_pages`, `author`, `doctor` and `medical reviewer` ID resolves. No published entry links to a draft.
 - **Tariff.** The rules come from [skill-content.md § Tariff](skill-content.md#tariff): every code is valid and matches its slug, exactly one entry is the default, every tariff has each room category and each published supplement once, and translated tariff terms carry no amounts.
-- **Consent.** A testimonial publishes only when `consent_status` is `recorded`.
 - **No keys in content.** Anything under `src/content/` that looks like a key or ID pattern (`G-`, `AW-`, a UUID in a `*_id`/`*_key` field) fails the check.

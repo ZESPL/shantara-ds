@@ -344,7 +344,7 @@ The courtyard: pond, water wall, deck, boardwalk and covered seating. Yoga frame
 | `massage-head-guest-face-therapist-behind-portrait-2x3` | portrait 2:3 | Avoid | treatment room | low warm lamp light, warm | portrait split-section half, article figure |
 | `massage-head-scalp-close-up-guest-portrait-2x3` | portrait 2:3 | Avoid | treatment room | low warm lamp light, warm | article figure, 3-up tile |
 | `massage-head-scalp-overhead-guest-portrait-2x3` | portrait 2:3 | Avoid | treatment room | low warm lamp light, warm | article figure, portrait split-section half |
-| `massage-head-therapist-beside-table-guest-portrait-2x3` | portrait 2:3 | Avoid | treatment room | warm lamp light, warm | portrait split-section half, team or practice section (with consent) |
+| `massage-head-therapist-beside-table-guest-portrait-2x3` | portrait 2:3 | Avoid | treatment room | warm lamp light, warm | portrait split-section half, team or practice section |
 | `massage-head-therapist-hands-in-hair-guest-portrait-2x3` | portrait 2:3 | Avoid | treatment room | low warm lamp light, warm, slightly dimmer than its pair | portrait split-section half, article figure |
 
 ### Acupuncture

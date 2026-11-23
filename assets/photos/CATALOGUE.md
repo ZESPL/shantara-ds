@@ -698,7 +698,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 - **Crops:** 3:2 and 16:9 hold; 21:9 holds if cropped from the ceiling down; 4:3 at object-position 65% 50%; 4:5 or 1:1 at 70% 50% (bench and window); 2:3 is weak
 - **Mood:** quiet, waiting, spacious
 - **Best for:** split-section half, article figure, slide background with text on the wall, arrival or first-day section
-- **Cautions:** guest's face is identifiable in profile, so check consent; the reflections in the dark glass doors on the left are busy
+- **Cautions:** guest's face is identifiable in profile; the reflections in the dark glass doors on the left are busy
 
 #### treatment-reception-desk.jpg
 
@@ -1006,7 +1006,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 - **Crops:** 3:2, 16:9, 4:3; 1:1 at object-position 55% 50%
 - **Mood:** attentive, calm, professional
 - **Best for:** consultation or "how it works" section, split-section half, article figure, slide
-- **Cautions:** readable "Lenovo" logo and an asset sticker on the monitor; part of an anatomical spine model at the far left edge; keyboard cables visible; guest's profile edge is visible, so check consent
+- **Cautions:** readable "Lenovo" logo and an asset sticker on the monitor; part of an anatomical spine model at the far left edge; keyboard cables visible; guest's profile edge is visible
 
 ### Yoga: asana
 
@@ -1349,7 +1349,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 - **Composition:** face across the centre and lower half; hands at the centre right; text space: dark upper-left background (window blind stripes, out of focus); scrim: light
 - **Crops:** 2:3 and 4:5 hold; 1:1 at object-position 45% 55%; 3:2 at 40% 50% loses the hands
 - **Mood:** intimate, dim, still
-- **Best for:** article figure, portrait split-section half for a treatments page, story post (only with consent)
+- **Best for:** article figure, portrait split-section half for a treatments page, story post
 - **Cautions:** identifiable guest during treatment; low key, with visible grain; near-duplicate of massage-face-forehead-close-up-guest-portrait-2x3.jpg
 
 #### massage-face-forehead-close-up-guest-portrait-2x3.jpg
@@ -1363,7 +1363,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 - **Composition:** face across the lower-middle; hands at the centre right; text space: upper third (blurred cabinet top and blind), fairly calm; scrim: light
 - **Crops:** 2:3 and 4:5 hold; 1:1 at object-position 45% 60%; 3:2 at 40% 55%
 - **Mood:** intimate, quiet, focused
-- **Best for:** article figure, portrait split-section half, treatments detail tile (with consent)
+- **Best for:** article figure, portrait split-section half, treatments detail tile
 - **Cautions:** identifiable guest during treatment; grain in the shadows; near-duplicate of massage-face-eyes-temples-close-up-guest-portrait-2x3.jpg
 
 #### massage-foot-reflexology-over-shoulder-portrait-2x3.jpg
@@ -1433,7 +1433,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 - **Composition:** guest's face in the lower-left half; therapist's torso fills the upper right; text space: plain beige wall in the upper left; scrim: light
 - **Crops:** 2:3 and 4:5 hold; 1:1 at object-position 45% 65%; 3:2 at 40% 65% loses the therapist
 - **Mood:** restful, intimate, warm
-- **Best for:** portrait split-section half, article figure, story post (with consent)
+- **Best for:** portrait split-section half, article figure, story post
 - **Cautions:** identifiable guest during treatment; awkward crop through the therapist's face; grain
 
 #### massage-head-scalp-close-up-guest-portrait-2x3.jpg
@@ -1475,7 +1475,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 - **Composition:** therapist at the centre right in the upper half; guest across the middle; sheet fills the lower third; text space: plain wall in the upper left (socket at the upper-left middle); scrim: light
 - **Crops:** 2:3 and 4:5 hold; 1:1 at object-position 60% 55%; 3:2 at 55% 50%
 - **Mood:** attentive, calm, warm
-- **Best for:** portrait split-section half, team or practice section (with consent), article figure
+- **Best for:** portrait split-section half, team or practice section, article figure
 - **Cautions:** both faces are identifiable; the wall socket is visible; uniform logo; near-duplicate of massage-head-therapist-hands-in-hair-guest-portrait-2x3.jpg
 
 #### massage-head-therapist-hands-in-hair-guest-portrait-2x3.jpg
@@ -1506,7 +1506,7 @@ Yoga in the courtyard keeps the practice first in the filename: `yoga-meditation
 - **Crops:** 2:3, 4:5, 3:4; 1:1 at object-position 50% 60%; landscape crops lose either the faces or the hands
 - **Mood:** focused, careful, clinical
 - **Best for:** therapy detail page figure, article figure, internal training material
-- **Cautions:** treatment in progress; needles visible; both faces identifiable, so consent is needed
+- **Cautions:** treatment in progress; needles visible; both faces identifiable
 
 #### acupuncture-facial-needles-gloved-hands-medium-guest-portrait-2x3.jpg
 
